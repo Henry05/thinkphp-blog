@@ -1,0 +1,5 @@
+.am-topbar{min-height: 75px;margin-bottom: 0;}
+.am-topbar-inverse{background-color:#000000}
+.am-topbar-nav>li.am-active>a:after{border-bottom-color: #0e90d2;opacity: 0;}
+.am-topbar-brand{margin-top:10px;}
+#doc-topbar-collapse{margin-top:10px;}
