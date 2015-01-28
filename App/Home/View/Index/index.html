@@ -10,62 +10,42 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="alternate icon" type="image/ico" href="__PUBLIC__/IMG/favicon.ico">
-  <link rel="stylesheet" href="__PUBLIC__/AmazeUI/assets/css/amazeui.min.css"/>
 <!--   导航栏样式表 -->
   <link rel="stylesheet" href="__PUBLIC__/CSS/navbar.css"/>
 <!--   首页样式表 -->
    <link rel="stylesheet" href="__PUBLIC__/CSS/home.css"/>
 </head>
 <body>
-<header class="am-topbar am-topbar-inverse">
-  <h1 class="am-topbar-brand">
-  <a href="http://www.w3cay.com">
+
+<header>
+ <a href="http://www.w3cay.com" class="title">
    <i class="logo"><img src="__PUBLIC__/IMG/logo.png" width="45px" height="45px"></i>
-    <i class="name"></i>
-  </a>
-  </h1>
-
-  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
-  <div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-collapse">
-    <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="am-active"><a href="#">首页</a></li>    
-    
-          <li ><a href="#">Html</a></li>
-          <li ><a href="#">CSS</a></li>
-          <li><a href="#">Javascripts</a></li>
-          <li><a href="#">SEO</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">MYSQL</a></li>
-       <li><a href="#">杂谈</a></li>
-       <li><a href="#">资源</a></li>
-       <li><a href="#">关于我</a></li>
+   <i class="name"></i>
+ </a>
+<button class="btn" ></button>
+<nav class='nav'>
+    <ul>
+        <li class="current"><a href="#">首页</a></li>    
+        <li ><a href="#">Html</a></li>
+        <li ><a href="#">CSS</a></li>
+        <li><a href="#">JS</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">MYSQL</a></li>
+        <li><a href="#">SEO</a></li>
+        <li><a href="#">杂谈</a></li>
+        <li><a href="#">资源</a></li>
+        <li><a href="#">关于我</a></li>
+        <li>
+          <form class="search" role="search"> 
+          <input type="text" class="search-input" placeholder="Search">
+          </form>
+        </li>
     </ul>
-
-    <form class="am-topbar-form am-topbar-right am-form-inline" role="search">
-      <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
-      </div>
-    </form>
-
-<!--     <div class="am-topbar-right">
-      <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
-        <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle" data-am-dropdown-toggle>其他 <span class="am-icon-caret-down"></span></button>
-        <ul class="am-dropdown-content">
-          <li><a href="#">注册</a></li>
-          <li><a href="#">随便看看</a></li>
-        </ul>
-      </div>
-    </div> -->
-
-<!--     <div class="am-topbar-right">
-      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</button>
-    </div> -->
-  </div>
+  </nav>
 </header>
 
-<!-- <div class="banner"> -->
-<!-- <img src="__PUBLIC__/IMG/HOMEP.png"> -->
+
+
 </div>
   <div class="hope">
   <div class="am-g am-container">
@@ -146,18 +126,14 @@
 </footer>
 
 <!--[if lt IE 9]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="__PUBLIC__/AmazeUI/assets/js/polyfill/rem.min.js"></script>
-<script src="__PUBLIC__/AmazeUI/assets/js/polyfill/respond.min.js"></script>
-<script src="__PUBLIC__/AmazeUI/assets/js/amazeui.legacy.js"></script>
+<script src="__PUBLIC__/Js/jquery/jquery-1.11.2.js"></script>
 <![endif]-->
 
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="__PUBLIC__/AmazeUI/assets/js/jquery.min.js"></script>
-<script src="__PUBLIC__/AmazeUI/assets/js/amazeui.min.js"></script>
+<script src="__PUBLIC__/Js/jquery/jquery-2.1.3.js"></script>
 <!--<![endif]-->
 
 <script src="__PUBLIC__/Js/home.js"></script>
+<script src="__PUBLIC__/Js/navbar.js"></script>
 </body>
 </html>

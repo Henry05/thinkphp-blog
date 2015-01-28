@@ -12,6 +12,4 @@ $(function(){
 	$('#slogan').fadeIn(3000);
 });
 
-$(".name").hover(function(){
-  $('.name').toggleClass("ename");
-});
+

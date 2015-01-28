@@ -1,13 +1,116 @@
-.am-topbar{min-height: 70px;margin-bottom: 0;z-index: 100;}
-.name{width:160px;height:50px;display: block;  background:url(../IMG/name.png ) 
-	 no-repeat;float: right;background-size: 150px 45px;margin-top: 6px;}
-.ename{width:160px;height:50px;display: block;  background:url(../IMG/e_name.png ) 
-	 no-repeat;float: right;background-size: 150px 40px;margin-top: 10px;}
-.am-topbar-btn{margin-top: 18px;}
-.am-topbar-inverse{background-color:#000}
-/*.am-topbar-nav>li.am-active>a:after{border-bottom-color: #0e90d2;opacity: 0;}
-.am-topbar-nav>li>a:after {border-bottom-color: #0e90d2;opacity: 0;}*/
-.am-topbar-brand{margin-top:8px;}
-#doc-topbar-collapse{margin-top:10px;}
-#doc-topbar-collapse a {font-size: 18px;font-weight: bold;}
-.am-nav a{margin-right:20px; }
+*{padding:0;margin: 0;font-family:'微软雅黑'}
+
+header{background: #000;height:60px;width: 100%}
+.nav {
+	position: absolute;
+	height: 70px;
+	display: inline-block;
+	width: 80%;
+     text-align: right;
+     margin-top: 18px;
+}
+.title
+{
+	margin-left: 10px;
+	width:210px;
+	display: inline-block;
+	text-align: left;
+	margin-top: 5px;
+}
+.name{
+	width:160px;
+	height:50px;
+	display:inline-block; 
+	 background:url(../IMG/name.png ) no-repeat;
+	 float:right;
+	 background-size: 150px 50px;
+	}
+.ename{
+	width:160px;
+	height:50px;
+	display:inline-block; 
+	 background:url(../IMG/e_name.png )  no-repeat;
+	 float:right;
+	 background-size: 150px 50px;}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+	
+}
+.nav li {
+	
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+
+
+}
+.nav a {
+
+	padding: 3px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+	line-height: 100%;
+}
+.nav a:hover { 
+    color: #d0d0d0; 
+}
+.nav .current a {
+	background:#fabf7e;
+	color: #fff;
+	border-radius: 5px;
+}
+.search-input{width:150px;height: 24px;font-size:18px;}
+.btn{display: none;}
+@media screen and (max-width:1180px) {
+	.search-input{display: none;}
+	.btn{display: none;}
+}
+
+
+
+@media screen and (max-width: 990px) {
+.nav{display:none;width: 100%;background: #000;height:350px;margin:0;}
+.name{
+	width:160px;
+	height:50px;
+	display:inline-block; 
+	margin-top:5px;
+	 background:url(../IMG/name.png ) no-repeat;
+	 float:right;
+	 background-size:120px 40px;
+	}
+	.logo{margin-top:2px;display:inline-block; }
+.nav li{
+	display: block;
+	margin: auto;
+	border-top: 1px solid #fff;
+	padding: 3px;
+
+}
+.nav li a{
+	text-align:center;
+	width: 80px;
+	margin: auto;
+display: block;
+font-size: 18px;
+}
+.btn{width: 35px;height: 35px;
+
+	background: url(../IMG/btn.png) no-repeat;
+	background-size: 35px 35px;
+	border: 0px;
+	display: inline-block;
+	float: right;
+	margin-top: 12px;
+	margin-right: 10px;
+}
+
+}
+
+
+
