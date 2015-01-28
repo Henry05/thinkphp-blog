@@ -9,7 +9,9 @@
 
 //简要渐入效果
 $(function(){
-	$('#slogan').fadeIn(3000);
+	$('.ban-slogan').fadeIn(2000);
+	 $(".ban-pic").animate(
+    	{left:'200px'},800);
 });
 
 

@@ -21,17 +21,19 @@ header{background: #000;height:60px;width: 100%}
 	width:160px;
 	height:50px;
 	display:inline-block; 
+	margin-top: 2px;
 	 background:url(../IMG/name.png ) no-repeat;
 	 float:right;
-	 background-size: 150px 50px;
+	 background-size: 150px 45px;
 	}
 .ename{
 	width:160px;
 	height:50px;
 	display:inline-block; 
+    margin-top: 2px;
 	 background:url(../IMG/e_name.png )  no-repeat;
 	 float:right;
-	 background-size: 150px 50px;}
+	 background-size: 150px 45px;}
 
 .nav ul {
 	margin: 0;

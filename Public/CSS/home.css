@@ -1,0 +1,35 @@
+.ban{height: 300px;background:#fabf7e;}
+.ban-con
+{
+	
+	width:980px;
+	height: 250px;
+	margin: auto;
+
+
+}
+.ban-hr
+{display: none;}
+.ban-pic{
+		   width: 400px;
+		   height: 200px;
+	       background:url('../IMG/ban-pic.png') no-repeat;
+           background-size: 400px 200px;  
+           float:left;
+           margin-top: 50px;
+           position: absolute;
+           left:-400px;
+             }
+.ban-slogan{
+	width: 560px;
+	float: right;
+	 margin-top: 85px;
+	 display: none;
+}     
+.ban-slogan h2{
+	font-size: 26px;
+	padding-bottom: 10px;
+	color: #000;
+}   
+.ban-slogan p{font-size: 20px;line-height: 40px;}   
+ @media screen and (max-width: 990px){}}

@@ -21,9 +21,7 @@
  <a href="http://www.w3cay.com" class="title">
    <i class="logo"><img src="/W3CAY/Public/IMG/logo.png" width="45px" height="45px"></i>
    <i class="name"></i>
- </a>
-<button class="btn" ></button>
-<nav class='nav'>
+ </a><button class="btn" ></button><nav class='nav'>
     <ul>
         <li class="current"><a href="#">首页</a></li>    
         <li ><a href="#">Html</a></li>
@@ -40,21 +38,16 @@
           <input type="text" class="search-input" placeholder="Search">
           </form>
         </li>
-    </ul>
-  </nav>
-</header>
+    </ul></nav></header>
 
-
-
-</div>
-  <div class="hope">
-  <div class="am-g am-container">
-    <div class="am-u-lg-4 am-u-md-6 am-u-sm-12 hope-img">
-      <img src="/W3CAY/Public/AmazeUI/assets/i/examples/landing.png" alt="" data-am-scrollspy="{animation:'slide-left', repeat: false}">
-      <hr class="am-article-divider am-show-sm-only hope-hr">
+  <div class="ban">
+  <div class="ban-con">
+    <div class="ban-pic">
+  
+      <hr class="ban-hr">
     </div>
-    <div class="am-u-lg-8 am-u-md-6 am-u-sm-12" id="slogan">
-      <h2 class="hope-title">{ 致力于Html/Css/Js/WEB开发 }</h2>
+    <div class="ban-slogan" >
+      <h2>{ 致力于Html/Css/Js/WEB开发 }</h2>
 
       <p>
         在知识爆炸的年代，我们不愿成为知识的过客，拥抱开源文化，发挥社区的力量，参与到Amaze Ui开源项目能获得自我提升。
