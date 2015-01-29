@@ -11,11 +11,9 @@
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/IMG/favicon.ico">
 <!--   导航栏样式表 -->
-  <link rel="stylesheet" href="/W3CAY/Public/CSS/navbar.css"/>
-<!--   首页样式表 -->
-   <link rel="stylesheet" href="/W3CAY/Public/CSS/home.css"/>
-</head>
-<body>
+  <link rel="stylesheet" href="/W3CAY/Public/CSS/layout.css"/>
+  </head>
+  <body>
 <!-- 导航部分 -->
 <header>
  <a href="http://www.w3cay.com" class="title">
@@ -38,8 +36,13 @@
           <input type="text" class="search-input" placeholder="Search">
           </form>
         </li>
-    </ul></nav></header>
+   </ul></nav>
+ </header>
 
+
+ 
+<!--   首页样式表 -->
+   <link rel="stylesheet" href="/W3CAY/Public/CSS/home.css"/>
 <!-- Banner部分 -->
 <div class="ban">
   <div class="ban-con">
@@ -47,14 +50,15 @@
     <div class="ban-slogan" >
       <h2>{ 致力于Html/Css/Js/WEB开发 }</h2>
       <p>
-        在知识爆炸的年代，我们不愿成为知识的过客，拥抱开源文化，发挥社区的力量，参与到Amaze Ui开源项目能获得自我提升。
+        不愿成为知识的过客，记录和分享我的WEB开发经验与技巧，发挥共享的力量，只为创造出激动人心的网页！
       </p>
     </div>
   </div>
 </div>
 <!-- 内容部分 -->
 <div class="content">
-
+  
+   <!-- 大于1180px部分 -->
   <div class="con-4">
 
     <div class="sec-box">
@@ -190,10 +194,7 @@
     </div>
   </div>
 
-
-<!-- 小于1180px部分 -->
-
-
+   <!-- 小于1180px部分 -->
   <div class="con-3">
 
     <div class="sec-box">
@@ -297,9 +298,9 @@
     </div>
   </div>
 
-<!-- 小于990px部分 -->
+   <!-- 小于990px部分 -->
   <div class="con-2">
-        <div class="sec-box">
+    <div class="sec-box">
        
         <div class="list-block">
           <span class="block-type">
@@ -322,10 +323,7 @@
           </p>
         </div>
     </div>
-   
-
-
-        <div class="sec-box">
+     <div class="sec-box">
        
         <div class="list-block">
           <span class="block-type">
@@ -348,7 +346,7 @@
           </p>
         </div>
     </div>
-        <div class="sec-box">
+     <div class="sec-box">
      
         <div class="list-block">
           <span class="block-type">
@@ -373,7 +371,7 @@
     </div>
   </div>
 
-<!-- 小于685px部分 -->
+    <!-- 小于685px部分 -->
   <div class="con-1">
         <div class="list-block">
           <span class="block-type">
@@ -411,7 +409,10 @@
            相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
           </p>
         </div>
+  </div>
+
 </div>
+
 
 
 
@@ -429,7 +430,8 @@
 <script src="/W3CAY/Public/Js/jquery/jquery-2.1.3.js"></script>
 <!--<![endif]-->
 
+<!--   首页Js引入文件 -->
 <script src="/W3CAY/Public/Js/home.js"></script>
-<script src="/W3CAY/Public/Js/navbar.js"></script>
+<script src="/W3CAY/Public/Js/layout.js"></script>
 </body>
 </html>
