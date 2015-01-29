@@ -44,8 +44,9 @@
   <div class="ban-con">
     <div class="ban-pic">
   
-      <hr class="ban-hr">
+    
     </div>
+      <hr class="ban-hr">
     <div class="ban-slogan" >
       <h2>{ 致力于Html/Css/Js/WEB开发 }</h2>
 
