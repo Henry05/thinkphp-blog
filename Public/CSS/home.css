@@ -33,6 +33,130 @@
 }   
 .ban-slogan p{font-size: 20px;line-height: 40px;}   
 
+/*首页内容样式*/
+.content
+{
+
+	background: #F3F3F3;
+	padding-top: 20px;
+
+}
+.con-4
+{
+	width: 85%;
+	height: 600px;
+	margin: auto;
+}
+.con-3
+{
+	display: none;
+}
+.con-2
+{
+	display: none;
+}
+.con-1
+{
+	display: none;
+}
+.sec-box
+{
+
+	height: 155px;
+	padding-top: 10px;
+}
+/*.box-2
+{
+	border: 1px solid;
+	height: 200px;
+}*/
+.list-block
+{
+	border: 1px solid #E9E9E9;
+	background:#fff;
+	display: block;
+	float: left;
+	width: 23.9%;
+	height: 150px;
+	margin-left:0.7%;
+	overflow: hidden;
+}
+.block-type
+{
+	font-size: 18px;
+	text-align: center;
+	border-bottom:2px solid #CF8BFC;
+	display: inline-block;
+	line-height: 30px;
+	width: 100%;
+
+}
+.block-title
+{
+
+	margin:10px;
+	font-size: 20px;
+	font-weight: bold;
+	max-height: 110px;
+	overflow: hidden;
+}
+
+.footer
+{
+	text-align: center;
+	background: #000;
+	color: #fff;
+	
+
+}
+
+.footer a
+{
+	text-decoration:none;
+	color: #fff;
+}
+
+
+
+/*首页内容样式 max-width: 1180px*/
+@media screen and (max-width: 1180px){
+.content
+{
+
+}
+.con-4
+{
+	display: none;
+}
+.con-3
+{
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	display: block;
+}
+.con-2
+{
+	display: none;
+}
+.con-1
+{
+	display: none;
+}
+.list-block
+{
+	border: 1px solid #E9E9E9;
+	background:#fff;
+	display: block;
+	float: left;
+	width: 30.9%;
+	height: 150px;
+	margin-left:2%;
+	overflow: hidden;
+}
+
+ }	
+
 
  @media screen and (max-width: 990px){
 
@@ -67,8 +191,51 @@
 	padding-bottom: 10px;
 	color: #000;
 }   
-.ban-slogan p{font-size: 14px;line-height: 40px;}   
- 	}
+.ban-slogan p
+{
+	font-size: 14px;
+	line-height: 40px;
+}  
+
+
+.con-4
+{
+	display: none;
+}
+.con-3
+{
+	display: none;
+}
+.con-2
+{
+	width: 100%;
+	height: 600px;
+	margin: auto;
+    display: block;
+}
+.con-1
+{
+	display: none;
+}
+
+.list-block
+{
+	border: 1px solid #E9E9E9;
+	background:#fff;
+	display: block;
+	float: left;
+	width: 46%;
+	height: 150px;
+	margin-left:2%;
+	overflow: hidden;
+} 
+
+}
+
+
+
+
+
 
 
  @media screen and (max-width: 685px){
@@ -105,11 +272,67 @@
 }     
 .ban-slogan h2{
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 	padding-bottom: 10px;
 	color: #000;
 }   
-.ban-slogan p{font-size: 14px;line-height: 40px;display: none;}   
- 	}
 
+.ban-slogan p
+{
+	display: none;
+
+}
+
+
+.con-4
+{
+	display: none;
+}
+.con-3
+{
+	display: none;
+}
+.con-2
+{
+	display: none;
+}
+.con-1
+{
+	width: 100%;
+	height: 500px;
+	margin: auto;
+    display: block;
+}
+
+.list-block
+{
+	border: 1px solid #E9E9E9;
+	background:#fff;
+	display: block;
+	float: left;
+	width: 95%;
+	height: 100px;
+	margin-top: 5px;
+	margin-left:2%;
+	overflow: hidden;
+} 
+.block-type
+{
+	font-size: 14px;
+}
+.block-title
+{
+
+	margin:10px;
+	font-size: 16px;
+	font-weight: bold;
+	max-height: 100px;
+	overflow: hidden;
+}
+.sec-box
+{
+
+	height:100px;
+	
+}
  }

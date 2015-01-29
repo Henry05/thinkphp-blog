@@ -68,7 +68,7 @@ header{background: #000;height:60px;width: 100%}
 }
 .search-input{width:150px;height: 24px;font-size:18px;}
 .btn{display: none;}
-@media screen and (max-width:1180px) {
+@media screen and (max-width:1190px) {
 	.search-input{display: none;}
 	.btn{display: none;}
 }
