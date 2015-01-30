@@ -2,22 +2,22 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>安望云海-致力于HTML/CSS/JS/WEB开发</title>
+  <title>安望云海-致力于HTML/Home/CSS/JS/WEB开发</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
-  <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/IMG/favicon.ico">
+  <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
 <!--   导航栏样式表 -->
-  <link rel="stylesheet" href="/W3CAY/Public/CSS/layout.css"/>
+  <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
   </head>
   <body>
 <!-- 导航部分 -->
 <header>
  <a href="http://www.w3cay.com" class="title">
-   <i class="logo"><img src="/W3CAY/Public/IMG/logo.png" width="45px" height="45px"></i>
+   <i class="logo"><img src="/W3CAY/Public/Home/IMG/logo.png" width="45px" height="45px"></i>
    <i class="name"></i>
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
@@ -42,7 +42,7 @@
 
  
 <!--   首页样式表 -->
-   <link rel="stylesheet" href="/W3CAY/Public/CSS/home.css"/>
+   <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/home.css"/>
 <!-- Banner部分 -->
 <div class="ban">
   <div class="ban-con">
@@ -423,15 +423,15 @@
 </footer>
 
 <!--[if lt IE 9]>
-<script src="/W3CAY/Public/Js/jquery/jquery-1.11.2.js"></script>
+<script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
 <![endif]-->
 
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/W3CAY/Public/Js/jquery/jquery-2.1.3.js"></script>
+<script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
 <!--<![endif]-->
 
 <!--   首页Js引入文件 -->
-<script src="/W3CAY/Public/Js/home.js"></script>
-<script src="/W3CAY/Public/Js/layout.js"></script>
+<script src="/W3CAY/Public/Home/Js/home.js"></script>
+<script src="/W3CAY/Public/Home/Js/layout.js"></script>
 </body>
 </html>

@@ -1,0 +1,90 @@
+*{margin:0;padding:0;}
+  body{background:#FCFCFC;margin:auto;}
+    #rightdiv span{
+  display:block;
+  margin-top:20px;
+  }
+  #topdiv
+  {
+  background:#446FD6;
+
+  margin-bottom:30px;
+  height:80px;
+  }
+  #boxtop{
+    color:#FCFCFC;
+  font-family:微软雅黑;
+ height:45px;
+background:#446FD6;
+  text-align:center;
+  line-height:45px;
+  font-size:20px;
+  display:block;
+  }
+#toptitle{
+padding-top:20px;
+  font-family:方正综艺简体;
+  margin-left:200px;
+  width:210px;
+  height:50px;
+  font-size:35px;
+  color:#FCFCFC;
+  display:block;
+}
+  #condiv{
+  margin:auto;
+
+  width:943px;
+  height:510px;
+
+  }
+  #leftdiv{
+
+  width:600px;
+  height:500px;
+  float:left;
+  }
+  #rightdiv{
+  margin-left:50px;
+  width:280px;
+  height:450px;
+   float:left;
+background:#FCFCFC;
+  border:1px solid #C9BFBF;
+  box-shadow: 10px 10px 10px #888888;
+  }
+#showpic{
+   width:600px;
+  height:500px;
+}
+#adminpic{
+   width:25px;
+  height:25px;
+ position: relative;
+  right:15px;
+ top:5px;
+}
+
+  #input{
+
+  width:218px;
+  height:auto;
+  margin: 70px auto;
+  }
+#button{
+display:block;
+width:100px;
+
+ position: relative;
+ left:65px;
+ top:20px;
+}
+#code{
+ position: relative;
+  left:15px;
+ top:5px;
+}
+#bm{
+cursor:pointer;
+width:100px;height:20px;
+}

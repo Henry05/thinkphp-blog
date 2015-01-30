@@ -1,8 +1,8 @@
-//站名Hover
-$(function(){
-	$(".name").hover(function(){
-  $('.name').toggleClass("ename")});
-});
+// //站名Hover
+// $(function(){
+// 	$(".name").hover(function(){
+//   $('.name').toggleClass("ename")});
+// });
 
 //导航下拉效果
 
