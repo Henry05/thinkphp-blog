@@ -27,7 +27,12 @@ class LoginController extends Controller{
         }
         else
         	$_SESSION['a_name']=$a_name;
-            $this->success('成功！',U("Admin/Index/index"));
+            $this->redirect('Admin/Index/index');
 
     }
+    public function logout(){
+            session_unset();
+            session_destroy();
+            $this->redirect('Admin/Login/index');
+        }
 }

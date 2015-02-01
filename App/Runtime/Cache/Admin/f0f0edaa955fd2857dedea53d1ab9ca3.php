@@ -1,11 +1,12 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?> 
+<!DOCTYPE html>
 <html>
     <head>
         <title>管理登录界面</title>
-        <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Admin/CSS/index.css">
+        <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Admin/CSS/login.css">
     </head>
     <body>
-        <!-- <div class="admin">Admin</div> -->
+        <div class="admin">W3CAY后台管理</div>
         <div  class="box">
 
 
