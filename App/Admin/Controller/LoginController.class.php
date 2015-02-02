@@ -11,8 +11,8 @@ class LoginController extends Controller{
 		}
 
 	  public function login(){
-
-      
+        if(!IS_POST) halt('页面不存在！');//验证传输方式
+        
         $code=I('code');
     	if (!check_verify($code)) {
     	 	$this->error('验证码错误！');

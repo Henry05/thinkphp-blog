@@ -18,9 +18,10 @@ body {
     padding-top: 40px;
     background: transparent;
     color: #fff;
-    background-color:#57D8E6;
+    background-color:#7ED369;
     border-radius: 10px;
     box-shadow: 20px 20px 20px #35393C;
+    border: 3px solid #FFFFFF
 }
 .admin
 {
@@ -32,6 +33,17 @@ body {
     color: #fff;
     font-size: 30px;
     font-weight:100;
+
+}
+.admin-login-icon{
+    background:url('../IMG/admin_icon.png') no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px; 
+    position: relative;
+    top:2px;
+    right: 10px;    
+    display: inline-block;
 
 }
 

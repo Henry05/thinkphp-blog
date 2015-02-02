@@ -1,0 +1,6 @@
+[ 2015-02-02T19:04:06+08:00 ] ::1 /W3CAY/cay_admin
+ERR: _STORAGE_WRITE_ERROR_:./App/Runtime/Cache/Admin/9df924d9a2d217daa77a359c5bee0c33.php
+
+[ 2015-02-02T20:49:45+08:00 ] ::1 /W3CAY/index.php/cay_admin/Category/Noname1.html
+ERR: 非法操作:Noname1
+
