@@ -16,13 +16,13 @@
   <body>
 <!-- 导航部分 -->
 <header>
- <a href="http://www.w3cay.com" class="title">
+ <a href="http://w3cay.com" class="title">
    <i class="logo"><img src="/W3CAY/Public/Home/IMG/logo.png" width="45px" height="45px"></i>
    <i class="name"></i>
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
-      <li ><a href="http://w3cay.com/">首页</a></li>
-    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="#"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+      <li ><a href="http://localhost/W3CAY/">首页</a></li>
+    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/index.php/Home/Index/theme/topic/<?php echo ($v["c_value"]); ?>.html"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
         <li>
           <form class="search" role="search"> 
           <input type="text" class="search-input" placeholder="Search">
@@ -30,9 +30,6 @@
         </li>
    </ul></nav>
  </header>
-
-
- 
 <!--   首页样式表 -->
    <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/home.css"/>
 <!-- Banner部分 -->
@@ -404,11 +401,6 @@
   </div>
 
 </div>
-
-
-
-
-
 
 <footer class="footer">
   <p>© 2015 <a href="http://www.w3cay.com" target="_blank">安望云海|W3CAY</a> 
