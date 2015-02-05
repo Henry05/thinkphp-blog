@@ -16,21 +16,15 @@
   <body>
 <!-- 导航部分 -->
 <header>
- <a href="http://www.w3cay.com" class="title">
+ <a href="http://w3cay.com" class="title">
    <i class="logo"><img src="__PUBLIC__/Home/IMG/logo.png" width="45px" height="45px"></i>
    <i class="name"></i>
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
-        <li class="current"><a href="#">首页</a></li>    
-        <li ><a href="#">Html</a></li>
-        <li ><a href="#">CSS</a></li>
-        <li><a href="#">JS</a></li>
-        <li><a href="#">PHP</a></li>
-        <li><a href="#">MYSQL</a></li>
-        <li><a href="#">SEO</a></li>
-        <li><a href="#">杂谈</a></li>
-        <li><a href="#">资源</a></li>
-        <li><a href="#">关于我</a></li>
+      <li ><a href="http://w3cay.com/">首页</a></li>
+    <foreach name='cate' item='v' >
+          <li ><a href="#">{$v.c_name}</a></li>
+    </foreach>
         <li>
           <form class="search" role="search"> 
           <input type="text" class="search-input" placeholder="Search">

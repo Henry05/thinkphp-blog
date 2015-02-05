@@ -21,16 +21,8 @@
    <i class="name"></i>
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
-        <li class="current"><a href="#">首页</a></li>    
-        <li ><a href="#">Html</a></li>
-        <li ><a href="#">CSS</a></li>
-        <li><a href="#">JS</a></li>
-        <li><a href="#">PHP</a></li>
-        <li><a href="#">MYSQL</a></li>
-        <li><a href="#">SEO</a></li>
-        <li><a href="#">杂谈</a></li>
-        <li><a href="#">资源</a></li>
-        <li><a href="#">关于我</a></li>
+      <li ><a href="http://w3cay.com/">首页</a></li>
+    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="#"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
         <li>
           <form class="search" role="search"> 
           <input type="text" class="search-input" placeholder="Search">

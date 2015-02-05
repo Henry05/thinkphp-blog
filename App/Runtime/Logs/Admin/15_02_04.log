@@ -1,0 +1,9 @@
+[ 2015-02-04T19:17:10+08:00 ] ::1 /W3CAY/index.php/cay_admin/Category/Category/index
+ERR: 非法操作:Category
+
+[ 2015-02-04T19:19:00+08:00 ] ::1 /W3CAY/index.php/cay_admin/Category/Admin/Category/index
+ERR: 非法操作:Admin
+
+[ 2015-02-04T20:52:24+08:00 ] ::1 /W3CAY/index.php/cay_admin/Category/javascript=void(0)
+ERR: 非法操作:javascript=void(0)
+

@@ -6,10 +6,12 @@
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/CSS/index.css">
 
  <body>
+
 <header>
 	<span class="title"><i class="admin_icon"></i>W3CAY后台管理</span>
 	<a href="{:U('Admin/Login/logout')}" class="logout">退出<i class="logout-icon"></i></a>
 </header>
+
 <div class="contain">
 <div class="nav">
 	<ul class="menu">
@@ -17,20 +19,17 @@
 		<ul class='hid-ul'>
 		<li><a href='#'>系统参数</a></li>
 		<li><a href='#'>个人信息</a></li>
-		<li><a href='#'>清除缓存</a></li>
-		</ul>
-	</li>
-	<li id='li-2'><a class="aclick" href='#'>栏目管理</a>
-		<ul class='hid-ul'>
-		<li><a href="{:U('Admin/Category/index')}" target="show">前台栏目</a></li>
-		<li><a href='#'>个人信息</a></li>
+		
 		<li><a href='#'>清除缓存</a></li>
 		</ul>
 	</li>
 	<li id='li-3'><a class="aclick" href='#'>内容管理</a>
 		<ul class='hid-ul'>
+		<li><a href="{:U('Admin/Category/index')}" target="show">栏目管理</a></li>
 		<li><a href='#'>文章管理</a></li>
-		<li><a href='#'>清除缓存</a></li>
+		<li><a href='#'>评论管理</a></li>
+		<li><a href='#'>图片管理</a></li>
+		<li><a href='#'>文件管理</a></li>
 		</ul>
 	</li>
 	<li id='li-4'><a class="aclick" href='#'>扩展管理</a>
