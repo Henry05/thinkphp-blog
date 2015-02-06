@@ -20,12 +20,13 @@ a{
 　  color:#fff;
 　  background-color:rgba(255,255,255,0.15);
 	width: 1000px;
+	min-height: 500px;
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 10px;
 	display: block;
-	border-radius: 10px;
-	filter:alpha(Opacity=90); 
-	opacity: 0.9;
+	border-radius: 3px;
+/*	filter:alpha(Opacity=90); 
+	opacity: 0.9;*/
 }
 
 .article-title{
@@ -37,7 +38,7 @@ a{
 	font-size: 24px;
 }
 .article-detail{
-	width: 970px;
+	width: 900px;
 
 	display: block;
 	margin: auto;

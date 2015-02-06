@@ -1,5 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<link rel="stylesheet" type="text/css" href="/W3CAY/Public/Admin/CSS/content.css">
+<?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" type="text/css" href="/W3CAY/Public/Admin/CSS/public.css">
+<link rel="stylesheet" type="text/css" href="/W3CAY/Public/Admin/CSS/category.css">
 <form action="<?php echo U('Admin/Category/update');?>" method="post">
  <table class="table">
 	<tr>

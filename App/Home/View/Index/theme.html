@@ -1,15 +1,16 @@
 <include file="Public:header"/>
 <css href="__PUBLIC__/Home/CSS/theme.css"/>
 <div class="topic-container">
+	<foreach name='article' item='v'>
 	<div class="alist">	
-	<div  class="alist-title"><a href="#"><h4>2015年的API将成为这五方面的主力</h4></a></div>
-	<a href="#"><div class="alist-digest">Web API为今天的企业和负责构建推进事物前进技术的人们开放了许多新的远景。多年来，API一直是开发者用于构建和连接应用工具包中的一部分。现在Web API、或者可以通过互联网调用服务的接口将是一个新兴的场景——从物联网到数据分析到终端用户跟踪集成。SOA软件公司的Roberto Medrano已经发布了他对API将在15年做什么的想法：</div></a>
+	<div  class="alist-title"><a href="__MODULE__/Index/article/a_id/{$v.a_id}.html"><h4>{$v.a_title}</h4></a></div>
+	<a href="__MODULE__/Index/article/a_id/{$v.a_id}.html"><div class="alist-digest">{$v.a_content}</div></a>
 	<div class="alsit-attr">
-	<span>2015-2-5</span>	
+	<span>{$v.a_time}</span>	
 	</div>
 	</div>
-	<div class="alist">		</div>
-	<div class="alist">		</div>
-	<div class="alist">		</div>
+	</foreach>
+	
+	
 </div>
 <include file="Public:footer"/>

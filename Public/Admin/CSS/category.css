@@ -1,0 +1,16 @@
+
+
+
+/*栏目管理*/
+.td-title{
+	font-weight: bold;
+}
+.cate-td{
+
+	display: inline-table;
+	text-align: center;
+}
+.cate-op{
+	width: 300px;
+}
+

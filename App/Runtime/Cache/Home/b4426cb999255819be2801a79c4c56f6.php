@@ -22,7 +22,7 @@
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
       <li ><a href="http://localhost/W3CAY/">首页</a></li>
-    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/index.php/Home/Index/theme/topic/<?php echo ($v["c_value"]); ?>.html"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/index.php/Home/Index/theme/c_id/<?php echo ($v["c_id"]); ?>.html"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
         <li>
           <form class="search" role="search"> 
           <input type="text" class="search-input" placeholder="Search">
@@ -32,16 +32,15 @@
  </header>
 <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/theme.css" />
 <div class="topic-container">
-	<div class="alist">	
-	<div  class="alist-title"><a href="#"><h4>2015年的API将成为这五方面的主力</h4></a></div>
-	<a href="#"><div class="alist-digest">Web API为今天的企业和负责构建推进事物前进技术的人们开放了许多新的远景。多年来，API一直是开发者用于构建和连接应用工具包中的一部分。现在Web API、或者可以通过互联网调用服务的接口将是一个新兴的场景——从物联网到数据分析到终端用户跟踪集成。SOA软件公司的Roberto Medrano已经发布了他对API将在15年做什么的想法：</div></a>
+	<?php if(is_array($article)): foreach($article as $key=>$v): ?><div class="alist">	
+	<div  class="alist-title"><a href="/W3CAY/index.php/Home/Index/article/a_id/<?php echo ($v["a_id"]); ?>.html"><h4><?php echo ($v["a_title"]); ?></h4></a></div>
+	<a href="/W3CAY/index.php/Home/Index/article/a_id/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo ($v["a_content"]); ?></div></a>
 	<div class="alsit-attr">
-	<span>2015-2-5</span>	
+	<span><?php echo ($v["a_time"]); ?></span>	
 	</div>
-	</div>
-	<div class="alist">		</div>
-	<div class="alist">		</div>
-	<div class="alist">		</div>
+	</div><?php endforeach; endif; ?>
+	
+	
 </div>
 <footer class="footer">
   <p>© 2015 <a href="http://www.w3cay.com" target="_blank">安望云海|W3CAY</a> 

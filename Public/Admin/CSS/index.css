@@ -120,3 +120,17 @@ header{
 	left: 200px;
 
 	}
+
+
+/*Readme页面样式*/
+.readme{
+	padding-top: 50px;
+	display: inline-block;
+	width: 1150px;
+	text-align: center;
+	color: #4B4B4B;
+}
+.index_title{
+	display: block;
+	margin-bottom: 20px;
+}

@@ -15,12 +15,28 @@ class IndexController extends Controller {
     }
 
      public function theme(){
-        $topic=I('get.topic');
-        $this->display();
+
+          $c_id=I('get.c_id');
+          $article=M('article')->order('a_id DESC')->where("c_id=$c_id")->select();
+          foreach ($article as $key => $arr) {
+          $article[$key]['a_content']=mb_substr( $article[$key]['a_content'],0,200,'utf-8');
+          }
+          $this->assign('article',$article);
+          $this->display();
     }
      public function article(){
 
-        $this->display();
+          $a_id=I('get.a_id');
+          $article=M('article')->where("a_id=$a_id")->select();
+          $this->assign('article',$article['0']);
+          $this->display();
+    }
+         public function test(){
+
+
+      
+          
+
     }
 
 }
