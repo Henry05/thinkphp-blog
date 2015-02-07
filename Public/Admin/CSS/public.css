@@ -60,3 +60,57 @@ input{
 .btn:hover{
 	background: #F0E3E8;
 }
+
+/*分页样式*/
+
+.paging>div{
+	display: block;
+
+	width: 500px;
+	margin: auto;
+}
+.current{
+	  border: 1px solid #00DDDD;
+	  display: inline-block;
+	  text-align: center;
+	  height: 35px;
+	  width: 40px;
+	  line-height: 35px;
+	  margin-right: 5px;
+	  border-radius: 8px;
+	  background: #D0D0D0;
+}
+.prev,.next{
+	border: 1px solid #00DDDD;
+	font-size: 18px;
+	text-decoration: none;
+	display: inline-block;
+	 height: 35px;
+	  width: 40px;
+	   line-height: 35px;
+	   text-align: center;
+	color: #000;
+	 border-radius: 8px;
+}
+.prev:hover{
+	background: #00F4F4;
+}
+.next:hover{
+	background: #00F4F4;
+}
+.num{
+	  border: 1px solid #00DDDD;
+	  border-radius: 8px;
+	  text-decoration: none;
+	  color: #000;
+	  display: inline-block;
+	  line-height: 35px;
+	  text-align: center;
+	  height: 35px;
+	  width:40px;
+	  margin-right: 5px;
+}
+.num:hover{
+	background: #00F4F4;
+}
+

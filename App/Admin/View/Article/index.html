@@ -3,24 +3,26 @@
 <form action="{:U('Admin/Article/update')}" method="post">
  <table class="table">
 	<tr>
-		<th>ID</th> <th>标题</th> <th>日期</th> <th>操作</th>
+		<th>ID</th><th>栏目</th> <th>标题</th> <th>发布时间</th><th>修改时间</th> <th>操作</th>
 	</tr>
 	<foreach name='article' item='v'>
 	<tr >
 		<td >{$v.a_id}</td> 
+		<td >{$v.c_name}</td> 
 		<td >{$v.a_title}</td> 
 		<td >{$v.a_time}</td> 
+		<td >{$v.a_mtime}</td> 
 		<td >
-		<input  class="btn" type="submit" value="修改" />
-		<!-- 到此 -->
-		<a class="btn" href="__MODULE__/Category/delcate/c_id/{$v.c_id}" >删除</a>
+	<a class="btn" href="__ROOT__/article/{$v.a_id}"  target="_blank">查看</a>
+    <a class="btn" href="__MODULE__/Article/modify/a_id/{$v.a_id}" >修改</a>
+	<a class="btn" href="__MODULE__/Article/delarticle/a_id/{$v.a_id}" >删除</a>
 		</td> 
 	</tr>
 
 	</foreach>
 
  </table>
-
+<div class="paging">{$page}</div>
 </form>	
 
 

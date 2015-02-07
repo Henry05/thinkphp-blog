@@ -1,0 +1,56 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/CSS/article.css">
+
+<form action="{:U('Admin/Article/update')}" method="post">
+<table class="top-inp">
+		  <input id="this_c_id" type="hidden" value="{$article.c_id}"  />
+    <tr >
+			<td>栏目:
+			<select name="c_id">
+			<foreach name="cate" item="v">
+			<option id="{$v.c_id}" value="{$v.c_id}">{$v.c_name}</option>
+			</foreach>
+			</select>
+			</td> 
+      <input  type="hidden" name="a_id" value="{$article.a_id}" />
+		<td >标题：<input class="title" name="a_title" type="text" value="{$article.a_title}"  /></td
+		</tr>
+</table>
+<div class="editer">
+      <!-- 加载编辑器的容器 -->
+    <script id="container" name="a_content" type="text/plain">
+      {$article.a_content}
+    </script>
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container', {
+       autoHeight: false,
+       initialFrameWidth:900,  //初始化编辑器宽度,默认1000
+       initialFrameHeight:400,  //初始化编辑器高度,默认320
+
+     });
+    </script>
+</div>
+
+<input class="subtn" type="submit" value="发布" />
+</form>
+</body>
+<!--[if lt IE 9]>
+<script src="__PUBLIC__/Jquery/jquery-1.11.2.js"></script>
+<![endif]
+
+<!- -[if (gte IE 9)|!(IE)]><!-->
+<script src="__PUBLIC__/Jquery/jquery-2.1.3.js"></script>
+<!--<![endif]-->
+
+<!-- 获取selected栏目id -->
+<script type="text/javascript">
+ 
+  var cate_id = $("#this_c_id").val();
+  $('#'+cate_id).attr("selected","selected");
+
+</script>
+</html>

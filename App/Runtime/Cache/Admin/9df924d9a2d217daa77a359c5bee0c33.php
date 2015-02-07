@@ -4,7 +4,7 @@
 	<title>W3CAY后台管理</title>
 </head>
 <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Admin/CSS/index.css">
-
+<link rel="stylesheet" type="text/css" href="/W3CAY/Public/Admin/CSS/public.css">
  <body>
 
 <header>

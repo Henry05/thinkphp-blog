@@ -3,8 +3,8 @@
 <div class="topic-container">
 	<foreach name='article' item='v'>
 	<div class="alist">	
-	<div  class="alist-title"><a href="__MODULE__/Index/article/a_id/{$v.a_id}.html"><h4>{$v.a_title}</h4></a></div>
-	<a href="__MODULE__/Index/article/a_id/{$v.a_id}.html"><div class="alist-digest">{$v.a_content}</div></a>
+	<div  class="alist-title"><a href="__ROOT__/article/{$v.a_id}.html"><h4>{$v.a_title}</h4></a></div>
+	<a href="__ROOT__/article/{$v.a_id}.html"><div class="alist-digest">{$v.a_content|msubstr=###,0,200,'utf-8'}</div></a>
 	<div class="alsit-attr">
 	<span>{$v.a_time}</span>	
 	</div>

@@ -22,7 +22,7 @@
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
       <li ><a href="http://localhost/W3CAY/">首页</a></li>
-    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/index.php/Home/Index/theme/c_id/<?php echo ($v["c_id"]); ?>.html"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
         <li>
           <form class="search" role="search"> 
           <input type="text" class="search-input" placeholder="Search">
@@ -30,7 +30,17 @@
         </li>
    </ul></nav>
  </header>
+ <script src="/W3CAY/Public/Highlighter/shCore.js" type="text/javascript"></script>
+<link href="/W3CAY/Public/Highlighter/shCoreDefault.css"rel="stylesheet" type="text/css" >
+    <script type="text/javascript" language="javascript">
+        $(function(){
+            SyntaxHighlighter.all();
+        });
+    </script>
 <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/article.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.all();
+</script>
 <div class="article-container">
 	<div class="article">	
 	<div  class="article-title"><h4><?php echo ($article["a_title"]); ?></h4></div>

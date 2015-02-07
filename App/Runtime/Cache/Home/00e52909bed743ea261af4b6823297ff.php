@@ -22,7 +22,7 @@
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
       <li ><a href="http://localhost/W3CAY/">首页</a></li>
-    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/index.php/Home/Index/theme/c_id/<?php echo ($v["c_id"]); ?>.html"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
         <li>
           <form class="search" role="search"> 
           <input type="text" class="search-input" placeholder="Search">

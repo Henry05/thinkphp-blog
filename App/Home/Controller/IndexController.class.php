@@ -15,28 +15,28 @@ class IndexController extends Controller {
     }
 
      public function theme(){
-
-          $c_id=I('get.c_id');
-          $article=M('article')->order('a_id DESC')->where("c_id=$c_id")->select();
+          
+          $c_value=I('get.c_value');
+          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+          $article= $Aview->order('a_id DESC')->where("c_value='$c_value'")->select();
           foreach ($article as $key => $arr) {
-          $article[$key]['a_content']=mb_substr( $article[$key]['a_content'],0,200,'utf-8');
+          $article[$key]['a_content']=strip_tags($article[$key]['a_content']);
           }
           $this->assign('article',$article);
           $this->display();
     }
      public function article(){
-
+         
           $a_id=I('get.a_id');
           $article=M('article')->where("a_id=$a_id")->select();
           $this->assign('article',$article['0']);
           $this->display();
     }
          public function test(){
-
+            $Model =D("ArticleView"); // 实例化Articel视图model对象 
+            $article= $Model->order('a_id DESC')->select();
 
       
-          
-
-    }
+           }
 
 }

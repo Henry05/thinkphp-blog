@@ -14,4 +14,7 @@ return array(
     'DB_PORT'   => 3306, // 端口
     'DB_PREFIX' => 'cay_', // 数据库表前缀
     'DB_CHARSET'=> 'utf8', // 字符集
+
+
+   
 );

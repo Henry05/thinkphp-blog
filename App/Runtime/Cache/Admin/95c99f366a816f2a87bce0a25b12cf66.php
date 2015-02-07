@@ -26,7 +26,7 @@
        autoHeight: false,
        initialFrameWidth:900,  //初始化编辑器宽度,默认1000
        initialFrameHeight:400,  //初始化编辑器高度,默认320
-
+       indentValue:'4em',//首行缩进
      });
     </script>
 </div>

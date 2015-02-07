@@ -22,7 +22,7 @@
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
       <li ><a href="http://localhost/W3CAY/">首页</a></li>
-    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/index.php/Home/Index/theme/c_id/<?php echo ($v["c_id"]); ?>.html"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
         <li>
           <form class="search" role="search"> 
           <input type="text" class="search-input" placeholder="Search">
@@ -33,8 +33,8 @@
 <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/theme.css" />
 <div class="topic-container">
 	<?php if(is_array($article)): foreach($article as $key=>$v): ?><div class="alist">	
-	<div  class="alist-title"><a href="/W3CAY/index.php/Home/Index/article/a_id/<?php echo ($v["a_id"]); ?>.html"><h4><?php echo ($v["a_title"]); ?></h4></a></div>
-	<a href="/W3CAY/index.php/Home/Index/article/a_id/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo ($v["a_content"]); ?></div></a>
+	<div  class="alist-title"><a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><h4><?php echo ($v["a_title"]); ?></h4></a></div>
+	<a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,200,'utf-8')); ?></div></a>
 	<div class="alsit-attr">
 	<span><?php echo ($v["a_time"]); ?></span>	
 	</div>
