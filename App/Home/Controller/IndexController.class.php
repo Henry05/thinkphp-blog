@@ -11,7 +11,29 @@ class IndexController extends Controller {
      }
     //
      public function index(){
-        $this->display();
+          
+          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+
+          $last= $Aview->order('a_id DESC')->select();
+          foreach ($last as $key => $arr) {
+          $last[$key]['a_content']=strip_tags($last[$key]['a_content']);
+          $last[$key]['color']= randColor();
+          }
+          $this->assign('last',$last);
+
+
+          $hot= $Aview->order('a_id ASC')->select();
+          foreach ($hot as $key => $arr) {
+          $hot[$key]['a_content']=strip_tags($hot[$key]['a_content']);
+          $hot[$key]['color']= randColor();
+          }
+
+
+          $this->assign('hot',$hot);
+
+       
+
+          $this->display();
     }
 
      public function theme(){

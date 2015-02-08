@@ -57,3 +57,14 @@
          return $slice;
 
     }
+
+
+/**
+*     生成随机颜色
+*/
+  function randColor(){
+    $arr=array('D6C2F8','9BE695','D6E4B4','8FEF8F','EFD578','B8B6FC','FABF7E');  
+    shuffle($arr);   
+    return array_shift($arr);
+             
+          }
