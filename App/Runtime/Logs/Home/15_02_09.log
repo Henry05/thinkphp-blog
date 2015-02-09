@@ -1,0 +1,1448 @@
+[ 2015-02-09T11:46:56+08:00 ] ::1 /W3CAY/Index/returnlist
+ERR: 非法操作:returnlist
+
+[ 2015-02-09T11:57:30+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004053s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0697s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0336s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0376s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0494s ]
+
+[ 2015-02-09T11:59:13+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003601s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0457s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0326s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0374s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0494s ]
+
+[ 2015-02-09T12:09:14+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004636s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1230s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0995s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0494s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1146s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 45 行.
+NOTIC: [8] Object of class Home\Controller\IndexController to string conversion F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 45 行.
+
+[ 2015-02-09T12:09:36+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008420s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0982s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0549s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0928s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 45 行.
+NOTIC: [8] Object of class Home\Controller\IndexController to string conversion F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 45 行.
+
+[ 2015-02-09T12:09:43+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003961s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0585s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0374s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0442s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0988s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 45 行.
+NOTIC: [8] Object of class Home\Controller\IndexController to string conversion F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 45 行.
+
+[ 2015-02-09T12:10:01+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004007s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0739s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0509s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0489s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1204s ]
+
+[ 2015-02-09T12:10:14+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003903s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0559s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0369s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1199s ]
+
+[ 2015-02-09T12:11:03+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003586s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0453s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0357s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0377s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0497s ]
+
+[ 2015-02-09T12:27:35+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004046s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0456s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+
+[ 2015-02-09T12:27:46+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005264s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0592s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0015s ]
+NOTIC: [8] Use of undefined constant ssssss - assumed 'ssssss' F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 45 行.
+
+[ 2015-02-09T12:58:24+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015946s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0721s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+ERR: 非法操作:returnlist.php
+
+[ 2015-02-09T12:59:03+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004145s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0521s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0015s ]
+ERR: 非法操作:returnlist.php
+
+[ 2015-02-09T13:00:42+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022726s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2598s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0030s ]
+ERR: 非法操作:returnlist.php
+
+[ 2015-02-09T13:02:12+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003940s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2360s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0018s ]
+ERR: 非法操作:returnlist.php
+
+[ 2015-02-09T13:03:00+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004424s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2387s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0024s ]
+ERR: 非法操作:returnlist.php
+
+[ 2015-02-09T13:03:57+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.040225s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 74 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1798s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0057s ]
+NOTIC: [8] Use of undefined constant ssssss - assumed 'ssssss' F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 45 行.
+
+[ 2015-02-09T13:04:56+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008276s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0859s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1369s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1537s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2158s ]
+
+[ 2015-02-09T13:05:01+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005032s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0537s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0369s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0407s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0508s ]
+
+[ 2015-02-09T13:05:09+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006293s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1162s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0674s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1409s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2635s ]
+
+[ 2015-02-09T13:05:14+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003970s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2049s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0733s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0840s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1601s ]
+
+[ 2015-02-09T13:07:25+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004797s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2096s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1752s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1635s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2134s ]
+
+[ 2015-02-09T13:09:30+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026555s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1400s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1892s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1173s ]
+
+[ 2015-02-09T13:11:19+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004344s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.4747s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0583s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0974s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0814s ]
+
+[ 2015-02-09T13:12:03+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035179s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2189s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.2556s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1960s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0995s ]
+
+[ 2015-02-09T13:13:12+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028303s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.3232s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.2441s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1733s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1089s ]
+
+[ 2015-02-09T13:13:59+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004504s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1201s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0817s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0969s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1605s ]
+
+[ 2015-02-09T13:14:11+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003949s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2296s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1190s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1961s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0066s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2892s ]
+
+[ 2015-02-09T13:14:35+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004219s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1609s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1293s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1837s ]
+
+[ 2015-02-09T13:15:48+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003998s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2090s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1079s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1962s ]
+
+[ 2015-02-09T13:15:58+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005921s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1558s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1410s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1955s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1976s ]
+
+[ 2015-02-09T13:17:48+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.051955s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0984s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.3170s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1670s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0065s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1207s ]
+
+[ 2015-02-09T13:18:13+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004837s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2997s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0451s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0984s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2269s ]
+
+[ 2015-02-09T13:18:55+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003861s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2304s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0611s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0979s ]
+
+[ 2015-02-09T13:20:23+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.043158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.045817s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2266s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0915s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1677s ]
+
+[ 2015-02-09T13:20:58+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005145s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2784s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1491s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2270s ]
+
+[ 2015-02-09T13:21:28+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011661s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.3167s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1829s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0973s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1534s ]
+
+[ 2015-02-09T13:22:18+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004749s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.3684s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1784s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0793s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0782s ]
+
+[ 2015-02-09T13:22:45+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.047334s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2285s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0748s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1843s ]
+
+[ 2015-02-09T13:28:27+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.061525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.063496s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1603s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0958s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0756s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1918s ]
+
+[ 2015-02-09T13:30:41+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004828s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2392s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.2316s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1541s ]
+
+[ 2015-02-09T13:36:08+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037840s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2810s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1665s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1520s ]
+
+[ 2015-02-09T13:37:54+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005319s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1904s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1680s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1641s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1683s ]
+
+[ 2015-02-09T13:38:37+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015626s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1322s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1224s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1123s ]
+
+[ 2015-02-09T13:39:07+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005141s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2271s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.2024s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1221s ]
+
+[ 2015-02-09T13:39:38+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004464s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2078s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0849s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2124s ]
+
+[ 2015-02-09T13:40:17+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018940s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2113s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0968s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0991s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2587s ]
+
+[ 2015-02-09T13:41:16+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005196s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1524s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0745s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1427s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1863s ]
+
+[ 2015-02-09T13:41:24+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004693s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2049s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.2094s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1482s ]
+
+[ 2015-02-09T13:41:37+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005306s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1313s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1241s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1908s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1290s ]
+
+[ 2015-02-09T13:42:19+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004960s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2130s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1717s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1555s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0969s ]
+
+[ 2015-02-09T13:42:28+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006122s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1414s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0848s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1385s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0935s ]
+
+[ 2015-02-09T13:43:20+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014637s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1961s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1782s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1443s ]
+
+[ 2015-02-09T13:43:58+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003789s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2436s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0584s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0797s ]
+
+[ 2015-02-09T13:44:23+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003993s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2456s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.2068s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1810s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2352s ]
+
+[ 2015-02-09T13:44:36+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005317s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2347s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1501s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1968s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1546s ]
+
+[ 2015-02-09T13:45:42+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004337s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1660s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0615s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1833s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2158s ]
+
+[ 2015-02-09T13:46:53+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014949s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2087s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0685s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1824s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1942s ]
+
+[ 2015-02-09T13:47:36+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022419s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1824s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0962s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1481s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2916s ]
+
+[ 2015-02-09T13:49:03+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036535s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1022s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0957s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1791s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0755s ]
+
+[ 2015-02-09T13:49:51+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.050008s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1434s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0839s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1631s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1211s ]
+
+[ 2015-02-09T13:50:23+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004209s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2740s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.5680s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.4381s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1512s ]
+
+[ 2015-02-09T13:51:02+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006253s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.3426s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0936s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0910s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.8709s ]
+
+[ 2015-02-09T13:51:26+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004894s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1779s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1588s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2651s ]
+
+[ 2015-02-09T13:51:53+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033144s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2688s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1157s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0967s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1134s ]
+
+[ 2015-02-09T13:52:38+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046940s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1365s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1254s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0776s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0660s ]
+
+[ 2015-02-09T13:53:10+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004197s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0947s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0623s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1172s ]
+
+[ 2015-02-09T13:53:32+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020146s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1455s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1357s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1479s ]
+
+[ 2015-02-09T13:53:38+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004005s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1989s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1039s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1370s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1631s ]
+
+[ 2015-02-09T13:54:03+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004321s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1645s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0878s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1639s ]
+
+[ 2015-02-09T13:56:17+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017068s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.3134s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.2500s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0688s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0861s ]
+
+[ 2015-02-09T13:56:48+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017951s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0842s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0970s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1677s ]
+
+[ 2015-02-09T13:57:49+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005327s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1973s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0930s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1542s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2939s ]
+
+[ 2015-02-09T13:59:04+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021216s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2060s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0889s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0759s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1828s ]
+
+[ 2015-02-09T13:59:29+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004581s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1313s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1507s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1668s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0925s ]
+
+[ 2015-02-09T13:59:44+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003829s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1538s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0775s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1647s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1860s ]
+
+[ 2015-02-09T14:00:18+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007781s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2335s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1187s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1573s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1340s ]
+
+[ 2015-02-09T14:01:21+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029147s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1893s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0794s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0987s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1074s ]
+
+[ 2015-02-09T14:01:41+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003857s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2687s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1365s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1688s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0181s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2523s ]
+
+[ 2015-02-09T14:02:00+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003967s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1762s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0711s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1332s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0844s ]
+
+[ 2015-02-09T14:03:19+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013091s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1353s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0651s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0902s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1390s ]
+
+[ 2015-02-09T14:05:23+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014675s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1579s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0611s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0675s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2662s ]
+
+[ 2015-02-09T14:07:14+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020776s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2834s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.2495s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1586s ]
+
+[ 2015-02-09T14:07:24+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016768s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0649s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1040s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1585s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0172s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2174s ]
+
+[ 2015-02-09T14:07:51+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005448s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0875s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0583s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0488s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2927s ]
+
+[ 2015-02-09T14:09:49+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004837s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2138s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0778s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0900s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1704s ]
+
+[ 2015-02-09T14:10:50+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015391s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1523s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0965s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2277s ]
+
+[ 2015-02-09T14:11:07+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003953s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1924s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1191s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2189s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2554s ]
+
+[ 2015-02-09T14:11:58+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011425s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1169s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1172s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0923s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1014s ]
+
+[ 2015-02-09T14:12:15+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019208s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1684s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1937s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1633s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1631s ]
+
+[ 2015-02-09T14:12:29+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004142s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1899s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1647s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2423s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2452s ]
+
+[ 2015-02-09T14:13:01+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004229s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1861s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1814s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1953s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1844s ]
+
+[ 2015-02-09T14:13:23+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005683s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1823s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1277s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1641s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0962s ]
+
+[ 2015-02-09T14:13:47+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005773s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1732s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0761s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0923s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1235s ]
+
+[ 2015-02-09T14:14:11+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009740s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1420s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0984s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1394s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1524s ]
+
+[ 2015-02-09T14:14:43+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003638s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0499s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0351s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0396s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0991s ]
+
+[ 2015-02-09T14:14:47+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006784s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0472s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0347s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0393s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0497s ]
+
+[ 2015-02-09T14:14:51+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003688s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1114s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0347s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0395s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0521s ]
+
+[ 2015-02-09T14:14:55+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003913s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0345s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0393s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0505s ]
+
+[ 2015-02-09T14:14:59+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005585s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0473s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0344s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0399s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1221s ]
+
+[ 2015-02-09T14:15:34+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004464s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1978s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0752s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1623s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1988s ]
+
+[ 2015-02-09T14:15:47+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004257s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1988s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0855s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2591s ]
+
+[ 2015-02-09T14:16:12+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015048s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2319s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1456s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0970s ]
+
+[ 2015-02-09T14:16:45+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025991s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2097s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0910s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1412s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0858s ]
+
+[ 2015-02-09T14:17:52+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029427s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1793s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0696s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1541s ]
+
+[ 2015-02-09T14:18:24+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.036971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038889s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1172s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0976s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0840s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1369s ]
+
+[ 2015-02-09T14:18:55+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003969s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1749s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0871s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1299s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1591s ]
+
+[ 2015-02-09T14:19:07+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004739s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1781s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0943s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1388s ]
+
+[ 2015-02-09T14:19:27+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005504s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1204s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0629s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1968s ]
+
+[ 2015-02-09T14:19:54+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005862s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2396s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0677s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0999s ]
+
+[ 2015-02-09T14:20:26+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019731s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1973s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0715s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2754s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1838s ]
+
+[ 2015-02-09T14:21:00+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004034s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1341s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0819s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1030s ]
+
+[ 2015-02-09T14:21:14+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004419s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2519s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0656s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2700s ]
+
+[ 2015-02-09T14:21:37+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008409s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0577s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0880s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1806s ]
+
+[ 2015-02-09T14:21:55+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009345s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2245s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1035s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1630s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2775s ]
+
+[ 2015-02-09T14:22:03+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003915s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1011s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0725s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1225s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1933s ]
+
+[ 2015-02-09T14:22:13+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004275s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1393s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0853s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1488s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2391s ]
+
+[ 2015-02-09T14:24:56+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004571s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1349s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0838s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0955s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1327s ]
+
+[ 2015-02-09T14:25:38+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005776s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2677s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.2078s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2302s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1469s ]
+
+[ 2015-02-09T14:25:57+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025694s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 75 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1282s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0654s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0957s ]
+
+[ 2015-02-09T14:32:39+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.054641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.056575s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1861s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0194s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1308s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.2212s ]
+
+[ 2015-02-09T14:37:51+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004239s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.0351s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.0396s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.0551s ]
+
+[ 2015-02-09T14:39:36+08:00 ] ::1 /W3CAY/index.php/Home/Index/returnlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019823s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::theme() should be compatible with that of Think\Controller::theme() F:\wamp\www\W3CAY\App\Home\Controller\IndexController.class.php 第 61 行.
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.1136s ]
+SQL: SELECT * FROM `cay_cate` ORDER BY c_sort ASC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cay_article` [ RunTime:0.1111s ]
+SQL: SHOW COLUMNS FROM `cay_cate` [ RunTime:0.2506s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Article.a_id AS a_id,Article.a_title AS a_title,Article.a_content AS a_content,Article.a_time AS a_time,Article.a_mtime AS a_mtime,Article.c_id AS c_id,Cate.c_id AS cate_id,Cate.c_name AS c_name,Cate.c_value AS c_value FROM cay_article Article  JOIN cay_cate Cate ON Article.c_id=Cate.c_id ORDER BY Article.a_id DESC  [ RunTime:0.1933s ]
+

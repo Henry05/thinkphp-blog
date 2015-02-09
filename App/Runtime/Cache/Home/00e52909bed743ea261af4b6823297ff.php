@@ -32,6 +32,9 @@
  </header>
 <!--   首页样式表 -->
 <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/home.css"/>
+
+
+
 <!-- Banner部分 -->
 <div class="ban">
     <div class="ban-con">
@@ -52,7 +55,7 @@
     </div>
     <!--   最新 -->
     <div class="lastlist">
-        <?php if(is_array($last)): foreach($last as $key=>$v): ?><div class="alist"  >
+     <!--    <?php if(is_array($last)): foreach($last as $key=>$v): ?><div class="alist"  >
             <div class="alist-icon" style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;background-size:100px 100px;"></div>
             <div class="alist-con">
                 <div  class="alist-title">
@@ -63,22 +66,42 @@
                 </a></div>
                 <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,200,'utf-8')); ?></div></a>
             </div>
-        </div><?php endforeach; endif; ?>
-    </div>
+        </div><?php endforeach; endif; ?> -->
+   <div class="last"> 
+    <div id="more">
+      <div class="single_item">
+      <div class="alist-icon" style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;background-size:100px 100px;"></div>
+      <div class="alist-con" >
+      <span>
+         <div class="a_time"> </div>
+         <div class="a_title"></div>
+      </span>
+        
+         <div class="a_content"></div>
+      </div>
+        </div>
+       <a href="javascript:;" class="get_more">::点击加载更多内容::</a>
+  </div> 
+ </div>
+</div>
+
     <!-- 最热 -->
     <div class="hotlist">
-        <?php if(is_array($hot)): foreach($hot as $key=>$v): ?><div class="alist" ">
-            <div class="alist-icon"  style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;background-size:100px 100px;"></div>
+        <div id="more">
+      <div class="single_item">
+      <div class="alist-icon" style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;background-size:100px 100px;"></div>
       <div class="alist-con" >
-                <div  class="alist-title">
-                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
+      <span>
+         <div class="a_time"> </div>
+         <div class="a_title"></div>
+      </span>
+        
+         <div class="a_content"></div>
+      </div>
+        </div>
+       <a href="javascript:;" class="get_more">::点击加载更多内容::</a>
+  </div> 
 
-                    <span>[<?php echo ($v["a_time"]); ?>]</span>
-                    <h3 ><?php echo ($v["a_title"]); ?></h3>
-                </a></div>
-                <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,200,'utf-8')); ?></div></a>
-            </div>
-        </div><?php endforeach; endif; ?>
     </div>
 </div>
 <footer class="footer">
@@ -96,6 +119,7 @@
 <!--   首页Js引入文件 -->
 <script src="/W3CAY/Public/Home/Js/home.js"></script>
 <script src="/W3CAY/Public/Home/Js/layout.js"></script>
+<script src="/W3CAY/Public/Jquery/jquery.more.js"></script>
 </body>
 </html>
 <script type="text/javascript">
@@ -117,5 +141,10 @@
      $(".content").css("background","#CDE2F8");
     $(".ban").css("background","#C7C7F3");
     });
+
+
+   $(function(){
+    $('#more').more({'address': '/W3CAY/index.php/Home/Index/returnlist'})
+  });
 
 </script>

@@ -42,9 +42,10 @@ a{
 .content
 {
 	z-index: 20;
-	background: #CDE2F8;/*#F3F3F3;*/
+	background: #00FFFF;/*#F3F3F3;*/
 	position: relative;
-
+	padding-bottom: 50px;
+	min-height: 600px;
 
 }
 .tab{
@@ -55,15 +56,15 @@ a{
 	display: block;
 }
 #last{
-	float: left;	
+
 }
 #hot{	
 	float: right;	
 	color: red;
 }
 .on{
-	background: #CDE2F8;
-	box-shadow:  0px 0px 20px  #737171;
+	background: #00FFFF;
+	box-shadow:  0px 0px 1px  #737171;
 	z-index: 5;
 
 
@@ -71,7 +72,7 @@ a{
 .off{
 	background: #F3F3F3;
 	z-index: 0;
-	box-shadow:  0px 0px 20px #737171;
+	box-shadow:  0px 0px 0px #737171;
 }
 
 .tab-box{
@@ -99,33 +100,14 @@ a{
 	max-width: 990px;
 	width:85%;
 	height: 130px;
-/*	border-radius: 3px;*/
+	border-radius: 3px;
 	box-shadow: 5px 5px 20px #C0C0C0;
 	margin: auto;
 	margin-top: 10px;
 	display: block;
 }
-.alist-icon{
-	width: 10%;
-	height: 80%;
-	float: left;
-	margin: 15px ;
-	margin-left: 25px;
-	border-radius: 65px;
-	z-index: 2;
-	
-}
-.alist-con{
 
-	width: 85%;
-	height: 100%;
-	float: right;
-	box-sizing:border-box;
-	padding: 5px;
-	z-index: 0;
-/*	box-shadow: 5px 5px 5px #C0C0C0;*/
 
-}
 
 .alist-title{
 
@@ -155,6 +137,65 @@ a{
 	line-height: 28px;
 	overflow: hidden;
 }
+/*更多功能*/
+
+#more{
+	width: 70%; 
+
+	 margin: auto;
+
+	}     
+
+.single_item{
+	
+	width: 100%;
+	background: #fff;
+	height: 130px;
+	margin-top:20px;
+	 border-bottom: 1px dotted #d3d3d3;
+	 border: 1px solid;
+	}
+
+.alist-con{
+   display: inline-block;
+    width:80%; 
+    height: 130px;
+    border: 1px solid;
+    float: right;
+
+}
+
+.alist-icon{
+	display: inline-block;
+	border: 1px solid;
+	width: 13%;
+	height: 98%;
+	 float: left;
+    border-radius: 65px;
+    margin-left: 5px;
+}
+.a_time{
+	display: inline-block;
+}
+.a_title{
+	display: inline-block;
+}
+.a_content{
+	border: 1px solid;
+}  
+
+.get_more{
+	margin:10px; 
+	text-align:center
+}
+.more_loader_spinner{
+	width:20px; 
+	height:20px;
+	 margin:10px auto; 
+	 background: url(loader.gif) no-repeat;
+	}
+
+
 
 
 .con-4
