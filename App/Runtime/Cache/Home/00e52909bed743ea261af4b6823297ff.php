@@ -31,28 +31,203 @@
    </ul></nav>
  </header>
 <!--   首页样式表 -->
+<<<<<<< HEAD
 <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/home.css"/>
 
 
 
+=======
+   <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/home.css"/>
+>>>>>>> parent of c70679e... 修改首页样式
 <!-- Banner部分 -->
 <div class="ban">
-    <div class="ban-con">
-        <div class="ban-pic"></div>
-        <div class="ban-slogan" >
-            <h2>{ 致力于HTML/CSS/JS/WEB开发 }</h2>
-            <p>
-            不愿成为知识的过客，记录和分享我的WEB开发经验与技巧，发挥共享的力量，只为创造出激动人心的网页！
-            </p>
-        </div>
+  <div class="ban-con">
+    <div class="ban-pic"></div>
+    <div class="ban-slogan" >
+      <h2>{ 致力于Html/Css/Js/WEB开发 }</h2>
+      <p>
+        不愿成为知识的过客，记录和分享我的WEB开发经验与技巧，发挥共享的力量，只为创造出激动人心的网页！
+      </p>
     </div>
+  </div>
 </div>
 <!-- 内容部分 -->
 <div class="content">
-    <div class="tab">
-        <a id="last" class="tab-box on" href="#">最新</a>
-        <a id="hot" class="tab-box off" href="#">最热</a>
+  
+   <!-- 大于1180px部分 -->
+  <div class="con-4">
+
+    <div class="sec-box">
+        <div class="list-block">
+
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+
+          <p class="block-title">
+           Amaze UI 采用业内先进的 mobile first
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="ablock-icon"></i>
+           PHP
+          </span>
+
+          <p class="block-title">
+           Amaze UI 含近 20 个 CSS 组件、10 个 JS 组件
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            PHP
+          </span>
+
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+           解决中文排版优化问题解决中文排版优化问题
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+          Html
+          </span>
+
+          <p class="block-title">
+          Amaze UI 非常注重性能，基于轻量的 Zepto.js 开发
+          </p>
+        </div>
     </div>
+
+        <div class="sec-box">
+        <div class="list-block">
+
+          <span class="block-type">
+            <i class="block-icon"></i>
+          Html
+          </span>
+
+          <p class="block-title">
+           Amaze UI 采用业内先进的 mobile first
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Javascript
+          </span>
+
+          <p class="block-title">
+           Amaze UI 含近 20 个 CSS 组件、10 个 JS 组件
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+         Javascript
+          </span>
+
+          <p class="block-title">
+          Amaze UI 非常注重性能，基于轻量的 Zepto.js 开发
+          </p>
+        </div>
+    </div>
+        <div class="sec-box">
+        <div class="list-block">
+
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+
+          <p class="block-title">
+           Amaze UI 采用业内先进的 mobile first
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="ablock-icon"></i>
+            Javascript
+          </span>
+
+          <p class="block-title">
+           Amaze UI 含近 20 个 CSS 组件、10 个 JS 组件
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            PHP
+          </span>
+
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+         Javascript
+          </span>
+
+          <p class="block-title">
+          Amaze UI 非常注重性能，基于轻量的 Zepto.js 开发
+          </p>
+        </div>
+    </div>
+  </div>
+
+   <!-- 小于1180px部分 -->
+  <div class="con-3">
+
+    <div class="sec-box">
+
+        <div class="list-block">
+          <span class="block-type">
+            <i class="ablock-icon"></i>
+           PHP
+          </span>
+
+          <p class="block-title">
+           Amaze UI 含近 20 个 CSS 组件、10 个 JS 组件
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            PHP
+          </span>
+
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+           解决中文排版优化问题解决中文排版优化问题
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+          Html
+          </span>
+
+          <p class="block-title">
+          Amaze UI 非常注重性能，基于轻量的 Zepto.js 开发
+          </p>
+        </div>
+    </div>
+<<<<<<< HEAD
     <!--   最新 -->
     <div class="lastlist">
      <!--    <?php if(is_array($last)): foreach($last as $key=>$v): ?><div class="alist"  >
@@ -102,8 +277,190 @@
        <a href="javascript:;" class="get_more">::点击加载更多内容::</a>
   </div> 
 
+=======
+
+        <div class="sec-box">
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Javascript
+          </span>
+
+          <p class="block-title">
+           Amaze UI 含近 20 个 CSS 组件、10 个 JS 组件
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+         Javascript
+          </span>
+
+          <p class="block-title">
+          Amaze UI 非常注重性能，基于轻量的 Zepto.js 开发
+          </p>
+        </div>
     </div>
+        <div class="sec-box">
+        <div class="list-block">
+          <span class="block-type">
+            <i class="ablock-icon"></i>
+            Javascript
+          </span>
+
+          <p class="block-title">
+           Amaze UI 含近 20 个 CSS 组件、10 个 JS 组件
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            PHP
+          </span>
+
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+         Javascript
+          </span>
+
+          <p class="block-title">
+          Amaze UI 非常注重性能，基于轻量的 Zepto.js 开发
+          </p>
+        </div>
+>>>>>>> parent of c70679e... 修改首页样式
+    </div>
+  </div>
+
+   <!-- 小于990px部分 -->
+  <div class="con-2">
+    <div class="sec-box">
+       
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+         Javascript
+          </span>
+
+          <p class="block-title">
+          Amaze UI 非常注重性能，基于轻量的 Zepto.js 开发
+          </p>
+        </div>
+    </div>
+     <div class="sec-box">
+       
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+         Javascript
+          </span>
+
+          <p class="block-title">
+          Amaze UI 非常注重性能，基于轻量的 Zepto.js 开发
+          </p>
+        </div>
+    </div>
+     <div class="sec-box">
+     
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            PHP
+          </span>
+
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+         Javascript
+          </span>
+
+          <p class="block-title">
+          Amaze UI 非常注重性能，基于轻量的 Zepto.js 开发
+          </p>
+        </div>
+    </div>
+  </div>
+
+    <!-- 小于685px部分 -->
+  <div class="con-1">
+        <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+                <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+                <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+                <div class="list-block">
+          <span class="block-type">
+            <i class="block-icon"></i>
+            Html
+          </span>
+          <p class="block-title">
+           相比国外的前端框架，Amaze UI 专注解决中文排版优化问题
+          </p>
+        </div>
+  </div>
+
 </div>
+
 <footer class="footer">
   <p>© 2015 <a href="http://www.w3cay.com" target="_blank">安望云海|W3CAY</a> 
 </footer>
@@ -121,6 +478,7 @@
 <script src="/W3CAY/Public/Home/Js/layout.js"></script>
 <script src="/W3CAY/Public/Jquery/jquery.more.js"></script>
 </body>
+<<<<<<< HEAD
 </html>
 <script type="text/javascript">
 
@@ -148,3 +506,6 @@
   });
 
 </script>
+=======
+</html>
+>>>>>>> parent of c70679e... 修改首页样式

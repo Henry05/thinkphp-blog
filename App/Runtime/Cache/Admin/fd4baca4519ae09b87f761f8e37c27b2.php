@@ -19,7 +19,7 @@
 		<input name="c_sort" class="inp"  type="hidden"  disabled="disabled" value="<?php echo ($v["c_sort"]); ?>" /></td> 
 
 		<td class="cate-td"><?php echo ($v["c_value"]); ?>
-		<input name="c_value" class="inp" id="thisid" type="hidden" disabled="disabled"  value="<?php echo ($v["c_value"]); ?>"></td> 
+		<input name="c_id" class="inp" id="thisid" type="hidden" disabled="disabled"  value="<?php echo ($v["c_value"]); ?>"></td> 
 
 		<td class="cate-td">
 		    <input class="btn update"  type="button" value="修改" />

@@ -11,6 +11,7 @@ class IndexController extends Controller {
      }
     //
      public function index(){
+<<<<<<< HEAD
           
           $Aview =D("ArticleView"); // 实例化Articel视图model对象 
           $last = $Aview->order('a_id DESC')->select();
@@ -18,6 +19,9 @@ class IndexController extends Controller {
           $this->assign('last',$last);
           $this->assign('hot',$hot);
           $this->display();
+=======
+        $this->display();
+>>>>>>> parent of c70679e... 修改首页样式
     }
        
       public  function returnlist()
