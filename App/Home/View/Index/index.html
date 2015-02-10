@@ -58,9 +58,15 @@
         </foreach>
 
     </div>
+     <div class="lastShow"  ></div>
+     <div class="hotShow"  ></div>
+     <div class="showload"  ></div>
 </div>
 
+    
+        
 
+<ul class="show">  </ul>
 
 <include file="Public:footer"/>
 <script type="text/javascript">
@@ -72,6 +78,8 @@
      $(".hotlist").css("display","block");
      $(".content").css("background","#C5F0A8");
     $(".ban").css("background","#E3BE66");
+    $(".lastShow").css("display","none");
+     $(".hotShow").css("display","block");
     });
 
     $("#last").click(function(){
@@ -81,10 +89,51 @@
      $(".lastlist").css("display","block");
      $(".content").css("background","#CDE2F8");
     $(".ban").css("background","#C7C7F3");
+      $(".lastShow").css("display","block");
+     $(".hotShow").css("display","none");
     });
 
-      // $(function(){
-      //     $(".json").load("__URL__/return_alsit","a_id");
-      // });
+$(function(){
+        var firstnum=0; 
+        var hotnum=0;
+        $(document).ajaxStart(function(){
+         $(".lastShow").css("display","none");
+          $(".showload").css("display","block");
+            });
+        $(document).ajaxStop(function(){
+              $(".lastShow").css("display","block");
+          $(".showload").css("display","none");
+            });
+
+        $(".lastShow").bind("click",function(){
+                 
+                 firstnum+=4;
+                 var num='firstnum='+firstnum; 
+                 $.ajax({
+                          type:'get',
+                          cache:false,
+                          data:num,
+                          url: "__URL__/return_alist",            
+                          success: function(msg){
+                          $(".lastlist").append(msg);}
+
+                 });       
+       });
+
+            $(".hotShow").bind("click",function(){
+                 
+                 hotnum+=4;
+                 var num='hotnum='+hotnum; 
+                 $.ajax({
+                          type:'get',
+                          cache:false,
+                          data:num,
+                          url: "__URL__/return_hot",            
+                          success: function(msg){
+                          $(".hotlist").append(msg);}
+
+                 });       
+       });
+ });
   
 </script>

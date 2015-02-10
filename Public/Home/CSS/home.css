@@ -44,7 +44,7 @@ a{
 	z-index: 20;
 	background: #CDE2F8;/*#F3F3F3;*/
 	position: relative;
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 
 
 }
@@ -157,12 +157,82 @@ a{
 	overflow: hidden;
 }
 
-/*分页样式*/
-.page{
-	border: 1px solid;
+.lastShow{
+	cursor: pointer;
+
 	display: block;
-	margin: 20px auto;
+	width: 300px;
+	margin: auto;
+	height: 150px;
+
+	background:url(../IMG/more.png) no-repeat;
+	background-size: 300px 100px ;
+	background-position: 0px 50px;
+    animation:myfirst 3s infinite;
+     -moz-animation:myfirst 3s infinite; 
+     -webkit-animation:myfirst 3s infinite; 
+     -o-animation:myfirst 3s infinite;
 }
+.hotShow{
+	cursor: pointer;
+
+	display: none;
+	width: 300px;
+	margin: auto;
+	height: 150px;
+
+	background:url(../IMG/more.png) no-repeat;
+	background-size: 300px 100px ;
+	background-position: 0px 50px;
+    animation:myfirst 3s infinite;
+     -moz-animation:myfirst 3s infinite; 
+     -webkit-animation:myfirst 3s infinite; 
+     -o-animation:myfirst 3s infinite;
+}
+.showload{
+	display: none;
+	background:url(../IMG/load.gif) no-repeat;
+	background-size: 100px 100px ;
+	background-position: 0px 50px;
+
+	width: 100px;
+	margin: auto;
+	height: 150px;
+}
+
+
+
+@keyframes myfirst
+{
+0% {background-position: 0px 30px; }
+50% {background-position: 0px 50px;}
+100% {background-position: 0px 30px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0% {background-position: 0px 30px; }
+50% {background-position: 0px 50px;}
+100% {background-position: 0px 30px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0% {background-position: 0px 30px; }
+50% {background-position: 0px 50px;}
+100% {background-position: 0px 30px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0% {background-position: 0px 30px; }
+50% {background-position: 0px 50px;}
+100% {background-position: 0px 30px;}
+}
+
+
+
+
 .con-4
 {
 	width: 85%;

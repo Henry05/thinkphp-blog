@@ -1,0 +1,17 @@
+ <foreach name='last' item='v'>
+        <div class="alist"  >
+            <div class="alist-icon" style="background: url('__PUBLIC__/Home/IMG/{$v.c_value}.png') no-repeat;background-size:100px 100px;"></div>
+            <div class="alist-con">
+                <div  class="alist-title">
+                    <a href="__ROOT__/article/{$v.a_id}.html">
+
+                    <span>[{$v.a_time}]</span>
+                    <h3 >{$v.a_title}</h3>
+                </a></div>
+                <a href="__ROOT__/article/{$v.a_id}.html"><div class="alist-digest">{$v.a_content|msubstr=###,0,200,'utf-8'}</div></a>
+            </div>
+        </div>
+        
+ </foreach>
+
+
