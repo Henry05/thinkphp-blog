@@ -56,7 +56,6 @@
 
          return $slice;
 
-<<<<<<< HEAD
     }
 
 
@@ -69,10 +68,3 @@
     return array_shift($arr);
              
           }
-
-
-
-    
-=======
-    }
->>>>>>> parent of c70679e... 修改首页样式

@@ -11,30 +11,65 @@ class IndexController extends Controller {
      }
     //
      public function index(){
-<<<<<<< HEAD
           
           $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-          $last = $Aview->order('a_id DESC')->select();
-          $hot  = $Aview->order('a_id ASC')->select();      
+        
+        
+
+          $last= $Aview->order('a_id DESC')->select();
+          foreach ($last as $key => $arr) {
+          $last[$key]['a_content']=strip_tags($last[$key]['a_content']);
+          }
+  
+
+          $hot= $Aview->order('a_id ASC')->select();
+          foreach ($hot as $key => $arr) {
+          $hot[$key]['a_content']=strip_tags($hot[$key]['a_content']);
+          }
+ 
+     
           $this->assign('last',$last);
           $this->assign('hot',$hot);
           $this->display();
-=======
-        $this->display();
->>>>>>> parent of c70679e... 修改首页样式
     }
+
+     //  public function user(){
+
+     //    import("ORG.Util.AjaxPage");// 导入分页类  注意导入的是自己写的AjaxPage类
+     //    $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+     //    $count = $Aview->count(); //计算记录数
+     //    $limitRows = 5; // 设置每页记录数
        
-      public  function returnlist()
-        { 
-          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-          $count = $Aview->count();// 查询满足要求的总记录数
-          $last = $Aview->order('a_id DESC')->select();         
-          foreach ($last as $key => $arr) {
-          
-          $con=strip_tags($last[$key]['a_content']);
-          $last[$key]['a_content']= msubstr($con,0,200,'utf-8');
-          }
-          $this->ajaxReturn($last);
+     //    $p = new AjaxPage($count, $limitRows,"user"); //第三个参数是你需要调用换页的ajax函数名
+     //    $limit_value = $p->firstRow . "," . $p->listRows;
+       
+     //    $data = $Aview->order('a_id desc')->limit($limit_value)->select(); // 查询数据
+     //    $page = $p->show(); // 产生分页信息，AJAX的连接在此处生成
+
+     //    $this->assign('list',$data);
+     //    $this->assign('page',$page);
+     //    $this->display();
+
+     // }
+        public function return_alsit()
+        {
+          //   $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+
+          // $last= $Aview->order('a_id DESC')->select();
+          // foreach ($last as $key => $arr) {
+          // $last[$key]['a_content']=strip_tags($last[$key]['a_content']);
+          // }
+
+
+
+          // $hot= $Aview->order('a_id ASC')->select();
+          // foreach ($hot as $key => $arr) {
+          // $hot[$key]['a_content']=strip_tags($hot[$key]['a_content']);
+          // }
+          // $last="ssasa";
+          //   $this->ajaxReturn($last);
+
+
         }
 
      public function theme(){

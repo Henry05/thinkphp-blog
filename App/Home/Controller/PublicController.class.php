@@ -8,7 +8,8 @@ class PublicController extends Controller {
         $this->display();
     }
         public function footer(){
-        $this->display();
+        
+         $this->display();
     }
 
 
