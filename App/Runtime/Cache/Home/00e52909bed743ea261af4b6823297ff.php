@@ -58,7 +58,7 @@
     <!--   最新 -->
     <div class="lastlist">
         <?php if(is_array($last)): foreach($last as $key=>$v): ?><div class="alist"  >
-            <div class="alist-icon" style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;background-size:100px 100px;"></div>
+            <div class="alist-icon" style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;"></div>
             <div class="alist-con">
                 <div  class="alist-title">
                     <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
@@ -74,7 +74,7 @@
     <!-- 最热 -->
     <div class="hotlist">
         <?php if(is_array($hot)): foreach($hot as $key=>$v): ?><div class="alist">
-            <div class="alist-icon"  style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;background-size:100px 100px;"></div>
+            <div class="alist-icon"  style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;"></div>
       <div class="alist-con" >
                 <div  class="alist-title">
                     <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
@@ -126,7 +126,7 @@
      $(".lastlist").css("display","none");
      $(".hotlist").css("display","block");
      $(".content").css("background","#C5F0A8");
-    $(".ban").css("background","#E3BE66");
+    $(".ban").css("background","#FACE6A");
     $(".lastShow").css("display","none");
      $(".hotShow").css("display","block");
     });
@@ -145,14 +145,14 @@
 $(function(){
         var firstnum=0; 
         var hotnum=0;
-        $(document).ajaxStart(function(){
-         $(".lastShow").css("display","none");
-          $(".showload").css("display","block");
-            });
-        $(document).ajaxStop(function(){
-              $(".lastShow").css("display","block");
-          $(".showload").css("display","none");
-            });
+        // $(document).ajaxStart(function(){
+        //  $(".lastShow").css("display","none");
+        //   $(".showload").css("display","block");
+        //     });
+        // $(document).ajaxStop(function(){
+        //  $(".lastShow").css("display","block");
+        //   $(".showload").css("display","none");
+        //     });
 
         $(".lastShow").bind("click",function(){
                  
@@ -162,10 +162,17 @@ $(function(){
                           type:'get',
                           cache:false,
                           data:num,
-                          url: "/W3CAY/index.php/Home/Index/return_alist",            
+                          url: "/W3CAY/index.php/Home/Index/return_last",            
                           success: function(msg){
-                          $(".lastlist").append(msg);}
-
+                          $(".lastlist").append(msg);},
+                          beforeSend: function(){
+                          $(".lastShow").css("display","none");
+                           $(".showload").css("display","block");
+                          },
+                          complete: function(){
+                          $(".lastShow").css("display","block");
+                          $(".showload").css("display","none");
+                          },
                  });       
        });
 
@@ -179,8 +186,15 @@ $(function(){
                           data:num,
                           url: "/W3CAY/index.php/Home/Index/return_hot",            
                           success: function(msg){
-                          $(".hotlist").append(msg);}
-
+                          $(".hotlist").append(msg);},
+                          beforeSend: function(){
+                          $(".hotShow").css("display","none");
+                           $(".showload").css("display","block");
+                          },
+                          complete: function(){
+                          $(".hotShow").css("display","block");
+                          $(".showload").css("display","none");
+                          },
                  });       
        });
  });

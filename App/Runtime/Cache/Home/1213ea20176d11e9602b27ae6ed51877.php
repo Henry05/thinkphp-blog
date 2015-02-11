@@ -48,7 +48,7 @@
 	<div  class="article-title"><h4><?php echo ($article["a_title"]); ?></h4></div>
 	<div class="article-detail"><?php echo ($article["a_content"]); ?></div>
 	<div class="article-attr">
-	<span><?php echo ($article["a_time"]); ?></span>	
+
 	</div>
 	</div>
 

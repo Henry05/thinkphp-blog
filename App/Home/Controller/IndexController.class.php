@@ -25,7 +25,6 @@ class IndexController extends Controller {
           foreach ($hot as $key => $arr) {
           $hot[$key]['a_content']=strip_tags($hot[$key]['a_content']);
           }
- 
 
           $this->assign('last',$last);
           $this->assign('hot',$hot);
@@ -34,7 +33,7 @@ class IndexController extends Controller {
 
 
 
-        public function return_alist()
+        public function return_last()
         {
 
 
@@ -45,15 +44,12 @@ class IndexController extends Controller {
           foreach ($last as $key => $arr) {
             $data=strip_tags($last[$key]['a_content']);
          $last[$key]['a_content']=msubstr($data,0,20,'utf-8');
-          }
-
-        
+          }    
           $this->assign('last',$last);
           $this->display();
         }
           public function return_hot()
         {
-
 
             $lastnum = 4;
            $hotnum= $_GET["hotnum"];
@@ -88,20 +84,10 @@ class IndexController extends Controller {
           $this->display();
     }
 
-      static $firstnum =2;
+    
          public function test(){
               
-         //  // N('db',2); // 记录数据库操作次数
-         //  N('read',1); // 记录读取次数
-         // // echo N('db'); // 获取当前页面数据库的所有操作次数
-         //  echo N('read'); // 获取当前页面读取次数
-           
-           
- 
-             
-
-           // ++$firstnum;
-           //  echo  $firstnum;
+        
             
            }
 

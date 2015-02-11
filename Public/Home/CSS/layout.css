@@ -78,7 +78,7 @@ header{background: #000;height:60px;width: 100%}
 
 @media screen and (max-width: 990px) {
 .nav{display:none;width: 100%;background: #000;
-	height:350px;margin:0;
+	height:auto;margin:0;
 	z-index: 1000;
      }
 .name{

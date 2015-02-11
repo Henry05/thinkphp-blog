@@ -35,10 +35,11 @@
 <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/theme.css" />
 <div class="topic-container">
 	<?php if(is_array($article)): foreach($article as $key=>$v): ?><div class="alist">	
-	<div  class="alist-title"><a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><h4><?php echo ($v["a_title"]); ?></h4></a></div>
-	<a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,200,'utf-8')); ?></div></a>
+	<div  class="alist-title"><a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
+	<span class="time">[<?php echo ($v["a_time"]); ?>]</span>	<h3><?php echo ($v["a_title"]); ?></h3></a></div>
+	<a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,180,'utf-8')); ?></div></a>
 	<div class="alsit-attr">
-	<span><?php echo ($v["a_time"]); ?></span>	
+	
 	</div>
 	</div><?php endforeach; endif; ?>
 	
