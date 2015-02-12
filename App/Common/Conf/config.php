@@ -1,6 +1,6 @@
 <?php
 return array(
-	'SHOW_PAGE_TRACE' =>true, //显示调试页面
+	'SHOW_PAGE_TRACE' =>false, //显示调试页面
 	'MODULE_ALLOW_LIST'    =>    array('Home','CAY_ADMIN','Admin'),//设置模块列表
     'DEFAULT_MODULE'       =>    'Home',//设置默认模块
     'URL_MODULE_MAP'       =>    array('cay_admin'=>'admin'),//模块映射

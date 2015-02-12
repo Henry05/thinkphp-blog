@@ -31,10 +31,10 @@ header{background: #000;height:60px;width: 100%}
 	width:160px;
 	height:50px;
 	display:inline-block; 
-    margin-top: 3px;
+    margin-top: 2px;
 	 background:url(../IMG/e_name.png )  no-repeat;
 	 float:right;
-	 background-size: 150px 43px;}
+	 background-size: 150px 45px;}
 
 .nav ul {
 	margin: 0;
@@ -123,27 +123,119 @@ font-size: 18px;
 /*页脚样式*/
 .footer
 {
-
+	font-size: 14px;
 	text-align: center;
 	background: #000;
-	color: #fff;
+	color: #DADADA;
 	display: inline-block;
 
 	width: 100%;
+
 	
 
 }
-.desc{
-	height: 100px;
+.footer-con{
+	width: 70%;
+
+	height: 122px;
+	margin: auto;
 }
-.botm{
-	height: 20px;
+.footer-left{
+	height:118px;
 	display: inline-block;
-	padding-bottom: 5px;
+	width: 50%;
+
+	float: left;
+
 
 }
+#line{
+	width: 0px;
+	height: 80px;
+	border-right: 1px solid #B3B3B3;
+	float: right;
+	margin-left: 35px;
+	margin-top: 25px;
+}
+.copy-icon{
+	background: url(../IMG/copy.png) no-repeat;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px ;
+	position: relative;
+	top:5px;
+
+}
+
+.useread{
+	margin-top: 15px;
+	display: block;
+	height: 50px;
+	float: right;
+
+}
+.thinkphp_logo{
+
+	margin-right: 3px;
+	position: relative;
+	top: 3px;
+}
+.jingan_logo{
+	margin-right: 3px;
+	position: relative;
+	top: 8px;
+}
+.copyright{
+	display: block;
+	float: right;
+	height: 24px;
+
+
+
+}
+
 .footer a
 {
 	text-decoration:none;
 	color: #fff;
+}
+
+.me{
+
+
+	width: 40%;
+	display:inline-block;
+	margin-right: 20px;
+}
+
+.myicon{
+	display: inline-block;
+
+	float: left;
+	margin-top: 35px;
+
+
+}
+
+.mymoto{
+
+	height: 30px;
+	width: 300px;
+	background: url(../IMG/motto.png) no-repeat;
+	background-size: 300px 30px;
+
+	display: block;
+	float: left;
+	position: relative;
+	top:50px;
+	left: 10px;
+
+
+}
+.me:hover{
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
 }
