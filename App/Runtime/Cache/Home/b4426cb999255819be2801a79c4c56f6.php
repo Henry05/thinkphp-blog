@@ -47,23 +47,26 @@
 </div>
 <footer class="footer">
 <div class="footer-con">
-<div class="me">
-	<i class="myicon"><a href="http://w3cay.com" target="_blank"><img  src="/W3CAY/Public/Home/IMG/myicon.png" alt="关于我" title="关于我" width="60"  height="60" /></a> </i>
+   <a  href="http://w3cay.com" alt="关于我" title="关于我" target="_blank">  
+    <div class="me">
+	<i class="myicon"><img  src="/W3CAY/Public/Home/IMG/myicon.png" alt="关于我" title="关于我" width="60"  height="60" /> </i>
 	<div class="mylink"></div>
-	<a href="http://w3cay.com" alt="关于我" title="关于我" target="_blank"><span class="mymoto"></span></a>
+	<span class="mymoto"></span>
+	</a>
 </div>
   <div class="footer-left">
-
-  <span class="useread" >
-  Powered By <a href="www.thinkphp.cn" target="_blank"><img class="thinkphp_logo" src="/W3CAY/Public/Home/IMG/thinkphp_logo.png" alt="ThinkPHP" title="ThinkPHP" width="20"  height="20" />ThinkPHP</a> 
- &nbsp
-  Host By
-  <a href="http://www.zzidc.com" target="_blank"><img class="jingan_logo" src="http://www.zzidc.com/images/gainet_host.gif" width="95"  height="40" alt="景安网络" title="景安网络" />景安网络</a>
-  </span>
+<div id="line"></div>
     <span class="copyright">
  <i class="copy-icon"></i> <a href="http://w3cay.com" target="_blank">安望云海|W3CAY</a> 
   &nbsp豫ICP备15003362号&nbsp <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));</script> 
   </span>
+  <span class="useread" >
+  Powered by <a href="http://www.thinkphp.cn"  rel="nofollow" target="_blank"><img class="thinkphp_logo" src="/W3CAY/Public/Home/IMG/thinkphp_logo.png" alt="ThinkPHP" title="ThinkPHP" width="14"  height="14" />ThinkPHP</a> 
+ &nbsp
+  Host by
+  <a href="http://www.zzidc.com"  rel="nofollow" target="_blank"><img class="jingan_logo" src="http://www.zzidc.com/images/gainet_host.gif" width="50"  height="20" alt="景安网络" title="景安网络" />景安网络</a>
+  </span>
+
   </div>
   </div>
 </footer>
