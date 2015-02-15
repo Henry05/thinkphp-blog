@@ -11,7 +11,7 @@
 $(function(){
 	$('.ban-slogan').fadeIn(2000);
 	 $(".ban-pic").animate(
-    	{left:'0px'},800);
+    	{left:'0px'},500);
 });
 
 

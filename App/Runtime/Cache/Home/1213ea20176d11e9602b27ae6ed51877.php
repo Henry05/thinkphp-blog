@@ -46,7 +46,7 @@
 <div class="article-container">
 	<div class="article">	
 	<div  class="article-title"><h4><?php echo ($article["a_title"]); ?></h4></div>
-	<div class="article-detail"><?php echo ($article["a_content"]); ?></div>
+	<div class="article-detail"><?php echo (stripslashes($article["a_content"])); ?></div>
 	</div>
 
 </div>
@@ -61,19 +61,21 @@
 </div>
   <div class="footer-left">
 <div id="line"></div>
-    <span class="copyright">
+   
+  <span class="useread" >
+  Powered by <a href="http://www.thinkphp.cn"  rel="nofollow" target="_blank">ThinkPHP</a> 
+ &nbsp
+  Host by
+  <a href="http://www.zzidc.com"  rel="nofollow" target="_blank">景安网络</a>
+  </span>
+ <span class="copyright">
  <i class="copy-icon"></i> <a href="http://w3cay.com" target="_blank">安望云海|W3CAY</a> 
   &nbsp豫ICP备15003362号&nbsp <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));</script> 
   </span>
-  <span class="useread" >
-  Powered by <a href="http://www.thinkphp.cn"  rel="nofollow" target="_blank"><img class="thinkphp_logo" src="/W3CAY/Public/Home/IMG/thinkphp_logo.png" alt="ThinkPHP" title="ThinkPHP" width="14"  height="14" />ThinkPHP</a> 
- &nbsp
-  Host by
-  <a href="http://www.zzidc.com"  rel="nofollow" target="_blank"><img class="jingan_logo" src="http://www.zzidc.com/images/gainet_host.gif" width="50"  height="20" alt="景安网络" title="景安网络" />景安网络</a>
-  </span>
+  </div>
+  </div>
 
-  </div>
-  </div>
+<!--   <div class="totop"></div> -->
 </footer>
 
 

@@ -19,6 +19,7 @@
  <a href="http://w3cay.com" class="title">
    <i class="logo"><img src="/W3CAY/Public/Home/IMG/logo.png" width="45px" height="45px"></i>
    <i class="name"></i>
+     <i class="beta"></i>
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
       <li ><a href="http://localhost/W3CAY/">首页</a></li>
@@ -42,7 +43,7 @@
         <div class="ban-slogan" >
             <h2>{ 致力于HTML/CSS/JS/WEB开发 }</h2>
             <p>
-            不愿成为知识的过客，记录和分享我的WEB开发经验与技巧，发挥共享的力量，只为创造出激动人心的网页！
+            不愿成为知识的过客，记录和分享我的WEB开发经验与技巧，发挥共享的力量，只为创造出精彩的互联网世界！
             </p>
         </div>
     </div>
@@ -66,7 +67,7 @@
                     <span>[<?php echo ($v["a_time"]); ?>]</span>
                     <h3 ><?php echo ($v["a_title"]); ?></h3>
                 </a></div>
-                <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,200,'utf-8')); ?></div></a>
+                <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,150,'utf-8')); ?></div></a>
             </div>
         </div><?php endforeach; endif; ?>
 
@@ -121,6 +122,8 @@
   </span>
   </div>
   </div>
+
+<!--   <div class="totop"></div> -->
 </footer>
 
 

@@ -48,17 +48,44 @@ class ArticleController extends Controller{
 	//删除文章
 	public function delarticle()
 	{
-	
+		
+
+		
 		$a_id=I('get.a_id');
-		$count=M('article')->where("a_id=$a_id")->delete();
+		$Article=M('article');
+		$content = $Article->where("a_id=$a_id")->getField('a_content');
+		
+		//匹配文章图片
+		preg_match_all("/Uploads(.*?(?:[\.gif|\.jpg]))[\'|\"].*?/", $content,$matches);
+		
+
+	    //删除文章图片
+			foreach ($matches[1] as $key => $value) {
+			
+				$str='./Uploads'.$value;
+		
+				 if (file_exists($str)) {
+				 	if(!unlink($str)){
+					 $this->error("图片删除失败！");
+					}
+				 }
+			
+		       }
+	
+     //删除文章
+		$count=$Article->where("a_id=$a_id")->delete();
 		if ($count>0) {
 	                    $this->success('删除成功');
 	                  }
 	              else{
 	                      $this->error("删除失败！");
 	                  }
-	}
 
+
+         }
+
+
+	//修改文章
 	public function modify()
 	{
 		  $cate=M('cate')->order('c_sort ASC')->select();
