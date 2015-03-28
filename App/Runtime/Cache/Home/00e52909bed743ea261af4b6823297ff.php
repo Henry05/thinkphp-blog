@@ -10,6 +10,8 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
+ </head>
+
 <!--   导航栏样式表 -->
   <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
   </head>

@@ -69,17 +69,21 @@ class IndexController extends Controller {
           
           $c_value=I('get.c_value');
           $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+          //查找对应栏目名称
+          $c_name=$Aview->where("c_value='$c_value'")->getField('c_name');
           $article= $Aview->order('a_id DESC')->where("c_value='$c_value'")->select();
           foreach ($article as $key => $arr) {
           $article[$key]['a_content']=strip_tags($article[$key]['a_content']);
           }
+          $this->assign('c_name',$c_name);
           $this->assign('article',$article);
           $this->display();
     }
      public function article(){
          
           $a_id=I('get.a_id');
-          $article=M('article')->where("a_id=$a_id")->select();
+          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+          $article=D("ArticleView")->where("a_id=$a_id")->select();
           $this->assign('article',$article['0']);
           $this->display();
     }

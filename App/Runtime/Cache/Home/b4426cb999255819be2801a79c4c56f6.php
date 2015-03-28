@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>安望云海-致力于HTML/Home/CSS/JS/WEB开发</title>
+  <title><?php echo ($c_name); ?> - 安望云海</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -10,6 +10,8 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
+ </head>
+
 <!--   导航栏样式表 -->
   <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
   </head>
@@ -31,6 +33,7 @@
         </li>
    </ul></nav>
  </header>
+
 
 
 <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/theme.css" />
