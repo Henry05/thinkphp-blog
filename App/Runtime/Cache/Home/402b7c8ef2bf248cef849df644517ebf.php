@@ -7,6 +7,6 @@
                     <span>[<?php echo ($v["a_time"]); ?>]</span>
                     <h3 ><?php echo ($v["a_title"]); ?></h3>
                 </a></div>
-                <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,200,'utf-8')); ?></div></a>
+                <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,120,'utf-8')); ?></div></a>
             </div>
         </div><?php endforeach; endif; ?>
