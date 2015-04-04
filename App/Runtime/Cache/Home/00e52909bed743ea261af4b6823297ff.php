@@ -2,7 +2,9 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
-        <title>安望云海-致力于HTML/Home/CSS/JS/WEB开发</title>
+        <title>安望云海-致力于HTML/CSS/JS/WEB开发</title>
+        <meta name="Keywords" content="web开发,html,css,js" />
+        <meta name="Description" content="不愿成为知识的过客，记录和分享我的WEB开发经验与技巧，发挥共享的力量，只为创造出精彩的互联网世界！"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -10,10 +12,26 @@
         <meta name="renderer" content="webkit">
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
         <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
+
     </head>
     
 <!--   导航栏样式表 -->
   <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
+<script type="text/javascript">
+//导航下拉效果
+ $(function(){
+$(".btn").click(function(){
+    $(".nav").slideToggle("slow");
+});
+});
+</script>
+<!--[if lt IE 9]>
+<script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
+<!--<![endif]-->
+
   </head>
   <body>
 <!-- 导航部分 -->
@@ -36,7 +54,17 @@
 
 
     <!--   首页样式表 -->
+
     <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/home.css"/>
+
+    <script type="text/javascript">
+            //简要渐入效果
+            $(function(){
+            $('.ban-slogan').fadeIn(2000);
+            $(".ban-pic").animate(
+                {left:'0px'},800);
+            });
+    </script>
     <!-- Banner部分 -->
     <div class="ban">
         <div class="ban-con">
@@ -52,8 +80,8 @@
     <!-- 内容部分 -->
     <div class="content">
         <div class="tab">
-            <a id="last" class="tab-box on" href="#">最新</a>
-            <a id="hot" class="tab-box off" href="#">最热</a>
+            <a id="last" class="tab-box on" href="javascript:void(0)" >最新</a>
+            <a id="hot" class="tab-box off" href="javascript:void(0)" >最热</a>
         </div>
         <!--   最新 -->
         <div class="lastlist">
@@ -116,32 +144,13 @@
     </div>
     <!--   <div class="totop"></div> -->
 </footer>
-<script type="text/javascript">
-//导航下拉效果
-$(document).ready(function(){
-$(".btn").click(function(){
-    $(".nav").slideToggle("slow");
-});
-});
-</script>
-<!--[if lt IE 9]>
-<script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
-<![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
-<!--<![endif]-->
+
 <!--   首页Js引入文件 -->
-<script src="/W3CAY/Public/Home/Js/home.js"></script>
 <script src="/W3CAY/Public/Home/Js/layout.js"></script>
 </body>
 </html>
 <script type="text/javascript">
-//简要渐入效果
-$(function(){
-$('.ban-slogan').fadeIn(2000);
-$(".ban-pic").animate(
-    {left:'0px'},800);
-});
+
 
     $("#hot").click(function(){
     $(this).removeClass("off").addClass("on").css("background","#C5F0A8");
