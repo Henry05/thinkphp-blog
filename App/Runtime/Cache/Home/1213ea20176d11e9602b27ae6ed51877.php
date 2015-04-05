@@ -15,12 +15,21 @@
 
 <!--   导航栏样式表 -->
   <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
-   <!--[if lt IE 9]>
-  <script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
-  <![endif]-->
-  <!--[if (gte IE 9)|!(IE)]><!-->
-  <script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
-  <!--<![endif]-->
+<script type="text/javascript">
+//导航下拉效果
+ $(function(){
+$(".btn").click(function(){
+    $(".nav").slideToggle("slow");
+});
+});
+</script>
+<!--[if lt IE 9]>
+<script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
+<!--<![endif]-->
+
   </head>
   <body>
 <!-- 导航部分 -->
@@ -56,6 +65,9 @@
 <div class="article-container">
 	<div class="article">	
 	<div  class="article-title"><h4><?php echo ($article["a_title"]); ?></h4></div>
+  <div class="article-attr">
+    <span><?php echo ($article["a_time"]); ?></span><span>100次阅读</span>
+  </div>
 	<div class="article-detail"><?php echo (stripslashes($article["a_content"])); ?></div>
 	</div>
 
@@ -89,17 +101,8 @@
     </div>
     <!--   <div class="totop"></div> -->
 </footer>
-<script type="text/javascript">
-//导航下拉效果
-$(document).ready(function(){
-$(".btn").click(function(){
-    $(".nav").slideToggle("slow");
-});
-});
-</script>
 
 <!--   首页Js引入文件 -->
-<script src="/W3CAY/Public/Home/Js/home.js"></script>
 <script src="/W3CAY/Public/Home/Js/layout.js"></script>
 </body>
 </html>

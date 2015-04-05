@@ -15,6 +15,7 @@
 <div class="contain">
 <div class="nav">
 	<ul class="menu">
+	<li id='li-0'><a class="aclick" href='/W3CAY/index.php'  target="_blank">网站首页</a>
 	<li id='li-1'><a class="aclick" href='#' >系统管理</a>
 		<ul class='hid-ul'>
 		<li><a href='#'>系统参数</a></li>
