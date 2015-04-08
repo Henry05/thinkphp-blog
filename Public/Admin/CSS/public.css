@@ -62,12 +62,13 @@ input{
 }
 
 /*分页样式*/
-
+.paging{
+	display: inline-block;
+	text-align: center;
+}
 .paging>div{
-	display: block;
-
-	width: 500px;
-	margin: auto;
+	display:inline-block;
+	text-align: center;
 }
 .current{
 	  border: 1px solid #00DDDD;

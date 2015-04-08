@@ -8,7 +8,7 @@
 	<?php if(is_array($article)): foreach($article as $key=>$v): ?><tr >
 		<td ><?php echo ($v["a_id"]); ?></td> 
 		<td ><?php echo ($v["c_name"]); ?></td> 
-		<td ><?php echo ($v["a_title"]); ?></td> 
+		<td style="width:500px;"><?php echo ($v["a_title"]); ?></td> 
 		<td ><?php echo ($v["a_time"]); ?></td> 
 		<td ><?php echo ($v["a_mtime"]); ?></td> 
 		<td >

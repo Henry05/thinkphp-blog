@@ -66,7 +66,7 @@ $(".btn").click(function(){
 	<div class="article">	
 	<div  class="article-title"><h4><?php echo ($article["a_title"]); ?></h4></div>
   <div class="article-attr">
-    <span><?php echo ($article["a_time"]); ?></span><span>100次阅读</span>
+    <span>发布于 <?php echo ($article["a_time"]); ?></span><span><?php echo ($article["a_clicks"]); ?>次阅读</span>
   </div>
 	<div class="article-detail"><?php echo (stripslashes($article["a_content"])); ?></div>
 	</div>

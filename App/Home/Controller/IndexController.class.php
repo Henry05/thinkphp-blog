@@ -21,7 +21,7 @@ class IndexController extends Controller {
           }
   
 
-          $hot= $Aview->order('a_id ASC')->limit(0,10)->select();
+          $hot= $Aview->order('a_clicks DESC,a_id ASC')->limit(0,10)->select();
           foreach ($hot as $key => $arr) {
           $hot[$key]['a_content']=strip_tags($hot[$key]['a_content']);
           }
@@ -53,7 +53,7 @@ class IndexController extends Controller {
             $lastnum = 10;
            $hotnum= $_GET["hotnum"];
               $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-           $hot= $Aview->order('a_id ASC')->limit($hotnum,$lastnum)->select();
+           $hot= $Aview->order('a_clicks DESC,a_id ASC')->limit($hotnum,$lastnum)->select();
           foreach ($hot as $key => $arr) {
           $hot[$key]['a_content']=strip_tags($hot[$key]['a_content']);
           }
@@ -90,12 +90,20 @@ class IndexController extends Controller {
           $this->assign('page',$show);// 赋值分页输出
           $this->display();
     }
+
+
      public function article(){
          
           $a_id=I('get.a_id');
+
+          M('article')->where("a_id=$a_id")->setInc('a_clicks'); // 文章阅读加1
+
           $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+
           $article=D("ArticleView")->where("a_id=$a_id")->select();
+
           $this->assign('article',$article['0']);
+
           $this->display();
     }
 
