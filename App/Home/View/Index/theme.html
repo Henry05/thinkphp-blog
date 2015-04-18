@@ -5,7 +5,7 @@
         <title>{$c_name} - 安望云海</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        content="width=device-width, listial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="format-detection" content="telephone=no">
         <meta name="renderer" content="webkit">
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
@@ -13,6 +13,7 @@
     </head>
     <include file="Public:header"/>
     <css href="__PUBLIC__/Home/CSS/theme.css"/>
+    <div class="theme-container">
     <div class="topic-container">
         <foreach name='article' item='v'>
         <div class="alist">
@@ -24,6 +25,36 @@
             </div>
         </div>
         </foreach>
-        <div class="paging">{$page}</div>
+       
     </div>
+
+        <div class="loadmore">加载更多</div>
+
+   </div>
     <include file="Public:footer"/>
+
+<script type="text/javascript">
+    $(function () {
+        var listnum=0;
+        $(".loadmore").bind("click",function(){
+               
+                listnum+=10;
+                var num='listnum='+listnum;
+                $.ajax({
+                        type:'get',
+                        cache:false,
+                        data:num,
+                                    url: "__URL__/more_theme?c_value={$c_value}",
+                        success: function(msg){
+                        $(".topic-container").append(msg);
+                       },
+                        beforeSend: function(){
+                        $(".loadmore").text("加载中...");
+                        },
+                        complete: function(){
+                        $(".loadmore").text("加载更多");
+                        },
+                    });
+    });
+    })
+</script>

@@ -72,7 +72,7 @@ $(".btn").click(function(){
             <div class="ban-slogan" >
                 <h2>{ 致力于HTML/CSS/JS/WEB开发 }</h2>
                 <p>
-                不愿成为知识的过客，记录和分享我的WEB开发经验与技巧；不断发挥共享的力量，只为创造出我们心中的互联网世界！
+                不愿成为知识的过客，记录和分享我的WEB开发经验与技巧；发挥共享的力量，用技术创造我们心中的互联网世界！
                 </p>
             </div>
         </div>
@@ -142,8 +142,8 @@ $(".btn").click(function(){
             </span>
         </div>
     </div>
-    <!--   <div class="totop"></div> -->
-</footer>
+<!--       <div class="totop"></div>-->
+ </footer>
 
 <!--   首页Js引入文件 -->
 <script src="/W3CAY/Public/Home/Js/layout.js"></script>

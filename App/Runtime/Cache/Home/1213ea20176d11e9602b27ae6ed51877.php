@@ -99,8 +99,8 @@ $(".btn").click(function(){
             </span>
         </div>
     </div>
-    <!--   <div class="totop"></div> -->
-</footer>
+<!--       <div class="totop"></div>-->
+ </footer>
 
 <!--   首页Js引入文件 -->
 <script src="/W3CAY/Public/Home/Js/layout.js"></script>

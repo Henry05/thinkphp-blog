@@ -6,14 +6,17 @@ a{
 	text-decoration: none;
 	color: #000;
 }
+.theme-container{
+		background:#CDE2F8 ;
+		padding-bottom: 20px;
+		min-height: 560px;
+}
 .topic-container{
 	width: 100%;
-	min-height: 560px;
-	background:#CDE2F8 ;
 
 	background-size: cover;
 	padding-top:70px;
-	padding-bottom: 20px;
+
 
 }
 
@@ -139,7 +142,7 @@ a{
 
 
  /*分页样式*/
-
+/*
 .paging>div{
 	display: block;
 
@@ -190,4 +193,22 @@ a{
 }
 .num:hover{
 	background: #00F4F4;
+}
+*/
+
+.loadmore{
+	width: 400px;
+	height: 40px;
+	color: #3D3A3A;
+	background: #f0f0f0;
+	margin: 40px auto  20px;
+	text-align: center;
+	line-height: 40px;
+	box-shadow: 0px 0px 5px  #359497;
+	cursor: pointer;
+}
+
+.loadmore:hover{
+	background: #E3E3E3;
+	box-shadow: 0px 0px 10px  #359497;
 }

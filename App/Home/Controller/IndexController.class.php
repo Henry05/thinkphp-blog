@@ -7,7 +7,7 @@ class IndexController extends Controller {
      public function _initialize(){
      	//输出layout栏目
     	$cate=M('cate')->order('c_sort ASC')->select();
-		$this->cate=$cate;
+		  $this->cate=$cate;
      }
       
 
@@ -37,9 +37,9 @@ class IndexController extends Controller {
         {
 
 
-            $lastnum = 10;
-             $firstnum= $_GET["firstnum"];      
-            $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+          $lastnum = 10;
+          $firstnum= $_GET["firstnum"];      
+          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
           $last= $Aview->order('a_id DESC')->limit($firstnum,$lastnum)->select();
           foreach ($last as $key => $arr) {
              $last[$key]['a_content']=strip_tags($last[$key]['a_content']);
@@ -47,13 +47,15 @@ class IndexController extends Controller {
           $this->assign('last',$last);
           $this->display();
         }
+
+
           public function return_hot()
         {
 
-            $lastnum = 10;
-           $hotnum= $_GET["hotnum"];
-              $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-           $hot= $Aview->order('a_clicks DESC,a_id ASC')->limit($hotnum,$lastnum)->select();
+          $lastnum = 10;
+          $hotnum= $_GET["hotnum"];
+          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+          $hot= $Aview->order('a_clicks DESC,a_id ASC')->limit($hotnum,$lastnum)->select();
           foreach ($hot as $key => $arr) {
           $hot[$key]['a_content']=strip_tags($hot[$key]['a_content']);
           }
@@ -67,31 +69,39 @@ class IndexController extends Controller {
      public function theme(){
           
           $c_value=I('get.c_value');
-          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-       
-          $count      = $Aview->where("c_value='$c_value'")->count();// 查询满足要求的总记录数
-          $Page       = new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(10)
-          $Page->setConfig('prev', '<<');
-          $Page->setConfig('next', '>>');
-          $Page->setConfig('theme', ' %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% ');
-          $show       = $Page->show();// 分页显示输出
-          $list = $Aview->order('a_id DESC')->where("c_value='$c_value'")->limit($Page->firstRow.','.$Page->listRows)->select();
+          $Aview =D("ArticleView"); // 实例化Articel视图model对象
+
+          //栏目文章列表输出
+          $list = $Aview->order('a_id DESC')->where("c_value='$c_value'")->limit(0,10)->select();
          
           foreach ($list as $key => $arr) {
           $list[$key]['a_content']=strip_tags($list[$key]['a_content']);
           }
 
-          $this->assign('article',$list);// 赋值文章列表数据集
+          $this->assign('article',$list);
 
-          $c_name=$Aview->where("c_value='$c_value'")->getField('c_name');  //查找对应栏目名称
+          //查找对应栏目标识
+          $c_name=$Aview->where("c_value='$c_value'")->getField('c_name');  
+          $this->assign('c_name',$c_name);
+          $this->assign('c_value',$c_value);
 
-          $this->assign('c_name',$c_name);//栏目标识
-
-          $this->assign('page',$show);// 赋值分页输出
           $this->display();
     }
 
+    public function more_theme()
+    {   
+          $c_value=I('get.c_value');
+          $lastnum = 10;
+          $listnum= $_GET["listnum"];
+          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
+          $more_article= $Aview->order('a_id DESC')->where("c_value='$c_value'")->limit($listnum,$lastnum)->select();
+          foreach ($more_article as $key => $arr) {
+          $more_article[$key]['a_content']=strip_tags($more_article[$key]['a_content']);
+          }
+          $this->assign('more_article',$more_article);
 
+          $this->display();
+    }
      public function article(){
          
           $a_id=I('get.a_id');

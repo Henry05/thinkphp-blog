@@ -395,10 +395,10 @@ font-size: 18px;
 	display: block;
 	border: 1px solid;
 	position:fixed;
-	top:80%;
-	left: 90%;
+	top:92.3%;
+	left: 96.15%;
 	float: right;
-
+	border-radius: 50px;
 	background: #E7FADE;
 	z-index: 200;
 

@@ -5,7 +5,7 @@
         <title><?php echo ($c_name); ?> - 安望云海</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        content="width=device-width, listial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="format-detection" content="telephone=no">
         <meta name="renderer" content="webkit">
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
@@ -51,6 +51,7 @@ $(".btn").click(function(){
 
 
     <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/theme.css" />
+    <div class="theme-container">
     <div class="topic-container">
         <?php if(is_array($article)): foreach($article as $key=>$v): ?><div class="alist">
             <div  class="alist-title"><a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
@@ -60,8 +61,12 @@ $(".btn").click(function(){
 
             </div>
         </div><?php endforeach; endif; ?>
-        <div class="paging"><?php echo ($page); ?></div>
+       
     </div>
+
+        <div class="loadmore">加载更多</div>
+
+   </div>
     <footer class="footer">
     <div class="footer-con">
         <a  href="http://w3cay.com" alt="关于我" title="关于我" target="_blank">
@@ -86,10 +91,36 @@ $(".btn").click(function(){
             </span>
         </div>
     </div>
-    <!--   <div class="totop"></div> -->
-</footer>
+<!--       <div class="totop"></div>-->
+ </footer>
 
 <!--   首页Js引入文件 -->
 <script src="/W3CAY/Public/Home/Js/layout.js"></script>
 </body>
 </html>
+
+<script type="text/javascript">
+    $(function () {
+        var listnum=0;
+        $(".loadmore").bind("click",function(){
+               
+                listnum+=10;
+                var num='listnum='+listnum;
+                $.ajax({
+                        type:'get',
+                        cache:false,
+                        data:num,
+                                    url: "/W3CAY/index.php/Home/Index/more_theme?c_value=<?php echo ($c_value); ?>",
+                        success: function(msg){
+                        $(".topic-container").append(msg);
+                       },
+                        beforeSend: function(){
+                        $(".loadmore").text("加载中...");
+                        },
+                        complete: function(){
+                        $(".loadmore").text("加载更多");
+                        },
+                    });
+    });
+    })
+</script>
