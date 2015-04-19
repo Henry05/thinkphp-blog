@@ -62,7 +62,22 @@ a{
 	text-decoration: underline;
 }
 
+.loadmore{
+	width: 400px;
+	height: 40px;
+	color: #3D3A3A;
+	background: #f0f0f0;
+	margin: 40px auto  20px;
+	text-align: center;
+	line-height: 40px;
+	box-shadow: 0px 0px 5px  #359497;
+	cursor: pointer;
+}
 
+.loadmore:hover{
+	background: #E3E3E3;
+	box-shadow: 0px 0px 10px  #359497;
+}
 
 /*首页内容样式 max-width: 1180px*/
 @media screen and (max-width: 1180px){
@@ -136,79 +151,13 @@ a{
 	line-height: 30px;
 	margin-left: 2%;
 }
+.loadmore{
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+}
 
  }
 
 
 
- /*分页样式*/
-/*
-.paging>div{
-	display: block;
-
-	width: 300px;
-	margin:30px auto;
-}
-.paging a{
-	background: #fff;
-}
-.current{
-	  border: 1px solid #00DDDD;
-	  display: inline-block;
-	  text-align: center;
-	  height: 35px;
-	  width: 40px;
-	  line-height: 35px;
-	  margin-right: 5px;
-	  background: #D0D0D0;
-}
-.prev,.next{
-	border: 1px solid #00DDDD;
-	font-size: 18px;
-	text-decoration: none;
-	display: inline-block;
-	 height: 35px;
-	  width: 40px;
-	   line-height: 35px;
-	   text-align: center;
-	color: #000;
-
-}
-.prev:hover{
-	background: #00F4F4;
-}
-.next:hover{
-	background: #00F4F4;
-}
-.num{
-	  border: 1px solid #00DDDD;
-	  text-decoration: none;
-	  color: #000;
-	  display: inline-block;
-	  line-height: 35px;
-	  text-align: center;
-	  height: 35px;
-	  width:40px;
-	  margin-right: 5px;
-}
-.num:hover{
-	background: #00F4F4;
-}
-*/
-
-.loadmore{
-	width: 400px;
-	height: 40px;
-	color: #3D3A3A;
-	background: #f0f0f0;
-	margin: 40px auto  20px;
-	text-align: center;
-	line-height: 40px;
-	box-shadow: 0px 0px 5px  #359497;
-	cursor: pointer;
-}
-
-.loadmore:hover{
-	background: #E3E3E3;
-	box-shadow: 0px 0px 10px  #359497;
-}

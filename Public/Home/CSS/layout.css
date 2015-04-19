@@ -2,12 +2,10 @@
 
 header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 .nav {
-	position: absolute;
 	height: 70px;
-	display: inline-block;
-	width: 80%;
-     text-align: right;
      margin-top: 18px;
+     margin-right: 20px;
+     float: right;
 }
 .title
 {
