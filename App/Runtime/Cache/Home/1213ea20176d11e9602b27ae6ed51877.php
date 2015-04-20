@@ -69,7 +69,10 @@ $(".btn").click(function(){
     <span>发布于 <?php echo ($article["a_time"]); ?></span><span><?php echo ($article["a_clicks"]); ?>次阅读</span>
   </div>
 	<div class="article-detail"><?php echo (stripslashes($article["a_content"])); ?></div>
+
+  <div id="SOHUCS" sid="<?php echo ($article["a_id"]); ?>" ></div>
 	</div>
+
 
 
 </div>
@@ -106,3 +109,18 @@ $(".btn").click(function(){
 <script src="/W3CAY/Public/Home/Js/layout.js"></script>
 </body>
 </html>
+
+<script>
+  (function(){
+    var appid = 'cyrHd3JxO',
+    conf = 'prod_fa1020ba5784e2e7d357d612bf4b224e';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>

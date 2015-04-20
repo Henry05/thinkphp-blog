@@ -31,9 +31,9 @@ a{
 .article-title{
 	overflow: hidden;
 	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 10px;
-	padding-left: 15px;
+	padding: 30px 50px 10px 50px;
+/*	padding-top: 30px;
+	padding-bottom: 10px;*/
 	display: block;
 	font-size: 34px;
 	color: #414141;
@@ -79,8 +79,14 @@ a{
 	
 	color: #424242 !important;
 }
+.changyan{
+	background-color: #fff;
+}
 
-
+/*畅言评论样式重写*/
+#SOHUCS{
+	width: 90%  !important;
+}
 
  @media screen and (max-width: 685px){
 
