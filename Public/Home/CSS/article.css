@@ -56,9 +56,7 @@ a{
 
 }
 
-.article-detail img{
-	width: 100%;
-}
+
 .article-attr{
 
 	overflow: hidden;
@@ -120,6 +118,9 @@ a{
 	
 	font-size: 1.0em;
 
+}
+.article-detail img{
+	width: 100%;
 }
 
 /*畅言评论样式重写*/

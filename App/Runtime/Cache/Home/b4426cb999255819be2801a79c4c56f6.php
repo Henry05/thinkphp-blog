@@ -41,6 +41,7 @@ $(".btn").click(function(){
     <ul>
       <li ><a href="http://localhost/W3CAY/">首页</a></li>
     <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+      <li ><a href="/W3CAY/Index/aboutme.html">Me</a></li>
         <li>
           <form class="search" role="search"> 
           <input type="text" class="search-input" placeholder="Search">
