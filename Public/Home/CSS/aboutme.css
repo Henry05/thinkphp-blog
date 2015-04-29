@@ -13,6 +13,25 @@ body{
 	z-index: 500;
 
 }
+.next-icon{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	position: fixed;
+	margin-left: -10px;
+	top:80%;
+	left: 50%;
+ 	animation:onhover 3s infinite;
+    -moz-animation:onhover 3s infinite; 
+    -webkit-animation:onhover 3s infinite; 
+    -o-animation:onhover 3s infinite;
+	transform:rotate(45deg);
+	opacity:0.6;
+	filter:alpha(opacity=60); /* 针对 IE8 以及更早的版本 */
+	z-index: 999;
+}
 section{
 
 	width: 100%;
@@ -21,7 +40,7 @@ section{
 
 }
 .first{
-
+	/*background: #B8BEF7;*/
 
 }
 
@@ -46,59 +65,12 @@ section{
 	left: 50%;
 	top:25%;
 	margin-left: -75px;
-	animation:onhover 3s infinite;
+/*	animation:onhover 3s infinite;
     -moz-animation:onhover 3s infinite; 
     -webkit-animation:onhover 3s infinite; 
-    -o-animation:onhover 3s infinite;
+    -o-animation:onhover 3s infinite;*/
 }
 
-@keyframes onhover
-{
-0% {box-shadow: 5px 5px 100px #A79292; }
-50% {
-		box-shadow: 5px 5px 10px #7D7474;
-		width: 145px;
-		height: 145px;
-		border-radius: 145px;
-	}
-100% {box-shadow:5px 5px 100px #A79292;}
-}
-
-@-moz-keyframes onhover /* Firefox */
-{
-0% {box-shadow: 5px 5px 100px #A79292; }
-50% {
-		box-shadow: 5px 5px 10px #7D7474;
-		width: 145px;
-		height: 145px;
-		border-radius: 145px;
-	}
-100% {box-shadow:5px 5px 100px #A79292;}
-}
-
-@-webkit-keyframes onhover /* Safari and Chrome */
-{
-0% {box-shadow: 5px 5px 100px #A79292; }
-50% {
-		box-shadow: 5px 5px 10px #7D7474;
-		width: 145px;
-		height: 145px;
-		border-radius: 145px;
-	}
-100% {box-shadow:5px 5px 100px #A79292;}
-}
-
-@-o-keyframes onhover /* Opera */
-{
-0% {box-shadow: 5px 5px 100px #A79292; }
-50% {
-		box-shadow: 5px 5px 10px #7D7474;
-		width: 145px;
-		height: 145px;
-		border-radius: 145px;
-	}
-100% {box-shadow:5px 5px 100px #A79292;}
-}
 
 .first-name{
 	text-align: center;
@@ -109,16 +81,9 @@ section{
 
 }
 
-.nav-list{
-	width: 1025px;
-	height: 150px;
-	position: absolute;
-	top:60%;
-	left: 23%;
-}
 
 .second{
-	background: #7BECA2;
+	background: #fff;
 }
 .third{
 	background: #EC8DD0;
@@ -144,4 +109,32 @@ section{
             filter: blur(5px);
     
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+
+@keyframes onhover
+{
+0% { top:80%; }
+50%{ top:85%; }
+100%{top:80%; } 
+}
+
+@-moz-keyframes onhover /* Firefox */
+{
+0% { top:80%; }
+50%{ top:85%; }
+100%{top:80%; } 
+}
+
+@-webkit-keyframes onhover /* Safari and Chrome */
+{
+0% { top:80%; }
+50%{ top:85%; }
+100%{top:80%; } 
+}
+
+@-o-keyframes onhover /* Opera */
+{
+0% { top:80%; }
+50%{ top:85%; }
+100%{top:80%; } 
 }

@@ -14,50 +14,24 @@
         <link href='http://www.youziku.com/webfont/CSS/47b87bdc85f52ae0f8a2b2868633284e' rel='stylesheet' type='text/css'/>
         <!--   导航栏样式表 -->
         <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
-        <!--[if lt IE 9]>
-        <script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
-        <![endif]-->
-        <!--[if (gte IE 9)|!(IE)]><!-->
-        <script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
-        <!--<![endif]-->
-        <script type="text/javascript" src="/W3CAY/Public/Home/JS/jquery.scrollify.min.js"></script>
-        <script type="text/javascript">
-            $(function() {
-            $('section').css({'height': $(window).height()});
-            $.scrollify({
-                section: 'section'
-            });
-            });
-        </script>
 
     </head>
     <body >
-     <div class="container">
-     <section class="first ">
-     
-     <img class="first-sec-bg blur " src="/W3CAY/Public/Home/IMG/sitebg.png">
-    
-    <!--  <nav>
-     <ul class="nav-list">
-         <li><a href="#">一</a></li>
-         <li><a href="#page2">二</a></li>
-         <li><a href="#page3">三</a></li>
-         <li><a href="#page4">四</a></li>
-         <li><a href="#page5">五</a></li>
 
-     </ul>
-     </nav> -->
 
-     <div class="icon-me"><img src="/W3CAY/Public/Home/IMG/myicon.png"> </div>
-     <div class="first-name css47b87bdc85f52ae0f8a2b2868633284e">安望云海</div>
+        <div class="container">
+        <i class="next-icon"></i>
+                    <section class="first ">
+                <img class="first-sec-bg blur " src="/W3CAY/Public/Home/IMG/sitebg.png">
+                <div class="icon-me"><img src="/W3CAY/Public/Home/IMG/myicon.png"> </div>
+                <div class="first-name css47b87bdc85f52ae0f8a2b2868633284e">安望云海</div>
+            </section>
+        <section class="second" id="page2">页面2</section>
+    <section class="third" id="page3">页面3</section>
+<section class="forth" id="page4">页面4</section>
+<section class="fifty" id="page5">
 
-     </section>
-     <section class="second" id="page2">页面2</section>
-     <section class="third" id="page3">页面3</section>
-     <section class="forth" id="page4">页面4</section>
-     <section class="fifty" id="page5">
-        
-      
+
     <footer class="footer">
     <div class="footer-con">
         <a  href="http://w3cay.com" alt="关于我" title="关于我" target="_blank">
@@ -86,6 +60,25 @@
  </footer>
 </body>
 </html>
-     </section>
-     </div>
+</section>
+</div>
 </body>
+<!--[if lt IE 9]>
+<script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
+<!--<![endif]-->
+<script  src="/W3CAY/Public/Home/JS/jquery.scrollify.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="http://cdn.dowebok.com/107/js/jquery.scrollify.min.js"></script>
+<script type="text/javascript">
+            $(function() {
+            // $('section').css({'height': $(window).height()});
+            $.scrollify({
+                section: 'section',
+                scrollbars: false,
+            });
+            });
+</script>
