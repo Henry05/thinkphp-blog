@@ -14,44 +14,57 @@
         <link href='http://www.youziku.com/webfont/CSS/47b87bdc85f52ae0f8a2b2868633284e' rel='stylesheet' type='text/css'/>
         <!--   导航栏样式表 -->
         <link rel="stylesheet" href="__PUBLIC__/Home/CSS/layout.css"/>
-
     </head>
     <body >
-
-
         <div class="container">
-        <i class="next-icon"></i>
-                    <section class="first ">
-                <img class="first-sec-bg blur " src="__PUBLIC__/Home/IMG/sitebg.png">
+            <i class="next-icon"></i>
+            <section class="first ">
                 <div class="icon-me"><img src="__PUBLIC__/Home/IMG/myicon.png"> </div>
                 <div class="first-name css47b87bdc85f52ae0f8a2b2868633284e">安望云海</div>
             </section>
-        <section class="second" id="page2">页面2</section>
-    <section class="third" id="page3">页面3</section>
-<section class="forth" id="page4">页面4</section>
-<section class="fifty" id="page5">
+            <section class="second" id="page2">
+            <h3>—— Introduce ——</h3>
+            <div class="sec-text ">
 
+            <div class="text-box">
+           
+             <p class="p-big"> <img class="text-icon" src="__PUBLIC__/Home/IMG/pc.png" >I'm a web front-end development enthusiasts</p>
+             <p class="p-sm">我是一名web前端技术爱好者</p>
+             </div>
+            
+             <div class="text-box">
+             <p class="p-big"> <img class="text-icon" src="__PUBLIC__/Home/IMG/university.png" >Studying in Henan University of science and technology</p>
+             <p class="p-sm">现就读于河南大学计算机科学与技术专业</p>
+             </div>
+            </div>
+            </section>
+            <section class="third" id="page3">
+                <h3>—— Skills ——</h3>
+            </section>
+            <section class="forth" id="page4">
+                 <h3>—— Contact ——</h3>
+             <include file="Public:footer"/>
+             </section>
+        </div>
+    </body>
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/Jquery/jquery-1.11.2.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="__PUBLIC__/Jquery/jquery-2.1.3.js"></script>
+    <!--<![endif]-->
+    <script  src="__PUBLIC__/Home/JS/jquery.scrollify.min.js"></script>
+    <script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://cdn.dowebok.com/107/js/jquery.scrollify.min.js"></script>
+    <script type="text/javascript">
+                $(function() {
+                // $('section').css({'height': $(window).height()});
+                $.scrollify({
+                    section: 'section',
+                    scrollbars: false,
+                });
+                });
+    </script>
 
-    <include file="Public:footer"/>
-</section>
-</div>
-</body>
-<!--[if lt IE 9]>
-<script src="__PUBLIC__/Jquery/jquery-1.11.2.js"></script>
-<![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="__PUBLIC__/Jquery/jquery-2.1.3.js"></script>
-<!--<![endif]-->
-<script  src="__PUBLIC__/Home/JS/jquery.scrollify.min.js"></script>
-<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="http://cdn.dowebok.com/107/js/jquery.scrollify.min.js"></script>
-<script type="text/javascript">
-            $(function() {
-            // $('section').css({'height': $(window).height()});
-            $.scrollify({
-                section: 'section',
-                scrollbars: false,
-            });
-            });
-</script>
+</html>
