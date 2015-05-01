@@ -48,13 +48,32 @@ section h3{
 	font-size: 20px;
 	color: #fff;
 	font-style: italic;
-	font-weight: 300;
 
 }
 .first{
-	background:url('../IMG/sitebg.png') no-repeat 70% 100%;
+	background:url('../IMG/color19.png') no-repeat 100% 100%;
 	background-size: cover;
 
+}
+
+.second{
+
+	background:url('../IMG/color14.png') no-repeat 50% 100%;
+	background-size: cover;
+	/*background: #67BDF1;*/
+}
+
+.third{
+			/*background: #90CB6A;*/
+
+	background:url('../IMG/color19.png') no-repeat 50% 100%;
+	background-size: cover;
+}
+.forth{
+	/*background: #99BDEE;*/
+
+	background:url('../IMG/color14.png') no-repeat 100% 100%;
+	background-size: cover;
 }
 
 .icon-me > img{
@@ -80,13 +99,6 @@ section h3{
 }
 
 
-.second{
-
-	/*background:url('../IMG/color19.png') no-repeat ;
-	background-position: 100% 100%;
-	background-size: cover;*/
-	background: #67BDF1;
-}
 .sec-text{
 	position: absolute;
 	left: 50%;
@@ -107,30 +119,56 @@ section h3{
 .p-big{
 	font-weight: bold;
 	font-size: 35px;
-	margin-top: 20px;
-
+	margin-top: 3%;
 }
 .p-sm{
-	margin-top: 5%;
-	font-size: 18px;
+	font-size: 16px;
+	display: inline;
+	position: relative;
+	top: -5px;
 
 }
 .text-icon{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	margin-top: 20px;
 	position: relative;
 	top:5px;
 	left: -8px;
 }
-.third{
-			background: #90CB6A;
+.text-line{
+	margin:50px auto 0px; 
+	height:30px;
+	max-width: 70%;
 }
-.forth{
-	background: #7E6A6A;
+.skills{
+	display: inline;
+	width: 15%;
+	height: 30px;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	float: left;
+	text-align:left;
+	/*border: 1px solid;*/
 }
-
-
+.pre-bar{
+	display: block;
+	border: 2px solid;
+	width: 80%;
+	height: 30px;
+	margin-left:20px;
+	float: right;
+}
+.precent{
+	display: block;
+	border: 1px solid;
+	background: #fff;
+	width: 50%;
+	height: 30px;
+	float: left;
+	opacity: 0.5;
+}
 .footer{
 	position:absolute;
 	bottom:0px;
@@ -174,4 +212,13 @@ section h3{
 0% { top:90%; }
 50%{ top:93%; }
 100%{top:90%; } 
+}
+
+@media screen and (max-width: 800px){
+	.text-line{
+	max-width: 90%;
+}
+.pre-bar{
+	width: 65%;
+}
 }
