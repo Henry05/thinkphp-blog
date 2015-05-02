@@ -81,7 +81,7 @@ section h3{
 	width: 150px;
 	height: 150px;
 	border-radius: 150px;
-	box-shadow: 5px 5px 10px #A79292;
+	box-shadow: 5px 5px 20px #FF0000;
 	position: absolute;
 	left: 50%;
 	top:25%;
@@ -168,6 +168,140 @@ section h3{
 	height: 30px;
 	float: left;
 	opacity: 0.5;
+}
+
+.mes-contain{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	max-width: 750px;
+	min-width: 300px;
+	width: 90%;
+	height: 55%;
+	color: #fff;
+
+}
+.mes-post{
+	width: 100%;
+	height: 15%;
+	margin:0 auto 3%; 
+
+}
+.mes-list-contain{
+	width: 100%;
+	height: 70%;
+	margin: auto;
+	border: 2px solid rgba(255,255,255,1);
+	border-top: 2px solid rgba(255,255,255,1);
+	border-bottom: 2px solid rgba(255,255,255,1);
+	padding: 2px 5px 2px 2px ;
+	overflow-y: scroll;
+	overflow-x:hidden;
+	scrollbar:
+
+}
+.mes-list-contain::-webkit-scrollbar {
+	width:7px;
+	height:10px;
+	padding: 2px;
+}
+.mes-list-contain::-webkit-scrollbar-button    {
+	display: none;
+}
+.mes-list-contain::-webkit-scrollbar-track     {
+	display: none;
+}
+.mes-list-contain::-webkit-scrollbar-track-piece {
+background:rgba(205,255,255,0.3);
+}
+.mes-list-contain::-webkit-scrollbar-thumb{
+background:rgba(255,255,255,0.3);
+border-radius:5px;
+}
+.mes-list-contain::-webkit-scrollbar-corner {
+background:#82AFFF;
+}
+.mes-list-contain::-webkit-scrollbar-resizer  {
+background:#FF0BEE;
+}
+.mes-item{
+	width: 100%;
+	height: 18%;
+	margin: auto;
+	margin-top: 3px;
+	border-bottom: 1px solid;
+}
+.item-id{
+	display: block;
+	width:auto;
+	height: 90%;
+	float: left;
+
+}
+.id-icon{
+	display: inline-block;
+	width: 30px;
+	height: auto;
+	border: 1px solid;
+	border-radius: 30px;
+	float: left;
+	position: relative;
+	top: 50%;
+	margin: -18px 5px 0 5px;
+	font-style: normal;
+	line-height: 30px;
+	text-align: center;
+
+}
+.id-name{
+	line-height: 40px;
+}
+.item-con{
+	display: block;
+	width: 78%;
+	height: 90%;
+	float: left;
+	line-height: 40px;
+}
+
+.post-name{
+	float: right;
+	width: 18%;
+}
+.post-text{
+	width: 80%;
+	float: left;
+}
+.inp{
+	border-radius: 3px;
+	outline: none;
+	background: rgba(255,255,255,0.5);
+	color: #fff;
+	border: 1px solid #fff;
+	display: block;
+}
+
+.inp-text{
+	width: 100%;
+	height: 60px;
+}
+.inp-name{
+	height: 25px;
+	width: 100%;
+	margin-top: 2px;
+
+}
+
+.inp-sub{
+	width: 100%;
+	height: 25px;
+	margin-top: 5px;
+	cursor: pointer;
+	background: #E0CF70;
+
 }
 .footer{
 	position:absolute;

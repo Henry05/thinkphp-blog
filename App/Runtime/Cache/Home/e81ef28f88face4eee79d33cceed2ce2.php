@@ -11,7 +11,7 @@
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
         <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
         <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/aboutme.css">
-        <link href='http://www.youziku.com/webfont/CSS/47b87bdc85f52ae0f8a2b2868633284e' rel='stylesheet' type='text/css'/>
+        <!-- <link href='http://www.youziku.com/webfont/CSS/47b87bdc85f52ae0f8a2b2868633284e' rel='stylesheet' type='text/css'/> -->
         <!--   导航栏样式表 -->
         <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
     </head>
@@ -20,7 +20,7 @@
             <i class="next-icon"></i>
             <section class="first ">
                 <div class="icon-me"><img src="/W3CAY/Public/Home/IMG/myicon.png"> </div>
-                <div class="first-name css47b87bdc85f52ae0f8a2b2868633284e">安望云海</div>
+                <div class="first-name">安望云海</div>
             </section>
             <section class="second" id="page2">
             <h3>—— Introduce ——</h3>
@@ -70,6 +70,93 @@
             </section>
             <section class="forth" id="page4">
                  <h3>—— Contact ——</h3>
+                 <div class="mes-contain">
+                     <div class="mes-post">
+                     <span class="post-text">
+                         <textarea  class="inp inp-text" onfocus="this.value=''"/>给我留言吧！</textarea>
+                     </span>
+                      <span class="post-name">
+                     <input class="inp inp-name" onfocus="this.value=''" value="你的昵称.." type="text"/>
+                      <input class="inp inp-sub" type="button" value="发布"/>
+                     </span>
+                    
+                     </div>
+                     <div class="mes-list-contain">
+                         <div class="mes-item">
+                         <span class="item-id">
+                             <i class="id-icon">2</i>
+                             <span class="id-name">CAY：</span>
+                         </span>
+                         <span class="item-con">
+                             地方第三个第四个是的归属感,真好大大咧咧大大的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯
+                         </span>
+                         </div>
+                         <div class="mes-item">
+                         <span class="item-id">
+                             <i class="id-icon">2</i>
+                             <span class="id-name">安望云海：</span>
+                         </span>
+                         <span class="item-con">
+                             地方第三个第四个是的归属感
+                         </span>
+                         </div>
+                         <div class="mes-item">
+                         <span class="item-id">
+                             <i class="id-icon">2</i>
+                             <span class="id-name">陈安阳：</span>
+                         </span>
+                         <span class="item-con">
+                             地方第三个第四个是的归属感
+                         </span>
+                         </div>
+                         <div class="mes-item">
+                         <span class="item-id">
+                             <i class="id-icon">2</i>
+                             <span class="id-name">安望云海：</span>
+                         </span>
+                         <span class="item-con">
+                             地方第三个第四个是的归属感
+                         </span>
+                         </div>
+                         <div class="mes-item">
+                         <span class="item-id">
+                             <i class="id-icon">2</i>
+                             <span class="id-name">安望云海：</span>
+                         </span>
+                         <span class="item-con">
+                             地方第三个第四个是的归属感
+                         </span>
+                         </div>
+                         <div class="mes-item">
+                         <span class="item-id">
+                             <i class="id-icon">2</i>
+                             <span class="id-name">安望云海：</span>
+                         </span>
+                         <span class="item-con">
+                             地方第三个第四个是的归属感
+                         </span>
+                         </div>
+                         <div class="mes-item">
+                         <span class="item-id">
+                             <i class="id-icon">2</i>
+                             <span class="id-name">安望云海：</span>
+                         </span>
+                         <span class="item-con">
+                             地方第三个第四个是的归属感
+                         </span>
+                         </div>
+                         <div class="mes-item">
+                         <span class="item-id">
+                             <i class="id-icon">2</i>
+                             <span class="id-name">安望云海：</span>
+                         </span>
+                         <span class="item-con">
+                             地方第三个第四个是的归属感
+                         </span>
+                         </div>
+                          
+                     </div>
+                 </div>
              <footer class="footer">
     <div class="footer-con">
         <a  href="http://w3cay.com" alt="关于我" title="关于我" target="_blank">
