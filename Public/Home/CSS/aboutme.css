@@ -184,6 +184,12 @@ section h3{
 	color: #fff;
 
 }
+.contact-icon{
+	width: 100%;
+	height: 20%;
+	border:1px solid;
+	margin-bottom: 3%;
+}
 .mes-post{
 	width: 100%;
 	height: 15%;
@@ -194,9 +200,9 @@ section h3{
 	width: 100%;
 	height: 70%;
 	margin: auto;
-	border: 2px solid rgba(255,255,255,1);
-	border-top: 2px solid rgba(255,255,255,1);
-	border-bottom: 2px solid rgba(255,255,255,1);
+	border: 1px dotted rgba(255,255,255,1);
+	border-top: 1px dotted rgba(255,255,255,1);
+	border-bottom: 1px dotted rgba(255,255,255,1);
 	padding: 2px 5px 2px 2px ;
 	overflow-y: scroll;
 	overflow-x:hidden;
@@ -229,10 +235,11 @@ background:#FF0BEE;
 }
 .mes-item{
 	width: 100%;
-	height: 18%;
 	margin: auto;
-	margin-top: 3px;
-	border-bottom: 1px solid;
+	border-bottom: 1px dotted;
+	display: block;
+	clear: both;
+
 }
 .item-id{
 	display: block;
@@ -247,7 +254,6 @@ background:#FF0BEE;
 	height: auto;
 	border: 1px solid;
 	border-radius: 30px;
-	float: left;
 	position: relative;
 	top: 50%;
 	margin: -18px 5px 0 5px;
@@ -262,7 +268,7 @@ background:#FF0BEE;
 .item-con{
 	display: block;
 	width: 78%;
-	height: 90%;
+	height: auto;
 	float: left;
 	line-height: 40px;
 }

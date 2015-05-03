@@ -71,6 +71,11 @@
             <section class="forth" id="page4">
                  <h3>—— Contact ——</h3>
                  <div class="mes-contain">
+                  <div class="contact-icon">
+                      <a href="#"><img src="/W3CAY/Public/Home/IMG/weibo.png"></a>
+                        <a href="#"><img src="/W3CAY/Public/Home/IMG/home.png"></a>
+                          <a href="#"><img src="/W3CAY/Public/Home/IMG/weixin.png"></a>
+                  </div>
                      <div class="mes-post">
                      <span class="post-text">
                          <textarea  class="inp inp-text" onfocus="this.value=''"/>给我留言吧！</textarea>
@@ -97,7 +102,7 @@
                              <span class="id-name">安望云海：</span>
                          </span>
                          <span class="item-con">
-                             地方第三个第四个是的归属感
+                             地方第三个第四个是的归属感 地方第三个第四个是的归属感,真好大大咧咧大大的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯 地方第三个第四个是的归属感,真好大大咧咧大大的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯
                          </span>
                          </div>
                          <div class="mes-item">
@@ -106,7 +111,16 @@
                              <span class="id-name">陈安阳：</span>
                          </span>
                          <span class="item-con">
-                             地方第三个第四个是的归属感
+                             地方第三个第四个是的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯 地方第三个第四个是的归属感,真好大大咧咧大大的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯归属感
+                         </span>
+                         </div>
+                         <div class="mes-item">
+                         <span class="item-id">
+                             <i class="id-icon">2</i>
+                             <span class="id-name">打开海：</span>
+                         </span>
+                         <span class="item-con">
+                             地方第三个第四个是的归的k；拉开打开属感
                          </span>
                          </div>
                          <div class="mes-item">
@@ -115,7 +129,7 @@
                              <span class="id-name">安望云海：</span>
                          </span>
                          <span class="item-con">
-                             地方第三个第四个是的归属感
+                             地方第三个第四的k；拉开打开的归属感
                          </span>
                          </div>
                          <div class="mes-item">
@@ -124,7 +138,7 @@
                              <span class="id-name">安望云海：</span>
                          </span>
                          <span class="item-con">
-                             地方第三个第四个是的归属感
+                             地方第三个第四个是的
                          </span>
                          </div>
                          <div class="mes-item">
@@ -133,7 +147,7 @@
                              <span class="id-name">安望云海：</span>
                          </span>
                          <span class="item-con">
-                             地方第三个第四个是的归属感
+                             地方第三个第四的k；拉开打开的k；拉开打开的k；拉开打开的k；拉开打开
                          </span>
                          </div>
                          <div class="mes-item">
@@ -142,52 +156,12 @@
                              <span class="id-name">安望云海：</span>
                          </span>
                          <span class="item-con">
-                             地方第三个第四个是的归属感
-                         </span>
-                         </div>
-                         <div class="mes-item">
-                         <span class="item-id">
-                             <i class="id-icon">2</i>
-                             <span class="id-name">安望云海：</span>
-                         </span>
-                         <span class="item-con">
-                             地方第三个第四个是的归属感
+                             地方第三个的k；拉开打开的k；拉开打开的k；拉开打开的k；拉开打开
                          </span>
                          </div>
                           
                      </div>
                  </div>
-             <footer class="footer">
-    <div class="footer-con">
-        <a  href="http://w3cay.com" alt="关于我" title="关于我" target="_blank">
-        <div class="me">
-            <i class="myicon"><img  src="/W3CAY/Public/Home/IMG/myicon.png" alt="关于我" title="关于我" width="60"  height="60" /> </i>
-            <div class="mylink"></div>
-            <span class="mymoto"></span>
-            </a>
-        </div>
-        <div class="footer-left">
-            <div id="line"></div>
-
-            <span class="useread" >
-            Powered by <a href="http://www.thinkphp.cn"  rel="nofollow" target="_blank">ThinkPHP</a>
-            &nbsp
-            Host by
-            <a href="http://www.zzidc.com"  rel="nofollow" target="_blank">景安网络</a>
-            </span>
-            <span class="copyright">
-            <i class="copy-icon"></i> <a href="http://w3cay.com" target="_blank">安望云海|W3CAY</a>
-            &nbsp豫ICP备15003362号&nbsp 
-            <script type="text/javascript">
-            // var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
-            </script>
-            </span>
-        </div>
-    </div>
-<!--       <div class="totop"></div>-->
- </footer>
-</body>
-</html>
              </section>
         </div>
     </body>
