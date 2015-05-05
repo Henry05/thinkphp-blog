@@ -180,134 +180,68 @@ section h3{
 	max-width: 750px;
 	min-width: 300px;
 	width: 90%;
-	height: 55%;
+	height: 50%;
 	color: #fff;
 
 }
 .contact-icon{
-	width: 100%;
-	height: 20%;
-	border:1px solid;
-	margin-bottom: 3%;
+	width: 50%;
+	height: 25%;
+	margin:0% auto 5%;
+	clear: both;
 }
+.contact-icon  img{
+	width: 80px;
+	height: 100%;
+}
+#weibo{
+	float: left;
+}
+#weixin{
+	float: right;
+}
+
 .mes-post{
 	width: 100%;
-	height: 15%;
-	margin:0 auto 3%; 
-
-}
-.mes-list-contain{
-	width: 100%;
-	height: 70%;
-	margin: auto;
-	border: 1px dotted rgba(255,255,255,1);
-	border-top: 1px dotted rgba(255,255,255,1);
-	border-bottom: 1px dotted rgba(255,255,255,1);
-	padding: 2px 5px 2px 2px ;
-	overflow-y: scroll;
-	overflow-x:hidden;
-	scrollbar:
-
-}
-.mes-list-contain::-webkit-scrollbar {
-	width:7px;
-	height:10px;
-	padding: 2px;
-}
-.mes-list-contain::-webkit-scrollbar-button    {
-	display: none;
-}
-.mes-list-contain::-webkit-scrollbar-track     {
-	display: none;
-}
-.mes-list-contain::-webkit-scrollbar-track-piece {
-background:rgba(205,255,255,0.3);
-}
-.mes-list-contain::-webkit-scrollbar-thumb{
-background:rgba(255,255,255,0.3);
-border-radius:5px;
-}
-.mes-list-contain::-webkit-scrollbar-corner {
-background:#82AFFF;
-}
-.mes-list-contain::-webkit-scrollbar-resizer  {
-background:#FF0BEE;
-}
-.mes-item{
-	width: 100%;
-	margin: auto;
-	border-bottom: 1px dotted;
-	display: block;
-	clear: both;
-
-}
-.item-id{
-	display: block;
-	width:auto;
-	height: 90%;
-	float: left;
-
-}
-.id-icon{
-	display: inline-block;
-	width: 30px;
-	height: auto;
-	border: 1px solid;
-	border-radius: 30px;
-	position: relative;
-	top: 50%;
-	margin: -18px 5px 0 5px;
-	font-style: normal;
-	line-height: 30px;
-	text-align: center;
-
-}
-.id-name{
-	line-height: 40px;
-}
-.item-con{
-	display: block;
-	width: 78%;
-	height: auto;
-	float: left;
-	line-height: 40px;
+	height: 50%;
 }
 
-.post-name{
-	float: right;
-	width: 18%;
-}
 .post-text{
-	width: 80%;
-	float: left;
+	width: 100%;
+	height: 100%;
 }
 .inp{
 	border-radius: 3px;
 	outline: none;
-	background: rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.2);
 	color: #fff;
 	border: 1px solid #fff;
 	display: block;
 }
 
 .inp-text{
-	width: 100%;
-	height: 60px;
+	margin: auto;
+	width: 80%;
+	height: 100%;
+	font-size: 16px;
 }
-.inp-name{
-	height: 25px;
-	width: 100%;
-	margin-top: 2px;
 
-}
 
 .inp-sub{
-	width: 100%;
-	height: 25px;
-	margin-top: 5px;
+	width: 50%;
+	height: 30px;
+	margin: 10% auto 0;
 	cursor: pointer;
 	background: #E0CF70;
-
+	border: 0px;
+	font-weight:100;
+	font-size: 16px;
+	transition: background 0.8s, width 0.8s,border-radius 0.8s;
+}
+.inp-sub:hover{
+	width: 40%;
+	background: #CAB852;
+	border-radius: 10px;
 }
 .footer{
 	position:absolute;
@@ -360,5 +294,12 @@ background:#FF0BEE;
 }
 .pre-bar{
 	width: 65%;
+}
+
+.contact-icon{
+	width: 65%;
+	height: 20%;
+	margin:0% auto 10%;
+	clear: both;
 }
 }

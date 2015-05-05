@@ -72,96 +72,20 @@
                  <h3>—— Contact ——</h3>
                  <div class="mes-contain">
                   <div class="contact-icon">
-                      <a href="#"><img src="/W3CAY/Public/Home/IMG/weibo.png"></a>
-                        <a href="#"><img src="/W3CAY/Public/Home/IMG/home.png"></a>
-                          <a href="#"><img src="/W3CAY/Public/Home/IMG/weixin.png"></a>
+                      <a href="http://weibo.com/633012550/" target="_blank" ><img id="weibo" src="/W3CAY/Public/Home/IMG/weibo.png" alt="我的微博" title="我的微博"></a>
+                      <a href="/W3CAY/Public/Home/IMG/weixin.png"><img  id="weixin" src="/W3CAY/Public/Home/IMG/weixin.png"></a>
                   </div>
+
                      <div class="mes-post">
                      <span class="post-text">
                          <textarea  class="inp inp-text" onfocus="this.value=''"/>给我留言吧！</textarea>
                      </span>
-                      <span class="post-name">
-                     <input class="inp inp-name" onfocus="this.value=''" value="你的昵称.." type="text"/>
-                      <input class="inp inp-sub" type="button" value="发布"/>
-                     </span>
+                
+                      <input class="inp inp-sub" type="button" value="Send"/>
+                    
                     
                      </div>
-                     <div class="mes-list-contain">
-                         <div class="mes-item">
-                         <span class="item-id">
-                             <i class="id-icon">2</i>
-                             <span class="id-name">CAY：</span>
-                         </span>
-                         <span class="item-con">
-                             地方第三个第四个是的归属感,真好大大咧咧大大的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯
-                         </span>
-                         </div>
-                         <div class="mes-item">
-                         <span class="item-id">
-                             <i class="id-icon">2</i>
-                             <span class="id-name">安望云海：</span>
-                         </span>
-                         <span class="item-con">
-                             地方第三个第四个是的归属感 地方第三个第四个是的归属感,真好大大咧咧大大的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯 地方第三个第四个是的归属感,真好大大咧咧大大的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯
-                         </span>
-                         </div>
-                         <div class="mes-item">
-                         <span class="item-id">
-                             <i class="id-icon">2</i>
-                             <span class="id-name">陈安阳：</span>
-                         </span>
-                         <span class="item-con">
-                             地方第三个第四个是的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯 地方第三个第四个是的归属感,真好大大咧咧大大的k；拉开打开了大吉大利咯角度来看经历打卡记录看得见啊率大开绿灯归属感
-                         </span>
-                         </div>
-                         <div class="mes-item">
-                         <span class="item-id">
-                             <i class="id-icon">2</i>
-                             <span class="id-name">打开海：</span>
-                         </span>
-                         <span class="item-con">
-                             地方第三个第四个是的归的k；拉开打开属感
-                         </span>
-                         </div>
-                         <div class="mes-item">
-                         <span class="item-id">
-                             <i class="id-icon">2</i>
-                             <span class="id-name">安望云海：</span>
-                         </span>
-                         <span class="item-con">
-                             地方第三个第四的k；拉开打开的归属感
-                         </span>
-                         </div>
-                         <div class="mes-item">
-                         <span class="item-id">
-                             <i class="id-icon">2</i>
-                             <span class="id-name">安望云海：</span>
-                         </span>
-                         <span class="item-con">
-                             地方第三个第四个是的
-                         </span>
-                         </div>
-                         <div class="mes-item">
-                         <span class="item-id">
-                             <i class="id-icon">2</i>
-                             <span class="id-name">安望云海：</span>
-                         </span>
-                         <span class="item-con">
-                             地方第三个第四的k；拉开打开的k；拉开打开的k；拉开打开的k；拉开打开
-                         </span>
-                         </div>
-                         <div class="mes-item">
-                         <span class="item-id">
-                             <i class="id-icon">2</i>
-                             <span class="id-name">安望云海：</span>
-                         </span>
-                         <span class="item-con">
-                             地方第三个的k；拉开打开的k；拉开打开的k；拉开打开的k；拉开打开
-                         </span>
-                         </div>
-                          
-                     </div>
-                 </div>
+                    
              </section>
         </div>
     </body>
