@@ -192,7 +192,7 @@ section h3{
 }
 .contact-icon  img{
 	width: 80px;
-	height: 100%;
+	height: 80px;
 }
 #weibo{
 	float: left;
@@ -200,7 +200,30 @@ section h3{
 #weixin{
 	float: right;
 }
+.weixin-code{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	display: none;
 
+}
+.weixin-code > img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	box-shadow: 10px 10px 10px #3F3B3B;
+	border-radius: 10px;
+}
+.weixin-code > span{
+	display: block;
+	text-align: center;
+	margin:15px auto 0; 
+}
 .mes-post{
 	width: 100%;
 	height: 50%;
@@ -210,6 +233,13 @@ section h3{
 	width: 100%;
 	height: 100%;
 }
+.post-from{
+	display: block;
+	width: 80%;
+	height: 20%;
+	margin: 5% auto 0;
+	clear: both;
+}
 .inp{
 	border-radius: 3px;
 	outline: none;
@@ -218,19 +248,28 @@ section h3{
 	border: 1px solid #fff;
 	display: block;
 }
-
+.inp-name{
+	width: 45%;
+	height: 100%;
+	float: left;
+}
+.inp-mail{
+	width: 45%;
+	height: 100%;
+	float: right;
+}
 .inp-text{
 	margin: auto;
 	width: 80%;
 	height: 100%;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 
 .inp-sub{
 	width: 50%;
 	height: 30px;
-	margin: 10% auto 0;
+	margin: 5% auto 0;
 	cursor: pointer;
 	background: #E0CF70;
 	border: 0px;
@@ -301,5 +340,32 @@ section h3{
 	height: 20%;
 	margin:0% auto 10%;
 	clear: both;
+}
+.contact-icon  img{
+	width: 55px;
+	height: 55px;
+}
+.p-big{
+
+	font-size: 28px;
+
+}
+.p-sm{
+	font-size: 14px;
+}
+.post-from{
+
+	margin: 10% auto 0;
+
+}
+.inp-sub{
+	margin: 10% auto 0;
+}
+section h3{
+	padding-top: 13%;
+}
+.weixin-code{
+
+	margin:30% auto 0;  
 }
 }

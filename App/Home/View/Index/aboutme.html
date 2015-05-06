@@ -17,7 +17,7 @@
     </head>
     <body >
         <div class="container">
-            <i class="next-icon"></i>
+            <i class="next-icon" id="next-icon-id"></i>
             <section class="first ">
                 <div class="icon-me"><img src="__PUBLIC__/Home/IMG/myicon.png"> </div>
                 <div class="first-name">安望云海</div>
@@ -54,7 +54,7 @@
             </span>
             </div>
             <div class="text-line"> 
-            <span class="skills">JavaScript</span>
+            <span class="skills">JS</span>
             <span class="pre-bar">
                 <span class="precent"></span>
             </span>
@@ -73,15 +73,21 @@
                  <div class="mes-contain">
                   <div class="contact-icon">
                       <a href="http://weibo.com/633012550/" target="_blank" ><img id="weibo" src="__PUBLIC__/Home/IMG/weibo.png" alt="我的微博" title="我的微博"></a>
-                      <a href="__PUBLIC__/Home/IMG/weixin.png"><img  id="weixin" src="__PUBLIC__/Home/IMG/weixin.png"></a>
+                      <a href="javascript:void(0);"><img  id="weixin" src="__PUBLIC__/Home/IMG/weixin.png"></a>
                   </div>
-
+                  <div class="weixin-code">
+                      <img src="__PUBLIC__/Home/IMG/weixin-code.jpg">
+                      <span>扫一扫 联系我</span>
+                  </div>
                      <div class="mes-post">
                      <span class="post-text">
                          <textarea  class="inp inp-text" onfocus="this.value=''"/>给我留言吧！</textarea>
                      </span>
-                
-                      <input class="inp inp-sub" type="button" value="Send"/>
+                     <span class="post-from">
+                 <input type="text" value="你的名字" onfocus="this.value=''" class="inp inp-name">
+                 <input type="text" value="你的邮箱" onfocus="this.value=''" class="inp inp-mail">
+                     </span>
+                     <input class="inp inp-sub" type="button" value="Send"/>
                     
                     
                      </div>
@@ -108,5 +114,27 @@
                 });
                 });
     </script>
+    <script type="text/javascript"> 
+    window.onscroll = function(){ 
+    var t = document.documentElement.scrollTop || document.body.scrollTop;  
+    var h = document.body.scrollHeight;
+    var next = document.getElementById( "next-icon-id" ); 
+    if( t <= h/2) { 
+        next.style.display = "display"; 
+    } else { 
+        next.style.display = "none"; 
+    } 
+    } 
+    $(function(){
+        $("#weixin").click(function(){
+            $(".mes-post").fadeToggle("slow");
+            $(".weixin-code").fadeToggle("slow");
+        });
+       $("#weixin").hover(function(){
+            $(".mes-post").fadeToggle("slow");
+            $(".weixin-code").fadeToggle("slow");
+        });
+    });
 
+</script> 
 </html>
