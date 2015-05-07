@@ -10,9 +10,7 @@
         <meta name="renderer" content="webkit">
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
         <link rel="alternate icon" type="image/ico" href="__PUBLIC__/Home/IMG/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/CSS/aboutme.css">
-        <!-- <link href='http://www.youziku.com/webfont/CSS/47b87bdc85f52ae0f8a2b2868633284e' rel='stylesheet' type='text/css'/> -->
-        <!--   导航栏样式表 -->
+        <link rel="stylesheet" href="__PUBLIC__/Home/CSS/aboutme.css">
         <link rel="stylesheet" href="__PUBLIC__/Home/CSS/layout.css"/>
     </head>
     <body >
@@ -20,13 +18,13 @@
             <i class="next-icon" id="next-icon-id"></i>
             <section class="first ">
                 <div class="icon-me"><img src="__PUBLIC__/Home/IMG/myicon.png"> </div>
-                <div class="first-name">安望云海</div>
+                <div class="first-name">Bright Chen</div>
             </section>
             <section class="second" id="page2">
             <h3>—— Introduce ——</h3>
             <div class="sec-text ">
 
-            <div class="text-box">
+            <div class="text-box ">
            
              <p class="p-big"> I'm a web front-end development enthusiasts</p>
              <p class="p-sm"><img class="text-icon" src="__PUBLIC__/Home/IMG/pc.png" >我是一名web前端技术爱好者</p>
@@ -44,25 +42,31 @@
             <div class="text-line"> 
             <span class="skills">HTML+</span>
             <span class="pre-bar">
-                <span class="precent"></span>
+                <span class="precent pre1"></span>
             </span>
             </div>
             <div class="text-line"> 
             <span class="skills">CSS+</span>
             <span class="pre-bar">
-                <span class="precent"></span>
+                <span class="precent  pre2"></span>
+            </span>
+            </div>
+            <div class="text-line"> 
+            <span class="skills">Jquery</span>
+            <span class="pre-bar">
+                <span class="precent pre3"></span>
             </span>
             </div>
             <div class="text-line"> 
             <span class="skills">JS</span>
             <span class="pre-bar">
-                <span class="precent"></span>
+                <span class="precent pre4"></span>
             </span>
             </div>
             <div class="text-line"> 
             <span class="skills">PS</span>
             <span class="pre-bar">
-                <span class="precent"></span>
+                <span class="precent pre5"></span>
             </span>
             </div>
              
@@ -72,22 +76,23 @@
                  <h3>—— Contact ——</h3>
                  <div class="mes-contain">
                   <div class="contact-icon">
-                      <a href="http://weibo.com/633012550/" target="_blank" ><img id="weibo" src="__PUBLIC__/Home/IMG/weibo.png" alt="我的微博" title="我的微博"></a>
-                      <a href="javascript:void(0);"><img  id="weixin" src="__PUBLIC__/Home/IMG/weixin.png"></a>
+                      <a href="http://weibo.com/633012550/" target="_blank" >
+                      <img id="weibo" class="img-hover" src="__PUBLIC__/Home/IMG/weibo.png" alt="我的微博" title="我的微博"></a>
+                      <a href="javascript:void(0);"><img  id="weixin"  class="img-hover"  src="__PUBLIC__/Home/IMG/weixin.png"></a>
                   </div>
                   <div class="weixin-code">
                       <img src="__PUBLIC__/Home/IMG/weixin-code.jpg">
-                      <span>扫一扫 联系我</span>
+                      <span>扫一扫　联系我</span>
                   </div>
                      <div class="mes-post">
                      <span class="post-text">
-                         <textarea  class="inp inp-text" onfocus="this.value=''"/>给我留言吧！</textarea>
+                         <textarea  class="inp inp-text" />给我留言吧！</textarea>
                      </span>
                      <span class="post-from">
-                 <input type="text" value="你的名字" onfocus="this.value=''" class="inp inp-name">
-                 <input type="text" value="你的邮箱" onfocus="this.value=''" class="inp inp-mail">
+                         <input type="text" value="你的名字"  class="inp inp-name">
+                         <input type="text" value="你的邮箱"  class="inp inp-mail">
                      </span>
-                     <input class="inp inp-sub" type="button" value="Send"/>
+                         <input class="inp inp-sub" type="button" value="Send"/>
                     
                     
                      </div>
@@ -115,17 +120,36 @@
                 });
     </script>
     <script type="text/javascript"> 
-    window.onscroll = function(){ 
-    var t = document.documentElement.scrollTop || document.body.scrollTop;  
-    var h = document.body.scrollHeight;
-    var next = document.getElementById( "next-icon-id" ); 
-    if( t <= h/2) { 
-        next.style.display = "display"; 
-    } else { 
-        next.style.display = "none"; 
+    window.onscroll = function()
+    { 
+        var t = document.documentElement.scrollTop || document.body.scrollTop;  
+        var h = document.body.scrollHeight;
+        var next = document.getElementById( "next-icon-id" ); 
+
+        if(t >= h*0.25){
+            $(".p-sm").animate({left:'0'});
+         }
+        if(t >= h*0.5){
+           $(".pre1").animate({ width:'70%'},"slow");
+            $(".pre2").animate({ width:'60%'},"slow");
+             $(".pre3").animate({ width:'50%'},"slow");
+              $(".pre4").animate({ width:'30%'},"slow");
+                $(".pre5").animate({ width:'50%'},"slow");
+         }
+        if( t >= h*0.7) { 
+            next.style.visibility = "hidden"; 
+        } 
+        if( t <= h*0.7){
+             next.style.visibility = "visible"; 
+        }
     } 
-    } 
+
     $(function(){
+
+         //文本渐入
+        $(".first-name").fadeIn("10000");
+
+        //微信图标切换
         $("#weixin").click(function(){
             $(".mes-post").fadeToggle("slow");
             $(".weixin-code").fadeToggle("slow");
@@ -134,7 +158,24 @@
             $(".mes-post").fadeToggle("slow");
             $(".weixin-code").fadeToggle("slow");
         });
-    });
 
+       //表单焦点文本切换
+       $(".inp-name").focus(function() {
+           $(this).val('');
+       }).blur(function () {
+           $(this).val("你的名字");
+       });
+        $(".inp-mail").focus(function() {
+           $(this).val('');
+       }).blur(function () {
+           $(this).val("你的邮箱");
+       });
+      $(".inp-text").focus(function() {
+           $(this).val('');
+       }).blur(function () {
+           $(this).val("给我留言吧！");
+       });
+
+    });
 </script> 
 </html>
