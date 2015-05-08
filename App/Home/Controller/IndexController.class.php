@@ -119,6 +119,10 @@ class IndexController extends Controller {
 
     public function aboutme()
     {
+      $inptext = I('post.inptext'); 
+      $inpname = I('post.inpname'); 
+      $inpmail = I('post.inpmail'); 
+      
       $this->display();
     }
 
