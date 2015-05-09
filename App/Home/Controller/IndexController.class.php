@@ -119,9 +119,14 @@ class IndexController extends Controller {
 
     public function aboutme()
     {
-      $inptext = I('post.inptext'); 
-      $inpname = I('post.inpname'); 
-      $inpmail = I('post.inpmail'); 
+      
+      $message['m_text'] = I('post.inptext'); 
+      $message['m_name'] = I('post.inpname'); 
+      $message['m_mail'] = I('post.inpmail'); 
+      if ($message['m_text']!= ''|| $message['m_name']!= '' || $message['m_mail']!='') {
+           M('message')->add($message);
+      }
+     
       
       $this->display();
     }

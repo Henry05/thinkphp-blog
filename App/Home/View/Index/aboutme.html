@@ -84,16 +84,17 @@
                         <span>扫一扫　联系我</span>
                     </div>
                     <div class="mes-post">
-                       <span class="send-suc">发送成功！</span>
+                       <span class="send-suc">发送成功</span>
 
                         <span class="post-text">
                         <textarea  class="inp inp-text" />给我留言吧！</textarea>
                         </span>
                         <span class="post-from">
-                        <input type="text" value="你的名字"  class="inp inp-name">
-                        <input type="text" value="你的邮箱"  class="inp inp-mail">
+                        <input type="text" value="您的名字"  class="inp inp-name">
+                        <input type="text" value="您的邮箱"  class="inp inp-mail">
                         </span>
                         <input class=" inp-sub" type="button" value="Send"/>
+                        <label id="notice"></label>
 
                     </div>
 
@@ -161,7 +162,9 @@
             $('.inp').each(function(){  
             var txt = $(this).val();  
             $(this).focus(function(){  
+            $("#notice").text(""); 
             if(txt === $(this).val()) $(this).val("");  
+
             }).blur(function(){  
             if($(this).val() == "") $(this).val(txt);  
             });  
@@ -174,8 +177,14 @@
                var inptext = $(".inp-text").val();
                var inpname = $(".inp-name").val();
                var inpmail = $(".inp-mail").val();
-               
-                $.ajax({
+               var text = '给我留言吧！',name = '您的名字',mail ='您的邮箱';
+                if ( inptext == text ||inpname== name||inpmail==mail||inpmail.match(/^[a-z0-9]+([._]*[a-z0-9]+)*@[a-z0-9]+([_.][a-z0-9]+)+$/gi) == null ) {
+
+                    $("#notice").text("请正确填写!");
+                
+                } 
+                else{
+                    $.ajax({
                         type:'post',
                         cache:false,
                         data:{inptext:inptext,inpname:inpname,inpmail:inpmail},
@@ -186,9 +195,15 @@
                         complete: function(){
                            $(".inp-sub").val("Send").attr("disabled", true); 
                            $(".send-suc").fadeToggle("slow").fadeToggle("slow");
+                           $(".inp-text").val('给我留言吧！');
+                           $(".inp-name").val('您的名字');
+                           $(".inp-mail").val('您的邮箱');
 
                         },
-                    });
+                    }); 
+                         
+                     };
+
              });
         </script>
     </html>
