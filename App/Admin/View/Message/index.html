@@ -1,0 +1,45 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/CSS/public.css">
+<style type="text/css">
+	td{
+		width: 10%;
+
+	}
+	.m-text{
+		text-align: left;
+		padding: 10px;
+		background: #CBF3EE;
+	}
+</style>
+ <table class="table">
+	<tr>
+		<th>ID</th><th>发件人</th><th>邮箱</th><th>发送时间</th><th>操作</th>
+	</tr>
+	<foreach name='mes' item='v'>
+	<tr >
+		<td >{$v.m_id}</td> 
+		<td >{$v.m_name}</td> 
+		<td >{$v.m_mail}</td> 
+		<td >{$v.m_date}</td> 
+		<td >
+		<a class="btn" href="__URL__/delmes/m_id/{$v.m_id}" >删除</a>
+		</td> 
+	</tr>
+	<tr >
+		<td class="m-text" colspan="5">{$v.m_text}</td>
+	</tr>
+
+	</foreach>
+
+ </table>
+<div class="paging">{$page}</div>
+</form>	
+
+
+
+<!--[if lt IE 9]>
+<script src="__PUBLIC__/Jquery/jquery-1.11.2.js"></script>
+<![endif]
+
+<!- -[if (gte IE 9)|!(IE)]><!-->
+<script src="__PUBLIC__/Jquery/jquery-2.1.3.js"></script>
+<!--<![endif]-->

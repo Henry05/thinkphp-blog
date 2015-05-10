@@ -14,6 +14,13 @@
     
 <!--   导航栏样式表 -->
   <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
+
+<!--[if lt IE 9]>
+<script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
+<!--<![endif]-->
 <script type="text/javascript">
 //导航下拉效果
  $(function(){
@@ -22,13 +29,6 @@ $(".btn").click(function(){
 });
 });
 </script>
-<!--[if lt IE 9]>
-<script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
-<![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
-<!--<![endif]-->
-
   </head>
   <body>
 <!-- 导航部分 -->
@@ -41,7 +41,7 @@ $(".btn").click(function(){
     <ul>
       <li ><a href="http://localhost/W3CAY/">首页</a></li>
     <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
-      <li ><a href="/W3CAY/Index/aboutme.html">Me</a></li>
+      <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
         <li>
           <form class="search" role="search"> 
           <input type="text" class="search-input" placeholder="Search">
@@ -88,15 +88,15 @@ $(".btn").click(function(){
             </span>
             <span class="copyright">
             <i class="copy-icon"></i> <a href="http://w3cay.com" target="_blank">安望云海|W3CAY</a>
-            &nbsp豫ICP备15003362号&nbsp <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));</script>
+            &nbsp豫ICP备15003362号&nbsp 
+            <script type="text/javascript">
+            // var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
+            </script>
             </span>
         </div>
     </div>
 <!--       <div class="totop"></div>-->
  </footer>
-
-<!--   首页Js引入文件 -->
-<script src="/W3CAY/Public/Home/Js/layout.js"></script>
 </body>
 </html>
 

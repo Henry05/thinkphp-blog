@@ -123,6 +123,7 @@ class IndexController extends Controller {
       $message['m_text'] = I('post.inptext'); 
       $message['m_name'] = I('post.inpname'); 
       $message['m_mail'] = I('post.inpmail'); 
+      $message['m_date']= date("Y-m-d H:i:s");
       if ($message['m_text']!= ''|| $message['m_name']!= '' || $message['m_mail']!='') {
            M('message')->add($message);
       }

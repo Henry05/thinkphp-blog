@@ -223,17 +223,12 @@ font-size: 18px;
 
 #line{display: none!important;}
 .me{
-	margin: 5px auto !important;
-
-	height: 40px !important;
-	width: 288px !important;
-
-
+	display: none !important;
 
 }
 .myicon{
 
-	margin-top: 0px !important;
+	display: none !important;
 
 
 }
@@ -242,8 +237,7 @@ font-size: 18px;
 		height: 40px;
 }
 .mymoto{
-	top:10px!important;
-	width: 80% ! important;
+	display: none !important;
 }
 .me,.useread,.copyright{
 	filter:alpha(opacity=100)!important;
@@ -330,7 +324,6 @@ font-size: 18px;
 	height: 24px;
 	margin-top: 5px;
 }
-
 .footer a
 {
 	text-decoration:none;
