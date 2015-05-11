@@ -81,7 +81,7 @@ $(".btn").click(function(){
 
 <footer class="footer">
     <div class="footer-con">
-        <a  href="http://w3cay.com" alt="关于我" title="关于我" target="_blank">
+      <a  href="http://localhost/W3CAY/me" alt="关于我" title="关于我" target="_blank">
         <div class="me">
             <i class="myicon"><img  src="/W3CAY/Public/Home/IMG/myicon.png" alt="关于我" title="关于我" width="60"  height="60" /> </i>
             <div class="mylink"></div>
@@ -98,8 +98,9 @@ $(".btn").click(function(){
             <a href="http://www.zzidc.com"  rel="nofollow" target="_blank">景安网络</a>
             </span>
             <span class="copyright">
-            <i class="copy-icon"></i> <a href="http://w3cay.com" target="_blank">安望云海|W3CAY</a>
-            &nbsp豫ICP备15003362号&nbsp 
+            <i class="copy-icon"></i> 
+        <a  href="http://w3cay.com" target="_blank">安望云海|W3CAY</a> 
+        <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362号&nbsp</a>
             <script type="text/javascript">
             var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
             </script>

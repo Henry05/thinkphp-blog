@@ -75,7 +75,17 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 	color: #fff;
 	border-radius: 5px;
 }
-.search-input{width:150px;height: 24px;font-size:18px;}
+.search-input{
+	width:150px;
+	height: 18px;
+	font-size:14px;
+	line-height: 24px;
+	border-radius: 5px;
+	outline: none;
+	color: #C1AAAA;
+	border: 0px;
+	padding: 5px;
+}
 .btn{display: none;}
 
 
@@ -129,7 +139,7 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
        left: 180px;
 
 }
-	.logo{margin-top:2px;display:inline-block; }
+.logo{margin-top:2px;display:inline-block; }
 .nav li{
 	display: block;
 	margin: auto;
@@ -154,7 +164,7 @@ font-size: 18px;
 	margin-top: 12px;
 	margin-right: 10px;
 }
-	.footer-con{
+.footer-con{
 	width:100% !important;
 
 	height: 122px;
@@ -181,7 +191,7 @@ font-size: 18px;
 	height: 25px !important;
 	width: 75% !important;
 
-	background-size: 235px 25px!important;
+	background-size: 200px 25px!important;
 
 	left: 5px !important;
 	top:55px !important;
@@ -195,7 +205,8 @@ font-size: 18px;
 	width: 100%!important;
  }
 	.footer-con{
-	height: 80px !important;
+	height: 60px !important;
+	vertical-align: center;
 
 }
 .footer a,span {
@@ -211,8 +222,9 @@ font-size: 18px;
 
 	overflow: hidden !important;;
 	float: none !important;
-	margin-top: 0px !important;
+	margin-top:25px !important;
 	height:18px !important;
+	color: #EDDFDF!important;
 }
 
 .useread{
@@ -255,7 +267,6 @@ font-size: 18px;
 	text-align: center;
 	background: #000;
 	color: #DADADA;
-	display: inline-block;
 	width: 100%;
 	
 	
@@ -355,8 +366,7 @@ font-size: 18px;
 	height: 30px;
 	width: 70%;
 	background: url(../IMG/motto.png) no-repeat;
-	background-size: 280px 30px;
-
+	background-size: 250px 30px;
 	display: block;
 	float: left;
 	position: relative;
@@ -365,30 +375,15 @@ font-size: 18px;
 
 
 }
-.me,.useread,.copyright{
+.me,.useread,.copy-icon,.copyright a{
 	filter:alpha(opacity=70);
 	-moz-opacity:0.7;
 	-khtml-opacity: 0.7;
 	opacity: 0.7;
 }
-.me:hover,.useread:hover,.copyright:hover{
+.me:hover,.useread:hover,.copyright a:hover{
 	filter:alpha(opacity=100);
 	-moz-opacity:1;
 	-khtml-opacity: 1;
 	opacity: 1;
-}
-
-.totop{
-	width: 50px;
-	height: 50px;
-	display: block;
-	border: 1px solid;
-	position:fixed;
-	top:92.3%;
-	left: 96.15%;
-	float: right;
-	border-radius: 50px;
-	background: #E7FADE;
-	z-index: 200;
-
 }
