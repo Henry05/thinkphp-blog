@@ -16,11 +16,11 @@
     <body >
         <div class="container">
             <i class="next-icon" id="next-icon-id"></i>
-            <section class="first ">
+            <section class="mebg2 ">
                 <div class="icon-me"><img src="/W3CAY/Public/Home/IMG/myicon.png"> </div>
                 <div class="first-name">Bright Chen</div>
             </section>
-            <section class="second" id="page2">
+            <section class="mebg1" id="page2">
                 <h3>—— Introduce ——</h3>
                 <div class="sec-text ">
                     <div class="text-box ">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </section>
-            <section class="third" id="page3">
+            <section class="mebg2" id="page3">
                 <h3>—— Skills ——</h3>
                 <div class="sec-text ">
                     <div class="text-line">
@@ -71,7 +71,7 @@
 
                 </div>
             </section>
-            <section class="forth" id="page4">
+            <section class="mebg1" id="page4">
                 <h3>—— Contact ——</h3>
                 <div class="mes-contain">
                     <div class="contact-icon">

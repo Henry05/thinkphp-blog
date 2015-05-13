@@ -50,32 +50,16 @@ section h3{
 	font-style: italic;
 
 }
-.first{
-	background:url('../IMG/color19.png') no-repeat 100% 100%;
+.mebg1{
+	background:url('../IMG/mebg1.jpg') no-repeat 100% 100%;
 	background-size: cover;
 
 }
 
-.second{
-
-	background:url('../IMG/color14.png') no-repeat 50% 100%;
-	background-size: cover;
-	/*background: #67BDF1;*/
-}
-
-.third{
-			/*background: #90CB6A;*/
-
-	background:url('../IMG/color19.png') no-repeat 50% 100%;
+.mebg2{
+	background:url('../IMG/mebg2.jpg') no-repeat 50% 100%;
 	background-size: cover;
 }
-.forth{
-	/*background: #99BDEE;*/
-
-	background:url('../IMG/color14.png') no-repeat 100% 100%;
-	background-size: cover;
-}
-
 .icon-me > img{
 
 	width: 150px;

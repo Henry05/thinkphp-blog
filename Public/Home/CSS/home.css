@@ -69,7 +69,6 @@ a{
 	margin: 15px ;
 	margin-left: 25px;
 	border-radius: 65px;
-
 	z-index: 2;
 	background-size:100px 103px !important;
 }
@@ -115,29 +114,16 @@ a{
 }
 
 .lastShow{
-	cursor: pointer;
-
 	display: block;
-	width: 300px;
-	margin: auto;
-	height: 150px;
-
-	background:url(../IMG/more.png) no-repeat;
-	background-size: 300px 100px ;
-	background-position: 0px 50px;
-    animation:myfirst 3s infinite;
-     -moz-animation:myfirst 3s infinite; 
-     -webkit-animation:myfirst 3s infinite; 
-     -o-animation:myfirst 3s infinite;
 }
 .hotShow{
-	cursor: pointer;
-
 	display: none;
+}
+.next-show{
+	cursor: pointer;
 	width: 300px;
 	margin: auto;
 	height: 150px;
-
 	background:url(../IMG/more.png) no-repeat;
 	background-size: 300px 100px ;
 	background-position: 0px 50px;
@@ -147,16 +133,12 @@ a{
      -o-animation:myfirst 3s infinite;
 }
 
-.lastShow:hover{
+.next-show:hover{
 		filter:alpha(opacity=70);  /*支持 IE 浏览器*/
 		-moz-opacity:0.70; /*支持 FireFox 浏览器*/
 		opacity:0.70;  /*支持 Chrome, Opera, Safari 等浏览器*/
 }
-.hotShow:hover{
-		filter:alpha(opacity=70);  /*支持 IE 浏览器*/
-		-moz-opacity:0.70; /*支持 FireFox 浏览器*/
-		opacity:0.70;  /*支持 Chrome, Opera, Safari 等浏览器*/
-}
+
 .showload{
 	display: none;
 	background:url(../IMG/load.gif) no-repeat;

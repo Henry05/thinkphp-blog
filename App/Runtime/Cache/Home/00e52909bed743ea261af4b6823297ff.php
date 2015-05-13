@@ -112,8 +112,8 @@ $(".btn").click(function(){
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
-        <div class="lastShow"  ></div>
-        <div class="hotShow"  ></div>
+        <div class="lastShow next-show"  ></div>
+        <div class="hotShow next-show"  ></div>
         <div class="showload"  ></div>
     </div>
 

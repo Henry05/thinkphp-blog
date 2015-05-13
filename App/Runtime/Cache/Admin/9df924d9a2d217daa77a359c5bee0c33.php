@@ -52,6 +52,13 @@
 <!--<![endif]-->
 
 <!--   首页Js引入文件 -->
-<script src="/W3CAY/Public/Admin/Js/index.js"></script>
+<script type="text/javascript">
+	$(function(){
+	$(".aclick").bind("click",function(){
+	    $(this).siblings("ul").slideToggle();
+	})
+})
+</script>
+
 </body> 
 </html>
