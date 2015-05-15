@@ -24,6 +24,7 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
 <!--<![endif]-->
+<script src="/W3CAY/Public/Home/JS/html5shiv.min.js"></script>
 <script type="text/javascript">
 //导航下拉效果
  $(function(){
@@ -87,28 +88,33 @@ $(".btn").click(function(){
         <!--   最新 -->
         <div class="lastlist">
             <?php if(is_array($last)): foreach($last as $key=>$v): ?><div class="alist"  >
-                <div class="alist-icon" style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;"></div>
+                <div class="alist-icon" >
+                   <a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"> <img src="/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
+                </div>
                 <div class="alist-con">
                     <div  class="alist-title">
-                        <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
+                         <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
                         <span>[<?php echo ($v["a_time"]); ?>]</span>
                         <h3 ><?php echo ($v["a_title"]); ?></h3>
                     </a></div>
-                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,120,'utf-8')); ?></div></a>
+                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,130,'utf-8')); ?></div></a>
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
         <!-- 最热 -->
+
         <div class="hotlist">
             <?php if(is_array($hot)): foreach($hot as $key=>$v): ?><div class="alist">
-                <div class="alist-icon"  style="background: url('/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png') no-repeat;"></div>
+                 <div class="alist-icon" >
+                   <a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"> <img src="/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
+                </div>
                 <div class="alist-con" >
-                    <div  class="alist-title">
-                        <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
+                     <div  class="alist-title">
+                         <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
                         <span>[<?php echo ($v["a_time"]); ?>]</span>
                         <h3 ><?php echo ($v["a_title"]); ?></h3>
                     </a></div>
-                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,120,'utf-8')); ?></div></a>
+                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,130,'utf-8')); ?></div></a>
                 </div>
             </div><?php endforeach; endif; ?>
         </div>

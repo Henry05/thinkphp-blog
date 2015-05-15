@@ -22,6 +22,7 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
 <!--<![endif]-->
+<script src="/W3CAY/Public/Home/JS/html5shiv.min.js"></script>
 <script type="text/javascript">
 //导航下拉效果
  $(function(){

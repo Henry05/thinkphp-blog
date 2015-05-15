@@ -49,30 +49,35 @@
         <div class="lastlist">
             <foreach name='last' item='v'>
             <div class="alist"  >
-                <div class="alist-icon" style="background: url('__PUBLIC__/Home/IMG/{$v.c_value}.png') no-repeat;"></div>
+                <div class="alist-icon" >
+                   <a href="__ROOT__/topic/{$v.c_value}"> <img src="__PUBLIC__/Home/IMG/{$v.c_value}.png"></a>
+                </div>
                 <div class="alist-con">
                     <div  class="alist-title">
-                        <a href="__ROOT__/article/{$v.a_id}.html">
+                         <a href="__ROOT__/article/{$v.a_id}.html">
                         <span>[{$v.a_time}]</span>
                         <h3 >{$v.a_title}</h3>
                     </a></div>
-                    <a href="__ROOT__/article/{$v.a_id}.html"><div class="alist-digest">{$v.a_content|msubstr=###,0,120,'utf-8'}</div></a>
+                    <a href="__ROOT__/article/{$v.a_id}.html"><div class="alist-digest">{$v.a_content|msubstr=###,0,130,'utf-8'}</div></a>
                 </div>
             </div>
             </foreach>
         </div>
         <!-- 最热 -->
+
         <div class="hotlist">
             <foreach name='hot' item='v'>
             <div class="alist">
-                <div class="alist-icon"  style="background: url('__PUBLIC__/Home/IMG/{$v.c_value}.png') no-repeat;"></div>
+                 <div class="alist-icon" >
+                   <a href="__ROOT__/topic/{$v.c_value}"> <img src="__PUBLIC__/Home/IMG/{$v.c_value}.png"></a>
+                </div>
                 <div class="alist-con" >
-                    <div  class="alist-title">
-                        <a href="__ROOT__/article/{$v.a_id}.html">
+                     <div  class="alist-title">
+                         <a href="__ROOT__/article/{$v.a_id}.html">
                         <span>[{$v.a_time}]</span>
                         <h3 >{$v.a_title}</h3>
                     </a></div>
-                    <a href="__ROOT__/article/{$v.a_id}.html"><div class="alist-digest">{$v.a_content|msubstr=###,0,120,'utf-8'}</div></a>
+                    <a href="__ROOT__/article/{$v.a_id}.html"><div class="alist-digest">{$v.a_content|msubstr=###,0,130,'utf-8'}</div></a>
                 </div>
             </div>
             </foreach>
