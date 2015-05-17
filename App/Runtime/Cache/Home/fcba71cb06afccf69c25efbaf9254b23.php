@@ -16,10 +16,11 @@
         body{
         	background: #C7C7F3;
         	color: #fff;
+        	overflow: hidden;
         }
         .box{
         	width: 50%;
-        	height: 50%;
+
         	text-align: center;
         	position: absolute;
         	top:50%;
@@ -33,52 +34,125 @@
         	font-weight: bold;
         }
         .small-font{
-        	font-size: 18px;
+        	font-size: 20px;
+        	font-weight: bold;
         }
         .cloud-div{
         	position: absolute;
         	height: 50%;
         	width: 100%;
-        	overflow: hidden;
         	bottom: 0px;
         }
         .cloud{
-        	height: 100%;
-        	width: 150%;
-        	position: relative;
-        	left: -100px;
-        	top:50px;
+        	height: 300px;
+        	width: 120%;
+        	position: absolute;
+        	bottom: -180px;
+        	overflow: hidden;
         	
         }
         .circle{
         	display: inline-block;
         	background: #fff;
-        	border-radius: 300px;
         	position: relative;
         }
-        .cir1{     	
+        .cir1{  
+            border-radius: 300px;   	
         	width: 300px;
         	height: 300px;
-        	bottom: -45%;
         	margin-left: -50px;
+        	/*box-shadow: 5px 0px 20px  #C5B1B1;*/
+        	z-index: 0;
+        	top: 10px;
         }
         .cir2{
-        	width:150px;
-        	height:150px;
-        	left: -50px;
-        	top:20px;
+        	position: absolute;
+        	width:400px;
+        	height:400px;
+        	border-radius: 400px; 
+        	left:-120px;
+        	bottom: -180px;
+        	z-index: 10;
+
         }
         .cir3{
-        	width: 150px;
-        	height:150px;
-        	left: -100px;
+        	position: absolute;
+        	width:400px;
+        	height:400px;
+        	border-radius: 400px; 
+        	right:-150px;
+        	bottom: -180px;
+        	z-index: 10;
         }
-        .cir4{
-        	width: 150px;
-        	height: 150px;
-        	left: -350px;
-        	top:-80px;
+   @media screen and (max-width: 1130px){
+         .cir1{  
+            border-radius: 250px;   	
+        	width: 250px;
+        	height: 250px;
         }
+        .cir2{
+        	width:370px;
+        	height:370px;
+        	border-radius: 370px; 
+        }
+        .cir3{
+        	width:370px;
+        	height:370px;
+        	border-radius: 370px; 
+        }
+    }
+     @media screen and (max-width: 800px){
+         .cir1{  
+            border-radius: 200px;   	
+        	width: 200px;
+        	height: 200px;
+        	top: 25px;
+        }
+        .cir2{
+        	width:320px;
+        	height:320px;
+        	border-radius: 320px; 
+        }
+        .cir3{
+        	width:320px;
+        	height:320px;
+        	border-radius: 320px; 
+        }
+    }
+     @media screen and (max-width: 680px){
+     	.box{
+     		width: 100%;
+     	}
+     	.big-font{
+        	font-size:8em;
+        	font-weight: bold;
+        }
+         .small-font{
+        	font-size: 12px;
+        	font-weight: 300;
+        }
+        .cir1{  
+            border-radius: 100px;   	
+        	width: 100px;
+        	height: 100px;
+        	top: 70px;
+        	margin-left: -30px;
+        }
+        .cir2{
+        	width:200px;
+        	height:200px;
+        	border-radius: 200px; 
+        	bottom: -100px;
+        }
+        .cir3{
+        	width:200px;
+        	height:200px;
+        	border-radius: 200px; 
+        	bottom: -100px;
+        	right: -130px;
+
+        }
+    }
         </style>
     </head>
 
@@ -129,7 +203,9 @@ $(".btn").click(function(){
    	<div><span class="small-font">哎呀，找不到了！</span></div>
    </div>
    <div class="cloud-div">
+    <span class="circle cir2"></span>
    <div class="cloud ">
+   		
 	   	<span class="circle cir1"></span>
 	   	<span class="circle cir1"></span>
 	   	<span class="circle cir1"></span>
@@ -138,12 +214,26 @@ $(".btn").click(function(){
 	   	<span class="circle cir1"></span>
 	   	<span class="circle cir1"></span>
 	   	<span class="circle cir1"></span>
-
-	   	<span class="circle cir2"></span>
-	   	<span class="circle cir3"></span>
-	   	<span class="circle cir4"></span>
-
+		<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   	<span class="circle cir1"></span>
+	   
    </div>
+   <span class="circle cir3"></span>
    </div>
 </body>
 </html>
