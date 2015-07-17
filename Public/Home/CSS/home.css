@@ -111,13 +111,12 @@ a{
 .alist-digest{
 
 	height: 85px;
-
 	display: block;
 	margin:5px auto 0px;
 	padding-right: 10px;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 28px;
-	overflow: hidden;
+	font-weight: 300;
 }
 
 .lastShow{
@@ -244,7 +243,7 @@ a{
 .alist-digest {
 
 
-	font-size: 16px !important;
+	font-size: 14px !important;
 
 }
 
@@ -286,7 +285,7 @@ a{
 }   
 .ban-slogan p
 {
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 40px;
 }  
 
@@ -339,9 +338,8 @@ a{
 
 }
 .alist-title h3{
-
-	color: #3F3F3F;
-	display: inline-block;
+	font-weight: 600 !important;
+	font-size: 16px;
 }
 .alist-digest{
 
@@ -350,9 +348,10 @@ a{
 	display: block;
 	margin: auto;
 	margin-top: 5px;
-	font-size: 14px;
+	font-size: 10px;
 	line-height: 28px;
 	overflow: hidden;
+
 }
 
 
@@ -486,11 +485,10 @@ a{
 	line-height: 40px;
 	margin-top: 0px;
 	overflow: hidden;
-
 }
 .alist-title h3{
-font-weight: 500 !important;
-font-size: 14px;
+	font-weight: 500 !important;
+	font-size: 14px;
 
 }
 
