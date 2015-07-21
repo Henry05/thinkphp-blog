@@ -135,4 +135,9 @@ a{
 	display: none;
 }
 
+.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter, 
+.syntaxhighlighter td, .syntaxhighlighter tr, .syntaxhighlighter tbody, .syntaxhighlighter thead,
+ .syntaxhighlighter caption, .syntaxhighlighter textarea {
+ 	font-size: 13px !important;
+ }
 }
