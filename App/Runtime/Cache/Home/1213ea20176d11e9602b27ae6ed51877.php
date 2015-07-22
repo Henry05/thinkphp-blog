@@ -10,7 +10,6 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
-
   </head>
 
 <!--   导航栏样式表 -->
@@ -52,23 +51,17 @@ $(".btn").click(function(){
  </header>
 
 
- <script src="/W3CAY/Public/Highlighter/shCore.js" type="text/javascript"></script>
 <link href="/W3CAY/Public/Highlighter/shCoreDefault.css"rel="stylesheet" type="text/css" >
-    <script type="text/javascript" language="javascript">
-        $(function(){
-            SyntaxHighlighter.all();
-        });
-    </script>
 <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/article.css" />
-<script type="text/javascript">
-	SyntaxHighlighter.all();
-</script>
+
 <div class="article-container">
 	<div class="article">	
 	<div  class="article-title"><h4><?php echo ($article["a_title"]); ?></h4></div>
   <div class="article-attr">
-    <span>发布于 <?php echo ($article["a_time"]); ?></span><span><?php echo ($article["a_clicks"]); ?>次阅读</span>
+   <span> <i id="time" class="attr-icon"></i>发布于 <?php echo ($article["a_time"]); ?></span>
+   <span><i id="read" class="attr-icon"></i><?php echo ($article["a_clicks"]); ?>次阅读</span>
   </div>
+
 	<div class="article-detail"><?php echo (stripslashes($article["a_content"])); ?></div>
 
   <div id="SOHUCS" sid="<?php echo ($article["a_id"]); ?>" ></div>
@@ -116,6 +109,13 @@ $(".btn").click(function(){
     });
 </script>
 </html>
+<script src="/W3CAY/Public/Highlighter/shCore.js" type="text/javascript"></script>
+
+    <script type="text/javascript" language="javascript">
+        $(function(){
+            SyntaxHighlighter.all();
+        });
+ </script>
 
 <script>
 
@@ -135,6 +135,7 @@ $(".btn").click(function(){
     s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
     h.insertBefore(s,h.firstChild);
     window.SCS_NO_IFRAME = true;
+
    }
 
    else{

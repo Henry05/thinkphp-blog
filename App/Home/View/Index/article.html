@@ -19,8 +19,10 @@
 	<div class="article">	
 	<div  class="article-title"><h4>{$article.a_title}</h4></div>
   <div class="article-attr">
-    <span>发布于 {$article.a_time}</span><span>{$article.a_clicks}次阅读</span>
+   <span> <i id="time" class="attr-icon"></i>发布于 {$article.a_time}</span>
+   <span><i id="read" class="attr-icon"></i>{$article.a_clicks}次阅读</span>
   </div>
+
 	<div class="article-detail">{$article.a_content|stripslashes}</div>
 
   <div id="SOHUCS" sid="{$article.a_id}" ></div>
@@ -58,6 +60,7 @@
     s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
     h.insertBefore(s,h.firstChild);
     window.SCS_NO_IFRAME = true;
+
    }
 
    else{

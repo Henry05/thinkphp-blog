@@ -31,9 +31,7 @@ a{
 .article-title{
 	overflow: hidden;
 	text-align: center;
-	padding: 30px 50px 10px 50px;
-/*	padding-top: 30px;
-	padding-bottom: 10px;*/
+	padding: 40px 50px 10px 50px;
 	display: block;
 	font-size: 34px;
 	color: #414141;
@@ -60,14 +58,31 @@ a{
 .article-attr{
 
 	overflow: hidden;
-	height: 20px;
+	height:20px;
 	margin-top: 5px;
 	text-align: center;
 	font-weight: 1000;
 	color: #6C6868;
+    padding-bottom: 20px;
 }
+
 .article-attr span:nth-child(2){
-	margin-left: 20px;
+	margin-left: 30px;
+}
+.attr-icon{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 5px;
+	position: relative;
+	top:-2px;
+}
+#time{
+	background: url(../IMG/time.png) no-repeat;
+}
+#read{
+	background: url(../IMG/read.png) no-repeat;
 }
 .syntaxhighlighter {
 	width: 98% !important;
@@ -83,7 +98,6 @@ a{
 .changyan{
 	background-color: #fff;
 }
-
 /*畅言评论样式重写*/
 #SOHUCS{
 	width: 90%  !important;
@@ -113,14 +127,24 @@ a{
 .article-title{
 	overflow: hidden;
 	text-align: center;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
 	display: block;
 	font-size: 1.5em;
 	color: #414141;
 }
+.article-attr span:nth-child(2){
+	margin-left: 15px;
+}
+.attr-icon{
+
+	background-size: 17px 17px !important;
+	margin-right:0px;
+		top:-1px;
+}
 .article-detail{
 	
 	font-size: 13px;
+
 
 }
 .article-detail img{

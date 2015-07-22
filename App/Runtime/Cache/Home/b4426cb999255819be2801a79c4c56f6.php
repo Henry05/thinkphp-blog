@@ -37,7 +37,6 @@ $(".btn").click(function(){
  <a href="http://w3cay.com" class="title">
    <i class="logo"><img src="/W3CAY/Public/Home/IMG/logo.png" width="45px" height="45px"></i>
    <i class="name"></i>
-     <i class="beta"></i>
  </a><button class="btn" ></button><nav class='nav'>
     <ul>
       <li ><a href="http://localhost/W3CAY/">首页</a></li>
