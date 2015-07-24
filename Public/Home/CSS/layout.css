@@ -23,27 +23,9 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 	 background:url(../IMG/name.png ) no-repeat;
 	 float:right;
 	 background-size: 150px 45px;
-	 transition:background 0.7s;
 	}
-.name:hover{
-	width:160px;
-	height:50px;
-	display:inline-block; 
-    margin-top: 2px;
-	 background:url(../IMG/e_name.png )  no-repeat;
-	 float:right;
-	 background-size: 150px 45px;
-}
-.beta{
-	  width:50px;
-	  height:20px;
-	  display:inline-block; 
-	  background:url(../IMG/beta.png )  no-repeat;
-      background-size: 50px 20px;
-      position: absolute;
-      left: 210px;
-      top:20px;
-}
+
+
 .nav ul {
 	margin: 0;
 	padding: 0;
@@ -286,8 +268,8 @@ font-size: 18px;
 	height:118px;
 	display: inline-block;
 	width: 50%;
-
 	float: left;
+	text-align: right;
 
 
 }
@@ -314,7 +296,6 @@ font-size: 18px;
 
 	display: block;
 	height: 30px;
-	float: right;
 	margin-top: 37px;
 }
 .thinkphp_logo{
@@ -331,9 +312,10 @@ font-size: 18px;
 .copyright{
 	display: inline-block;
 	text-align: right;
-	float: right;
 	height: 24px;
 	margin-top: 5px;
+	position: relative;
+  	left: 3px;
 }
 .footer a
 {
