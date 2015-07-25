@@ -9,7 +9,7 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 }
 .title
 {
-	margin-left: 10px;
+	margin-left: 12px;
 	width:210px;
 	display: inline-block;
 	text-align: left;
@@ -68,7 +68,7 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 	border: 0px;
 	padding: 5px;
 }
-.btn{display: none;}
+.nav-btn{display: none;}
 
 
 
@@ -223,19 +223,6 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 
 @media screen and (max-width: 990px) {
 
-.nav{display:none;width: 100%!important;background: #000;
-	height:auto;margin:0;
-	z-index: 1000;
-     }
-.name:hover{
-	width:160px;
-	height:50px;
-	display:inline-block; 
-	margin-top:5px;
-	 background:url(../IMG/name.png ) no-repeat;
-	 float:right;
-	 background-size:120px 40px;
-	}
 .name{
 	width:160px;
 	height:50px;
@@ -246,17 +233,31 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 	 background-size:120px 40px;
 	}
 
-	.beta{
-	 
-       left: 180px;
+.logo{margin-top:2px;display:inline-block; }
+.nav{
+	display:none;
+	width: 100%!important;
+	background: rgba(0, 0, 0, 0.9);
+	height:100%;
+	margin:0;
+	z-index: 1000;
+	position: fixed;
+
+     }
+.nav ul{
+	display: block;
+	position:relative;
+	top:50%;
+	transform:translate(0,-75%);
+	-ms-transform:translate(0,-75%);
+	-webkit-transform:translate(0,-75%);
 
 }
-.logo{margin-top:2px;display:inline-block; }
 .nav li{
 	display: block;
 	margin: auto;
-	border-top: 1px solid #fff;
-	padding: 3px;
+	padding: 10px;
+	list-style: none;
 
 }
 .nav li a{
@@ -266,16 +267,48 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 display: block;
 font-size: 18px;
 }
-.btn{width: 35px;height: 35px;
 
-	background: url(../IMG/btn.png) no-repeat;
-	background-size: 35px 35px;
-	border: 0px;
-	display: inline-block;
+/*导航按钮*/
+.nav-btn{
+	display: block;
 	float: right;
-	margin-top: 12px;
-	margin-right: 10px;
+	margin: 9px 12px;
 }
+.btn{
+		display: block;
+		color: #fff;
+		padding: 0px;
+		position: relative;
+		cursor: pointer;
+}
+.btn li{
+		display:block;
+		width: 32px;
+		border: 1px solid #fff;
+		margin-top: 9px;
+	}
+	.onbtn li:nth-child(1) {
+
+		-webkit-transform: rotate(45deg);
+		-moz-transform:  rotate(45deg);
+		-moz-transform:  rotate(45deg);
+		 transform: rotate(45deg);
+		 transition: transform 0.2s;
+		 position: relative;
+		 top:11px;
+	}
+	.onbtn li:nth-child(2) {
+		-webkit-transform: rotate(-45deg);
+		-moz-transform:  rotate(-45deg);
+		-moz-transform:  rotate(-45deg);
+		transform: rotate(-45deg);
+		transition: transform 0.2s;
+	}
+	.onbtn li:nth-child(3) {
+			display: none;
+	}
+
+
 .footer-con{
 	width:100% !important;
 

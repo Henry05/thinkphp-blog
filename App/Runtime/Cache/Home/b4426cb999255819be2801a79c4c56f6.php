@@ -11,46 +11,51 @@
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
         <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
     </head>
-    
-<!--   导航栏样式表 -->
-  <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
-
+    <!--   导航栏样式表 -->
+<link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
 <!--[if lt IE 9]>
 <script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
 <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
+<script src="/W3CAY/Public/Jquery/jquery-2.1.4.min.js"></script>
 <!--<![endif]-->
 <script src="/W3CAY/Public/Home/JS/html5shiv.min.js"></script>
 <script type="text/javascript">
 //导航下拉效果
- $(function(){
-$(".btn").click(function(){
-    $(".nav").slideToggle("slow");
+$(function(){
+$(".nav-btn").click(function(){
+    $(".nav").fadeToggle("slow");
+    $(".btn").toggleClass("onbtn");
 });
 });
 </script>
-  </head>
-  <body>
+</head>
+<body>
 <!-- 导航部分 -->
 <header>
- <a href="http://w3cay.com" class="title">
-   <i class="logo"><img src="/W3CAY/Public/Home/IMG/logo.png" width="45px" height="45px"></i>
-   <i class="name"></i>
- </a><button class="btn" ></button><nav class='nav'>
-    <ul>
-      <li ><a href="http://localhost/W3CAY/">首页</a></li>
-    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
-      <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
-        <li>
-          <form class="search" role="search"> 
-          <input type="text" class="search-input" placeholder="Search">
-          </form>
-        </li>
-   </ul></nav>
- </header>
-
-
+    <a href="http://w3cay.com" class="title">
+    <i class="logo"><img src="/W3CAY/Public/Home/IMG/logo.png" width="45px" height="45px"></i>
+    <i class="name"></i>
+    </a>
+    <div class="nav-btn">
+      <ul class="btn">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <nav class='nav'>
+        <ul>
+            <li ><a href="http://w3cay.com">首页</a></li>
+            <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+            <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
+            <li>
+                <form class="search" role="search">
+                    <input type="text" class="search-input" placeholder="Search">
+                </form>
+            </li>
+        </ul></nav>
+    </header>
     <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/theme.css" />
     <div class="theme-container">
     <div class="topic-container">
@@ -87,8 +92,7 @@ $(".btn").click(function(){
             <a href="http://www.zzidc.com"  rel="nofollow" target="_blank">景安网络</a>
             </span>
             <span class="copyright">
-            <i class="copy-icon"></i> 
-        <a  href="http://w3cay.com" target="_blank">安望云海|W3CAY</a> 
+        <a  href="http://w3cay.com" target="_blank">&copy; 安望云海|W3CAY</a> 
         <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362号&nbsp</a>
             <script type="text/javascript">
             var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));

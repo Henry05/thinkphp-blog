@@ -77,12 +77,17 @@ a{
 	margin-right: 5px;
 	position: relative;
 	top:-2px;
+	
+
 }
 #time{
-	background: url(../IMG/time.png) no-repeat;
+	background: url(../IMG/time.png) no-repeat  ;
+	background-size:contain;
 }
 #read{
 	background: url(../IMG/read.png) no-repeat;
+	background-size:contain;
+
 }
 .syntaxhighlighter {
 	width: 98% !important;
