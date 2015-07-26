@@ -23,8 +23,9 @@
 <script type="text/javascript">
 //导航下拉效果
 $(function(){
-$(".btn").click(function(){
-    $(".nav").slideToggle("slow");
+$(".nav-btn").click(function(){
+    $(".nav").fadeToggle("1000");
+    $(".btn").toggleClass("onbtn");
 });
 });
 </script>
@@ -33,7 +34,7 @@ $(".btn").click(function(){
 <!-- 导航部分 -->
 <header>
     <a href="http://w3cay.com" class="title">
-    <i class="logo"><img src="/W3CAY/Public/Home/IMG/logo.png" width="45px" height="45px"></i>
+    <i class="logo"></i>
     <i class="name"></i>
     </a>
     <div class="nav-btn">
@@ -78,7 +79,7 @@ $(".btn").click(function(){
 
 <footer class="footer">
     <div class="footer-con">
-      <a  href="http://localhost/W3CAY/me" alt="关于我" title="关于我" target="_blank">
+      <a  href="http://w3cay.com/me" alt="关于我" title="关于我" target="_blank">
         <div class="me">
             <i class="myicon"><img  src="/W3CAY/Public/Home/IMG/myicon.png" alt="关于我" title="关于我" width="60"  height="60" /> </i>
             <div class="mylink"></div>

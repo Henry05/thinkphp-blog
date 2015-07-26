@@ -1,3 +1,4 @@
+
 *{padding:0;margin: 0;font-family:'微软雅黑'}
 
 header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
@@ -15,13 +16,25 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 	text-align: left;
 	margin-top: 5px;
 }
+.logo {
+	width:45px;
+	height:45px;
+	display:inline-block; 
+	background:url(../IMG/logo.png ) no-repeat;
+	background-size: 45px 45px;
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	margin-top: 2px;
+
+}
 .name{
 	width:160px;
 	height:50px;
 	display:inline-block; 
 	margin-top: 2px;
 	 background:url(../IMG/name.png ) no-repeat;
-	 float:right;
+	 float:left;
 	 background-size: 150px 45px;
 	}
 
@@ -229,7 +242,7 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 	display:inline-block; 
 	margin-top:5px;
 	 background:url(../IMG/name.png ) no-repeat;
-	 float:right;
+	 float:left;
 	 background-size:120px 40px;
 	}
 
@@ -242,15 +255,16 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 	margin:0;
 	z-index: 1000;
 	position: fixed;
+	top:60px;
 
      }
 .nav ul{
 	display: block;
 	position:relative;
 	top:50%;
-	transform:translate(0,-75%);
-	-ms-transform:translate(0,-75%);
-	-webkit-transform:translate(0,-75%);
+	transform:translate(0,-70%);
+	-ms-transform:translate(0,-70%);
+	-webkit-transform:translate(0,-70%);
 
 }
 .nav li{
@@ -406,3 +420,5 @@ font-size: 18px;
 }
 
 }
+Status API Training Shop Blog About Help
+© 2015 GitHub, Inc. Terms Privacy Security Contact
