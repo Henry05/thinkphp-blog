@@ -192,7 +192,7 @@ a{
 .ban-con
 {
 	
-	width:980px;
+	width: 960px;
 	height: 250px;
 	margin: auto;
 
@@ -204,24 +204,29 @@ a{
 		   width: 400px;
 		   height: 200px;
 	       background:url('../IMG/ban-pic.png') no-repeat;
-           background-size: 400px 200px;  
+           background-size: 375px 184px; 
            float:left;
-           margin-top: 50px;
+           margin-top:  64px;
            position: relative;
            left:-600px;
              }
 .ban-slogan{
 	width: 560px;
 	float: right;
-	 margin-top: 85px;
+	 margin-top: 90px;
 	 display: none;
 }     
 .ban-slogan h2{
-	font-size: 26px;
+	font-size: 30px;
 	padding-bottom: 10px;
+	font-weight: 400;
 	color: #000;
 }   
-.ban-slogan p{font-size: 20px;line-height: 40px;}   
+.ban-slogan p{
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 300;
+}   
 
 .content
 {

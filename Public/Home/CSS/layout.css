@@ -1,12 +1,20 @@
 
 *{padding:0;margin: 0;font-family:'微软雅黑'}
 
-header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
+header{
+	background: #000;
+	height:60px;
+	width: 100%;
+	position: fixed;
+	z-index: 10000;
+	overflow: hidden;
+}
 .nav {
 	height: 70px;
      margin-top: 18px;
-     margin-right: 20px;
+     margin-right: 8px;
      float: right;
+
 }
 .title
 {
@@ -217,7 +225,7 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 }
 
 @media screen and (max-width:1190px) {
-	.search-input{display: none;}
+
 	.btn{display: none;}
 
 
@@ -235,7 +243,11 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 }
 
 @media screen and (max-width: 990px) {
-
+.search-input{display: none;}
+.title
+{
+	margin-left: 9px;
+}
 .name{
 	width:160px;
 	height:50px;
@@ -246,7 +258,12 @@ header{background: #000;height:60px;width: 100%;position: fixed;z-index: 10000}
 	 background-size:120px 40px;
 	}
 
-.logo{margin-top:2px;display:inline-block; }
+.logo{
+		width: 40px;
+		margin-top: 5px;
+		display: inline-block;
+		background-size: 40px 40px;
+}
 .nav{
 	display:none;
 	width: 100%!important;

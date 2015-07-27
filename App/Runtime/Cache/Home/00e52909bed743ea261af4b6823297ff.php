@@ -2,9 +2,9 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
-        <title>安望云海-致力于HTML/CSS/JS/WEB开发</title>
-        <meta name="Keywords" content="web开发,html,css,js" />
-        <meta name="Description" content="不愿成为知识的过客，记录和分享我的WEB开发经验与技巧，发挥共享的力量，只为创造出精彩的互联网世界！"/>
+        <title>安望云海-致力于HTML/CSS/JS/前端开发</title>
+        <meta name="Keywords" content="前端开发,html,css,js" />
+        <meta name="Description" content="不愿成为知识的过客，记录和分享前端开发学习中的点点滴滴；用编程与艺术的完美结合，创造我心中的互联网世界！"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -76,9 +76,9 @@ $(".nav-btn").click(function(){
         <div class="ban-con">
             <div class="ban-pic"></div>
             <div class="ban-slogan" >
-                <h2>{ 致力于HTML/CSS/JS/WEB开发 }</h2>
+                <h2>{ 致力于HTML/CSS/JS/前端开发 }</h2>
                 <p>
-                不愿成为知识的过客，记录和分享我的WEB开发经验与技巧；发挥共享的力量，用技术创造我们心中的互联网世界！
+                不愿成为知识的过客，记录和分享前端开发学习中的点点滴滴；用编程与艺术的完美结合，创造我心中的互联网世界！
                 </p>
             </div>
         </div>
