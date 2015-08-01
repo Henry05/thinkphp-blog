@@ -27,6 +27,9 @@ a{
 	display: block;
 	box-shadow: 5px 5px 40px #C0C0C0;
 }
+.article  p{
+	margin-bottom: 12px;
+}
 
 .article-title{
 	overflow: hidden;

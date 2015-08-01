@@ -122,8 +122,6 @@ $(".nav-btn").click(function(){
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
-        <div class="lastShow next-show"  ></div>
-        <div class="hotShow next-show"  ></div>
         <div class="showload"  ></div>
     </div>
 
@@ -189,29 +187,11 @@ $(".nav-btn").click(function(){
     $(".hotShow").css("display","none");
     });
 $(function(){
-        var firstnum=0;
-        var hotnum=0;
-        $(".lastShow").bind("click",function(){
+       
+    //     $(".lastShow").bind("click",function(){
                 
-                firstnum+=10;
-                var num='firstnum='+firstnum;
-                $.ajax({
-                        type:'get',
-                        cache:false,
-                        data:num,
-                                    url: "/W3CAY/index.php/Home/Index/return_last",
-                        success: function(msg){
-                        $(".lastlist").append(msg);},
-                        beforeSend: function(){
-                        $(".lastShow").css("display","none");
-                        $(".showload").css("display","block");
-                        },
-                        complete: function(){
-                        $(".lastShow").css("display","block");
-                        $(".showload").css("display","none");
-                        },
-                    });
-    });
+               
+    // });
             $(".hotShow").bind("click",function(){
                 
                 hotnum+=10;
@@ -234,5 +214,49 @@ $(function(){
                     });
     });
 });
+   
 
+
+    var firstnum=0;
+    var hotnum=0;
+ window.onscroll = function()
+    {
+        //获取滚动条当前的位置 
+        var topHeight = document.documentElement.scrollTop || document.body.scrollTop;
+        //获取文档完整的高度 
+        var docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); 
+        //获取可视窗口高度
+        var cliHeight = 0; 
+        if (document.body.clientHeight && document.documentElement.clientHeight) 
+        { 
+          cliHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight); 
+        } 
+        else 
+        { 
+          cliHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight); 
+        } 
+
+        if(topHeight + cliHeight == docHeight ){
+           //Ajax加载
+
+                firstnum+=10;
+                var num='firstnum='+firstnum;
+                $.ajax({
+                        type:'get',
+                        cache:false,
+                        data:num,
+                                    url: "/W3CAY/index.php/Home/Index/return_last",
+                        success: function(msg){
+                        $(".lastlist").append(msg);},
+                        beforeSend: function(){
+                        $(".lastShow").css("display","none");
+                        $(".showload").css("display","block");
+                        },
+                        complete: function(){
+                        $(".lastShow").css("display","block");
+                        $(".showload").css("display","none");
+                        },
+                    });
+        }
+    }
 </script>
