@@ -101,7 +101,7 @@ $(".nav-btn").click(function(){
                         <span>[<?php echo ($v["a_time"]); ?>]</span>
                         <h3 ><?php echo ($v["a_title"]); ?></h3>
                     </a></div>
-                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,130,'utf-8')); ?></div></a>
+                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,135,'utf-8')); ?></div></a>
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
@@ -118,11 +118,13 @@ $(".nav-btn").click(function(){
                         <span>[<?php echo ($v["a_time"]); ?>]</span>
                         <h3 ><?php echo ($v["a_title"]); ?></h3>
                     </a></div>
-                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,130,'utf-8')); ?></div></a>
+                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,135,'utf-8')); ?></div></a>
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
-        <div class="showload"  ></div>
+        <div class="lastShow next-show"> more</div>
+        <div class="hotShow next-show"> more</div>
+       
     </div>
 
 
@@ -187,11 +189,29 @@ $(".nav-btn").click(function(){
     $(".hotShow").css("display","none");
     });
 $(function(){
-       
-    //     $(".lastShow").bind("click",function(){
+        var firstnum=0;
+        var hotnum=0;
+        $(".lastShow").bind("click",function(){
                 
-               
-    // });
+                firstnum+=10;
+                var num='firstnum='+firstnum;
+                $.ajax({
+                        type:'get',
+                        cache:false,
+                        data:num,
+                                    url: "/W3CAY/index.php/Home/Index/return_last",
+                        success: function(msg){
+                        $(".lastlist").append(msg);},
+                        beforeSend: function(){
+                        $(".lastShow").html('<span class="showload"></span>');
+                         $(".showload").css("display","inline-block");
+                        },
+                        complete: function(){
+                        $(".lastShow").text("more");
+                        $(".showload").css("display","none");
+                        },
+                    });
+    });
             $(".hotShow").bind("click",function(){
                 
                 hotnum+=10;
@@ -203,60 +223,16 @@ $(function(){
                                     url: "/W3CAY/index.php/Home/Index/return_hot",
                         success: function(msg){
                         $(".hotlist").append(msg);},
-                        beforeSend: function(){
-                        $(".hotShow").css("display","none");
-                        $(".showload").css("display","block");
+                       beforeSend: function(){
+                        $(".hotShow").html('<span class="showload"></span>');
+                         $(".showload").css("display","inline-block");
                         },
                         complete: function(){
-                        $(".hotShow").css("display","block");
+                        $(".hotShow").text("more");
                         $(".showload").css("display","none");
                         },
                     });
     });
 });
-   
 
-
-    var firstnum=0;
-    var hotnum=0;
- window.onscroll = function()
-    {
-        //获取滚动条当前的位置 
-        var topHeight = document.documentElement.scrollTop || document.body.scrollTop;
-        //获取文档完整的高度 
-        var docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); 
-        //获取可视窗口高度
-        var cliHeight = 0; 
-        if (document.body.clientHeight && document.documentElement.clientHeight) 
-        { 
-          cliHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight); 
-        } 
-        else 
-        { 
-          cliHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight); 
-        } 
-
-        if(topHeight + cliHeight == docHeight ){
-           //Ajax加载
-
-                firstnum+=10;
-                var num='firstnum='+firstnum;
-                $.ajax({
-                        type:'get',
-                        cache:false,
-                        data:num,
-                                    url: "/W3CAY/index.php/Home/Index/return_last",
-                        success: function(msg){
-                        $(".lastlist").append(msg);},
-                        beforeSend: function(){
-                        $(".lastShow").css("display","none");
-                        $(".showload").css("display","block");
-                        },
-                        complete: function(){
-                        $(".lastShow").css("display","block");
-                        $(".showload").css("display","none");
-                        },
-                    });
-        }
-    }
 </script>

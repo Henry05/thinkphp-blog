@@ -1,549 +1,355 @@
 /*首页样式*/
-a{
-	text-decoration: none;
-	color: #000;
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+.tab {
+    height: 50px;
+    background: #fabf7e;
+    margin-bottom: 20px;
+    display: block;
+}
+#last {
+    float: left;
+}
+#hot {
+    float: right;
+    color: red;
+}
+.on {
+    background: #CDE2F8;
+    box-shadow: 0px 0px 2px #737171;
+    z-index: 5;
+}
+.off {
+    background: #F3F3F3;
+    z-index: 0;
+    box-shadow: 0px 0px 1px #737171;
+}
+.tab-box {
+    display: inline-block;
+    height: 50px;
+    width: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+}
+.hotlist {
+    display: none;
+}
+.alist {
+    border: 1px solid #B2D4D4;
+    background: #fff;
+    max-width: 990px;
+    width: 85%;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+}
+.alist:hover {
+    color: #7B7272;
+}
+.alist-icon img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    border-radius: 40px;
+    z-index: 2;
+    border: 0px;
+}
+.alist-con {
+    width: 89%;
+    height: 100%;
+    float: left;
+    z-index: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 8px;
+    color: #000;
+}
+.alist h3:hover{
+	color: #887878;
+}
+.alist a:hover{
+	color: #887878;
+}
+.alist-title {
+    display: block;
+    height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
 }
 
-.tab{
-
-	height: 50px;
-	background: #fabf7e;
-	margin-bottom: 20px;
-	display: block;
-}
-#last{
-	float: left;	
-}
-#hot{	
-	float: right;	
-	color: red;
-}
-.on{
-	background: #CDE2F8;
-	box-shadow:  0px 0px 2px  #737171;
-	z-index: 5;
-
-
-}
-.off{
-	background: #F3F3F3;
-	z-index: 0;
-	box-shadow:  0px 0px 1px #737171;
+.alist-title a {
+    display: inline-block;
+    width: 100%;
 }
 
-.tab-box{
-	display: inline-block;
-	height: 50px;
-	width: 50%;
-	text-align: center;
-	line-height: 50px;
-/*	border-top-right-radius:5px;
-	border-top-left-radius:5px;*/
-	position: relative;
-	font-size: 20px;
-	font-weight: 300;
+.alist-title h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #3F3F3F;
+    display: inline;
+    overflow: hidden;
 }
-
-
-.hotlist{
-
-	display: none;
-}
-
-.alist{
-	border: 1px solid #00EAEA;
-	background: #fff;
-	max-width: 990px;
-	width:85%;
-	height: 130px;
-/*	border-radius: 3px;*/
-	box-shadow: 5px 5px 20px #C0C0C0;
-	margin: auto;
-	margin-top: 10px;
-	display: block;
-}
-.alist :hover{
-	color:#7B7272;
-}
-.alist-icon img{
-	width: 10%;
-	height: 80%;
-	float: left;
-	margin: 15px;
-	margin-left: 25px;
-	z-index: 2;
-	border: 0px;
-}
-.alist-con{
-
-	width: 85%;
-	height: 100%;
-	float: right;
-	box-sizing:border-box;
-	padding: 5px;
-	z-index: 0;
-/*	box-shadow: 5px 5px 5px #C0C0C0;*/
-
-}
-
-
-.alist-title{
-
-	margin-top: 5px;
-
-}
-.alist-title a{
-		display: inline-block;
-		width: 100%;
-
-}
-.alist-title span{
-
-	
-	display: inline-block;
-
-}
-.alist-title h3{
-
-	color: #3F3F3F;
-	display: inline-block;
-}
-.alist-digest{
-
-	height: 85px;
-	display: block;
-	margin:5px auto 0px;
-	padding-right: 10px;
-	font-size: 16px;
-	line-height: 28px;
-	font-weight: 300;
-}
-
-.lastShow{
-	display: block;
-}
-.hotShow{
-	display: none;
-}
-.next-show{
-	color: rgba(10, 10, 10, 0.5);
-	cursor: pointer;
-	width: 65%;
-	max-width: 600px;
-	margin: 50px auto;
-	height: 35px;
-	border: 2px solid rgba(10, 10, 10, 0.23);
-	text-align: center;
-	line-height: 35px;
-	border-radius: 0px;
-	transition:border-radius 0.8s, width  0.8s ;
-}
-
-.next-show:hover{
-	border-radius: 10px;
-	width: 35%;
-	opacity: 0.8;
-
-}
-
-.showload{
-	display: none;
-	background:url(../IMG/load.gif) no-repeat;
-	background-size: 100px 100px ;
-	background-position: 0px 50px;
-	width: 100px;
-	margin: auto;
-	height: 150px;
-}
-
-
-
-.ban{height:300px;background:#C7C7F3;padding-top: 50px;}
-.ban-con
-{
-	
-	width: 960px;
-	height: 250px;
-	margin: auto;
-
-
-}
-.ban-hr
-{display: none;}
-.ban-pic{
-		   width: 400px;
-		   height: 200px;
-	       background:url('../IMG/ban-pic.png') no-repeat;
-           background-size: 375px 184px; 
-           float:left;
-           margin-top:  64px;
-           position: relative;
-           left:-600px;
-             }
-.ban-slogan{
-	width: 560px;
-	float: right;
-	 margin-top: 90px;
-	 display: none;
-}     
-.ban-slogan h2{
-	font-size: 30px;
-	padding-bottom: 10px;
-	font-weight: 400;
-	color: #000;
-}   
-.ban-slogan p{
-	font-size: 20px;
-	line-height: 40px;
-	font-weight: 300;
-}   
-
-.content
-{
-	z-index: 20;
-	background: #CDE2F8;/*#F3F3F3;*/
-	position: relative;
-	padding-bottom: 10px;
-
-
-}
-
-
-/*首页内容样式 max-width: 1180px*/
-@media screen and (max-width: 1180px){
-
-.alist{
-	width:95%;
+.alist-title span {
+    display: inline;
 }
 .alist-digest {
-
-
-	font-size: 14px !important;
-
+    display: block;
+    height: 60px;
+    margin: 5px auto 0px;
+    font-size: 13px;
+    line-height: 28px;
+    font-weight: 400;
+    overflow: hidden;
+}
+.lastShow {
+    display: block;
+}
+.hotShow {
+    display: none;
+}
+.next-show {
+    cursor: pointer;
+    width: 500px;
+    height: 35px;
+    margin: 40px auto 0px;
+    background: #99D45B;
+    /*border: 1px solid #5CF490;*/
+	border-radius: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-weight: 300;
+    box-shadow: 0px 0px 1px #737171;
+}
+.next-show:hover {
+	  background: #6EBD1B;
+}
+.showload {
+    display: none;
+    background: url(../IMG/load.gif) no-repeat;
+    background-size: 25px 25px;
+    width: 25px;
+    margin:6px auto 0px;
+    height: 25px;
 }
 
- }	
-
-
- @media screen and (max-width: 990px){
-
-.ban{height:250px;}
-.ban-con
-{
-	width:690px;
-	height: 200px;
-	margin: auto;
+.ban {
+    height: 300px;
+    background: #C7C7F3;
+    padding-top: 50px;
 }
-
-
-.ban-pic{
-		   width: 280px;
-		   height: 140px;
-	       background:url('../IMG/ban-pic.png') no-repeat;
-           background-size: 280px 140px;  
-           float:left;
-           margin-top: 60px;
-           position: relative;
-           left:-600px;
-             }
-
-.ban-slogan{
-	width:400px;
-	float:right;
-	 margin-top:70px;
-	 display: none;
-}     
-.ban-slogan h2{
-	font-size: 24px;
-	padding-bottom: 10px;
-	color: #000;
-}   
-.ban-slogan p
-{
-	font-size: 15px;
-	line-height: 40px;
-}  
-
-.alist{
-	border: 1px solid #00EAEA;
-	background: #fff;
-	width:95%;
-	height: 100px;
-/*	border-radius: 3px;*/
-	box-shadow: 5px 5px 20px #C0C0C0;
-	margin: auto;
-	margin-top: 10px;
-	display: block;
+.ban-con {
+    width: 928px;
+    height: 250px;
+    margin: auto;
 }
-.alist-icon img{
-
-	width: 80px;
-	height: 80px;
-	float: left;
-	margin:10px 0px 0px 5px; 
-
-	border-radius: 40px;
-	z-index: 2;
-	background-size:80px 80px !important;
+.ban-con a:hover{
+	color: #fff;
 }
-.alist-con{
-
-	width: 85%;
-	height: 100%;
-	float: left;
-	margin-left: 1%;
-	overflow: hidden;
-	box-sizing:border-box;
-	padding: 5px;
-	z-index: 0;
-/*	box-shadow: 5px 5px 5px #C0C0C0;*/
-
+.ban-hr {
+    display: none;
 }
-
-.alist-title{
-
-	margin-top: 5px;
-
+.ban-pic {
+    width: 345px;
+    height: 200px;
+    background: url('../IMG/ban-pic.png') no-repeat;
+    background-size: 345px 170px;
+    float: left;
+    margin-top: 70px;
+    position: relative;
+    left: -600px;
 }
-
-.alist-title span{
-
-	
-	display: inline-block;
-
+.ban-slogan {
+    width: 560px;
+    float: right;
+    margin-top: 90px;
+    display: none;
 }
-.alist-title h3{
-	font-weight: 600 !important;
-	font-size: 16px;
+.ban-slogan h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    color: #000;
 }
-.alist-digest{
-
-	height: 85px;
-
-	display: block;
-	margin: auto;
-	margin-top: 5px;
-	font-size: 10px;
-	line-height: 28px;
-	overflow: hidden;
-
+.ban-slogan p {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
 }
+.content {
+    z-index: 20;
+    background: #CDE2F8;
+    /*#F3F3F3;*/
 
-
-
-
-
+position: relative;
+    padding-bottom: 40px;
 }
-
-
-
-
-
-
-
- @media screen and (max-width: 685px){
-
-.ban{
-	height:180px;
-}
-.ban-con{
-	width:300px;
-	height: 180px;
-	margin: auto;
-
-}
-
-
-.ban-pic{
-
-		   width: 230px;
-		   height: 110px;
-	       background:url('../IMG/ban-pic.png') no-repeat;
-           background-size: 230px 110px;  
-           margin-top: 20px;
-           position: relative;
-           left:-300px;
-           display: block;
-           margin-left: 35px;
-             }
-
-.ban-slogan{
-
-	width:300px;
-	float:right;
-	 margin-top:10px;
-	 display: none;
-}     
-.ban-slogan h2{
-	text-align: center;
-	font-size: 16px;
-	padding-bottom: 10px;
-	color: #000;
-}   
-
-.ban-slogan p
-{
-	display: none;
-
-}
-
-.tab{
-
-	height: 40px;
-	background: #fabf7e;
-	margin-bottom: 10px;
-	display: block;
-}
-.tab-box{
-	display: inline-block;
-	height: 40px;
-	width: 50%;
-	text-align: center;
-	line-height: 40px;
-/*	border-top-right-radius:5px;
-	border-top-left-radius:5px;*/
-	position: relative;
-	font-size: 20px;
-	font-weight: 300;
-}
-
-.content
-{
-	z-index: 20;
-	background: #CDE2F8;/*#F3F3F3;*/
-	position: relative;
-	overflow: hidden;
-
-
-}
-.alist{
-	border: 0px;
-	height: 50px;
-	background: #fff;
-	width:96%;
-	box-shadow: 5px 5px 20px #C0C0C0;
-	margin: auto;
-	margin-top: 5px;
-
-	display: block;
-	
-}
-.alist-icon img{
-	width: 40px;
-	height:40px;
-	float: left;
-	margin: 5px 3px 5px  ;
-
-	border-radius: 65px;
-	z-index: 2;
-
-	background-size:40px 40px !important;
-}
-
-.alist-con{
-
-	height: 50px;
-	margin-left: 0px;
-	float: left;
-	border: 0px;
-	z-index: 0;
-	position: absolute;
-	left: 55px;
-
-
-}
-.alist-title{
-
-
-	height: 40px;
-	line-height: 40px;
-	margin-top: 0px;
-	overflow: hidden;
-}
-.alist-title h3{
-	font-weight: 500 !important;
-	font-size: 14px;
-
-}
-
-.alist-digest{
-	display: none;
-}
-.alist-title span{
-
-	
-	display: none;
-
-}
-
-.lastShow{
-	width: 65%;
-	height: 30px;
-	border: 1px solid rgba(10, 10, 10, 0.23);
-	line-height: 30px;
-    margin:  30px auto 15px;
-}
-.next-show:hover{
-	width: 50%;
-}
-.hotShow{
-	cursor: pointer;
-
-	display: none;
-	width: 100px;
-	margin: auto;
-	height: 75px;
-
-	background:url(../IMG/more.png) no-repeat;
-	background-size: 100px 50px ;
-	background-position: 0px 10px;
-    animation:myfirst 3s infinite;
-     -moz-animation:myfirst 3s infinite; 
-     -webkit-animation:myfirst 3s infinite; 
-     -o-animation:myfirst 3s infinite;
-}
-.next-show{
-	z-index: 999;
-}
-.showload{
-	display: none;
-	background:url(../IMG/load.gif) no-repeat;
-	background-size: 45px 45px ;
-	background-position: 0px 20px;
-
-	width: 45px;
-	margin: auto;
-	height: 70px;
-}
-
-
-@keyframes myfirst
-{
-0% {background-position: 0px 10px; }
-50% {background-position: 0px 30px;}
-100% {background-position: 0px 10px;}
-}
-
-@-moz-keyframes myfirst /* Firefox */
-{
-0% {background-position: 0px 10px; }
-50% {background-position: 0px 30px;}
-100% {background-position: 0px 10px;}
-}
-
-@-webkit-keyframes myfirst /* Safari and Chrome */
-{
-0% {background-position: 0px 10px; }
-50% {background-position: 0px 30px;}
-100% {background-position: 0px 10px;}
-}
-
-@-o-keyframes myfirst /* Opera */
-{
-0% {background-position: 0px 10px; }
-50% {background-position: 0px 30px;}
-100% {background-position: 0px 10px;}
-}
+@media screen and (max-width: 1080px) {
+    .ban {
+        height: 250px;
+   }
+   .ban-con {
+       width: 690px;
+       74 height: 200px;
+       margin: auto;
+  }
+  .ban-pic {
+      width: 280px;
+      height: 140px;
+      background: url('../IMG/ban-pic.png') no-repeat;
+      background-size: 280px 140px;
+      float: left;
+      margin-top: 60px;
+      position: relative;
+      left: -600px;
  }
+ .ban-slogan {
+     width: 400px;
+     float: right;
+     margin-top: 70px;
+     display: none;
+}
+.ban-slogan h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    color: #000;
+}
+.ban-slogan p {
+    font-size: 15px;
+    line-height: 40px;
+}
+.alist {
+    width: 95%;
+}
+.alist-con {
+    width: 85%;
+}
+}
+@media screen and (max-width: 685px) {
+    .ban {
+        height: 180px;
+   }
+   .ban-con {
+       width: 300px;
+       height: 180px;
+       margin: auto;
+  }
+  .ban-pic {
+      width: 230px;
+      height: 110px;
+      background: url('../IMG/ban-pic.png') no-repeat;
+      background-size: 230px 110px;
+      margin-top: 20px;
+      position: relative;
+      left: -300px;
+      display: block;
+      margin-left: 35px;
+ }
+ .ban-slogan {
+     width: 300px;
+     float: right;
+     margin-top: 10px;
+     display: none;
+}
+.ban-slogan h2 {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: #000;
+}
+.ban-slogan p {
+    display: none;
+}
+.tab {
+    height: 40px;
+    background: #fabf7e;
+    margin-bottom: 10px;
+    display: block;
+}
+.tab-box {
+    display: inline-block;
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    line-height: 40px;
+	position: relative;
+    font-size: 20px;
+    font-weight: 300;
+}
+.content {
+    z-index: 20;
+    background: #CDE2F8;
+    /*#F3F3F3;*/
 
+position: relative;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.alist {
+    border: 0px;
+    height: 50px;
+    background: #fff;
+    width: 96%;
+    margin: auto;
+    margin-top: 5px;
+    display: block;
+}
+.alist-icon img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 5px 3px 5px;
+    border-radius: 65px;
+    z-index: 2;
+    background-size: 40px 40px !important;
+}
+.alist-con {
+    height: 50px;
+    margin-left: 0px;
+    float: left;
+    border: 0px;
+    z-index: 0;
+    position: absolute;
+    left: 50px;
+}
+.alist-title {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.alist-title h3 {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    font-weight: 500 !important;
+    font-size: 14px;
+}
+.alist-digest {
+    display: none;
+}
+.alist-title span {
+    display: none;
+}
+.next-show {
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    margin: 25px auto 0px;
+}
+.showload {
+    margin:3px auto 0px;
+}
 
+}
