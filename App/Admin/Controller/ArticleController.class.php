@@ -29,7 +29,11 @@ class ArticleController extends Controller{
 		$this->cate=$cate;
 		$this->display();
 	}
-
+	//添加文章页面
+	public function markedit()
+	{
+		$this->display();
+	}
 
 	//文章发布
 	public function submit()
