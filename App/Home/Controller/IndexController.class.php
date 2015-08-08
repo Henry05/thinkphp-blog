@@ -103,6 +103,7 @@ class IndexController extends Controller {
           $this->display();
     }
      public function article(){
+
          
           $a_id=I('get.a_id');
 
@@ -112,6 +113,13 @@ class IndexController extends Controller {
 
           $article=D("ArticleView")->where("a_id=$a_id")->select();
 
+          $a_content= htmlspecialchars_decode($article['0']['a_content']);
+
+          $Parsedown = new \Org\Util\Parsedown();
+
+          $parse = $Parsedown->text($a_content);
+
+          $this->assign('parse',$parse);
           $this->assign('article',$article['0']);
 
           $this->display();

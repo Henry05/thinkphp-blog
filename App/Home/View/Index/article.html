@@ -10,42 +10,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="alternate icon" type="image/ico" href="__PUBLIC__/Home/IMG/favicon.ico">
+  <css href="__PUBLIC__/Home/CSS/article.css"/>
+  <js href="__PUBLIC__/editor/docs/marked.js"/>
   </head>
 <include file="Public:header"/>
-<link href="__PUBLIC__/Highlighter/shCoreDefault.css"rel="stylesheet" type="text/css" >
-<css href="__PUBLIC__/Home/CSS/article.css"/>
-
 <div class="article-container">
 	<div class="article">	
-	<div  class="article-title"><h4>{$article.a_title}</h4></div>
+	<div  class="article-title"><h1>{$article.a_title}</h1></div>
   <div class="article-attr">
    <span> <i id="time" class="attr-icon"></i>发布于 {$article.a_time}</span>
    <span><i id="read" class="attr-icon"></i>{$article.a_clicks}次阅读</span>
   </div>
-
-	<div class="article-detail">{$article.a_content|stripslashes}</div>
+	<div class="article-detail markdown ">{$parse} </div>
 
   <div id="SOHUCS" sid="{$article.a_id}" ></div>
 	</div>
-
-
-
 </div>
-
-
 <include file="Public:footer"/>
-<script src="__PUBLIC__/Highlighter/shCore.js" type="text/javascript"></script>
 
-    <script type="text/javascript" language="javascript">
-        $(function(){
-            SyntaxHighlighter.all();
-        });
- </script>
 
 <script>
 
-// 评论模块JS实现
 
+
+// 评论模块JS实现
   (function(){
     screenWidth=$(document).width();
    if (screenWidth>685) {

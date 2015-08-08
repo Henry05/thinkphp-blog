@@ -24,16 +24,20 @@
       <input class="title" type="text" placeholder="Title" />
       <textarea id="editor" placeholder="Content here ...."></textarea>
     </div>
+    <div id="display" class="editor-wrapper"></div>
     <button id="submit">提交</button>
     <script type="text/javascript">
     	  var editor = new Editor();
           editor.render();
+
+          
         var sub = document.getElementById("submit");
+        var display =document.getElementById("display");
         sub.onclick=function () {
            var value = editor.codemirror.getValue();
-           alert(value);
-        }
-      
+           display.innerHTML=marked(value);
+         }
+
     </script>
 </body>
 </html>

@@ -29,17 +29,12 @@ class ArticleController extends Controller{
 		$this->cate=$cate;
 		$this->display();
 	}
-	//添加文章页面
-	public function markedit()
-	{
-		$this->display();
-	}
 
 	//文章发布
 	public function submit()
 	{
 		$article['a_title']=I('post.a_title');
-		$article['a_content']=htmlspecialchars_decode(I('post.a_content'));
+		$article['a_content']=I('post.a_content');
 		$article['a_time']=date("Y-m-d");
 		$article['c_id']=I('post.c_id');
 		if(M('article')->add($article)){
@@ -52,17 +47,12 @@ class ArticleController extends Controller{
 	//删除文章
 	public function delarticle()
 	{
-		
-
-		
 		$a_id=I('get.a_id');
 		$Article=M('article');
 		$content = $Article->where("a_id=$a_id")->getField('a_content');
-		
 		//匹配文章图片
 		preg_match_all("/Uploads(.*?(?:[\.gif|\.jpg]))[\'|\"].*?/", $content,$matches);
-		
-
+	
 	    //删除文章图片
 			foreach ($matches[1] as $key => $value) {
 			
@@ -104,7 +94,7 @@ class ArticleController extends Controller{
 		$m=M('article');
         $article['a_id']=I('post.a_id');
 		$article['a_title']=I('post.a_title');
-		$article['a_content']=htmlspecialchars_decode(I('post.a_content'));
+		$article['a_content']=I('post.a_content');
 		$article['a_mtime']=date("Y-m-d");
 		$article['c_id']=I('post.c_id');
 		if($m->save($article)){

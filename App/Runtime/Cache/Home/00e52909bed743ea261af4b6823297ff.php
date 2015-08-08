@@ -36,7 +36,7 @@ $(".nav-btn").click(function(){
 <body>
 <!-- 导航部分 -->
 <header>
-    <a href="http://w3cay.com" class="title">
+    <a href="" class="title">
     <i class="logo"></i>
     <i class="name"></i>
     </a>
@@ -49,7 +49,7 @@ $(".nav-btn").click(function(){
     </div>
     <nav class='nav'>
         <ul>
-            <li ><a href="http://w3cay.com">首页</a></li>
+            <li ><a href="">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
             <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
             <li>

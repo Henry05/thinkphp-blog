@@ -157,47 +157,51 @@
     </head>
 
 <body>
-    
-<!--   导航栏样式表 -->
-  <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
-
+    <!--   导航栏样式表 -->
+<link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
 <!--[if lt IE 9]>
 <script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
 <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/W3CAY/Public/Jquery/jquery-2.1.3.js"></script>
+<script src="/W3CAY/Public/Jquery/jquery-2.1.4.min.js"></script>
 <!--<![endif]-->
 <script src="/W3CAY/Public/Home/JS/html5shiv.min.js"></script>
 <script type="text/javascript">
 //导航下拉效果
- $(function(){
-$(".btn").click(function(){
-    $(".nav").slideToggle("slow");
+$(function(){
+$(".nav-btn").click(function(){
+    $(".nav").fadeToggle("1000");
+    $(".btn").toggleClass("onbtn");
 });
 });
 </script>
-  </head>
-  <body>
+</head>
+<body>
 <!-- 导航部分 -->
 <header>
- <a href="http://w3cay.com" class="title">
-   <i class="logo"><img src="/W3CAY/Public/Home/IMG/logo.png" width="45px" height="45px"></i>
-   <i class="name"></i>
-     <i class="beta"></i>
- </a><button class="btn" ></button><nav class='nav'>
-    <ul>
-      <li ><a href="http://localhost/W3CAY/">首页</a></li>
-    <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
-      <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
-        <li>
-          <form class="search" role="search"> 
-          <input type="text" class="search-input" placeholder="Search">
-          </form>
-        </li>
-   </ul></nav>
- </header>
-
-
+    <a href="" class="title">
+    <i class="logo"></i>
+    <i class="name"></i>
+    </a>
+    <div class="nav-btn">
+      <ul class="btn">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <nav class='nav'>
+        <ul>
+            <li ><a href="http://w3cay.com">首页</a></li>
+            <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+            <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
+            <li>
+                <form class="search" role="search">
+                    <input type="text" class="search-input" placeholder="Search">
+                </form>
+            </li>
+        </ul></nav>
+    </header>
    <div class="box">
    	<div><span class="big-font">404</span></div>
    	<div><span class="small-font">哎呀，找不到了！</span></div>

@@ -32,18 +32,38 @@
 }
 .subtn{
 	cursor: pointer;
-	width: 100px;
-	height: 25px;
-	border-radius: 3px;
+	width: 150px;
+	height: 30px;
+	border-radius: 1px;
 	outline: none;
-	border: 2px solid #CCCCCC;
+	border: 1px solid #CCCCCC;
 	background: #fff;
 	margin:20px auto;
 	display: block;
 }
 .subtn:hover{
 
-	background: #81F5F0;
+	background: #CCF6F4;
 }
 
-/*文章列表*/
+/*markdown*/
+.editor-wrapper{
+	width: 902px;
+	margin:20px auto;
+}
+.editor-wrapper input.title{
+	width: 88%;
+
+}
+.editor-wrapper select{
+	font: 18px "Helvetica Neue", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+	border: none;
+    outline: none;
+    opacity: 0.8;
+    background: transparent;
+    color:#7B7878;
+    cursor: pointer;
+}
+.editor-wrapper select:hover{
+	color:#000;
+}

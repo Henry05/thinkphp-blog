@@ -10,6 +10,8 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/article.css" />
+  <script type="text/javascript" src="/W3CAY/Public/editor/docs/marked.js"></script>
   </head>
 <!--   导航栏样式表 -->
 <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
@@ -33,7 +35,7 @@ $(".nav-btn").click(function(){
 <body>
 <!-- 导航部分 -->
 <header>
-    <a href="http://w3cay.com" class="title">
+    <a href="" class="title">
     <i class="logo"></i>
     <i class="name"></i>
     </a>
@@ -46,7 +48,7 @@ $(".nav-btn").click(function(){
     </div>
     <nav class='nav'>
         <ul>
-            <li ><a href="http://w3cay.com">首页</a></li>
+            <li ><a href="">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
             <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
             <li>
@@ -56,27 +58,18 @@ $(".nav-btn").click(function(){
             </li>
         </ul></nav>
     </header>
-<link href="/W3CAY/Public/Highlighter/shCoreDefault.css"rel="stylesheet" type="text/css" >
-<link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/article.css" />
-
 <div class="article-container">
 	<div class="article">	
-	<div  class="article-title"><h4><?php echo ($article["a_title"]); ?></h4></div>
+	<div  class="article-title"><h1><?php echo ($article["a_title"]); ?></h1></div>
   <div class="article-attr">
    <span> <i id="time" class="attr-icon"></i>发布于 <?php echo ($article["a_time"]); ?></span>
    <span><i id="read" class="attr-icon"></i><?php echo ($article["a_clicks"]); ?>次阅读</span>
   </div>
-
-	<div class="article-detail"><?php echo (stripslashes($article["a_content"])); ?></div>
+	<div class="article-detail markdown "><?php echo ($parse); ?> </div>
 
   <div id="SOHUCS" sid="<?php echo ($article["a_id"]); ?>" ></div>
 	</div>
-
-
-
 </div>
-
-
 <footer class="footer">
     <div class="footer-con">
       <a  href="http://w3cay.com/me" alt="关于我" title="关于我" target="_blank">
@@ -113,18 +106,13 @@ $(".nav-btn").click(function(){
     });
 </script>
 </html>
-<script src="/W3CAY/Public/Highlighter/shCore.js" type="text/javascript"></script>
 
-    <script type="text/javascript" language="javascript">
-        $(function(){
-            SyntaxHighlighter.all();
-        });
- </script>
 
 <script>
 
-// 评论模块JS实现
 
+
+// 评论模块JS实现
   (function(){
     screenWidth=$(document).width();
    if (screenWidth>685) {

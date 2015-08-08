@@ -24,7 +24,7 @@
 //导航下拉效果
 $(function(){
 $(".nav-btn").click(function(){
-    $(".nav").fadeToggle("slow");
+    $(".nav").fadeToggle("1000");
     $(".btn").toggleClass("onbtn");
 });
 });
@@ -33,8 +33,8 @@ $(".nav-btn").click(function(){
 <body>
 <!-- 导航部分 -->
 <header>
-    <a href="http://w3cay.com" class="title">
-    <i class="logo"><img src="/W3CAY/Public/Home/IMG/logo.png" width="45px" height="45px"></i>
+    <a href="" class="title">
+    <i class="logo"></i>
     <i class="name"></i>
     </a>
     <div class="nav-btn">
@@ -46,7 +46,7 @@ $(".nav-btn").click(function(){
     </div>
     <nav class='nav'>
         <ul>
-            <li ><a href="http://w3cay.com">首页</a></li>
+            <li ><a href="">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
             <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
             <li>
@@ -75,7 +75,7 @@ $(".nav-btn").click(function(){
    </div>
     <footer class="footer">
     <div class="footer-con">
-      <a  href="http://localhost/W3CAY/me" alt="关于我" title="关于我" target="_blank">
+      <a  href="http://w3cay.com/me" alt="关于我" title="关于我" target="_blank">
         <div class="me">
             <i class="myicon"><img  src="/W3CAY/Public/Home/IMG/myicon.png" alt="关于我" title="关于我" width="60"  height="60" /> </i>
             <div class="mylink"></div>
