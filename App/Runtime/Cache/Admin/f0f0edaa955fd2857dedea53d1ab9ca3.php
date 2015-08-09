@@ -6,7 +6,6 @@
         <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Admin/CSS/login.css">
     </head>
     <body>
-        <div class="admin"><i class="admin-login-icon"></i> W3CAY后台管理</div>
         <div  class="box">
 
 

@@ -36,7 +36,7 @@ $(".nav-btn").click(function(){
 <body>
 <!-- 导航部分 -->
 <header>
-    <a href="" class="title">
+    <a href="/W3CAY" class="title">
     <i class="logo"></i>
     <i class="name"></i>
     </a>
@@ -49,14 +49,9 @@ $(".nav-btn").click(function(){
     </div>
     <nav class='nav'>
         <ul>
-            <li ><a href="">首页</a></li>
+            <li ><a href="/W3CAY">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
             <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
-            <li>
-                <form class="search" role="search">
-                    <input type="text" class="search-input" placeholder="Search">
-                </form>
-            </li>
         </ul></nav>
     </header>
     <!--   首页样式表 -->
@@ -122,8 +117,8 @@ $(".nav-btn").click(function(){
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
-        <div class="lastShow next-show"> more</div>
-        <div class="hotShow next-show"> more</div>
+        <div class="lastShow next-show">加载更多</div>
+        <div class="hotShow next-show">加载更多</div>
        
     </div>
 
@@ -131,108 +126,79 @@ $(".nav-btn").click(function(){
 <ul class="show">  </ul>
 <footer class="footer">
     <div class="footer-con">
-      <a  href="http://w3cay.com/me" alt="关于我" title="关于我" target="_blank">
-        <div class="me">
-            <i class="myicon"><img  src="/W3CAY/Public/Home/IMG/myicon.png" alt="关于我" title="关于我" width="60"  height="60" /> </i>
-            <div class="mylink"></div>
-            <span class="mymoto"></span>
-            </a>
-        </div>
-        <div class="footer-left">
-            <div id="line"></div>
+         <span class="copyright">
+            <a  href="http://w3cay.com" target="_blank">&copy; 安望云海|W3CAY</a>
+            <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362&nbsp</a>
+            </span>
+        <span class="useread" >
+            HOST BY<a href="http://www.zzidc.com"  rel="nofollow" target="_blank">&nbsp景安网络</a>
+            </span>
 
-            <span class="useread" >
-            Powered by <a href="http://www.thinkphp.cn"  rel="nofollow" target="_blank">ThinkPHP</a>
-            &nbsp
-            Host by
-            <a href="http://www.zzidc.com"  rel="nofollow" target="_blank">景安网络</a>
-            </span>
-            <span class="copyright">
-        <a  href="http://w3cay.com" target="_blank">&copy; 安望云海|W3CAY</a> 
-        <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362号&nbsp</a>
-            <script type="text/javascript">
-            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
-            </script>
-            </span>
-        </div>
     </div>
-<!--       <div class="totop"></div>-->
- </footer>
+</footer>
 </body>
+<div style="display:none">
 <script type="text/javascript">
-    $(function () {
-        $("#cnzz_stat_icon_1254403531 a").text('');
-    });
+var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
 </script>
+</div>
+
 </html>
 <script type="text/javascript">
 
 
     $("#hot").click(function(){
-    $(this).removeClass("off").addClass("on").css("background","#C5F0A8");
+    $(this).removeClass("off").addClass("on");
     $("#last").removeClass("on").addClass("off");
     $(".lastlist").css("display","none");
     $(".hotlist").css("display","block");
-    $(".content").css("background","#C5F0A8");
-    $(".ban").css("background","#FACE6A");
     $(".lastShow").css("display","none");
     $(".hotShow").css("display","block");
     });
+
     $("#last").click(function(){
     $(this).removeClass("off").addClass("on");
-    $("#hot").removeClass("on").addClass("off").css("background","#F3F3F3");
+    $("#hot").removeClass("on").addClass("off");
     $(".hotlist").css("display","none");
     $(".lastlist").css("display","block");
-    $(".content").css("background","#CDE2F8");
-    $(".ban").css("background","#C7C7F3");
     $(".lastShow").css("display","block");
     $(".hotShow").css("display","none");
     });
 $(function(){
-        var firstnum=0;
+        var lastnum=0;
         var hotnum=0;
+        function ajaxshow(start,list,show){
+         $.ajax({
+                    type:'get',
+                    cache:false,
+                    data:num,
+                                url: "/W3CAY/index.php/Home/Index/return_list",
+                    success: function(msg){
+                     list.append(msg);},
+                    beforeSend: function(){
+                    show.html('<span class="showload"></span>');
+                     $(".showload").css("display","inline-block");
+                    },
+                    complete: function(){
+                     show.text("加载更多");
+                    $(".showload").css("display","none");
+                    },
+                });
+        }
         $(".lastShow").bind("click",function(){
-                
-                firstnum+=10;
-                var num='firstnum='+firstnum;
-                $.ajax({
-                        type:'get',
-                        cache:false,
-                        data:num,
-                                    url: "/W3CAY/index.php/Home/Index/return_last",
-                        success: function(msg){
-                        $(".lastlist").append(msg);},
-                        beforeSend: function(){
-                        $(".lastShow").html('<span class="showload"></span>');
-                         $(".showload").css("display","inline-block");
-                        },
-                        complete: function(){
-                        $(".lastShow").text("more");
-                        $(".showload").css("display","none");
-                        },
-                    });
-    });
+               lastnum+=10;
+               num='firstnum='+lastnum;
+               var list=$(".lastlist");
+               var show = $(".lastShow");
+               ajaxshow(lastnum,list,show) ;
+         });
             $(".hotShow").bind("click",function(){
-                
-                hotnum+=10;
-                var num='hotnum='+hotnum;
-                $.ajax({
-                        type:'get',
-                        cache:false,
-                        data:num,
-                                    url: "/W3CAY/index.php/Home/Index/return_hot",
-                        success: function(msg){
-                        $(".hotlist").append(msg);},
-                       beforeSend: function(){
-                        $(".hotShow").html('<span class="showload"></span>');
-                         $(".showload").css("display","inline-block");
-                        },
-                        complete: function(){
-                        $(".hotShow").text("more");
-                        $(".showload").css("display","none");
-                        },
-                    });
-    });
+               hotnum+=10;
+               num='hotnum='+hotnum;
+               var list=$(".hotlist");
+               var show = $(".hotShow");
+               ajaxshow(hotnum,list,show) ;
+          });
 });
 
 </script>

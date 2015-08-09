@@ -20,7 +20,7 @@ $(".nav-btn").click(function(){
 <body>
 <!-- 导航部分 -->
 <header>
-    <a href="" class="title">
+    <a href="__ROOT__" class="title">
     <i class="logo"></i>
     <i class="name"></i>
     </a>
@@ -33,15 +33,10 @@ $(".nav-btn").click(function(){
     </div>
     <nav class='nav'>
         <ul>
-            <li ><a href="">首页</a></li>
+            <li ><a href="__ROOT__">首页</a></li>
             <foreach name='cate' item='v' >
             <li ><a href="__ROOT__/topic/{$v.c_value}">{$v.c_name}</a></li>
             </foreach>
             <li ><a href="__ROOT__/me" target="_blank">关于我</a></li>
-            <li>
-                <form class="search" role="search">
-                    <input type="text" class="search-input" placeholder="Search">
-                </form>
-            </li>
         </ul></nav>
     </header>

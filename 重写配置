@@ -1,3 +1,0 @@
-  RewriteBase /
-  RewriteCond %{http_host} ^www.w3cay.com [NC]
-  RewriteRule ^(.*)$ http://w3cay.com/$1 [L,R=301]

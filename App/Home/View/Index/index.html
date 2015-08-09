@@ -82,8 +82,8 @@
             </div>
             </foreach>
         </div>
-        <div class="lastShow next-show"> more</div>
-        <div class="hotShow next-show"> more</div>
+        <div class="lastShow next-show">加载更多</div>
+        <div class="hotShow next-show">加载更多</div>
        
     </div>
 
@@ -94,70 +94,57 @@
 
 
     $("#hot").click(function(){
-    $(this).removeClass("off").addClass("on").css("background","#C5F0A8");
+    $(this).removeClass("off").addClass("on");
     $("#last").removeClass("on").addClass("off");
     $(".lastlist").css("display","none");
     $(".hotlist").css("display","block");
-    $(".content").css("background","#C5F0A8");
-    $(".ban").css("background","#FACE6A");
     $(".lastShow").css("display","none");
     $(".hotShow").css("display","block");
     });
+
     $("#last").click(function(){
     $(this).removeClass("off").addClass("on");
-    $("#hot").removeClass("on").addClass("off").css("background","#F3F3F3");
+    $("#hot").removeClass("on").addClass("off");
     $(".hotlist").css("display","none");
     $(".lastlist").css("display","block");
-    $(".content").css("background","#CDE2F8");
-    $(".ban").css("background","#C7C7F3");
     $(".lastShow").css("display","block");
     $(".hotShow").css("display","none");
     });
 $(function(){
-        var firstnum=0;
+        var lastnum=0;
         var hotnum=0;
+        function ajaxshow(start,list,show){
+         $.ajax({
+                    type:'get',
+                    cache:false,
+                    data:num,
+                                url: "__URL__/return_list",
+                    success: function(msg){
+                     list.append(msg);},
+                    beforeSend: function(){
+                    show.html('<span class="showload"></span>');
+                     $(".showload").css("display","inline-block");
+                    },
+                    complete: function(){
+                     show.text("加载更多");
+                    $(".showload").css("display","none");
+                    },
+                });
+        }
         $(".lastShow").bind("click",function(){
-                
-                firstnum+=10;
-                var num='firstnum='+firstnum;
-                $.ajax({
-                        type:'get',
-                        cache:false,
-                        data:num,
-                                    url: "__URL__/return_last",
-                        success: function(msg){
-                        $(".lastlist").append(msg);},
-                        beforeSend: function(){
-                        $(".lastShow").html('<span class="showload"></span>');
-                         $(".showload").css("display","inline-block");
-                        },
-                        complete: function(){
-                        $(".lastShow").text("more");
-                        $(".showload").css("display","none");
-                        },
-                    });
-    });
+               lastnum+=10;
+               num='firstnum='+lastnum;
+               var list=$(".lastlist");
+               var show = $(".lastShow");
+               ajaxshow(lastnum,list,show) ;
+         });
             $(".hotShow").bind("click",function(){
-                
-                hotnum+=10;
-                var num='hotnum='+hotnum;
-                $.ajax({
-                        type:'get',
-                        cache:false,
-                        data:num,
-                                    url: "__URL__/return_hot",
-                        success: function(msg){
-                        $(".hotlist").append(msg);},
-                       beforeSend: function(){
-                        $(".hotShow").html('<span class="showload"></span>');
-                         $(".showload").css("display","inline-block");
-                        },
-                        complete: function(){
-                        $(".hotShow").text("more");
-                        $(".showload").css("display","none");
-                        },
-                    });
-    });
+               hotnum+=10;
+               num='hotnum='+hotnum;
+               var list=$(".hotlist");
+               var show = $(".hotShow");
+               ajaxshow(hotnum,list,show) ;
+          });
 });
 
 </script>

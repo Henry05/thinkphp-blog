@@ -1,4 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" type="text/css" href="/W3CAY/Public/editor/vendor/icomoon/editor.css" />
+<link rel="stylesheet" type="text/css" href="/W3CAY/Public/editor/markdown.css" />  
 <script src="/W3CAY/Public/editor/docs/marked.js"></script>
 <script src="/W3CAY/Public/editor/src/editor.js"></script>
 <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Admin/CSS/article.css">

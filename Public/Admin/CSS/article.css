@@ -1,15 +1,10 @@
 /*文章添加*/
 *{
 	margin:0;
-	padding: 0;
-	font-family:"Microsoft YaHei",
-	"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .editer{
 	width: 902px;
 	margin:auto;
-
-
 }
 .top-inp{
 	width: 902px;
@@ -52,11 +47,11 @@
 	margin:20px auto;
 }
 .editor-wrapper input.title{
-	width: 88%;
+	width: 87%;
 
 }
 .editor-wrapper select{
-	font: 18px "Helvetica Neue", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+	font-size: 18px;
 	border: none;
     outline: none;
     opacity: 0.8;

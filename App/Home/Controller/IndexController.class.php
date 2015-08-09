@@ -9,79 +9,54 @@ class IndexController extends Controller {
     	$cate=M('cate')->order('c_sort ASC')->select();
 		  $this->cate=$cate;
      }
-      
+          
+     public function listquery($order,$limit,$where)
+     {
+
+          $Aview =D("ArticleView"); // 实例化Articel视图model对象   
+          $listdata= $Aview->order($order)->limit($limit)->where($where)->select();
+          foreach ($listdata as $key => $arr) {
+          $listcon= htmlspecialchars_decode($listdata[$key]['a_content']);
+          $Parsedown = new \Org\Util\Parsedown();
+          $parse = $Parsedown->text($listcon);
+          $listdata[$key]['a_content']=strip_tags($parse);
+           }
+          return $listdata;
+     }
 
      public function index(){
-        
-         
-          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-          $last= $Aview->order('a_id DESC')->limit(0,10)->select();
-          foreach ($last as $key => $arr) {
-          $last[$key]['a_content']=strip_tags($last[$key]['a_content']);
-          }
-  
-
-          $hot= $Aview->order('a_clicks DESC,a_id ASC')->limit(0,10)->select();
-          foreach ($hot as $key => $arr) {
-          $hot[$key]['a_content']=strip_tags($hot[$key]['a_content']);
-          }
-
+          $last= $this->listquery(array('a_id'=>'desc'),"0,10","");
+          $hot= $this->listquery(array('a_clicks'=>'desc','a_id'=>'asc'),"0,10","");
           $this->assign('last',$last);
           $this->assign('hot',$hot);
           $this->display();
     }
 
-
-
-        public function return_last()
+        public function return_list()
         {
-
-
-          $lastnum = 10;
-          $firstnum= $_GET["firstnum"];      
-          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-          $last= $Aview->order('a_id DESC')->limit($firstnum,$lastnum)->select();
-          foreach ($last as $key => $arr) {
-             $last[$key]['a_content']=strip_tags($last[$key]['a_content']);
-          }    
-          $this->assign('last',$last);
-          $this->display();
-        }
-
-
-          public function return_hot()
-        {
-
-          $lastnum = 10;
           $hotnum= $_GET["hotnum"];
-          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-          $hot= $Aview->order('a_clicks DESC,a_id ASC')->limit($hotnum,$lastnum)->select();
-          foreach ($hot as $key => $arr) {
-          $hot[$key]['a_content']=strip_tags($hot[$key]['a_content']);
-          }
-          $this->assign('hot',$hot);
+          $firstnum= $_GET["firstnum"];   
+          if ($firstnum) {
+             $list= $this->listquery(array('a_id'=>'desc'),"$firstnum,10",""); 
 
+            } 
+          elseif($hotnum) {
+             $list= $this->listquery(array('a_clicks'=>'desc','a_id'=>'asc'),"$hotnum,10","");
+            }
+          $this->assign('list',$list);      
           $this->display();
-            
-
         }
 
      public function theme(){
           
           $c_value=I('get.c_value');
           $Aview =D("ArticleView"); // 实例化Articel视图model对象
-
-          //栏目文章列表输出
-          $list = $Aview->order('a_id DESC')->where("c_value='$c_value'")->limit(0,10)->select();
-         
-          foreach ($list as $key => $arr) {
-          $list[$key]['a_content']=strip_tags($list[$key]['a_content']);
-          }
-
+          $where['c_value']= $c_value;
+          $list= $this->listquery(array('a_id'=>'desc'),"0,10",$where); 
           $this->assign('article',$list);
 
           //查找对应栏目标识
-          $c_name=$Aview->where("c_value='$c_value'")->getField('c_name');  
+          $c_name=$Aview->where($where)->getField('c_name');  
           $this->assign('c_name',$c_name);
           $this->assign('c_value',$c_value);
 
@@ -135,8 +110,6 @@ class IndexController extends Controller {
       if ($message['m_text']!= ''|| $message['m_name']!= '' || $message['m_mail']!='') {
            M('message')->add($message);
       }
-     
-      
       $this->display();
     }
 
