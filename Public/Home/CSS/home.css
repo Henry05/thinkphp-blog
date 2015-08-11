@@ -144,7 +144,10 @@ a {
 .onload{
 
          border-radius: 50%; 
+        animation: load 0.3s infinite linear;
         -webkit-animation: load 0.3s infinite linear;
+        -o-animation: load 0.3s infinite linear;
+        -moz-animation: load 0.3s infinite linear;
 }
 
 @keyframes load{
