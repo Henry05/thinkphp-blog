@@ -12,21 +12,11 @@
         <meta name="renderer" content="webkit">
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
         <link rel="alternate icon" type="image/ico" href="__PUBLIC__/Home/IMG/favicon.ico">
-
     </head>
     <include file="Public:header"/>
     <!--   首页样式表 -->
-
     <link rel="stylesheet" href="__PUBLIC__/Home/CSS/home.css"/>
 
-    <script type="text/javascript">
-            //简要渐入效果
-            $(function(){
-            $('.ban-slogan').fadeIn(2000);
-            $(".ban-pic").animate(
-                {left:'0px'},600);
-            });
-    </script>
     <!-- Banner部分 -->
     <div class="ban">
         <div class="ban-con">
@@ -82,22 +72,34 @@
             </div>
             </foreach>
         </div>
-        <div class="lastShow next-show">加载更多</div>
-        <div class="hotShow next-show">加载更多</div>
+        <div class="lastShow next-show">
+            <span class="more-icon "></span>
+        </div>
+        <div class="hotShow next-show">            
+            <span class="more-icon"></span>
+        </div>
        
     </div>
 
 
 <ul class="show">  </ul>
 <include file="Public:footer"/>
-<script type="text/javascript">
 
+<script type="text/javascript">
+    //简要渐入效果
+    $(function(){
+
+    $(".ban-pic").animate(
+        {left:'0px',opacity:'1'},600);
+    });
+    $('.ban-slogan').fadeIn(2000);
 
     $("#hot").click(function(){
     $(this).removeClass("off").addClass("on");
     $("#last").removeClass("on").addClass("off");
     $(".lastlist").css("display","none");
     $(".hotlist").css("display","block");
+
     $(".lastShow").css("display","none");
     $(".hotShow").css("display","block");
     });
@@ -107,6 +109,7 @@
     $("#hot").removeClass("on").addClass("off");
     $(".hotlist").css("display","none");
     $(".lastlist").css("display","block");
+
     $(".lastShow").css("display","block");
     $(".hotShow").css("display","none");
     });
@@ -118,16 +121,15 @@ $(function(){
                     type:'get',
                     cache:false,
                     data:num,
-                                url: "__URL__/return_list",
+                    url: "__URL__/return_list",
                     success: function(msg){
                      list.append(msg);},
                     beforeSend: function(){
-                    show.html('<span class="showload"></span>');
-                     $(".showload").css("display","inline-block");
+                    show.addClass("onload");
                     },
                     complete: function(){
-                     show.text("加载更多");
-                    $(".showload").css("display","none");
+                     show.removeClass("onload");
+
                     },
                 });
         }
@@ -135,14 +137,14 @@ $(function(){
                lastnum+=10;
                num='firstnum='+lastnum;
                var list=$(".lastlist");
-               var show = $(".lastShow");
+               var show = $(".lastShow span");
                ajaxshow(lastnum,list,show) ;
          });
             $(".hotShow").bind("click",function(){
                hotnum+=10;
                num='hotnum='+hotnum;
                var list=$(".hotlist");
-               var show = $(".hotShow");
+               var show = $(".hotShow span");
                ajaxshow(hotnum,list,show) ;
           });
 });

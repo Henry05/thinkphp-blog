@@ -37,7 +37,7 @@ $(".nav-btn").click(function(){
 <body>
 <!-- 导航部分 -->
 <header>
-    <a href="http://localhost/W3CAY/" class="title">
+    <a href="/W3CAY" class="title">
     <i class="logo"></i>
     <i class="name"></i>
     </a>
@@ -50,7 +50,7 @@ $(".nav-btn").click(function(){
     </div>
     <nav class='nav'>
         <ul>
-            <li ><a href="http://localhost/W3CAY/">首页</a></li>
+            <li ><a href="/W3CAY">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
             <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
         </ul></nav>
@@ -70,19 +70,14 @@ $(".nav-btn").click(function(){
 <footer class="footer">
     <div class="footer-con">
          <span class="copyright">
-            <a  href="http://w3cay.com" target="_blank">&copy; 安望云海|W3CAY</a>
-            <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362&nbsp</a>
+           <a  href="http://w3cay.com" target="_blank">&copy; 安望云海|W3CAY</a>
+           <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362&nbsp</a>
             </span>
-        <span class="useread" >
-            本站基于<a href="http://www.thinkphp.cn"  rel="nofollow" target="_blank">ThinkPHP</a>开发
-            &nbsp
-            托管于<a href="http://www.zzidc.com"  rel="nofollow" target="_blank">景安网络</a>
-            </span>
-
     </div>
 </footer>
 </body>
 <div style="display:none">
+   <a href="http://www.zzidc.com"target="_blank"> alt="景安网络" title="景安网络" /></a>
 <script type="text/javascript">
 var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
 </script>

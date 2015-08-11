@@ -12,7 +12,6 @@
         <meta name="renderer" content="webkit">
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
         <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
-
     </head>
     <!--   导航栏样式表 -->
 <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
@@ -55,17 +54,8 @@ $(".nav-btn").click(function(){
         </ul></nav>
     </header>
     <!--   首页样式表 -->
-
     <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/home.css"/>
 
-    <script type="text/javascript">
-            //简要渐入效果
-            $(function(){
-            $('.ban-slogan').fadeIn(2000);
-            $(".ban-pic").animate(
-                {left:'0px'},600);
-            });
-    </script>
     <!-- Banner部分 -->
     <div class="ban">
         <div class="ban-con">
@@ -117,8 +107,12 @@ $(".nav-btn").click(function(){
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
-        <div class="lastShow next-show">加载更多</div>
-        <div class="hotShow next-show">加载更多</div>
+        <div class="lastShow next-show">
+            <span class="more-icon "></span>
+        </div>
+        <div class="hotShow next-show">            
+            <span class="more-icon"></span>
+        </div>
        
     </div>
 
@@ -127,31 +121,36 @@ $(".nav-btn").click(function(){
 <footer class="footer">
     <div class="footer-con">
          <span class="copyright">
-            <a  href="http://w3cay.com" target="_blank">&copy; 安望云海|W3CAY</a>
-            <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362&nbsp</a>
+           <a  href="http://w3cay.com" target="_blank">&copy; 安望云海|W3CAY</a>
+           <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362&nbsp</a>
             </span>
-        <span class="useread" >
-            HOST BY<a href="http://www.zzidc.com"  rel="nofollow" target="_blank">&nbsp景安网络</a>
-            </span>
-
     </div>
 </footer>
 </body>
 <div style="display:none">
+   <a href="http://www.zzidc.com"target="_blank"> alt="景安网络" title="景安网络" /></a>
 <script type="text/javascript">
 var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
 </script>
 </div>
 
 </html>
-<script type="text/javascript">
 
+<script type="text/javascript">
+    //简要渐入效果
+    $(function(){
+
+    $(".ban-pic").animate(
+        {left:'0px',opacity:'1'},600);
+    });
+    $('.ban-slogan').fadeIn(2000);
 
     $("#hot").click(function(){
     $(this).removeClass("off").addClass("on");
     $("#last").removeClass("on").addClass("off");
     $(".lastlist").css("display","none");
     $(".hotlist").css("display","block");
+
     $(".lastShow").css("display","none");
     $(".hotShow").css("display","block");
     });
@@ -161,6 +160,7 @@ var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " 
     $("#hot").removeClass("on").addClass("off");
     $(".hotlist").css("display","none");
     $(".lastlist").css("display","block");
+
     $(".lastShow").css("display","block");
     $(".hotShow").css("display","none");
     });
@@ -172,16 +172,15 @@ $(function(){
                     type:'get',
                     cache:false,
                     data:num,
-                                url: "/W3CAY/index.php/Home/Index/return_list",
+                    url: "/W3CAY/index.php/Home/Index/return_list",
                     success: function(msg){
                      list.append(msg);},
                     beforeSend: function(){
-                    show.html('<span class="showload"></span>');
-                     $(".showload").css("display","inline-block");
+                    show.addClass("onload");
                     },
                     complete: function(){
-                     show.text("加载更多");
-                    $(".showload").css("display","none");
+                     show.removeClass("onload");
+
                     },
                 });
         }
@@ -189,14 +188,14 @@ $(function(){
                lastnum+=10;
                num='firstnum='+lastnum;
                var list=$(".lastlist");
-               var show = $(".lastShow");
+               var show = $(".lastShow span");
                ajaxshow(lastnum,list,show) ;
          });
             $(".hotShow").bind("click",function(){
                hotnum+=10;
                num='hotnum='+hotnum;
                var list=$(".hotlist");
-               var show = $(".hotShow");
+               var show = $(".hotShow span");
                ajaxshow(hotnum,list,show) ;
           });
 });

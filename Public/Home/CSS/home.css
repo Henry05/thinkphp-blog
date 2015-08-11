@@ -15,7 +15,6 @@ a {
 }
 #hot {
     float: right;
-    color: red;
 }
 .off {
     background: #CDE2F8;
@@ -118,29 +117,52 @@ a {
 .next-show {
     cursor: pointer;
     width: 100%;
-    height: 60px;
-    margin: 35px auto 0px;
+    height: 100px;
     background: #f0f0f0;
-	border-radius: 2px;
     text-align: center;
-    line-height: 35px;
-    color: #8F8888;
-    font-weight: 300;
-    font-size: 16px;
+    line-height: 115px;
+    color: #BBAEAE;
 
 }
-.next-show:hover {
-	 color:#4B4343;
+.next-show:hover{
+    box-shadow: inset 0px -10px 10px -5px #BE9F9F;
+    color: #A29696;
+}
+.more-icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    border-radius: 2px;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+   -webkit-transform:rotate(45deg);
+
+}
+.onload{
+
+         border-radius: 50%; 
+        -webkit-animation: load 0.3s infinite linear;
 }
 
-.showload {
-    display: none;
-    background: url(../IMG/load.gif) no-repeat;
-    background-size: 25px 25px;
-    width: 25px;
-    margin:6px auto 0px;
-    height: 25px;
+@keyframes load{
+    form{
+           transform:rotate(45deg);
+          -ms-transform:rotate(45deg);
+          -o-transform:rotate(45deg);
+          -webkit-transform:rotate(45deg);
+    }
+    to{
+           
+           transform:rotate(360deg);
+          -ms-transform:rotate(360deg);
+          -o-transform:rotate(360deg);
+          -webkit-transform:rotate(360deg);
+    }
 }
+
 
 .ban {
     height: 300px;
@@ -167,6 +189,7 @@ a {
     margin-top: 70px;
     position: relative;
     left: -600px;
+          opacity: 0;
 }
 .ban-slogan {
     width: 560px;
@@ -248,8 +271,8 @@ a {
       margin-top: 20px;
       position: relative;
       left: -300px;
-      display: block;
       margin-left: 35px;
+
  }
  .ban-slogan {
      width: 300px;
@@ -279,7 +302,7 @@ a {
     text-align: center;
     line-height: 40px;
 	position: relative;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -309,21 +332,24 @@ a {
     border: 0px;
     z-index: 0;
     position: absolute;
+    padding:0px;
     left: 50px;
 }
 .alist-title {
-    height: 40px;
-    line-height: 40px;
+    height: 100%;
+    line-height: 50px;
     margin-top: 0px;
     overflow: hidden;
+
 }
 .alist-title h3 {
     display: block;
+    padding: 0px 8px;
     overflow: hidden;
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     white-space: nowrap;
-    width: 100%;
+    height: 100%;
     font-weight: 500 !important;
     font-size: 14px;
 }
@@ -334,12 +360,16 @@ a {
     display: none;
 }
 .next-show {
-    margin: 10px auto 0px;
+    line-height: 55px;
     font-size: 13px;
-    height: 40px;
+    height: 50px;
 }
-.showload {
-    margin:3px auto 0px;
+
+.more-icon{
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
 }
 
 }
