@@ -16,7 +16,6 @@
     <include file="Public:header"/>
     <!--   首页样式表 -->
     <link rel="stylesheet" href="__PUBLIC__/Home/CSS/home.css"/>
-
     <!-- Banner部分 -->
     <div class="ban">
         <div class="ban-con">
@@ -121,7 +120,7 @@ $(function(){
                     type:'get',
                     cache:false,
                     data:num,
-                    url: "__URL__/return_list",
+                    url: "__URL__/return_list/?c_value={$c_value}",
                     success: function(msg){
                      list.append(msg);},
                     beforeSend: function(){

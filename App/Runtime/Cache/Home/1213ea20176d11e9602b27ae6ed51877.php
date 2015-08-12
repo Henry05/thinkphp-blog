@@ -52,6 +52,7 @@ $(".nav-btn").click(function(){
         <ul>
             <li ><a href="/W3CAY">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+             <li ><a href="/W3CAY/message">留言</a></li>
             <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
         </ul></nav>
     </header>
@@ -62,7 +63,7 @@ $(".nav-btn").click(function(){
    <span> <i id="time" class="attr-icon"></i>发布于 <?php echo ($article["a_time"]); ?></span>
    <span><i id="read" class="attr-icon"></i><?php echo ($article["a_clicks"]); ?>次阅读</span>
   </div>
-	<div class="article-detail markdown "><?php echo ($parse); ?> </div>
+	<div class="article-detail markdown "><?php echo ($article["a_content"]); ?> </div>
 
   <div id="SOHUCS" sid="<?php echo ($article["a_id"]); ?>" ></div>
 	</div>
@@ -77,19 +78,14 @@ $(".nav-btn").click(function(){
 </footer>
 </body>
 <div style="display:none">
-   <a href="http://www.zzidc.com"target="_blank"> alt="景安网络" title="景安网络" /></a>
+   <a href="http://www.zzidc.com">  title="景安网络" /></a>
 <script type="text/javascript">
 var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
 </script>
 </div>
 
 </html>
-
-
 <script>
-
-
-
 // 评论模块JS实现
   (function(){
     screenWidth=$(document).width();

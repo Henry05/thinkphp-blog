@@ -50,12 +50,12 @@ $(".nav-btn").click(function(){
         <ul>
             <li ><a href="/W3CAY">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+             <li ><a href="/W3CAY/message">留言</a></li>
             <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
         </ul></nav>
     </header>
     <!--   首页样式表 -->
     <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/home.css"/>
-
     <!-- Banner部分 -->
     <div class="ban">
         <div class="ban-con">
@@ -128,7 +128,7 @@ $(".nav-btn").click(function(){
 </footer>
 </body>
 <div style="display:none">
-   <a href="http://www.zzidc.com"target="_blank"> alt="景安网络" title="景安网络" /></a>
+   <a href="http://www.zzidc.com">  title="景安网络" /></a>
 <script type="text/javascript">
 var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
 </script>
@@ -172,7 +172,7 @@ $(function(){
                     type:'get',
                     cache:false,
                     data:num,
-                    url: "/W3CAY/index.php/Home/Index/return_list",
+                    url: "/W3CAY/index.php/Home/Index/return_list/?c_value=<?php echo ($c_value); ?>",
                     success: function(msg){
                      list.append(msg);},
                     beforeSend: function(){

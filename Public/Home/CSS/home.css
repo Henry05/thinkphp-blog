@@ -36,6 +36,58 @@ a {
     font-size: 18px;
     font-weight: 300;
 }
+
+.ban {
+    height: 300px;
+    background: #C7C7F3;
+    padding-top: 50px;
+}
+.ban-con {
+    width: 928px;
+    height: 250px;
+    margin: auto;
+}
+.ban-con a:hover{
+  color: #fff;
+}
+.ban-hr {
+    display: none;
+}
+.ban-pic {
+    width: 345px;
+    height: 200px;
+    background: url('../IMG/ban-pic.png') no-repeat;
+    background-size: 345px 170px;
+    float: left;
+    margin-top: 70px;
+    position: relative;
+    left: -600px;
+          opacity: 0;
+}
+.ban-slogan {
+    width: 560px;
+    float: right;
+    margin-top: 90px;
+    display: none;
+}
+.ban-slogan h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    color: #000;
+}
+.ban-slogan p {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+}
+.content {
+    z-index: 20;
+    background: #f0f0f0;
+    position: relative;
+    min-height: 378px;
+}
+
 .hotlist {
     display: none;
 }
@@ -167,55 +219,8 @@ a {
 }
 
 
-.ban {
-    height: 300px;
-    background: #C7C7F3;
-    padding-top: 50px;
-}
-.ban-con {
-    width: 928px;
-    height: 250px;
-    margin: auto;
-}
-.ban-con a:hover{
-	color: #fff;
-}
-.ban-hr {
-    display: none;
-}
-.ban-pic {
-    width: 345px;
-    height: 200px;
-    background: url('../IMG/ban-pic.png') no-repeat;
-    background-size: 345px 170px;
-    float: left;
-    margin-top: 70px;
-    position: relative;
-    left: -600px;
-          opacity: 0;
-}
-.ban-slogan {
-    width: 560px;
-    float: right;
-    margin-top: 90px;
-    display: none;
-}
-.ban-slogan h2 {
-    font-size: 30px;
-    padding-bottom: 10px;
-    font-weight: 400;
-    color: #000;
-}
-.ban-slogan p {
-    font-size: 20px;
-    line-height: 40px;
-    font-weight: 300;
-}
-.content {
-    z-index: 20;
-    background: #f0f0f0;
-    position: relative;
-}
+
+
 @media screen and (max-width: 1080px) {
     .ban {
         height: 250px;

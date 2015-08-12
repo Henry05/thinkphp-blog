@@ -23,18 +23,13 @@
    <span> <i id="time" class="attr-icon"></i>发布于 {$article.a_time}</span>
    <span><i id="read" class="attr-icon"></i>{$article.a_clicks}次阅读</span>
   </div>
-	<div class="article-detail markdown ">{$parse} </div>
+	<div class="article-detail markdown ">{$article.a_content} </div>
 
   <div id="SOHUCS" sid="{$article.a_id}" ></div>
 	</div>
 </div>
 <include file="Public:footer"/>
-
-
 <script>
-
-
-
 // 评论模块JS实现
   (function(){
     screenWidth=$(document).width();

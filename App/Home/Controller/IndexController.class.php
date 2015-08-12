@@ -10,7 +10,7 @@ class IndexController extends Controller {
 		  $this->cate=$cate;
      }
           
-     public function listquery($order,$limit,$where)
+     public function listquery($order,$limit,$where,$strip)
      {
 
           $Aview =D("ArticleView"); // 实例化Articel视图model对象   
@@ -19,14 +19,19 @@ class IndexController extends Controller {
           $listcon= htmlspecialchars_decode($listdata[$key]['a_content']);
           $Parsedown = new \Org\Util\Parsedown();
           $parse = $Parsedown->text($listcon);
-          $listdata[$key]['a_content']=strip_tags($parse);
+          if ($strip == true)  {
+             $listdata[$key]['a_content']=strip_tags($parse);
+          }else if($strip == false){
+             $listdata[$key]['a_content']=$parse;
+          }
            }
           return $listdata;
+
      }
 
      public function index(){
-          $last= $this->listquery(array('a_id'=>'desc'),"0,10","");
-          $hot= $this->listquery(array('a_clicks'=>'desc','a_id'=>'asc'),"0,10","");
+          $last= $this->listquery(array('a_id'=>'desc'),"0,10","",true);
+          $hot= $this->listquery(array('a_clicks'=>'desc','a_id'=>'asc'),"0,10","",true);
           $this->assign('last',$last);
           $this->assign('hot',$hot);
           $this->display();
@@ -35,70 +40,51 @@ class IndexController extends Controller {
         public function return_list()
         {
           $hotnum= $_GET["hotnum"];
-          $firstnum= $_GET["firstnum"];   
+          $firstnum= $_GET["firstnum"];  
+          $where['c_value'] =I('get.c_value');
+          if ($where['c_value'] =='') {
+            $where="";
+          }
           if ($firstnum) {
-             $list= $this->listquery(array('a_id'=>'desc'),"$firstnum,10",""); 
+             $list= $this->listquery(array('a_id'=>'desc'),"$firstnum,10",$where,true); 
 
             } 
           elseif($hotnum) {
-             $list= $this->listquery(array('a_clicks'=>'desc','a_id'=>'asc'),"$hotnum,10","");
+             $list= $this->listquery(array('a_clicks'=>'desc','a_id'=>'asc'),"$hotnum,10",$where,true);
             }
           $this->assign('list',$list);      
           $this->display();
         }
 
      public function theme(){
-          
-          $c_value=I('get.c_value');
-          $Aview =D("ArticleView"); // 实例化Articel视图model对象
-          $where['c_value']= $c_value;
-          $list= $this->listquery(array('a_id'=>'desc'),"0,10",$where); 
-          $this->assign('article',$list);
+          $where['c_value']=I('get.c_value');
+          $last= $this->listquery(array('a_id'=>'desc'),"0,10",$where,true);
+          $hot= $this->listquery(array('a_clicks'=>'desc','a_id'=>'asc'),"0,10",$where,true);
+          $this->assign('last',$last);
+          $this->assign('hot',$hot);
+          //返回栏目值变量
+          $this->assign('c_value',$where['c_value']);
 
-          //查找对应栏目标识
+          //查询对应栏目名称
+          $Aview =D("ArticleView"); // 实例化Articel视图model对象
           $c_name=$Aview->where($where)->getField('c_name');  
           $this->assign('c_name',$c_name);
-          $this->assign('c_value',$c_value);
-
-          $this->display();
+        
+          $this->display(index);
     }
 
-    public function more_theme()
-    {   
-          $c_value=I('get.c_value');
-          $lastnum = 10;
-          $listnum= $_GET["listnum"];
-          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-          $more_article= $Aview->order('a_id DESC')->where("c_value='$c_value'")->limit($listnum,$lastnum)->select();
-          foreach ($more_article as $key => $arr) {
-          $more_article[$key]['a_content']=strip_tags($more_article[$key]['a_content']);
-          }
-          $this->assign('more_article',$more_article);
-
-          $this->display();
-    }
-     public function article(){
-
-         
-          $a_id=I('get.a_id');
-
-          M('article')->where("a_id=$a_id")->setInc('a_clicks'); // 文章阅读加1
-
-          $Aview =D("ArticleView"); // 实例化Articel视图model对象 
-
-          $article=D("ArticleView")->where("a_id=$a_id")->select();
-
-          $a_content= htmlspecialchars_decode($article['0']['a_content']);
-
-          $Parsedown = new \Org\Util\Parsedown();
-
-          $parse = $Parsedown->text($a_content);
-
-          $this->assign('parse',$parse);
+     public function article(){  
+          $where['a_id']=I('get.a_id'); 
+          M('article')->where($where)->setInc('a_clicks'); // 文章阅读加1
+          $article= $this->listquery("","",$where,false);
           $this->assign('article',$article['0']);
-
           $this->display();
     }
+
+     public function message()
+     {
+       $this->display();
+     }
 
     public function aboutme()
     {

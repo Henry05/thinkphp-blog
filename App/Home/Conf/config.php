@@ -6,6 +6,7 @@ return array(
          'article/:a_id' => 'Index/article',    
          'topic/:c_value' => 'Index/theme',    
           'me'		=> 'Index/aboutme',
+          'message'		=> 'Index/message',
         ),
 
 );
