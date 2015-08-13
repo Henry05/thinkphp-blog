@@ -11,17 +11,17 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="renderer" content="webkit">
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
-        <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
+        <link rel="alternate icon" type="image/ico" href="/Blog/Public/Home/IMG/favicon.ico">
     </head>
     <!--   导航栏样式表 -->
-<link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
+<link rel="stylesheet" href="/Blog/Public/Home/CSS/layout.css"/>
 <!--[if lt IE 9]>
-<script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
+<script src="/Blog/Public/Jquery/jquery-1.11.2.js"></script>
 <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/W3CAY/Public/Jquery/jquery-2.1.4.min.js"></script>
+<script src="/Blog/Public/Jquery/jquery-2.1.4.min.js"></script>
 <!--<![endif]-->
-<script src="/W3CAY/Public/Home/JS/html5shiv.min.js"></script>
+<script src="/Blog/Public/Home/JS/html5shiv.min.js"></script>
 <script type="text/javascript">
 //导航下拉效果
 $(function(){
@@ -35,7 +35,7 @@ $(".nav-btn").click(function(){
 <body>
 <!-- 导航部分 -->
 <header>
-    <a href="/W3CAY" class="title">
+    <a href="/Blog" class="title">
     <i class="logo"></i>
     <i class="name"></i>
     </a>
@@ -48,14 +48,14 @@ $(".nav-btn").click(function(){
     </div>
     <nav class='nav'>
         <ul>
-            <li ><a href="/W3CAY">首页</a></li>
-            <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
-             <li ><a href="/W3CAY/message">留言</a></li>
-            <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
+            <li ><a href="/Blog">首页</a></li>
+            <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+             <li ><a href="/Blog/message">留言</a></li>
+            <li ><a href="/Blog/me" target="_blank">关于我</a></li>
         </ul></nav>
     </header>
     <!--   首页样式表 -->
-    <link rel="stylesheet" href="/W3CAY/Public/Home/CSS/home.css"/>
+    <link rel="stylesheet" href="/Blog/Public/Home/CSS/home.css"/>
     <!-- Banner部分 -->
     <div class="ban">
         <div class="ban-con">
@@ -78,15 +78,15 @@ $(".nav-btn").click(function(){
         <div class="lastlist">
             <?php if(is_array($last)): foreach($last as $key=>$v): ?><div class="alist"  >
                 <div class="alist-icon" >
-                   <a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"> <img src="/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
+                   <a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"> <img src="/Blog/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
                 </div>
                 <div class="alist-con">
                     <div  class="alist-title">
-                         <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
+                         <a href="/Blog/article/<?php echo ($v["a_id"]); ?>.html">
                         <span>[<?php echo ($v["a_time"]); ?>]</span>
                         <h3 ><?php echo ($v["a_title"]); ?></h3>
                     </a></div>
-                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,135,'utf-8')); ?></div></a>
+                    <a href="/Blog/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,135,'utf-8')); ?></div></a>
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
@@ -95,15 +95,15 @@ $(".nav-btn").click(function(){
         <div class="hotlist">
             <?php if(is_array($hot)): foreach($hot as $key=>$v): ?><div class="alist">
                  <div class="alist-icon" >
-                   <a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"> <img src="/W3CAY/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
+                   <a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"> <img src="/Blog/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
                 </div>
                 <div class="alist-con" >
                      <div  class="alist-title">
-                         <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html">
+                         <a href="/Blog/article/<?php echo ($v["a_id"]); ?>.html">
                         <span>[<?php echo ($v["a_time"]); ?>]</span>
                         <h3 ><?php echo ($v["a_title"]); ?></h3>
                     </a></div>
-                    <a href="/W3CAY/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,135,'utf-8')); ?></div></a>
+                    <a href="/Blog/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo (msubstr($v["a_content"],0,135,'utf-8')); ?></div></a>
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
@@ -172,7 +172,7 @@ $(function(){
                     type:'get',
                     cache:false,
                     data:num,
-                    url: "/W3CAY/index.php/Home/Index/return_list/?c_value=<?php echo ($c_value); ?>",
+                    url: "/Blog/index.php/Home/Index/return_list/?c_value=<?php echo ($c_value); ?>",
                     success: function(msg){
                      list.append(msg);},
                     beforeSend: function(){

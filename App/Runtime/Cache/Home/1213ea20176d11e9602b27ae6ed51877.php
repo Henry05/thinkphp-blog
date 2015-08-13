@@ -9,21 +9,21 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
-  <link rel="alternate icon" type="image/ico" href="/W3CAY/Public/Home/IMG/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="/W3CAY/Public/Home/CSS/article.css" />
-  <link rel="stylesheet" type="text/css" href="/W3CAY/Public/editor/markdown.css" />
+  <link rel="alternate icon" type="image/ico" href="/Blog/Public/Home/IMG/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/Blog/Public/Home/CSS/article.css" />
+  <link rel="stylesheet" type="text/css" href="/Blog/Public/editor/markdown.css" />
   <script type="text/javascript" src=""></script>
 
   </head>
 <!--   导航栏样式表 -->
-<link rel="stylesheet" href="/W3CAY/Public/Home/CSS/layout.css"/>
+<link rel="stylesheet" href="/Blog/Public/Home/CSS/layout.css"/>
 <!--[if lt IE 9]>
-<script src="/W3CAY/Public/Jquery/jquery-1.11.2.js"></script>
+<script src="/Blog/Public/Jquery/jquery-1.11.2.js"></script>
 <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/W3CAY/Public/Jquery/jquery-2.1.4.min.js"></script>
+<script src="/Blog/Public/Jquery/jquery-2.1.4.min.js"></script>
 <!--<![endif]-->
-<script src="/W3CAY/Public/Home/JS/html5shiv.min.js"></script>
+<script src="/Blog/Public/Home/JS/html5shiv.min.js"></script>
 <script type="text/javascript">
 //导航下拉效果
 $(function(){
@@ -37,7 +37,7 @@ $(".nav-btn").click(function(){
 <body>
 <!-- 导航部分 -->
 <header>
-    <a href="/W3CAY" class="title">
+    <a href="/Blog" class="title">
     <i class="logo"></i>
     <i class="name"></i>
     </a>
@@ -50,10 +50,10 @@ $(".nav-btn").click(function(){
     </div>
     <nav class='nav'>
         <ul>
-            <li ><a href="/W3CAY">首页</a></li>
-            <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/W3CAY/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
-             <li ><a href="/W3CAY/message">留言</a></li>
-            <li ><a href="/W3CAY/me" target="_blank">关于我</a></li>
+            <li ><a href="/Blog">首页</a></li>
+            <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+             <li ><a href="/Blog/message">留言</a></li>
+            <li ><a href="/Blog/me" target="_blank">关于我</a></li>
         </ul></nav>
     </header>
 <div class="article-container">
