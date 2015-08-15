@@ -77,6 +77,7 @@ class IndexController extends Controller {
           $where['a_id']=I('get.a_id'); 
           M('article')->where($where)->setInc('a_clicks'); // 文章阅读加1
           $article= $this->listquery("","",$where,false);
+          var_dump($article);die;
           $this->assign('article',$article['0']);
           $this->display();
     }
