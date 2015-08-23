@@ -2,9 +2,8 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
-        <title>安望云海-致力于HTML/CSS/JS/前端开发</title>
+        <title><?php echo ($title); ?></title>
         <meta name="Keywords" content="前端开发,html,css,js" />
-        <meta name="Description" content="不愿成为知识的过客，记录和分享前端开发学习中的点点滴滴；用编程与艺术的完美结合，创造我心中的互联网世界！"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">

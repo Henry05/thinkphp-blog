@@ -34,6 +34,8 @@ class IndexController extends Controller {
           $hot= $this->listquery(array('a_clicks'=>'desc','a_id'=>'asc'),"0,10","",true);
           $this->assign('last',$last);
           $this->assign('hot',$hot);
+          $title="安望云海-致力于HTML/CSS/JS/前端开发";
+          $this->assign('title',$title);
           $this->display();
     }
 
@@ -68,7 +70,8 @@ class IndexController extends Controller {
           //查询对应栏目名称
           $Aview =D("ArticleView"); // 实例化Articel视图model对象
           $c_name=$Aview->where($where)->getField('c_name');  
-          $this->assign('c_name',$c_name);
+          $c_name=$c_name." - 安望云海";
+          $this->assign('title',$c_name);
         
           $this->display(index);
     }
@@ -77,7 +80,6 @@ class IndexController extends Controller {
           $where['a_id']=I('get.a_id'); 
           M('article')->where($where)->setInc('a_clicks'); // 文章阅读加1
           $article= $this->listquery("","",$where,false);
-          var_dump($article);die;
           $this->assign('article',$article['0']);
           $this->display();
     }
