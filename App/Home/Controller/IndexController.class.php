@@ -20,9 +20,9 @@ class IndexController extends Controller {
           $Parsedown = new \Org\Util\Parsedown();
           $parse = $Parsedown->text($listcon);
           if ($strip == true)  {
-             $listdata[$key]['a_content']=strip_tags($parse);
+             $listdata[$key]['a_content']=stripslashes(strip_tags($parse));
           }else if($strip == false){
-             $listdata[$key]['a_content']=$parse;
+             $listdata[$key]['a_content']=stripslashes($parse);
           }
            }
           return $listdata;
@@ -80,8 +80,13 @@ class IndexController extends Controller {
           $where['a_id']=I('get.a_id'); 
           M('article')->where($where)->setInc('a_clicks'); // 文章阅读加1
           $article= $this->listquery("","",$where,false);
-          $this->assign('article',$article['0']);
-          $this->display();
+          if ( $article == null) {
+            $this->display("Public:404"); //显示自定义的404页面模版  
+          }else{
+            $this->assign('article',$article['0']);
+            $this->display();
+          }
+
     }
 
      public function message()
