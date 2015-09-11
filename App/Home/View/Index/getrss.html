@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>前端聚合</title>
+	 <style type="text/css">
+
+	 </style>
+</head>
+<body>
+<foreach name='rss' item='v'>
+<div class="alist" >
+
+            <span>[{$v.updated}{$v.pubdate}]</span>
+         <a href="{$v.link}" target="_blank">   <span >{$v.title}</sapn></a>
+
+</div>
+
+
+</foreach>
+</body>
+</html>

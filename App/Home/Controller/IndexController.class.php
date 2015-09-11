@@ -107,4 +107,29 @@ class IndexController extends Controller {
       $this->display();
     }
 
+
+
+    public function getrss()
+    {
+
+      require('./ThinkPHP/Common/magpierss/rss_fetch.inc');
+      $rss = fetch_rss('http://www.uisdc.com/feed');
+      $arr =object_to_array($rss);
+      // var_dump($arr['items']);die;
+      foreach ($arr as $key=> $value) {
+      $date= date("Y-m-d H:i",strtotime($arr['items'][0]['pubdate'])); 
+      // $d= date("Y-m-d",$arr['items'][0]['pubdate']); 
+
+      
+      }
+      foreach ($date as $key=> $value) {
+        $arr['items'][$key]['pubdate']=  $value;
+      }
+      $this->assign('rss',$arr['items']);
+      $this->display();
+    }
+
+   
+
+
 }
