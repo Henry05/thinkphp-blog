@@ -1,42 +1,739 @@
-O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:10:{s:5:"title";s:39:" PHPer 为什么会被 Javaer 鄙视？";s:4:"link";s:42:"http://segmentfault.com/a/1190000003723309";s:2:"id";s:42:"http://segmentfault.com/a/1190000003723309";s:7:"updated";s:25:"2015-09-08T21:49:39+08:00";s:9:"published";s:25:"2015-09-08T21:49:39+08:00";s:6:"author";s:3:"
+O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:3:{s:5:"title";s:46:"Coding 孙宇聪：《人，技术与流程》";s:4:"link";s:42:"http://segmentfault.com/a/1190000003725944";s:2:"id";s:42:"http://segmentfault.com/a/1190000003725944";}s:5:"items";a:39:{i:0;a:11:{s:5:"title";s:72:"[译]使用 Postgres 递归公共表表达式解决旅行销售员问题";s:4:"link";s:42:"http://segmentfault.com/a/1190000003739666";s:2:"id";s:42:"http://segmentfault.com/a/1190000003739666";s:7:"updated";s:25:"2015-09-12T16:58:42+08:00";s:9:"published";s:25:"2015-09-12T16:58:42+08:00";s:6:"author";s:3:"
 
 
-";s:11:"author_name";s:18:"OneAPM蓝海讯通";s:10:"author_uri";s:41:"http://segmentfault.com/u/oneapm_official";s:2:"re";a:1:{s:4:"rank";s:1:"2";}s:7:"summary";s:7066:"
-<p>最近看了知乎上的一个话题<br><a href="http://www.zhihu.com/question/20049761">「在工作中，为什么 Java 程序员常常瞧不起 PHP 程序员？」</a></p>
-<p>个人从业多年，用过的后端语言 ASP、ASP.NET、Java、PHP、Node.js、Python，如果你非要让我说哪种语言好，我会说「凡是宏哥说的都是对的，凡是宏哥提倡的都要坚持。只有真正的理解了宏哥思想才可以洞穿一切，走出空谷。」话不闲谈，咱们先说说我对 Java 的看法。</p>
-<p><a href="http://www.oneapm.com/ai/java.html?utm_source=Community&amp;utm_medium=Article&amp;utm_term=phper&amp;utm_campaign=SeptArti&amp;from=matefispph">Java</a> 在我看来好比重型武器，而且武器种类如王牌特工里，那位老特工给新特工展示的武器库一样丰富，就 Github 上的开源项目来说，远不止这些。</p>
-<p>那么背后说明了什么？让我们引申出几个问题。</p>
-<h2>为什么 Java 这么重型？为什么 Java 思想开阔？</h2>
-<p>其实一开始 Java 就是以大型的服务器得解决方案而存在的，所以面对的都是企业级比较重型的需求（典型的银行项目、房产项目），对比一下淘宝和 ECShop，虽然最底层需求都是商城类整站，但是后者明显需求要单薄很多。那么也可以说 Java 是变相解决了更多的问题，自然可以说 <a href="http://www.oneapm.com/ai/java.html?utm_source=Community&amp;utm_medium=Article&amp;utm_term=phper&amp;utm_campaign=SeptArti&amp;from=matefispph">Java</a> 思想就开阔了。</p>
-<p>Java 在团队协作中我的直观感觉就是库和标准。Java 有着数不完的现实标准库和标准。而且一个很多人不认为是要害的问题就是 Java 有好的 IDE，在如 Eclipse 上写出程序，错误会及时爆出，运行不了基本编译时就会报告出绝大多数错误。而 PHP 早年的学习基本只是记事本，DW 等工具，而且早年的 <a href="http://www.oneapm.com/ai/php.html?utm_source=Community&amp;utm_medium=Article&amp;utm_term=phper&amp;utm_campaign=SeptArti&amp;from=matefispph">PHP</a> 同样也不支持复杂的 OO 特性，从而在工程质量上 Java 就略胜一筹。</p>
-<p>此时你要说那是早年了，现在 PHP 很多 OO 特性都支持，PHP 是世界上最好的语言并且没有之一，但是从人的角度上讲，从业时间长的大多数老兵还停留在早年 PHP 的状态，所以团队和新人的水平也大多得不到整体得提升（大牛和天才毕竟是少数）。到目前为止我也没有见过谁非要在 PHP 圈推行什么标准，推行什么框架（Java 圈基本天天都在喊，如果你赶上 JavaEye 崛起的时刻你能更明显得感觉到），大家都是拿全能「脚手架」在用，大家都是找快速实现需求得 CMS 类程序在用。</p>
-<p>那么 PHP 就一无是处吗？自然不是，如果你使用过 SSH 开发过，看看 ThinkPHP 的实现机制你会觉得只要都是 WEB 框架，要解决得问题总是有限。早年 ThinkPHP 的控制器为 Action 后缀命名，连作者都直言是借鉴 Struts，模板中的变量属性输出可以用<code>.</code>来表示，PHP中<code>.</code>字符其实是字符串连接符，表示属性的话是<code>-&gt;</code>(PHP 很多原语都是类 C 的)。</p>
-<p><strong>那我们用 ThinkPHP  就可以快速解决开发中的问题了吗？当然不能。</strong></p>
-<p>虽然 ThinkPHP 中提供了很强的 DEBUG 输出，更有 G 方法计算输出运算时间以性能调试，但这依然不够，试想一下我们每天要调用多少外部接口（短信发送，微信集成，地图类等 API 输出），用户数量剧增时，又要接入多个 MySQL来负载（ThinkPHP 有软负载支持），如何一键输出所有的错误和性能问题呢？你没听错，就是一键，而且不管是测试还是生产环境，不管是出游还是办公室内，你随时可以拿起手机诊断这一切（我是在百度中真正搜索到这种平台才敢这么说）。</p>
-<p>如果你总是关注开源中国等 IT 社区你一定知道有很多这样的平台了，但很多产品，安装上以后遇到了的第一个问题就是，不能免费，连最基本的测试都不能免费，只有最基本的功能。那有没有免费的可以用呢？不用去申请了，因为你可以选择使用<a href="http://www.oneapm.com/index.htm?utm_source=Community&amp;utm_medium=Article&amp;utm_term=phper&amp;utm_campaign=SeptArti&amp;from=matefispph">OneAPM</a>提供的SaaS 产品，目前，使用 Java 做业务处理后端语言的项目，已经可以和 PHP等展示端语言一起进行性能诊断了。</p>
-<p>我们也可以对比分析国外的产品，首先在安装过程 OneAPM 已经非常自动化了，而且接入过程中，技术支持还会对所在的环境进行了一键远端排查，很快就可以诊断了环境中的问题。</p>
-<p>下面为大家介绍如何使用 OneAPM 在线诊断代码中的各种问题</p>
+";s:11:"author_name";s:9:"halfcoder";s:10:"author_uri";s:35:"http://segmentfault.com/u/halfcoder";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:14070:"
+<blockquote><p>原文：<a href="https://www.periscope.io/blog/postgres-recursive-cte.html">Solving the Traveling Salesman Problem with Postgres Recursive CTEs</a></p></blockquote>
+<p>Many SQL implementations don't have loops, making some kinds of analysis very difficult. Postgres, SQL Server, and several others have the next best thing — recursive CTEs!</p>
+<p>许多 SQL 实现没有将循环包括在内，使进行一些分析工作变得很困难。Postgres、SQL Server 以及一些其它的 SQL 实现则提供了下面将要提到的优良特性：递归公共表表达式（recursive CTE）。</p>
+<p>We'll use them to solve the <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling Salesman Problem</a> and find the shortest round-trip route through several US cities.</p>
+<p>我们将使用它们来解决旅行销售员问题（<a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling Salesman Problem</a> ）并且找出经过若干美国城市的最短巡回路径。</p>
+<p><img src="/img/bVpQOa" alt="//s3.amazonaws.com/periscope-blog-assets/postgres-ctes/map.png" title="//s3.amazonaws.com/periscope-blog-assets/postgres-ctes/map.png"></p>
+<h3>使用递归</h3>
+<p>Normal CTEs are great at helping to organize large queries. They are a simple way to make temporary tables you can access later in your query.</p>
+<p>一般的公共表表达式（CTE）主要用于帮助组织大型查询语句。你可以简便地创建临时表，并在稍后的查询语句中访问它们。</p>
+<p><a href="http://www.postgresql.org/docs/8.4/static/queries-with.html">Recursive CTEs</a> are more powerful - they reference themselves and allow you to explore hierarchical data. While that may sound complicated, the underlying concept is very similar to a <code>for</code> loop in other programming languages.</p>
+<p>递归公共表表达式（<a href="http://www.postgresql.org/docs/8.4/static/queries-with.html">Recursive CTEs</a>）的能力更强——它们通过自引用，使你能够探索层次化的数据。虽然这听起来很复杂，但其背后的概念和其它编程语言中的 <code>for</code> 循环十分相似。 </p>
+<p>These CTEs have two parts — an <code>anchor</code> member and a <code>recursive</code> member. The <code>anchor</code> member selects the starting rows for the recursive steps.</p>
+<p>该公共表表达式（CTE）包含两个部分——一个 <strong>anchor</strong> 部分和一个 <strong>recursive</strong> 部分。 <strong>anchor</strong> 部分提供了递归步骤的起始数据。</p>
+<p>The <code>recursive</code> member generates more rows for the CTE by first joining against the <code>anchor</code> rows, and then joining against rows created in previous recursions. The <code>recursive</code> member comes after a <code>union all</code> in the CTE definition.</p>
+<p><strong>recursive</strong> 部分为此公共表表达式（CTE）生成更多的数据，方法是先连接（join） <strong>anchor</strong> 数据，然后连接（join）上次递归产生的数据。在公共表表达式（CTE）的定义语句中，<strong>recursive</strong> 部分接在 <code>union all</code> 关键字后面。</p>
+<p>Here's a simple recursive CTE that generates the numbers 1 to 10. The <code>anchor</code> member selects the value 1, and the <code>recursive</code> member adds to it up to the number 10:</p>
+<p>这是一个能产生数字1到10的简单的递归公共表表达式（CTE）。其中 <strong>anchor</strong> 部分提供了数据值1，然后 <strong>recursive</strong> 部分将其逐步累加至10。</p>
+<pre><code class="sql">with recursive incrementer(prev_val) as (
+  select 1 -- anchor member
+  union all
+  select -- recursive member
+    incrementer.prev_val + 1
+  from incrementer
+  where prev_val &lt; 10 -- termination condition
+)
+
+select * from incrementer</code></pre>
+<p>The first time the recursive CTE runs it generates a single row <code>1</code> using the <code>anchor</code> member. In the second execution, the <code>recursive</code> member joins against the <code>1</code> and outputs a second row, <code>2</code>. In the third execution the <code>recursive</code> step joins against both rows <code>1</code> and <code>2</code> and adds the rows <code>2</code> (a duplicate) and <code>3</code>.</p>
+<p>该递归公共表表达式（recursive CTE）在第一次执行的时候根据 <strong>anchor</strong> 部分生成了一行数据“1”。在第二次执行中， <strong>recursive</strong> 部分连接到数据“1”并输出了第二行“2”。在第三次执行中，<strong>recursive</strong> 部分同时连接到了数据“1”和“2”并且添加了新数据“2”（重复）和“3”。</p>
+<p>Recursive CTEs also only return distinct rows. Even though our CTE above creates many rows with the same value, only a distinct set of rows will be returned.</p>
+<p>同时递归公共表表达式（recursive CTE）只返回互不相同的数据。虽然我们的公共表表达式（CTE）创建了许多相同的数据行，但返回的数据集只包含互不相同的数据。</p>
+<p>Notice how the CTE specifies its output as the named value <code>prev_val</code>. This lets us refer to the output of the previous recursive step.</p>
+<p>注意该公共表表达式（CTE）是如何将其输出命名为 <code>prev_val</code> 的。这使得我们可以引用上一次递归的输出结果。</p>
+<p>And at the very end there is a termination condition to halt the recursion once the sum gets to 10. Without this condition, the CTE would enter an infinite loop!</p>
+<p>并且在最后的最后有一个终止条件：一旦 sum 到达10就停止递归。如果没有这个条件，该公共表表达式（CTE）将会进入一个无限循环！</p>
+<p>Under the hood, the database is building up a table named after this recursive CTE using unions:</p>
+<p>这样，数据库以该递归公共表表达式（recursive CTE）为名字，基于并集建立了一个数据表：</p>
+<p><img src="/img/bVpQOi" alt="//s3.amazonaws.com/periscope-blog-assets/postgres-ctes/incrementer.png" title="//s3.amazonaws.com/periscope-blog-assets/postgres-ctes/incrementer.png"></p>
+<p>Recursive CTEs can also have many parameters. Here's one that takes the sum, double, and square of starting values of 1, 2 and 3:</p>
+<p>递归公共表表达式（recursive CTE）还可以包含多个参数。下面的例子以1、2和3为初始值，分别计算了依次加1的和、倍增值和依次平方的值。</p>
+<pre><code class="sql">with recursive cruncher(inc, double, square) as (
+  select 1, 2.0, 3.0 -- anchor member
+  union all
+  select -- recursive member
+    cruncher.inc + 1,
+    cruncher.double * 2,
+    cruncher.square ^ 2
+  from cruncher
+  where inc &lt; 10
+)
+
+select * from cruncher</code></pre>
+<p>With recursive CTEs we can solve the Traveling Salesman Problem.</p>
+<p>通过使用递归公共表表达式（recursive CTE），我们能够解决旅行销售员问题。</p>
+<h3>找出最短路径</h3>
+<p>There are many algorithms for finding the shortest round-trip path through several cities. We'll use the simplest: brute force. Our recursive CTE will enumerate all possible routes and their total distances. We'll then sort to find the shortest.</p>
+<p>有许多算法可以用于找出经过若干城市的最短巡回路径。我们将使用最简单的一种：暴力搜索。我们的递归公共表表达式（recursive CTE）将枚举所有可能的路径和它们的总距离，然后排序以找出最短的一条。</p>
+<p>First, a list of cities with Periscope customers, along with their latitudes and longitudes:</p>
+<p>首先是一个顾客所在城市的列表，包含它们的纬度和经度。</p>
+<pre><code class="sql">create table places as (
+  select
+    'Seattle' as name, 47.6097 as lat, 122.3331 as lon
+    union all select 'San Francisco', 37.7833, 122.4167
+    union all select 'Austin', 30.2500, 97.7500
+    union all select 'New York', 40.7127, 74.0059
+    union all select 'Boston', 42.3601, 71.0589
+    union all select 'Chicago', 41.8369, 87.6847
+    union all select 'Los Angeles', 34.0500, 118.2500
+    union all select 'Denver', 39.7392, 104.9903
+)</code></pre>
+<p>And we'll need a distance function to compute how far two lat/lons are from each other (thanks to <a href="http://stackoverflow.com/questions/10034636/postgres-longitude-longitude-query">strkol on stackoverflow.com</a>):</p>
+<p>然后我们需要一个距离函数来计算两个经纬度之间的距离（<a href="http://stackoverflow.com/questions/10034636/postgres-longitude-longitude-query">感谢 strkol 在 stackoverflow.com 上的回答</a>）：</p>
+<pre><code class="sql">create or replace function lat_lon_distance(
+  lat1 float, lon1 float, lat2 float, lon2 float
+) returns float as $$
+declare
+  x float = 69.1 * (lat2 - lat1);
+  y float = 69.1 * (lon2 - lon1) * cos(lat1 / 57.3);
+begin
+  return sqrt(x * x + y * y);
+end
+$$ language plpgsql</code></pre>
+<p>Our CTE will use San Francisco as its anchor city, and then recurse from there to every other city:</p>
+<p>我们的公共表表达式（CTE）将使用 San Francisco 作为出发城市，然后从那开始递归抵达其它城市。</p>
+<pre><code class="sql">with recursive travel(places_chain, last_lat, last_lon,
+    total_distance, num_places) as (
+  select -- anchor member
+    name, lat, lon, 0::float, 1
+    from places
+    where name = 'San Francisco'
+  union all
+  select -- recursive member
+    -- add to the current places_chain
+    travel.places_chain || ' -&gt; ' || places.name,
+    places.lat,
+    places.lon,
+    -- add to the current total_distance
+    travel.total_distance + 
+      lat_lon_distance(last_lat, last_lon, places.lat, places.lon),
+    travel.num_places + 1
+  from
+    places, travel
+  where
+    position(places.name in travel.places_chain) = 0
+)</code></pre>
+<p>The parameters in the CTE are:</p>
 <ul>
-<li><p>1.性能全揽<br><img src="http://news.oneapm.com/content/images/2015/09/1.png" alt="PHPer  为什么会被  Javaer  鄙视？" title="PHPer  为什么会被  Javaer  鄙视？"></p></li>
-<li><p>2.慢日志<br><img src="http://news.oneapm.com/content/images/2015/09/2.jpg" alt="PHPer  为什么会被  Javaer  鄙视？" title="PHPer  为什么会被  Javaer  鄙视？"></p></li>
-<li><p>3.代码级定位<br><img src="http://news.oneapm.com/content/images/2015/09/3.png" alt="PHPer  为什么会被  Javaer  鄙视？" title="PHPer  为什么会被  Javaer  鄙视？"></p></li>
-<li><p>4.数据库事务多天对比<br><img src="http://news.oneapm.com/content/images/2015/09/4.png" alt="PHPer  为什么会被  Javaer  鄙视？" title="PHPer  为什么会被  Javaer  鄙视？"></p></li>
-<li><p>5.还送免费的报警（可以支持微信哦）<br><img src="http://news.oneapm.com/content/images/2015/09/5.png" alt="PHPer  为什么会被  Javaer  鄙视？" title="PHPer  为什么会被  Javaer  鄙视？"></p></li>
-<li><p>6.迁移到阿里云同样支持</p></li>
+<li><p><code>places_chain</code>: The list of places visited so far, which will be different for each instance of the recursion</p></li>
+<li><p><code>last_lat and last_lon</code>: The latitude and longitude of the last place in the <code>places_chain</code></p></li>
+<li><p><code>total_distance</code>: The distance traveled going from one place to the next in the <code>places_chain</code></p></li>
+<li><p><code>num_places</code>: The number of places in <code>places_chain</code> — we'll use this to tell which routes are complete because they visited all cities</p></li>
 </ul>
-<p>更多内容见官方的 DEMO：<br><a href="https://user.oneapm.com/account/demo.do">https://user.oneapm.com/account/demo.do</a></p>
-<p>好吧，这一切都是免费的，如果你的团队已经在产品稳定期，也可以使用收费版本。</p>
-<p>既然解决了快速性能分析，是不是就可以高枕无忧了呢？对了，问题刚刚开始，解铃还得系铃人，让我们看看如何面对自己挖的坑，当然我要先介绍几款好的武器。</p>
+<p>该公共表表达式（CTE）中的参数有：</p>
 <ul>
-<li><p><a href="http://segmentfault.com/a/1190000002439648">chrome</a></p></li>
-<li><p><a href="http://www.cnblogs.com/zjczoo/archive/2012/03/24/xdebug-debug.html">插件 xdebug</a></p></li>
-<li><p><a href="http://blog.csdn.net/zztfj/article/details/18750295">php 使用 eclipse 安装 xdebug</a></p></li>
+<li><p><code>places_chain</code>：截至目前访问过的位置的列表，在每条递归路径中都是不同的</p></li>
+<li><p><code>last_lat and last_lon</code>：<code>places_chain</code> 中最后一个位置的纬度和经度。</p></li>
+<li><p><code>total_distance</code>：<code>places_chain</code> 中相邻位置的距离的总和</p></li>
+<li><p><code>num_places</code>：<code>places_chain</code> 中位置的数目——我们使用该参数来分辨哪条路径已经完成，由其访问过了所有城市</p></li>
 </ul>
-<p>为什么使用 Eclipse？对了，说好了不想被鄙视，你就必须是全栈，你还要编写 Java 呢不是吗？<";}s:5:"items";a:38:{i:0;a:11:{s:5:"title";s:60:"整理一些质量不错的教程、网站、博客、论坛";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737649";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737649";s:7:"updated";s:25:"2015-09-11T21:02:02+08:00";s:9:"published";s:25:"2015-09-11T21:02:02+08:00";s:6:"author";s:3:"
+<p>In the <code>recursive</code> member, the <code>where</code> clause ensures that we never repeat a place. If we've already visited Denver, <code>position(...)</code> will return a number greater than 0, invalidating this instance of the recursion.</p>
+<p>在 <code>recursive</code> 部分中，<code>where</code> 子句确保了我们不会重复访问一个地方。（比如说）如果我们已经访问过 Denver，<code>position(...)</code> 将返回一个大于0的数字，使得该递归路径无效化。</p>
+<p>We can see all possible routes by selecting all 8-city chains:</p>
+<p>通过列出所有包含了8个城市的城市链，我们可以看到所有可能的路径：</p>
+<pre><code class="sql">select * from travel where num_places = 8</code></pre>
+<p>We need to add in the distance from the last city back to San Francisco to complete the round-trip. We could hard code San Francisco's lat/lon, but a join is more elegant. Once that's done we sort by distance and show the smallest:</p>
+<p>我们需要加上从最后一个城市回到 San Francisco 的距离以完成回路。我们可以在代码中显式写入 San Francisco 的经纬度，但使用连接操作看起来更加优雅。一完成这个我们就可以根据距离进行排序并输出最短路径：</p>
+<pre><code>select
+  travel.places_chain || ' -&gt; ' || places.name,
+  total_distance + lat_lon_distance(
+      travel.last_lat, travel.last_lon,
+      places.lat, places.lon) as final_dist
+from travel, places
+where
+  travel.num_places = 8
+  and places.name = 'San Francisco'
+order by 2 -- ascending!
+limit 1</code></pre>
+<p>Even though this query is significantly more complicated than the <code>incrementer</code> query earlier, the database is doing the same things behind the scenes. The top branch is the creating the CTE's rows, the bottom branch is the final join and sort:</p>
+<p>虽然该查询语句明显复杂于之前的 <code>incrementer</code> 查询，数据库在幕后做的事情依然一样。最顶上的分支是创建该公共表表达式（CTE）的数据，最底部的分支是最终的连接和排序。</p>
+<p><img src="/img/bVpQOp" alt="//s3.amazonaws.com/periscope-blog-assets/postgres-ctes/postgres-cte.png" title="//s3.amazonaws.com/periscope-blog-assets/postgres-ctes/postgres-cte.png"></p>
+<p>Run this query and you'll see the shortest route takes 6671 miles and visits the cities in this order:</p>
+<p>执行该查询语句，你会看到最短路径需要 6671 英里并且按顺序经过了下列城市：</p>
+<blockquote><p>San Francisco -&gt; Seattle -&gt; Denver -&gt;<br>Chicago -&gt; Boston -&gt; New York -&gt; Austin -&gt;<br>Los Angeles -&gt; San Francisco</p></blockquote>
+<p>Thanks to recursive CTEs, we can solve the Traveling Salesman Problem in SQL!</p>
+<p>得益于递归公共表表达式（recursive CTE），我们成功地用 SQL 解决了旅行销售员问题！</p>
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003739666";}i:1;a:11:{s:5:"title";s:75:"使用git和github管理自己的项目---实际开发环境的管理策略";s:4:"link";s:42:"http://segmentfault.com/a/1190000003739324";s:2:"id";s:42:"http://segmentfault.com/a/1190000003739324";s:7:"updated";s:25:"2015-09-12T14:59:12+08:00";s:9:"published";s:25:"2015-09-12T14:59:12+08:00";s:6:"author";s:3:"
 
 
-";s:11:"author_name";s:8:"xumenger";s:10:"author_uri";s:34:"http://segmentfault.com/u/xumenger";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:3914:"
-<p>欢迎大家也来推荐好的资源。</p>
+";s:11:"author_name";s:8:"xumenger";s:10:"author_uri";s:34:"http://segmentfault.com/u/xumenger";s:2:"re";a:1:{s:4:"rank";s:1:"3";}s:7:"summary";s:24962:"
+<p>基础知识和命令先参考：<a href="http://segmentfault.com/a/1190000003728094">使用git和github管理自己的项目---基础操作学习</a></p>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758410364457b9e3d821f4244beb0fd69c61a185ae0000">13.分支管理策略</a></h2>
+<p>通常，合并分支时，如果可能，Git会用<code>Fast forward</code>模式，但这种模式下，删除分支后，会丢掉分支信息。</p>
+<p>如果要强制禁用<code>Fast forward</code>模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。</p>
+<p>下面我们实战一下<code>--no-ff</code>方式的<code>git merge</code>：</p>
+<ul>
+<li><p><code>git checkout -b dev</code> 创建并切换到dev分支</p></li>
+<li><p><code>vim readme.txt</code> 修改readme.txt文件</p></li>
+<li><p><code>git add readme.txt</code></p></li>
+<li><p><code>git commit -m "add merge"</code> 提交一个新的commit</p></li>
+<li><p><code>git checkout master</code> 切回master分支</p></li>
+<li><p><code>git merge --no-ff -m "merge with with no-ff" dev</code> 准备合并dev分支，注意<code>--no-ff</code>参数表示禁用Fast forward，因为本次合并要创建一个新的commit，所以加上<code>-m</code>参数，把commit描述写进去</p></li>
+<li><p><code>git log --graph --pretty=oneline --abbrev-commit</code> 合并后查看分支历史</p></li>
+</ul>
+<p>合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。</p>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758410364457b9e3d821f4244beb0fd69c61a185ae0000">14.分支策略</a></h2>
+<p>在实际开发中，我们应该按照几个基本原则进行分支管理：</p>
+<ul>
+<li><p>首先，<code>master</code>分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活</p></li>
+<li><p>那在哪里干活呢？干活都在<code>dev</code>分支上，也就是说，<code>dev</code>分支是不稳定的，到某个时候，比如2.0版本发布时，再把<code>dev</code>分支合并到<code>master</code>上，在<code>master</code>分支发新版本</p></li>
+<li><p>你和你的小伙伴每个人都在<code>dev</code>分支上干活，每个人都有自己的分支，时不时往<code>dev</code>分支上合并就可以了</p></li>
+</ul>
+<p>所以，团队合作的分支看起来就像这个样子：<br><img src="/img/bVcc7H" alt="图片描述" title="图片描述"></p>
+<p>Git分支十分强大，在团队开发中应该充分应用。</p>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137602359178794d966923e5c4134bc8bf98dfb03aea3000">15.Bug分支</a></h2>
+<p>软件开发中，bug就像是家常便饭一样。有了bug就需要修复，在Git中，由于分支是如此的强大，所以每个bug都可以通过一个新的临时分支来修复，修复后，合并分支，然后将临时分支删除。</p>
+<p>当你街道一个修复代号为101的bug的任务的时候，很自然的，你想创建一个分支<code>issue-101</code>来修复它，但是，等等，当前正在<code>dev</code>上进行的工作还没有提交：</p>
+<ul><li><p><code>git status</code> 查看状态</p></li></ul>
+<p>并不是你不想提交，而是工作只进行到一半，还没法提交，预计完成还需1天时间。但是，必须在两个小时内修复该bug，怎么办？</p>
+<p>幸好，Git还提供了一个stash功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作：</p>
+<ul>
+<li><p><code>git stash</code> 用该命令查看工作区，就是干净的（除非有没有被Git管理的文件），因此可以放心的创建分支来修复bug了。</p></li>
+<li><p><code>git checkout master</code> 从dev分支切换回master</p></li>
+<li><p><code>git checkout -b issue-101</code>  假定需要在master分支上修复，就从<code>master</code>创建临时分支</p></li>
+<li><p>假设现在修复好了bug，本例中，就假如在readme.txt文件中做了修改</p></li>
+<li><p><code>git add readme.txt</code></p></li>
+<li><p><code>git commit -m "fic bug 101"</code> 修改之后提交</p></li>
+<li><p><code>git checkout master</code> 从issue-101切换回master</p></li>
+<li><p><code>git merge --no-ff -m "merged bug fix 101" issue-101</code> 合并分支选择不适用Fast forward模式，然后添加必要的描述信息</p></li>
+<li><p><code>git branch -d issue-101</code> 删除issue-101这个临时bug修复分支</p></li>
+<li><p>太棒了，bug搞定了，现在可以回到<code>dev</code>分支干活了</p></li>
+<li><p><code>git checkout dev</code> 切换回dev分支</p></li>
+<li><p><code>git status</code> 可以看出工作区是干净的，那么刚才的工作现场存在哪里呢？</p></li>
+<li><p><code>git stash list</code> 看到工作现场还在，Git吧stash内容存在某个地方了，但是需要恢复一下</p></li>
+<li><p>方法一<code>git stash apply</code>，但是回复后，stash内容并不删除，你需要使用<code>git stash drop</code>来删除</p></li>
+<li><p>方法二<code>git stash pop</code>，恢复的同时也把stas内容删除了</p></li>
+<li><p><code>git stash list</code> 再用git stash list查看，就看不到任何stash内容了</p></li>
+<li><p>你可以多次<code>stash</code>，恢复的时候，先用<code>giit stash list</code> 查看，然后恢复指定的stash，使用如下的命令</p></li>
+<li><p><code>git stash apply stash@{0}</code></p></li>
+</ul>
+<p>修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除。</p>
+<p>当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。</p>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001376026233004c47f22a16d1f4fa289ce45f14bbc8f11000">16.Feature分支</a></h2>
+<p>软件开发中，总有无穷无尽的新的功能要不断添加进来。</p>
+<p>添加一个新功能时，你肯定不希望因为一些实验性质的代码，把主分支搞乱了，所以，每添加一个新功能，最好新建一个feature分支，在上面开发，完成后，合并，最后，删除该feature分支。</p>
+<p>现在，你终于接到了一个新任务：开发代号为Vulcan的新功能，该功能计划用于下一代星际飞船。软件开发中，总有无穷无尽的新的功能要不断添加进来。</p>
+<p>添加一个新功能时，你肯定不希望因为一些实验性质的代码，把主分支搞乱了，所以，每添加一个新功能，最好新建一个feature分支，在上面开发，完成后，合并，最后，删除该feature分支。</p>
+<p>现在，你终于接到了一个新任务：开发代号为Vulcan的新功能，该功能计划用于下一代星际飞船。于是开始准备工作</p>
+<ul>
+<li><p><code>git checkout -b feature-vulcan</code> 在dev分支上创建并且换到feature-vulcan分支，用来开发新功能</p></li>
+<li><p>假如现在经过一定的时间后，工作完成了</p></li>
+<li><p><code>git add vulcan.py</code></p></li>
+<li><p><code>git status</code> 查看状态</p></li>
+<li><p><code>git commit -m "add feature vulcan"</code> 提交</p></li>
+<li><p><code>git checkout dev</code> 切换回dev分支</p></li>
+<li><p>一切顺利的话，feature分支和bug分支是类似的，合并，然后删除。但是，就在此时，接到上级命令，因经费不足，新功能必须取消！虽然白干了，但是这个分支还是必须就地销毁，不要再合并了:</p></li>
+<li><p><code>git branch -d feature-vulcan</code> 销毁失败。Git友情提醒，feature-vulcan分支还没有被合并，如果删除，将丢失掉修改，如果要强行删除，需要使用命令git branch -D feature-vulcan。</p></li>
+<li><p><code>git branch -D feature-vulcan</code></p></li>
+</ul>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013760174128707b935b0be6fc4fc6ace66c4f15618f8d000">17.多人协作</a></h2>
+<p>当你从远程仓库克隆时，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且，远程仓库的默认名称是origin。</p>
+<p><strong>推送分支</strong></p>
+<ul>
+<li><p><code>git remote</code> 查看远程库的信息</p></li>
+<li><p><code>git remote -v</code> 显示更为详细的信息</p></li>
+<li><p><code>git push origin master</code> 推送分支，就是把该分支上的所有本地提交推送到远程库。推送时，要指定本地分支，这样，Git就会把该分支推送到远程库对应的远程分支上。</p></li>
+<li><p><code>git push origin dev</code> 也可以推送到其他的分支，比如dev分支</p></li>
+<li><p>但是，并不是一定要把本地分支往远程推送，那么，哪些分支需要推送，哪些不需要呢？master分支是主分支，因此要时刻与远程同步；dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；bug分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。总之，就是在Git中，分支完全可以在本地自己藏着玩，是否推送，视你的心情而定！</p></li>
+</ul>
+<p><strong>抓取分支</strong></p>
+<p>多人协作时，大家都会往master和dev分支上推送各自的修改。</p>
+<ul>
+<li><p><code>git clone git@github.com:michaelliao/learngit.git</code>  现在，模拟一个你的小伙伴，可以在另一台电脑（注意要把SSH Key添加到GitHub）或者同一台电脑的另一个目录下克隆。</p></li>
+<li><p><code>git branch</code> 当你的小伙伴从远程库clone时，默认情况下，你的小伙伴只能看到本地的master分支，所以执行这条命令只能看到master分支</p></li>
+<li><p><code>git checkout -b dev origin/dev</code> 现在，你的小伙伴要在dev分支上开发，就必须创建远程origin的dev分支到本地，于是他用这个命令创建本地dev分支</p></li>
+<li><p><code>git commit -m "add /usr/bin/env"</code> 现在，他就可以在dev上继续修改，然后，时不时地把dev分支push到远程。</p></li>
+<li><p><code>git add hello.py</code> <code>git commit -m "add coding: utf-8"</code> <code> git push origin dev</code> 你的小伙伴已经向origin/dev分支推送了他的提交，而碰巧你也对同样的文件作了修改，并试图推送。推送失败，因为你的小伙伴的最新提交和你试图推送的提交有冲突。</p></li>
+<li><p><code>git pull</code> 解决办法也很简单，Git已经提示我们，先用git pull把最新的提交从origin/dev抓下来，然后，在本地合并，解决冲突，再推送。</p></li>
+<li><p><code>git branch --set-upstream dev origin/dev</code> git pull也失败了，原因是没有指定本地dev分支与远程origin/dev分支的链接，根据提示，设置dev和origin/dev的链接。</p></li>
+<li><p><code>git pull</code> 再次pull，这回git pull成功，但是合并有冲突，需要手动解决，解决的方法和分支管理中的解决冲突完全一样</p></li>
+<li><p><code>git commit -m "merge &amp; fix hello.py"</code> <code>git push origin dev</code> 解决冲突后，再提交，再push</p></li>
+</ul>
+<p><strong>因此，多人协作的工作模式通常是这样的：</strong></p>
+<ul>
+<li><p>首先，可以试图用<code>git push origin branch-name</code> 推送自己的修改</p></li>
+<li><p>如果推送失败，则因为远程分支比你的本地更新，需要先用<code>git pull</code>试图合并</p></li>
+<li><p>如果合并有冲突，则解决冲突，并在本地提交</p></li>
+<li><p>没有冲突或者解决掉冲突之后，再用<code>git push origin branch-name</code>推送就能成功</p></li>
+<li><p>如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream branch-name origin/branch-name。<strong>这就是多人协作的工作模式，一旦熟悉了，就非常简单。</strong></p></li>
+</ul>
+<h2>18.标签管理</h2>
+<p>发布一个版本时，我们通常先在版本库中打一个标签，这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。<strong>所以，标签也是版本库的一个快照。</strong></p>
+<p><strong>Git的标签虽然是版本库的快照，但其实它就是指向某个commit的指针（跟分支很像对不对？但是分支可以移动，标签不能移动），所以，创建和删除标签都是瞬间完成的。</strong></p>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001376951758572072ce1dc172b4178b910d31bc7521ee4000">19.创建标签</a></h2>
+<ul>
+<li><p><code>git branch</code> 查看当前有哪些分支</p></li>
+<li><p><code>git checkout master</code> 在Git中打标签非常简单，首先，切换到需要打标签的分支上</p></li>
+<li><p><code>git tag tagnamev1.0</code> 打一个新标签</p></li>
+<li><p><code>git tag</code> 查看所有标签</p></li>
+<li><p>默认标签是打在最新提交的commit上的（也就是<code>HEAD</code>）。有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？</p></li>
+<li><p><code>git log --pretty=oneline --abbrev-commit</code> 方法是找到历史提交的commit id，然后打上就可以了，这时候显示了提交的历史信息 ，假如有这么一条就是你想打标签的历史commit：<code>6224937 add merge</code></p></li>
+<li><p><code>git tag tagnamev2.0 6224937</code> 就可以给这次提交打标签了</p></li>
+<li><p><code>git tag</code> 可以查看标签信息，注意，标签不是按时间顺序列出，而是按字母排序的</p></li>
+<li><p><code>git show tagnamev2.0</code> 查看具体的某个标签的信息</p></li>
+<li><p><code>git tag -a v0.1 -m "version 0.1 released" 3628164</code> 还可以创建带有说明的标签，用-a指定标签名，-m指定说明文字</p></li>
+<li><p><code>git show v0.1</code> 查看具体的某个标签的信息，可以看到说明文字</p></li>
+<li><p><code>git tag -s v0.2 -m "signed version 0.2 released" fec145a</code> 还可以通过-s用私钥签名一个标签，签名采用PGP签名，因此，必须首先安装gpg（GnuPG），如果没有找到gpg，或者没有gpg密钥对，就会报错</p></li>
+<li><p><code>git show v0.2</code>  用命令git show &lt;tagname&gt;可以看到PGP签名信息，用PGP签名的标签是不可伪造的，因为可以验证PGP签名。</p></li>
+</ul>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001376951885068a0ac7d81c3a64912b35a59b58a1d926b000">20.操作标签</a></h2>
+<ul>
+<li><p><code>git tag -d v0.1</code> 假如标签打错了，也可以删除，因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。</p></li>
+<li><p><code>git push origin v1.0</code> 要推送某个标签到远程</p></li>
+<li><p><code>git push origin --tags</code> 或者，一次性推送全部尚未推送到远程的本地标签</p></li>
+<li><p><code>git tag -d v0.9</code> 如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除</p></li>
+<li><p><code>git push origin :refs/tags/v0.9</code> 然后，从远程删除。删除命令也是push，但是格式要注意</p></li>
+</ul>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137628548491051ccfaef0ccb470894c858999603fedf000">21.使用Github</a></h2>
+<p>如何参与一个开源项目呢？比如人气极高的bootstrap项目，这是一个非常强大的CSS框架。</p>
+<ul>
+<li><p>你可以访问它的项目主页<a href="https://github.com/twbs/bootstrap">https://github.com/twbs/bootstrap</a>，点“Fork”就在自己的账号下克隆了一个bootstrap仓库</p></li>
+<li><p><code>git clone git@github.com:yourname/bootstrap.git</code> 然后，从自己的账号下clone</p></li>
+<li><p>一定要从自己的账号下clone仓库，这样你才能推送修改。如果从bootstrap的作者的仓库地址git@github.com:twbs/bootstrap.git克隆，因为没有权限，你将不能推送修改。</p></li>
+</ul>
+<p>Bootstrap的官方仓库twbs/bootstrap、你在GitHub上克隆的仓库my/bootstrap，以及你自己克隆到本地电脑的仓库，他们的关系就像下图显示的那样：<br><img src="/img/bVpQU9" alt="图片描述" title="图片描述"></p>
+<p>如果你想修复bootstrap的一个bug，或者新增一个功能，立刻就可以开始干活，干完后，往自己的仓库推送。</p>
+<p><strong>如果你希望bootstrap的官方库能接受你的修改，你就可以在GitHub上发起一个pull request。当然，对方是否接受你的pull request就不一定了。</strong></p>
+<p>如果你没能力修改bootstrap，但又想要试一把pull request，那就Fork一下廖雪峰的仓库：<a href="https://github.com/michaelliao/learngit">https://github.com/michaelliao/learngit</a>，创建一个<code>your-github-id.txt</code>的文本文件，比如我的：<code>xumenger.txt</code>，写点自己学习Git的心得，然后推送一个pull request给他，他会视心情而定是否接受。</p>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137621280731812dec22ecc9b44f4b2ca1c680f181a5b000">22.自定义Git</a></h2>
+<p>之前已经说过在使用之前必须先配置<code>user.name</code>和<code>user.email</code>，否则后面commit的时候可能会有错误，实际上git还有很多可配置的：</p>
+<ul><li><p><code>git config --global color.ui true</code> 让Git显示颜色，会让命令输出看起来更醒目，自己去试试一些git命令的输出看看是不是有色！</p></li></ul>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758404317281e54b6f5375640abbb11e67be4cd49e0000">23.忽略特殊文件</a></h2>
+<p>有些时候，你必须把某些文件放到Git工作目录中，但又不能提交它们，比如保存了数据库密码的配置文件啦，等等，每次git status都会显示Untracked files ...，有强迫症的童鞋心里肯定不爽。</p>
+<p>好在Git考虑到了大家的感受，这个问题解决起来也很简单，在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件。</p>
+<p>不需要从头写.gitignore文件，GitHub已经为我们准备了各种配置文件，只需要组合一下就可以使用了。所有配置文件可以直接在线浏览：<a href="https://github.com/github/gitignore">https://github.com/github/gitignore</a></p>
+<p><strong>忽略文件的原则是：</strong></p>
+<ul>
+<li><p>忽略操作系统自动生成的文件，比如缩略图等；</p></li>
+<li><p>忽略编译生成的中间文件、可执行文件等，也就是如果一个文件是通过另一个文件自动生成的，那自动生成的文件就没必要放进版本库，比如Java编译产生的.class文件；</p></li>
+<li><p>忽略你自己的带有敏感信息的配置文件，比如存放口令的配置文件。</p></li>
+</ul>
+<p><strong>举个例子</strong></p>
+<p>假设你在Windows下进行Python开发，Windows会自动在有图片的目录下生成隐藏的缩略图文件，如果有自定义目录，目录下就会有Desktop.ini文件，因此你需要忽略Windows自动生成的垃圾文件：</p>
+<pre><code># Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+</code></pre>
+<p>然后，继续忽略Python编译产生的.pyc、.pyo、dist等文件或目录：</p>
+<pre><code># Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+</code></pre>
+<p>加上你自己定义的文件，最终得到一个完整的.gitignore文件，内容如下：</p>
+<pre><code># Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# My configurations:
+db.ini
+deploy_key_rsa
+</code></pre>
+<p>最后一步就是把.gitignore也提交到Git，就完成了！当然检验.gitignore的标准是git status命令还会不会再说working directory clean。<strong>.gitignore文件本身要放到版本库里，并且可以对.gitignore做版本管理！</strong></p>
+<p>使用Windows的童鞋注意了，如果你在资源管理器里新建一个.gitignore文件，它会非常弱智地提示你必须输入文件名，但是在文本编辑器里“保存”或者“另存为”就可以把文件保存为.gitignore了。</p>
+<blockquote><p>再次建议：有钱的买mac，没钱的用ubuntu--或者其他的linux发行版、被逼无奈的用Windows--但是被逼之余的自主时间一定要远离Windows。</p></blockquote>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375234012342f90be1fc4d81446c967bbdc19e7c03d3000">24.配置别名</a></h2>
+<blockquote><p>给Git配置好别名，就可以输入命令时偷个懒。我们鼓励偷懒。</p></blockquote>
+<ul>
+<li><p><code>git config --global alias.st status</code> 有没有经常敲错命令？比如git status？status这个单词真心不好记。如果敲git st就表示git status那就简单多了，当然这种偷懒的办法我们是极力赞成的。</p></li>
+<li><p><code>git config --global alias.co checkout</code></p></li>
+<li><p><code>git config --global alias.ci commit</code></p></li>
+<li><p><code>git config --global alias.br branch</code></p></li>
+<li><p>很多人都用co表示checkout，ci表示commit，br表示branch</p></li>
+<li><p><code>git ci -m "bala bala bala..."</code> 以后提交就可以简写成这样</p></li>
+<li><p><code>git config --global alias.unstage 'reset HEAD'</code> 在<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374831943254ee90db11b13d4ba9a73b9047f4fb968d000">撤销修改</a>一节中，我们知道，命令<code>git reset HEAD file</code>可以把暂存区的修改撤销掉（unstage），重新放回工作区。既然是一个unstage操作，就可以配置一个unstage别名</p></li>
+<li><p><code>git unstage test.py</code> 当你敲入此命令，实际上Git执行的是：<code>git reset HEAD test.py</code></p></li>
+<li><p><code>git config --global alias.last 'log -1'</code> 配置一个git last，让其显示最后一次提交信息</p></li>
+<li><p><code>git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit"</code> 甚至还有人这样的配置，那么，这时候<code>git lg</code>的效果是这样的<br><img src="/img/bVpQW9" alt="图片描述" title="图片描述"></p></li>
+</ul>
+<p><strong>配置文件</strong></p>
+<p>配置Git的时候，加上<code>--global</code>是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。</p>
+<p>配置文件放哪了？每个仓库的Git配置文件都放在<code>.git/config</code>文件中：</p>
+<pre><code>$ cat .git/config 
+[core]
+    repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+    ignorecase = true
+    precomposeunicode = true
+[remote "origin"]
+    url = git@github.com:michaelliao/learngit.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+[alias]
+    last = log -1
+</code></pre>
+<p>别名就在<code>[alias]</code>后面，要删除别名，直接把对应的行删掉即可。</p>
+<p>而当前用户的Git配置文件放在用户主目录下的一个隐藏文件<code>.gitconfig</code>中：</p>
+<pre><code>$ cat .gitconfig
+[alias]
+    co = checkout
+    ci = commit
+    br = branch
+    st = status
+[user]
+    name = Your Name
+    email = your@email.com
+</code></pre>
+<p>配置别名也可以直接修改这个文件，如果改错了，可以删掉文件重新通过命令配置。</p>
+<h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000">25.搭建Git服务器</a></h2>
+<p>如果需要的话，请自己参考<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000">廖雪峰的教程</a></p>
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003739324";}i:2;a:11:{s:5:"title";s:24:"spring事务管理总结";s:4:"link";s:42:"http://segmentfault.com/a/1190000003739293";s:2:"id";s:42:"http://segmentfault.com/a/1190000003739293";s:7:"updated";s:25:"2015-09-12T14:48:36+08:00";s:9:"published";s:25:"2015-09-12T14:48:36+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:10:"yemengying";s:10:"author_uri";s:36:"http://segmentfault.com/u/yemengying";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:6329:"
+<p>在项目开发过程中经常会使用事务来确保数据的一致性。根据网上的资料整理一下在spring中配置事务的几种方式。<br>无论是哪种方式都需要在配置文件中配置连接池和事务管理器,代码如下。</p>
+<pre><code class="xml">   &lt;!-- 读取配置文件 --&gt;
+   &lt;bean
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"&gt;
+        &lt;property name="locations"&gt;
+            &lt;list&gt;
+                &lt;value&gt;classpath:database.properties&lt;/value&gt;
+                &lt;value&gt;classpath:service.properties&lt;/value&gt;
+            &lt;/list&gt;
+        &lt;/property&gt;
+        &lt;property name="fileEncoding" value="UTF-8" /&gt;
+        &lt;property name="ignoreResourceNotFound" value="false" /&gt;
+    &lt;/bean&gt;
+    &lt;!--连接池 --&gt;
+    &lt;bean id="dataSource"
+        class="org.springframework.jdbc.datasource.DriverManagerDataSource"&gt;
+        &lt;property name="driverClassName" value="${db.driver}" /&gt;
+        &lt;property name="url" value="${db.url}" /&gt;
+        &lt;property name="username" value="${db.username}" /&gt;
+        &lt;property name="password" value="${db.password}" /&gt;
+    &lt;/bean&gt;
+    &lt;!-- 配置事务管理器 --&gt;
+    &lt;bean id="transactionManager"
+        class="org.springframework.jdbc.datasource.DataSourceTransactionManager"&gt;
+        &lt;property name="dataSource" ref="dataSource" /&gt;
+    &lt;/bean&gt;</code></pre>
+<h2>声明式事务管理</h2>
+<h3>基于AspectJ的XML方式的配置</h3>
+<p>这是我觉得最好的方式，基于aop配置，当新增的方法要使用事务管理时，无需修改代码。<br>首先在配置文件xml中引入aop和tx的命名空间</p>
+<pre><code>xmlns:tx="http://www.springframework.org/schema/tx" 
+xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+http://www.springframework.org/schema/aop   
+http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"</code></pre>
+<p>然后在xml中加入aop的配置,下面的配置就是在services的切入点上应用txAdvice的增强，services的切入点就是ymy.com.service.impl包下的所有方法应用txAdvice的增强。然后txAdvice是在所有以create,add,delete,update,change开头的方法上加上事务管理。</p>
+<pre><code>    &lt;!-- 定义事务通知 （事务的增强）--&gt;
+    &lt;tx:advice id="txAdvice" transaction-manager="transactionManager"&gt;
+        &lt;!-- 定义方法的过滤规则 --&gt;
+        &lt;tx:attributes&gt;
+            &lt;!-- 所有方法都使用事务 --&gt;
+            &lt;!-- 
+                propagation:事务传播行为
+                isolation：事务隔离
+                read-only:只读
+                rollback-for:发生哪些异常回滚
+                no-rollback-for:发生哪些异常不回滚 
+                timeout:过期信息    
+             --&gt;
+            &lt;tx:method name="create*" propagation="REQUIRED"/&gt;
+            &lt;tx:method name="add*" propagation="REQUIRED"/&gt;
+            &lt;tx:method name="delete*" propagation="REQUIRED"/&gt;
+            &lt;tx:method name="update*" propagation="REQUIRED"/&gt;
+            &lt;tx:method name="change*" propagation="REQUIRED"/&gt;
+        &lt;/tx:attributes&gt;
+    &lt;/tx:advice&gt;
+      
+    &lt;!-- 定义AOP配置 配置切面 --&gt;
+    &lt;aop:config&gt;
+        &lt;!-- 定义一个切入点 --&gt;
+        &lt;aop:pointcut expression="execution (* ymy.com.service.impl.*.*(..))" id="services"/&gt;
+        &lt;!-- 对切入点和事务的通知，进行适配 --&gt;
+        &lt;aop:advisor advice-ref="txAdvice" pointcut-ref="services"/&gt;
+    &lt;/aop:config&gt; </code></pre>
+<p>采用这种方式配置，当方法是按照事务定义的规则命名时，都会加入事务管理。</p>
+<h3>基于注解</h3>
+<p>这种方式是我觉得最简单的，第二推荐。要采用注解的方式，需要在配置文件中开启注解事务。</p>
+<pre><code>&lt;!-- 开启注解事务 --&gt;
+&lt;tx:annotation-driven transaction-manager="transactionManager"/&gt;</code></pre>
+<p>在使用时只需在对应的类上添加注解@Transactional即可</p>
+<pre><code>@Service
+@Transactional
+public class TaskService implements ITaskService {
+
+}</code></pre>
+<p>也可在使用注解时定义事物的传播级别 隔离行为等。。</p>
+<pre><code>@Transactional(propagation=Propagation.REQUIRED)</code></pre>
+<h3>基于TransactionProxyFactoryBean</h3>
+<p>这种方式配置比较麻烦，需要为每一个需要事务管理的类配置一个代理类，不推荐使用。例如我要对taskService进行事务管理，需要如下配置，用代理类对目标类进行增强。</p>
+<pre><code>    &lt;!-- 配置service层的代理 --&gt;
+    &lt;bean id = "taskServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"&gt;
+        &lt;!-- 配置目标对象 --&gt;
+        &lt;property name = "target" ref="taskService"&gt;&lt;/property&gt;
+        &lt;!-- 注入事务管理器 --&gt;
+        &lt;property name = "transactionManager" ref="transactionManager"&gt;&lt;/property&gt;
+        &lt;!-- 设置需要事务管理的方法 --&gt;
+        &lt;property name="transactionAttributes"&gt;
+            &lt;props&gt;
+                &lt;prop key="update*"&gt;PROPAGATION_REQUIRED&lt;/prop&gt;
+            &lt;/props&gt;
+        &lt;/property&gt;
+    &lt;/bean&gt;</code></pre>
+<p>之后在注入service类时，就要注入它的代理类。</p>
+<pre><code>@Resource(name = "taskServiceProxy")
+private ITaskService taskSerivce;</code></pre>
+<h2>编程式事务管理</h2>
+<p>超级不推荐，需要为每个类注入事务模板，然后在需要事务管理的方法中使用事务模板。</p>
+<pre><code>private TransactionTemplate transactionTemplate;
+public void test(){
+        transactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus status) {
+                //进行事务相应的操作。。。
+                //方法一...
+                //方法二...
+            }
+        });
+    }</code></pre>
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003739293";}i:3;a:11:{s:5:"title";s:55:"Lumen如何实现类Laravel5用户友好的错误页面";s:4:"link";s:42:"http://segmentfault.com/a/1190000003738977";s:2:"id";s:42:"http://segmentfault.com/a/1190000003738977";s:7:"updated";s:25:"2015-09-12T12:38:04+08:00";s:9:"published";s:25:"2015-09-12T12:38:04+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:15:"一堆好人卡";s:10:"author_uri";s:35:"http://segmentfault.com/u/silentred";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:3523:"
+<blockquote><p>Laravel5实现用户友好的错误页面非常简单，例如想要返回status 404，只需要在<code>view/errors</code>中添加一个<code>404.blade.php</code>文件即可。Lumen中没有默认实现这种便利，于是自己添加一个。</p></blockquote>
+<h1>Lumen如何实现类Laravel5用户友好的错误页面</h1>
+<h2>原理</h2>
+<p>抛出错误的函数是<code>abort()</code>, 进入该函数一看究竟，会发现只是抛出一个<code>HttpException</code>. 在Application中，处理http request的时候，有一个try catch的过程，Exception就是在这里被捕获的。</p>
+<pre><code class="php">try {
+    return $this-&gt;sendThroughPipeline($this-&gt;middleware, function () use ($method, $pathInfo) {
+        if (isset($this-&gt;routes[$method.$pathInfo])) {
+            return $this-&gt;handleFoundRoute([true, $this-&gt;routes[$method.$pathInfo]['action'], []]);
+        }
+
+        return $this-&gt;handleDispatcherResponse(
+            $this-&gt;createDispatcher()-&gt;dispatch($method, $pathInfo)
+        );
+    });
+} catch (Exception $e) {
+    return $this-&gt;sendExceptionToHandler($e);
+}</code></pre>
+<p>接着可以看出，Exception是交给了<code>sendExceptionToHandler</code>去处理了。这里的handler具体是哪个类呢？是实现了<code>Illuminate\Contracts\Debug\ExceptionHandler</code>的一个单例。为啥说他是单例？因为在bootstrap的时候，已经初始化为单例了，请看。</p>
+<pre><code class="php">$app-&gt;singleton(
+    Illuminate\Contracts\Debug\ExceptionHandler::class,
+    App\Exceptions\Handler::class
+);</code></pre>
+<p>进入该类看一下，他有一个<code>render</code>方法，好吧，找到问题所在了，修改一下这个方法即可。</p>
+<pre><code class="php">public function render($request, Exception $e)
+{
+    return parent::render($request, $e);
+}</code></pre>
+<h2>动手修改</h2>
+<p>由于Laravel已经有实现了，所以最简便的方法就是复制黏贴。在<code>render</code>中先判断下是否为<code>HttpException</code>, 如果是，就去<code>errors</code>目录下找对应status code的view，如果找到，就渲染它输出。就这么简单。修改<code>Handler</code>如下：</p>
+<pre><code class="php">/**
+ * Render an exception into an HTTP response.
+ *
+ * @param  \Illuminate\Http\Request  $request
+ * @param  \Exception  $e
+ * @return \Illuminate\Http\Response
+ */
+public function render($request, Exception $e)
+{
+    if( !env('APP_DEBUG') and $this-&gt;isHttpException($e)) {
+        return $this-&gt;renderHttpException($e);
+    }
+    return parent::render($request, $e);
+}
+
+/**
+ * Render the given HttpException.
+ *
+ * @param  \Symfony\Component\HttpKernel\Exception\HttpException  $e
+ * @return \Symfony\Component\HttpFoundation\Response
+ */
+protected function renderHttpException(HttpException $e)
+{
+    $status = $e-&gt;getStatusCode();
+
+    if (view()-&gt;exists("errors.{$status}"))
+    {
+        return response(view("errors.{$status}", []), $status);
+    }
+    else
+    {
+        return (new SymfonyExceptionHandler(env('APP_DEBUG', false)))-&gt;createResponse($e);
+    }
+}
+
+/**
+ * Determine if the given exception is an HTTP exception.
+ *
+ * @param  \Exception  $e
+ * @return bool
+ */
+protected function isHttpException(Exception $e)
+{
+    return $e instanceof HttpException;
+}</code></pre>
+<p>好了，在<code>errors</code>目录下新建一个<code>404.blade.php</code>文件，在controller中尝试 <code>abort(404)</code>看一下吧。</p>
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003738977";}i:4;a:11:{s:5:"title";s:24:"js 你不知道的 Array";s:4:"link";s:42:"http://segmentfault.com/a/1190000003738483";s:2:"id";s:42:"http://segmentfault.com/a/1190000003738483";s:7:"updated";s:25:"2015-09-12T08:55:58+08:00";s:9:"published";s:25:"2015-09-12T08:55:58+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:8:"honger05";s:10:"author_uri";s:34:"http://segmentfault.com/u/honger05";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:6556:"
+<h2>一、在类数组对象上复用通用的数组方法</h2>
+<p>类数组有：<code>arguments, NodeList, 字符串</code></p>
+<p>什么是类数组？ 两个条件</p>
+<ol>
+<li><p>具有 length 属性</p></li>
+<li><p>length 属性大于该对象的最大索引</p></li>
+</ol>
+<p>比如：</p>
+<pre><code class="js">  var arrayLike = { 0: "a", 1: "b", 2: "c", length: 3};
+  var result = Array.prototype.map.call(arrayLike, function(s) {
+    return s.toUpperCase();
+  });//["A", "B", "C"]</code></pre>
+<p>几乎所有的数组方法都是通用的（forEach，slice，map ...） 除了 concat。</p>
+<p>因为 concat 在连接时，会检查其参数的 [[Class]] 属性。</p>
+<blockquote><p>一些方法，比如 join，仅仅读取他们被调用的对象的长度和数值属性。 另外，像 reverse 一样，要求对象的数值属性和长度属性是可变的；因此，这些方法不能在像 String 这样的对象上被调用，String不允许它的长度属性和synthesized的数值属性被设置。</p></blockquote>
+<pre><code class="js">  function namesColumn() {
+    return ['Names'].concat(arguments);
+  }
+  namesColumn("alice", "arale");//["Names", {0: "alice", 1: "arale"}]
+
+  //解决办法：应先使用 slice 将 arguments 转为数组
+  function namesColumn() {
+    return ['Names'].concat([].slice.call(arguments));
+  }</code></pre>
+<hr>
+<h2>二、数组优先使用 for 循环，而不是 for in 循环。</h2>
+<p>for in 更多的是用于 遍历对象，但是 它也会去检查 对象的原型。</p>
+<p>如果浏览器支持 for of （ES6）的话，最好是使用它，它不会去遍历原型。</p>
+<hr>
+<h2>三、迭代优于循环</h2>
+<p>一个原因是，迭代可以消除没必要的 <code>终止条件</code> 和 <code>任何数组索引</code></p>
+<p>比如：</p>
+<pre><code class="javascript">  for (var i = 0; n = players.length; i &lt; n; i++) {
+    players[i].score++;
+  }
+
+  //使用迭代
+  players.forEach(function(p){
+    p.score++;
+  });</code></pre>
+<p>例1： 对数组每一个元素操作后生成一个新的数组</p>
+<pre><code class="js">  //获得所有输入框去除多余空格后的值
+  var trimmed = input.map(function(s) {
+    return s.trim()
+  })</code></pre>
+<p>例2： 获取价格在特定区间的列表</p>
+<pre><code class="js">  listings.filter(function(listing) {
+    return listing.price &gt;= min &amp;&amp; listing.price &lt;= max
+  })</code></pre>
+<p>当然这都是 ES5 的方法，我们也可以自己写一个。</p>
+<pre><code class="js">  function takeWhile(a, pred) {
+    var result = []
+    for (var i = 0; n = a.length; i &lt; n; i++) {
+      if (!pred(a[i], i)) {
+       break
+      }
+      result[i] = a[i]
+    }
+    return result
+  }
+
+  var prefix = takeWhile([1, 2, 4, 8, 16, 32], function(n) {
+    return n &lt; 10
+  }) // [1, 2, 4, 8]</code></pre>
+<p>把它加在 Array 上</p>
+<pre><code class="js">  Array.prototype.takeWhile = function(pred) {
+    var result = []
+    for (var i = 0; n = this.length; i &lt; n; i++) {
+      if (!pred(this[i], i)) {
+        break
+      }
+      result[i] = this[i]
+    }
+    return result
+  }
+
+  [1, 2, 4, 8, 16, 32].takeWhile(function(n) {
+    return n &lt; 10
+  }) // [1, 2, 4, 8]</code></pre>
+<p>循环仅一点优于迭代： 控制流操作 如 break 和 continue</p>
+<p>ES5 中 只有 some 和 every 可以提前终止循环, 但设计他们的本意不是用来提前终止循环。</p>
+<pre><code class="javascript">// some 一旦回调产生了一个真值，则立即返回，不会执行其余的元素
+[1, 10, 100].some(function(x) { return x &gt; 5 }) //true
+[1, 10, 100].some(function(x) { return x &lt; 0 }) //false
+// every 相反, 一旦产生假值，则立即返回，不会执行其余元素
+[1, 2, 3, 4, 5].every(function(x) { return x &gt; 0 }) //true
+[1, 2, 3, 4, 5].every(function(x) { return x &lt; 3 }) //false</code></pre>
+<p>这种行为可以用来实现 forEach 提前终止循环的变种时派上用场</p>
+<pre><code class="js">  function takeWhile(a, pred) {
+    var result = [];
+    a.every(function(x, i) {
+      if (!pred(x)) {
+        return false //break
+      }
+      result[i] = x;
+      return true; //continue
+    })
+    return result
+  }</code></pre>
+<hr>
+<h2>四、数组方法分类</h2>
+<h5>1. Mutator 方法</h5>
+<blockquote><p>这些方法可以改变数组自身</p></blockquote>
+<ul>
+<li><p>pop : 移除数组的最后一个元素，返回值是被删除的元素。</p></li>
+<li><p>push : 在数组的末尾添加一个或者多个元素，返回值是新的数组的长度。</p></li>
+<li><p>reverse : 颠倒数组中元素的顺序，原先第一个元素现在变成最后一个，同样原先的最后一个元素变成了现在的第一个，也就是数组的索引发生了变化。</p></li>
+<li><p>shift : 删除数组的第一个元素，返回值是删除的元素</p></li>
+<li><p>sort : 对数组中的元素进行排序</p></li>
+<li><p>splice : 添加或删除数组中的一个或多个元素。</p></li>
+<li><p>unshift : （将废弃）添加一个或者多个元素在数组的开头，返回值是新的数组的长度。</p></li>
+</ul>
+<hr>
+<h5>2. Accessor 方法</h5>
+<blockquote><p>这些方法不改变数组自身</p></blockquote>
+<ul>
+<li><p>concat : 返回一个包含此数组和其他数组和/或值的结合的新数组</p></li>
+<li><p>indexOf : 返回第一个与给定参数相等的数组元素的索引，没有找到则返回-1</p></li>
+<li><p>join : 将所有的数组元素连接成一个字符串</p></li>
+<li><p>lastIndexOf : 返回在数组中搜索到的与给定参数相等的元素的最后（最大）索引</p></li>
+<li><p>slice : 返回数组中的一段。</p></li>
+<li><p>toString : 返回代表该数组及其元素的字符,重写Object.toString 过程.</p></li>
+<li><p>valueOf : 重写Object.valueOf过程。</p></li>
+</ul>
+<hr>
+<h5>3. 循环（迭代） 方法</h5>
+<ul>
+<li><p>filter : 对数组中的每一个元素调用参数中指定的过滤函数，并将对于过滤函数返回值为true的那些数组元素集合为新的数组返回。</p></li>
+<li><p>forEach : 对数组的每一个元素依次调用参数中指定的函数。</p></li>
+<li><p>every : 如果数组中每一个元素都满足参数中提供的测试函数，则返回真</p></li>
+<li><p>map : 创建一个新数组，新数组中含有，分别对于原来数组的每一个元素调用一个给定函数的结果</p></li>
+<li><p>some : 如果数组中至少有一个元素满足参数函数的测试，则返回true。</p></li>
+</ul>
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003738483";}i:5;a:11:{s:5:"title";s:51:"整理一些质量不错的教程、博客、论坛";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737649";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737649";s:7:"updated";s:25:"2015-09-11T21:02:02+08:00";s:9:"published";s:25:"2015-09-11T21:02:02+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:8:"xumenger";s:10:"author_uri";s:34:"http://segmentfault.com/u/xumenger";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:7335:"
+<p>欢迎大家也来推荐好的资源！！！！</p>
+<blockquote><p>送自己一句话：你可能不愿意与人分享自己所知道的，你可能以为“教会徒弟能饿死师父”，但我告诉你，你的保守会让你失去更多更好的东西，请你相信我，我绝不是在这里耸人听闻。</p></blockquote>
+<h2>为什么整理这篇文章</h2>
+<p>想通过在网络上随便搜索出来的文章学习其实是很不明智的，往往不能保证知识的质量、全面性和系统性。甚至是粗制滥造、造假的所谓知识！</p>
+<p>用Google，不用Baidu。可是虽然<a href="https://www.google.com">Google</a>搜出来的比Baidu好，但是也还是不能确保质量都是没问题的。所以还是请自己去认真筛选！</p>
+<p>虽然好的论坛上的信息比一般的论坛更靠谱，但是你也不能保证在<a href="http://stackoverflow.com">StackOverFlow</a>上回到你问题的那个人就是高手、给的答案就是准确无误的。所以本文虽然整理出了一些论坛，但是在使用的时候还是不能轻信，还是要自己去认真的考证！我觉得论坛最大的作用不是学习系统化的知识(<code>系统地、深入地学习知识是一件很严肃的事</code>)，而主要是用来是交流信息，给你提供一些思路和启发，当然一些具体的技巧的学习也是可以的。</p>
+<p>所以请<code>怀疑一切</code>。</p>
+<h2>怎么保证知识的质量</h2>
+<p>当然首先是看书，去找那些公认的权威的书籍！好的书能让人受益良多，而且好书的知识比较能够保证质量和系统性，也会有一些有意义的思考。好书看得再多也不为过！好书对待知识都是严肃、认真的！不会误导你！</p>
+<p>在网络上找教材也可以，但是这时候就需要你去仔细甄别，确保你将准备花时间学习的东西的质量是没有问题的，否则你将走偏，最可怕的是你可能要花双倍甚至十倍的时间扭转这些垃圾信息带给你的知识上的、思想上的误导。</p>
+<p>下面我想整理一些不错的资源，方便自己的学习和讨论。</p>
+<blockquote><p>真实的情况是你无法决定环境，而一定是环境最终改造了你，但是至少我们还能做这样一件事：选择呆在一个好的环境里！</p></blockquote>
+<p>活到老，学到老。以下是摘自<a href="http://coolshell.cn/articles/222.html">CoolShell</a>的一段话：就算是你有了10年以上的程序员经历，你也得要使劲地学习，因为你在计算机这个充满一创造力的领域，每天都会有很多很多的新事物出现。你需要跟上时代的步伐。你需要去了解新的程序语言，以及了解正在发展中的程序语言，以及一些编程框架。还需要去阅读一些业内的新闻，并到一些热门的社区去参与在线的讨论，这样你才能明白和了解整个软件开发的趋势。</p>
 <h2>实践是检验真理的唯一标准</h2>
 <p><a href="https://github.com">Github</a>上有足够多的高质量的开源项目。重点是自己开发并托管到Github。</p>
 <p>这里是<a href="http://segmentfault.com/a/1190000003713616">我整理的一些资源</a>。</p>
@@ -45,6 +742,11 @@ O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:10:{s:5:"title";s:39:
 <p><a href="http://www.douban.com/">豆瓣</a>上自己找。</p>
 <p>不要只读技术书，请各个领域的书都读些。</p>
 <p>书去当当或亚马逊买，多说一点：不知道为什么最近在当当买的两本书有点像盗版。</p>
+<h2>别人整理的好的资源</h2>
+<ul>
+<li><p><a href="http://www.jianshu.com/p/9c02dade7e90">Python 零基础入门资料整理</a></p></li>
+<li><p><a href="http://segmentfault.com/a/1190000002706247">Python初学者的资源总结</a></p></li>
+</ul>
 <h2>博客</h2>
 <ul>
 <li><p><a href="http://coolshell.cn/">陈皓coolshell</a></p></li>
@@ -55,12 +757,13 @@ O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:10:{s:5:"title";s:39:
 <li><p>陈硕在<a href="http://www.cnblogs.com/solstice">博客园的博客</a></p></li>
 <li><p><a href="http://blog.csdn.net/myan/">孟岩</a></p></li>
 <li><p><a href="http://www.laruence.com/">风雪之隅</a>：PHP、Zend</p></li>
-<li><p><a href="http://www.cnblogs.com/vamei/">Vamei</a>：Python、Java</p></li>
+<li><p><a href="http://www.cnblogs.com/vamei/tag/%E7%B3%BB%E5%88%97%E7%B4%A2%E5%BC%95/">Vamei</a>：Python、Java……</p></li>
 <li><p><a href="http://www.phpgao.com/">老高</a>：PHP、ThinkPHP、Typecho、Python</p></li>
 <li><p><a href="http://mindhacks.cn/">刘未鹏</a>：思维改变生活</p></li>
 <li><p><a href="http://www.trinea.cn/">Trinea</a>：Android源码解析、性能优化</p></li>
 </ul>
 <h2>教程</h2>
+<p>首先说一下自己的个人观点，不推荐使用视频教程来学习，没有什么理性的理由，纯粹是感觉的问题。</p>
 <ul>
 <li><p><a href="http://www.liaoxuefeng.com/">廖雪峰的Python、Git、JS的教程</a></p></li>
 <li><p><a href="http://www.walu.cc/phpbook/index.md">PHP扩展开发及内核应用</a></p></li>
@@ -74,6 +777,7 @@ O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:10:{s:5:"title";s:39:
 <ul>
 <li><p><a href="http://stackexchange.com/">StackExchange</a></p></li>
 <li><p><a href="http://stackoverflow.com/">StackOverFlow</a></p></li>
+<li><p><a href="https://www.quora.com/">Quora</a></p></li>
 <li><p><a href="http://www.zhihu.com/">知乎</a>，去杂七杂八的都看一些吧</p></li>
 <li><p><a href="http://bbs.csdn.net/home">CSDN论坛</a></p></li>
 <li><p><a href="http://ask.csdn.net/">CSDN技术问答</a></p></li>
@@ -95,7 +799,7 @@ O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:10:{s:5:"title";s:39:
 <li><p><a href="http://www.szse.cn/">深圳证券交易所</a></p></li>
 <li><p><a href="http://www.sse.com.cn/">上海证券交易所</a></p></li>
 </ul>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737649";}i:1;a:11:{s:5:"title";s:33:"Python 版 APM 服务使用测试";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737491";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737491";s:7:"updated";s:25:"2015-09-11T20:13:21+08:00";s:9:"published";s:25:"2015-09-11T20:13:21+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737649";}i:6;a:11:{s:5:"title";s:33:"Python 版 APM 服务使用测试";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737491";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737491";s:7:"updated";s:25:"2015-09-11T20:13:21+08:00";s:9:"published";s:25:"2015-09-11T20:13:21+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:7:"Scholer";s:10:"author_uri";s:33:"http://segmentfault.com/u/scholer";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:14912:"
@@ -215,7 +919,7 @@ if not _detect_done:
 <p>应用监控数据最终会由 <code>api.tracert.uploader</code> 上传到听云的服务器（host 的设置位于 <code>api.settings</code> 中，host 地址是 <a href="http://redirect.networkbench.com">redirect.networkbench.com</a>，所以看到你的服务器往这个域名发送请求时，不要觉得奇怪），通过听云的处理，我们就能看到应用程序的各种监控数据了。</p>
 <p>对听云探针的简单分析就到这里，有兴趣的读者可以进一步深入研究。其实对于这类云服务，程序的本身都是透明的，不用有太大的安全顾虑，对于服务提供方而言，更重要的是数据的分析工作。</p>
 <p>听云本身提供的服务器是非常优秀的，虽然目前还并非完美。我也期待服务能更加完善，提供更完善的数据分析。另外一方面，通过 <code>tingyun-admin run-program</code> 的方式启动程序，对开发者和服务器管理员来说可能有些侵入感。如果能用模块加载的方式调用，或许更符合某些开发者的习惯。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737491";}i:2;a:11:{s:5:"title";s:47:"JS语言精粹--函数篇之this与调用模式";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737348";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737348";s:7:"updated";s:25:"2015-09-11T19:18:48+08:00";s:9:"published";s:25:"2015-09-11T19:18:48+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737491";}i:7;a:11:{s:5:"title";s:47:"JS语言精粹--函数篇之this与调用模式";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737348";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737348";s:7:"updated";s:25:"2015-09-11T19:18:48+08:00";s:9:"published";s:25:"2015-09-11T19:18:48+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:10:"羅聲門X";s:10:"author_uri";s:35:"http://segmentfault.com/u/tony2lord";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:10341:"
@@ -329,7 +1033,7 @@ var status = Quo.prototype.get_status.apply(statusObj);
 console.log(status);  // right
 </code></pre>
 <p>这里第二个例子的代码，通过了 apply 方法替换 Quo 对象中的 this 指针。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737348";}i:3;a:11:{s:5:"title";s:47:"企业运营对 DevOps 的「傲慢与偏见」";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737192";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737192";s:7:"updated";s:25:"2015-09-11T18:31:19+08:00";s:9:"published";s:25:"2015-09-11T18:31:19+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737348";}i:8;a:11:{s:5:"title";s:47:"企业运营对 DevOps 的「傲慢与偏见」";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737192";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737192";s:7:"updated";s:25:"2015-09-11T18:31:19+08:00";s:9:"published";s:25:"2015-09-11T18:31:19+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:18:"OneAPM蓝海讯通";s:10:"author_uri";s:41:"http://segmentfault.com/u/oneapm_official";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:13831:"
@@ -394,7 +1098,7 @@ console.log(status);  // right
 <p><strong>本文系 |
 31a86d24833cfae285650a96be0588874
 | 工程师编译整理。想阅读更多技术文章，请访问 OneAPM <a href="http://news.oneapm.com/?utm_source=TechCommunity&amp;utm_medium=TechArticle&amp;utm_campaign=JulSoftArti">官方博客</a>。</strong></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737192";}i:4;a:11:{s:5:"title";s:38:"Linux的硬连接与软连接的区别";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737107";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737107";s:7:"updated";s:25:"2015-09-11T18:12:48+08:00";s:9:"published";s:25:"2015-09-11T18:12:48+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737192";}i:9;a:11:{s:5:"title";s:38:"Linux的硬连接与软连接的区别";s:4:"link";s:42:"http://segmentfault.com/a/1190000003737107";s:2:"id";s:42:"http://segmentfault.com/a/1190000003737107";s:7:"updated";s:25:"2015-09-11T18:12:48+08:00";s:9:"published";s:25:"2015-09-11T18:12:48+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:6:"赵雍";s:10:"author_uri";s:39:"http://segmentfault.com/u/zhaoyongxiang";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:2842:"
@@ -411,7 +1115,7 @@ console.log(status);  // right
 <p>通过上面的测试可以看出：当删除原始文件f1后，硬连接f2不受影响，但是符号连接f1文件无效</p>
 <h2>3.总结</h2>
 <p>依此您可以做一些相关的测试，可以得到以下全部结论：<br>1).删除符号连接f3,对f1,f2无影响；<br>2).删除硬连接f2，对f1,f3也无影响；<br>3).删除原文件f1，对硬连接f2没有影响，导致符号连接f3失效；<br>4).同时删除原文件f1,硬连接f2，整个文件会真正的被删除。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737107";}i:5;a:11:{s:5:"title";s:25:"Android换肤技术总结";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735849";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735849";s:7:"updated";s:25:"2015-09-11T14:27:21+08:00";s:9:"published";s:25:"2015-09-11T14:27:21+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003737107";}i:10;a:11:{s:5:"title";s:25:"Android换肤技术总结";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735849";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735849";s:7:"updated";s:25:"2015-09-11T14:27:21+08:00";s:9:"published";s:25:"2015-09-11T14:27:21+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"cogitate";s:10:"author_uri";s:34:"http://segmentfault.com/u/cogitate";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:10694:"
@@ -591,7 +1295,7 @@ private static final LongSparseArray&lt;ColorStateList&gt; sPreloadedColorStateL
 </ul>
 <p><strong>如果有这么一个项目的话，就一劳永逸了，有兴趣的同学可以联系一下，大家一起搞一搞。</strong></p>
 <p>内部加载方案大同小异，主要解决的都是即时刷新的问题，然而从目前的一些开源项目来看，仍然没有特别简便的方案。让我选的话，我宁愿让界面重新创建，比如重启activity，或者remove所有view再添加回来。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735849";}i:6;a:11:{s:5:"title";s:24:"Objective C 链式调用";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735680";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735680";s:7:"updated";s:25:"2015-09-11T13:58:45+08:00";s:9:"published";s:25:"2015-09-11T13:58:45+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735849";}i:11;a:11:{s:5:"title";s:24:"Objective C 链式调用";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735680";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735680";s:7:"updated";s:25:"2015-09-11T13:58:45+08:00";s:9:"published";s:25:"2015-09-11T13:58:45+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:9:"canopus4u";s:10:"author_uri";s:35:"http://segmentfault.com/u/canopus4u";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:2297:"
@@ -642,10 +1346,10 @@ ChainingMethodObject * _cObj;
 <h2>参考</h2>
 <p><a href="https://github.com/Draveness/DKChainableAnimationKit">DKChainableAnimationKit</a></p>
 <p><a href="https://github.com/SnapKit/Masonry">Masonry</a></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735680";}i:7;a:11:{s:5:"title";s:48:"Laravel 5系列教程九：Eloquent Relationship";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735637";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735637";s:7:"updated";s:25:"2015-09-11T13:51:57+08:00";s:9:"published";s:25:"2015-09-11T13:51:57+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735680";}i:12;a:11:{s:5:"title";s:48:"Laravel 5系列教程九：Eloquent Relationship";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735637";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735637";s:7:"updated";s:25:"2015-09-11T13:51:57+08:00";s:9:"published";s:25:"2015-09-11T13:51:57+08:00";s:6:"author";s:3:"
 
 
-";s:11:"author_name";s:9:"JellyBool";s:10:"author_uri";s:35:"http://segmentfault.com/u/jellybool";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:14165:"
+";s:11:"author_name";s:9:"JellyBool";s:10:"author_uri";s:35:"http://segmentfault.com/u/jellybool";s:2:"re";a:1:{s:4:"rank";s:1:"2";}s:7:"summary";s:14165:"
 <blockquote><p>原文来自 <a href="https://laravist.com/article/18">https://laravist.com/article/18</a></p></blockquote>
 <p><a href="https://laravist.com/">Laravist</a>是我刚刚上线的Laravel社区，有任何与Laravel相关的问题可以到这里来问我，我会尽力去帮大家解决问题，后期会尝试录制一些视频教程，形式大概是这样的</p>
 <p><a href="https://laravist.com/lesson/1">https://laravist.com/lesson/1</a></p>
@@ -826,7 +1530,7 @@ public function tags()
 <h2>总结</h2>
 <p>到这里我们利用laravel提供的<code>attach()</code>方法将基本的多对多关系实现了，并且还稍微美化了一下输出，将<code>published_at</code>字段完美呈现。接下来我打算说一说怎么实现修改文章了，这是一个必走的流程嘛。所以。。。</p>
 <p>最后，<strong>Happy Hacking</strong></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735637";}i:8;a:11:{s:5:"title";s:53:"go标准库剖析1 (transport http请求的承载者)";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735562";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735562";s:7:"updated";s:25:"2015-09-11T13:28:30+08:00";s:9:"published";s:25:"2015-09-11T13:28:30+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735637";}i:13;a:11:{s:5:"title";s:53:"go标准库剖析1 (transport http请求的承载者)";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735562";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735562";s:7:"updated";s:25:"2015-09-11T13:28:30+08:00";s:9:"published";s:25:"2015-09-11T13:28:30+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:12:"爆料分享";s:10:"author_uri";s:41:"http://segmentfault.com/u/baoliaofenxiang";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:15301:"
@@ -1123,7 +1827,7 @@ func (pc *persistConn) readLoop() {
 </code></pre>
 <p>写循环就更简单了， select channel中主gouroutine的request，然后写入tcp输入流<br>如果出错了，channel 通知调用者 </p>
 <p>整体看下来， 过程都很简单，但是代码中有很多值得我们学习的地方，比如高并发请求如何复用tcp连接， 这里是连接池的做法， 如果使用多个 goroutine相互协作完成一个http请求， <br>出现错误的时候如何通知调用者中断错误， 代码风格也有很多可以借鉴的地方<br>我打算写一个系列， 全面剖析go标准库里面的精彩之处， 分享给大家</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735562";}i:9;a:11:{s:5:"title";s:19:"React Server Render";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735257";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735257";s:7:"updated";s:25:"2015-09-11T11:56:31+08:00";s:9:"published";s:25:"2015-09-11T11:56:31+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735562";}i:14;a:11:{s:5:"title";s:19:"React Server Render";s:4:"link";s:42:"http://segmentfault.com/a/1190000003735257";s:2:"id";s:42:"http://segmentfault.com/a/1190000003735257";s:7:"updated";s:25:"2015-09-11T11:56:31+08:00";s:9:"published";s:25:"2015-09-11T11:56:31+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:6:"小俞";s:10:"author_uri";s:41:"http://segmentfault.com/u/yuyang040160120";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:14735:"
@@ -1450,7 +2154,7 @@ module.exports = React.createClass({
 <li><p>程序是为业务服务的！</p></li>
 </ol>
 <p>就算这样，我还是想还成为那个吃桃子的人！</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735257";}i:10;a:11:{s:5:"title";s:47:"ReThought (二): 如何照顾团队中的新人";s:4:"link";s:42:"http://segmentfault.com/a/1190000003734131";s:2:"id";s:42:"http://segmentfault.com/a/1190000003734131";s:7:"updated";s:25:"2015-09-11T08:41:27+08:00";s:9:"published";s:25:"2015-09-11T08:41:27+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003735257";}i:15;a:11:{s:5:"title";s:47:"ReThought (二): 如何照顾团队中的新人";s:4:"link";s:42:"http://segmentfault.com/a/1190000003734131";s:2:"id";s:42:"http://segmentfault.com/a/1190000003734131";s:7:"updated";s:25:"2015-09-11T08:41:27+08:00";s:9:"published";s:25:"2015-09-11T08:41:27+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:6:"phodal";s:10:"author_uri";s:32:"http://segmentfault.com/u/phodal";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:4996:"
@@ -1495,7 +2199,7 @@ module.exports = React.createClass({
 </ol>
 <p>很我时候，我们总是局限于第二步，故而无法更好地指导他们完成工作。</p>
 <p>转载保留: <a href="https://www.phodal.com/blog/rethink-one-help-new-hire/">ReThought (二): 如何照顾团队中的新人</a></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003734131";}i:11;a:11:{s:5:"title";s:52:"回溯法解决N皇后问题（以四皇后为例）";s:4:"link";s:42:"http://segmentfault.com/a/1190000003733325";s:2:"id";s:42:"http://segmentfault.com/a/1190000003733325";s:7:"updated";s:25:"2015-09-10T22:36:08+08:00";s:9:"published";s:25:"2015-09-10T22:36:08+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003734131";}i:16;a:11:{s:5:"title";s:52:"回溯法解决N皇后问题（以四皇后为例）";s:4:"link";s:42:"http://segmentfault.com/a/1190000003733325";s:2:"id";s:42:"http://segmentfault.com/a/1190000003733325";s:7:"updated";s:25:"2015-09-10T22:36:08+08:00";s:9:"published";s:25:"2015-09-10T22:36:08+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"xumenger";s:10:"author_uri";s:34:"http://segmentfault.com/u/xumenger";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:6170:"
@@ -1574,7 +2278,7 @@ int main()
     return 0;
 }
 </code></pre>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003733325";}i:12;a:11:{s:5:"title";s:36:"js 函数式编程之函数柯里化";s:4:"link";s:42:"http://segmentfault.com/a/1190000003733107";s:2:"id";s:42:"http://segmentfault.com/a/1190000003733107";s:7:"updated";s:25:"2015-09-10T21:29:24+08:00";s:9:"published";s:25:"2015-09-10T21:29:24+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003733325";}i:17;a:11:{s:5:"title";s:36:"js 函数式编程之函数柯里化";s:4:"link";s:42:"http://segmentfault.com/a/1190000003733107";s:2:"id";s:42:"http://segmentfault.com/a/1190000003733107";s:7:"updated";s:25:"2015-09-10T21:29:24+08:00";s:9:"published";s:25:"2015-09-10T21:29:24+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"honger05";s:10:"author_uri";s:34:"http://segmentfault.com/u/honger05";s:2:"re";a:1:{s:4:"rank";s:1:"2";}s:7:"summary";s:4281:"
@@ -1697,7 +2401,7 @@ add321(4)(); // 10</code></pre>
 <h3>总结</h3>
 <p>柯里化是以逻辑学家哈斯凯尔·加里命名的，</p>
 <p>正如它的命名一样，函数柯里化给我们带来的是：解决问题的一种逻辑思维方式。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003733107";}i:13;a:11:{s:5:"title";s:38:" Linux gdb调试器用法全面解析 ";s:4:"link";s:42:"http://segmentfault.com/a/1190000003733061";s:2:"id";s:42:"http://segmentfault.com/a/1190000003733061";s:7:"updated";s:25:"2015-09-10T21:17:38+08:00";s:9:"published";s:25:"2015-09-10T21:17:38+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003733107";}i:18;a:11:{s:5:"title";s:38:" Linux gdb调试器用法全面解析 ";s:4:"link";s:42:"http://segmentfault.com/a/1190000003733061";s:2:"id";s:42:"http://segmentfault.com/a/1190000003733061";s:7:"updated";s:25:"2015-09-10T21:17:38+08:00";s:9:"published";s:25:"2015-09-10T21:17:38+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"xumenger";s:10:"author_uri";s:34:"http://segmentfault.com/u/xumenger";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:21744:"
@@ -2094,7 +2798,7 @@ Dump of assembler code for function func:
 ...  
 End of assembler dump.  
 </code></pre>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003733061";}i:14;a:11:{s:5:"title";s:40:"Docker结合Jenkins的持续构建实践";s:4:"link";s:42:"http://segmentfault.com/a/1190000003732967";s:2:"id";s:42:"http://segmentfault.com/a/1190000003732967";s:7:"updated";s:25:"2015-09-10T20:46:27+08:00";s:9:"published";s:25:"2015-09-10T20:46:27+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003733061";}i:19;a:11:{s:5:"title";s:40:"Docker结合Jenkins的持续构建实践";s:4:"link";s:42:"http://segmentfault.com/a/1190000003732967";s:2:"id";s:42:"http://segmentfault.com/a/1190000003732967";s:7:"updated";s:25:"2015-09-10T20:46:27+08:00";s:9:"published";s:25:"2015-09-10T20:46:27+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:15:"刘阳龙Herman";s:10:"author_uri";s:37:"http://segmentfault.com/u/liuyanglong";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:4266:"
@@ -2143,7 +2847,7 @@ docker push docker-registry.xxxxx.com/xxxxxxx/project_name:version</code></pre>
 <p>此为最后一步，同样是执行promotion操作后最后所执行的步骤，调用我们的内部接口，对线上应用执行AB上线，具体可参见文章：<a href="http://segmentfault.com/a/1190000002978115#articleHeader6">http://segmentfault.com/a/1190000002978115#articleHeader6</a></p>
 <h2>总结</h2>
 <p>上述就是我们在生产环境中的使用Jenkins和docker所构建的持续集成&amp;自动部署的逻辑架构。也欢迎各位大大拍砖指教。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003732967";}i:15;a:11:{s:5:"title";s:65:"「JavaScript」如何让你的插件兼容AMD, CMD 和 原生 JS";s:4:"link";s:42:"http://segmentfault.com/a/1190000003732752";s:2:"id";s:42:"http://segmentfault.com/a/1190000003732752";s:7:"updated";s:25:"2015-09-10T19:31:10+08:00";s:9:"published";s:25:"2015-09-10T19:31:10+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003732967";}i:20;a:11:{s:5:"title";s:65:"「JavaScript」如何让你的插件兼容AMD, CMD 和 原生 JS";s:4:"link";s:42:"http://segmentfault.com/a/1190000003732752";s:2:"id";s:42:"http://segmentfault.com/a/1190000003732752";s:7:"updated";s:25:"2015-09-10T19:31:10+08:00";s:9:"published";s:25:"2015-09-10T19:31:10+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:9:"JasonKidd";s:10:"author_uri";s:35:"http://segmentfault.com/u/jasonkidd";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:2246:"
@@ -2189,7 +2893,7 @@ if(typeof define === `function` &amp;&amp; define.amd) {
     return this || (typeof window !== 'undefined' ? window : global);
 });
 </code></pre>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003732752";}i:16;a:11:{s:5:"title";s:29:"读 arale 源码之 class 篇";s:4:"link";s:42:"http://segmentfault.com/a/1190000003732073";s:2:"id";s:42:"http://segmentfault.com/a/1190000003732073";s:7:"updated";s:25:"2015-09-10T16:59:46+08:00";s:9:"published";s:25:"2015-09-10T16:59:46+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003732752";}i:21;a:11:{s:5:"title";s:29:"读 arale 源码之 class 篇";s:4:"link";s:42:"http://segmentfault.com/a/1190000003732073";s:2:"id";s:42:"http://segmentfault.com/a/1190000003732073";s:7:"updated";s:25:"2015-09-10T16:59:46+08:00";s:9:"published";s:25:"2015-09-10T16:59:46+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"honger05";s:10:"author_uri";s:34:"http://segmentfault.com/u/honger05";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:7496:"
@@ -2401,7 +3105,7 @@ var isArray = Array.isArray || function(val) {
 var isFunction = function(val) {
   return toString.call(val) === "[object Function]";
 }</code></pre>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003732073";}i:17;a:11:{s:5:"title";s:31:"为何CNAME和MX不能共存？";s:4:"link";s:42:"http://segmentfault.com/a/1190000003731463";s:2:"id";s:42:"http://segmentfault.com/a/1190000003731463";s:7:"updated";s:25:"2015-09-10T15:03:53+08:00";s:9:"published";s:25:"2015-09-10T15:03:53+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003732073";}i:22;a:11:{s:5:"title";s:31:"为何CNAME和MX不能共存？";s:4:"link";s:42:"http://segmentfault.com/a/1190000003731463";s:2:"id";s:42:"http://segmentfault.com/a/1190000003731463";s:7:"updated";s:25:"2015-09-10T15:03:53+08:00";s:9:"published";s:25:"2015-09-10T15:03:53+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:9:"a84945345";s:10:"author_uri";s:33:"http://segmentfault.com/u/rockets";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:3993:"
@@ -2436,7 +3140,7 @@ var isFunction = function(val) {
 
 中文译文参考：http://download.csdn.net/detail/weicq2000/4627738
 </code></pre>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003731463";}i:18;a:11:{s:5:"title";s:41:"centos配置静态IP地址、DNS、网关";s:4:"link";s:42:"http://segmentfault.com/a/1190000003731280";s:2:"id";s:42:"http://segmentfault.com/a/1190000003731280";s:7:"updated";s:25:"2015-09-10T14:29:22+08:00";s:9:"published";s:25:"2015-09-10T14:29:22+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003731463";}i:23;a:11:{s:5:"title";s:41:"centos配置静态IP地址、DNS、网关";s:4:"link";s:42:"http://segmentfault.com/a/1190000003731280";s:2:"id";s:42:"http://segmentfault.com/a/1190000003731280";s:7:"updated";s:25:"2015-09-10T14:29:22+08:00";s:9:"published";s:25:"2015-09-10T14:29:22+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:6:"两仪";s:10:"author_uri";s:33:"http://segmentfault.com/u/liangyi";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:4380:"
@@ -2538,7 +3242,7 @@ search localdomain
 </code></pre>
 <h2>相关链接</h2>
 <p>1.<a href="http://www.paipat.com/?post=47">http://www.paipat.com/?post=47</a><br>2.<a href="http://www.itkee.com/os/detail-28a7.html">http://www.itkee.com/os/detail-28a7.html</a><br>3.<a href="http://www.jbxue.com/LINUXjishu/14865.html">http://www.jbxue.com/LINUXjishu/14865.html</a></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003731280";}i:19;a:11:{s:5:"title";s:44:"利用Redis cache优化app查询速度实践";s:4:"link";s:42:"http://segmentfault.com/a/1190000003730722";s:2:"id";s:42:"http://segmentfault.com/a/1190000003730722";s:7:"updated";s:25:"2015-09-10T12:20:21+08:00";s:9:"published";s:25:"2015-09-10T12:20:21+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003731280";}i:24;a:11:{s:5:"title";s:44:"利用Redis cache优化app查询速度实践";s:4:"link";s:42:"http://segmentfault.com/a/1190000003730722";s:2:"id";s:42:"http://segmentfault.com/a/1190000003730722";s:7:"updated";s:25:"2015-09-10T12:20:21+08:00";s:9:"published";s:25:"2015-09-10T12:20:21+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:11:"Yunba云巴";s:10:"author_uri";s:31:"http://segmentfault.com/u/yunba";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:8752:"
@@ -2654,10 +3358,10 @@ sudo service php5-fpm restart
 <h2>总结：</h2>
 <p>在本教程中，我们利用Redis结合Predis库来提升已部署的app的速度，我们平衡大数据海洋的水滴中可用的RAM来存储每天一次查询的结果，然后从缓存中返回这些结果，而不是重新运行一遍查询。但这确实意味着结果不会总是最新的，但就这边文章，其实查询结果没有被刷新的次数比这种情况多得多。</p>
 <p>注：关于更多的有关Redis的知识可以参考<a>redisdoc.com</a> (此网站文档是 Redis Command Reference 和 Redis Documentation 的中文翻译版， 阅读这个文档可以帮助你了解 Redis 命令的具体使用方法， 并学会如何使用 Redis 的事务、持久化、复制、Sentinel、集群等功能。)<br>我们<a>云巴</a>的产品也是使用redis存储实践，大家也可以来交流学习~</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003730722";}i:20;a:11:{s:5:"title";s:58:"canvas 在高清屏下绘制图片变模糊的解决方法";s:4:"link";s:42:"http://segmentfault.com/a/1190000003730246";s:2:"id";s:42:"http://segmentfault.com/a/1190000003730246";s:7:"updated";s:25:"2015-09-10T10:58:46+08:00";s:9:"published";s:25:"2015-09-10T10:58:46+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003730722";}i:25;a:11:{s:5:"title";s:58:"canvas 在高清屏下绘制图片变模糊的解决方法";s:4:"link";s:42:"http://segmentfault.com/a/1190000003730246";s:2:"id";s:42:"http://segmentfault.com/a/1190000003730246";s:7:"updated";s:25:"2015-09-10T10:58:46+08:00";s:9:"published";s:25:"2015-09-10T10:58:46+08:00";s:6:"author";s:3:"
 
 
-";s:11:"author_name";s:8:"KevinYue";s:10:"author_uri";s:36:"http://segmentfault.com/u/scriptjava";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:4232:"
+";s:11:"author_name";s:8:"KevinYue";s:10:"author_uri";s:36:"http://segmentfault.com/u/scriptjava";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:4232:"
 <blockquote><p>之前我在 SF 上回答过「<a href="http://segmentfault.com/q/1010000002391424">html5 canvas绘制图片模糊的问题</a>」，但是可能是由于我给出的答案过于简略，加上答案中的 demo 链接已经失效，很多人反映这种办法并不好使。但是我在给出答案之前是在小米2 和 iPhone 上测试过的，没有任何问题。下面我会一步一步地描述具体的步骤。</p></blockquote>
 <h2>前提条件</h2>
 <p>假设我们要在 canvas 中绘制一张 <code>300 x 90</code> 的图片，并且要保证它在高清屏中不模糊。那么我们首先要准备一张 <code>600 x 180</code> 的图片，处理过高清屏的同学应该会有这方面的经验。</p>
@@ -2710,7 +3414,7 @@ sudo service php5-fpm restart
 <h2>说明</h2>
 <p>这个解决方案本质上和 <a href="/u/baiyi">@白一梓</a> 的答案是一样的：先放大 canvas，再用 CSS 将其限制回原始大小。</p>
 <p>如果你看了 polyfill 的代码就会明白其中的原理了，这个 polyfill 的代码十分简短明了，它做了两件事：一是将 canvas 的高和宽分别乘以 ratio 将其放大，然后又用 CSS 将高和宽限制成初始的大小；二是 hack canvas 中常用的函数，如：<code>fillRect</code>, <code>clearRect</code>, <code>lineTo</code>, <code>arc</code> 等，将它们的参数都乘以 ratio，以方便我们可以像以前那样使用这些方法，而不用在传参的时候手动乘以 ratio。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003730246";}i:21;a:11:{s:5:"title";s:52:"php实战正则表达式（二）：提取html元素";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728798";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728798";s:7:"updated";s:25:"2015-09-09T23:36:01+08:00";s:9:"published";s:25:"2015-09-09T23:36:01+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003730246";}i:26;a:11:{s:5:"title";s:52:"php实战正则表达式（二）：提取html元素";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728798";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728798";s:7:"updated";s:25:"2015-09-09T23:36:01+08:00";s:9:"published";s:25:"2015-09-09T23:36:01+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:5:"totoo";s:10:"author_uri";s:31:"http://segmentfault.com/u/totoo";s:2:"re";a:1:{s:4:"rank";s:1:"4";}s:7:"summary";s:13085:"
@@ -2953,7 +3657,7 @@ sudo service php5-fpm restart
 <p><code>/&lt;tr&gt;(?:.(?!&lt;tr&gt;))*运动员.*&lt;\/tr&gt;/Us</code></p>
 <p>我们的真正目的是提取所有包含“运动员”的行，而上面只提取了第一个，所以需要将<code>preg_match</code>函数换成<code>preg_match_all</code>。</p>
 <p><img src="/img/bVpOb1" alt="图片描述" title="图片描述"></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728798";}i:22;a:11:{s:5:"title";s:23:"Gearman 使用小知识";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728682";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728682";s:7:"updated";s:25:"2015-09-09T23:18:52+08:00";s:9:"published";s:25:"2015-09-09T23:18:52+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728798";}i:27;a:11:{s:5:"title";s:23:"Gearman 使用小知识";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728682";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728682";s:7:"updated";s:25:"2015-09-09T23:18:52+08:00";s:9:"published";s:25:"2015-09-09T23:18:52+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"Oooooooo";s:10:"author_uri";s:34:"http://segmentfault.com/u/oooooooo";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:4499:"
@@ -3055,7 +3759,7 @@ Worker：请求的处理者，可以是C，PHP，Perl等等。</code></pre>
         //DO SOMETHING.....
     }</code></pre>
 <p>添加<code>work</code>到后台 格式为 <code>/var/www/index.php Sys/Demo/test </code></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728682";}i:23;a:11:{s:5:"title";s:37:"DevOps 和技术债务偿还自动化";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728355";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728355";s:7:"updated";s:25:"2015-09-09T22:11:30+08:00";s:9:"published";s:25:"2015-09-09T22:11:30+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728682";}i:28;a:11:{s:5:"title";s:37:"DevOps 和技术债务偿还自动化";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728355";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728355";s:7:"updated";s:25:"2015-09-09T22:11:30+08:00";s:9:"published";s:25:"2015-09-09T22:11:30+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:18:"OneAPM蓝海讯通";s:10:"author_uri";s:41:"http://segmentfault.com/u/oneapm_official";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:3195:"
@@ -3076,7 +3780,7 @@ Worker：请求的处理者，可以是C，PHP，Perl等等。</code></pre>
 <p><strong>本文系 |
 a5c76229754730010e79b1e5d0e0b55b4
 | 工程师编译整理。想阅读更多技术文章，请访问 OneAPM <a href="http://news.oneapm.com/?utm_source=TechCommunity&amp;utm_medium=TechArticle&amp;utm_campaign=JulSoftArti">官方博客</a>。</strong></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728355";}i:24;a:11:{s:5:"title";s:50:"ReThought (一): 如何构建理想的开发团队";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728329";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728329";s:7:"updated";s:25:"2015-09-09T22:01:33+08:00";s:9:"published";s:25:"2015-09-09T22:01:33+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728355";}i:29;a:11:{s:5:"title";s:50:"ReThought (一): 如何构建理想的开发团队";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728329";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728329";s:7:"updated";s:25:"2015-09-09T22:01:33+08:00";s:9:"published";s:25:"2015-09-09T22:01:33+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:6:"phodal";s:10:"author_uri";s:32:"http://segmentfault.com/u/phodal";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:7697:"
@@ -3151,27 +3855,28 @@ a5c76229754730010e79b1e5d0e0b55b4
 <p>然而，在这个结对编程的过程中，知识都在不断地传递。</p>
 <p>(ps: 上面只是提到了结对编程会构成理想团队，更多内容请期待下文《ReThink2: 如何照顾团队中的新人》(9月10号))</p>
 <p>转载保留: <a href="https://www.phodal.com/blog/rethink-one-build-dream-team/">ReThought (一): 如何构建理想的开发团队</a></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728329";}i:25;a:11:{s:5:"title";s:48:"使用git和github管理自己的项目、文档";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728094";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728094";s:7:"updated";s:25:"2015-09-09T20:46:31+08:00";s:9:"published";s:25:"2015-09-09T20:46:31+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728329";}i:30;a:11:{s:5:"title";s:60:"使用git和github管理自己的项目---基础操作学习";s:4:"link";s:42:"http://segmentfault.com/a/1190000003728094";s:2:"id";s:42:"http://segmentfault.com/a/1190000003728094";s:7:"updated";s:25:"2015-09-09T20:46:31+08:00";s:9:"published";s:25:"2015-09-09T20:46:31+08:00";s:6:"author";s:3:"
 
 
-";s:11:"author_name";s:8:"xumenger";s:10:"author_uri";s:34:"http://segmentfault.com/u/xumenger";s:2:"re";a:1:{s:4:"rank";s:1:"5";}s:7:"summary";s:31592:"
+";s:11:"author_name";s:8:"xumenger";s:10:"author_uri";s:34:"http://segmentfault.com/u/xumenger";s:2:"re";a:1:{s:4:"rank";s:1:"5";}s:7:"summary";s:32172:"
 <p>我是通过看<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">廖雪峰的git教程</a>学习的，真的是极好的，以下是我学习过程中的总结，记录下来，方便自己参考以熟悉git和github的使用。</p>
-<p>除了廖雪峰的教程，还比较推荐在看完廖雪峰的教程之后，再看这样一篇文章：<a href="http://segmentfault.com/a/1190000002413519">使用git和github进行协同开发流程</a>，深入了解github和git怎么在具体的项目开发中管理项目、有什么好的规范！</p>
+<p>除了廖雪峰的教程，还比较推荐在看完廖雪峰的教程之后，再看这样一篇文章：<a href="http://segmentfault.com/a/1190000002413519">使用git和github进行协同开发流程</a>，和我的另一篇git的笔记：<a href="http://segmentfault.com/a/1190000003739324">使用git和github管理自己的项目---真实开发环境的策略</a> ，深入了解github和git怎么在具体的项目开发中管理项目、有什么好的规范！</p>
 <p>我这里记录git的学习笔记，方便随时参考，具体的<strong>git的原理</strong>、<strong>github的原理</strong>、<strong>集中式和分布式版本控制的区别</strong>、<strong>版本控制的概念和原理</strong>、<strong>Git和其他版本控制工具比如SVN的区别</strong>、以及更多的相关<strong>概念讲解</strong>，请自己参见<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">廖雪峰的git教程</a>。</p>
 <blockquote><p>我强烈推荐先看廖雪峰的git教程来系统化认识和学习git，然后自己整理一份具体的步骤方便平时开发时快速参考，或者直接参考我的。</p></blockquote>
 <p>先说一个比较好笑的事：廖雪峰的git教程中，刚开始的部分的浏览量有38万，但是最后一页教程的网页的浏览量是1万多。</p>
 <p>以前因为觉得git、github比较难，所以一直拖着不学，现在去尝试学习，一晚上就OK了</p>
 <ul>
-<li><p>重点之一是找到全面的、详细的、生动的、高质量的教程。廖雪峰的git教程是我目前找到的最好的一个。之前找到的讲解git用法的书《git pro》现在看来是没有必要再看了！</p></li>
+<li><p>重点之一是找到全面的、详细的、生动的、高质量的教程。廖雪峰的git教程是我目前找到的最好的一个。之前找到的讲解git用法的书<a href="http://git-scm.com/book/zh/v1%E3%80%81">《pro git》</a>现在看来是没有必要再看了！</p></li>
 <li><p>重点之二就是自己立即去学，其实没什么难的，不要被貌似难的表象、概念唬住。</p></li>
 <li><p>重点之三是最好能自己做简单的、系统的整理，方便自己随时再回来查看、复习、参考，不至于出现这样的情况：学完以后过一段时间之后再用，但是这时候发现忘了差不多了！</p></li>
 <li><p>重点之四就是立即动手去用，否则学完很快就忘了。</p></li>
 </ul>
 <blockquote><p>有钱的买mac，没钱的用ubuntu--或者其他的linux发行版、被逼无奈的用Windows--但是被逼之余的自主时间一定要远离Windows。</p></blockquote>
 <p>现在我的测试环境是ubuntu。</p>
-<p>以对一个文件的管理为例，简单说明git的使用。另外需要说明的是下面的实验过程主要是只针对一个文件、并且修改的次数往往只有一次，而在真正的项目中，往往有大量的文件，也可能多次修改后才合并，合并时候的冲突可能也不只一两个，等等。不过原理都是一样的，我想说的是，不要局限在这个教程的示例上，请自己通过教程掌握基本的远原理之后，自己推广、去大量的实践，最重要的是要制定一个好的版本控制的策略（合理分工、安排，还是尽可能的避免冲突为好），这个可以参考：<a href="http://segmentfault.com/a/1190000002413519">使用git和github进行协同开发流程</a>。</p>
+<p>以对一个文件的管理为例，简单说明git的使用。另外需要说明的是下面的实验过程主要是只针对一个文件、并且修改的次数往往只有一次，而在真正的项目中，往往有大量的文件，也可能多次修改后才合并，合并时候的冲突可能也不只一两个，等等。不过原理都是一样的，我想说的是，不要局限在这个教程的示例上，请自己通过教程掌握基本的远原理之后，自己推广、去大量的实践，最重要的是要制定一个好的版本控制的策略（合理分工、安排，还是尽可能的避免冲突为好），这个可以参考：<a href="http://segmentfault.com/a/1190000002413519">使用git和github进行协同开发流程</a>以及我的学习笔记<a href="http://segmentfault.com/a/1190000003739324">使用git和github管理自己的项目---真实开发环境的策略</a>。</p>
 <h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013743256916071d599b3aed534aaab22a0db6c4e07fd0000">1.创建版本库</a></h2>
 <ul>
+<li><p><code>sudo apt-get install git</code> 先安装git</p></li>
 <li><p>先创建目录，作为仓库</p></li>
 <li><p><code>git init</code> 初始化仓库，可以发现当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了</p></li>
 <li><p><code>vim readme.txt</code> 新建一个文本文件，比如往里面添加简单的一行字符串</p></li>
@@ -3298,7 +4003,7 @@ a5c76229754730010e79b1e5d0e0b55b4
 <p>但Git的分支是与众不同的，无论创建、切换和删除分支，Git在1秒钟之内就能完成！无论你的版本库是1个文件还是1万个文件。</p>
 <h2><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000">11.创建和合并分支</a></h2>
 <p>首先教程中会详细讲解分支的原理（分支、指针、工作区……），一定要好好看！！看完之后你才能对你的创建分支和合并分支的操作不只是会用，更能在用的时候没有任何疑惑！反正能学到更多的知识，何乐而不为！</p>
-<p>另外推荐这样一篇博客：<a href="http://segmentfault.com/a/1190000002413519">使用git和github进行协同开发流程</a>。</p>
+<p>另外推荐这样的博客：<a href="http://segmentfault.com/a/1190000002413519">使用git和github进行协同开发流程</a>以及我的学习笔记<a href="http://segmentfault.com/a/1190000003739324">使用git和github管理自己的项目---真实开发环境的策略</a>。</p>
 <p>在<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000">版本回退</a>里，你已经知道，每次提交，Git都把它们串成一条时间线，这条时间线就是一个分支。截止到目前，我们练习的learngit，只有一条时间线，在Git里，这个分支叫主分支，即<code>master</code>分支。HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。</p>
 <p>开始实战：</p>
 <ul>
@@ -3359,7 +4064,7 @@ a5c76229754730010e79b1e5d0e0b55b4
 <p>在Repository name填入<code>learngit</code>，其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：</p>
 <p><img src="/img/bVpN39" alt="图片描述" title="图片描述"></p>
 <p>目前，在GitHub上的这个learngit仓库还是空的，GitHub告诉我们，可以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到GitHub仓库。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728094";}i:26;a:11:{s:5:"title";s:55:"MySQL主主复制+LVS+Keepalived实现MySQL高可用性";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727841";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727841";s:7:"updated";s:25:"2015-09-09T19:20:51+08:00";s:9:"published";s:25:"2015-09-09T19:20:51+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003728094";}i:31;a:11:{s:5:"title";s:55:"MySQL主主复制+LVS+Keepalived实现MySQL高可用性";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727841";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727841";s:7:"updated";s:25:"2015-09-09T19:20:51+08:00";s:9:"published";s:25:"2015-09-09T19:20:51+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"bestvivi";s:10:"author_uri";s:34:"http://segmentfault.com/u/bestvivi";s:2:"re";a:1:{s:4:"rank";s:1:"2";}s:7:"summary";s:12978:"
@@ -3597,7 +4302,7 @@ TCP  192.168.1.100:3306 wrr persistent 50
 <li><p>Keepalived搭建主备LVS服务器，避免了LVS服务器的单点故障，出现故障时可以自动切换到正常的节点。</p></li>
 </ul>
 <p>原文参考<br><a href="http://bestvivi.com/2015/09/09/MySQL%E4%B8%BB%E4%B8%BB%E5%A4%8D%E5%88%B6+LVS+Keepalived%E5%AE%9E%E7%8E%B0MySQL%E9%AB%98%E5%8F%AF%E7%94%A8%E6%80%A7">"http://bestvivi.com/2015/09/09/MySQL主主复制+LVS+Keepalived实现MySQL高可用性"</a></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727841";}i:27;a:11:{s:5:"title";s:66:" PHP 性能分析与实验（二）——PHP 性能的微观分析";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727793";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727793";s:7:"updated";s:25:"2015-09-09T19:04:16+08:00";s:9:"published";s:25:"2015-09-09T19:04:16+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727841";}i:32;a:11:{s:5:"title";s:66:" PHP 性能分析与实验（二）——PHP 性能的微观分析";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727793";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727793";s:7:"updated";s:25:"2015-09-09T19:04:16+08:00";s:9:"published";s:25:"2015-09-09T19:04:16+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:18:"OneAPM蓝海讯通";s:10:"author_uri";s:41:"http://segmentfault.com/u/oneapm_official";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:40368:"
@@ -4557,7 +5262,7 @@ TCP  192.168.1.100:3306 wrr persistent 50
 <p><strong>本文系 |
 c51143676ca57db0bcf4c7cc254287ca26
 | 工程师编译整理。想阅读更多技术文章，请访问 OneAPM <a href="http://news.oneapm.com/?utm_source=TechCommunity&amp;utm_medium=TechArticle&amp;utm_campaign=JulSoftArti">官方博客</a>。</strong></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727793";}i:28;a:11:{s:5:"title";s:57:"[Tips on Ember 2] UI 布局与应用状态的关系处理";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727746";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727746";s:7:"updated";s:25:"2015-09-09T18:40:53+08:00";s:9:"published";s:25:"2015-09-09T18:40:53+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727793";}i:33;a:11:{s:5:"title";s:57:"[Tips on Ember 2] UI 布局与应用状态的关系处理";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727746";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727746";s:7:"updated";s:25:"2015-09-09T18:40:53+08:00";s:9:"published";s:25:"2015-09-09T18:40:53+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"nightire";s:10:"author_uri";s:34:"http://segmentfault.com/u/nightire";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:24372:"
@@ -4936,7 +5641,7 @@ export default Ember.Route.extend(HideNavbarMixin, {
 })</code></pre>
 <hr>
 <blockquote><p>原文首发于 <a href="https://ruby-china.org/topics/27258">Ruby China 社区</a>，转载请注明。</p></blockquote>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727746";}i:29;a:11:{s:5:"title";s:67:"[Tips on Ember 2] Ember CLI 和 Sass (及其周边) 的协同工作";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727742";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727742";s:7:"updated";s:25:"2015-09-09T18:39:31+08:00";s:9:"published";s:25:"2015-09-09T18:39:31+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727746";}i:34;a:11:{s:5:"title";s:67:"[Tips on Ember 2] Ember CLI 和 Sass (及其周边) 的协同工作";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727742";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727742";s:7:"updated";s:25:"2015-09-09T18:39:31+08:00";s:9:"published";s:25:"2015-09-09T18:39:31+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"nightire";s:10:"author_uri";s:34:"http://segmentfault.com/u/nightire";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:13510:"
@@ -5091,7 +5796,7 @@ $button-main-border: darken($violet, 5%);
 <p>得，今天就说到这里，本来这篇早就写得差不多了，只是这两天一直在挖／填 Ember2 的一些坑没顾上整理，耽误了。到此前期的周边打造就差不多了，下篇开始我打算重点写一些和 Ember 的特性密切相关的东东，maybe 先从路由开始。</p>
 <hr>
 <blockquote><p>原文首发于 <a href="https://ruby-china.org/topics/27246">Ruby China 社区</a>，转载请注明。</p></blockquote>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727742";}i:30;a:11:{s:5:"title";s:41:"[Tips on Ember 2] Ember CLI with Webstorm";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727722";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727722";s:7:"updated";s:25:"2015-09-09T18:36:17+08:00";s:9:"published";s:25:"2015-09-09T18:36:17+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727742";}i:35;a:11:{s:5:"title";s:41:"[Tips on Ember 2] Ember CLI with Webstorm";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727722";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727722";s:7:"updated";s:25:"2015-09-09T18:36:17+08:00";s:9:"published";s:25:"2015-09-09T18:36:17+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"nightire";s:10:"author_uri";s:34:"http://segmentfault.com/u/nightire";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:10074:"
@@ -5188,7 +5893,7 @@ export default Ember.Component.extend({
 <p>如上，它是一个 Component，但要保存在 <code>app/views</code> 下面，否则是找不到的。</p>
 <hr>
 <blockquote><p>原文首发于 <a href="https://ruby-china.org/topics/27174">Ruby China 社区</a>，转载请注明。</p></blockquote>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727722";}i:31;a:11:{s:5:"title";s:54:"[Tips on Ember 2] 如何尝试 angle-bracket component";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727708";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727708";s:7:"updated";s:25:"2015-09-09T18:33:50+08:00";s:9:"published";s:25:"2015-09-09T18:33:50+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727722";}i:36;a:11:{s:5:"title";s:54:"[Tips on Ember 2] 如何尝试 angle-bracket component";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727708";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727708";s:7:"updated";s:25:"2015-09-09T18:33:50+08:00";s:9:"published";s:25:"2015-09-09T18:33:50+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:8:"nightire";s:10:"author_uri";s:34:"http://segmentfault.com/u/nightire";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:7974:"
@@ -5262,7 +5967,7 @@ export default Ember.GlimmerComponent.extend({
 <p>这个问题其实和你的应用无关，是 ember inspector 在刷新后重新初始化的时候造成的，经个人测试只在最近的 canary 版本里存在，估计 ember inspector 更新以后会修复吧。有一个简单的临时解决办法就是关闭开发者工具然后再刷新就好了，之后再开启开发者工具之后 ember inspector 还可以用。其实你只要保证刷新的时候 ember inspector 不处于当前激活的 tab 就好了，开发者工具可以不关的。</p>
 <hr>
 <blockquote><p>原文首发于 <a href="https://ruby-china.org/topics/27155">Ruby China 社区</a>，转载请注明。</p></blockquote>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727708";}i:32;a:11:{s:5:"title";s:38:"DOM对象attribute和property的不同";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727646";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727646";s:7:"updated";s:25:"2015-09-09T18:15:08+08:00";s:9:"published";s:25:"2015-09-09T18:15:08+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727708";}i:37;a:11:{s:5:"title";s:38:"DOM对象attribute和property的不同";s:4:"link";s:42:"http://segmentfault.com/a/1190000003727646";s:2:"id";s:42:"http://segmentfault.com/a/1190000003727646";s:7:"updated";s:25:"2015-09-09T18:15:08+08:00";s:9:"published";s:25:"2015-09-09T18:15:08+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:5:"zning";s:10:"author_uri";s:31:"http://segmentfault.com/u/zning";s:2:"re";a:1:{s:4:"rank";s:1:"2";}s:7:"summary";s:5153:"
@@ -5380,7 +6085,7 @@ console.log(document.body.className); //big red bloom, 但ie8及以下输出为�
 </ol>
 <hr>
 <p>translate for  <a href="http://javascript.info/tutorial/attributes-and-custom-properties">http://javascript.info/tutorial/attributes-and-custom-properties</a></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727646";}i:33;a:11:{s:5:"title";s:24:"Nginx配置虚拟主机 ";s:4:"link";s:42:"http://segmentfault.com/a/1190000003726777";s:2:"id";s:42:"http://segmentfault.com/a/1190000003726777";s:7:"updated";s:25:"2015-09-09T16:03:04+08:00";s:9:"published";s:25:"2015-09-09T16:03:04+08:00";s:6:"author";s:3:"
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003727646";}i:38;a:11:{s:5:"title";s:24:"Nginx配置虚拟主机 ";s:4:"link";s:42:"http://segmentfault.com/a/1190000003726777";s:2:"id";s:42:"http://segmentfault.com/a/1190000003726777";s:7:"updated";s:25:"2015-09-09T16:03:04+08:00";s:9:"published";s:25:"2015-09-09T16:03:04+08:00";s:6:"author";s:3:"
 
 
 ";s:11:"author_name";s:6:"两仪";s:10:"author_uri";s:33:"http://segmentfault.com/u/liangyi";s:2:"re";a:1:{s:4:"rank";s:1:"2";}s:7:"summary";s:4726:"
@@ -5494,455 +6199,4 @@ console.log(document.body.className); //big red bloom, 但ie8及以下输出为�
 </code></pre>
 <h2>帮助链接：</h2>
 <p>原文链接：<a href="http://www.neoease.com/nginx-virtual-host/">http://www.neoease.com/nginx-virtual-host/</a><br>参考链接：<a href="http://zl382378867.blog.163.com/blog/static/407944212011124115813231/">http://zl382378867.blog.163.com/blog/static/407944212011124115813231/</a></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003726777";}i:34;a:11:{s:5:"title";s:46:"Coding 孙宇聪：《人，技术与流程》";s:4:"link";s:42:"http://segmentfault.com/a/1190000003725944";s:2:"id";s:42:"http://segmentfault.com/a/1190000003725944";s:7:"updated";s:25:"2015-09-09T13:30:39+08:00";s:9:"published";s:25:"2015-09-09T13:30:39+08:00";s:6:"author";s:3:"
-
-
-";s:11:"author_name";s:12:"Coding扣钉";s:10:"author_uri";s:35:"http://segmentfault.com/u/codingnet";s:2:"re";a:1:{s:4:"rank";s:1:"5";}s:7:"summary";s:22892:"
-<p>我先做一下自我介绍，我是 07 年加入的 Google，在 Moutain View 总部任Google SRE，今年年初回国加入 <a href="https://Coding.net">Coding</a> 。</p>
-<p>在 Google 我参与了两个 Project, 第一个就是 Youtube, 其中包括 Video transcoding, streaming 等，Google 的量很大，每个月会有 1PB 级别的存储量，存储，转码后，我们还做 Golbal CDN ，最大的时候峰值达到 10 TB，我们在全球 10 万个节点，每台机器都是 24 核跑满状态。然后我从 Youtube 团队离开加入 Google Cloud Platform Team。我们做的主要工作是管理 Google 全球的机器，大概有 100 万台左右。我离开 Google 之前做的就是 Omega Project，一个集群管理系统，管理 Google 整个云平台的任务调度，协作。可能很多人会说“然并卵”，因为这是都是国内不存在的网站。(笑)</p>
-<p>从 Google 回来在 Coding 做 CTO，对我来说也是人生的一个大改变。最近我在知乎看到一个好问题，“从大公司离开到小公司当 CTO 是怎样的体验”，我摘抄了一个好答案：“ 顶着 CTO 的名号，招聘，培训，鼓励程序猿，拉网线，查机房，装系统这都是 CTO 要做的事；讨论方案，推方案，定方案，确定进度，拖延进度，安抚程序猿，挨老板骂，安抚老板，这也是 CTO 的职务。” 不包括 Coding，而我的工作还包括 Coding，很伤心。(笑)</p>
-<p>所以我把这个问题作了归类：</p>
-<p>CTO 是什么：<br>第一、他在公司里是一个鼓励师，（我这个形象做鼓励师其实也不是很合适）<br>第二、可能是网管，这个我确实干过，接网线，架服务器，<br>第三、可能就是受气包，程序员对我很不满，老板对我也很不满。</p>
-<p>那我们把这三个角色做为一个对应：</p>
-<p>第一、就是研发人员上的管理，包括怎么招人合适，怎样让这些人更好地协作；<br>第二、是研发技术和研发环境的管理，就是你有了这些人怎样让大家更好地协作在一起，更高效地开发；<br>第三、就是研发流程的管理，怎样让公司这台机器转得更加灵活，顺畅。</p>
-<p>那这里我提出了三点要素，人，技术与流程，这是一个公司研发体系中不可缺少的关键要素。</p>
-<p>那我们就先来说一说人，创业公司都需要全栈工程师。这个全栈工程师长的什么样子呢？一般来说他就像是一个大侠，踩着白马，手持金枪，什么问题都能解决，一人单挑好几百人。可是有些时候我们招不到全栈工程师，我们就招了一些全干工程师，这也是我们最近发明的一个词汇。这个人就是他什么都干，写完网站后写 iOS 最后写安卓。这样的人也很难找，更难的是把这些招来的人员合理地安排在一起，合理地组织起来协作。</p>
-<p>要想解释 Coding 在研发人员管理上的演变，我首先讲一下 Coding 的服务架构，这是我们去年 5 月份（第一版本上线) 的服务架构，非常简单只有一个 core 程序，经过一年多的演变，现在变成了这个样子。我特意写的字很小，因为不想让大家看清楚，这里面其实错综复杂也不一定对。一个简单的架构是如何一步步演变复杂的呢？ 这里我想先介绍一个康威定律，就是</p>
-<p>“任何一个设计系统的组织，最终产生的设计都等同于组织之内、之间的沟通结构”。</p>
-<p>回想起 Coding 以前的交流方式，老板说"我们要做一个新的功能"，大家就开始把功能拆，前端需要怎么改，要改谁来做，后端要不要改，改的话谁来，服务层，DB 层，测试，部署，每个人做的事情都不一样，每个人都只做一件事情，每个人都做流水线上的一个螺丝钉。这样会造成什么情况呢？前端程序员在等后端程序员，什么时候把接口接上了再开工，后端程序员在等数据库，什么时候加上这个字段我再开工，测试和部署就更在等了。每次一开项目进度会议时，老板问功能做的什么程度了，前端说后端没写好接口，后端说数据库还没搞定，经常是这个状态。</p>
-<p>那么 Coding 今天采用了一个组织方式，我们叫他全员全栈，这个全栈的意思和普通意义上的全栈意义不是很一样，这个全栈我们指的是产品，功能上的全栈。具体是怎么实现的呢？其实对任何一个比较合格的程序员来说，语言并不是他的瓶颈，也不应该作为他的限制条件。我们更希望的是我们公司里更多的是这种全栈工程师。我们在做任何功能的时候，我都会和这个人说你要负责这个功能从头到尾的实现，你需要改前端就改前端，需要改后端就改后端。做这个事情可能刚开始有一定难度，后端工程师对前端不是很熟悉，前端工程师对后端不是很熟悉，那我们就用一些其他方法去克服它。这个过程就强迫了组织内部的 Knowledge sharing 。</p>
-<p>很多大公司的工程师可能只关心这一小块，比如说前端工程师只写了这一点前端的东西，后端我一概不管，原因是我不敢动，大家也不让我动。在小公司里面，每一个人都要了解公司的使用的各种技术，我们共同努力去降低系统的复杂度。 全员全栈是我们公司的一个战略方向，我们希望每个人都有主人翁的意识，在做需求的时候他可以从前到后一直跟到完，但是想要把全员全栈做好就要做研发环境和研发工具的调整，接下来我们讲我们是如何通过技术手段来协助的。</p>
-<p>技术手段在一个研发环境里有三个要素：<br>第一个就是代码如何管理，如何操作；<br>第二个就是运行，前端后端代码运行起来要求繁杂，如何调节。<br>第三点就是你写好之后怎么部署、运维。开发环境和生产环境经常打不通。</p>
-<p>为了代码这方面讲好，我先来给大家介绍下在 Google 当码农是一种怎样的体验。Google 最强大的就是他的研发体系经过了 10 多年的积累和锤炼，现在是一套非常高效的体系。那这个“不存在”的公司是怎样管理自己的代码呢？</p>
-<p>第一点，整个公司只有一个仓库，一个版本控制系统。这个东西说起来简单，其实很难实现的，很多人觉得这个东西好像可行，但他细想难道我们用的都是SVN？很明显不是，那 SVN 没有用，Git 也没用，那如何做到只有一个仓库呢？只有一个仓库带来的问题就是所有程序代码都在一个目录下，如果你有一个特别大的硬盘，你把整个公司全都 down 下来，他就是一个目录下的很多子目录，可能几十级子目录，可能整个公司代码有几百 G。那如何同步，管理，操作，这个都是 Google 的独门秘方。</p>
-<p>这个有什么好处呢？<br>第一，你可以看到任何人的代码，你可以看到这个服务是如何实现的，为何会出现异常，会有什么错误；<br>第二，它带来一种更高效的复用方式，比如我写了一个小程序，我 Gmail 的一个程序用了一段 bigtable 的代码，那我直接在代码里引用过去即可，反正大家都在一个目录下，编译环境也一样，有了这个 repo 之后，还有一套编译系统，这个编译系统能做到一键编译任何程序，我运行一个 Gmail 也是一行程序，一个命令是就是编译程序 build 加上 Gmail 的路径即可编译，编译 Go，Python，C++全都是一个命令，不用你去关心底层是如何实现的，运行起来即可。有了这个之后就做到了部署，开发很容易，就是说如果我写业务代码需要用到一个服务，那我可以很容易地启动这个服务，还可以对该服务做小改动后再次运行起来，这都很容易。</p>
-<p>这里说多了大家又会说：道理我们都懂，但是如何实现呢？</p>
-<p>那 Coding 怎么组织我们的代码呢？因为我们确实没有 Google 集中式的代码服务，为了调整我们的代码结构，让大家更好地复用，引用彼此的代码，又因为我们本身提供 Git 服务，那我们也是用了 Git 仓库的方式，但我们每个项目都是一个独立的仓库，比如我们前端代码放一个仓库里，后端代码放一个仓库了，各个服务都放在不同仓库里。</p>
-<p>这种方式就产生一个问题，如何同步？</p>
-<p>我们用的是 Google 开源的东西叫 Android repo，大家做安卓开发时可能用到过，这个 repo 是什么意思呢？就是他定义了一个 Workspace，这个 Workspace 有一个固定的格式/结构，然后你统一用 repo 这个工具去 sync，这个 repo 应该到哪个 commit ，那个 repo 应该到哪个 commit，全公司都用同样一种 Workspace 的方式，就保证了每个人看到的代码都是一致的。</p>
-<p>做了这个代码结构定义的好处就是：<br>第一，我们有代码阅读功能，比如我们 Coding 的代码阅读可以根据这个 Workspace，可以看到每个项目的代码，互相引用的状态；<br>第二就是质量分析，你可以针对这个 Workspace 做质量分析。这个 Workspace 有一个 repo.sh 这个是一个命令，比较关键的是有一个 default.xml 是这个命令的配置文件，然后大家打开 Workspace 运行 repo sync 即可，它会自动更新每个组件到最新版本。我们也鄙视 xml 但是没办法，这个程序就是这么写的，其实很简单，里面主要定义了很多 Project，这个 Project 可能是代码仓库的路径映射到了本地的路径，它有一个比较先进的功能就是它可以同时 sync 好几个 Project，就是你一敲 repo.sh sync  -g=4 就是开 4 个线程去同步。实践起来这个是很容易的，有了这个东西后打开了这个局面，为大家下一步搞开发环境做了基础铺垫。</p>
-<p>工具有了，那我们真正想要的开发环境是什么呢？</p>
-<p>我从 Google 的得来的感触就是我们想要一个统一的，代码化的，可复制的，可重现的一个开发环境。</p>
-<p>第一、每当新同事来公司后，他带着自己的电脑或用公司的电脑，他所用的工具是不一样的，环境是不一样的，怎样能让公司的代码在自己机器上跑起来其实是一件比较困难的事情。大家的解决办法可能是通过写文档，但这是一件非常痛苦，浪费时间的事情。</p>
-<p>第二就是说如果你这个开发环境如果不可以复制，重现，那你的自动化测试怎么做？不能说某个人手动配一下，跑一下，今天挂明天又改吧？</p>
-<p>那如何做到统一化的开发环境？我们做法就是定义了一个通用的接口，我认为这个编译系统的内部实现是无所谓的，怎样都可以，但它的接口比实现要重要一百倍。大家可以想下如果你每个程序，每个组件都是用同一个方法去 Build，去运行，这是一种怎样的体验？我们定义了一个 build.sh 和 package.sh ，这个 build 就是说我用 Java，Python，Ruby也好，我就定义 build.sh 它最后能产生一个结果能把这个东西 build 好，对我来说我不关心下面的程序怎么来写，但我只要 build 它，我改了一行代码它能够 build 出新的东西即可。这是我们现在比较土的做法。</p>
-<p>Google 最近开源了 bazel ,它是用 Java 写的编译工具，它实际上就是 build 命令，之后两个反斜杠代表整个 Workspace 的根，然后 coding 是一个 project，server 是 project 的 target。有了这个东西之后其实你 build 任何项目你都考虑的是说它逻辑上的分层而不是物理上的分层，逻辑上的分层就是我要 build 一个 coding server，那这个 coding server 可能里面引用了其他的第三方库，头文件，Ruby 程序，Java 程序都无所谓，我只要说我能 build 一个 coding server 来即可，那这个 bazel 更好的就是它可以自动处理递归依赖，就是你这个 rule 可以依赖到另外一个 rule。</p>
-<p>有了这个编译后我们还需要有可复制，可重用的开发环境，那这个开发环境我们怎么做的呢？<br>我们用的是 Vagrant 和 docker。Vagrant  是 VM 的一个管理工具，它可以生成一个新的 VM 来，这个 VM 使用代码来定义的， 然后把每一个服务作为一个 docker 服务在 VM 来运行的。</p>
-<p>Vagrant 其实做了三件事：<br>第一件事是它从一个指定的地方下载 Base Box，Base Box 是我们自己做的，比如说是一个 Ubuntu 镜像加一些本地依赖.<br>第二就是它支持脚本定义，你可以运行 shell 脚本来定制，再选一个所谓的 Provider，这个 Provider 就是你可以比如说本地是 Virtual Box 的 Provider，远端和很多云厂商可以对接。</p>
-<p>进行完这两个操作之后，他就产生了一个 VM，这个 VM 就是一个你可以一键 ssh 进去，它自动把你所有东西都搭配好，这是一个属于你的开发环境，那有了这个东西之后，整个公司可以有一套一致的开发环境，因为是一个 VM，它在哪台机子上运行的方式都一样，所有的依赖库都可以放进去，所以最后的结果就是我们有一个几G的镜像放在我们内网里，每个新同事来了后我们让他装一个 Vagrant 或 Virtual Box，然后他敲一个命令，自动把镜像下载，启动，然后一键把整个 Coding 的项目在他的机器上跑起来。</p>
-<p>做到了这种可重用的开发环境，我们还做到了所谓的一键运行。一键运行是和开发另外一个层面的东西，它既不关心这个东西是怎么构建出来的，我只关心我启动这个服务，比如 Coding 开发环境的时候我需要哪些服务，那我们采用的就是一个自己写的脚本来给 Docker 做编排，这个配置文件里定义了一些 Job，每个 Job 有一些 image（运行程序的版本、环境变量等）。其实很多时候我们都是用 go run 命令一键启动很多服务和镜像，达到了我们刚才说到的统一的代码化的，可复制，可重现的开发环境。</p>
-<p>技术工具是我最怀念 Google 的地方，因为这些工具带来很多好处： 首先他鼓励公司内部的协作, 每个人写程序时不是首先想到自己搞一个小东西出来，我们更多的时候是去看公司里面其他人做了一个什么东西，它是怎么实现的，能不能引用过来，能不能使用，能不能把常用的类库都抽离出来；<br>第二它可以让新人很快上手，我们新同事也好，老同事也好，更多的场景是老同事换 Project，以前可能只是使用者，瞬间就可以变成开发者。开发环境的无缝切换无形中降低了很多公司运行的成本。<br>第三点就是它让自动化变为可能。刚才我们是装了 Vagrant 执行一个命令就搞定了，这个东西同样可以作为自动化的东西来实现，比如每次我们在发 Code Review 时，我们后台就可以自动启动一个新的 VM，把所有东西下载后运行测试，最后给出改动对错，造成影响等结果，这都是可以自动化的。这点我觉得是一个关键点，接下来有了这个环境之后你有了质量分析，工具后它才能够进行，才能有更多生产力工具接入进来。</p>
-<p>最后我再讲一讲流程的管理。</p>
-<p>作为一个 CTO，我们小小的梦想是持续交付更好的软件。老板说你作为一头老黄牛就得不停地往前跑，你也能够按时完成任务。</p>
-<p>公司内部有很多实现方式：第一就是 Code Review, 这个流程工具毁誉参半:</p>
-<p>第一点就是这个 Code Review 绝对是脑抽检测器，每个人都有脑抽的时候，评审期就是缓冲期，让你想一想你真的是要做这件事情吗？你让别人帮你检查一下是很有好处的。<br>第二是Code Review 是一种很好的知识分享的方式。我一个人在写这个功能时我把代码交给别人去看，那另一个人就会对这个有了解，将来他可能来做你的功能，你换过去做他的工作。鼓励公司内部的知识共享是很重要的。<br>第三它是一个 idea generation ，大家在做知识共享时很容易发现自己另外一个地方也发现了这个问题，我是这么解决的，你为什么不这么解决？有什么更好的办法解决吗？Code Review 为促进交流来做这件事。</p>
-<p>那 Code Review 做的不好时有哪些方面呢：</p>
-<p>第一就是程序员鄙视链，就是老程序员对新程序员很鄙视，说你写的东西太次了，我都懒的看。这个是很不好的一种行为，我们一定要避免这种东西。我们做了一些程序上的要求，比如你每次 Review 时必须把整篇文档都看完，不能说我看了一行发现太烂了不看了，你改好了我再来看，这是不允许的。</p>
-<p>第二我们讲到 Ownership ,就是你在 Code Review 时这个代码属于谁的，我们讲代码评审是谁写代码谁负责，你写了 rm -rf 你就要对此负责，我看了之后觉得你写的有道理，但我没看出 bug, 这是你的问题不是评审者的问题。这是我们在Google，Coding 实践出来的经验，</p>
-<p>第三点就是拥抱变化，就是我原来可能某员工写了一个程序，他觉得我写的这个程序实在是太好了，你们不要改，一改我就看不懂了。所以他对任何改动都非常抵触，这也是错误的，不论在 Google 还是 Coding ，我们坚持的一大原则就是说我们有 Business case 你就可以改代码。你只能去把这个代码写得更好，不能不允许他改，这个是关键，你所写的代码都是属于公司的，那公司怎么能用代码来做更好的事情呢，你要讲清你的道理，你为什么要改这段代码，改了有什么好处，把这个东西变成了技术上的讨论。而不是一个职责，权限上的讨论。</p>
-<p>所以我觉得这几点是把 Code Review 做的更好比较关键的几点。接下来说一下 Release Schedule 的问题。</p>
-<p>因为创业公司和大公司不一样，每个公司都有自己的 Release Schedule，以前我们基本靠吼，今天我们要上线，所以全员就上线，我们今天要 Release 那就 Release，你如果和老板吼今天上不了线，老板想了想那就算了吧，明天上，并不是很严肃。我们在内部推行的改革是我们要把冲刺变成长跑，我们已经创业一年多了，不能总是冲刺状态了。我们要变成长跑，能够持续不断地交付高质量的软件，而不是每天上完线后加班到后半夜才把它改好。</p>
-<p>方式很简单，就是一周钉死 Release 两次，我说服老板每周两次就够了，三次就多了。Google 一个月才 Release 一次，大项目半年才 Release 一次，我们创业公司能做到这点已经很好了。一周 Release 两次是什么概念，星期一就要上 Staging 测试环境，星期二就要 Release，星期三又要上 Staging，星期四又要 Release，留给大家周五写写程序，修修 Bug。其实一周 Release 两次也很频繁，但是保证现阶段我们的转化率，我们采用了这个方式。把这个东西摊在桌面上来讲有什么好处呢，他让大家可以计划我这个功能下周二上还是下周四上，你和项目经理打仗的时候有理有据了，他说你看你是星期二上还是星期四上，程序员说星期二可能搞不定，那我们星期四来吧，一来二去就把这个冲刺改成了长跑。</p>
-<p>接下来还有一点，我们要区分 Feture Team 和 Infrastructure Team, Infrastructure Team 也是我们以前谷歌的一个名词。他讲的是什么意思呢？就是说虽然全员都在做业务逻辑，但我们一定要抽出一定时间来推行技术演进，你不能说每天我上来就是写代码，拷贝粘贴，这样搞得大家所有东西都非常混乱。我们在内部提出了三个点：</p>
-<p>第一叫 Coding One，就是我们公司内部所有的项目，所有的技术，所有的服务都争取用同一套方式来运行。比如说用同一个 Java 版本。这就是一件很难的事情，我觉得好多公司都做不到，用同一个第三方类库，这也很难，所以用起来类库都不一样，但干起来事情是一样的。这样每个人代码看起来都好像是差不多，但是又不一样，所以 Coding One 就是解决这个问题，就是 Java 版本，第三方库的版本，第三方库的类型，编译方式，运行环境，启动方式，都应该是一样的。这样会降低很多程序员之间内耗，提高大家的效率。</p>
-<p>第二就是 Coding Two，刚创业的时候大家觉得我们都用一台机器，所有东西都跑在上面，这个东西如果坏了那就全挂了。每次更新大家都觉得太危险了，我们还是后半夜进行吧，十二点还不够半夜，我们三四点钟进行吧。因为你这个东西没有备份，没有任何的灰度。我们叫 Coding Two，以前是从零到一的过程，现在要把从一到二的过程迈过去。从一到二的意思是你这个东西可以是多份的，你这个东西挂了那边还可以继续顶上，这个程序你做发布的时候你可以先发布给自己用，用好了再发给用户，这才是负责任的方式。</p>
-<p>第三点： Coding CI 是我要讲到的最后一点，最后我们的终极目标，就是所谓的 Push On Green ，意思就是你提交了代码一分钟之内只要所有的测试都跑动过，马上就上生产环境，大家可以想一想在自己公司里能做到这一点吗？如果不能那是为什么？你程序员写了代码，我们认为程序员写的代码都是善意的，你经过了 Code Review，业务流程上都没问题，他为什么不能直接去上生产环境呢？Push On Green 就是终极考验，来考验你这个研发体系能不能做到这一点，如果能做到这一点你才是好的研发体系。</p>
-<p>这就是我和大家分享的三点，人，技术和流程，我认为这在一个公司里是一个齿轮一样组合起来的，公司我们可以说是一个大机器，如果将机器润滑，将齿轮转得更好，结合得更紧密，这就是我们想追求的目标。谢谢大家。</p>
-<p>视频地址：<a href="http://v.qq.com/page/d/o/z/d0164k35goz.html">http://v.qq.com/page/d/o/z/d0164k35goz.html</a><br>Coding - 让开发更简单！ <a href="https://Coding.net">https://Coding.net</a></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003725944";}i:35;a:11:{s:5:"title";s:53:"图像形态学的几种基本操作 Image Morphology";s:4:"link";s:42:"http://segmentfault.com/a/1190000003724073";s:2:"id";s:42:"http://segmentfault.com/a/1190000003724073";s:7:"updated";s:25:"2015-09-09T03:09:42+08:00";s:9:"published";s:25:"2015-09-09T03:09:42+08:00";s:6:"author";s:3:"
-
-
-";s:11:"author_name";s:10:"烤鱼Bath";s:10:"author_uri";s:37:"http://segmentfault.com/u/thinkinbath";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:3024:"
-<p><img src="http://thinkinbath.com/content/images/2015/09/imageMorphology.gif" alt="二值图的操作罗列" title="二值图的操作罗列"></p>
-<p>Intro: Morphology is used in image processing to reduce noise. This article shows some examples from Youtube to explain how the processing is working. 这是我在学习计算机视觉时，对遇到的问题进行研究所得出的结果。所以文中大部分的话都是在下自己的理解，如有错误还请大家原谅并指出。若是之后有遇到相似的问题，我会对相似程度进行划分：开新帖或者更新此贴都是有可能的。</p>
-<h2>Binary Image Processing</h2>
-<p>These example are the basic ones, they pre-process a gray scale image based on a threshold to turn it into a binary image.</p>
-<h3>Basic 基础知识</h3>
-<p>二值图（f）：由0，1分布的一个数组。其中有图的地方是1，噪声点也是1，但它不是有效的图像。</p>
-<p>结构元素（s）：3x3的结构元素是个正方形，如果用“四联”法得到的就是一个十字星，称为～。其用途类似于范围选定。</p>
-<p>目的：除去噪声点。</p>
-<p>过程：在二值图（f）中取一个值为1的像素点（p），以其为中心画出结构元素（s），之后计算其“邻边”的四个点为1的个数（c），用该值于以下几种方法的阈值（t）进行比较。==从而决定这个像素点在处理过后的图像中的值==。</p>
-<h3>Dilation 膨胀法</h3>
-<p><a href="https://www.youtube.com/embed/W5x-z63JFQY">过程视频动画</a><br>膨胀法 t = 1, if c &gt; t then p = 1 else p = 0</p>
-<p>简而言之：如果周围有图像，延展该点。放大图像边界。</p>
-<h3>Erosion 侵蚀法</h3>
-<p><a href="https://www.youtube.com/embed/yLdjNi2rncI">过程视频动画</a><br>侵蚀法 t = s, if c &lt; s then p = 0, else p =1</p>
-<p>简而言之：如果周围有空隙，腐蚀该点。缩小图像边界。</p>
-<h3>Opening 开操作</h3>
-<p><a href="https://www.youtube.com/embed/S9wi8C1O8ug">过程视频动画</a></p>
-<p>先侵蚀，在膨胀。</p>
-<p>结果：重新塑造边缘，增加背景像素。</p>
-<h3>Closing 闭操作</h3>
-<p><a href="https://www.youtube.com/embed/FvO7QOST03g">过程视频动画</a></p>
-<p>先膨胀，在缩小。</p>
-<p>结果：连接图像内部断掉的部分。</p>
-<h3>Hit, Fit and Miss</h3>
-<p><a href="https://www.youtube.com/embed/vWWpZtQxlzA">过程视频动画</a></p>
-<p>对比结果的三种情况。</p>
-<h2>题外话</h2>
-<p>原文一半都会Po在我的个人博客上<a href="http://thinkinbath.com/image-morphological-processing-tu-xiang-de-xing-tai-xue-chu-li/">比如此片文章</a>，当然博客里有一些乱起八糟的东西我是不会搬来这里的，为了打造一个良好的学习环境。</p>
-<p>文章里面引用了大量视频资源，它们是从YouTube转载过来的。由于国外的版权原因，我现在没有找到一个很好的方法用来将视频呈现给国内的读者，暂时抱歉了。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003724073";}i:36;a:11:{s:5:"title";s:33:"基于HT for Web的3D树的实现";s:4:"link";s:42:"http://segmentfault.com/a/1190000003724016";s:2:"id";s:42:"http://segmentfault.com/a/1190000003724016";s:7:"updated";s:25:"2015-09-09T01:36:06+08:00";s:9:"published";s:25:"2015-09-09T01:36:06+08:00";s:6:"author";s:3:"
-
-
-";s:11:"author_name";s:8:"hightopo";s:10:"author_uri";s:34:"http://segmentfault.com/u/hightopo";s:2:"re";a:1:{s:4:"rank";s:1:"2";}s:7:"summary";s:17168:"
-<p>在<a href="http://www.hightopo.com/">HT for Web</a>中2D和3D应用都支持树状结构数据的展示，展现效果各异，2D上的树状结构在展现层级关系明显，但是如果数据量大的话，看起来就没那么直观，找到指定的节点比较困难，而3D上的树状结构在展现上配合HT for Web的弹力布局组件会显得比较直观，一眼望去可以把整个树状结构数据看个大概，但是在弹力布局的作用下，其层次结构看得就不是那么清晰了。所以这时候结构清晰的3D树的需求就来了，那么这个3D树具体长成啥样呢，我们来一起目睹下~<br><img src="/img/bVpMWF" alt="图片描述" title="图片描述"><br>要实现这样的效果，该从何下手呢？接下来我们就将这个问题拆解成若干个小问题来解决。<br>1.创建一个树状结构<br>有了解过<a href="http://www.hightopo.com/">HT for Web</a>的朋友，对树状结构数据的创建应该都不陌生，在这里我就不做深入的探讨了。树状结构数据的创建很简单，在这里为了让代码更简洁，我封装了三个方法来创建树状结构数据，具体代码如下：</p>
-<pre><code>/**
- * 创建连线
- * @param {ht.DataModel} dataModel - 数据容器
- * @param {ht.Node} source - 起点
- * @param {ht.Node} target - 终点
- */
-function createEdge(dataModel, source, target) {
-    // 创建连线，链接父亲节点及孩子节点
-    var edge = new ht.Edge();
-    edge.setSource(source);
-    edge.setTarget(target);
-    dataModel.add(edge);
-}
-
-/**
- * 创建节点对象
- * @param {ht.DataModel} dataModel - 数据容器
- * @param {ht.Node} [parent] - 父亲节点
- * @returns {ht.Node} 节点对象
- */
-function createNode(dataModel, parent) {
-    var node = new ht.Node();
-    if (parent) {
-        // 设置父亲节点
-        node.setParent(parent);
-
-        createEdge(dataModel, parent, node);
-    }
-    // 添加到数据容器中
-    dataModel.add(node);
-    return node;
-}
-
-/**
- * 创建结构树
- * @param {ht.DataModel} dataModel - 数据容器
- * @param {ht.Node} parent - 父亲节点
- * @param {Number} level - 深度
- * @param {Array} count - 每层节点个数
- * @param {function(ht.Node, Number, Number)} callback - 回调函数(节点对象，节点对应的层级，节点在层级中的编号)
- */
-function createTreeNodes(dataModel, parent, level, count, callback) {
-    level--;
-    var num = (typeof count === 'number' ? count : count[level]);
-
-    while (num--) {
-        var node = createNode(dataModel, parent);
-        // 调用回调函数，用户可以在回调里面设置节点相关属性
-        callback(node, level, num);
-        if (level === 0) continue;
-        // 递归调用创建孩子节点
-        createTreeNodes(dataModel, node, level, count, callback);
-    }
-}</code></pre>
-<p>嘿嘿，代码写得可能有些复杂了，简单的做法就是嵌套几个for循环来创建树状结构数据，在这里我就不多说了，接下来我们来探究第二个问题。</p>
-<p>2.在<a href="http://www.hightopo.com/">2D拓扑</a>下模拟3D树状结构每层的半径计算<br>在3D下的树状结构体最大的问题就在于，每个节点的层次及每层节点围绕其父亲节点的半径计算。现在树状结构数据已经有了，那么接下来就该开始计算半径了，我们从两层树状结构开始推算：<br><img src="/img/bVpMWJ" alt="图片描述" title="图片描述"><br>我现在先创建了两层的树状结构，所有的子节点是一字排开，并没有环绕其父亲节点，那么我们该如何去确定这些孩子节点的位置呢？<br>首先我们得知道，每个末端节点都有一圈属于自己的领域，不然节点与节点之间将会存在重叠的情况，所以在这里，我们假定末端节点的领域半径为25，那么两个相邻节点之间的最短距离将是两倍的节点领域半径，也就是50，而这些末端节点将均匀地围绕在其父亲节点四周，那么相邻两个节点的张角就可以确认出来，有了张角，有了两点间的距离，那么节点绕其父亲节点的最短半径也就能计算出来了，假设张角为a，两点间最小距离为b，那么最小半径r的计算公式为：</p>
-<p>r = b / 2 / sin(a / 2);</p>
-<p>那么接下来我么就来布局下这个树，代码是这样写的：</p>
-<pre><code>/**
- * 布局树
- * @param {ht.Node} root - 根节点
- * @param {Number} [minR] - 末端节点的最小半径
- */
-function layout(root, minR) {
-    // 设置默认半径
-    minR = (minR == null ? 25 : minR);
-    // 获取到所有的孩子节点对象数组
-    var children = root.getChildren().toArray();
-    // 获取孩子节点个数
-    var len = children.length;
-    // 计算张角
-    var degree = Math.PI * 2 / len;
-    // 根据三角函数计算绕父亲节点的半径
-    var sin = Math.sin(degree / 2),
-        r = minR / sin;
-    // 获取父亲节点的位置坐标
-    var rootPosition = root.p();
-
-    children.forEach(function(child, index) {
-        // 根据三角函数计算每个节点相对于父亲节点的偏移量
-        var s = Math.sin(degree * index),
-            c = Math.cos(degree * index),
-            x = s * r,
-            y = c * r;
-
-        // 设置孩子节点的位置坐标
-        child.p(x + rootPosition.x, y + rootPosition.y);
-    });
-}
-</code></pre>
-<p>在代码中，你会发现我将末端半径默认设置为25了，如此，我们通过调用layout()方法就可以对结构树进行布局了，其布局效果如下：<br><img src="/img/bVpMWM" alt="图片描述" title="图片描述"><br>从效果图可以看得出，末端节点的默认半径并不是很理想，布局出来的效果连线都快看不到了，因此我们可以增加末端节点的默认半径来解决布局太密的问题，如将默认半径设置成40的效果图如下<br><img src="/img/bVpMWO" alt="图片描述" title="图片描述"><br>现在两层的树状分布解决了，那么我们来看看三层的树状分布该如何处理。<br>将第二层和第三层看成一个整体，那么其实三层的树状结构跟两层是一样的，不同的是在处理第二层节点时，应该将其看做一个两层的树状结构来处理，那么像这种规律的处理用递归最好不过了，因此我们将代码稍微该着下，在看看效果如何：<br><img src="/img/bVpMWP" alt="图片描述" title="图片描述"><br>不行，节点都重叠在一起了，看来简单的递归是不行的，那么具体的问题出在哪里呢？<br>仔细分析了下，发现父亲节点的领域半径是由其孩子节点的领域半径决定的，因此在布局时需要知道自身节点的领域半径，而且节点的位置取决于父亲节点的领域半径及位置信息，这样一来就无法边计算半径边布局节点位置了。<br>那么现在只能将半径的计算和布局分开来，做两步操作了，我们先来分析下节点半径的计算：<br>首先需要明确最关键的条件，父亲节点的半径取决于其孩子节点的半径，这个条件告诉我们，只能从下往上计算节点半径，因此我们设计的递归函数必须是先递归后计算，废话不多说，我们来看下具体的代码实现：</p>
-<pre><code>/**
- * 就按节点领域半径
- * @param {ht.Node} root - 根节点对象
- * @param {Number} minR - 最小半径
- */
-function countRadius(root, minR) {
-    minR = (minR == null ? 25 : minR);
-
-    // 若果是末端节点，则设置其半径为最小半径
-    if (!root.hasChildren()) {
-        root.a('radius', minR);
-        return;
-    }
-
-    // 遍历孩子节点递归计算半径
-    var children = root.getChildren();
-    children.each(function(child) {
-        countRadius(child, minR);
-    });
-
-    var child0 = root.getChildAt(0);
-    // 获取孩子节点半径
-    var radius = child0.a('radius');
-
-    // 计算子节点的1/2张角
-    var degree = Math.PI / children.size();
-    // 计算父亲节点的半径
-    var pRadius = radius / Math.sin(degree);
-
-    // 设置父亲节点的半径及其孩子节点的布局张角
-    root.a('radius', pRadius);
-    root.a('degree', degree * 2);
-}</code></pre>
-<p>OK，半径的计算解决了，那么接下来就该解决布局问题了，布局树状结构数据需要明确：孩子节点的坐标位置取决于其父亲节点的坐标位置，因此布局的递归方式和计算半径的递归方式不同，我们需要先布局父亲节点再递归布局孩子节点，具体看看代码吧：</p>
-<pre><code>/**
- * 布局树
- * @param {ht.Node} root - 根节点
- */
-function layout(root) {
-    // 获取到所有的孩子节点对象数组
-    var children = root.getChildren().toArray();
-    // 获取孩子节点个数
-    var len = children.length;
-    // 计算张角
-    var degree = root.a('degree');
-    // 根据三角函数计算绕父亲节点的半径
-    var r = root.a('radius');
-    // 获取父亲节点的位置坐标
-    var rootPosition = root.p();
-
-    children.forEach(function(child, index) {
-        // 根据三角函数计算每个节点相对于父亲节点的偏移量
-        var s = Math.sin(degree * index),
-            c = Math.cos(degree * index),
-            x = s * r,
-            y = c * r;
-
-        // 设置孩子节点的位置坐标
-        child.p(x + rootPosition.x, y + rootPosition.y);
-
-        // 递归调用布局孩子节点
-        layout(child);
-    });
-}
-</code></pre>
-<p>代码写完了，接下来就是见证奇迹的时刻了，我们来看看效果图吧：<br><img src="/img/bVpMWR" alt="图片描述" title="图片描述"><br>不对呀，代码应该是没问题的呀，为什么显示出来的效果还是会重叠呢？不过仔细观察我们可以发现相比上个版本的布局会好很多，至少这次只是末端节点重叠了，那么问题出在哪里呢？<br>不知道大家有没有发现，排除节点自身的大小，倒数第二层节点与节点之间的领域是相切的，那么也就是说节点的半径不仅和其孩子节点的半径有关，还与其孙子节点的半径有关，那我们把计算节点半径的方法改造下，将孙子节点的半径也考虑进去再看看效果如何，改造后的代码如下：</p>
-<pre><code>/**
- * 就按节点领域半径
- * @param {ht.Node} root - 根节点对象
- * @param {Number} minR - 最小半径
- */
-function countRadius(root, minR) {
-   ……
-
-    var child0 = root.getChildAt(0);
-    // 获取孩子节点半径
-    var radius = child0.a('radius');
-
-    var child00 = child0.getChildAt(0);
-    // 半径加上孙子节点半径，避免节点重叠
-    if (child00) radius += child00.a('radius');
-
-   ……
-}</code></pre>
-<p>下面就来看看效果吧~<br><img src="/img/bVpMWQ" alt="图片描述" title="图片描述"><br>哈哈，看来我们分析对了，果然就不再重叠了，那我们来看看再多一层节点会是怎么样的壮观场景呢？<br><img src="/img/bVpMWS" alt="图片描述" title="图片描述"><br>哦，NO！这不是我想看到的效果，又重叠了，好讨厌。<br>不要着急，我们再来仔细分析分析下，在前面，我们提到过一个名词——领域半径，什么是领域半径呢？很简单，就是可以容纳下自身及其所有孩子节点的最小半径，那么问题就来了，末端节点的领域半径为我们指定的最小半径，那么倒数第二层的领域半径是多少呢？并不是我们前面计算出来的半径，而应该加上末端节点自身的领域半径，因为它们之间存在着包含关系，子节点的领域必须包含于其父亲节点的领域中，那我们在看看上图，是不是感觉末端节点的领域被侵占了。那么我们前面计算出来的半径代表着什么呢？前面计算出来的半径其实代表着孩子节点的布局半径，在布局的时候是通过该半径来布局的。<br>OK，那我们来总结下，节点的领域半径是其下每层节点的布局半径之和，而布局半径需要根据其孩子节点个数及其领域半径共同决定。<br>好了，我们现在知道问题的所在了，那么我们的代码该如何去实现呢？接着往下看：</p>
-<pre><code>/**
- * 就按节点领域半径及布局半径
- * @param {ht.Node} root - 根节点对象
- * @param {Number} minR - 最小半径
- */
-function countRadius(root, minR) {
-    minR = (minR == null ? 25 : minR);
-
-    // 若果是末端节点，则设置其布局半径及领域半径为最小半径
-    if (!root.hasChildren()) {
-        root.a('radius', minR);
-        root.a('totalRadius', minR);
-        return;
-    }
-
-    // 遍历孩子节点递归计算半径
-    var children = root.getChildren();
-    children.each(function(child) {
-        countRadius(child, minR);
-    });
-
-    var child0 = root.getChildAt(0);
-    // 获取孩子节点半径
-    var radius = child0.a('radius'),
-        totalRadius = child0.a('totalRadius');
-
-    // 计算子节点的1/2张角
-    var degree = Math.PI / children.size();
-    // 计算父亲节点的布局半径
-    var pRadius = totalRadius / Math.sin(degree);
-
-    // 缓存父亲节点的布局半径
-    root.a('radius', pRadius);
-    // 缓存父亲节点的领域半径
-    root.a('totalRadius', pRadius + totalRadius);
-    // 缓存其孩子节点的布局张角
-    root.a('degree', degree * 2);
-}</code></pre>
-<p>在代码中我们将节点的领域半径缓存起来，从下往上一层一层地叠加上去。接下来我们一起验证其正确性：<br><img src="/img/bVpMWT" alt="图片描述" title="图片描述"><br>搞定，就是这样子了，<a href="http://www.hightopo.com/">2D拓扑</a>上面的布局搞定了，那么接下来该出动3D拓扑啦~</p>
-<p>3.加入z轴坐标，呈现3D下的树状结构<br><a href="http://www.hightopo.com/">3D拓扑</a>上面布局无非就是多加了一个坐标系，而且这个坐标系只是控制节点的高度而已，并不会影响到节点之间的重叠，所以接下来我们来改造下我们的程序，让其能够在3D上正常布局。<br>也不需要太大的改造，我们只需要修改下布局器并且将<a href="http://www.hightopo.com/">2D拓扑</a>组件改成3D拓扑组件就可以了。</p>
-<pre><code>/**
- * 布局树
- * @param {ht.Node} root - 根节点
- */
-function layout(root) {
-    // 获取到所有的孩子节点对象数组
-    var children = root.getChildren().toArray();
-    // 获取孩子节点个数
-    var len = children.length;
-    // 计算张角
-    var degree = root.a('degree');
-    // 根据三角函数计算绕父亲节点的半径
-    var r = root.a('radius');
-    // 获取父亲节点的位置坐标
-    var rootPosition = root.p3();
-
-    children.forEach(function(child, index) {
-        // 根据三角函数计算每个节点相对于父亲节点的偏移量
-        var s = Math.sin(degree * index),
-            c = Math.cos(degree * index),
-            x = s * r,
-            z = c * r;
-
-        // 设置孩子节点的位置坐标
-        child.p3(x + rootPosition[0], rootPosition[1] - 100, z + rootPosition[2]);
-
-        // 递归调用布局孩子节点
-        layout(child);
-    });
-}
-</code></pre>
-<p>上面是改造成3D布局后的布局器代码，你会发现和2D的布局器代码就差一个坐标系的的计算，其他的都一样，看下在3D上布局的效果：<br><img src="/img/bVpMWU" alt="图片描述" title="图片描述"><br>恩，有模有样的了，在文章的开头，我们可以看到每一层的节点都有不同的颜色及大小，这些都是比较简单，在这里我就不做深入的讲解，具体的代码实现如下：</p>
-<pre><code>var level = 4,
-    size = (level + 1) * 20;
-
-var root = createNode(dataModel);
-root.setName('root');
-root.p(100, 100);
-
-root.s('shape3d', 'sphere');
-root.s('shape3d.color', randomColor());
-root.s3(size, size, size);
-
-var colors = {},
-    sizes = {};
-createTreeNodes(dataModel, root, level - 1, 5, function(data, level, num) {
-    if (!colors[level]) {
-        colors[level] = randomColor();
-        sizes[level] = (level + 1) * 20;
-    }
-
-    size = sizes[level];
-
-    data.setName('item-' + level + '-' + num);
-    // 设置节点形状为球形
-    data.s('shape3d', 'sphere');
-    data.s('shape3d.color', colors[level]);
-    data.s3(size, size, size);
-});</code></pre>
-<p>在这里引入了一个随机生成颜色值的方法，对每一层随机生成一种颜色，并将节点的形状改成了球形，让页面看起来美观些（其实很丑）。<br><img src="/img/bVpMWV" alt="图片描述" title="图片描述"><br>提个外话，节点上可以贴上图片，还可以设置文字的朝向，可以根据用户的视角动态调整位置，等等一系列的拓展，这些大家都可以去尝试，相信都可以做出一个很漂亮的<a href="http://www.hightopo.com/">3D树</a>出来。<br>到此，整个Demo的制作就结束了，今天的篇幅有些长，感谢大家的耐心阅读，在设计上或则是表达上有什么建议或意见欢迎大家提出，<a>点击这里</a>可以访问HT for Web官网上的手册。</p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003724016";}i:37;a:11:{s:5:"title";s:54:"Laravel 5系列教程八：queryScope 和 setAttribute";s:4:"link";s:42:"http://segmentfault.com/a/1190000003723793";s:2:"id";s:42:"http://segmentfault.com/a/1190000003723793";s:7:"updated";s:25:"2015-09-08T23:53:12+08:00";s:9:"published";s:25:"2015-09-08T23:53:12+08:00";s:6:"author";s:3:"
-
-
-";s:11:"author_name";s:9:"JellyBool";s:10:"author_uri";s:35:"http://segmentfault.com/u/jellybool";s:2:"re";a:1:{s:4:"rank";s:1:"3";}s:7:"summary";s:8901:"
-<blockquote><p>原文来自 <a href="https://laravist.com/article/16">https://laravist.com/article/16</a></p></blockquote>
-<p><a href="https://laravist.com/">Laravist</a>是我刚刚上线的Laravel社区，有任何与Laravel相关的问题可以到这里来问我，我会尽力去帮大家解决问题，后期会尝试录制一些视频教程，形式大概是这样的</p>
-<p><a href="https://laravist.com/lesson/1">https://laravist.com/lesson/1</a></p>
-<p>直接就是按照上一节所说的那样，我们来说说queryScope和setAttribute在laravel的用法。</p>
-<h2>关于应用场景</h2>
-<p>这里我首先是想向大家简单说说这两个知识点得应用场景是什么，我们在开发的时候，总是希望有一种偷懒的方式，所以考虑以下这两个场景：</p>
-<ol>
-<li><p>数据在存入数据库的时候需要进行预先处理，比如考虑一个简单地例子：我们在保存用户的登录密码的时候，都是需要将密码用某种方式加密过后在写入数据库的，我们难道在每一次在提交表单过来之后都对传过来的数据进行一次数据加密么？能不能有一种自动完成对密码入库前就加密的机制呢？这样我们在处理表单的时候就不用关心密码加密的问题了</p></li>
-<li><p>想一想我们在向用户展示的数据是不是基本上都是从数据库取的呢？那么往往我们会有很多的查询语句，在这样的情况之下很多的查询语句可以就会重复，但是在写代码这一行中，一旦出现多个重复，基本上就会有优化方式存在，所以这个时候queryScope就派上用场了</p></li>
-</ol>
-<h2>setAttributes</h2>
-<p>之前，我们都是将published_at设置为文章创建的日期：</p>
-<pre><code>$input['published_at'] = Carbon::now();
-</code></pre>
-<p>然而这并不是我们想要的，我们希望有一种可以控制的方式，比如在表单之中设置文章的发布日期，所以，我们来实现一下：首先将<code>published_at</code>这个字段放到我们的form之中，在<code>create.blade.php</code>中，加入<code>published_at</code> 输入框输入：</p>
-<pre><code>&lt;div class="form-group"&gt;
-{!! Form::label('published_at','发布日期') !!}
-{!! Form::input('date','published_at',date('Y-m-d'),['class'=&gt;'form-control']) !!}
-&lt;/div&gt;
-</code></pre>
-<p>这一段代码加在textarea后面，这里使用了<code>Form::input()</code>，这个方法，因为Form这个类没有类似<code>Form::date()</code>指定date的方法，所以我们使用<code>Form::input()</code>并指定<code>input</code>的类型为<code>date</code>，并使用<code>date('Y-m-d')</code>来指定默认值为文章发布当天，但是我们可以修改，我们来看看我们的页面现在是什么样的：</p>
-<p><img src="https://wt-prj.oss.aliyuncs.com/0d06af79c49d4e08abb1ab3f7ab6e860/e084e6ae-5bbe-4c90-a1e1-f9ca8e5fc88e.gif" alt="替代文字" title="替代文字"></p>
-<p>这里我们可以看到我们拿到了<code>published_at</code>这个字段了，这个时候，可以修改一下<code>ArticleController</code>中的<code>store()</code>方法的代码了：</p>
-<pre><code>$input = $request-&gt;all();
-$input['intro'] = mb_substr($request-&gt;get('content'),0,64);
-Article::create($input);
-return redirect('/');
-</code></pre>
-<p>我们删除了<code>$input['published_at'] = Carbon::now();</code>这一行代码，然后尝试创建一篇文章来看看：</p>
-<p><img src="https://wt-prj.oss.aliyuncs.com/0d06af79c49d4e08abb1ab3f7ab6e860/cc1c7add-4a59-4948-bfe7-62c281a65598.gif" alt="替代文字" title="替代文字"></p>
-<p>OK，到这里，文章可以创建成功了，但是如果我们看看数据库当中的数据：</p>
-<p><img src="https://wt-prj.oss.aliyuncs.com/0d06af79c49d4e08abb1ab3f7ab6e860/a2050fff-df8c-4983-b8be-1f2c84b7ce50.png" alt="替代文字" title="替代文字"></p>
-<p>这里的日期设置成的格式并不是理想的模式，有没有一种方式可以将其设置为跟<code>created_at</code>和<code>updated_at</code>一样的呢？时分秒都可以知道的呢？这个时候就可以使用setAttribute来完成了，在<code>Article.php</code>中添加下面的方法：</p>
-<pre><code>public function setPublishedAtAttribute($date)
-{
-    $this-&gt;attributes['published_at'] = Carbon::createFromFormat('Y-m-d',$date);
-}
-</code></pre>
-<p>这里注意这个写法<code>set+字段名+Attribute</code>，还有的就是使用驼峰法。比如你要加密密码的时候可以这样：</p>
-<pre><code>public function setPasswordAttribute($passowrd)
-{
-    $this-&gt;attributes['password'] = Hash::make($passowrd);
-    //仅仅是举例
-}
-</code></pre>
-<p>这里我们使用了Carbon这个类，因为我们还想将<code>published_at</code>字段作为Carbon对象来处理，这样后期会有很大的好处。注意在文件头部使用<code>use Carbon\Carbon;</code>来引入Carbon。这个时候我们再来发表一次：</p>
-<p><img src="https://wt-prj.oss.aliyuncs.com/0d06af79c49d4e08abb1ab3f7ab6e860/cc965819-89db-4390-a9b1-0987f553d525.gif" alt="替代文字" title="替代文字"></p>
-<p>再来看看数据库：</p>
-<p><img src="https://wt-prj.oss.aliyuncs.com/0d06af79c49d4e08abb1ab3f7ab6e860/a67bf89e-de1b-4c1c-992e-f4bd175c4da1.png" alt="替代文字" title="替代文字"></p>
-<p>这样一来格式是对了，那么再来为<code>Article.php</code>添加一行代码使<code>published_at</code>作为Carbon对象来处理：</p>
-<pre><code>protected $dates = ['published_at'];
-</code></pre>
-<p>对这样就完成了，关于更多地Carbon好处和使用特性，我们在后面再说。</p>
-<h2>queryScope</h2>
-<p>上面实现了用<code>published_at</code>实现了文章的发布日期，但是现在的文章展示还是原来的样式，这并不是我们想要的结果，因为我们刚刚设置发表日期为<code>9-12</code>的文章(写文章的时候为<code>9-08</code>)也展示出来了,我们得限制一下。首先我们可以在查询的时候直接实现，比如在<code>ArticleController</code>的<code>index()</code>方法中将查询语句写成这样：</p>
-<pre><code>$articles = Article::where('published_at','&lt;=',Carbon::now())-&gt;latest()-&gt;get();
-</code></pre>
-<p>我们使用<code>where()</code>直接限制<code>published_at</code>时间小于或等于当前时间的文章才进行显示，看看效果：</p>
-<p><img src="https://wt-prj.oss.aliyuncs.com/0d06af79c49d4e08abb1ab3f7ab6e860/01e53901-e8a6-4d71-b7ab-466d3d445b65.png" alt="替代文字" title="替代文字"></p>
-<p>发现在未来时间发布的文章确实隐藏了，这样貌似已经达到了目的，为什么还要引入qeuryScope这个用法呢？这是因为考虑到代码的重用性，比如我们要是多个地方使用到<code>Article::where('published_at','&lt;=',Carbon::now())</code>这个条件限制呢，我们有没有一种方式可以将查询语句写成类似下面这种形式呢？</p>
-<pre><code>$articles = Article::latest()-&gt;published()-&gt;get();
-</code></pre>
-<p>就是直接使用<code>published()</code>这个自定义的方法来代替<code>where('published_at','&lt;=',Carbon::now())</code>呢，这样代码可读性也会更好。</p>
-<p>所以我们就来说说，queryScope的用法了，想想我们之前设置<code>published_at</code>这个字段的目的：</p>
-<pre><code>我们希望可以对文章进行简单地管理，比如我们在写系列文章的时候，有可能一天写了好几篇，但是这种时候其实我们发一篇文章就好了，每天消化一篇文章就很不错了，所以作为作者，我并不想还没到发布日期的文章就展示给用户看，但是，我写了文章也想把它存入数据库，让它在该发布的日期自动显示，这样就好了。于是，我们可以好好利用一下published_at这个字段
-</code></pre>
-<p>在我们的<code>Article.php</code>中增加下面的方法：</p>
-<pre><code>public function scopePublished($query)
-{
-    $query-&gt;where('published_at','&lt;=',Carbon::now());
-}
-</code></pre>
-<p>这里注意一下写法<code>scope+自定义的方法名字</code>，还有就是一如既往的驼峰法。比如我们想使用<code>published()</code>这个方法，就定义为<code>scopePublished($query)</code>。这个时候就可以真正的使用上面说的查询了，在<code>ArticleController</code>的<code>index()</code>方法中：</p>
-<pre><code>$articles = Article::latest()-&gt;published()-&gt;get();</code></pre>
-<p>再去看看效果，相信你刷新之后还是一样的。</p>
-<h2>总结</h2>
-<p>又是最后的结尾了，这里我们简单的介绍了queryScope和setAttribute的用法，下一节打算说说Eloquent的一个重要的内容：Eloquent Relationship。那个时候也就会越来越觉得laravel的强大了。</p>
-<p>最后：<strong>Happy Hacking</strong></p>
-";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003723793";}}s:7:"channel";a:6:{s:5:"title";s:28:"SegmentFault 最新的文章";s:7:"updated";s:25:"2015-09-11T21:02:02+08:00";s:4:"link";s:29:"http://segmentfault.com/blogs";s:9:"link_self";s:35:"http://segmentfault.com/feeds/blogs";s:2:"id";s:35:"http://segmentfault.com/feeds/blogs";s:15:"creativecommons";a:1:{s:7:"license";s:53:"http://www.creativecommons.org/licenses/by-sa/2.5/rdf";}}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:1;s:6:"initem";b:1;s:9:"incontent";s:7:"summary";s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;}
+";s:12:"link_replies";s:42:"http://segmentfault.com/a/1190000003726777";}}s:7:"channel";a:6:{s:5:"title";s:28:"SegmentFault 最新的文章";s:7:"updated";s:25:"2015-09-12T16:58:42+08:00";s:4:"link";s:29:"http://segmentfault.com/blogs";s:9:"link_self";s:35:"http://segmentfault.com/feeds/blogs";s:2:"id";s:35:"http://segmentfault.com/feeds/blogs";s:15:"creativecommons";a:1:{s:7:"license";s:53:"http://www.creativecommons.org/licenses/by-sa/2.5/rdf";}}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:1:{i:0;s:7:"updated";}s:9:"inchannel";b:1;s:6:"initem";b:1;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;}

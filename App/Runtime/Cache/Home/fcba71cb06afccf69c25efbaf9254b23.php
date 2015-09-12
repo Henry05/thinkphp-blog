@@ -194,6 +194,7 @@ $(".nav-btn").click(function(){
         <ul>
             <li ><a href="/Blog">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+             <li ><a href="/Blog/Index/feedplus">FeedPlus</a></li>
              <li ><a href="/Blog/message">留言</a></li>
             <li ><a href="/Blog/me" target="_blank">关于我</a></li>
         </ul></nav>

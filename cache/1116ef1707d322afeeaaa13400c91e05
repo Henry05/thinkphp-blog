@@ -1,4 +1,4 @@
-O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:10:{s:5:"title";s:18:"理解矩阵乘法";s:4:"link";s:65:"http://www.ruanyifeng.com/blog/2015/09/matrix-multiplication.html";s:2:"id";s:41:"tag:www.ruanyifeng.com,2015:/blog//1.1851";s:9:"published";s:20:"2015-09-01T10:02:07Z";s:7:"updated";s:20:"2015-09-11T12:37:26Z";s:7:"summary";s:120:"大多数人在高中，或者大学低年级，都上过一门课《线性代数》。这门课其实是教矩阵。...";s:6:"author";s:23:"
+O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:10:{s:5:"title";s:18:"理解矩阵乘法";s:4:"link";s:65:"http://www.ruanyifeng.com/blog/2015/09/matrix-multiplication.html";s:2:"id";s:41:"tag:www.ruanyifeng.com,2015:/blog//1.1851";s:9:"published";s:20:"2015-09-01T10:02:07Z";s:7:"updated";s:20:"2015-09-12T02:15:08Z";s:7:"summary";s:120:"大多数人在高中，或者大学低年级，都上过一门课《线性代数》。这门课其实是教矩阵。...";s:6:"author";s:23:"
         
         
     ";s:11:"author_name";s:9:"阮一峰";s:10:"author_uri";s:25:"http://www.ruanyifeng.com";s:12:"atom_content";s:18726:"
@@ -119,7 +119,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:
 
 </ul></div>        
         <div style="color:#556677;line-height:160%;padding:0.3em 0.5em;margin:1em;-moz-border-radius: 10px;-webkit-border-radius:10px;border-radius: 10px;"></div>
-    ";}i:1;a:10:{s:5:"title";s:12:"密码疲劳";s:4:"link";s:60:"http://www.ruanyifeng.com/blog/2015/08/password-fatigue.html";s:2:"id";s:41:"tag:www.ruanyifeng.com,2015:/blog//1.1850";s:9:"published";s:20:"2015-08-18T05:12:21Z";s:7:"updated";s:20:"2015-09-08T08:57:18Z";s:7:"summary";s:138:"上个月的最后一天，人民银行网站公布了《非银行支付机构网络支付业务管理办法（征求意见稿）》。...";s:6:"author";s:23:"
+    ";}i:1;a:10:{s:5:"title";s:12:"密码疲劳";s:4:"link";s:60:"http://www.ruanyifeng.com/blog/2015/08/password-fatigue.html";s:2:"id";s:41:"tag:www.ruanyifeng.com,2015:/blog//1.1850";s:9:"published";s:20:"2015-08-18T05:12:21Z";s:7:"updated";s:20:"2015-09-11T15:52:59Z";s:7:"summary";s:138:"上个月的最后一天，人民银行网站公布了《非银行支付机构网络支付业务管理办法（征求意见稿）》。...";s:6:"author";s:23:"
         
         
     ";s:11:"author_name";s:9:"阮一峰";s:10:"author_uri";s:25:"http://www.ruanyifeng.com";s:12:"atom_content";s:20179:"
@@ -3353,6 +3353,6 @@ Module.prototype._compile = function(content, filename) {
 
 </ul></div>        
         <div style="color:#556677;line-height:160%;padding:0.3em 0.5em;margin:1em;-moz-border-radius: 10px;-webkit-border-radius:10px;border-radius: 10px;"></div>
-    ";}}s:7:"channel";a:7:{s:5:"title";s:24:"阮一峰的网络日志";s:4:"link";s:31:"http://www.ruanyifeng.com/blog/";s:9:"link_self";s:39:"http://www.ruanyifeng.com/blog/atom.xml";s:2:"id";s:42:"tag:www.ruanyifeng.com,2010-04-11:/blog//1";s:7:"updated";s:20:"2015-09-11T12:37:26Z";s:8:"subtitle";s:18:"Ruan YiFeng's Blog";s:9:"generator";s:18:"Movable Type 5.2.2";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;s:13:"last_modified";s:31:"Fri, 11 Sep 2015 12:37:27 GMT
-";s:4:"etag";s:23:""4e2c7-51f77fa738fc0"
+    ";}}s:7:"channel";a:7:{s:5:"title";s:24:"阮一峰的网络日志";s:4:"link";s:31:"http://www.ruanyifeng.com/blog/";s:9:"link_self";s:39:"http://www.ruanyifeng.com/blog/atom.xml";s:2:"id";s:42:"tag:www.ruanyifeng.com,2010-04-11:/blog//1";s:7:"updated";s:20:"2015-09-12T02:15:08Z";s:8:"subtitle";s:18:"Ruan YiFeng's Blog";s:9:"generator";s:18:"Movable Type 5.2.2";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;s:13:"last_modified";s:31:"Sat, 12 Sep 2015 02:15:09 GMT
+";s:4:"etag";s:23:""4e2c7-51f8366c64540"
 ";}

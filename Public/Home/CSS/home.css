@@ -142,7 +142,7 @@ a {
 }
 
 .alist-title h3 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     color: #3F3F3F;
     display: inline;
@@ -159,6 +159,22 @@ a {
     line-height: 28px;
     font-weight: 400;
     overflow: hidden;
+}
+
+ .rss {
+  height:50px;
+}
+.rss >.alist-icon img{
+     width: 40px;
+    height: 40px;
+    float: left;
+    margin: 5px 10px 5px;
+    border-radius: 65px;
+    z-index: 2;
+    background-size: 40px 40px !important;
+}
+#rss-time{
+
 }
 .lastShow {
     display: block;

@@ -1,0 +1,510 @@
+O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:50:{i:0;a:10:{s:5:"title";s:113:"css遇到的一个问题：为什么对p可以设置宽度和高度，但是对span这个属性就不可以呢？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738195";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738195";s:7:"updated";s:25:"2015-09-12T00:16:23+08:00";s:9:"published";s:25:"2015-09-12T00:16:23+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:4:"king";s:10:"author_uri";s:44:"http://segmentfault.com/u/king_55f2f61cdaf0c";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:97:"<p>如题，刚学css不久，对于这些标签之类的特点还不是很熟悉，求指导</p>";}i:1;a:10:{s:5:"title";s:58:"Go语言web框架Martini怎么输出嵌套的json数据？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739630";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739630";s:7:"updated";s:25:"2015-09-12T16:44:50+08:00";s:9:"published";s:25:"2015-09-12T16:44:50+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:8:"Arron_yr";s:10:"author_uri";s:34:"http://segmentfault.com/u/arron_yr";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:2150:"
+<p>刚开始学习Go语言，使用的是martini框架，现在从数据库获取了一系列的数据向以json格式输出。<br>我定义一个结构体：</p>
+<pre><code>type ImageData struct {
+    Src    string
+    Tp     string
+    Title  string
+    Width  int
+    Height int
+}
+
+type ImageDatas []ImageData</code></pre>
+<p>然后从数据库获取数据：</p>
+<pre><code>var (
+    id        int
+    img_url   string
+    type_name string
+    title     string
+    width     int
+    height    int
+)
+for imgOut.Next() {
+    err := imgOut.Scan(&amp;id, &amp;img_url, &amp;type_name, &amp;title, &amp;width, &amp;height)
+    if err != nil {
+        fmt.Println(s.Join([]string{"查询数据失败", err.Error()}, "--&gt;"))
+        return nil, err
+    } else {
+        imageData := ImageData{img_url, type_name, title, width, height}
+        imageDatas = append(imageDatas, imageData)
+    }
+}</code></pre>
+<p>获取的数据格式如下：</p>
+<pre><code>{http://www.gratisography.com/pictures/10_1.jpg animals Picture by Ryan McGuire 555 370} 
+{http://www.gratisography.com/pictures/16_1.jpg animals Picture by Ryan McGuire 555 370}]</code></pre>
+<p>我使用如下的方式处理上面的数据：</p>
+<pre><code>if results, err := json.Marshal(imageDatas); err == nil {
+    r.JSON(200, map[string]interface{}{"error": "10000", "msg": string(results)})
+} else {
+    r.JSON(200, map[string]interface{}{"error": "10001", "msg": "Data Error"})
+}</code></pre>
+<p>但是最后输出的格式是这样的：</p>
+<pre><code>{
+"error": "10001",
+"msg": "[{\"Src\":\"http://www.gratisography.com/pictures/232_1.jpg\",\"Tp\":\"people\",\"Title\":\"Picture by Ryan McGuire\",\"Width\":555,\"Height\":370},{\"Src\":\"http://www.gratisography.com/pictures/233_1.jpg\",\"Tp\":\"people\",\"Title\":\"Picture by Ryan McGuire\",\"Width\":555,\"Height\":370}]"
+}</code></pre>
+<p>结果虽然像普通的<code>json</code>数据那样是键值对的形式，但是后面的数据以一个字符串的形式作为<code>msg</code>的值，现在想要的时把那个字符串按照json格式显示，形成嵌套的样子。<br>求解<code>·~~~^_^~~~·</code> 。</p>
+";}i:2;a:10:{s:5:"title";s:42:"PHP处理过的文件不能加载样式？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739610";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739610";s:7:"updated";s:25:"2015-09-12T16:35:51+08:00";s:9:"published";s:25:"2015-09-12T16:35:51+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:6:"racter";s:10:"author_uri";s:32:"http://segmentfault.com/u/racter";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:726:"
+<p>先上图：</p>
+<p><img src="/img/bVpQZQ" alt="图片描述" title="图片描述"><br><img src="/img/bVpQZR" alt="图片描述" title="图片描述"><br><img src="/img/bVpQZT" alt="图片描述" title="图片描述"><br><img src="/img/bVpQZU" alt="图片描述" title="图片描述"></p>
+<p>按照我的预期，访问/page.html应该是没问题的，结果在谷歌和火狐浏览器中css没有加载，不过在ie11中确正常，另外，偶然发现，在page.html头部随便插入一个可见字符，样式就正确加载了，请问问题到底出在哪里？多谢！</p>
+<p><img src="/img/bVpQ0n" alt="图片描述" title="图片描述"><br><img src="/img/bVpQ0o" alt="图片描述" title="图片描述"></p>
+";}i:3;a:10:{s:5:"title";s:21:"iOS界面效果问题";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738524";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738524";s:7:"updated";s:25:"2015-09-12T09:06:39+08:00";s:9:"published";s:25:"2015-09-12T09:06:39+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:10:"whosawwind";s:10:"author_uri";s:36:"http://segmentfault.com/u/whosawwind";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:285:"
+<p><img src="/img/bVpQIM" alt="图片描述" title="图片描述"></p>
+<p>请问图片中"碟中谍5:神秘国度"下方有一条渐宽的绿线是怎么实现的?</p>
+<p>我一开始以为是图片, 但是该APP时光网的Bundle包并没有这张图片,  求大神帮忙解决.</p>
+";}i:4;a:10:{s:5:"title";s:63:"如何转义emoji表情，让它可以存入utf8的数据库？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003711491";s:2:"id";s:42:"http://segmentfault.com/q/1010000003711491";s:7:"updated";s:25:"2015-09-06T14:13:15+08:00";s:9:"published";s:25:"2015-09-06T14:13:15+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:9:"黒之染";s:10:"author_uri";s:30:"http://segmentfault.com/u/haua";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:1211:"
+<p>unicode emoji是4个字节的，存不进MySQL里，找到一个转义的库<a href="http://code.iamcal.com/php/emoji/">http://code.iamcal.com/php/emoji/</a>，但是转为Unicode之后，还是4个字节，一样存不进，应该说根本没转。转为其他格式的emoji又怕以后新增了表情不好做，你们在不改数据库编码的前提下，是怎么弄的？</p>
+<blockquote><p>方法1：base_encode64</p></blockquote>
+<p>这种方法是可以，但是旧数据没有经过<code>encode</code>操作，取数据的时候如果统一进行decode的话，旧数据会丢失的。</p>
+<blockquote><p>方法2：urlencode</p></blockquote>
+<p>这个似乎可以，对没有经过encode的数据进行decode也不会有影响，而且多次decode似乎也不会有影响。你们说这个方法有缺陷吗？</p>
+<p>=======================<br>一个发现，微信获取用户基本信息的时候，返回笑哭那个表情的是<code>\ud83d\ude02</code>，而我存储的时候，报错说这个 \xF0\x9F\x98\x82 值不能存储，请问这是怎么回事，自动转码了，转成的这是什么？是微信转码过了吗？微信那个经过unicode解码，可以得到笑哭的表情</p>
+";}i:5;a:10:{s:5:"title";s:68:"iOS 能讲解下在继承uiview中该怎样用单例 并且要传值";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738639";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738639";s:7:"updated";s:25:"2015-09-12T09:54:42+08:00";s:9:"published";s:25:"2015-09-12T09:54:42+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:4:"hudi";s:10:"author_uri";s:30:"http://segmentfault.com/u/hudi";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:48:"<p>最好有简单代码  真的十分感谢</p>";}i:6;a:10:{s:5:"title";s:34:"百度面试题-汽水选择问题";s:4:"link";s:42:"http://segmentfault.com/q/1010000003700323";s:2:"id";s:42:"http://segmentfault.com/q/1010000003700323";s:7:"updated";s:25:"2015-09-02T16:47:52+08:00";s:9:"published";s:25:"2015-09-02T16:47:52+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:7:"52coder";s:10:"author_uri";s:33:"http://segmentfault.com/u/52coder";s:2:"re";a:1:{s:4:"rank";s:1:"5";}s:7:"summary";s:471:"
+<p>在炎炎夏日，你十分口渴，想要买一瓶冰汽水，商店中有三瓶汽水供你选择（如ABC），其中只有一瓶是冰过的。当你选定了其中的某一瓶后（设为A），店员摸了下剩余两瓶中的一瓶（设为B），并告诉你B不是冰的，此时你会将你的选择变更为剩余的那瓶嘛（C）？请详述你的理由？</p>
+<p>电话面试的面试题，大致意思如下，请问这种问题该如何思考。</p>
+";}i:7;a:10:{s:5:"title";s:46:"麻烦看下这段java代码出了什么问题";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739489";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739489";s:7:"updated";s:25:"2015-09-12T15:57:36+08:00";s:9:"published";s:25:"2015-09-12T15:57:36+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:6:"gchluv";s:10:"author_uri";s:32:"http://segmentfault.com/u/gchluv";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:897:"
+<p><img src="/img/bVpQYs" alt="图片描述" title="图片描述"></p>
+<p><img src="/img/bVpQYt" alt="图片描述" title="图片描述"></p>
+<p><img src="/img/bVpQYu" alt="图片描述" title="图片描述"></p>
+<p>import java.util.Arrays;</p>
+<p>public class mark {</p>
+<pre><code>public static void main(String[] args) {
+
+    int [] scores = {89,-23,64,91,119,52,73};
+
+    mark hello = new mark();
+
+    hello.handleGrade(scores);
+}
+public void handleGrade(int [] a){
+    
+    int num = 0;
+
+    int [] three = new int [3];
+
+    Arrays.sort(a);
+
+    for (int i = a.length-1;i &gt;= 0;i--) {
+        if (a[i] &gt; 100 || a[i] &lt; 0) {
+            continue;
+        }
+        else{
+            three[num] = a[i];
+            num++;
+        }
+        if (num==3) {
+                System.out.println("考试成绩的前三名 : " + Arrays.toString(three));
+        }
+    }
+}</code></pre>
+<p>}</p>
+";}i:8;a:10:{s:5:"title";s:86:"iOS想做一个alerview，在点选之前阻塞住后面的程序，点选完再继续";s:4:"link";s:42:"http://segmentfault.com/q/1010000003725877";s:2:"id";s:42:"http://segmentfault.com/q/1010000003725877";s:7:"updated";s:25:"2015-09-09T13:11:47+08:00";s:9:"published";s:25:"2015-09-09T13:11:47+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:9:"tepmnthar";s:10:"author_uri";s:35:"http://segmentfault.com/u/tepmnthar";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:1293:"
+<p>代码如下，都在viewdidload里</p>
+<pre><code>[super viewDidLoad];
+dispatch_async(dispatch_get_main_queue(), ^{
+    __block BOOL done=NO;
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        done=YES;
+    }];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sign up problem." message:@"Some fields are empty. Please check your inputs and try again." preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
+    while (!done){
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+    }
+});
+//后面是其他代码
+</code></pre>
+<p>现在的效果是有显示alertview，但是点击没反应，点击响应函数也没进，猜测是点击事件被阻塞了，没有传到handler。<br>那怎么样才能在阻塞掉后面程序的同时，能够响应点击事件呢？</p>
+<p>关于那个dispatch_asyn，本来我也不想这么写的，但是不包这一层，会报+[CATransaction synchronize] called within transaction<br>这么个错误，我不知道这个是什么，各位大大要是晓得，麻烦也解释一下为什么。</p>
+";}i:9;a:10:{s:5:"title";s:36:"我是用phpmailer发送邮件失败";s:4:"link";s:42:"http://segmentfault.com/q/1010000003737226";s:2:"id";s:42:"http://segmentfault.com/q/1010000003737226";s:7:"updated";s:25:"2015-09-11T18:37:44+08:00";s:9:"published";s:25:"2015-09-11T18:37:44+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:11:"a1292717155";s:10:"author_uri";s:37:"http://segmentfault.com/u/a1292717155";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:185:"<p>SMTP connect() failed. <a href="https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting">https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting</a><br>报的这个错误</p>";}i:10;a:10:{s:5:"title";s:58:"无桌面环境的Ubuntu如何启动安装好的VirtualBox";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739416";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739416";s:7:"updated";s:25:"2015-09-12T15:28:57+08:00";s:9:"published";s:25:"2015-09-12T15:28:57+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:9:"Adolphlwq";s:10:"author_uri";s:35:"http://segmentfault.com/u/adolphlwq";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:1229:"
+<h2>环境</h2>
+<pre><code>Linux localhost 3.13.0-24-generic 
+#46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 
+x86_64 x86_64 x86_64 GNU/Linux
+服务器上的主机，没有桌面端</code></pre>
+<p>virtualbox：</p>
+<pre><code>virtualbox-5.0_5.0.4-102546~Ubuntu~trusty_amd64
+已安装</code></pre>
+<h2>问题</h2>
+<pre><code>root@localhost:~/workspace/jenkins-docker-ansible# VBoxManage --version
+WARNING: The vboxdrv kernel module is not loaded. Either there is no module
+         available for the current kernel (3.13.0-24-generic) or it failed to
+         load. Please recompile the kernel module and install it by
+
+           sudo /etc/init.d/vboxdrv setup
+
+         You will not be able to start VMs until this problem is fixed.
+5.0.4r102546
+root@localhost:~/workspace/jenkins-docker-ansible# sudo /etc/init.d/vboxdrv setup
+Stopping VirtualBox kernel modules ...done.
+Recompiling VirtualBox kernel modules ...failed!
+  (Look at /var/log/vbox-install.log to find out what went wrong)
+root@localhost:~/workspace/jenkins-docker-ansible# </code></pre>
+<h2>个人看法</h2>
+<p>原因是没有启动virtualbox，但是启动命令默认是开启图形化界面的，主机没有图形化界面。该如何解决这个问题？</p>
+";}i:11;a:10:{s:5:"title";s:57:"如何利用jsp根据输入的信息后台查询并返回";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739450";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739450";s:7:"updated";s:25:"2015-09-12T15:42:14+08:00";s:9:"published";s:25:"2015-09-12T15:42:14+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:12:"细嗅蔷薇";s:10:"author_uri";s:36:"http://segmentfault.com/u/xixiuqiang";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:247:"<p><img src="/img/bVpQXM" alt="clipboard.png" title="clipboard.png"><br>这是页面布局，如何在输入手机号或者工号后，在后台查询并将相关信息在文本域中显示，希望能有大神回答一下，感激不尽！！</p>";}i:12;a:10:{s:5:"title";s:33:"android studio 创建新的文件";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739435";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739435";s:7:"updated";s:25:"2015-09-12T15:34:45+08:00";s:9:"published";s:25:"2015-09-12T15:34:45+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:9:"754582231";s:10:"author_uri";s:35:"http://segmentfault.com/u/754582231";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:203:"
+<p><img src="/img/bVpQXB" alt="图片描述" title="图片描述"></p>
+<p>如图，弹出的窗口太大，看不到下面的按钮，也没法调整窗口大小，有谁知道是怎么回事吗？</p>
+";}i:13;a:10:{s:5:"title";s:37:"CSS3动画，让元素沿圆弧移动";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739114";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739114";s:7:"updated";s:25:"2015-09-12T13:53:12+08:00";s:9:"published";s:25:"2015-09-12T13:53:12+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:9:"SwimInSky";s:10:"author_uri";s:41:"http://segmentfault.com/u/swimmingestelle";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:374:"
+<p>CSS3动画，让绝对定位的元素沿圆弧移动，</p>
+<pre><code>@keyframes bimg1 {
+      0% {top: 10%;left: 12%;width:50%;}
+      30% {top: -10%;left: -12%;width:45%;}
+      100% {top: 19%;left: 52%;width:40%;}
+    }
+    </code></pre>
+<p>这样写的话，会是线性的移动，从一个点，移动到另外一个点，想要的效果是按圆弧来移动</p>
+";}i:14;a:10:{s:5:"title";s:67:"关于cell重用的一些很纠结的问题（来大神解释下）";s:4:"link";s:42:"http://segmentfault.com/q/1010000003734657";s:2:"id";s:42:"http://segmentfault.com/q/1010000003734657";s:7:"updated";s:25:"2015-09-11T10:22:31+08:00";s:9:"published";s:25:"2015-09-11T10:22:31+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:19:"浅挚绊离汐kera";s:10:"author_uri";s:30:"http://segmentfault.com/u/kera";s:2:"re";a:1:{s:4:"rank";s:1:"2";}s:7:"summary";s:1164:"
+<pre><code>
+static NSString *orderCellID = @"MyOrderCell";
+
+[self.mTableView registerClass:[MyOrderCell class] forCellReuseIdentifier:orderCellID];</code></pre>
+<pre><code>1.MyOrderCell *cell = (MyOrderCell *)[tableView dequeueReusableCellWithIdentifier:orderCellID];
+
+    if (cell == nil) {
+
+       cell = [[MyOrderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:orderCellID];
+
+    }</code></pre>
+<pre><code>2.MyOrderCell *cell = [self.mTableView dequeueReusableCellWithIdentifier:orderCellID forIndexPath:indexPath];</code></pre>
+<p>这两种重用cell的方法问题就是...</p>
+<pre><code>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
+    
+    NSLog(@"cell height %f",cell.frame.size.height);
+    
+    return cell.frame.size.height;
+}</code></pre>
+<p>如果用方法2.的话为什么<br><code>UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];</code><br>就报错了?????</p>
+<p>但是用方法1的话确实是可行的...可以来个大神详细解释下吗</p>
+";}i:15;a:10:{s:5:"title";s:36:"为什么有些图片没显示？？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738988";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738988";s:7:"updated";s:25:"2015-09-12T12:45:18+08:00";s:9:"published";s:25:"2015-09-12T12:45:18+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:6:"suyiya";s:10:"author_uri";s:32:"http://segmentfault.com/u/suyiya";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:270:"
+<p><img src="/img/bVpQQo" alt="图片描述" title="图片描述"></p>
+<p>用的collectionView， sdWebImage下载图片的，就显示如图一张图片，其他没有显示，标题时间图片都是获取的网络数据，网络没问题，请问什么原因？</p>
+";}i:16;a:10:{s:5:"title";s:88:"命令行执行commit 忘记加参数-m,然后弹出一个svn-commit.tmp.如何退出呢";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739143";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739143";s:7:"updated";s:25:"2015-09-12T14:04:07+08:00";s:9:"published";s:25:"2015-09-12T14:04:07+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:10:"百年game";s:10:"author_uri";s:37:"http://segmentfault.com/u/bainiangame";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:184:"<p>命令行执行commit 忘记加参数-m,然后弹出一个svn-commit.tmp.如下图<br><img src="/img/bVpQSQ" alt="图片描述" title="图片描述"><br>如何退出上述界面</p>";}i:17;a:10:{s:5:"title";s:97:"前端大神们更倾向于使用哪个工具，才会让自己显得牛兼顾效率？sublime？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003698728";s:2:"id";s:42:"http://segmentfault.com/q/1010000003698728";s:7:"updated";s:25:"2015-09-02T11:42:37+08:00";s:9:"published";s:25:"2015-09-02T11:42:37+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:15:"中大凤凰树";s:10:"author_uri";s:34:"http://segmentfault.com/u/edwinsun";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:1102:"
+<blockquote><p>想不明白，为啥我的问题总被踩？   是因为经常上“最近热门”还是因为这种问题你觉得太装B！上次有个问题，也是上了最近热门，被踩了几脚，又被好心人给赞起来了！哎，SegmentFault不是要互相交流学习的地方吗？问使用哪个工具装B还好用，我招惹谁了！想不明白，踩人的阴暗心理！我在Sf上从来不踩人。在此也衷心感谢回答我问题的朋友，共勉！'</p></blockquote>
+<p>前端如果被问到，你使用哪个工具？</p>
+<p>你说：DreamWeaver！</p>
+<p>90%的提问者可能会觉得用DW的水平不会太高，至少不会很牛！</p>
+<p>其实我DW用着也挺好的，尤其是一些自动提示，比如输入url 会看到路径选择框。这个在sublime上是没有的，需要插件才能实现。</p>
+<p>当然sublime这么火，肯定有它牛的地方，我看到有些前端牛人都在讨论它，学习它。</p>
+<p>我想问的是，前端的大神们， 有没有一款工具既能让自己开发效果高，又不会显得自己水平low？</p>
+";}i:18;a:10:{s:5:"title";s:48:"apache下运行php报这样的错是什么意思";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739257";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739257";s:7:"updated";s:25:"2015-09-12T14:35:25+08:00";s:9:"published";s:25:"2015-09-12T14:35:25+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:5:"oop_z";s:10:"author_uri";s:34:"http://segmentfault.com/u/onmylive";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:276:"
+<p>``<br>  我从apache日志里看到的，下面就是我的php文件，这个语法没问题吧!!!，他报语法错误<br>``</p>
+<p><img src="/img/bVpQUB" alt="图片描述" title="图片描述"></p>
+<p><img src="/img/bVpQUC" alt="图片描述" title="图片描述"></p>
+";}i:19;a:10:{s:5:"title";s:41:"mysql中在所有表中替换特定字符";s:4:"link";s:42:"http://segmentfault.com/q/1010000003604907";s:2:"id";s:42:"http://segmentfault.com/q/1010000003604907";s:7:"updated";s:25:"2015-08-30T15:17:57+08:00";s:9:"published";s:25:"2015-08-30T15:17:57+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:8:"hehanlin";s:10:"author_uri";s:34:"http://segmentfault.com/u/hehanlin";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:296:"
+<h3>现在公司做了数据库迁移，迁移完成后，一些图片的链接失效了，数据库中的图片链接还是原来的，并且在一百多张表中，请问：</h3>
+<h1>有没有什么好的办法可以把这一百多张表中的这个链接a全部替换成b。谢谢了！</h1>
+";}i:20;a:10:{s:5:"title";s:32:"ios sdk 上传到95%就停止了";s:4:"link";s:42:"http://segmentfault.com/q/1010000003729832";s:2:"id";s:42:"http://segmentfault.com/q/1010000003729832";s:7:"updated";s:25:"2015-09-10T10:07:24+08:00";s:9:"published";s:25:"2015-09-10T10:07:24+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:5:"feidy";s:10:"author_uri";s:31:"http://segmentfault.com/u/feidy";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:173:"<p>上传28M的文件，上传到95%的时候就停止了！<br>文件是经过加密的视频文件，mov格式！<br>测试过2M左右的加密文件，上传正常！</p>";}i:21;a:10:{s:5:"title";s:35:"iOS图片上传时如何获取token";s:4:"link";s:42:"http://segmentfault.com/q/1010000003727393";s:2:"id";s:42:"http://segmentfault.com/q/1010000003727393";s:7:"updated";s:25:"2015-09-09T17:22:46+08:00";s:9:"published";s:25:"2015-09-09T17:22:46+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:7:"lijiaxu";s:10:"author_uri";s:33:"http://segmentfault.com/u/lijiaxu";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:469:"
+<p>目的是上传一个图片到七牛云存储上自定义的一个空间中,但是用iOS SDK中的上传方法需要一个token值;<br>我参照相关文档,解释是:token是从业务服务器端获取,请问在xCode中具体怎么实现从七牛云的业务服务器获取一个token;<br>本人小白一个请多多指教耐心帮忙,谢谢了!</p>
+<p>*最好不要给我发七牛的文档连接了!我照文档的方式没搞出来,才来找大家帮忙的!</p>
+";}i:22;a:10:{s:5:"title";s:25:"context是什么意思？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003739118";s:2:"id";s:42:"http://segmentfault.com/q/1010000003739118";s:7:"updated";s:25:"2015-09-12T13:54:07+08:00";s:9:"published";s:25:"2015-09-12T13:54:07+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:11:"花满楼Ys";s:10:"author_uri";s:33:"http://segmentfault.com/u/huiziys";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:133:"
+<p><img src="/img/bVpQSv" alt="图片描述" title="图片描述"></p>
+<p>不太懂mcontext在代码中的作用，求指教。</p>
+";}i:23;a:10:{s:5:"title";s:78:"hexo无法上传到github  试了各种办法依然无法成功，小白求助";s:4:"link";s:42:"http://segmentfault.com/q/1010000003734223";s:2:"id";s:42:"http://segmentfault.com/q/1010000003734223";s:7:"updated";s:25:"2015-09-11T09:11:51+08:00";s:9:"published";s:25:"2015-09-11T09:11:51+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:15:"柏林小公爵";s:10:"author_uri";s:40:"http://segmentfault.com/u/limingyang2012";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:3503:"
+<p>提示如下，本地localhost:4000是可以打开的</p>
+<p>$ hexo d<br>INFO  Deploying: git<br>INFO  Clearing .deploy folder...<br>INFO  Copying files from public folder...<br>warning: LF will be replaced by CRLF in 2015/09/10/hello-world/index.html.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in archives/2015/09/index.html.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in archives/2015/index.html.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in archives/index.html.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in css/fonts/fontawesome-webfont.svg.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in css/style.css.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in fancybox/helpers/jquery.fancybox-buttons.css.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in fancybox/helpers/jquery.fancybox-buttons.js.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in fancybox/helpers/jquery.fancybox-media.js.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in fancybox/helpers/jquery.fancybox-thumbs.css.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in fancybox/helpers/jquery.fancybox-thumbs.js.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in fancybox/jquery.fancybox.css.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in fancybox/jquery.fancybox.js.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in fancybox/jquery.fancybox.pack.js.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in index.html.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in js/script.js.<br>The file will have its original line endings in your working directory.<br>On branch master<br>nothing to commit, working directory clean<br>bash: /dev/tty: No such device or address<br>error: failed to execute prompt script (exit code 1)<br>fatal: could not read Username for '<a href="https://github.com">https://github.com</a>': No error<br>FATAL Something's wrong. Maybe you can find the solution here: <a href="http://hexo.io/docs/troubleshooting.html">http://hexo.io/docs/troubleshooting.html</a><br>Error: bash: /dev/tty: No such device or address<br>error: failed to execute prompt script (exit code 1)<br>fatal: could not read Username for '<a href="https://github.com">https://github.com</a>': No error</p>
+<pre><code>at ChildProcess.&lt;anonymous&gt; (E:\Hexo\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:42:17)
+at ChildProcess.emit (events.js:110:17)
+at maybeClose (child_process.js:1015:16)
+at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+</code></pre>
+";}i:24;a:10:{s:5:"title";s:90:"给定数组arr，长度len，求满足0&lt;=a&lt;=b&lt;len时。arr[b]-arr[a]的最大值";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738951";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738951";s:7:"updated";s:25:"2015-09-12T12:17:45+08:00";s:9:"published";s:25:"2015-09-12T12:17:45+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:19:"XX含笑饮砒霜XX";s:10:"author_uri";s:37:"http://segmentfault.com/u/lingfeng_ai";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:59:"<p>[1,2,3],3<br>这种情况下，结果是多少呢？</p>";}i:25;a:10:{s:5:"title";s:46:"python抓取图片出现无法连接的错误.";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738282";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738282";s:7:"updated";s:25:"2015-09-12T01:22:53+08:00";s:9:"published";s:25:"2015-09-12T01:22:53+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:6:"luffer";s:10:"author_uri";s:32:"http://segmentfault.com/u/luffer";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:788:"
+<p>我尝试抓取一些网站的照片</p>
+<pre><code>f = open(name+'.jpg', 'wb+')
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
+           'refer': 'http://www.meizitu.com/'}
+f.write(requests.get(url, headers=headers).content)
+f.close()
+print(time.ctime())</code></pre>
+<p>传入的url是传入的参数，前面还有一个用<code>BeautifulSoup</code>解析获得url的函数，只是抓取了三到五张的图片<code>TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。</code>我对网络知识并不了解，google的结果也没有找到很好的解决方案。希望可以找到解决方案</p>
+";}i:26;a:10:{s:5:"title";s:54:"mysql 主服务和主服务器之间可以同步吗？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003731374";s:2:"id";s:42:"http://segmentfault.com/q/1010000003731374";s:7:"updated";s:25:"2015-09-10T14:44:45+08:00";s:9:"published";s:25:"2015-09-10T14:44:45+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:14:"Jack_杨志剑";s:10:"author_uri";s:42:"http://segmentfault.com/u/jack_yangzhijian";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:272:"<p>比如现在有10台服务器，其中一台是主服务器，但是主写的压力我感觉很大，现在我要增加一台变成了11台了，我想有两台做主的，写的数据都在这两台写，但是问题就来了，怎么保证从服务器数据一致</p>";}i:27;a:10:{s:5:"title";s:162:"intellij 的代码提示，提示一个对象的方法的时候，选中，经常只自动填写这个方法而不会自动补写括号以及括号里面的参数";s:4:"link";s:42:"http://segmentfault.com/q/1010000003730377";s:2:"id";s:42:"http://segmentfault.com/q/1010000003730377";s:7:"updated";s:25:"2015-09-10T11:20:48+08:00";s:9:"published";s:25:"2015-09-10T11:20:48+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:5:"swnuv";s:10:"author_uri";s:31:"http://segmentfault.com/u/swnuv";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:169:"<p>intellij 的代码提示，提示一个对象的方法的时候，选中，经常只自动填写这个方法而不会自动补写括号以及括号里面的参数</p>";}i:28;a:10:{s:5:"title";s:88:"javascript如何在点击这个“查看”的时候让“保存”这个button失效？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003724302";s:2:"id";s:42:"http://segmentfault.com/q/1010000003724302";s:7:"updated";s:25:"2015-09-09T08:52:08+08:00";s:9:"published";s:25:"2015-09-09T08:52:08+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:5:"swnuv";s:10:"author_uri";s:31:"http://segmentfault.com/u/swnuv";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:2094:"
+<p>点击查看<br>{</p>
+<pre><code>            xtype:'gridcolumn',
+            header:'操作',
+            width:60,
+            sortable:true,
+            renderer:function (value, metadata, record, rowIndex, colIndex, store) {
+                return "&lt;div width='30' align='center'&gt;&lt;a href=javascript:edit_window(" + rowIndex + ")&gt;&lt;img src='" + _root + "/res/img/biaoji/edit.png' title='编辑'/&gt;&lt;a href=javascript:view_window(" + rowIndex + ")&gt;&lt;img src='" + _root + "/res/img/biaoji/lookup.png' title='查看'/&gt;&lt;/a&gt;&lt;/div&gt;";
+            }
+        },</code></pre>
+<p>《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《<br>跳转到<br>function view_window(){</p>
+<pre><code>var rec = sw_editorgridpanelUiIns.getSelectionModel().getSelected();
+windowUiIns = new windowUi();
+windowUiIns.show();
+Ext.getCmp('dbid').setValue(rec.get('dbid'));
+Ext.getCmp('code').setValue(rec.get('code'));
+Ext.getCmp('name').setValue(rec.get('name'));
+Ext.getCmp('count_student').setValue(rec.get('count_student'));
+Ext.getCmp('teacher_name').setValue(rec.get('teacher_name'));
+Ext.getCmp('staff_name').setValue(rec.get('staff_name'));
+Ext.getCmp('create_date').setValue(rec.get('create_date'));
+setReadOnlyWithCss(['code', 'name', 'count_student', 'teacher_name'],true)</code></pre>
+<p>}<br>《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《《<br>button<br>this.tbar={</p>
+<pre><code>        xtype:'toolbar',
+        items:[
+            '|',
+            {
+                xtype:'button',
+                text:'保存',
+                iconCls:'save',
+                handler:function (){
+                    win_save();
+                }
+            }, '|',
+            {
+                xtype:'button',
+                text:'关闭',
+                iconCls:'close',
+                handler:function (){
+                    windowUiIns.close();
+                }
+            }, '|'
+        ]
+    };</code></pre>
+";}i:29;a:10:{s:5:"title";s:44:"怎样在 jekyll 中放静态 html 文件？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738429";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738429";s:7:"updated";s:25:"2015-09-12T08:37:43+08:00";s:9:"published";s:25:"2015-09-12T08:37:43+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:8:"honger05";s:10:"author_uri";s:34:"http://segmentfault.com/u/honger05";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:450:"
+<p>如题，jekyll 可以将 <code>_posts</code> 里的 .md 文件编译成 <code>_site</code> 里的 html 文件。使用 markdown 就能轻松写 博客。</p>
+<p>但是我现在想在里面加个链接，可以放我自己写的 静态 html 文件，主要是想，展示一些效果页面。</p>
+<p>有什么比较好的方式，或官方推荐的方式吗？</p>
+<ul><li><p>注：我用的  Jekyll Bootstrap and Twitter Bootstrap</p></li></ul>
+";}i:30;a:10:{s:5:"title";s:29:"iOS XML 如何进行解析？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003736482";s:2:"id";s:42:"http://segmentfault.com/q/1010000003736482";s:7:"updated";s:25:"2015-09-11T16:34:32+08:00";s:9:"published";s:25:"2015-09-11T16:34:32+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:6:"suyiya";s:10:"author_uri";s:32:"http://segmentfault.com/u/suyiya";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:146:"
+<p><img src="/img/bVpPGp" alt="图片描述" title="图片描述"></p>
+<p>请问这个xml怎么解析？？就是不知道怎么装入字典</p>
+";}i:31;a:10:{s:5:"title";s:73:"火狐打开有些带flash的页面很卡,有些不会?这是怎么回事";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738914";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738914";s:7:"updated";s:25:"2015-09-12T11:54:59+08:00";s:9:"published";s:25:"2015-09-12T11:54:59+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:8:"Recoding";s:10:"author_uri";s:34:"http://segmentfault.com/u/Recoding";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:340:"<p>最近在做discuz与其他网站的整合工作,其中有个api方法是生成一个object标签,内嵌flash,返回到页面以供修改头像.但是发现在火狐浏览器中这个flash非常的卡,于是我用火狐浏览器登入本地的discuz去修改头像,同样的flash,但是discuz的却一点都不卡,请问怎么回事?</p>";}i:32;a:10:{s:5:"title";s:28:"MySQL中的for update nowait";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738900";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738900";s:7:"updated";s:25:"2015-09-12T11:47:45+08:00";s:9:"published";s:25:"2015-09-12T11:47:45+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:8:"gm100861";s:10:"author_uri";s:34:"http://segmentfault.com/u/gm100861";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:713:"
+<p>MySQL中是不是不支持nowait,有如下语句</p>
+<pre><code>select * from table_name for update nowait;</code></pre>
+<p>执行完报错,语法错误</p>
+<pre><code>mysql&gt; select * from t_needs_word where word_type="N" for update nowait;
+1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'nowait' at line 1</code></pre>
+<p>这个有什么解决方案吗? 还有MySQL如果我默认使用InnoDB引擎,一个表中如果没有主键,是不是就不支持行锁了,而变成了表锁.我测试下来,是这样的.<br>如果MySQL不支持nowait的话,有没有什么替代的方案,求大神告知,感激不劲.</p>
+";}i:33;a:10:{s:5:"title";s:37:"c盘里的这些东西是干嘛的？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003737687";s:2:"id";s:42:"http://segmentfault.com/q/1010000003737687";s:7:"updated";s:25:"2015-09-11T21:09:17+08:00";s:9:"published";s:25:"2015-09-11T21:09:17+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:5:"swnuv";s:10:"author_uri";s:31:"http://segmentfault.com/u/swnuv";s:2:"re";a:1:{s:4:"rank";s:2:"-2";}s:7:"summary";s:70:"<p><img src="/img/bVpQvq" alt="图片描述" title="图片描述"></p>";}i:34;a:10:{s:5:"title";s:42:"如何查找和替换这段文本？？？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738800";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738800";s:7:"updated";s:25:"2015-09-12T11:14:50+08:00";s:9:"published";s:25:"2015-09-12T11:14:50+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:6:"呼氪";s:10:"author_uri";s:31:"http://segmentfault.com/u/hookr";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:707:"
+<p>有一段程序中有如下格式的文本：<br>QSTR("XXXX");比如下面文本：</p>
+<p>QSTR("时 间")<br>QSTR("密 码")<br>QSTR("轮 径")<br>QSTR("车 号")<br>QSTR("测试")<br>QSTR("加速度测试")</p>
+<p>**我想把他们替换成这种格式：<br>QSTR(tr("XXXX"));比如上面的文本替换成如下：**</p>
+<p>{QSTR(tr("设 定："))<br>{QSTR(tr("时 间"))<br>{QSTR(tr("密 码"))<br>{QSTR(tr("轮 径"))<br>{QSTR(tr("车 号"))<br>{QSTR(tr("测试"))<br>{QSTR(tr("加速度测试"))</p>
+<p>我自己写了个正则表达式，可以匹配QSTR("XXXX")，但是如果替换的话，中间的汉字也就替换成相同内容了。那么大家有没有办法解决这个问题？？</p>
+";}i:35;a:10:{s:5:"title";s:24:"关于引用计数问题";s:4:"link";s:42:"http://segmentfault.com/q/1010000003735279";s:2:"id";s:42:"http://segmentfault.com/q/1010000003735279";s:7:"updated";s:25:"2015-09-11T12:02:06+08:00";s:9:"published";s:25:"2015-09-11T12:02:06+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:7:"DayLily";s:10:"author_uri";s:33:"http://segmentfault.com/u/daylily";s:2:"re";a:1:{s:4:"rank";s:1:"2";}s:7:"summary";s:414:"
+<pre><code>@interface ViewController ()
+
+@property ( strong , nonatomic ) WeakView * weakView;
+
+@end
+
+
+
+    WeakView * view = [[WeakView alloc]init];
+    [self.view addSubview:view];
+    self.weakView = view;
+    NSLog(@"count: --- %ld",CFGetRetainCount((__bridge CFTypeRef)_weakView));
+    NSLog(@"count: --- %ld",CFGetRetainCount((__bridge CFTypeRef)self.weakView));</code></pre>
+<p>为什么打印是3和4</p>
+";}i:36;a:10:{s:5:"title";s:33:"有什么网址可以访问google";s:4:"link";s:42:"http://segmentfault.com/q/1010000003737196";s:2:"id";s:42:"http://segmentfault.com/q/1010000003737196";s:7:"updated";s:25:"2015-09-11T18:31:49+08:00";s:9:"published";s:25:"2015-09-11T18:31:49+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:8:"xumenger";s:10:"author_uri";s:34:"http://segmentfault.com/u/xumenger";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:110:"
+<p>说实话，百度太垃圾。</p>
+<p>有没有什么网址可以访问到google？分享一下呗！</p>
+";}i:37;a:10:{s:5:"title";s:34:"怎么给sidebar加个日历效果";s:4:"link";s:42:"http://segmentfault.com/q/1010000003733860";s:2:"id";s:42:"http://segmentfault.com/q/1010000003733860";s:7:"updated";s:25:"2015-09-11T01:02:06+08:00";s:9:"published";s:25:"2015-09-11T01:02:06+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:6:"rockts";s:10:"author_uri";s:32:"http://segmentfault.com/u/rockts";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:696:"<p>正在开发一个网站，因为有活动栏目的需求。<br>所以想在活动页面的边栏加个日历<br>这个怎么做？<br>今天在群里问，好多人给我推荐<br><a href="http://www.bootcss.com/p/bootstrap-datetimepicker/">http://www.bootcss.com/p/bootstrap-datetimepicker/</a><br>可能没人明白需要或者我对这个东西不熟悉的原因吧<br>因为网站现在只是前端开发阶段，我现在只要能显示出一个日历效果就好。<br>最好是bootstrap 支持的，前面看 wordpress 视频的时候有节课说的WP一个活动的插件。<br>网站活动的功能大概就这样。但现在只能能显示日历就好，暂时不考虑功能。</p>";}i:38;a:10:{s:5:"title";s:45:"语义匹配（自动匹配相关的信息）";s:4:"link";s:42:"http://segmentfault.com/q/1010000003737983";s:2:"id";s:42:"http://segmentfault.com/q/1010000003737983";s:7:"updated";s:25:"2015-09-11T23:00:08+08:00";s:9:"published";s:25:"2015-09-11T23:00:08+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:7:"jack_xu";s:10:"author_uri";s:32:"http://segmentfault.com/u/jackxu";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:374:"<p>最近需要做一个自动化的脚本， 基本上功能就是用某个网站上提供的API，倒入内容到公司的内部系统。 中间有一个问题的是，我们的系统想自动给这些内容分类。 不知道能不能通过算法在得到数据以后分析数据里面的描述关键字， 然后在我们的系统里面找到最佳匹配的分类。</p>";}i:39;a:10:{s:5:"title";s:54:"android studio 查看一个方法在哪里被调用过";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738715";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738715";s:7:"updated";s:25:"2015-09-12T10:43:19+08:00";s:9:"published";s:25:"2015-09-12T10:43:19+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:9:"薄炳鑫";s:10:"author_uri";s:35:"http://segmentfault.com/u/bobingxin";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:70:"<p>想查看一个在一个工程的哪里调用过这个方法。</p>";}i:40;a:10:{s:5:"title";s:51:"新手PHP代码问题，求解关于simple_html_dom";s:4:"link";s:42:"http://segmentfault.com/q/1010000003722315";s:2:"id";s:42:"http://segmentfault.com/q/1010000003722315";s:7:"updated";s:25:"2015-09-08T18:30:46+08:00";s:9:"published";s:25:"2015-09-08T18:30:46+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:13:"网站LOADING";s:10:"author_uri";s:33:"http://segmentfault.com/u/loading";s:2:"re";a:1:{s:4:"rank";s:2:"-1";}s:7:"summary";s:1151:"
+<p>入门PHP中，不知道为什么循环读取数据无法实现，始终是重复读取同一个页面的数据，高手给指点一下，始终没招到代码的问题。</p>
+<pre><code>
+&lt;?php
+header("Content-type: text/html; charset=utf-8"); 
+include('simple_html_dom.php');
+echo '&lt;ul class="postlist"&gt;';
+for($page = 1;$page &lt; 5;$page++){
+    $url = 'http://www.chinaz.com/game/lol/'.$page.'.shtml';
+    $html = file_get_html($url);
+    $i = 0;
+    foreach($html-&gt;find('.lolcatlist li') as $e){
+        $item['url'] = $e-&gt;find('a',0)-&gt;href;
+        $item['title'] = $e-&gt;find('h3',0)-&gt;plaintext;
+        @$item['img'] = $e-&gt;find('img',0)-&gt;src;
+        $articles[] = $item;
+            if(!empty($articles[$i]['img'])){
+            echo '&lt;li&gt;&lt;a href="'.$articles[$i]['url'].'"&gt;&lt;img width="180" height="135" src="'.$articles[$i]['img'].'" alt="'.$articles[$i]['title'].'"&gt;&lt;/a&gt;&lt;/li&gt;';
+            }
+        $i++;
+    }
+}
+echo '&lt;/ul&gt;';
+?&gt;
+&lt;style&gt;
+.postlist{
+    list-style:none;
+}
+.postlist li{padding:20px;border:1px solid #ddd;float:left;}
+&lt;/style&gt;
+ </code></pre>
+";}i:41;a:10:{s:5:"title";s:62:"apache下运行php文件没有反应，打印 infophp() 正常";s:4:"link";s:42:"http://segmentfault.com/q/1010000003737094";s:2:"id";s:42:"http://segmentfault.com/q/1010000003737094";s:7:"updated";s:25:"2015-09-11T18:09:08+08:00";s:9:"published";s:25:"2015-09-11T18:09:08+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:5:"oop_z";s:10:"author_uri";s:34:"http://segmentfault.com/u/onmylive";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:376:"
+<p>我把php放到apache下配置好运行参数了，也能打印出来</p>
+<p>在html里面加<code>&lt;?php infophp()?&gt;</code>也能显示，但过了一下再运行php文件的时候又没反应了，但打印html里的<code>&lt;?php infophp()?&gt;</code>是可以显示的,这是怎么回事</p>
+<p><img src="/img/bVpQlL" alt="图片描述" title="图片描述"></p>
+";}i:42;a:10:{s:5:"title";s:73:"ECshop微信支付 微信前台已经支付成功，后台还是未支付";s:4:"link";s:42:"http://segmentfault.com/q/1010000002706014";s:2:"id";s:42:"http://segmentfault.com/q/1010000002706014";s:7:"updated";s:25:"2015-04-24T17:58:44+08:00";s:9:"published";s:25:"2015-04-24T17:58:44+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:18:"触碰不及的光";s:10:"author_uri";s:44:"http://segmentfault.com/u/chupengbujideguang";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:151:"
+<p>ECshop微信支付 微信前台已经支付成功 但是数据库表记录的状态还是未支付 导致后台看 全是未支付，求救啊</p>
+";}i:43;a:10:{s:5:"title";s:53:"React safari textarea 无法输入 不是约束表单";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738645";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738645";s:7:"updated";s:25:"2015-09-12T10:03:31+08:00";s:9:"published";s:25:"2015-09-12T10:03:31+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:21:"蚝油牛肉盖浇饭";s:10:"author_uri";s:36:"http://segmentfault.com/u/lishengzxc";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:854:"
+<pre><code>&lt;form onSubmit={this.addTeamList}&gt;
+        &lt;div className={cx(styles.group)}&gt;
+          &lt;div className={cx(styles.babel, styles.male)}&gt;男生&lt;/div&gt;
+          &lt;textarea className={styles.textarea} placeholder="某 某 某" ref='maleValue' defaultValue={maleStr}&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;div className={cx(styles.babel, styles.female)}&gt;女生&lt;/div&gt;
+          &lt;textarea className={styles.textarea} placeholder="某 某 某" ref='femaleValue' defaultValue={femaleStr}&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;button className={styles.button}&gt;&lt;i className="fa fa-check"&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;/form&gt;</code></pre>
+<p>这样的jsx，不是约束表单，但是在safari中，textarea无法输入，不知道为什么</p>
+";}i:44;a:10:{s:5:"title";s:40:"title='&lt;%= str %&gt;' 是什么东东";s:4:"link";s:42:"http://segmentfault.com/q/1010000003736744";s:2:"id";s:42:"http://segmentfault.com/q/1010000003736744";s:7:"updated";s:25:"2015-09-11T17:18:12+08:00";s:9:"published";s:25:"2015-09-11T17:18:12+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:12:"codecompiler";s:10:"author_uri";s:38:"http://segmentfault.com/u/codecompiler";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:135:"<p>大家好，angularjs里面的这个符号代表什么意思，类似于java里面的标签，有人可以帮我解释一下不.</p>";}i:45;a:10:{s:5:"title";s:31:"关于Struts2框架的优缺点";s:4:"link";s:42:"http://segmentfault.com/q/1010000003736511";s:2:"id";s:42:"http://segmentfault.com/q/1010000003736511";s:7:"updated";s:25:"2015-09-11T16:39:45+08:00";s:9:"published";s:25:"2015-09-11T16:39:45+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:6:"洪旭";s:10:"author_uri";s:31:"http://segmentfault.com/u/10086";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:167:"<p>最近学习Struts2.x框架，顿时感觉到这个框架的厚重感，请教一下Struts2在实际项目中有哪些应用领域？他的优缺点是什么？</p>";}i:46;a:10:{s:5:"title";s:33:"web前端学习路线，求指导";s:4:"link";s:42:"http://segmentfault.com/q/1010000003738543";s:2:"id";s:42:"http://segmentfault.com/q/1010000003738543";s:7:"updated";s:25:"2015-09-12T09:13:34+08:00";s:9:"published";s:25:"2015-09-12T09:13:34+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:9:"嘻倪孢";s:10:"author_uri";s:31:"http://segmentfault.com/u/xybao";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:897:"<p>我的基本情况：<br>我现在学会了html5，css3，javascript。大概自学了4个月。现在实习了一个月。<br>js框架就学了一点点dojo框架的核心库。其他的dijit，dojox没有学。<br>jq的库没有学习，导致看不懂jq的代码。但是我们公司开发不用jq。但是现在很多人都有jq，要不要学它？<br>html5里的，canvas，svg都只能，简单用一些api。自己无法独立的画出复杂的图像。<br>css3的transform。也只能简单的运用。像3d图像的一些算法什么，基本不会。<br>js基本用法会用。但是关于它的面向对象编程，始终无法入门，他的继承，封装。面向对象的一些东西，不是很懂。<br>然后我现在又想学nodejs了。<br>我到底是应该吧基础巩固了来。还是把nodejs，数据库学了来。回头再来慢慢，打基础，巩固经验？</p>";}i:47;a:10:{s:5:"title";s:65:"iOS 关于网络请求超时和重试机制,应该怎么去设计";s:4:"link";s:42:"http://segmentfault.com/q/1010000003735286";s:2:"id";s:42:"http://segmentfault.com/q/1010000003735286";s:7:"updated";s:25:"2015-09-11T12:03:24+08:00";s:9:"published";s:25:"2015-09-11T12:03:24+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:7:"a958150";s:10:"author_uri";s:33:"http://segmentfault.com/u/a958150";s:2:"re";a:1:{s:4:"rank";s:1:"1";}s:7:"summary";s:204:"<p>RT,这是网上看到的一个面试题，我只会用AFN设置请求超时，重试就是在请求失败block里再去请求一遍，总感觉这样好蠢，想知道有没更好的方式去实现</p>";}i:48;a:10:{s:5:"title";s:48:"自定义tabBar，点击不能变换select状态";s:4:"link";s:42:"http://segmentfault.com/q/1010000003736426";s:2:"id";s:42:"http://segmentfault.com/q/1010000003736426";s:7:"updated";s:25:"2015-09-11T16:27:10+08:00";s:9:"published";s:25:"2015-09-11T16:27:10+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:6:"suyiya";s:10:"author_uri";s:32:"http://segmentfault.com/u/suyiya";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:316:"
+<p><img src="/img/bVpQaZ" alt="图片描述" title="图片描述"></p>
+<p>自定义了一个tabBar，用的xib，normal和select状态都选好了图片，首页默认select，运行时候，点其他tabBarItem，页面是变换的，tabBarItem的select状态背景图片没有出现，请问是什么原因？</p>
+";}i:49;a:10:{s:5:"title";s:64:"Firefox 字号相对IE、Chrome更大，如何在CSS中统一？";s:4:"link";s:42:"http://segmentfault.com/q/1010000003736096";s:2:"id";s:42:"http://segmentfault.com/q/1010000003736096";s:7:"updated";s:25:"2015-09-11T15:21:18+08:00";s:9:"published";s:25:"2015-09-11T15:21:18+08:00";s:6:"author";s:3:"
+
+
+";s:11:"author_name";s:4:"k9it";s:10:"author_uri";s:30:"http://segmentfault.com/u/k9it";s:2:"re";a:1:{s:4:"rank";s:1:"0";}s:7:"summary";s:206:"<p>网页在IE、Chrome下的字号表现一致，但在Firefox下的字号更大。将Firefox页面缩放到80%时，其字号与在IE、Chrome下的字号的才差不多。<br>请教，如何解决？</p>";}}s:7:"channel";a:6:{s:5:"title";s:28:"SegmentFault 最新的问题";s:7:"updated";s:25:"2015-09-12T16:44:50+08:00";s:4:"link";s:23:"http://segmentfault.com";s:9:"link_self";s:39:"http://segmentfault.com/feeds/questions";s:2:"id";s:39:"http://segmentfault.com/feeds/questions";s:15:"creativecommons";a:1:{s:7:"license";s:53:"http://www.creativecommons.org/licenses/by-sa/2.5/rdf";}}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;}

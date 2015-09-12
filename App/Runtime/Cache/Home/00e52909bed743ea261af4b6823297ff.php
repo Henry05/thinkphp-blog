@@ -49,6 +49,7 @@ $(".nav-btn").click(function(){
         <ul>
             <li ><a href="/Blog">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+             <li ><a href="/Blog/Index/feedplus">Feed+</a></li>
              <li ><a href="/Blog/message">留言</a></li>
             <li ><a href="/Blog/me" target="_blank">关于我</a></li>
         </ul></nav>
@@ -77,11 +78,11 @@ $(".nav-btn").click(function(){
         <div class="lastlist">
             <?php if(is_array($last)): foreach($last as $key=>$v): ?><div class="alist"  >
                 <div class="alist-icon" >
-                   <a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"> <img src="/Blog/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
+                    <a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"> <img src="/Blog/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
                 </div>
                 <div class="alist-con">
                     <div  class="alist-title">
-                         <a href="/Blog/article/<?php echo ($v["a_id"]); ?>.html">
+                        <a href="/Blog/article/<?php echo ($v["a_id"]); ?>.html">
                         <span>[<?php echo ($v["a_time"]); ?>]</span>
                         <h3 ><?php echo ($v["a_title"]); ?></h3>
                     </a></div>
@@ -90,15 +91,14 @@ $(".nav-btn").click(function(){
             </div><?php endforeach; endif; ?>
         </div>
         <!-- 最热 -->
-
         <div class="hotlist">
             <?php if(is_array($hot)): foreach($hot as $key=>$v): ?><div class="alist">
-                 <div class="alist-icon" >
-                   <a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"> <img src="/Blog/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
+                <div class="alist-icon" >
+                    <a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"> <img src="/Blog/Public/Home/IMG/<?php echo ($v["c_value"]); ?>.png"></a>
                 </div>
                 <div class="alist-con" >
-                     <div  class="alist-title">
-                         <a href="/Blog/article/<?php echo ($v["a_id"]); ?>.html">
+                    <div  class="alist-title">
+                        <a href="/Blog/article/<?php echo ($v["a_id"]); ?>.html">
                         <span>[<?php echo ($v["a_time"]); ?>]</span>
                         <h3 ><?php echo ($v["a_title"]); ?></h3>
                     </a></div>
@@ -106,16 +106,28 @@ $(".nav-btn").click(function(){
                 </div>
             </div><?php endforeach; endif; ?>
         </div>
-        <div class="lastShow next-show">
+        <!-- Feedplus -->
+         <?php if(is_array($rss)): foreach($rss as $key=>$v): ?><div class="alist rss">
+               <!--  <div class="alist-icon " >
+                    <a href="<?php echo ($v["f_link"]); ?>" title="来自:<?php echo ($v["f_host"]); ?>" target="_blank"> <img src="<?php echo ($v["f_logo"]); ?>" ></a>
+                </div> -->
+                <div class="alist-con" >
+                    <div  class="alist-title">
+                        <a href="<?php echo ($v["f_link"]); ?>" title="来自:<?php echo ($v["f_host"]); ?>" target="_blank">
+                        <span id="rss-time">[<?php echo ($v["f_time"]); ?>]</span>
+                        <h3 ><?php echo ($v["f_title"]); ?></h3>
+                    </a></div>
+                   
+                </div>
+            </div><?php endforeach; endif; ?>
+            <!-- more -->
+<!--         <div class="lastShow next-show">
             <span class="more-icon "></span>
         </div>
-        <div class="hotShow next-show">            
+        <div class="hotShow next-show">
             <span class="more-icon"></span>
-        </div>
-       
+        </div> -->
     </div>
-
-
 <ul class="show">  </ul>
 <footer class="footer">
     <div class="footer-con">
@@ -128,44 +140,38 @@ $(".nav-btn").click(function(){
 </body>
 <div style="display:none">
 	<a href="http://www.zzidc.com">  title="景安网络" /></a>
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?c45eb0f0bbd3349f5c85f1afc603bb1f";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
+	// <script>
+	// var _hmt = _hmt || [];
+	// (function() {
+	//   var hm = document.createElement("script");
+	//   hm.src = "//hm.baidu.com/hm.js?c45eb0f0bbd3349f5c85f1afc603bb1f";
+	//   var s = document.getElementsByTagName("script")[0]; 
+	//   s.parentNode.insertBefore(hm, s);
+	// })();
+	// </script>
 </div>
 
 </html>
-
 <script type="text/javascript">
     //简要渐入效果
     $(function(){
-
     $(".ban-pic").animate(
         {left:'0px',opacity:'1'},600);
     });
     $('.ban-slogan').fadeIn(2000);
-
     $("#hot").click(function(){
     $(this).removeClass("off").addClass("on");
     $("#last").removeClass("on").addClass("off");
     $(".lastlist").css("display","none");
     $(".hotlist").css("display","block");
-
     $(".lastShow").css("display","none");
     $(".hotShow").css("display","block");
     });
-
     $("#last").click(function(){
     $(this).removeClass("off").addClass("on");
     $("#hot").removeClass("on").addClass("off");
     $(".hotlist").css("display","none");
     $(".lastlist").css("display","block");
-
     $(".lastShow").css("display","block");
     $(".hotShow").css("display","none");
     });
@@ -173,36 +179,34 @@ $(function(){
         var lastnum=0;
         var hotnum=0;
         function ajaxshow(start,list,show){
-         $.ajax({
+        $.ajax({
                     type:'get',
                     cache:false,
                     data:num,
                     url: "/Blog/index.php/Home/Index/return_list/?c_value=<?php echo ($c_value); ?>",
                     success: function(msg){
-                     list.append(msg);},
+                    list.append(msg);},
                     beforeSend: function(){
                     show.addClass("onload");
                     },
                     complete: function(){
-                     show.removeClass("onload");
-
+                    show.removeClass("onload");
                     },
                 });
         }
         $(".lastShow").bind("click",function(){
-               lastnum+=10;
-               num='firstnum='+lastnum;
-               var list=$(".lastlist");
-               var show = $(".lastShow span");
-               ajaxshow(lastnum,list,show) ;
-         });
+            lastnum+=10;
+            num='firstnum='+lastnum;
+            var list=$(".lastlist");
+            var show = $(".lastShow span");
+            ajaxshow(lastnum,list,show) ;
+        });
             $(".hotShow").bind("click",function(){
-               hotnum+=10;
-               num='hotnum='+hotnum;
-               var list=$(".hotlist");
-               var show = $(".hotShow span");
-               ajaxshow(hotnum,list,show) ;
-          });
+            hotnum+=10;
+            num='hotnum='+hotnum;
+            var list=$(".hotlist");
+            var show = $(".hotShow span");
+            ajaxshow(hotnum,list,show) ;
+        });
 });
-
 </script>

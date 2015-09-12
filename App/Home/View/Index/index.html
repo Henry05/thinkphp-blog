@@ -38,11 +38,11 @@
             <foreach name='last' item='v'>
             <div class="alist"  >
                 <div class="alist-icon" >
-                   <a href="__ROOT__/topic/{$v.c_value}"> <img src="__PUBLIC__/Home/IMG/{$v.c_value}.png"></a>
+                    <a href="__ROOT__/topic/{$v.c_value}"> <img src="__PUBLIC__/Home/IMG/{$v.c_value}.png"></a>
                 </div>
                 <div class="alist-con">
                     <div  class="alist-title">
-                         <a href="__ROOT__/article/{$v.a_id}.html">
+                        <a href="__ROOT__/article/{$v.a_id}.html">
                         <span>[{$v.a_time}]</span>
                         <h3 >{$v.a_title}</h3>
                     </a></div>
@@ -52,16 +52,15 @@
             </foreach>
         </div>
         <!-- 最热 -->
-
         <div class="hotlist">
             <foreach name='hot' item='v'>
             <div class="alist">
-                 <div class="alist-icon" >
-                   <a href="__ROOT__/topic/{$v.c_value}"> <img src="__PUBLIC__/Home/IMG/{$v.c_value}.png"></a>
+                <div class="alist-icon" >
+                    <a href="__ROOT__/topic/{$v.c_value}"> <img src="__PUBLIC__/Home/IMG/{$v.c_value}.png"></a>
                 </div>
                 <div class="alist-con" >
-                     <div  class="alist-title">
-                         <a href="__ROOT__/article/{$v.a_id}.html">
+                    <div  class="alist-title">
+                        <a href="__ROOT__/article/{$v.a_id}.html">
                         <span>[{$v.a_time}]</span>
                         <h3 >{$v.a_title}</h3>
                     </a></div>
@@ -70,44 +69,52 @@
             </div>
             </foreach>
         </div>
-        <div class="lastShow next-show">
+        <!-- Feedplus -->
+         <foreach name='rss' item='v'>
+            <div class="alist rss">
+               <!--  <div class="alist-icon " >
+                    <a href="{$v.f_link}" title="来自:{$v.f_host}" target="_blank"> <img src="{$v.f_logo}" ></a>
+                </div> -->
+                <div class="alist-con" >
+                    <div  class="alist-title">
+                        <a href="{$v.f_link}" title="来自:{$v.f_host}" target="_blank">
+                        <span id="rss-time">[{$v.f_time}]</span>
+                        <h3 >{$v.f_title}</h3>
+                    </a></div>
+                   
+                </div>
+            </div>
+            </foreach>
+            <!-- more -->
+<!--         <div class="lastShow next-show">
             <span class="more-icon "></span>
         </div>
-        <div class="hotShow next-show">            
+        <div class="hotShow next-show">
             <span class="more-icon"></span>
-        </div>
-       
+        </div> -->
     </div>
-
-
 <ul class="show">  </ul>
 <include file="Public:footer"/>
-
 <script type="text/javascript">
     //简要渐入效果
     $(function(){
-
     $(".ban-pic").animate(
         {left:'0px',opacity:'1'},600);
     });
     $('.ban-slogan').fadeIn(2000);
-
     $("#hot").click(function(){
     $(this).removeClass("off").addClass("on");
     $("#last").removeClass("on").addClass("off");
     $(".lastlist").css("display","none");
     $(".hotlist").css("display","block");
-
     $(".lastShow").css("display","none");
     $(".hotShow").css("display","block");
     });
-
     $("#last").click(function(){
     $(this).removeClass("off").addClass("on");
     $("#hot").removeClass("on").addClass("off");
     $(".hotlist").css("display","none");
     $(".lastlist").css("display","block");
-
     $(".lastShow").css("display","block");
     $(".hotShow").css("display","none");
     });
@@ -115,36 +122,34 @@ $(function(){
         var lastnum=0;
         var hotnum=0;
         function ajaxshow(start,list,show){
-         $.ajax({
+        $.ajax({
                     type:'get',
                     cache:false,
                     data:num,
                     url: "__URL__/return_list/?c_value={$c_value}",
                     success: function(msg){
-                     list.append(msg);},
+                    list.append(msg);},
                     beforeSend: function(){
                     show.addClass("onload");
                     },
                     complete: function(){
-                     show.removeClass("onload");
-
+                    show.removeClass("onload");
                     },
                 });
         }
         $(".lastShow").bind("click",function(){
-               lastnum+=10;
-               num='firstnum='+lastnum;
-               var list=$(".lastlist");
-               var show = $(".lastShow span");
-               ajaxshow(lastnum,list,show) ;
-         });
+            lastnum+=10;
+            num='firstnum='+lastnum;
+            var list=$(".lastlist");
+            var show = $(".lastShow span");
+            ajaxshow(lastnum,list,show) ;
+        });
             $(".hotShow").bind("click",function(){
-               hotnum+=10;
-               num='hotnum='+hotnum;
-               var list=$(".hotlist");
-               var show = $(".hotShow span");
-               ajaxshow(hotnum,list,show) ;
-          });
+            hotnum+=10;
+            num='hotnum='+hotnum;
+            var list=$(".hotlist");
+            var show = $(".hotShow span");
+            ajaxshow(hotnum,list,show) ;
+        });
 });
-
 </script>

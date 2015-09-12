@@ -1,0 +1,569 @@
+O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:20:{i:0;a:8:{s:5:"title";s:42:"为何电商新人应该先去BAT镀金？";s:4:"link";s:24:"http://div.io/topic/1326";s:4:"guid";s:24:"http://div.io/topic/1326";s:7:"content";a:1:{s:7:"encoded";s:1467:"四年前，作为一个本科应届毕业生步入社会。起初，只是觉得应该只是从一所大学进入另一所大学，没有什么区别。然而，经历了职场的竞争，工作的压力，商战的尔虞我诈，渐渐意识到现实社会的残酷，不再是那单纯的校园。
+
+四年的工作经历，呆过大企业，进过小公司。切身体会到过，工作方式，开发模式，时间及项目管理上的各种差异。独立完成过大、小项目，也见过别人开发的各种项目，才渐渐意识到为何民间流传着这样的说法：初入职场的ITer应该去BAT“镀层金”！当然这里的“BAT”应该只是成熟互联网企业的代名词而已。
+
+当时，虽然我也对大家的观点表示认同，但我不得不承认我的理解其实有歪曲的成分，或者说不到位。我单纯的以为，进入大公司仅仅是为了提升名气和个人影响力，在之后的职位选择和竞争中拥有比别人更优越的，更亮丽的过去，更容易被竞争公司或小企业重视。然而，如今才渐渐意识到这样的理解着实肤浅。
+
+诚然，有过在大公司工作经历的人，或者有过大型项目维护开发的人，在职场竞争中确实会有更大的优势，也更容易获得自己梦寐以求的机会。但这只是比别人多了一个获得面试机会的砝码，因为你的履历别别人的更加吸引HR或用人部门负责人的眼球，这...";}s:2:"dc";a:1:{s:7:"creator";s:7:"MrZheng";}s:7:"pubdate";s:31:"Thu, 10 Sep 2015 16:34:31 +0800";s:12:"atom_content";s:1467:"四年前，作为一个本科应届毕业生步入社会。起初，只是觉得应该只是从一所大学进入另一所大学，没有什么区别。然而，经历了职场的竞争，工作的压力，商战的尔虞我诈，渐渐意识到现实社会的残酷，不再是那单纯的校园。
+
+四年的工作经历，呆过大企业，进过小公司。切身体会到过，工作方式，开发模式，时间及项目管理上的各种差异。独立完成过大、小项目，也见过别人开发的各种项目，才渐渐意识到为何民间流传着这样的说法：初入职场的ITer应该去BAT“镀层金”！当然这里的“BAT”应该只是成熟互联网企业的代名词而已。
+
+当时，虽然我也对大家的观点表示认同，但我不得不承认我的理解其实有歪曲的成分，或者说不到位。我单纯的以为，进入大公司仅仅是为了提升名气和个人影响力，在之后的职位选择和竞争中拥有比别人更优越的，更亮丽的过去，更容易被竞争公司或小企业重视。然而，如今才渐渐意识到这样的理解着实肤浅。
+
+诚然，有过在大公司工作经历的人，或者有过大型项目维护开发的人，在职场竞争中确实会有更大的优势，也更容易获得自己梦寐以求的机会。但这只是比别人多了一个获得面试机会的砝码，因为你的履历别别人的更加吸引HR或用人部门负责人的眼球，这...";s:14:"date_timestamp";i:1441874071;}i:1;a:8:{s:5:"title";s:27:"Weinre移动端调试利器";s:4:"link";s:24:"http://div.io/topic/1322";s:4:"guid";s:24:"http://div.io/topic/1322";s:7:"content";a:1:{s:7:"encoded";s:915:"&gt;author吐槽一下：不知道突然收到div.io社区邀请码，听小伙伴该社区还不错，就注册了。这是小弟第一次发文章，可能存在诸多不足，也请各位大大多担待，也请告知小弟。
+
+weinre 英文全称 WEb Inspector REmote。发音类似于‘winery’。
+####  术语（Terminology）
+当我们使用weinre时，会涉及到三个服务协调工作
+**调试服务器（Debug Server）**
+这是一个HTTP服务器，你能从weinre-node运行。这个HTTP服务会被Debug Client和Debug Target调用。
+**调试客户端(Debug Client)**
+这个是一个Web Inspector用户界面（类似于Firefox's Firebug、chrome's web Isnspector）；它包含常用的Elements、Resoureces、Network、TimeLine和Console面板，此外它还有一个Remote面板。
+**调试目标(Debug Target)**
+这是你想要进行调试的web页面。这个名字(Debug Target)也用于...";}s:2:"dc";a:1:{s:7:"creator";s:8:"singsong";}s:7:"pubdate";s:31:"Wed, 09 Sep 2015 18:10:32 +0800";s:12:"atom_content";s:915:"&gt;author吐槽一下：不知道突然收到div.io社区邀请码，听小伙伴该社区还不错，就注册了。这是小弟第一次发文章，可能存在诸多不足，也请各位大大多担待，也请告知小弟。
+
+weinre 英文全称 WEb Inspector REmote。发音类似于‘winery’。
+####  术语（Terminology）
+当我们使用weinre时，会涉及到三个服务协调工作
+**调试服务器（Debug Server）**
+这是一个HTTP服务器，你能从weinre-node运行。这个HTTP服务会被Debug Client和Debug Target调用。
+**调试客户端(Debug Client)**
+这个是一个Web Inspector用户界面（类似于Firefox's Firebug、chrome's web Isnspector）；它包含常用的Elements、Resoureces、Network、TimeLine和Console面板，此外它还有一个Remote面板。
+**调试目标(Debug Target)**
+这是你想要进行调试的web页面。这个名字(Debug Target)也用于...";s:14:"date_timestamp";i:1441793432;}i:2;a:8:{s:5:"title";s:27:"中断或取消 Promise 链";s:4:"link";s:24:"http://div.io/topic/1320";s:4:"guid";s:24:"http://div.io/topic/1320";s:7:"content";a:1:{s:7:"encoded";s:733:"## Promise
+
+Promise 已经成为了 JavaScript 管理异步操作的重要工具之一. 然而, 有的时候还是会很头痛:
+
+```typescript
+Promise
+    // 等价于 `Promise.resolve(undefined).then`.
+    .then(() =&gt; {
+        // 开始.
+    })
+    .then(() =&gt; {
+        if (wantToBreakHere) {
+            // 怎样在这里终止这个 Promise 链?
+        }
+    })
+    .then(() =&gt; {
+        // 一定条件下不想被执行的代码.
+    });
+```
+
+当然我们可以嵌套后面的 `then`, 但如果整条链很长很厚, 也必然很痛苦.
+
+不过很多 Promise 实现都有一个 `catch` 方法, 我们可以做一点点小动作:
+
+```typescript
+/** 用于中断的信号 */
+class BreakSignal { }
+
+Promise
+    .the...";}s:2:"dc";a:1:{s:7:"creator";s:9:"vilicvane";}s:7:"pubdate";s:31:"Tue, 08 Sep 2015 11:03:09 +0800";s:12:"atom_content";s:733:"## Promise
+
+Promise 已经成为了 JavaScript 管理异步操作的重要工具之一. 然而, 有的时候还是会很头痛:
+
+```typescript
+Promise
+    // 等价于 `Promise.resolve(undefined).then`.
+    .then(() =&gt; {
+        // 开始.
+    })
+    .then(() =&gt; {
+        if (wantToBreakHere) {
+            // 怎样在这里终止这个 Promise 链?
+        }
+    })
+    .then(() =&gt; {
+        // 一定条件下不想被执行的代码.
+    });
+```
+
+当然我们可以嵌套后面的 `then`, 但如果整条链很长很厚, 也必然很痛苦.
+
+不过很多 Promise 实现都有一个 `catch` 方法, 我们可以做一点点小动作:
+
+```typescript
+/** 用于中断的信号 */
+class BreakSignal { }
+
+Promise
+    .the...";s:14:"date_timestamp";i:1441681389;}i:3;a:8:{s:5:"title";s:29:"FEX 技术周刊 - 2015.08.31";s:4:"link";s:24:"http://div.io/topic/1310";s:4:"guid";s:24:"http://div.io/topic/1310";s:7:"content";a:1:{s:7:"encoded";s:707:"原文： http://fex.baidu.com/blog/2015/08/fex-weekly-31/  
+
+## 业界会议  
+
+**2015 创新中国秋季峰会**  
+http://demochina.cyzone.cn/2015aut2/  
+
+## 百度 Web 技术专栏  
+
+**FIS3 3.2.0-stable版 发布**  
+https://github.com/fex-team/fis3/releases/tag/3.2.0  
+
+## 深阅读  
+
+**PHP 5.6.x 版本迁移至 PHP 7.0.x 版本**  
+译文: https://github.com/pangee/Migrating-from-PHP5.6.x-to-PHP7.0.x  
+原文: http://php.net/manual/en/migration70.php  
+介绍了php7.0的一些新特性、停用的的特性、新的函数、以及新的类与接口等。目前php7.0还在开发中，等到正式发版时若想迁移到php7.0还需注意一些兼容性问题。  
+
+**ES6 In Depth: The Future...";}s:2:"dc";a:1:{s:7:"creator";s:6:"zenany";}s:7:"pubdate";s:31:"Tue, 01 Sep 2015 13:20:56 +0800";s:12:"atom_content";s:707:"原文： http://fex.baidu.com/blog/2015/08/fex-weekly-31/  
+
+## 业界会议  
+
+**2015 创新中国秋季峰会**  
+http://demochina.cyzone.cn/2015aut2/  
+
+## 百度 Web 技术专栏  
+
+**FIS3 3.2.0-stable版 发布**  
+https://github.com/fex-team/fis3/releases/tag/3.2.0  
+
+## 深阅读  
+
+**PHP 5.6.x 版本迁移至 PHP 7.0.x 版本**  
+译文: https://github.com/pangee/Migrating-from-PHP5.6.x-to-PHP7.0.x  
+原文: http://php.net/manual/en/migration70.php  
+介绍了php7.0的一些新特性、停用的的特性、新的函数、以及新的类与接口等。目前php7.0还在开发中，等到正式发版时若想迁移到php7.0还需注意一些兼容性问题。  
+
+**ES6 In Depth: The Future...";s:14:"date_timestamp";i:1441084856;}i:4;a:8:{s:5:"title";s:55:"深入到源码：解读 redux 的设计思路与用法";s:4:"link";s:24:"http://div.io/topic/1309";s:4:"guid";s:24:"http://div.io/topic/1309";s:7:"content";a:1:{s:7:"encoded";s:889:"## 前言
+
+[redux](https://github.com/rackt/redux) 是 facebook 提出的 flux 架构的一种优秀实现；而且不局限于为 react 提供数据状态处理。它是零依赖的，可以配合其他任何框架或者类库一起使用。要想配合 react ，还得引入 [react-redux](https://github.com/rackt/react-redux)。
+
+redux 团队的野心比较大，并不想让 redux 局限于 react 生态链中的一环。他们让 redux 自身保持简洁以便适配各种场景，让社区发展出各种 `redux-*` 中间件或者插件，从而形成它自己的生态系统。
+
+redux 的核心很简洁。这篇文章将专注于解读 redux 核心的设计思路，以 [Isomorphism-react-todomvc](https://github.com/Lucifier129/Isomorphism-react-todomvc) 这个项目为示例。它很可能是目前实现最完备的 react/redux todomvc demo，包含 react/redux 服务端渲...";}s:2:"dc";a:1:{s:7:"creator";s:4:"Jade";}s:7:"pubdate";s:31:"Mon, 31 Aug 2015 09:47:39 +0800";s:12:"atom_content";s:889:"## 前言
+
+[redux](https://github.com/rackt/redux) 是 facebook 提出的 flux 架构的一种优秀实现；而且不局限于为 react 提供数据状态处理。它是零依赖的，可以配合其他任何框架或者类库一起使用。要想配合 react ，还得引入 [react-redux](https://github.com/rackt/react-redux)。
+
+redux 团队的野心比较大，并不想让 redux 局限于 react 生态链中的一环。他们让 redux 自身保持简洁以便适配各种场景，让社区发展出各种 `redux-*` 中间件或者插件，从而形成它自己的生态系统。
+
+redux 的核心很简洁。这篇文章将专注于解读 redux 核心的设计思路，以 [Isomorphism-react-todomvc](https://github.com/Lucifier129/Isomorphism-react-todomvc) 这个项目为示例。它很可能是目前实现最完备的 react/redux todomvc demo，包含 react/redux 服务端渲...";s:14:"date_timestamp";i:1440985659;}i:5;a:8:{s:5:"title";s:12:"Redux 介绍";s:4:"link";s:24:"http://div.io/topic/1279";s:4:"guid";s:24:"http://div.io/topic/1279";s:7:"content";a:1:{s:7:"encoded";s:1097:"## Redux 介绍
+
+&gt; 本文主要是对 [Redux 官方文档][1] 的梳理以及自身对 Redux 的理解。
+
+### 单页面应用的痛点
+
+对于复杂的单页面应用，状态（state）管理非常重要。state 可能包括：服务端的响应数据、本地对响应数据的缓存、本地创建的数据（比如，表单数据）以及一些 UI 的状态信息（比如，路由、选中的 tab、是否显示下拉列表、页码控制等等）。如果 state 变化不可预测，就会难于调试（state 不易重现，很难复现一些 bug）和不易于扩展（比如，优化更新渲染、服务端渲染、路由切换时获取数据等等）。
+
+Redux 就是用来确保 state 变化的可预测性，主要的约束有：
+* state 以单一对象存储在 store 对象中
+* state 只读
+* 使用纯函数 reducer 执行 state 更新
+
+&gt; state 为单一对象，使得 Redux 只需要维护一棵状态树，服务端很容易初始化状态，易于服务器渲染。state 只能通过 dispatch(action) 来触发更新，更新逻辑由 reducer 来执行。
+
+### Actio...";}s:2:"dc";a:1:{s:7:"creator";s:7:"ustccjw";}s:7:"pubdate";s:31:"Sun, 30 Aug 2015 18:33:49 +0800";s:12:"atom_content";s:1097:"## Redux 介绍
+
+&gt; 本文主要是对 [Redux 官方文档][1] 的梳理以及自身对 Redux 的理解。
+
+### 单页面应用的痛点
+
+对于复杂的单页面应用，状态（state）管理非常重要。state 可能包括：服务端的响应数据、本地对响应数据的缓存、本地创建的数据（比如，表单数据）以及一些 UI 的状态信息（比如，路由、选中的 tab、是否显示下拉列表、页码控制等等）。如果 state 变化不可预测，就会难于调试（state 不易重现，很难复现一些 bug）和不易于扩展（比如，优化更新渲染、服务端渲染、路由切换时获取数据等等）。
+
+Redux 就是用来确保 state 变化的可预测性，主要的约束有：
+* state 以单一对象存储在 store 对象中
+* state 只读
+* 使用纯函数 reducer 执行 state 更新
+
+&gt; state 为单一对象，使得 Redux 只需要维护一棵状态树，服务端很容易初始化状态，易于服务器渲染。state 只能通过 dispatch(action) 来触发更新，更新逻辑由 reducer 来执行。
+
+### Actio...";s:14:"date_timestamp";i:1440930829;}i:6;a:8:{s:5:"title";s:20:"你真的懂float吗";s:4:"link";s:24:"http://div.io/topic/1278";s:4:"guid";s:24:"http://div.io/topic/1278";s:7:"content";a:1:{s:7:"encoded";s:983:"# 你真的懂float吗？
+
+## 前言 ##
+相信很多人都用过float属性，也知道float是干嘛的，但是在实际项目中有时候用起来往往不是想象中的结果，或者对为什么出现这样的结果不理解。
+现在我也来浅谈一下float相关的事情，
+请大家不要吐槽，积极给予我掌声，我会表面拒绝的，然后内心欣然接受你们的掌声。
+
+
+## 属性列表 ##
+float有四个属性，具体属性的意思我就不说了，不懂的通过传送门去查看：[传送门](http://www.w3school.com.cn/cssref/pr_class_float.asp)
+
+    .xxx {
+      float: left | right | inherit | none
+    }
+
+## 浮动元素显示规则 ##
+ 
+
+
+####1、对于它的父元素来说，浮动元素是不存在的###
+一个元素如果仅仅有一个浮动元素为子元素的话，父元素的宽高会收起来（浮动元素不会撑起父元素的宽高）：
+	
+例子1-1：
+  
+
+    .parent {
+       position: relative;
+       padding: 10px;...";}s:2:"dc";a:1:{s:7:"creator";s:9:"weifengsn";}s:7:"pubdate";s:31:"Fri, 28 Aug 2015 16:05:08 +0800";s:12:"atom_content";s:983:"# 你真的懂float吗？
+
+## 前言 ##
+相信很多人都用过float属性，也知道float是干嘛的，但是在实际项目中有时候用起来往往不是想象中的结果，或者对为什么出现这样的结果不理解。
+现在我也来浅谈一下float相关的事情，
+请大家不要吐槽，积极给予我掌声，我会表面拒绝的，然后内心欣然接受你们的掌声。
+
+
+## 属性列表 ##
+float有四个属性，具体属性的意思我就不说了，不懂的通过传送门去查看：[传送门](http://www.w3school.com.cn/cssref/pr_class_float.asp)
+
+    .xxx {
+      float: left | right | inherit | none
+    }
+
+## 浮动元素显示规则 ##
+ 
+
+
+####1、对于它的父元素来说，浮动元素是不存在的###
+一个元素如果仅仅有一个浮动元素为子元素的话，父元素的宽高会收起来（浮动元素不会撑起父元素的宽高）：
+	
+例子1-1：
+  
+
+    .parent {
+       position: relative;
+       padding: 10px;...";s:14:"date_timestamp";i:1440749108;}i:7;a:8:{s:5:"title";s:27:"前端工程——基础篇";s:4:"link";s:24:"http://div.io/topic/1275";s:4:"guid";s:24:"http://div.io/topic/1275";s:7:"content";a:1:{s:7:"encoded";s:1383:"&gt; 喂喂喂，那个切图的，把页面写好就发给研发工程师套模板吧。
+
+你好，切图仔。
+
+不知道你的团队如何定义前端开发，据我所知，时至今日仍然有很多团队会把前端开发归类为产品或者设计岗位，虽然身份之争多少有些无谓，但我对这种偏见还是心存芥蒂，酝酿了许久，决定写一个系列的文章，试着从工程的角度系统的介绍一下我对前端，尤其是Web前端的理解。
+
+只要我们还把自己的工作看作为一项软件开发活动，那么我相信读过下面的内容你也一定会有所共鸣。
+
+## 前端，是一种GUI软件
+
+现如今前端可谓包罗万象，产品形态五花八门，涉猎极广，什么高大上的基础库/框架，拽炫酷的宣传页面，还有屌炸天的小游戏……不过这些一两个文件的小项目并非是前端技术的主要应用场景，更具商业价值的则是复杂的Web应用，它们功能完善，界面繁多，为用户提供了完整的产品体验，可能是新闻聚合网站，可能是在线购物平台，可能是社交网络，可能是金融信贷应用，可能是音乐互动社区，也可能是视频上传与分享平台……
+
+&gt; 从本质上讲，所有Web应用都是一种运行在网页浏览器中的软件，这些软件的图形用户界面（Graphical User Interfa...";}s:2:"dc";a:1:{s:7:"creator";s:15:"前端农民工";}s:7:"pubdate";s:31:"Thu, 27 Aug 2015 01:19:07 +0800";s:12:"atom_content";s:1383:"&gt; 喂喂喂，那个切图的，把页面写好就发给研发工程师套模板吧。
+
+你好，切图仔。
+
+不知道你的团队如何定义前端开发，据我所知，时至今日仍然有很多团队会把前端开发归类为产品或者设计岗位，虽然身份之争多少有些无谓，但我对这种偏见还是心存芥蒂，酝酿了许久，决定写一个系列的文章，试着从工程的角度系统的介绍一下我对前端，尤其是Web前端的理解。
+
+只要我们还把自己的工作看作为一项软件开发活动，那么我相信读过下面的内容你也一定会有所共鸣。
+
+## 前端，是一种GUI软件
+
+现如今前端可谓包罗万象，产品形态五花八门，涉猎极广，什么高大上的基础库/框架，拽炫酷的宣传页面，还有屌炸天的小游戏……不过这些一两个文件的小项目并非是前端技术的主要应用场景，更具商业价值的则是复杂的Web应用，它们功能完善，界面繁多，为用户提供了完整的产品体验，可能是新闻聚合网站，可能是在线购物平台，可能是社交网络，可能是金融信贷应用，可能是音乐互动社区，也可能是视频上传与分享平台……
+
+&gt; 从本质上讲，所有Web应用都是一种运行在网页浏览器中的软件，这些软件的图形用户界面（Graphical User Interfa...";s:14:"date_timestamp";i:1440609547;}i:8;a:8:{s:5:"title";s:27:"网页无图再不是梦想";s:4:"link";s:24:"http://div.io/topic/1270";s:4:"guid";s:24:"http://div.io/topic/1270";s:7:"content";a:1:{s:7:"encoded";s:1275:"一直以来，网页开发对优化方面做的工作从未停止。网页无图也是为了减少页面资源请求而提出的一种畅想。无可厚非在网页开发的历程中在网页无图方面我们已经取得了不朽的成就：从一开始零零碎碎的小图标资源，到后来小图标合并成一个图片出现雪碧图，再到后来Webfont的出现不仅可以取代雪碧图，而且彻底解决了图标管理难，变色实现麻烦的问题。今天我要跟大家介绍一个小工具，也是可以帮助实现网页无图这一终极目标。理论上来讲，它可以将任何一张图片转换成一个不带图片，不带背景图的干干净净的html标签。但是这有前提：你的计算机得有足够的资源去支撑。
+
+## 缘起
+
+那是一个工作日的早上，我向往常一样准时到达了工作岗位上，启动电脑，打开浏览器我偶然发现了一篇名曰《18个你可能不相信是用CSS制作出来的东西》的文章，出于职业敏感，也出于好奇我就点进去看了一看，发现其中有一个很有意思的作品：[http://codepen.io/HugoGiraudel/full/gpcwa/](http://codepen.io/HugoGiraudel/full/gpcwa/)，它仅仅用一个div标签就完成了这幅作品，于是我们几个同...";}s:2:"dc";a:1:{s:7:"creator";s:7:"MrZheng";}s:7:"pubdate";s:31:"Thu, 20 Aug 2015 13:45:36 +0800";s:12:"atom_content";s:1275:"一直以来，网页开发对优化方面做的工作从未停止。网页无图也是为了减少页面资源请求而提出的一种畅想。无可厚非在网页开发的历程中在网页无图方面我们已经取得了不朽的成就：从一开始零零碎碎的小图标资源，到后来小图标合并成一个图片出现雪碧图，再到后来Webfont的出现不仅可以取代雪碧图，而且彻底解决了图标管理难，变色实现麻烦的问题。今天我要跟大家介绍一个小工具，也是可以帮助实现网页无图这一终极目标。理论上来讲，它可以将任何一张图片转换成一个不带图片，不带背景图的干干净净的html标签。但是这有前提：你的计算机得有足够的资源去支撑。
+
+## 缘起
+
+那是一个工作日的早上，我向往常一样准时到达了工作岗位上，启动电脑，打开浏览器我偶然发现了一篇名曰《18个你可能不相信是用CSS制作出来的东西》的文章，出于职业敏感，也出于好奇我就点进去看了一看，发现其中有一个很有意思的作品：[http://codepen.io/HugoGiraudel/full/gpcwa/](http://codepen.io/HugoGiraudel/full/gpcwa/)，它仅仅用一个div标签就完成了这幅作品，于是我们几个同...";s:14:"date_timestamp";i:1440049536;}i:9;a:8:{s:5:"title";s:35:"[译] JavaScript 性能优化杀手";s:4:"link";s:24:"http://div.io/topic/1269";s:4:"guid";s:24:"http://div.io/topic/1269";s:7:"content";a:1:{s:7:"encoded";s:1023:"原文 
+
+## 引言
+
+这篇文档包含了如何避免使代码性能远低于预期的建议. 尤其是一些会导致 V8 (牵涉到 Node.js, Opera, Chromium 等) 无法优化相关函数的问题.
+
+## 一些 V8 背景
+
+在 V8 中并没有解释器, 但却有两个不同的编译器: 通用编译器和优化编译器. 这意味着你的 JavaScript 代码总是会被编译为机器码后直接运行. 这样一定很快咯? 并不是. 仅仅是编译为本地代码并不能明显提高性能. 它只是消除了解释器的开销, 但如果未被优化, 代码依旧很慢.
+
+举个例子, 使用通用编译器, `a + b` 会变成这个样子:
+
+```asm
+mov eax, a
+mov ebx, b
+call RuntimeAdd
+```
+
+换言之它仅仅是调用了运行时的函数. 如果 `a` 和 `b` 一定是整数, 那可以像这样:
+
+```asm
+mov eax, a
+mov ebx, b
+add eax, ebx
+```
+
+相比而言这会远快于调用需要处理复杂 JavaScript 运行时语义的函数.
+
+通常来说, 通用编译器得到的是第一种结果, 而优化编译器则...";}s:2:"dc";a:1:{s:7:"creator";s:9:"vilicvane";}s:7:"pubdate";s:31:"Wed, 19 Aug 2015 14:38:23 +0800";s:12:"atom_content";s:1023:"原文 
+
+## 引言
+
+这篇文档包含了如何避免使代码性能远低于预期的建议. 尤其是一些会导致 V8 (牵涉到 Node.js, Opera, Chromium 等) 无法优化相关函数的问题.
+
+## 一些 V8 背景
+
+在 V8 中并没有解释器, 但却有两个不同的编译器: 通用编译器和优化编译器. 这意味着你的 JavaScript 代码总是会被编译为机器码后直接运行. 这样一定很快咯? 并不是. 仅仅是编译为本地代码并不能明显提高性能. 它只是消除了解释器的开销, 但如果未被优化, 代码依旧很慢.
+
+举个例子, 使用通用编译器, `a + b` 会变成这个样子:
+
+```asm
+mov eax, a
+mov ebx, b
+call RuntimeAdd
+```
+
+换言之它仅仅是调用了运行时的函数. 如果 `a` 和 `b` 一定是整数, 那可以像这样:
+
+```asm
+mov eax, a
+mov ebx, b
+add eax, ebx
+```
+
+相比而言这会远快于调用需要处理复杂 JavaScript 运行时语义的函数.
+
+通常来说, 通用编译器得到的是第一种结果, 而优化编译器则...";s:14:"date_timestamp";i:1439966303;}i:10;a:8:{s:5:"title";s:31:"FEX 技术周刊 - 2015.08.17  ";s:4:"link";s:24:"http://div.io/topic/1241";s:4:"guid";s:24:"http://div.io/topic/1241";s:7:"content";a:1:{s:7:"encoded";s:815:"原文： http://fex.baidu.com/blog/2015/08/fex-weekly-17/  
+
+## 业界会议  
+
+**[报名]React美团网技术专场**  
+http://www.w3ctech.com/event/53    
+
+## 百度 Web 技术专栏
+
+**FIS - 基于组件使用统计的自动打包已开源**  
+https://github.com/fex-team/autopack-kernel
+本项目探讨 代码静态分析 和 统计动态合并 的两种静态资源零配置自动合并方案，重点介绍了复杂项目场景下基于统计的自动合并的原理和实施过程。模块核心接口适用于任意前端项目。
+
+## 深阅读
+
+**如何成为一名卓越的前端工程师**  
+http://jiongks.name/blog/how-to-become-a-great-front-end-engineer/ （译文）  
+http://philipwalton.com/articles/how-to-become-a-great-front-end-engineer/ （原文）  
+作者观点：学会预见浏览器...";}s:2:"dc";a:1:{s:7:"creator";s:6:"zenany";}s:7:"pubdate";s:31:"Tue, 18 Aug 2015 19:41:37 +0800";s:12:"atom_content";s:815:"原文： http://fex.baidu.com/blog/2015/08/fex-weekly-17/  
+
+## 业界会议  
+
+**[报名]React美团网技术专场**  
+http://www.w3ctech.com/event/53    
+
+## 百度 Web 技术专栏
+
+**FIS - 基于组件使用统计的自动打包已开源**  
+https://github.com/fex-team/autopack-kernel
+本项目探讨 代码静态分析 和 统计动态合并 的两种静态资源零配置自动合并方案，重点介绍了复杂项目场景下基于统计的自动合并的原理和实施过程。模块核心接口适用于任意前端项目。
+
+## 深阅读
+
+**如何成为一名卓越的前端工程师**  
+http://jiongks.name/blog/how-to-become-a-great-front-end-engineer/ （译文）  
+http://philipwalton.com/articles/how-to-become-a-great-front-end-engineer/ （原文）  
+作者观点：学会预见浏览器...";s:14:"date_timestamp";i:1439898097;}i:11;a:8:{s:5:"title";s:16:"Node中的stream";s:4:"link";s:24:"http://div.io/topic/1240";s:4:"guid";s:24:"http://div.io/topic/1240";s:7:"content";a:1:{s:7:"encoded";s:625:"&gt; 文章同步发布于[我的博客](http://syaningv.com)，欢迎关注~
+
+参考资料：
+
+- [Stream Documentation](https://nodejs.org/api/stream.html)
+- [stream-handbook](https://github.com/substack/stream-handbook)
+- [Readable, Writable, and Transform Streams in Node.js](http://www.sandersdenardi.com/readable-writable-transform-streams-node/)
+
+### 1. 什么是stream
+
+stream（流）是Node中一个非常重要的概念，几乎所有的I/O操作都与stream有关。[官方文档](https://nodejs.org/api/stream.html)的解释如下：
+
+&gt; A stream is an abstract interface implemented by various objects in No...";}s:2:"dc";a:1:{s:7:"creator";s:4:"zztf";}s:7:"pubdate";s:31:"Tue, 18 Aug 2015 16:31:01 +0800";s:12:"atom_content";s:625:"&gt; 文章同步发布于[我的博客](http://syaningv.com)，欢迎关注~
+
+参考资料：
+
+- [Stream Documentation](https://nodejs.org/api/stream.html)
+- [stream-handbook](https://github.com/substack/stream-handbook)
+- [Readable, Writable, and Transform Streams in Node.js](http://www.sandersdenardi.com/readable-writable-transform-streams-node/)
+
+### 1. 什么是stream
+
+stream（流）是Node中一个非常重要的概念，几乎所有的I/O操作都与stream有关。[官方文档](https://nodejs.org/api/stream.html)的解释如下：
+
+&gt; A stream is an abstract interface implemented by various objects in No...";s:14:"date_timestamp";i:1439886661;}i:12;a:8:{s:5:"title";s:41:"用 CSS 实现三角形与平行四边形";s:4:"link";s:24:"http://div.io/topic/1238";s:4:"guid";s:24:"http://div.io/topic/1238";s:7:"content";a:1:{s:7:"encoded";s:1161:"&gt; 本文最初发布于我的个人博客：[咀嚼之味](http://jerryzou.com/posts/use-css-to-paint-triangle-and-parallelogram/)
+
+最近在逛某个技术网站的时候，感觉文章关键词上的样式好酷炫啊。于是我将那种写法照搬到了我的博客中，也许最近逛过我博客的小伙伴已经发现了它出现在哪儿了——分页的样式。来张截图：
+
+![分页样式的截图][1]
+
+你在首页的底部也可以看到这样一个分页栏；是不是看上去还不错？下面就来看看这是如何实现的吧~
+
+##第一种方法：利用`border`
+
+第一种方法是借助`border`属性 hack 出三角形，然后通过一个矩形拼接两个三角形最终制造出一个平行四边形。为什么使用`border`可以产生三角形呢？先来看看一张图片：
+
+![CSS triangle][2]
+
+看了图中的三个小图形的变化过程，你应该已经清楚了一半。其实 hack 出三角形只需要两个条件，第一，元素本身的长宽为0；其次，将不需要的部分通过 border-color 来设置隐藏。通过类似的方法，你还可以创造出梯形，上图中的三个图形的代码...";}s:2:"dc";a:1:{s:7:"creator";s:8:"jerryzou";}s:7:"pubdate";s:31:"Tue, 18 Aug 2015 10:51:48 +0800";s:12:"atom_content";s:1161:"&gt; 本文最初发布于我的个人博客：[咀嚼之味](http://jerryzou.com/posts/use-css-to-paint-triangle-and-parallelogram/)
+
+最近在逛某个技术网站的时候，感觉文章关键词上的样式好酷炫啊。于是我将那种写法照搬到了我的博客中，也许最近逛过我博客的小伙伴已经发现了它出现在哪儿了——分页的样式。来张截图：
+
+![分页样式的截图][1]
+
+你在首页的底部也可以看到这样一个分页栏；是不是看上去还不错？下面就来看看这是如何实现的吧~
+
+##第一种方法：利用`border`
+
+第一种方法是借助`border`属性 hack 出三角形，然后通过一个矩形拼接两个三角形最终制造出一个平行四边形。为什么使用`border`可以产生三角形呢？先来看看一张图片：
+
+![CSS triangle][2]
+
+看了图中的三个小图形的变化过程，你应该已经清楚了一半。其实 hack 出三角形只需要两个条件，第一，元素本身的长宽为0；其次，将不需要的部分通过 border-color 来设置隐藏。通过类似的方法，你还可以创造出梯形，上图中的三个图形的代码...";s:14:"date_timestamp";i:1439866308;}i:13;a:8:{s:5:"title";s:81:"在前端高速发展的今天，你是如何保证不停的学习新技能的？";s:4:"link";s:24:"http://div.io/topic/1222";s:4:"guid";s:24:"http://div.io/topic/1222";s:7:"content";a:1:{s:7:"encoded";s:610:"可能很多朋友都是full stack发展的，后端还好，java、node、python等。但是现在前端需要学的东西太多了。
+
+这两年太多太多的工具、库、框架、规范层出不穷，本人有点目不暇接。本来自己目前掌握的技术，应付各种需求、场景都不在话下，但是还是要不停的学，否则会被技术的大潮拍死的沙滩上。
+
+大家来聊聊是如何对些东西都能学习、了解、掌握的。比如从什么地方获取最新的动态，如何去掌握，如何实践，在高强度工作压力下，如何规划自己的时间等等。";}s:2:"dc";a:1:{s:7:"creator";s:6:"marvin";}s:7:"pubdate";s:31:"Fri, 14 Aug 2015 10:04:17 +0800";s:12:"atom_content";s:610:"可能很多朋友都是full stack发展的，后端还好，java、node、python等。但是现在前端需要学的东西太多了。
+
+这两年太多太多的工具、库、框架、规范层出不穷，本人有点目不暇接。本来自己目前掌握的技术，应付各种需求、场景都不在话下，但是还是要不停的学，否则会被技术的大潮拍死的沙滩上。
+
+大家来聊聊是如何对些东西都能学习、了解、掌握的。比如从什么地方获取最新的动态，如何去掌握，如何实践，在高强度工作压力下，如何规划自己的时间等等。";s:14:"date_timestamp";i:1439517857;}i:14;a:8:{s:5:"title";s:27:"移动时代的前端加密";s:4:"link";s:24:"http://div.io/topic/1220";s:4:"guid";s:24:"http://div.io/topic/1220";s:7:"content";a:1:{s:7:"encoded";s:10:"
+  
+  
+  
+";}s:2:"dc";a:1:{s:7:"creator";s:6:"zswang";}s:7:"pubdate";s:31:"Tue, 11 Aug 2015 23:17:02 +0800";s:12:"atom_content";s:10:"
+  
+  
+  
+";s:14:"date_timestamp";i:1439306222;}i:15;a:8:{s:5:"title";s:29:"FEX 技术周刊 - 2015.08.10";s:4:"link";s:24:"http://div.io/topic/1219";s:4:"guid";s:24:"http://div.io/topic/1219";s:7:"content";a:1:{s:7:"encoded";s:761:"原文：http://fex.baidu.com/blog/2015/08/fex-weekly-10/
+
+## 业界会议  
+
+**2015iWeb峰会-第四届HTML5峰会-2015.08.08**  
+http://2015.html5dw.com/main
+
+**[报名]前端圈走进名企～酷狗音乐技术专场**  
+http://fequan.com/kugou  
+话题以性能为主，《酷狗内嵌前端页面发展史》这个还比较有意思。
+
+**中国第二届CSS开发者大会 - 2015.08.08**  
+http://css.w3ctech.com/  
+民工哥的参会体验： http://www.zhihu.com/question/34272250/  
+
+## 百度 Web 技术专栏
+
+**[FEX]FIS3正式发布**  
+http://fex.baidu.com/blog/2015/08/fis3-release/  
+在度厂内部进行了简单的发布会，场面异常火爆，特别欣慰，FIS 有你们才更精彩！
+
+## 深阅读
+
+**Becoming a Great Web Front-end De...";}s:2:"dc";a:1:{s:7:"creator";s:6:"zenany";}s:7:"pubdate";s:31:"Mon, 10 Aug 2015 22:30:49 +0800";s:12:"atom_content";s:761:"原文：http://fex.baidu.com/blog/2015/08/fex-weekly-10/
+
+## 业界会议  
+
+**2015iWeb峰会-第四届HTML5峰会-2015.08.08**  
+http://2015.html5dw.com/main
+
+**[报名]前端圈走进名企～酷狗音乐技术专场**  
+http://fequan.com/kugou  
+话题以性能为主，《酷狗内嵌前端页面发展史》这个还比较有意思。
+
+**中国第二届CSS开发者大会 - 2015.08.08**  
+http://css.w3ctech.com/  
+民工哥的参会体验： http://www.zhihu.com/question/34272250/  
+
+## 百度 Web 技术专栏
+
+**[FEX]FIS3正式发布**  
+http://fex.baidu.com/blog/2015/08/fis3-release/  
+在度厂内部进行了简单的发布会，场面异常火爆，特别欣慰，FIS 有你们才更精彩！
+
+## 深阅读
+
+**Becoming a Great Web Front-end De...";s:14:"date_timestamp";i:1439217049;}i:16;a:8:{s:5:"title";s:29:"AngularJS深入(7)——scope";s:4:"link";s:24:"http://div.io/topic/1212";s:4:"guid";s:24:"http://div.io/topic/1212";s:7:"content";a:1:{s:7:"encoded";s:585:"&gt; 文章同步发布于[我的博客](http://syaningv.com)，欢迎关注^_^
+
+参考资料：
+
+- [Scopes](https://docs.angularjs.org/guide/scope)
+- [angularjs1.3.0源码解析之scope](http://www.html-js.com/article/2365)
+
+### 1. $RootScopeProvider
+
+scope相关的代码在`$RootScopeProvider`中，代码结构如下：
+
+```javascript
+function $RootScopeProvider() {
+    // ... ...
+
+    this.digestTtl = function(value) {};
+
+    function createChildScopeClass(parent) {}
+
+    this.$get = ['$injector', '$exceptionHandler', '$parse', '$browser',
+        function($injector, $exce...";}s:2:"dc";a:1:{s:7:"creator";s:4:"zztf";}s:7:"pubdate";s:31:"Sun, 09 Aug 2015 21:06:36 +0800";s:12:"atom_content";s:585:"&gt; 文章同步发布于[我的博客](http://syaningv.com)，欢迎关注^_^
+
+参考资料：
+
+- [Scopes](https://docs.angularjs.org/guide/scope)
+- [angularjs1.3.0源码解析之scope](http://www.html-js.com/article/2365)
+
+### 1. $RootScopeProvider
+
+scope相关的代码在`$RootScopeProvider`中，代码结构如下：
+
+```javascript
+function $RootScopeProvider() {
+    // ... ...
+
+    this.digestTtl = function(value) {};
+
+    function createChildScopeClass(parent) {}
+
+    this.$get = ['$injector', '$exceptionHandler', '$parse', '$browser',
+        function($injector, $exce...";s:14:"date_timestamp";i:1439125596;}i:17;a:8:{s:5:"title";s:30:"AngularJS深入(6)——指令";s:4:"link";s:24:"http://div.io/topic/1204";s:4:"guid";s:24:"http://div.io/topic/1204";s:7:"content";a:1:{s:7:"encoded";s:677:"&gt; 文章同步发布于[我的博客](http://syaningv.com)，欢迎关注~
+
+参考资料：
+
+- [Creating Custom Directives](https://docs.angularjs.org/guide/directive)
+- [HTML Compiler](https://docs.angularjs.org/guide/compiler)
+- [$compile](https://docs.angularjs.org/api/ng/service/$compile)
+- [angularjs1.3.0源码解析之directive](http://www.html-js.com/article/Front-end-source-code-analysis-directive-angularjs130-source-code-analysis-of-the-original)
+
+&gt; 注：本部分源码比较多且逻辑复杂，我也没有完全通读并理解，因此分析过程中难免有不当或错误之处，还请指出。
+
+### 注册指令
+
+指令的注册在`$CompileProvi...";}s:2:"dc";a:1:{s:7:"creator";s:4:"zztf";}s:7:"pubdate";s:31:"Wed, 05 Aug 2015 11:33:41 +0800";s:12:"atom_content";s:677:"&gt; 文章同步发布于[我的博客](http://syaningv.com)，欢迎关注~
+
+参考资料：
+
+- [Creating Custom Directives](https://docs.angularjs.org/guide/directive)
+- [HTML Compiler](https://docs.angularjs.org/guide/compiler)
+- [$compile](https://docs.angularjs.org/api/ng/service/$compile)
+- [angularjs1.3.0源码解析之directive](http://www.html-js.com/article/Front-end-source-code-analysis-directive-angularjs130-source-code-analysis-of-the-original)
+
+&gt; 注：本部分源码比较多且逻辑复杂，我也没有完全通读并理解，因此分析过程中难免有不当或错误之处，还请指出。
+
+### 注册指令
+
+指令的注册在`$CompileProvi...";s:14:"date_timestamp";i:1438745621;}i:18;a:8:{s:5:"title";s:46:"jdists 一款强大的代码块预处理工具";s:4:"link";s:24:"http://div.io/topic/1203";s:4:"guid";s:24:"http://div.io/topic/1203";s:7:"content";a:1:{s:7:"encoded";s:10:"
+  
+  
+  
+";}s:2:"dc";a:1:{s:7:"creator";s:6:"zswang";}s:7:"pubdate";s:31:"Wed, 05 Aug 2015 08:33:35 +0800";s:12:"atom_content";s:10:"
+  
+  
+  
+";s:14:"date_timestamp";i:1438734815;}i:19;a:8:{s:5:"title";s:29:"FEX 技术周刊 - 2015.08.03";s:4:"link";s:24:"http://div.io/topic/1201";s:4:"guid";s:24:"http://div.io/topic/1201";s:7:"content";a:1:{s:7:"encoded";s:856:"原文：http://fex.baidu.com/blog/2015/08/fex-weekly/
+
+## 业界会议
+
+**Velocity - 性能与运维大会 8.11**  
+http://velocity.oreilly.com.cn/2015/  
+今年的话题都还不错，可以围观。
+
+## 百度 Web 技术专栏
+
+**[EFE][译]避免使用 forEach**  
+http://efe.baidu.com/blog/avoid-foreach/  
+本文和性能无关。执行 for 循环总是比执行 Array.forEach 快。如果性能测试显示迭代的开销足够显著并且性能优先，那么你绝对应该使用 for 循环而不是 forEach（总是使用 for 循环是典型的过早优化。forEach 仍然可以在 1 微秒内遍历长度为 50 的数组）。本文和编码风格有关，是我对 forEach 和其它 Array.prototype 方法的思考，与性能无关。
+
+**[EFE]CSS 代码静态质量检查**  
+http://efe.baidu.com/  
+CSS 中也有一些 Lint 工具，例如...";}s:2:"dc";a:1:{s:7:"creator";s:6:"zenany";}s:7:"pubdate";s:31:"Tue, 04 Aug 2015 09:27:09 +0800";s:12:"atom_content";s:856:"原文：http://fex.baidu.com/blog/2015/08/fex-weekly/
+
+## 业界会议
+
+**Velocity - 性能与运维大会 8.11**  
+http://velocity.oreilly.com.cn/2015/  
+今年的话题都还不错，可以围观。
+
+## 百度 Web 技术专栏
+
+**[EFE][译]避免使用 forEach**  
+http://efe.baidu.com/blog/avoid-foreach/  
+本文和性能无关。执行 for 循环总是比执行 Array.forEach 快。如果性能测试显示迭代的开销足够显著并且性能优先，那么你绝对应该使用 for 循环而不是 forEach（总是使用 for 循环是典型的过早优化。forEach 仍然可以在 1 微秒内遍历长度为 50 的数组）。本文和编码风格有关，是我对 forEach 和其它 Array.prototype 方法的思考，与性能无关。
+
+**[EFE]CSS 代码静态质量检查**  
+http://efe.baidu.com/  
+CSS 中也有一些 Lint 工具，例如...";s:14:"date_timestamp";i:1438651629;}}s:7:"channel";a:6:{s:5:"title";s:19:"Div.IO 专栏文章";s:4:"link";s:18:"http://div.io/feed";s:11:"description";s:30:"Div.IO，高质量前端社区";s:8:"language";s:5:"zh_CN";s:13:"lastbuilddate";s:31:"Thu, 10 Sep 2015 16:34:31 +0800";s:7:"tagline";s:30:"Div.IO，高质量前端社区";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;}
