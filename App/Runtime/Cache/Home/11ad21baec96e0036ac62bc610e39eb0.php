@@ -53,6 +53,7 @@ $(".nav-btn").click(function(){
         <ul>
             <li ><a href="/Blog">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+             <li ><a href="/Blog/Index/feedplus">Feed+</a></li>
              <li ><a href="/Blog/message">留言</a></li>
             <li ><a href="/Blog/me" target="_blank">关于我</a></li>
         </ul></nav>
@@ -70,10 +71,16 @@ $(".nav-btn").click(function(){
 </footer>
 </body>
 <div style="display:none">
-   <a href="http://www.zzidc.com">  title="景安网络" /></a>
-<script type="text/javascript">
-var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254403531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254403531' type='text/javascript'%3E%3C/script%3E"));
-</script>
+	<a href="http://www.zzidc.com">  title="景安网络" /></a>
+	// <script>
+	// var _hmt = _hmt || [];
+	// (function() {
+	//   var hm = document.createElement("script");
+	//   hm.src = "//hm.baidu.com/hm.js?c45eb0f0bbd3349f5c85f1afc603bb1f";
+	//   var s = document.getElementsByTagName("script")[0]; 
+	//   s.parentNode.insertBefore(hm, s);
+	// })();
+	// </script>
 </div>
 
 </html>

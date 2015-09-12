@@ -72,26 +72,26 @@
         <!-- Feedplus -->
          <foreach name='rss' item='v'>
             <div class="alist rss">
-               <!--  <div class="alist-icon " >
+                <div class="alist-icon " >
                     <a href="{$v.f_link}" title="来自:{$v.f_host}" target="_blank"> <img src="{$v.f_logo}" ></a>
-                </div> -->
+                </div>
                 <div class="alist-con" >
                     <div  class="alist-title">
                         <a href="{$v.f_link}" title="来自:{$v.f_host}" target="_blank">
                         <span id="rss-time">[{$v.f_time}]</span>
                         <h3 >{$v.f_title}</h3>
                     </a></div>
-                   
+                      <a href="__ROOT__/article/{$v.a_id}.html"><div class="alist-digest">{$v.f_desc}</div></a>
                 </div>
             </div>
             </foreach>
             <!-- more -->
-<!--         <div class="lastShow next-show">
+        <div class="lastShow next-show">
             <span class="more-icon "></span>
         </div>
         <div class="hotShow next-show">
             <span class="more-icon"></span>
-        </div> -->
+        </div>
     </div>
 <ul class="show">  </ul>
 <include file="Public:footer"/>

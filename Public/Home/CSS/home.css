@@ -174,7 +174,7 @@ a {
     background-size: 40px 40px !important;
 }
 #rss-time{
-
+  float: right;
 }
 .lastShow {
     display: block;

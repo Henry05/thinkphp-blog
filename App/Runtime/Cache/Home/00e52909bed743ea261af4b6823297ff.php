@@ -108,25 +108,25 @@ $(".nav-btn").click(function(){
         </div>
         <!-- Feedplus -->
          <?php if(is_array($rss)): foreach($rss as $key=>$v): ?><div class="alist rss">
-               <!--  <div class="alist-icon " >
+                <div class="alist-icon " >
                     <a href="<?php echo ($v["f_link"]); ?>" title="来自:<?php echo ($v["f_host"]); ?>" target="_blank"> <img src="<?php echo ($v["f_logo"]); ?>" ></a>
-                </div> -->
+                </div>
                 <div class="alist-con" >
                     <div  class="alist-title">
                         <a href="<?php echo ($v["f_link"]); ?>" title="来自:<?php echo ($v["f_host"]); ?>" target="_blank">
                         <span id="rss-time">[<?php echo ($v["f_time"]); ?>]</span>
                         <h3 ><?php echo ($v["f_title"]); ?></h3>
                     </a></div>
-                   
+                      <a href="/Blog/article/<?php echo ($v["a_id"]); ?>.html"><div class="alist-digest"><?php echo ($v["f_desc"]); ?></div></a>
                 </div>
             </div><?php endforeach; endif; ?>
             <!-- more -->
-<!--         <div class="lastShow next-show">
+        <div class="lastShow next-show">
             <span class="more-icon "></span>
         </div>
         <div class="hotShow next-show">
             <span class="more-icon"></span>
-        </div> -->
+        </div>
     </div>
 <ul class="show">  </ul>
 <footer class="footer">
