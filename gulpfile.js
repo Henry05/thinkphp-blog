@@ -23,15 +23,10 @@ gulp.task('auto', function () {
 // 在命令行使用 gulp 启动 css 任务和 auto 任务
 gulp.task('default', ['css', 'auto'])
 
-var minifyHTML = require('gulp-minify-html');
+var htmlmin = require('gulp-htmlmin');
  
-gulp.task('minify-html', function() {
-  var opts = {
-    conditionals: true,
-    spare:true
-  };
- 
-  return gulp.src('./static/html/*.html')
-    .pipe(minifyHTML(opts))
-    .pipe(gulp.dest('./dist/'));
+gulp.task('minify', function() {
+  return gulp.src('App/Home/View/Public/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'))
 });

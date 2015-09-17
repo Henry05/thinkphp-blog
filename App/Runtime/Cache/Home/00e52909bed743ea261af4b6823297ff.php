@@ -11,29 +11,10 @@
         <meta name="renderer" content="webkit">
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
         <link rel="alternate icon" type="image/ico" href="/Blog/Public/Home/IMG/favicon.ico">
+        <link rel="stylesheet" href="/Blog/Public/Home/CSS/layout.css"/>
     </head>
-    <!--   导航栏样式表 -->
-<link rel="stylesheet" href="/Blog/Public/Home/CSS/layout.css"/>
-<!--[if lt IE 9]>
-<script src="/Blog/Public/Jquery/jquery-1.11.2.js"></script>
-<![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/Blog/Public/Jquery/jquery-2.1.4.min.js"></script>
-<!--<![endif]-->
-<script src="/Blog/Public/Home/JS/html5shiv.min.js"></script>
-<script type="text/javascript">
-//导航下拉效果
-$(function(){
-$(".nav-btn").click(function(){
-    $(".nav").fadeToggle("1000");
-    $(".btn").toggleClass("onbtn");
-});
-});
-</script>
-</head>
 <body>
-<!-- 导航部分 -->
-<header>
+    <header>
     <a href="/Blog" class="title">
     <i class="logo"></i>
     <i class="name"></i>
@@ -49,14 +30,13 @@ $(".nav-btn").click(function(){
         <ul>
             <li ><a href="/Blog">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
-             <li ><a href="/Blog/message">留言</a></li>
-            <li ><a href="/Blog/me" target="_blank">关于我</a></li>
+            <li ><a href="/Blog/me" >关于</a></li>
         </ul></nav>
     </header>
-    <!--   首页样式表 -->
-    <link rel="stylesheet" href="/Blog/Public/Home/CSS/home.css"/>
-    <!-- Banner部分 -->
-    <div class="ban">
+        <!--   首页样式表 -->
+        <link rel="stylesheet" href="/Blog/Public/Home/CSS/home.css"/>
+        <!-- Banner部分 -->
+     <div class="ban">
         <div class="ban-con">
             <div class="ban-pic"></div>
             <div class="ban-slogan" >
@@ -114,62 +94,48 @@ $(".nav-btn").click(function(){
         </div>
        
     </div>
-
-
 <ul class="show">  </ul>
 <footer class="footer">
     <div class="footer-con">
-         <span class="copyright">
-           <a  href="http://w3cay.com" target="_blank">&copy; 安望云海|W3CAY</a>
-           <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362&nbsp</a>
-            </span>
+        <span class="copyright">
+        <a  href="http://w3cay.com" target="_blank">&copy; 安望云海|W3CAY</a>
+        <a  href="http://www.miitbeian.gov.cn/" rel="nofollow"> &nbsp豫ICP备15003362&nbsp</a>
+        </span>
     </div>
 </footer>
 </body>
+<!--[if lt IE 9]>
+<script src="/Blog/Public/Jquery/jquery-1.11.2.js"></script>
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/Blog/Public/Jquery/jquery-2.1.4.min.js"></script>
+<!--<![endif]-->
+<script src="/Blog/Public/Home/JS/html5shiv.min.js"></script>
+<script type="text/javascript">
+//导航下拉效果
+$(function(){
+$(".nav-btn").click(function(){
+    $(".nav").fadeToggle("1000");
+    $(".btn").toggleClass("onbtn");
+});
+});
+</script>
 <div style="display:none">
-	<a href="http://www.zzidc.com">  title="景安网络" /></a>
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?c45eb0f0bbd3349f5c85f1afc603bb1f";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
+<a href="http://www.zzidc.com">  title="景安网络" /></a>
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?c45eb0f0bbd3349f5c85f1afc603bb1f";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </div>
 
-</html>
-
+<script src="/Blog/Public/Home/JS/home.js"></script>
 <script type="text/javascript">
-    //简要渐入效果
     $(function(){
-
-    $(".ban-pic").animate(
-        {left:'0px',opacity:'1'},600);
-    });
-    $('.ban-slogan').fadeIn(2000);
-
-    $("#hot").click(function(){
-    $(this).removeClass("off").addClass("on");
-    $("#last").removeClass("on").addClass("off");
-    $(".lastlist").css("display","none");
-    $(".hotlist").css("display","block");
-
-    $(".lastShow").css("display","none");
-    $(".hotShow").css("display","block");
-    });
-
-    $("#last").click(function(){
-    $(this).removeClass("off").addClass("on");
-    $("#hot").removeClass("on").addClass("off");
-    $(".hotlist").css("display","none");
-    $(".lastlist").css("display","block");
-
-    $(".lastShow").css("display","block");
-    $(".hotShow").css("display","none");
-    });
-$(function(){
         var lastnum=0;
         var hotnum=0;
         function ajaxshow(start,list,show){
@@ -204,5 +170,5 @@ $(function(){
                ajaxshow(hotnum,list,show) ;
           });
 });
-
 </script>
+</html>

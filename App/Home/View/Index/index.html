@@ -10,13 +10,11 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="renderer" content="webkit">
         <meta http-equiv="Cache-Control" content="no-siteapp"/>
-        <link rel="alternate icon" type="image/ico" href="__PUBLIC__/Home/IMG/favicon.ico">
-    </head>
-    <include file="Public:header"/>
-    <!--   首页样式表 -->
-    <link rel="stylesheet" href="__PUBLIC__/Home/CSS/home.css"/>
-    <!-- Banner部分 -->
-    <div class="ban">
+        <include file="Public:header"/>
+        <!--   首页样式表 -->
+        <link rel="stylesheet" href="__PUBLIC__/Home/CSS/home.css"/>
+        <!-- Banner部分 -->
+     <div class="ban">
         <div class="ban-con">
             <div class="ban-pic"></div>
             <div class="ban-slogan" >
@@ -78,40 +76,11 @@
         </div>
        
     </div>
-
-
 <ul class="show">  </ul>
 <include file="Public:footer"/>
-
+<script src="__PUBLIC__/Home/JS/home.js"></script>
 <script type="text/javascript">
-    //简要渐入效果
     $(function(){
-
-    $(".ban-pic").animate(
-        {left:'0px',opacity:'1'},600);
-    });
-    $('.ban-slogan').fadeIn(2000);
-
-    $("#hot").click(function(){
-    $(this).removeClass("off").addClass("on");
-    $("#last").removeClass("on").addClass("off");
-    $(".lastlist").css("display","none");
-    $(".hotlist").css("display","block");
-
-    $(".lastShow").css("display","none");
-    $(".hotShow").css("display","block");
-    });
-
-    $("#last").click(function(){
-    $(this).removeClass("off").addClass("on");
-    $("#hot").removeClass("on").addClass("off");
-    $(".hotlist").css("display","none");
-    $(".lastlist").css("display","block");
-
-    $(".lastShow").css("display","block");
-    $(".hotShow").css("display","none");
-    });
-$(function(){
         var lastnum=0;
         var hotnum=0;
         function ajaxshow(start,list,show){
@@ -146,5 +115,5 @@ $(function(){
                ajaxshow(hotnum,list,show) ;
           });
 });
-
 </script>
+</html>
