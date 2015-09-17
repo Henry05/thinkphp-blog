@@ -1,0 +1,2563 @@
+O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:14:{s:5:"title";s:53:"[懒懒小报-外刊第12期] 2015 移动开发热点";s:4:"link";s:171:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac12%e6%9c%9f-2015-%e7%a7%bb%e5%8a%a8%e5%bc%80%e5%8f%91%e7%83%ad%e7%82%b9/";s:8:"comments";s:180:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac12%e6%9c%9f-2015-%e7%a7%bb%e5%8a%a8%e5%bc%80%e5%8f%91%e7%83%ad%e7%82%b9/#comments";s:7:"pubdate";s:31:"Mon, 23 Mar 2015 12:35:26 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"弘树";}s:8:"category";s:27:"懒懒交流会懒懒小报";s:4:"guid";s:34:"http://ued.taobao.org/blog/?p=9621";s:11:"description";s:362:"本周最火爆的新闻莫过于来自深圳 WinHEC 大会上 关于 Windows 10 的一些消息，其中最受关注的莫过于面向中 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac12%e6%9c%9f-2015-%e7%a7%bb%e5%8a%a8%e5%bc%80%e5%8f%91%e7%83%ad%e7%82%b9/">更多&#62;</a>";s:7:"content";a:1:{s:7:"encoded";s:7201:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>本周最火爆的新闻莫过于来自深圳 WinHEC 大会上 <a href="http://www.ifanr.com/503091">关于 Windows 10 的一些消息</a>，其中最受关注的莫过于面向中国盗版 Windows 用户开放免费升级，这对于前端生态圈无疑是一件大事儿，大家都怎么看？<a href="http://www.zhihu.com/question/28885881">不妨一起聊聊</a>。</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable/">Node v0.10.37 (Maintenance)</a>
+<ul>
+<li>主要是修复低版本 <code>libuv</code> 模块的缺陷以及 <code>domain</code>、<code>buffer</code>、<code>http</code> 等模块的更新。</li>
+</ul>
+</li>
+<li><a href="http://blog.npmjs.org/post/113172137370/npm-private-modules-are-coming-soon">npm private modules are coming soon!</a>
+<ul>
+<li>npm 终于即将兑现之前的承诺，一大波 npm 私有包即将来袭！</li>
+</ul>
+</li>
+<li><a href="http://googlechromereleases.blogspot.com/2015/03/android-webview-update.html">Android WebView Update</a>
+<ul>
+<li>面向 Android 5.0 以上的设备的 Android Webview 即将通过 Google Play 迎来更新，带来如 Service Workers、电池状态 API 以及其他 bug 修复和性能优化。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2015/03/19/building-the-facebook-news-feed-with-relay.html">Building The Facebook News Feed With Relay</a>
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2015/02/20/introducing-relay-and-graphql.html">Relay</a> 是一月份 React.js 大会上预告的一款新框架，专注于基于 React 构建数据驱动的应用。本文中详细介绍了创建 Relay 应用的详细过程，可以提前体会一下 Relay 如何自动化和高效地预获取数据。</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/addyosmani/devtools-state-of-the-union-2015">DevTools: State Of The Union 2015</a>
+<ul>
+<li>最新版的 Chrome 中集成的开发者工具在性能（包括加载性能和动画性能）诊断方面提供了更加丰富而富可视化的界面和功能点，来自 Google 团队的 Addy Osmani 大神这篇分享一定会让你有所收获。</li>
+</ul>
+</li>
+<li><a href="http://blog.chromium.org/2015/03/new-javascript-techniques-for-rapid.html">New JavaScript techniques for rapid page loads</a>
+<ul>
+<li>Chrome 在性能优化的道路上继续执着地探索，从 Chrome 41 开始引入流式 JavaScript 脚本文件解析以加快脚本解析速度（边下载边解析），从 Chrome 42 开始引入编译后代码缓存，提升二次访问加载速度。</li>
+</ul>
+</li>
+<li><a href="http://www.infoq.com/cn/articles/mobile-trend-2015">2015年，移动开发都有哪些热点？</a>
+<ul>
+<li>2015 年移动开发领域都有哪些值得期待的新变化？这篇文章从平台和技术方面进行了盘点，做移动开发的客户端和前端同学都值得关注一下。</li>
+</ul>
+</li>
+<li><a href="http://www.angularjsbook.com/">Angular Basics by ScriptyBooks, a free book on AngularJS</a>
+<ul>
+<li>一本免费而富交互的关于 Angular 的电子书，覆盖了 Angular 1.3.x 版本核心的指令、模块、服务、控制器、路由等内容，基于 Angular 1.4 和 Angular 2 版本的后续也将到来。</li>
+</ul>
+</li>
+<li><a href="http://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/">Build Your own Simplified AngularJS in 200 Lines of JavaScript</a>
+<ul>
+<li>也许你已经对 Angular 的使用有丰富的经验了，但你知道如何用 200 行 JavaScript 构建一个属于你自己的轻量级 Angular 吗？这篇文章从算法和底层机制等方面进行了介绍，非常详尽！</li>
+</ul>
+</li>
+<li><a href="http://blog.javascripting.com/2015/03/18/defensive-javascript/">Defensive JavaScript? Yes, Please!</a>
+<ul>
+<li>编写代码时充分考虑防御性可以保证我们的代码的健壮性，同时也能尽可能避免给后人留坑。不妨看看这篇文章给出的一些建议。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://www.nodegit.org/">NodeGit</a>
+<ul>
+<li>NodeGit 是原生的 Node.js 对 Git 的绑定，可以让你方便地以 Promise 的方式执行 Git 命令操作。</li>
+</ul>
+</li>
+<li><a href="https://github.com/luin/superfetch">luin/superfetch</a>
+<ul>
+<li>superfetch 是一个简单而强大的 Node.js 的 HTTP 客户端，支持 Promise，相比 <a>request</a> 更轻量级。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Node v0.10.37 (Maintenance)
+<ul>
+<li><a href="http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable/">http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable/</a></li>
+</ul>
+</li>
+<li>npm private modules are coming soon!
+<ul>
+<li><a href="http://blog.npmjs.org/post/113172137370/npm-private-modules-are-coming-soon">http://blog.npmjs.org/post/113172137370/npm-private-modules-are-coming-soon</a></li>
+</ul>
+</li>
+<li>Android WebView Update
+<ul>
+<li><a href="http://googlechromereleases.blogspot.com/2015/03/android-webview-update.html">http://googlechromereleases.blogspot.com/2015/03/android-webview-update.html</a></li>
+</ul>
+</li>
+<li>Building The Facebook News Feed With Relay
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2015/03/19/building-the-facebook-news-feed-with-relay.html">http://facebook.github.io/react/blog/2015/03/19/building-the-facebook-news-feed-with-relay.html</a></li>
+</ul>
+</li>
+<li>DevTools: State Of The Union 2015
+<ul>
+<li><a href="https://speakerdeck.com/addyosmani/devtools-state-of-the-union-2015">https://speakerdeck.com/addyosmani/devtools-state-of-the-union-2015</a></li>
+</ul>
+</li>
+<li>New JavaScript techniques for rapid page loads
+<ul>
+<li><a href="http://blog.chromium.org/2015/03/new-javascript-techniques-for-rapid.html">http://blog.chromium.org/2015/03/new-javascript-techniques-for-rapid.html</a></li>
+</ul>
+</li>
+<li>2015年，移动开发都有哪些热点？
+<ul>
+<li><a href="http://www.infoq.com/cn/articles/mobile-trend-2015">http://www.infoq.com/cn/articles/mobile-trend-2015</a></li>
+</ul>
+</li>
+<li>Angular Basics by ScriptyBooks, a free book on AngularJS
+<ul>
+<li><a href="http://www.angularjsbook.com/">http://www.angularjsbook.com/</a></li>
+</ul>
+</li>
+<li>Build Your own Simplified AngularJS in 200 Lines of JavaScript
+<ul>
+<li><a href="http://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/">http://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/</a></li>
+</ul>
+</li>
+<li>Defensive JavaScript? Yes, Please!
+<ul>
+<li><a href="http://blog.javascripting.com/2015/03/18/defensive-javascript/">http://blog.javascripting.com/2015/03/18/defensive-javascript/</a></li>
+</ul>
+</li>
+<li>NodeGit
+<ul>
+<li><a href="http://www.nodegit.org/">http://www.nodegit.org/</a></li>
+</ul>
+</li>
+<li>luin/superfetch
+<ul>
+<li><a href="https://github.com/luin/superfetch">https://github.com/luin/superfetch</a></li>
+</ul>
+</li>
+</ul>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:176:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac12%e6%9c%9f-2015-%e7%a7%bb%e5%8a%a8%e5%bc%80%e5%8f%91%e7%83%ad%e7%82%b9/feed/";}s:5:"slash";a:1:{s:8:"comments";s:2:"15";}s:7:"summary";s:362:"本周最火爆的新闻莫过于来自深圳 WinHEC 大会上 关于 Windows 10 的一些消息，其中最受关注的莫过于面向中 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac12%e6%9c%9f-2015-%e7%a7%bb%e5%8a%a8%e5%bc%80%e5%8f%91%e7%83%ad%e7%82%b9/">更多&#62;</a>";s:12:"atom_content";s:7201:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>本周最火爆的新闻莫过于来自深圳 WinHEC 大会上 <a href="http://www.ifanr.com/503091">关于 Windows 10 的一些消息</a>，其中最受关注的莫过于面向中国盗版 Windows 用户开放免费升级，这对于前端生态圈无疑是一件大事儿，大家都怎么看？<a href="http://www.zhihu.com/question/28885881">不妨一起聊聊</a>。</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable/">Node v0.10.37 (Maintenance)</a>
+<ul>
+<li>主要是修复低版本 <code>libuv</code> 模块的缺陷以及 <code>domain</code>、<code>buffer</code>、<code>http</code> 等模块的更新。</li>
+</ul>
+</li>
+<li><a href="http://blog.npmjs.org/post/113172137370/npm-private-modules-are-coming-soon">npm private modules are coming soon!</a>
+<ul>
+<li>npm 终于即将兑现之前的承诺，一大波 npm 私有包即将来袭！</li>
+</ul>
+</li>
+<li><a href="http://googlechromereleases.blogspot.com/2015/03/android-webview-update.html">Android WebView Update</a>
+<ul>
+<li>面向 Android 5.0 以上的设备的 Android Webview 即将通过 Google Play 迎来更新，带来如 Service Workers、电池状态 API 以及其他 bug 修复和性能优化。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2015/03/19/building-the-facebook-news-feed-with-relay.html">Building The Facebook News Feed With Relay</a>
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2015/02/20/introducing-relay-and-graphql.html">Relay</a> 是一月份 React.js 大会上预告的一款新框架，专注于基于 React 构建数据驱动的应用。本文中详细介绍了创建 Relay 应用的详细过程，可以提前体会一下 Relay 如何自动化和高效地预获取数据。</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/addyosmani/devtools-state-of-the-union-2015">DevTools: State Of The Union 2015</a>
+<ul>
+<li>最新版的 Chrome 中集成的开发者工具在性能（包括加载性能和动画性能）诊断方面提供了更加丰富而富可视化的界面和功能点，来自 Google 团队的 Addy Osmani 大神这篇分享一定会让你有所收获。</li>
+</ul>
+</li>
+<li><a href="http://blog.chromium.org/2015/03/new-javascript-techniques-for-rapid.html">New JavaScript techniques for rapid page loads</a>
+<ul>
+<li>Chrome 在性能优化的道路上继续执着地探索，从 Chrome 41 开始引入流式 JavaScript 脚本文件解析以加快脚本解析速度（边下载边解析），从 Chrome 42 开始引入编译后代码缓存，提升二次访问加载速度。</li>
+</ul>
+</li>
+<li><a href="http://www.infoq.com/cn/articles/mobile-trend-2015">2015年，移动开发都有哪些热点？</a>
+<ul>
+<li>2015 年移动开发领域都有哪些值得期待的新变化？这篇文章从平台和技术方面进行了盘点，做移动开发的客户端和前端同学都值得关注一下。</li>
+</ul>
+</li>
+<li><a href="http://www.angularjsbook.com/">Angular Basics by ScriptyBooks, a free book on AngularJS</a>
+<ul>
+<li>一本免费而富交互的关于 Angular 的电子书，覆盖了 Angular 1.3.x 版本核心的指令、模块、服务、控制器、路由等内容，基于 Angular 1.4 和 Angular 2 版本的后续也将到来。</li>
+</ul>
+</li>
+<li><a href="http://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/">Build Your own Simplified AngularJS in 200 Lines of JavaScript</a>
+<ul>
+<li>也许你已经对 Angular 的使用有丰富的经验了，但你知道如何用 200 行 JavaScript 构建一个属于你自己的轻量级 Angular 吗？这篇文章从算法和底层机制等方面进行了介绍，非常详尽！</li>
+</ul>
+</li>
+<li><a href="http://blog.javascripting.com/2015/03/18/defensive-javascript/">Defensive JavaScript? Yes, Please!</a>
+<ul>
+<li>编写代码时充分考虑防御性可以保证我们的代码的健壮性，同时也能尽可能避免给后人留坑。不妨看看这篇文章给出的一些建议。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://www.nodegit.org/">NodeGit</a>
+<ul>
+<li>NodeGit 是原生的 Node.js 对 Git 的绑定，可以让你方便地以 Promise 的方式执行 Git 命令操作。</li>
+</ul>
+</li>
+<li><a href="https://github.com/luin/superfetch">luin/superfetch</a>
+<ul>
+<li>superfetch 是一个简单而强大的 Node.js 的 HTTP 客户端，支持 Promise，相比 <a>request</a> 更轻量级。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Node v0.10.37 (Maintenance)
+<ul>
+<li><a href="http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable/">http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable/</a></li>
+</ul>
+</li>
+<li>npm private modules are coming soon!
+<ul>
+<li><a href="http://blog.npmjs.org/post/113172137370/npm-private-modules-are-coming-soon">http://blog.npmjs.org/post/113172137370/npm-private-modules-are-coming-soon</a></li>
+</ul>
+</li>
+<li>Android WebView Update
+<ul>
+<li><a href="http://googlechromereleases.blogspot.com/2015/03/android-webview-update.html">http://googlechromereleases.blogspot.com/2015/03/android-webview-update.html</a></li>
+</ul>
+</li>
+<li>Building The Facebook News Feed With Relay
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2015/03/19/building-the-facebook-news-feed-with-relay.html">http://facebook.github.io/react/blog/2015/03/19/building-the-facebook-news-feed-with-relay.html</a></li>
+</ul>
+</li>
+<li>DevTools: State Of The Union 2015
+<ul>
+<li><a href="https://speakerdeck.com/addyosmani/devtools-state-of-the-union-2015">https://speakerdeck.com/addyosmani/devtools-state-of-the-union-2015</a></li>
+</ul>
+</li>
+<li>New JavaScript techniques for rapid page loads
+<ul>
+<li><a href="http://blog.chromium.org/2015/03/new-javascript-techniques-for-rapid.html">http://blog.chromium.org/2015/03/new-javascript-techniques-for-rapid.html</a></li>
+</ul>
+</li>
+<li>2015年，移动开发都有哪些热点？
+<ul>
+<li><a href="http://www.infoq.com/cn/articles/mobile-trend-2015">http://www.infoq.com/cn/articles/mobile-trend-2015</a></li>
+</ul>
+</li>
+<li>Angular Basics by ScriptyBooks, a free book on AngularJS
+<ul>
+<li><a href="http://www.angularjsbook.com/">http://www.angularjsbook.com/</a></li>
+</ul>
+</li>
+<li>Build Your own Simplified AngularJS in 200 Lines of JavaScript
+<ul>
+<li><a href="http://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/">http://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/</a></li>
+</ul>
+</li>
+<li>Defensive JavaScript? Yes, Please!
+<ul>
+<li><a href="http://blog.javascripting.com/2015/03/18/defensive-javascript/">http://blog.javascripting.com/2015/03/18/defensive-javascript/</a></li>
+</ul>
+</li>
+<li>NodeGit
+<ul>
+<li><a href="http://www.nodegit.org/">http://www.nodegit.org/</a></li>
+</ul>
+</li>
+<li>luin/superfetch
+<ul>
+<li><a href="https://github.com/luin/superfetch">https://github.com/luin/superfetch</a></li>
+</ul>
+</li>
+</ul>
+";s:14:"date_timestamp";i:1427114126;}i:1;a:14:{s:5:"title";s:72:"[懒懒小报-外刊第11期] V8 团队的 JavaScript 语言增强计划";s:4:"link";s:208:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac11%e6%9c%9f-v8-%e5%9b%a2%e9%98%9f%e7%9a%84-javascript-%e8%af%ad%e8%a8%80%e5%a2%9e%e5%bc%ba%e8%ae%a1%e5%88%92/";s:8:"comments";s:217:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac11%e6%9c%9f-v8-%e5%9b%a2%e9%98%9f%e7%9a%84-javascript-%e8%af%ad%e8%a8%80%e5%a2%9e%e5%bc%ba%e8%ae%a1%e5%88%92/#comments";s:7:"pubdate";s:31:"Thu, 19 Mar 2015 03:42:00 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"弘树";}s:8:"category";s:27:"懒懒交流会懒懒小报";s:4:"guid";s:34:"http://ued.taobao.org/blog/?p=9618";s:11:"description";s:417:"久违了亲们，小报君又回来了。新的一年，欢迎大家将看到不错的文章分享到微博并 @F2EWeekly 来投递给小报君，一起来 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac11%e6%9c%9f-v8-%e5%9b%a2%e9%98%9f%e7%9a%84-javascript-%e8%af%ad%e8%a8%80%e5%a2%9e%e5%bc%ba%e8%ae%a1%e5%88%92/">更多&#62;</a>";s:7:"content";a:1:{s:7:"encoded";s:6749:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>久违了亲们，小报君又回来了。新的一年，欢迎大家将看到不错的文章分享到微博并 @<a href="http://weibo.com/f2eweekly">F2EWeekly</a> 来投递给小报君，一起来贡献和分享有价值的前端内容，感谢大家的支持！</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#2015-03-06-version-150-rvagg">io.js 1.5.0 &amp; 1.5.1</a>
+<ul>
+<li>上周 io.js 发布了 1.5.0 和 1.5.1 版本，主要变化包括新的 <code>Buffer#indexOf()</code> 方法、<code>tls</code> 模块中的内存泄露问题的部分修复，<code>npm</code> 的更新等。</li>
+</ul>
+</li>
+<li><a href="http://facebook.github.io/react/blog/2015/03/10/react-v0.13.html">React v0.13</a>
+<ul>
+<li>React 更新至 v0.13，带来的主要变化是支持 ES 6 class 来构建 React 组件。</li>
+</ul>
+</li>
+<li><a href="https://dev.opera.com/blog/opera-28/">Dev.Opera — Opera 28 released</a>
+<ul>
+<li>Opera 28 已发布，基于 Chromium 41。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://blog.fgribreau.com/2015/03/braindump-versioning-http-api.html">[BrainDump] Versioning an HTTP API | Francois Guillaume Ribreau</a>
+<ul>
+<li>如何做 HTTP API 接口的版本化管理？这篇文章总结了目前客户端指定 API 版本和服务器端如何处理的各种方法和优劣。</li>
+</ul>
+</li>
+<li><a href="https://developers.google.com/v8/experiments">Experiments with Strengthening JavaScript &#8211; Chrome V8 — Google Developers</a>
+<ul>
+<li>随着 ES6 的即将来临，V8 团队开始探索以 ES6 和 JavaScript 类型系统为出发点，尝试实验性的新的语言扩展来提升开发体验和语言的可扩展性，包括强模式（Strong mode）和 SoundScript。</li>
+</ul>
+</li>
+<li><a href="https://github.com/poteto/emberconf-2015">poteto/emberconf-2015</a>
+<ul>
+<li>汇集了上周的 <a href="http://emberconf.com/">EmberConf 2015</a> 大会的实时博客记录、演讲视频和幻灯片资料。</li>
+</ul>
+</li>
+<li><a href="https://medium.com/angularjs-meetup-south-london/angular-ng-conf-2015-media-25dbe6250154">Angular — ng-conf 2015 media</a>
+<ul>
+<li>汇集了上周 <a href="http://www.ng-conf.org/">ng-conf 2015</a> 的所有演讲的视频和幻灯片。</li>
+</ul>
+</li>
+<li><a href="https://medium.com/@markfayngersh/harry-potter-and-the-magical-framework-4cb60b89e7fe">Harry Potter and the Magical Framework</a>
+<ul>
+<li>MV* 框架为我们带来各种魔法的同时，你是否有思考过他为你的代码带来的不透明的风险？如何在代码控制权和简化业务开发之间取得平衡？怎样才算是真正的关注点分离？这篇文章探讨的一些问题也许会引起你的共鸣和思考。</li>
+</ul>
+</li>
+<li><a href="http://lisperator.net/pltut/">How to implement a programming language (tutorial for beginners)</a>
+<ul>
+<li>如何用 JavaScript 实现一门编程语言？</li>
+</ul>
+</li>
+<li><a href="http://www.sitepoint.com/comparison-javascript-linting-tools/">A Comparison of JavaScript Linting Tools</a>
+<ul>
+<li>对比了包括 JSLint、JSHint、JSCS、ESLint 等 JavaScript lint 工具各自的优缺点。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://lab.ejci.net/favico.js/">favico.js &#8211; Make a use of your favicon</a>
+<ul>
+<li>想 hack 下你的站点的 favicon 图标？现在有了这个小插件，不仅能结合上标记动画，还能设置为视频，甚至是从摄像头读取视频生成！</li>
+</ul>
+</li>
+<li><a href="https://github.com/Kikobeats/acho#acho">Kikobeats/acho</a>
+<ul>
+<li>一个简单而强大的适用于 NodeJS 和浏览器端的日志模块。</li>
+</ul>
+</li>
+<li><a href="https://github.com/guyonroche/exceljs">guyonroche/exceljs</a>
+<ul>
+<li>exceljs 是通过对 Excel 的反向工程实现的一个操作 excel 表格工具，可以读取、操作并将电子表格数据和样式写入到 XLSX 和 JSON。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>io.js 1.5.0 &amp; 1.5.1
+<ul>
+<li><a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#2015-03-06-version-150-rvagg">https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#2015-03-06-version-150-rvagg</a></li>
+</ul>
+</li>
+<li>React v0.13
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2015/03/10/react-v0.13.html">http://facebook.github.io/react/blog/2015/03/10/react-v0.13.html</a></li>
+</ul>
+</li>
+<li>Dev.Opera — Opera 28 released
+<ul>
+<li><a href="https://dev.opera.com/blog/opera-28/">https://dev.opera.com/blog/opera-28/</a></li>
+</ul>
+</li>
+<li>[BrainDump] Versioning an HTTP API | Francois Guillaume Ribreau
+<ul>
+<li><a href="http://blog.fgribreau.com/2015/03/braindump-versioning-http-api.html">http://blog.fgribreau.com/2015/03/braindump-versioning-http-api.html</a></li>
+</ul>
+</li>
+<li>Experiments with Strengthening JavaScript &#8211; Chrome V8 — Google Developers
+<ul>
+<li><a href="https://developers.google.com/v8/experiments">https://developers.google.com/v8/experiments</a></li>
+</ul>
+</li>
+<li>poteto/emberconf-2015
+<ul>
+<li><a href="https://github.com/poteto/emberconf-2015">https://github.com/poteto/emberconf-2015</a></li>
+</ul>
+</li>
+<li>Angular — ng-conf 2015 media
+<ul>
+<li><a href="https://medium.com/angularjs-meetup-south-london/angular-ng-conf-2015-media-25dbe6250154">https://medium.com/angularjs-meetup-south-london/angular-ng-conf-2015-media-25dbe6250154</a></li>
+</ul>
+</li>
+<li>Harry Potter and the Magical Framework
+<ul>
+<li><a href="https://medium.com/@markfayngersh/harry-potter-and-the-magical-framework-4cb60b89e7fe">https://medium.com/@markfayngersh/harry-potter-and-the-magical-framework-4cb60b89e7fe</a></li>
+</ul>
+</li>
+<li>How to implement a programming language (tutorial for beginners)
+<ul>
+<li><a href="http://lisperator.net/pltut/">http://lisperator.net/pltut/</a></li>
+</ul>
+</li>
+<li>A Comparison of JavaScript Linting Tools
+<ul>
+<li><a href="http://www.sitepoint.com/comparison-javascript-linting-tools/">http://www.sitepoint.com/comparison-javascript-linting-tools/</a></li>
+</ul>
+</li>
+<li>favico.js &#8211; Make a use of your favicon
+<ul>
+<li><a href="http://lab.ejci.net/favico.js/">http://lab.ejci.net/favico.js/</a></li>
+</ul>
+</li>
+<li>Kikobeats/acho
+<ul>
+<li><a href="https://github.com/Kikobeats/acho#acho">https://github.com/Kikobeats/acho#acho</a></li>
+</ul>
+</li>
+<li>guyonroche/exceljs
+<ul>
+<li><a href="https://github.com/guyonroche/exceljs">https://github.com/guyonroche/exceljs</a></li>
+</ul>
+</li>
+</ul>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:213:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac11%e6%9c%9f-v8-%e5%9b%a2%e9%98%9f%e7%9a%84-javascript-%e8%af%ad%e8%a8%80%e5%a2%9e%e5%bc%ba%e8%ae%a1%e5%88%92/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"3";}s:7:"summary";s:417:"久违了亲们，小报君又回来了。新的一年，欢迎大家将看到不错的文章分享到微博并 @F2EWeekly 来投递给小报君，一起来 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac11%e6%9c%9f-v8-%e5%9b%a2%e9%98%9f%e7%9a%84-javascript-%e8%af%ad%e8%a8%80%e5%a2%9e%e5%bc%ba%e8%ae%a1%e5%88%92/">更多&#62;</a>";s:12:"atom_content";s:6749:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>久违了亲们，小报君又回来了。新的一年，欢迎大家将看到不错的文章分享到微博并 @<a href="http://weibo.com/f2eweekly">F2EWeekly</a> 来投递给小报君，一起来贡献和分享有价值的前端内容，感谢大家的支持！</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#2015-03-06-version-150-rvagg">io.js 1.5.0 &amp; 1.5.1</a>
+<ul>
+<li>上周 io.js 发布了 1.5.0 和 1.5.1 版本，主要变化包括新的 <code>Buffer#indexOf()</code> 方法、<code>tls</code> 模块中的内存泄露问题的部分修复，<code>npm</code> 的更新等。</li>
+</ul>
+</li>
+<li><a href="http://facebook.github.io/react/blog/2015/03/10/react-v0.13.html">React v0.13</a>
+<ul>
+<li>React 更新至 v0.13，带来的主要变化是支持 ES 6 class 来构建 React 组件。</li>
+</ul>
+</li>
+<li><a href="https://dev.opera.com/blog/opera-28/">Dev.Opera — Opera 28 released</a>
+<ul>
+<li>Opera 28 已发布，基于 Chromium 41。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://blog.fgribreau.com/2015/03/braindump-versioning-http-api.html">[BrainDump] Versioning an HTTP API | Francois Guillaume Ribreau</a>
+<ul>
+<li>如何做 HTTP API 接口的版本化管理？这篇文章总结了目前客户端指定 API 版本和服务器端如何处理的各种方法和优劣。</li>
+</ul>
+</li>
+<li><a href="https://developers.google.com/v8/experiments">Experiments with Strengthening JavaScript &#8211; Chrome V8 — Google Developers</a>
+<ul>
+<li>随着 ES6 的即将来临，V8 团队开始探索以 ES6 和 JavaScript 类型系统为出发点，尝试实验性的新的语言扩展来提升开发体验和语言的可扩展性，包括强模式（Strong mode）和 SoundScript。</li>
+</ul>
+</li>
+<li><a href="https://github.com/poteto/emberconf-2015">poteto/emberconf-2015</a>
+<ul>
+<li>汇集了上周的 <a href="http://emberconf.com/">EmberConf 2015</a> 大会的实时博客记录、演讲视频和幻灯片资料。</li>
+</ul>
+</li>
+<li><a href="https://medium.com/angularjs-meetup-south-london/angular-ng-conf-2015-media-25dbe6250154">Angular — ng-conf 2015 media</a>
+<ul>
+<li>汇集了上周 <a href="http://www.ng-conf.org/">ng-conf 2015</a> 的所有演讲的视频和幻灯片。</li>
+</ul>
+</li>
+<li><a href="https://medium.com/@markfayngersh/harry-potter-and-the-magical-framework-4cb60b89e7fe">Harry Potter and the Magical Framework</a>
+<ul>
+<li>MV* 框架为我们带来各种魔法的同时，你是否有思考过他为你的代码带来的不透明的风险？如何在代码控制权和简化业务开发之间取得平衡？怎样才算是真正的关注点分离？这篇文章探讨的一些问题也许会引起你的共鸣和思考。</li>
+</ul>
+</li>
+<li><a href="http://lisperator.net/pltut/">How to implement a programming language (tutorial for beginners)</a>
+<ul>
+<li>如何用 JavaScript 实现一门编程语言？</li>
+</ul>
+</li>
+<li><a href="http://www.sitepoint.com/comparison-javascript-linting-tools/">A Comparison of JavaScript Linting Tools</a>
+<ul>
+<li>对比了包括 JSLint、JSHint、JSCS、ESLint 等 JavaScript lint 工具各自的优缺点。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://lab.ejci.net/favico.js/">favico.js &#8211; Make a use of your favicon</a>
+<ul>
+<li>想 hack 下你的站点的 favicon 图标？现在有了这个小插件，不仅能结合上标记动画，还能设置为视频，甚至是从摄像头读取视频生成！</li>
+</ul>
+</li>
+<li><a href="https://github.com/Kikobeats/acho#acho">Kikobeats/acho</a>
+<ul>
+<li>一个简单而强大的适用于 NodeJS 和浏览器端的日志模块。</li>
+</ul>
+</li>
+<li><a href="https://github.com/guyonroche/exceljs">guyonroche/exceljs</a>
+<ul>
+<li>exceljs 是通过对 Excel 的反向工程实现的一个操作 excel 表格工具，可以读取、操作并将电子表格数据和样式写入到 XLSX 和 JSON。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>io.js 1.5.0 &amp; 1.5.1
+<ul>
+<li><a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#2015-03-06-version-150-rvagg">https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#2015-03-06-version-150-rvagg</a></li>
+</ul>
+</li>
+<li>React v0.13
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2015/03/10/react-v0.13.html">http://facebook.github.io/react/blog/2015/03/10/react-v0.13.html</a></li>
+</ul>
+</li>
+<li>Dev.Opera — Opera 28 released
+<ul>
+<li><a href="https://dev.opera.com/blog/opera-28/">https://dev.opera.com/blog/opera-28/</a></li>
+</ul>
+</li>
+<li>[BrainDump] Versioning an HTTP API | Francois Guillaume Ribreau
+<ul>
+<li><a href="http://blog.fgribreau.com/2015/03/braindump-versioning-http-api.html">http://blog.fgribreau.com/2015/03/braindump-versioning-http-api.html</a></li>
+</ul>
+</li>
+<li>Experiments with Strengthening JavaScript &#8211; Chrome V8 — Google Developers
+<ul>
+<li><a href="https://developers.google.com/v8/experiments">https://developers.google.com/v8/experiments</a></li>
+</ul>
+</li>
+<li>poteto/emberconf-2015
+<ul>
+<li><a href="https://github.com/poteto/emberconf-2015">https://github.com/poteto/emberconf-2015</a></li>
+</ul>
+</li>
+<li>Angular — ng-conf 2015 media
+<ul>
+<li><a href="https://medium.com/angularjs-meetup-south-london/angular-ng-conf-2015-media-25dbe6250154">https://medium.com/angularjs-meetup-south-london/angular-ng-conf-2015-media-25dbe6250154</a></li>
+</ul>
+</li>
+<li>Harry Potter and the Magical Framework
+<ul>
+<li><a href="https://medium.com/@markfayngersh/harry-potter-and-the-magical-framework-4cb60b89e7fe">https://medium.com/@markfayngersh/harry-potter-and-the-magical-framework-4cb60b89e7fe</a></li>
+</ul>
+</li>
+<li>How to implement a programming language (tutorial for beginners)
+<ul>
+<li><a href="http://lisperator.net/pltut/">http://lisperator.net/pltut/</a></li>
+</ul>
+</li>
+<li>A Comparison of JavaScript Linting Tools
+<ul>
+<li><a href="http://www.sitepoint.com/comparison-javascript-linting-tools/">http://www.sitepoint.com/comparison-javascript-linting-tools/</a></li>
+</ul>
+</li>
+<li>favico.js &#8211; Make a use of your favicon
+<ul>
+<li><a href="http://lab.ejci.net/favico.js/">http://lab.ejci.net/favico.js/</a></li>
+</ul>
+</li>
+<li>Kikobeats/acho
+<ul>
+<li><a href="https://github.com/Kikobeats/acho#acho">https://github.com/Kikobeats/acho#acho</a></li>
+</ul>
+</li>
+<li>guyonroche/exceljs
+<ul>
+<li><a href="https://github.com/guyonroche/exceljs">https://github.com/guyonroche/exceljs</a></li>
+</ul>
+</li>
+</ul>
+";s:14:"date_timestamp";i:1426736520;}i:2;a:14:{s:5:"title";s:73:"[懒懒小报-外刊第10期]听 Jafar Husain 讲述 JavaScript 的演化";s:4:"link";s:191:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac10%e6%9c%9f%e5%90%ac-jafar-husain-%e8%ae%b2%e8%bf%b0-javascript-%e7%9a%84%e6%bc%94%e5%8c%96/";s:8:"comments";s:200:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac10%e6%9c%9f%e5%90%ac-jafar-husain-%e8%ae%b2%e8%bf%b0-javascript-%e7%9a%84%e6%bc%94%e5%8c%96/#comments";s:7:"pubdate";s:31:"Thu, 19 Mar 2015 03:41:12 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"弘树";}s:8:"category";s:27:"懒懒交流会懒懒小报";s:4:"guid";s:34:"http://ued.taobao.org/blog/?p=9616";s:11:"description";s:356:"2014-12-08 00:13:04 双十二即将来临，奋战在前线的小伙伴们辛苦啦！ 业界动态 Q&#38;A: Why &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac10%e6%9c%9f%e5%90%ac-jafar-husain-%e8%ae%b2%e8%bf%b0-javascript-%e7%9a%84%e6%bc%94%e5%8c%96/">更多&#62;</a>";s:7:"content";a:1:{s:7:"encoded";s:9279:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p><span class="info">2014-12-08 00:13:04</span></p>
+<p>双十二即将来临，奋战在前线的小伙伴们辛苦啦！</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html">Q&amp;A: Why io.js decided to fork Node.js</a>
+<ul>
+<li>也许你已有所耳闻，最近 Node.js 社区出现了一些动荡，部分核心成员不满于 Joyent 的管理，回归到以前从 Node.js 拉出的分支项目 <a href="http://iojs.org/">io.js</a>。此次 Fork 行动参与者之一 Mikeal Rogers 在 InfoWorld 采访中说明了该事件的原委，以及对 io.js 的期望目标，表示正在努力吸引更多的人以更自由的贡献方式参与到该项目，以及开放自治的设计确保贡献者们都能参与到决策中。</li>
+<li>对此 Joyent 方面也随即做出了回应，启动了 <a href="http://nodejs.org/about/advisory-board/">Node.js 公告板</a>，期望能以更透明开放的方式保持社区中的关系和谐稳定，为个人、用户和企业提供开放的论坛来讨论共建 issue。</li>
+<li>如果你对 io.js 还不太了解，<a href="https://gist.github.com/maxogden/d96123138522c84cdb25">这个帖子</a>或许可以解答你的大部分困惑。</li>
+</ul>
+</li>
+<li><a href="http://www.sitepoint.com/whats-new-firefox-34/">What’s New in Firefox 34</a>
+<ul>
+<li>Firefox 34 上周已发布，本次更新带来 <code>font-kerning</code>、<code>font-synthesis</code>等一系列新的 CSS 3 字体属性支持、JavaScript 字符串模板、<a href="http://www.sitepoint.com/preparing-ecmascript-6-set-weakset/">ES6 wekset</a> 和 HTTP/2 实现以及开发者工具的更新等新特性。</li>
+</ul>
+</li>
+<li><a href="https://dev.opera.com/blog/opera-26/">Opera 26 released</a>
+<ul>
+<li>Opera 26（基于 Chromium 39）已发布，带来 <a href="https://w3c.github.io/beacon/">Beacon API</a> 、<a href="http://dev.w3.org/csswg/css-images-3/#the-image-rendering"><code>image-rendering</code>属性</a>、ES6 生成器、Web 动画回放控制等的支持。</li>
+</ul>
+</li>
+<li><a href="http://bassistance.de/2014/12/01/jquery-foundation-2014-roundup/">jQuery Foundation 2014 roundup</a>
+<ul>
+<li>jQuery Foundation 2014 roundup | 2014 即将过去，作为 jQuery 基金会负责人之一的 Jörn 在这篇文章中回顾了过去的一年里，jQuery 基金会在标准化、库和工具、jQuery UI、Qunit、Globalize 等领域和项目的进展。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="https://drive.google.com/file/d/0B4PVbLpUIdzoUjdmSkFtVVozQnM/view?pli=1">ES7 —— The Evolution of JavaScript</a>
+<ul>
+<li>来自 Netflix 的作为 TC-39 成员之一的 Jafar Husain 在这篇演讲中分享了关于 JavaScript 从 ES5 到 ES7 的进化，重点介绍了 ES6 到 ES7 为了提供原生的对象观察和异步流处理是如何一步步演变的，演示生动易懂，坚持看下来一定会让你对 JavaScript 的现状和未来有更深入的理解。</li>
+</ul>
+</li>
+<li><a href="http://www.willvillanueva.com/the-node-js-profiling-guide-that-hasnt-existed-profiling-node-js-applications-part-1/">The node.js Profiling Guide that Hasn’t Existed</a>
+<ul>
+<li>Will Villanueva 的 《The node.js Profiling Guide that Hasn’t Existed》系列文章介绍了如何借助一些开源工具来诊断 node.js 应用，包括检查是否有潜在的内存泄露并定位内存泄露的源头，以及即将发布的 CPU 和性能概况查看等。</li>
+</ul>
+</li>
+<li><a href="https://www.airpair.com/angularjs/posts/preparing-for-the-future-of-angularjs">Preparing for the future of AngularJS</a>
+<ul>
+<li>上期小报中我们已经介绍过 ng-europe 2014 上 Angular 核心团队宣布 2.0 即将带来的一些重大的变革，那如何让我们的项目提前为 Angular 2.0 做好准备呢？这篇文章详细介绍了 Angular 2.0 当前的计划背后的原因，以及为 Angular 2.0 到来做准备的一些建议和最佳实践，值得一读！</li>
+</ul>
+</li>
+<li><a href="http://blog.nraboy.com/2014/12/using-nested-states-angularjs-ui-router/">Using Nested States With The AngularJS UI-Router</a>
+<ul>
+<li>这篇文章介绍了如何在 Angular 应用中借助 <a href="https://github.com/angular-ui/ui-router">UI-Router</a> 来做多页面布局的嵌套，帮助你更好地解决页面布局复用的问题，并提供了视频演示。</li>
+</ul>
+</li>
+<li><a href="http://iamralpht.github.io/physics/">Creating Animations and Interactions with Physical Models</a>
+<ul>
+<li>基于物理模型的动画和交互如今越来越常见，可以带给用户更加自然的体验，这篇文章中介绍了一些基本的物理模型以及基于它们构建的各种交互和动画，提供了丰富的 Demo，相信可以给对 CSS 动画感兴趣的你一些启发。</li>
+</ul>
+</li>
+<li><a href="http://css-tricks.com/automating-css-regression-testing/">Automating CSS Regression Testing</a>
+<ul>
+<li>时至今日前端测试依然是一个尚在不断探索中的领域，而对于 CSS 的测试则更加困难。这篇文章介绍了如何基于 <a href="https://garris.github.io/BackstopJS/">BackstopJS</a> 做自动化的 CSS 回归测试，可以借鉴一下。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="https://www.angular-gantt.com/">angular-gantt</a>
+<ul>
+<li>angular-gantt 是一个面向 Angular 的甘特图组件，提供了插件机制配置甘特图上需要用到的模块。如果你想基于 Angular 开发项目管理方面的应用，一定不能错过。</li>
+</ul>
+</li>
+<li><a href="http://handsontable.com/index.html">Handsontable</a>
+<ul>
+<li>Handsontable 是一个极简的类似 Excel 的在线数据表格编辑器，支持丰富的展现形式和交互，以及多种多样的单元格类型，目前最新版中移除了 jQuery 依赖，并提供了面向 jQuery、Polymer、BackBone、Angular 等的插件。</li>
+</ul>
+</li>
+<li><a href="http://data.wurfl.io/MOVR/pdf/2014_q3/MOVR_2014_q3.pdf">Mobile Overview Report July-September 2014</a>
+<ul>
+<li>ScientiaMobile 的这份 2014 Q3 的移动端概述报告包含了全球移动端设备分布的详尽的数据和图表，做移动端开发的同学可以看看。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Q&amp;A: Why io.js decided to fork Node.js
+<ul>
+<li><a href="http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html">http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html</a></li>
+</ul>
+</li>
+<li>io.js
+<ul>
+<li><a href="http://iojs.org/">http://iojs.org/</a></li>
+</ul>
+</li>
+<li>What’s New in Firefox 34
+<ul>
+<li><a href="http://www.sitepoint.com/whats-new-firefox-34/">http://www.sitepoint.com/whats-new-firefox-34/</a></li>
+</ul>
+</li>
+<li>Opera 26 released
+<ul>
+<li><a href="https://dev.opera.com/blog/opera-26/">https://dev.opera.com/blog/opera-26/</a></li>
+</ul>
+</li>
+<li>jQuery Foundation 2014 roundup
+<ul>
+<li><a href="http://bassistance.de/2014/12/01/jquery-foundation-2014-roundup/">http://bassistance.de/2014/12/01/jquery-foundation-2014-roundup/</a></li>
+</ul>
+</li>
+<li>ES7 —— The Evolution of JavaScript
+<ul>
+<li><a href="https://drive.google.com/file/d/0B4PVbLpUIdzoUjdmSkFtVVozQnM/view?pli=1">https://drive.google.com/file/d/0B4PVbLpUIdzoUjdmSkFtVVozQnM/view?pli=1</a></li>
+</ul>
+</li>
+<li>The node.js Profiling Guide that Hasn’t Existed
+<ul>
+<li><a href="http://www.willvillanueva.com/the-node-js-profiling-guide-that-hasnt-existed-profiling-node-js-applications-part-1/">http://www.willvillanueva.com/the-node-js-profiling-guide-that-hasnt-existed-profiling-node-js-applications-part-1/</a></li>
+</ul>
+</li>
+<li>Preparing for the future of AngularJS
+<ul>
+<li><a href="https://www.airpair.com/angularjs/posts/preparing-for-the-future-of-angularjs">https://www.airpair.com/angularjs/posts/preparing-for-the-future-of-angularjs</a></li>
+</ul>
+</li>
+<li>Using Nested States With The AngularJS UI-Router
+<ul>
+<li><a href="http://blog.nraboy.com/2014/12/using-nested-states-angularjs-ui-router/">http://blog.nraboy.com/2014/12/using-nested-states-angularjs-ui-router/</a></li>
+</ul>
+</li>
+<li>Creating Animations and Interactions with Physical Models
+<ul>
+<li><a href="http://iamralpht.github.io/physics/">http://iamralpht.github.io/physics/</a></li>
+</ul>
+</li>
+<li>Automating CSS Regression Testing
+<ul>
+<li><a href="http://css-tricks.com/automating-css-regression-testing/">http://css-tricks.com/automating-css-regression-testing/</a></li>
+</ul>
+</li>
+<li>angular-gantt
+<ul>
+<li><a href="https://www.angular-gantt.com/">https://www.angular-gantt.com/</a></li>
+</ul>
+</li>
+<li>Handsontable
+<ul>
+<li><a href="http://handsontable.com/index.html">http://handsontable.com/index.html</a></li>
+</ul>
+</li>
+<li>Mobile Overview Report July-September 2014
+<ul>
+<li><a href="http://data.wurfl.io/MOVR/pdf/2014_q3/MOVR_2014_q3.pdf">http://data.wurfl.io/MOVR/pdf/2014_q3/MOVR_2014_q3.pdf</a></li>
+</ul>
+</li>
+</ul>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:196:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac10%e6%9c%9f%e5%90%ac-jafar-husain-%e8%ae%b2%e8%bf%b0-javascript-%e7%9a%84%e6%bc%94%e5%8c%96/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"1";}s:7:"summary";s:356:"2014-12-08 00:13:04 双十二即将来临，奋战在前线的小伙伴们辛苦啦！ 业界动态 Q&#38;A: Why &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac10%e6%9c%9f%e5%90%ac-jafar-husain-%e8%ae%b2%e8%bf%b0-javascript-%e7%9a%84%e6%bc%94%e5%8c%96/">更多&#62;</a>";s:12:"atom_content";s:9279:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p><span class="info">2014-12-08 00:13:04</span></p>
+<p>双十二即将来临，奋战在前线的小伙伴们辛苦啦！</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html">Q&amp;A: Why io.js decided to fork Node.js</a>
+<ul>
+<li>也许你已有所耳闻，最近 Node.js 社区出现了一些动荡，部分核心成员不满于 Joyent 的管理，回归到以前从 Node.js 拉出的分支项目 <a href="http://iojs.org/">io.js</a>。此次 Fork 行动参与者之一 Mikeal Rogers 在 InfoWorld 采访中说明了该事件的原委，以及对 io.js 的期望目标，表示正在努力吸引更多的人以更自由的贡献方式参与到该项目，以及开放自治的设计确保贡献者们都能参与到决策中。</li>
+<li>对此 Joyent 方面也随即做出了回应，启动了 <a href="http://nodejs.org/about/advisory-board/">Node.js 公告板</a>，期望能以更透明开放的方式保持社区中的关系和谐稳定，为个人、用户和企业提供开放的论坛来讨论共建 issue。</li>
+<li>如果你对 io.js 还不太了解，<a href="https://gist.github.com/maxogden/d96123138522c84cdb25">这个帖子</a>或许可以解答你的大部分困惑。</li>
+</ul>
+</li>
+<li><a href="http://www.sitepoint.com/whats-new-firefox-34/">What’s New in Firefox 34</a>
+<ul>
+<li>Firefox 34 上周已发布，本次更新带来 <code>font-kerning</code>、<code>font-synthesis</code>等一系列新的 CSS 3 字体属性支持、JavaScript 字符串模板、<a href="http://www.sitepoint.com/preparing-ecmascript-6-set-weakset/">ES6 wekset</a> 和 HTTP/2 实现以及开发者工具的更新等新特性。</li>
+</ul>
+</li>
+<li><a href="https://dev.opera.com/blog/opera-26/">Opera 26 released</a>
+<ul>
+<li>Opera 26（基于 Chromium 39）已发布，带来 <a href="https://w3c.github.io/beacon/">Beacon API</a> 、<a href="http://dev.w3.org/csswg/css-images-3/#the-image-rendering"><code>image-rendering</code>属性</a>、ES6 生成器、Web 动画回放控制等的支持。</li>
+</ul>
+</li>
+<li><a href="http://bassistance.de/2014/12/01/jquery-foundation-2014-roundup/">jQuery Foundation 2014 roundup</a>
+<ul>
+<li>jQuery Foundation 2014 roundup | 2014 即将过去，作为 jQuery 基金会负责人之一的 Jörn 在这篇文章中回顾了过去的一年里，jQuery 基金会在标准化、库和工具、jQuery UI、Qunit、Globalize 等领域和项目的进展。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="https://drive.google.com/file/d/0B4PVbLpUIdzoUjdmSkFtVVozQnM/view?pli=1">ES7 —— The Evolution of JavaScript</a>
+<ul>
+<li>来自 Netflix 的作为 TC-39 成员之一的 Jafar Husain 在这篇演讲中分享了关于 JavaScript 从 ES5 到 ES7 的进化，重点介绍了 ES6 到 ES7 为了提供原生的对象观察和异步流处理是如何一步步演变的，演示生动易懂，坚持看下来一定会让你对 JavaScript 的现状和未来有更深入的理解。</li>
+</ul>
+</li>
+<li><a href="http://www.willvillanueva.com/the-node-js-profiling-guide-that-hasnt-existed-profiling-node-js-applications-part-1/">The node.js Profiling Guide that Hasn’t Existed</a>
+<ul>
+<li>Will Villanueva 的 《The node.js Profiling Guide that Hasn’t Existed》系列文章介绍了如何借助一些开源工具来诊断 node.js 应用，包括检查是否有潜在的内存泄露并定位内存泄露的源头，以及即将发布的 CPU 和性能概况查看等。</li>
+</ul>
+</li>
+<li><a href="https://www.airpair.com/angularjs/posts/preparing-for-the-future-of-angularjs">Preparing for the future of AngularJS</a>
+<ul>
+<li>上期小报中我们已经介绍过 ng-europe 2014 上 Angular 核心团队宣布 2.0 即将带来的一些重大的变革，那如何让我们的项目提前为 Angular 2.0 做好准备呢？这篇文章详细介绍了 Angular 2.0 当前的计划背后的原因，以及为 Angular 2.0 到来做准备的一些建议和最佳实践，值得一读！</li>
+</ul>
+</li>
+<li><a href="http://blog.nraboy.com/2014/12/using-nested-states-angularjs-ui-router/">Using Nested States With The AngularJS UI-Router</a>
+<ul>
+<li>这篇文章介绍了如何在 Angular 应用中借助 <a href="https://github.com/angular-ui/ui-router">UI-Router</a> 来做多页面布局的嵌套，帮助你更好地解决页面布局复用的问题，并提供了视频演示。</li>
+</ul>
+</li>
+<li><a href="http://iamralpht.github.io/physics/">Creating Animations and Interactions with Physical Models</a>
+<ul>
+<li>基于物理模型的动画和交互如今越来越常见，可以带给用户更加自然的体验，这篇文章中介绍了一些基本的物理模型以及基于它们构建的各种交互和动画，提供了丰富的 Demo，相信可以给对 CSS 动画感兴趣的你一些启发。</li>
+</ul>
+</li>
+<li><a href="http://css-tricks.com/automating-css-regression-testing/">Automating CSS Regression Testing</a>
+<ul>
+<li>时至今日前端测试依然是一个尚在不断探索中的领域，而对于 CSS 的测试则更加困难。这篇文章介绍了如何基于 <a href="https://garris.github.io/BackstopJS/">BackstopJS</a> 做自动化的 CSS 回归测试，可以借鉴一下。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="https://www.angular-gantt.com/">angular-gantt</a>
+<ul>
+<li>angular-gantt 是一个面向 Angular 的甘特图组件，提供了插件机制配置甘特图上需要用到的模块。如果你想基于 Angular 开发项目管理方面的应用，一定不能错过。</li>
+</ul>
+</li>
+<li><a href="http://handsontable.com/index.html">Handsontable</a>
+<ul>
+<li>Handsontable 是一个极简的类似 Excel 的在线数据表格编辑器，支持丰富的展现形式和交互，以及多种多样的单元格类型，目前最新版中移除了 jQuery 依赖，并提供了面向 jQuery、Polymer、BackBone、Angular 等的插件。</li>
+</ul>
+</li>
+<li><a href="http://data.wurfl.io/MOVR/pdf/2014_q3/MOVR_2014_q3.pdf">Mobile Overview Report July-September 2014</a>
+<ul>
+<li>ScientiaMobile 的这份 2014 Q3 的移动端概述报告包含了全球移动端设备分布的详尽的数据和图表，做移动端开发的同学可以看看。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Q&amp;A: Why io.js decided to fork Node.js
+<ul>
+<li><a href="http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html">http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html</a></li>
+</ul>
+</li>
+<li>io.js
+<ul>
+<li><a href="http://iojs.org/">http://iojs.org/</a></li>
+</ul>
+</li>
+<li>What’s New in Firefox 34
+<ul>
+<li><a href="http://www.sitepoint.com/whats-new-firefox-34/">http://www.sitepoint.com/whats-new-firefox-34/</a></li>
+</ul>
+</li>
+<li>Opera 26 released
+<ul>
+<li><a href="https://dev.opera.com/blog/opera-26/">https://dev.opera.com/blog/opera-26/</a></li>
+</ul>
+</li>
+<li>jQuery Foundation 2014 roundup
+<ul>
+<li><a href="http://bassistance.de/2014/12/01/jquery-foundation-2014-roundup/">http://bassistance.de/2014/12/01/jquery-foundation-2014-roundup/</a></li>
+</ul>
+</li>
+<li>ES7 —— The Evolution of JavaScript
+<ul>
+<li><a href="https://drive.google.com/file/d/0B4PVbLpUIdzoUjdmSkFtVVozQnM/view?pli=1">https://drive.google.com/file/d/0B4PVbLpUIdzoUjdmSkFtVVozQnM/view?pli=1</a></li>
+</ul>
+</li>
+<li>The node.js Profiling Guide that Hasn’t Existed
+<ul>
+<li><a href="http://www.willvillanueva.com/the-node-js-profiling-guide-that-hasnt-existed-profiling-node-js-applications-part-1/">http://www.willvillanueva.com/the-node-js-profiling-guide-that-hasnt-existed-profiling-node-js-applications-part-1/</a></li>
+</ul>
+</li>
+<li>Preparing for the future of AngularJS
+<ul>
+<li><a href="https://www.airpair.com/angularjs/posts/preparing-for-the-future-of-angularjs">https://www.airpair.com/angularjs/posts/preparing-for-the-future-of-angularjs</a></li>
+</ul>
+</li>
+<li>Using Nested States With The AngularJS UI-Router
+<ul>
+<li><a href="http://blog.nraboy.com/2014/12/using-nested-states-angularjs-ui-router/">http://blog.nraboy.com/2014/12/using-nested-states-angularjs-ui-router/</a></li>
+</ul>
+</li>
+<li>Creating Animations and Interactions with Physical Models
+<ul>
+<li><a href="http://iamralpht.github.io/physics/">http://iamralpht.github.io/physics/</a></li>
+</ul>
+</li>
+<li>Automating CSS Regression Testing
+<ul>
+<li><a href="http://css-tricks.com/automating-css-regression-testing/">http://css-tricks.com/automating-css-regression-testing/</a></li>
+</ul>
+</li>
+<li>angular-gantt
+<ul>
+<li><a href="https://www.angular-gantt.com/">https://www.angular-gantt.com/</a></li>
+</ul>
+</li>
+<li>Handsontable
+<ul>
+<li><a href="http://handsontable.com/index.html">http://handsontable.com/index.html</a></li>
+</ul>
+</li>
+<li>Mobile Overview Report July-September 2014
+<ul>
+<li><a href="http://data.wurfl.io/MOVR/pdf/2014_q3/MOVR_2014_q3.pdf">http://data.wurfl.io/MOVR/pdf/2014_q3/MOVR_2014_q3.pdf</a></li>
+</ul>
+</li>
+</ul>
+";s:14:"date_timestamp";i:1426736472;}i:3;a:14:{s:5:"title";s:75:"[懒懒小报-外刊第9期]如何用标准的 Web 技术取代 Angular ？";s:4:"link";s:223:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac9%e6%9c%9f%e5%a6%82%e4%bd%95%e7%94%a8%e6%a0%87%e5%87%86%e7%9a%84-web-%e6%8a%80%e6%9c%af%e5%8f%96%e4%bb%a3-angular-%ef%bc%9f/";s:8:"comments";s:232:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac9%e6%9c%9f%e5%a6%82%e4%bd%95%e7%94%a8%e6%a0%87%e5%87%86%e7%9a%84-web-%e6%8a%80%e6%9c%af%e5%8f%96%e4%bb%a3-angular-%ef%bc%9f/#comments";s:7:"pubdate";s:31:"Thu, 19 Mar 2015 03:40:08 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"弘树";}s:8:"category";s:27:"懒懒交流会懒懒小报";s:4:"guid";s:34:"http://ued.taobao.org/blog/?p=9614";s:11:"description";s:416:"2014-11-10 01:31:37 抱歉由于个人原因小报君与大家久违了，本期也因此有了更丰富的素材以飨读者，首先说说 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac9%e6%9c%9f%e5%a6%82%e4%bd%95%e7%94%a8%e6%a0%87%e5%87%86%e7%9a%84-web-%e6%8a%80%e6%9c%af%e5%8f%96%e4%bb%a3-angular-%ef%bc%9f/">更多&#62;</a>";s:7:"content";a:1:{s:7:"encoded";s:12958:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>2014-11-10 01:31:37</p>
+<p>抱歉由于个人原因小报君与大家久违了，本期也因此有了更丰富的素材以飨读者，首先说说最近发生的一些新鲜事：</p>
+<ul>
+<li>经历了多年的讨论、实践和提案后，<a href="http://www.w3.org/2014/10/html5-rec.html.en">HTML5 终于于上月底正式成为 W3C 推荐标准</a>。W3C 特意制作了 <a href="http://vimeo.com/110256895">这段视频</a> 介绍 HTML5 标准的意义。</li>
+<li><a href="http://d2forum.alibaba-inc.com/">D2 2014</a> 圆满落幕，未能成行的小伙伴们可以上官网下载 Slides 看看。</li>
+<li>第一届 AngularJS 欧洲大会 <a href="http://ngeurope.org/">ng-europe 2014</a> 于 10.20 在巴黎举行。Angular 团队主管 Igor Minar 带来关于<a href="https://www.youtube.com/watch?v=gNmWybAyBHI"> Angular 2 核心变化</a>，<a href="https://docs.google.com/presentation/d/1XQP0_NTzCUcFweauLlkZpbbhNVYbYy156oD--KLmXsk/preview?sle=true#slide=id.p">演示见这里</a>。</li>
+</ul>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/">Node v0.10.33 (Stable)</a>
+<ul>
+<li>Node v0.10.33 上月底已发布，重点修复最近 Google 员工发现的<a href="https://www.imperialviolet.org/2014/10/14/poodle.html"> SSLv3 协议中的 POODLE </a>漏洞，目前 Node.js 编译时默认支持 SSLv2 and SSLv3 模块但不启用，但接下来的版本中将默认不再编译这两个模块。</li>
+</ul>
+</li>
+<li><a href="http://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/">jQuery 3.0: The Next Generations</a>
+<ul>
+<li>不知不觉 jQuery 已经走过了 8 个年头，jQuery 官方博客上介绍了关于 jQuery 下一版本的预告，将采用全新的命名法跃迁至 3.0，将主 jQuery 包和兼容包区分开来做更深入的定制，但同时保持共享版本号，<a href="http://new.w3ctech.com/topic/603">中文翻译可以见这里</a>。</li>
+</ul>
+</li>
+<li><a href="http://facebook.github.io/react/blog/2014/10/28/react-v0.12.html">React v0.12</a>
+<ul>
+<li>React 于上月底更新至 v0.12，带来诸多变化和新特性，包括新的术语 （<code>ReactElement</code> 替代<em>descriptor</em>、<code>ReactNode</code> 替代*renderable*）、更新的 API（<code>React.render*</code>方法中移除 <code>Component</code> 等）、JSX 的变化、开发工具的改进等。</li>
+</ul>
+</li>
+<li><a href="http://thenextweb.com/apple/2014/10/29/ios-8-now-52-iphones-hitting-app-store/">iOS 8 is now on 52% of iPhones hitting the App Store</a>
+<ul>
+<li>根据苹果开发者支持页面的最近更新，从 App Store 的访问数据显示目前 52% 的 iPhone 已升级至 iOS 8，iOS 7 占据 43%；iPad 方面 48% 的设备已经安装了 iOS 8。</li>
+</ul>
+</li>
+<li><a href="https://blog.mozilla.org/blog/2014/11/03/the-first-browser-dedicated-to-developers-is-coming-2/">The First Browser Dedicated to Developers is Coming</a>
+<ul>
+<li>Mozilla 宣布第一个真正为开发者而生的浏览器明天（ 10 月 10 日）即将到来，由开发者工具团队打造使你可以调试整个 web，赶紧先来一睹为快预告片吧！</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://player.vimeo.com/video/108488724">Server Rendered Single-Page Apps</a>
+<ul>
+<li>来自 SoundCloud 的 Andres Suarez 这篇分享介绍了他们团队在 SSR（Server-Side Rendering）方面的实践的经验教训，包括基于 Node 和 React 等实现前后端代码的复用，以及调试的技巧等，并提供了<a href="https://github.com/zertosh/ssr-demo-kit"> demo 项目</a> 供大家体验。</li>
+</ul>
+</li>
+<li><a href="http://stackoverflow.com/questions/26382156/replacing-angular-with-standard-web-technologies/26797121#26797121">angularjs &#8211; Replacing angular with standard web technologies &#8211; Stack Overflow</a>
+<ul>
+<li>这边 Angular 正在如日中天高速发展，那边大家已经开始探讨用标准的 Web 技术取代 Angular 的可行性，看看 StackOverflow 上这个问答，或许能引发你对于下一世代的 Web 开发模式趋势的思考。</li>
+</ul>
+</li>
+<li><a href="http://blog.thoughtram.io/angularjs/2014/11/06/exploring-angular-1.3-angular-hint.html">EXPLORING ANGULAR 1.3 &#8211; ANGULAR-HINT</a>
+<ul>
+<li>Angular 1.3 发布同时带来一个 <a href="https://github.com/angular/angular-hint">angular-hint</a> 的模块，让调试和定位错误变得更加轻松，如果你还没有尝试过，不妨看看这篇教程的介绍。</li>
+</ul>
+</li>
+<li><a href="https://github.com/mateusortiz/webcomponents-the-right-way">Web Components the Right Way</a>
+<ul>
+<li>一大波 Web Components 干货集合即将到来，从标准、相关博客、教程、互操作性、生成器到测试、最佳实践、性能、库等等，你想知道的关于 Web Components 的一切都可以在这里找到，当然也欢迎你来参与贡献！</li>
+</ul>
+</li>
+<li><a href="https://dev.opera.com/articles/perfect-javascript-framework/">In search of the perfect JavaScript framework</a>
+<ul>
+<li>Opera 这篇博文探讨了 JavaScript 框架设计和实现中的一些要点，包括抽象粒度、构造函数、DOM 操作以及事件处理、依赖管理、模板、模块化等方面；此外关联推荐<a href="http://book.douban.com/subject/25858070/">《JavaScript 框架设计》</a>这本书看看。</li>
+</ul>
+</li>
+<li><a href="http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging">npm and front-end packaging</a>
+<ul>
+<li>npm 官方博客上这篇博文讨论了关于 npm 包的一些设计理念和哲学，以及前端资源打包方面的难题和解决建议，分享了如何基于 npm 构建你自己的前端包管理机制的最佳实践和建议。如果你也在思考和践行前端包管理模式，不妨细读一下。</li>
+</ul>
+</li>
+<li><a href="https://medium.com/@Philmod/debugging-node-js-29b2097df36c">Debugging Node.js</a>
+<ul>
+<li>当你的 Node.js 应用运行时突然出现问题如何远程调试？这篇文章分享了如何借助于 gcore 捕捉 dump ，从获得的有用的堆栈信息中定位问题所在。此外还可以看看 Joyent 官网上<a href="https://www.joyent.com/blog/mdb-and-linux">这篇介绍使用 MDB 来做 node 的 core 文件分析的教程</a>。</li>
+</ul>
+</li>
+<li><a href="http://developer.telerik.com/featured/android-5-0s-auto-updating-webview-means-mobile-apps/">What Android 5.0’s Auto-Updating WebView Means for Mobile Apps</a>
+<ul>
+<li>iOS 8 为 Hybrid 开发带来诸多利好消息，Android 这边也不落后，上个月刚发布的 Android 5 将带来针对 WebView 的类似 Google Play 服务的自动更新机制，毫无疑问对于 Hybrid 的开发意义重大，只是相比 iOS，Android 要全面迎接 Lollipop 还为时尚早，但至少前景是光明的！</li>
+</ul>
+</li>
+<li><a href="https://hacks.mozilla.org/2014/10/introducing-simd-js/">Introducing SIMD.js</a>
+<ul>
+<li>SIMD（<a href="http://en.wikipedia.org/wiki/SIMD">Single Instruction Multiple Data</a>，单指令多数据） 是一种很常见的加速计算并降低能耗的技术，常用于图形图像、语音、编解码器等领域。这篇介绍了由 Intel、Google 和 Mozilla 开发的面向 JavaScript 的 SIMD.js 的现状、长 SIMD 和短 SIMD 的差异、可移植性和性能等方面，值得一读开阔视野。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://thenextweb.com/dd/2014/11/05/adobe-launches-brackets-v1-0-open-source-text-editor-web-designers/">Adobe launches Brackets v1.0, an open-source text editor for Web designers</a>
+<ul>
+<li>在经历了接近 3 年的数十小版本的迭代之后，Adobe 的面向 Web 开发者的开源文本编辑器<a href="http://brackets.io/"> Brackets </a>终于迎来了 1.0 版本，这一发布版本引入了 Extract 扩展预览版，支持自动从 PSD 文档抓取颜色、字体、渐变等设计信息并生成干净的 CSS。</li>
+</ul>
+</li>
+<li><a href="https://blog.twitter.com/2014/open-sourcing-twitter-emoji-for-everyone">Open sourcing Twitter emoji for everyone</a>
+<ul>
+<li>在与 <a href="http://iconfactory.com/">Iconfactory</a> 合作设计面向 web 客户端的 emoji 表情符号后， Twitter 决定将整个 emoji 库进行开源，命名为<a href="http://twitter.github.io/twemoji/"> twemoji </a>，这也许意味着更多的社交网站里可以见到这些表情符号了。</li>
+</ul>
+</li>
+<li><a href="http://www.nightmarejs.org/">Nightmare</a>
+<ul>
+<li>Nightmare 是一个针对 phantomjs 的上层的包装器，简化了页面操作的 API 调用方式，让你以更加语义化的方式摆脱 phantomjs 的回调书写模式。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Node v0.10.33 (Stable)
+<ul>
+<li><a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/">http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/</a></li>
+</ul>
+</li>
+<li>jQuery 3.0: The Next Generations
+<ul>
+<li><a href="http://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/">http://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/</a></li>
+<li><a href="http://new.w3ctech.com/topic/603">http://new.w3ctech.com/topic/603</a></li>
+</ul>
+</li>
+<li>React v0.12
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2014/10/28/react-v0.12.html">http://facebook.github.io/react/blog/2014/10/28/react-v0.12.html</a></li>
+</ul>
+</li>
+<li>iOS 8 is now on 52% of iPhones hitting the App Store
+<ul>
+<li><a href="http://thenextweb.com/apple/2014/10/29/ios-8-now-52-iphones-hitting-app-store/">http://thenextweb.com/apple/2014/10/29/ios-8-now-52-iphones-hitting-app-store/</a></li>
+</ul>
+</li>
+<li>The First Browser Dedicated to Developers is Coming
+<ul>
+<li><a href="https://blog.mozilla.org/blog/2014/11/03/the-first-browser-dedicated-to-developers-is-coming-2/">https://blog.mozilla.org/blog/2014/11/03/the-first-browser-dedicated-to-developers-is-coming-2/</a></li>
+</ul>
+</li>
+<li>Server Rendered Single-Page Apps
+<ul>
+<li><a href="http://player.vimeo.com/video/108488724">http://player.vimeo.com/video/108488724</a></li>
+</ul>
+</li>
+<li>ssr-demo-kit
+<ul>
+<li><a href="https://github.com/zertosh/ssr-demo-kit">https://github.com/zertosh/ssr-demo-kit</a></li>
+</ul>
+</li>
+<li>angularjs &#8211; Replacing angular with standard web technologies &#8211; Stack Overflow
+<ul>
+<li><a href="http://stackoverflow.com/questions/26382156/replacing-angular-with-standard-web-technologies/26797121#26797121">http://stackoverflow.com/questions/26382156/replacing-angular-with-standard-web-technologies/26797121#26797121</a></li>
+</ul>
+</li>
+<li>EXPLORING ANGULAR 1.3 &#8211; ANGULAR-HINT
+<ul>
+<li><a href="http://blog.thoughtram.io/angularjs/2014/11/06/exploring-angular-1.3-angular-hint.html">http://blog.thoughtram.io/angularjs/2014/11/06/exploring-angular-1.3-angular-hint.html</a></li>
+<li><a href="https://github.com/angular/angular-hint">https://github.com/angular/angular-hint</a></li>
+</ul>
+</li>
+<li>Web Components the Right Way
+<ul>
+<li><a href="https://github.com/mateusortiz/webcomponents-the-right-way">https://github.com/mateusortiz/webcomponents-the-right-way</a></li>
+</ul>
+</li>
+<li>In search of the perfect JavaScript framework
+<ul>
+<li><a href="https://dev.opera.com/articles/perfect-javascript-framework/">https://dev.opera.com/articles/perfect-javascript-framework/</a></li>
+</ul>
+</li>
+<li>npm and front-end packaging
+<ul>
+<li><a href="http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging">http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging</a></li>
+</ul>
+</li>
+<li>Debugging Node.js
+<ul>
+<li><a href="https://medium.com/@Philmod/debugging-node-js-29b2097df36c">https://medium.com/@Philmod/debugging-node-js-29b2097df36c</a></li>
+</ul>
+</li>
+<li>MDB And Linux
+<ul>
+<li><a href="https://www.joyent.com/blog/mdb-and-linux">https://www.joyent.com/blog/mdb-and-linux</a></li>
+</ul>
+</li>
+<li>What Android 5.0’s Auto-Updating WebView Means for Mobile Apps
+<ul>
+<li><a href="http://developer.telerik.com/featured/android-5-0s-auto-updating-webview-means-mobile-apps/">http://developer.telerik.com/featured/android-5-0s-auto-updating-webview-means-mobile-apps/</a></li>
+</ul>
+</li>
+<li>Introducing SIMD.js
+<ul>
+<li><a href="https://hacks.mozilla.org/2014/10/introducing-simd-js/">https://hacks.mozilla.org/2014/10/introducing-simd-js/</a></li>
+</ul>
+</li>
+<li>Brackets
+<ul>
+<li><a href="http://brackets.io/">http://brackets.io/</a></li>
+</ul>
+</li>
+<li>twemoji
+<ul>
+<li><a href="http://twitter.github.io/twemoji/">http://twitter.github.io/twemoji/</a></li>
+</ul>
+</li>
+<li>Nightmare
+<ul>
+<li><a href="http://www.nightmarejs.org/">http://www.nightmarejs.org/</a></li>
+</ul>
+</li>
+</ul>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:228:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac9%e6%9c%9f%e5%a6%82%e4%bd%95%e7%94%a8%e6%a0%87%e5%87%86%e7%9a%84-web-%e6%8a%80%e6%9c%af%e5%8f%96%e4%bb%a3-angular-%ef%bc%9f/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:416:"2014-11-10 01:31:37 抱歉由于个人原因小报君与大家久违了，本期也因此有了更丰富的素材以飨读者，首先说说 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac9%e6%9c%9f%e5%a6%82%e4%bd%95%e7%94%a8%e6%a0%87%e5%87%86%e7%9a%84-web-%e6%8a%80%e6%9c%af%e5%8f%96%e4%bb%a3-angular-%ef%bc%9f/">更多&#62;</a>";s:12:"atom_content";s:12958:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>2014-11-10 01:31:37</p>
+<p>抱歉由于个人原因小报君与大家久违了，本期也因此有了更丰富的素材以飨读者，首先说说最近发生的一些新鲜事：</p>
+<ul>
+<li>经历了多年的讨论、实践和提案后，<a href="http://www.w3.org/2014/10/html5-rec.html.en">HTML5 终于于上月底正式成为 W3C 推荐标准</a>。W3C 特意制作了 <a href="http://vimeo.com/110256895">这段视频</a> 介绍 HTML5 标准的意义。</li>
+<li><a href="http://d2forum.alibaba-inc.com/">D2 2014</a> 圆满落幕，未能成行的小伙伴们可以上官网下载 Slides 看看。</li>
+<li>第一届 AngularJS 欧洲大会 <a href="http://ngeurope.org/">ng-europe 2014</a> 于 10.20 在巴黎举行。Angular 团队主管 Igor Minar 带来关于<a href="https://www.youtube.com/watch?v=gNmWybAyBHI"> Angular 2 核心变化</a>，<a href="https://docs.google.com/presentation/d/1XQP0_NTzCUcFweauLlkZpbbhNVYbYy156oD--KLmXsk/preview?sle=true#slide=id.p">演示见这里</a>。</li>
+</ul>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/">Node v0.10.33 (Stable)</a>
+<ul>
+<li>Node v0.10.33 上月底已发布，重点修复最近 Google 员工发现的<a href="https://www.imperialviolet.org/2014/10/14/poodle.html"> SSLv3 协议中的 POODLE </a>漏洞，目前 Node.js 编译时默认支持 SSLv2 and SSLv3 模块但不启用，但接下来的版本中将默认不再编译这两个模块。</li>
+</ul>
+</li>
+<li><a href="http://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/">jQuery 3.0: The Next Generations</a>
+<ul>
+<li>不知不觉 jQuery 已经走过了 8 个年头，jQuery 官方博客上介绍了关于 jQuery 下一版本的预告，将采用全新的命名法跃迁至 3.0，将主 jQuery 包和兼容包区分开来做更深入的定制，但同时保持共享版本号，<a href="http://new.w3ctech.com/topic/603">中文翻译可以见这里</a>。</li>
+</ul>
+</li>
+<li><a href="http://facebook.github.io/react/blog/2014/10/28/react-v0.12.html">React v0.12</a>
+<ul>
+<li>React 于上月底更新至 v0.12，带来诸多变化和新特性，包括新的术语 （<code>ReactElement</code> 替代<em>descriptor</em>、<code>ReactNode</code> 替代*renderable*）、更新的 API（<code>React.render*</code>方法中移除 <code>Component</code> 等）、JSX 的变化、开发工具的改进等。</li>
+</ul>
+</li>
+<li><a href="http://thenextweb.com/apple/2014/10/29/ios-8-now-52-iphones-hitting-app-store/">iOS 8 is now on 52% of iPhones hitting the App Store</a>
+<ul>
+<li>根据苹果开发者支持页面的最近更新，从 App Store 的访问数据显示目前 52% 的 iPhone 已升级至 iOS 8，iOS 7 占据 43%；iPad 方面 48% 的设备已经安装了 iOS 8。</li>
+</ul>
+</li>
+<li><a href="https://blog.mozilla.org/blog/2014/11/03/the-first-browser-dedicated-to-developers-is-coming-2/">The First Browser Dedicated to Developers is Coming</a>
+<ul>
+<li>Mozilla 宣布第一个真正为开发者而生的浏览器明天（ 10 月 10 日）即将到来，由开发者工具团队打造使你可以调试整个 web，赶紧先来一睹为快预告片吧！</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://player.vimeo.com/video/108488724">Server Rendered Single-Page Apps</a>
+<ul>
+<li>来自 SoundCloud 的 Andres Suarez 这篇分享介绍了他们团队在 SSR（Server-Side Rendering）方面的实践的经验教训，包括基于 Node 和 React 等实现前后端代码的复用，以及调试的技巧等，并提供了<a href="https://github.com/zertosh/ssr-demo-kit"> demo 项目</a> 供大家体验。</li>
+</ul>
+</li>
+<li><a href="http://stackoverflow.com/questions/26382156/replacing-angular-with-standard-web-technologies/26797121#26797121">angularjs &#8211; Replacing angular with standard web technologies &#8211; Stack Overflow</a>
+<ul>
+<li>这边 Angular 正在如日中天高速发展，那边大家已经开始探讨用标准的 Web 技术取代 Angular 的可行性，看看 StackOverflow 上这个问答，或许能引发你对于下一世代的 Web 开发模式趋势的思考。</li>
+</ul>
+</li>
+<li><a href="http://blog.thoughtram.io/angularjs/2014/11/06/exploring-angular-1.3-angular-hint.html">EXPLORING ANGULAR 1.3 &#8211; ANGULAR-HINT</a>
+<ul>
+<li>Angular 1.3 发布同时带来一个 <a href="https://github.com/angular/angular-hint">angular-hint</a> 的模块，让调试和定位错误变得更加轻松，如果你还没有尝试过，不妨看看这篇教程的介绍。</li>
+</ul>
+</li>
+<li><a href="https://github.com/mateusortiz/webcomponents-the-right-way">Web Components the Right Way</a>
+<ul>
+<li>一大波 Web Components 干货集合即将到来，从标准、相关博客、教程、互操作性、生成器到测试、最佳实践、性能、库等等，你想知道的关于 Web Components 的一切都可以在这里找到，当然也欢迎你来参与贡献！</li>
+</ul>
+</li>
+<li><a href="https://dev.opera.com/articles/perfect-javascript-framework/">In search of the perfect JavaScript framework</a>
+<ul>
+<li>Opera 这篇博文探讨了 JavaScript 框架设计和实现中的一些要点，包括抽象粒度、构造函数、DOM 操作以及事件处理、依赖管理、模板、模块化等方面；此外关联推荐<a href="http://book.douban.com/subject/25858070/">《JavaScript 框架设计》</a>这本书看看。</li>
+</ul>
+</li>
+<li><a href="http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging">npm and front-end packaging</a>
+<ul>
+<li>npm 官方博客上这篇博文讨论了关于 npm 包的一些设计理念和哲学，以及前端资源打包方面的难题和解决建议，分享了如何基于 npm 构建你自己的前端包管理机制的最佳实践和建议。如果你也在思考和践行前端包管理模式，不妨细读一下。</li>
+</ul>
+</li>
+<li><a href="https://medium.com/@Philmod/debugging-node-js-29b2097df36c">Debugging Node.js</a>
+<ul>
+<li>当你的 Node.js 应用运行时突然出现问题如何远程调试？这篇文章分享了如何借助于 gcore 捕捉 dump ，从获得的有用的堆栈信息中定位问题所在。此外还可以看看 Joyent 官网上<a href="https://www.joyent.com/blog/mdb-and-linux">这篇介绍使用 MDB 来做 node 的 core 文件分析的教程</a>。</li>
+</ul>
+</li>
+<li><a href="http://developer.telerik.com/featured/android-5-0s-auto-updating-webview-means-mobile-apps/">What Android 5.0’s Auto-Updating WebView Means for Mobile Apps</a>
+<ul>
+<li>iOS 8 为 Hybrid 开发带来诸多利好消息，Android 这边也不落后，上个月刚发布的 Android 5 将带来针对 WebView 的类似 Google Play 服务的自动更新机制，毫无疑问对于 Hybrid 的开发意义重大，只是相比 iOS，Android 要全面迎接 Lollipop 还为时尚早，但至少前景是光明的！</li>
+</ul>
+</li>
+<li><a href="https://hacks.mozilla.org/2014/10/introducing-simd-js/">Introducing SIMD.js</a>
+<ul>
+<li>SIMD（<a href="http://en.wikipedia.org/wiki/SIMD">Single Instruction Multiple Data</a>，单指令多数据） 是一种很常见的加速计算并降低能耗的技术，常用于图形图像、语音、编解码器等领域。这篇介绍了由 Intel、Google 和 Mozilla 开发的面向 JavaScript 的 SIMD.js 的现状、长 SIMD 和短 SIMD 的差异、可移植性和性能等方面，值得一读开阔视野。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://thenextweb.com/dd/2014/11/05/adobe-launches-brackets-v1-0-open-source-text-editor-web-designers/">Adobe launches Brackets v1.0, an open-source text editor for Web designers</a>
+<ul>
+<li>在经历了接近 3 年的数十小版本的迭代之后，Adobe 的面向 Web 开发者的开源文本编辑器<a href="http://brackets.io/"> Brackets </a>终于迎来了 1.0 版本，这一发布版本引入了 Extract 扩展预览版，支持自动从 PSD 文档抓取颜色、字体、渐变等设计信息并生成干净的 CSS。</li>
+</ul>
+</li>
+<li><a href="https://blog.twitter.com/2014/open-sourcing-twitter-emoji-for-everyone">Open sourcing Twitter emoji for everyone</a>
+<ul>
+<li>在与 <a href="http://iconfactory.com/">Iconfactory</a> 合作设计面向 web 客户端的 emoji 表情符号后， Twitter 决定将整个 emoji 库进行开源，命名为<a href="http://twitter.github.io/twemoji/"> twemoji </a>，这也许意味着更多的社交网站里可以见到这些表情符号了。</li>
+</ul>
+</li>
+<li><a href="http://www.nightmarejs.org/">Nightmare</a>
+<ul>
+<li>Nightmare 是一个针对 phantomjs 的上层的包装器，简化了页面操作的 API 调用方式，让你以更加语义化的方式摆脱 phantomjs 的回调书写模式。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Node v0.10.33 (Stable)
+<ul>
+<li><a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/">http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/</a></li>
+</ul>
+</li>
+<li>jQuery 3.0: The Next Generations
+<ul>
+<li><a href="http://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/">http://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/</a></li>
+<li><a href="http://new.w3ctech.com/topic/603">http://new.w3ctech.com/topic/603</a></li>
+</ul>
+</li>
+<li>React v0.12
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2014/10/28/react-v0.12.html">http://facebook.github.io/react/blog/2014/10/28/react-v0.12.html</a></li>
+</ul>
+</li>
+<li>iOS 8 is now on 52% of iPhones hitting the App Store
+<ul>
+<li><a href="http://thenextweb.com/apple/2014/10/29/ios-8-now-52-iphones-hitting-app-store/">http://thenextweb.com/apple/2014/10/29/ios-8-now-52-iphones-hitting-app-store/</a></li>
+</ul>
+</li>
+<li>The First Browser Dedicated to Developers is Coming
+<ul>
+<li><a href="https://blog.mozilla.org/blog/2014/11/03/the-first-browser-dedicated-to-developers-is-coming-2/">https://blog.mozilla.org/blog/2014/11/03/the-first-browser-dedicated-to-developers-is-coming-2/</a></li>
+</ul>
+</li>
+<li>Server Rendered Single-Page Apps
+<ul>
+<li><a href="http://player.vimeo.com/video/108488724">http://player.vimeo.com/video/108488724</a></li>
+</ul>
+</li>
+<li>ssr-demo-kit
+<ul>
+<li><a href="https://github.com/zertosh/ssr-demo-kit">https://github.com/zertosh/ssr-demo-kit</a></li>
+</ul>
+</li>
+<li>angularjs &#8211; Replacing angular with standard web technologies &#8211; Stack Overflow
+<ul>
+<li><a href="http://stackoverflow.com/questions/26382156/replacing-angular-with-standard-web-technologies/26797121#26797121">http://stackoverflow.com/questions/26382156/replacing-angular-with-standard-web-technologies/26797121#26797121</a></li>
+</ul>
+</li>
+<li>EXPLORING ANGULAR 1.3 &#8211; ANGULAR-HINT
+<ul>
+<li><a href="http://blog.thoughtram.io/angularjs/2014/11/06/exploring-angular-1.3-angular-hint.html">http://blog.thoughtram.io/angularjs/2014/11/06/exploring-angular-1.3-angular-hint.html</a></li>
+<li><a href="https://github.com/angular/angular-hint">https://github.com/angular/angular-hint</a></li>
+</ul>
+</li>
+<li>Web Components the Right Way
+<ul>
+<li><a href="https://github.com/mateusortiz/webcomponents-the-right-way">https://github.com/mateusortiz/webcomponents-the-right-way</a></li>
+</ul>
+</li>
+<li>In search of the perfect JavaScript framework
+<ul>
+<li><a href="https://dev.opera.com/articles/perfect-javascript-framework/">https://dev.opera.com/articles/perfect-javascript-framework/</a></li>
+</ul>
+</li>
+<li>npm and front-end packaging
+<ul>
+<li><a href="http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging">http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging</a></li>
+</ul>
+</li>
+<li>Debugging Node.js
+<ul>
+<li><a href="https://medium.com/@Philmod/debugging-node-js-29b2097df36c">https://medium.com/@Philmod/debugging-node-js-29b2097df36c</a></li>
+</ul>
+</li>
+<li>MDB And Linux
+<ul>
+<li><a href="https://www.joyent.com/blog/mdb-and-linux">https://www.joyent.com/blog/mdb-and-linux</a></li>
+</ul>
+</li>
+<li>What Android 5.0’s Auto-Updating WebView Means for Mobile Apps
+<ul>
+<li><a href="http://developer.telerik.com/featured/android-5-0s-auto-updating-webview-means-mobile-apps/">http://developer.telerik.com/featured/android-5-0s-auto-updating-webview-means-mobile-apps/</a></li>
+</ul>
+</li>
+<li>Introducing SIMD.js
+<ul>
+<li><a href="https://hacks.mozilla.org/2014/10/introducing-simd-js/">https://hacks.mozilla.org/2014/10/introducing-simd-js/</a></li>
+</ul>
+</li>
+<li>Brackets
+<ul>
+<li><a href="http://brackets.io/">http://brackets.io/</a></li>
+</ul>
+</li>
+<li>twemoji
+<ul>
+<li><a href="http://twitter.github.io/twemoji/">http://twitter.github.io/twemoji/</a></li>
+</ul>
+</li>
+<li>Nightmare
+<ul>
+<li><a href="http://www.nightmarejs.org/">http://www.nightmarejs.org/</a></li>
+</ul>
+</li>
+</ul>
+";s:14:"date_timestamp";i:1426736408;}i:4;a:14:{s:5:"title";s:56:"[懒懒小报-外刊第8期]迎接关爱 HTML5 的 iOS 8";s:4:"link";s:168:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac8%e6%9c%9f%e8%bf%8e%e6%8e%a5%e5%85%b3%e7%88%b1-html5-%e7%9a%84-ios-8/";s:8:"comments";s:177:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac8%e6%9c%9f%e8%bf%8e%e6%8e%a5%e5%85%b3%e7%88%b1-html5-%e7%9a%84-ios-8/#comments";s:7:"pubdate";s:31:"Thu, 19 Mar 2015 03:02:55 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"弘树";}s:8:"category";s:27:"懒懒交流会懒懒小报";s:4:"guid";s:34:"http://ued.taobao.org/blog/?p=9612";s:11:"description";s:359:"2014-09-21 23:02:20 最近新鲜事儿比较多，都需要列个清单了： 恭喜各位荣升高富帅白富美的土豪们，与你们 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac8%e6%9c%9f%e8%bf%8e%e6%8e%a5%e5%85%b3%e7%88%b1-html5-%e7%9a%84-ios-8/">更多&#62;</a>";s:7:"content";a:1:{s:7:"encoded";s:9723:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>2014-09-21 23:02:20</p>
+<p>最近新鲜事儿比较多，都需要列个清单了：</p>
+<ul>
+<li>恭喜各位荣升高富帅白富美的土豪们，与你们共事倍感荣幸哇！</li>
+<li>HTML5 终于<a href="http://www.w3.org/TR/2014/PR-html5-20140916/">进展到建议标准阶段</a>。</li>
+<li>iPhone 6 和 iPhone 6 Plus 终于将 iPhone 带到了大屏的世界，iOS 8 也终于迎来了正式版，相信有不少小伙伴已经开始体验了。iOS 8 都带来了哪些变化和新特性呢？这篇<a href="http://arstechnica.com/apple/2014/09/ios-8-thoroughly-reviewed/">《iOS 8, thoroughly reviewed》</a>确实是 “thoroughly reviewed” ，可以仔细看看。</li>
+<li>为期两天的 <a href="http://velocityconf.com/velocityny2014">Velocity New York 2014</a> 已落幕，让我们一起期待官网的视频和 Slides 资源更新吧！</li>
+</ul>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://blog.nodejs.org/2014/09/16/node-v0-10-32-stable/">Node v0.10.32 (Stable)</a>
+<ul>
+<li>Node v0.10.32稳定版到来，包括 npm 的更新，v8 之前发布版本导致的 crash 修复以及<code>crypto</code>、<code>http</code>、<code>querystring</code>、<code>url</code>模块的修复和优化。</li>
+</ul>
+</li>
+<li><a href="http://facebook.github.io/react/blog/2014/09/16/react-v0.11.2.html">React v0.11.2</a>
+<ul>
+<li>React v0.11.2 版本发布，带来 <code>&lt;dialog&gt;</code> 和 <code>&lt;picture&gt;</code> 元素以及相关的属性支持，增加了<code>React.createElement</code> API 以准备替代 <code>React.createDescriptor</code> API，此外还有相关的 React Tools 的升级。另外还透露了 Facebook 即将开源的关注流程的 JavaScript 类型检查器 Flow。</li>
+</ul>
+</li>
+<li><a href="https://hacks.mozilla.org/2014/09/webide-storage-inspector-jquery-events-iframe-switcher-more-firefox-developer-tools-episode-34/">WebIDE, Storage inspector, jQuery events, iframe switcher + more – Firefox Developer Tools Episode 34</a>
+<ul>
+<li>一系列 Firefox 开发者工具的新特性刚刚来到 Aurora 分支，并将集成到即将发布的 Firefox 34 正式版，包括 WebIDE、存储检查、jQuery 事件检查、iframe 切换、更新的性能分析器等，等不及的小伙伴可以升级到 Aurora 尝尝鲜。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://www.slideshare.net/robnyman/mobile-trends-web-native">Mobile trends, web &amp; native</a>
+<ul>
+<li>来自 mozilla 的 Robert Nyman 分享了最近移动端 Web 和 Native 的趋势，包括系统市场占有率、应用类型与使用度统计数据、开发者生态系统等方面。</li>
+</ul>
+</li>
+<li><a href="http://nshipster.com/wkwebkit/">WKWeb​View</a>
+<ul>
+<li>iOS 8 新引入的 WKWebKit 相比之前的 UIWebView 在 API 方面有了哪些变化？有了 WKWebKit，JavaScript 与 Swift 之间的通信机制又是怎样的？致力于成为全端工程师的你值得关注下。</li>
+</ul>
+</li>
+<li><a href="http://www.sencha.com/blog/apple-shows-love-for-html5-with-ios-8">Apple Shows Love for HTML5 with iOS 8</a>
+<ul>
+<li>iOS 8 为 HTML5 开发带来了包括 HTML 模板、IndexedDB、SPDY 协议、CSS Shape、Promise等诸多新特性的支持，相比旧的 <code>UIWebView</code> 也有了极大的性能提升，不过同时目前也有几个严重的 bug 亟待修复，详见本文介绍。</li>
+</ul>
+</li>
+<li><a href="http://www.bytearray.org/?p=5607">Concurrency in JavaScript</a>
+<ul>
+<li>Web Workers 可以帮助我们实现在 UI 线程之外实现 JavaScript 代码的并行执行，如今已经在大部分浏览器甚至移动端得到支持，这篇文章详细介绍了 web workers 与系统多核和线程之间的关系、相关 API 的使用、数据通信以及适用场景。</li>
+</ul>
+</li>
+<li><a href="http://blog.stackoverflow.com/2014/09/introducing-runnable-javascript-css-and-html-code-snippets/">Introducing Runnable JavaScript, CSS, and HTML Code Snippets</a>
+<ul>
+<li>stackoverflow 如今开始提供可执行的 JavaScript、CSS、HTML 代码片段，这对于前端工程师而言毫无疑问是个好消息，可以更方便地在问题和回答中嵌入代码和运行了，快来体验下吧！</li>
+</ul>
+</li>
+<li><a href="http://dailyjs.com/2014/09/17/apple-javascript/">JavaScript for Automation in Yosemite</a>
+<ul>
+<li>有没有想过 Apple 将 Mac OS 中的 AppleScrip 替换成 JavaScript？如今这一设想终于在 Yosemite 中成为了现实，Apple 官方提供的 <a href="https://developer.apple.com/library/prerelease/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/index.html">JavaScript for Automation</a> 文档详细介绍了用 JavaScript 来做自动化，借助 Objective-C 桥访问原生应用以及系统文件，快来看看吧！</li>
+</ul>
+</li>
+<li><a href="http://www.infoq.com/cn/articles/browser-resource-loading-optimization">让我们再聊聊浏览器资源加载优化</a>
+<ul>
+<li>前端性能优化应该是老生常谈的话题了，这篇来自 InfoQ 的文章就资源预加载、JS 加载器、延迟执行等 3 个话题相关的各种最佳实践展开了探讨，介绍比较深入浅出，值得一读。</li>
+</ul>
+</li>
+<li><a href="http://code.kojilabs.com/page-visibility-api/">Working with the Page Visibility API</a>
+<ul>
+<li>如今越来越多的桌面浏览器支持多标签，页面可见性 API 应运而生，帮助你检测当前自己的页面是否处于可见状态，并提供了 <code>visibilitychange</code> 事件支持，这篇文章详细介绍了相关的 API 和事件实践。</li>
+</ul>
+</li>
+<li><a href="http://blog.futurice.com/npm-registry-in-numbers">NPM registry in numbers</a>
+<ul>
+<li>想了解下 npm registry 中的一些统计数据吗？想知道被依赖最多的包吗？最大的包家族是谁？这些包中采用的开源许可证排名如何？看看这篇文章中的数据统计和分析结果吧，相信可以满足你的好奇心。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="https://github.com/fallanic/cheers">fallanic/cheers</a>
+<ul>
+<li>cheers 是一个基于 cheerio 的页面数据爬取工具，根据 CSS 选择器将指定站点的数据抽取为 JSON 格式数据。</li>
+</ul>
+</li>
+<li><a href="http://angular-data.pseudobry.com/">angular-data</a>
+<ul>
+<li>angular-data 是一个面向 angular 的强大的数据存储和缓存模块，源于受 <a href="https://github.com/emberjs/data">Ember Data</a> 的启发，包含了便捷的内存缓存来管理数据，以及与各种数据持久层通信的适配器，帮助你实现 Model 层更加清晰透明的分层、数据持久化适配和管理。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Node v0.10.32 (Stable)
+<ul>
+<li><a href="http://blog.nodejs.org/2014/09/16/node-v0-10-32-stable/">http://blog.nodejs.org/2014/09/16/node-v0-10-32-stable/</a></li>
+</ul>
+</li>
+<li>React v0.11.2
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2014/09/16/react-v0.11.2.html">http://facebook.github.io/react/blog/2014/09/16/react-v0.11.2.html</a></li>
+</ul>
+</li>
+<li>WebIDE, Storage inspector, jQuery events, iframe switcher + more – Firefox Developer Tools Episode 34
+<ul>
+<li><a href="https://hacks.mozilla.org/2014/09/webide-storage-inspector-jquery-events-iframe-switcher-more-firefox-developer-tools-episode-34/">https://hacks.mozilla.org/2014/09/webide-storage-inspector-jquery-events-iframe-switcher-more-firefox-developer-tools-episode-34/</a></li>
+</ul>
+</li>
+<li>Mobile trends, web &amp; native
+<ul>
+<li><a href="http://www.slideshare.net/robnyman/mobile-trends-web-native">http://www.slideshare.net/robnyman/mobile-trends-web-native</a></li>
+</ul>
+</li>
+<li>WKWeb​View
+<ul>
+<li><a href="http://nshipster.com/wkwebkit/">http://nshipster.com/wkwebkit/</a></li>
+</ul>
+</li>
+<li>Concurrency in JavaScript
+<ul>
+<li><a href="http://www.bytearray.org/?p=5607">http://www.bytearray.org/?p=5607</a></li>
+</ul>
+</li>
+<li>Apple Shows Love for HTML5 with iOS 8
+<ul>
+<li><a href="http://www.sencha.com/blog/apple-shows-love-for-html5-with-ios-8">http://www.sencha.com/blog/apple-shows-love-for-html5-with-ios-8</a></li>
+</ul>
+</li>
+<li>Introducing Runnable JavaScript, CSS, and HTML Code Snippets
+<ul>
+<li><a href="http://blog.stackoverflow.com/2014/09/introducing-runnable-javascript-css-and-html-code-snippets/">http://blog.stackoverflow.com/2014/09/introducing-runnable-javascript-css-and-html-code-snippets/</a></li>
+</ul>
+</li>
+<li>JavaScript for Automation in Yosemite
+<ul>
+<li><a href="http://dailyjs.com/2014/09/17/apple-javascript/">http://dailyjs.com/2014/09/17/apple-javascript/</a></li>
+</ul>
+</li>
+<li>让我们再聊聊浏览器资源加载优化
+<ul>
+<li><a href="http://www.infoq.com/cn/articles/browser-resource-loading-optimization">http://www.infoq.com/cn/articles/browser-resource-loading-optimization</a></li>
+</ul>
+</li>
+<li>Working with the Page Visibility API
+<ul>
+<li><a href="http://code.kojilabs.com/page-visibility-api/">http://code.kojilabs.com/page-visibility-api/</a></li>
+</ul>
+</li>
+<li>NPM registry in numbers
+<ul>
+<li><a href="http://blog.futurice.com/npm-registry-in-numbers">http://blog.futurice.com/npm-registry-in-numbers</a></li>
+</ul>
+</li>
+<li>fallanic/cheers
+<ul>
+<li><a href="https://github.com/fallanic/cheers">https://github.com/fallanic/cheers</a></li>
+</ul>
+</li>
+<li>angular-data
+<ul>
+<li><a href="http://angular-data.pseudobry.com/">http://angular-data.pseudobry.com/</a></li>
+</ul>
+</li>
+</ul>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:173:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac8%e6%9c%9f%e8%bf%8e%e6%8e%a5%e5%85%b3%e7%88%b1-html5-%e7%9a%84-ios-8/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:359:"2014-09-21 23:02:20 最近新鲜事儿比较多，都需要列个清单了： 恭喜各位荣升高富帅白富美的土豪们，与你们 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac8%e6%9c%9f%e8%bf%8e%e6%8e%a5%e5%85%b3%e7%88%b1-html5-%e7%9a%84-ios-8/">更多&#62;</a>";s:12:"atom_content";s:9723:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>2014-09-21 23:02:20</p>
+<p>最近新鲜事儿比较多，都需要列个清单了：</p>
+<ul>
+<li>恭喜各位荣升高富帅白富美的土豪们，与你们共事倍感荣幸哇！</li>
+<li>HTML5 终于<a href="http://www.w3.org/TR/2014/PR-html5-20140916/">进展到建议标准阶段</a>。</li>
+<li>iPhone 6 和 iPhone 6 Plus 终于将 iPhone 带到了大屏的世界，iOS 8 也终于迎来了正式版，相信有不少小伙伴已经开始体验了。iOS 8 都带来了哪些变化和新特性呢？这篇<a href="http://arstechnica.com/apple/2014/09/ios-8-thoroughly-reviewed/">《iOS 8, thoroughly reviewed》</a>确实是 “thoroughly reviewed” ，可以仔细看看。</li>
+<li>为期两天的 <a href="http://velocityconf.com/velocityny2014">Velocity New York 2014</a> 已落幕，让我们一起期待官网的视频和 Slides 资源更新吧！</li>
+</ul>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://blog.nodejs.org/2014/09/16/node-v0-10-32-stable/">Node v0.10.32 (Stable)</a>
+<ul>
+<li>Node v0.10.32稳定版到来，包括 npm 的更新，v8 之前发布版本导致的 crash 修复以及<code>crypto</code>、<code>http</code>、<code>querystring</code>、<code>url</code>模块的修复和优化。</li>
+</ul>
+</li>
+<li><a href="http://facebook.github.io/react/blog/2014/09/16/react-v0.11.2.html">React v0.11.2</a>
+<ul>
+<li>React v0.11.2 版本发布，带来 <code>&lt;dialog&gt;</code> 和 <code>&lt;picture&gt;</code> 元素以及相关的属性支持，增加了<code>React.createElement</code> API 以准备替代 <code>React.createDescriptor</code> API，此外还有相关的 React Tools 的升级。另外还透露了 Facebook 即将开源的关注流程的 JavaScript 类型检查器 Flow。</li>
+</ul>
+</li>
+<li><a href="https://hacks.mozilla.org/2014/09/webide-storage-inspector-jquery-events-iframe-switcher-more-firefox-developer-tools-episode-34/">WebIDE, Storage inspector, jQuery events, iframe switcher + more – Firefox Developer Tools Episode 34</a>
+<ul>
+<li>一系列 Firefox 开发者工具的新特性刚刚来到 Aurora 分支，并将集成到即将发布的 Firefox 34 正式版，包括 WebIDE、存储检查、jQuery 事件检查、iframe 切换、更新的性能分析器等，等不及的小伙伴可以升级到 Aurora 尝尝鲜。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://www.slideshare.net/robnyman/mobile-trends-web-native">Mobile trends, web &amp; native</a>
+<ul>
+<li>来自 mozilla 的 Robert Nyman 分享了最近移动端 Web 和 Native 的趋势，包括系统市场占有率、应用类型与使用度统计数据、开发者生态系统等方面。</li>
+</ul>
+</li>
+<li><a href="http://nshipster.com/wkwebkit/">WKWeb​View</a>
+<ul>
+<li>iOS 8 新引入的 WKWebKit 相比之前的 UIWebView 在 API 方面有了哪些变化？有了 WKWebKit，JavaScript 与 Swift 之间的通信机制又是怎样的？致力于成为全端工程师的你值得关注下。</li>
+</ul>
+</li>
+<li><a href="http://www.sencha.com/blog/apple-shows-love-for-html5-with-ios-8">Apple Shows Love for HTML5 with iOS 8</a>
+<ul>
+<li>iOS 8 为 HTML5 开发带来了包括 HTML 模板、IndexedDB、SPDY 协议、CSS Shape、Promise等诸多新特性的支持，相比旧的 <code>UIWebView</code> 也有了极大的性能提升，不过同时目前也有几个严重的 bug 亟待修复，详见本文介绍。</li>
+</ul>
+</li>
+<li><a href="http://www.bytearray.org/?p=5607">Concurrency in JavaScript</a>
+<ul>
+<li>Web Workers 可以帮助我们实现在 UI 线程之外实现 JavaScript 代码的并行执行，如今已经在大部分浏览器甚至移动端得到支持，这篇文章详细介绍了 web workers 与系统多核和线程之间的关系、相关 API 的使用、数据通信以及适用场景。</li>
+</ul>
+</li>
+<li><a href="http://blog.stackoverflow.com/2014/09/introducing-runnable-javascript-css-and-html-code-snippets/">Introducing Runnable JavaScript, CSS, and HTML Code Snippets</a>
+<ul>
+<li>stackoverflow 如今开始提供可执行的 JavaScript、CSS、HTML 代码片段，这对于前端工程师而言毫无疑问是个好消息，可以更方便地在问题和回答中嵌入代码和运行了，快来体验下吧！</li>
+</ul>
+</li>
+<li><a href="http://dailyjs.com/2014/09/17/apple-javascript/">JavaScript for Automation in Yosemite</a>
+<ul>
+<li>有没有想过 Apple 将 Mac OS 中的 AppleScrip 替换成 JavaScript？如今这一设想终于在 Yosemite 中成为了现实，Apple 官方提供的 <a href="https://developer.apple.com/library/prerelease/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/index.html">JavaScript for Automation</a> 文档详细介绍了用 JavaScript 来做自动化，借助 Objective-C 桥访问原生应用以及系统文件，快来看看吧！</li>
+</ul>
+</li>
+<li><a href="http://www.infoq.com/cn/articles/browser-resource-loading-optimization">让我们再聊聊浏览器资源加载优化</a>
+<ul>
+<li>前端性能优化应该是老生常谈的话题了，这篇来自 InfoQ 的文章就资源预加载、JS 加载器、延迟执行等 3 个话题相关的各种最佳实践展开了探讨，介绍比较深入浅出，值得一读。</li>
+</ul>
+</li>
+<li><a href="http://code.kojilabs.com/page-visibility-api/">Working with the Page Visibility API</a>
+<ul>
+<li>如今越来越多的桌面浏览器支持多标签，页面可见性 API 应运而生，帮助你检测当前自己的页面是否处于可见状态，并提供了 <code>visibilitychange</code> 事件支持，这篇文章详细介绍了相关的 API 和事件实践。</li>
+</ul>
+</li>
+<li><a href="http://blog.futurice.com/npm-registry-in-numbers">NPM registry in numbers</a>
+<ul>
+<li>想了解下 npm registry 中的一些统计数据吗？想知道被依赖最多的包吗？最大的包家族是谁？这些包中采用的开源许可证排名如何？看看这篇文章中的数据统计和分析结果吧，相信可以满足你的好奇心。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="https://github.com/fallanic/cheers">fallanic/cheers</a>
+<ul>
+<li>cheers 是一个基于 cheerio 的页面数据爬取工具，根据 CSS 选择器将指定站点的数据抽取为 JSON 格式数据。</li>
+</ul>
+</li>
+<li><a href="http://angular-data.pseudobry.com/">angular-data</a>
+<ul>
+<li>angular-data 是一个面向 angular 的强大的数据存储和缓存模块，源于受 <a href="https://github.com/emberjs/data">Ember Data</a> 的启发，包含了便捷的内存缓存来管理数据，以及与各种数据持久层通信的适配器，帮助你实现 Model 层更加清晰透明的分层、数据持久化适配和管理。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Node v0.10.32 (Stable)
+<ul>
+<li><a href="http://blog.nodejs.org/2014/09/16/node-v0-10-32-stable/">http://blog.nodejs.org/2014/09/16/node-v0-10-32-stable/</a></li>
+</ul>
+</li>
+<li>React v0.11.2
+<ul>
+<li><a href="http://facebook.github.io/react/blog/2014/09/16/react-v0.11.2.html">http://facebook.github.io/react/blog/2014/09/16/react-v0.11.2.html</a></li>
+</ul>
+</li>
+<li>WebIDE, Storage inspector, jQuery events, iframe switcher + more – Firefox Developer Tools Episode 34
+<ul>
+<li><a href="https://hacks.mozilla.org/2014/09/webide-storage-inspector-jquery-events-iframe-switcher-more-firefox-developer-tools-episode-34/">https://hacks.mozilla.org/2014/09/webide-storage-inspector-jquery-events-iframe-switcher-more-firefox-developer-tools-episode-34/</a></li>
+</ul>
+</li>
+<li>Mobile trends, web &amp; native
+<ul>
+<li><a href="http://www.slideshare.net/robnyman/mobile-trends-web-native">http://www.slideshare.net/robnyman/mobile-trends-web-native</a></li>
+</ul>
+</li>
+<li>WKWeb​View
+<ul>
+<li><a href="http://nshipster.com/wkwebkit/">http://nshipster.com/wkwebkit/</a></li>
+</ul>
+</li>
+<li>Concurrency in JavaScript
+<ul>
+<li><a href="http://www.bytearray.org/?p=5607">http://www.bytearray.org/?p=5607</a></li>
+</ul>
+</li>
+<li>Apple Shows Love for HTML5 with iOS 8
+<ul>
+<li><a href="http://www.sencha.com/blog/apple-shows-love-for-html5-with-ios-8">http://www.sencha.com/blog/apple-shows-love-for-html5-with-ios-8</a></li>
+</ul>
+</li>
+<li>Introducing Runnable JavaScript, CSS, and HTML Code Snippets
+<ul>
+<li><a href="http://blog.stackoverflow.com/2014/09/introducing-runnable-javascript-css-and-html-code-snippets/">http://blog.stackoverflow.com/2014/09/introducing-runnable-javascript-css-and-html-code-snippets/</a></li>
+</ul>
+</li>
+<li>JavaScript for Automation in Yosemite
+<ul>
+<li><a href="http://dailyjs.com/2014/09/17/apple-javascript/">http://dailyjs.com/2014/09/17/apple-javascript/</a></li>
+</ul>
+</li>
+<li>让我们再聊聊浏览器资源加载优化
+<ul>
+<li><a href="http://www.infoq.com/cn/articles/browser-resource-loading-optimization">http://www.infoq.com/cn/articles/browser-resource-loading-optimization</a></li>
+</ul>
+</li>
+<li>Working with the Page Visibility API
+<ul>
+<li><a href="http://code.kojilabs.com/page-visibility-api/">http://code.kojilabs.com/page-visibility-api/</a></li>
+</ul>
+</li>
+<li>NPM registry in numbers
+<ul>
+<li><a href="http://blog.futurice.com/npm-registry-in-numbers">http://blog.futurice.com/npm-registry-in-numbers</a></li>
+</ul>
+</li>
+<li>fallanic/cheers
+<ul>
+<li><a href="https://github.com/fallanic/cheers">https://github.com/fallanic/cheers</a></li>
+</ul>
+</li>
+<li>angular-data
+<ul>
+<li><a href="http://angular-data.pseudobry.com/">http://angular-data.pseudobry.com/</a></li>
+</ul>
+</li>
+</ul>
+";s:14:"date_timestamp";i:1426734175;}i:5;a:14:{s:5:"title";s:67:"[懒懒小报-外刊第7期]不可错过的大师级内存管理课";s:4:"link";s:227:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac7%e6%9c%9f%e4%b8%8d%e5%8f%af%e9%94%99%e8%bf%87%e7%9a%84%e5%a4%a7%e5%b8%88%e7%ba%a7%e5%86%85%e5%ad%98%e7%ae%a1%e7%90%86%e8%af%be/";s:8:"comments";s:236:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac7%e6%9c%9f%e4%b8%8d%e5%8f%af%e9%94%99%e8%bf%87%e7%9a%84%e5%a4%a7%e5%b8%88%e7%ba%a7%e5%86%85%e5%ad%98%e7%ae%a1%e7%90%86%e8%af%be/#comments";s:7:"pubdate";s:31:"Thu, 19 Mar 2015 03:00:28 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"弘树";}s:8:"category";s:27:"懒懒交流会懒懒小报";s:4:"guid";s:34:"http://ued.taobao.org/blog/?p=9610";s:11:"description";s:394:"2014-09-09 01:39:24 中秋佳节来临，祝各位小伙伴中秋快乐，阖家幸福！ 业界动态 Chrome 38 B &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac7%e6%9c%9f%e4%b8%8d%e5%8f%af%e9%94%99%e8%bf%87%e7%9a%84%e5%a4%a7%e5%b8%88%e7%ba%a7%e5%86%85%e5%ad%98%e7%ae%a1%e7%90%86%e8%af%be/">更多&#62;</a>";s:7:"content";a:1:{s:7:"encoded";s:8481:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>2014-09-09 01:39:24</p>
+<p>中秋佳节来临，祝各位小伙伴中秋快乐，阖家幸福！</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://thenextweb.com/google/2014/08/29/chrome-38-beta-arrives-new-user-switching-profiles-guest-mode-64-bit-default-mac/">Chrome 38 Beta Arrives with 64-Bit By Default on Mac</a>
+<ul>
+<li>在刚发布完 Chrome 37 正式版 2 天后，Google 就宣布了面向 Windows、Mac 和 Linux 的 Chrome 38 beta 版的发布，主要包含全新的用户帐号切换界面、访客模式以及针对 OS X 用户默认开启 64 位模式等新特性。</li>
+</ul>
+</li>
+<li><a href="http://thenextweb.com/apps/2014/09/02/firefox-32-arrives-new-http-cache-public-key-pinning-support-easy-language-switching-android/">Firefox 32 arrives with new HTTP cache, public key pinning support, and seamless language switching on Android</a>
+<ul>
+<li>Firefox 也紧跟 Chrome 脚步本周更新至 Firefox 32，带来全新的 HTTP 缓存以提高性能、支持防止中间人攻击的Public Key Pinning（公钥钉扎）机制等新特性，此外还带来一系列 HTML5 特性以及 web 音频编辑等支持。</li>
+</ul>
+</li>
+<li><a href="https://dev.opera.com/blog/opera-24/">Opera 24 released</a>
+<ul>
+<li>Opera 24（基于 Chromium 37）已发布，对普通用户而言带来标签页预览、更好的高分辨率屏幕支持和更明显的隐私标签页，对开发者带来改善的字体渲染、CSS Shapes 的支持、CSS <code>all</code> 属性支持、无前缀的 CSS 指针值 <code>zoom-in</code> 和 <code>zoom-out</code> 等。</li>
+</ul>
+</li>
+<li><a href="http://www.sitepoint.com/whats-new-in-wordpress-4-0/">What’s New in WordPress 4.0</a>
+<ul>
+<li>为纪念爵士音乐家 Benny Goodman 而命名为 &#8220;Benny&#8221; 的 WordPress 4.0 版本如今正式发布，相比上次 3.9 版本发布已历时接近半年，此处更新的主要特性包括全新的媒体库网格视图、内容编辑器改进、更丰富的媒体嵌入的支持、全新的插件安装体验等。</li>
+</ul>
+</li>
+<li><a href="http://underscorejs.org/?#changelog">Underscore.js &#8211; 1.7.0 — August 26, 2014</a>
+<ul>
+<li>Unserscore.js 上周升级至 1.7.0，为保持一致性以及跨浏览器的性能，对部分数组方法采取忽略处理，新增了<code>_.iteratee</code>、<code>_.before</code>、<code>_.negate</code>、<code>_.noop</code> 等方法，并对<code>_.isEmpty</code>、<code>_.has</code>、<code>_.memoize</code>、<code>_.pick</code> 等函数的入参和返回进行了更新。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06">Medium’s CSS is actually pretty f***ing good.</a>
+<ul>
+<li>这篇文章中分享了 medium.com 网站的 CSS 架构方面的经验，由 2 年前的历史展开介绍当时的 CSS 架构方面的一些问题，进而分享了包括图片处理、<code>z-index</code> 分级、样式风格指南及其语义化实践等方面的不断完善的过程。</li>
+</ul>
+</li>
+<li><a href="http://www.sitepoint.com/10-tips-make-node-js-web-app-faster/">10 Tips to Make Your Node.js Web App Faster</a>
+<ul>
+<li>这篇文章中分享了一些提升 Node.js 应用速度的 tip，包括并行执行、异步化、使用缓存与 gzip 压缩、尽可能使用客户端渲染、不要在 session 中存储过多数据、优化数据库查询、使用标准的 V8 函数、使用 Nginx 作为前置服务器等。</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=tXeBZ3WujTs&amp;index=7&amp;list=PLb0IAmt7-GS1hdDcokpVp1MBk-IaeaSgP">OSCON 2014: React&#8217;s Architecture; Christopher Chedeau</a>
+<ul>
+<li>想知道 Facebook 的 React 库的架构设计、背后的 virtual dom 的动态更新 dom 节点机制吗？这篇视频分享中一定可以解答你的各种好奇和困惑。</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=LaxbdIyBkL0">Memory Management Masterclass with Addy Osmani</a>
+<ul>
+<li>Addy Osmani 分享的这篇关于内存管理的演讲深入浅出地介绍了如何掌握 Chrome Dev Tools 来有效地进行内存管理、如何解决诸如内存泄露、频繁的垃圾回收暂停以及内存膨胀等性能问题以及一些牵涉内存管理的最佳实践。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://c3js.org/">C3.js | D3-based reusable chart library</a>
+<ul>
+<li>C3.js 是一个基于 D3 的可复用的图表库，对基于 D3 的图表进行了封装保证使用起来更轻松、支持自定义配置，并提供了丰富的 API 和 回调函数来访问图表状态。不妨看看它的官方网站的 demo 来体验下吧！</li>
+</ul>
+</li>
+<li><a href="https://github.com/axemclion/perfjankie">axemclion/perfjankie</a>
+<ul>
+<li>如果你在考虑为你的持续集成系统中增加浏览器渲染性能回归检查，不妨试试 perfjankie，它是一个基于<a href="https://github.com/axemclion/browser-perf">browser-perf</a> 的 node 模块，可以测量浏览器渲染性能以及结果汇总，收集包括页面加载时间、首屏渲染时间、滚动时间等指标。</li>
+</ul>
+</li>
+<li><a href="https://github.com/trueinteractions/tint2">trueinteractions/tint2</a>
+<ul>
+<li>Tint 是一个基于 node 的修改版本，可以使你将基于 javascript 的 node 应用编译为全功能的桌面应用程序，内置了对话框、消息通知、进度条、复合输入框、WebView 等丰富的模块，只需要 30 多行代码就可以实现一个简单的浏览器，赶紧来试试吧！</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Chrome 38 Beta Arrives with 64-Bit By Default on Mac
+<ul>
+<li><a href="http://thenextweb.com/google/2014/08/29/chrome-38-beta-arrives-new-user-switching-profiles-guest-mode-64-bit-default-mac/">http://thenextweb.com/google/2014/08/29/chrome-38-beta-arrives-new-user-switching-profiles-guest-mode-64-bit-default-mac/</a></li>
+</ul>
+</li>
+<li>Firefox 32 arrives with new HTTP cache, public key pinning support, and seamless language switching on Android
+<ul>
+<li><a href="http://thenextweb.com/apps/2014/09/02/firefox-32-arrives-new-http-cache-public-key-pinning-support-easy-language-switching-android/">http://thenextweb.com/apps/2014/09/02/firefox-32-arrives-new-http-cache-public-key-pinning-support-easy-language-switching-android/</a></li>
+</ul>
+</li>
+<li>Opera 24 released
+<ul>
+<li><a href="https://dev.opera.com/blog/opera-24/">https://dev.opera.com/blog/opera-24/</a></li>
+</ul>
+</li>
+<li>What’s New in WordPress 4.0
+<ul>
+<li><a href="http://www.sitepoint.com/whats-new-in-wordpress-4-0/">http://www.sitepoint.com/whats-new-in-wordpress-4-0/</a></li>
+</ul>
+</li>
+<li>Underscore.js &#8211; 1.7.0 — August 26, 2014
+<ul>
+<li><a href="http://underscorejs.org/?#changelog">http://underscorejs.org/?#changelog</a></li>
+</ul>
+</li>
+<li>Medium’s CSS is actually pretty f***ing good.
+<ul>
+<li><a href="https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06">https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06</a></li>
+</ul>
+</li>
+<li>10 Tips to Make Your Node.js Web App Faster
+<ul>
+<li><a href="http://www.sitepoint.com/10-tips-make-node-js-web-app-faster/">http://www.sitepoint.com/10-tips-make-node-js-web-app-faster/</a></li>
+</ul>
+</li>
+<li>OSCON 2014: React&#8217;s Architecture; Christopher Chedeau
+<ul>
+<li><a href="https://www.youtube.com/watch?v=tXeBZ3WujTs&amp;index=7&amp;list=PLb0IAmt7-GS1hdDcokpVp1MBk-IaeaSgP">https://www.youtube.com/watch?v=tXeBZ3WujTs&amp;index=7&amp;list=PLb0IAmt7-GS1hdDcokpVp1MBk-IaeaSgP</a></li>
+</ul>
+</li>
+<li>Memory Management Masterclass with Addy Osmani
+<ul>
+<li><a href="https://www.youtube.com/watch?v=LaxbdIyBkL0">https://www.youtube.com/watch?v=LaxbdIyBkL0</a></li>
+</ul>
+</li>
+<li>C3.js | D3-based reusable chart library
+<ul>
+<li><a href="http://c3js.org/">http://c3js.org/</a></li>
+</ul>
+</li>
+<li>axemclion/perfjankie
+<ul>
+<li><a href="https://github.com/axemclion/perfjankie">https://github.com/axemclion/perfjankie</a></li>
+</ul>
+</li>
+<li>trueinteractions/tint2
+<ul>
+<li><a href="https://github.com/trueinteractions/tint2">https://github.com/trueinteractions/tint2</a></li>
+</ul>
+</li>
+</ul>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:232:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac7%e6%9c%9f%e4%b8%8d%e5%8f%af%e9%94%99%e8%bf%87%e7%9a%84%e5%a4%a7%e5%b8%88%e7%ba%a7%e5%86%85%e5%ad%98%e7%ae%a1%e7%90%86%e8%af%be/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:394:"2014-09-09 01:39:24 中秋佳节来临，祝各位小伙伴中秋快乐，阖家幸福！ 业界动态 Chrome 38 B &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac7%e6%9c%9f%e4%b8%8d%e5%8f%af%e9%94%99%e8%bf%87%e7%9a%84%e5%a4%a7%e5%b8%88%e7%ba%a7%e5%86%85%e5%ad%98%e7%ae%a1%e7%90%86%e8%af%be/">更多&#62;</a>";s:12:"atom_content";s:8481:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>2014-09-09 01:39:24</p>
+<p>中秋佳节来临，祝各位小伙伴中秋快乐，阖家幸福！</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://thenextweb.com/google/2014/08/29/chrome-38-beta-arrives-new-user-switching-profiles-guest-mode-64-bit-default-mac/">Chrome 38 Beta Arrives with 64-Bit By Default on Mac</a>
+<ul>
+<li>在刚发布完 Chrome 37 正式版 2 天后，Google 就宣布了面向 Windows、Mac 和 Linux 的 Chrome 38 beta 版的发布，主要包含全新的用户帐号切换界面、访客模式以及针对 OS X 用户默认开启 64 位模式等新特性。</li>
+</ul>
+</li>
+<li><a href="http://thenextweb.com/apps/2014/09/02/firefox-32-arrives-new-http-cache-public-key-pinning-support-easy-language-switching-android/">Firefox 32 arrives with new HTTP cache, public key pinning support, and seamless language switching on Android</a>
+<ul>
+<li>Firefox 也紧跟 Chrome 脚步本周更新至 Firefox 32，带来全新的 HTTP 缓存以提高性能、支持防止中间人攻击的Public Key Pinning（公钥钉扎）机制等新特性，此外还带来一系列 HTML5 特性以及 web 音频编辑等支持。</li>
+</ul>
+</li>
+<li><a href="https://dev.opera.com/blog/opera-24/">Opera 24 released</a>
+<ul>
+<li>Opera 24（基于 Chromium 37）已发布，对普通用户而言带来标签页预览、更好的高分辨率屏幕支持和更明显的隐私标签页，对开发者带来改善的字体渲染、CSS Shapes 的支持、CSS <code>all</code> 属性支持、无前缀的 CSS 指针值 <code>zoom-in</code> 和 <code>zoom-out</code> 等。</li>
+</ul>
+</li>
+<li><a href="http://www.sitepoint.com/whats-new-in-wordpress-4-0/">What’s New in WordPress 4.0</a>
+<ul>
+<li>为纪念爵士音乐家 Benny Goodman 而命名为 &#8220;Benny&#8221; 的 WordPress 4.0 版本如今正式发布，相比上次 3.9 版本发布已历时接近半年，此处更新的主要特性包括全新的媒体库网格视图、内容编辑器改进、更丰富的媒体嵌入的支持、全新的插件安装体验等。</li>
+</ul>
+</li>
+<li><a href="http://underscorejs.org/?#changelog">Underscore.js &#8211; 1.7.0 — August 26, 2014</a>
+<ul>
+<li>Unserscore.js 上周升级至 1.7.0，为保持一致性以及跨浏览器的性能，对部分数组方法采取忽略处理，新增了<code>_.iteratee</code>、<code>_.before</code>、<code>_.negate</code>、<code>_.noop</code> 等方法，并对<code>_.isEmpty</code>、<code>_.has</code>、<code>_.memoize</code>、<code>_.pick</code> 等函数的入参和返回进行了更新。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06">Medium’s CSS is actually pretty f***ing good.</a>
+<ul>
+<li>这篇文章中分享了 medium.com 网站的 CSS 架构方面的经验，由 2 年前的历史展开介绍当时的 CSS 架构方面的一些问题，进而分享了包括图片处理、<code>z-index</code> 分级、样式风格指南及其语义化实践等方面的不断完善的过程。</li>
+</ul>
+</li>
+<li><a href="http://www.sitepoint.com/10-tips-make-node-js-web-app-faster/">10 Tips to Make Your Node.js Web App Faster</a>
+<ul>
+<li>这篇文章中分享了一些提升 Node.js 应用速度的 tip，包括并行执行、异步化、使用缓存与 gzip 压缩、尽可能使用客户端渲染、不要在 session 中存储过多数据、优化数据库查询、使用标准的 V8 函数、使用 Nginx 作为前置服务器等。</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=tXeBZ3WujTs&amp;index=7&amp;list=PLb0IAmt7-GS1hdDcokpVp1MBk-IaeaSgP">OSCON 2014: React&#8217;s Architecture; Christopher Chedeau</a>
+<ul>
+<li>想知道 Facebook 的 React 库的架构设计、背后的 virtual dom 的动态更新 dom 节点机制吗？这篇视频分享中一定可以解答你的各种好奇和困惑。</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=LaxbdIyBkL0">Memory Management Masterclass with Addy Osmani</a>
+<ul>
+<li>Addy Osmani 分享的这篇关于内存管理的演讲深入浅出地介绍了如何掌握 Chrome Dev Tools 来有效地进行内存管理、如何解决诸如内存泄露、频繁的垃圾回收暂停以及内存膨胀等性能问题以及一些牵涉内存管理的最佳实践。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://c3js.org/">C3.js | D3-based reusable chart library</a>
+<ul>
+<li>C3.js 是一个基于 D3 的可复用的图表库，对基于 D3 的图表进行了封装保证使用起来更轻松、支持自定义配置，并提供了丰富的 API 和 回调函数来访问图表状态。不妨看看它的官方网站的 demo 来体验下吧！</li>
+</ul>
+</li>
+<li><a href="https://github.com/axemclion/perfjankie">axemclion/perfjankie</a>
+<ul>
+<li>如果你在考虑为你的持续集成系统中增加浏览器渲染性能回归检查，不妨试试 perfjankie，它是一个基于<a href="https://github.com/axemclion/browser-perf">browser-perf</a> 的 node 模块，可以测量浏览器渲染性能以及结果汇总，收集包括页面加载时间、首屏渲染时间、滚动时间等指标。</li>
+</ul>
+</li>
+<li><a href="https://github.com/trueinteractions/tint2">trueinteractions/tint2</a>
+<ul>
+<li>Tint 是一个基于 node 的修改版本，可以使你将基于 javascript 的 node 应用编译为全功能的桌面应用程序，内置了对话框、消息通知、进度条、复合输入框、WebView 等丰富的模块，只需要 30 多行代码就可以实现一个简单的浏览器，赶紧来试试吧！</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>Chrome 38 Beta Arrives with 64-Bit By Default on Mac
+<ul>
+<li><a href="http://thenextweb.com/google/2014/08/29/chrome-38-beta-arrives-new-user-switching-profiles-guest-mode-64-bit-default-mac/">http://thenextweb.com/google/2014/08/29/chrome-38-beta-arrives-new-user-switching-profiles-guest-mode-64-bit-default-mac/</a></li>
+</ul>
+</li>
+<li>Firefox 32 arrives with new HTTP cache, public key pinning support, and seamless language switching on Android
+<ul>
+<li><a href="http://thenextweb.com/apps/2014/09/02/firefox-32-arrives-new-http-cache-public-key-pinning-support-easy-language-switching-android/">http://thenextweb.com/apps/2014/09/02/firefox-32-arrives-new-http-cache-public-key-pinning-support-easy-language-switching-android/</a></li>
+</ul>
+</li>
+<li>Opera 24 released
+<ul>
+<li><a href="https://dev.opera.com/blog/opera-24/">https://dev.opera.com/blog/opera-24/</a></li>
+</ul>
+</li>
+<li>What’s New in WordPress 4.0
+<ul>
+<li><a href="http://www.sitepoint.com/whats-new-in-wordpress-4-0/">http://www.sitepoint.com/whats-new-in-wordpress-4-0/</a></li>
+</ul>
+</li>
+<li>Underscore.js &#8211; 1.7.0 — August 26, 2014
+<ul>
+<li><a href="http://underscorejs.org/?#changelog">http://underscorejs.org/?#changelog</a></li>
+</ul>
+</li>
+<li>Medium’s CSS is actually pretty f***ing good.
+<ul>
+<li><a href="https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06">https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06</a></li>
+</ul>
+</li>
+<li>10 Tips to Make Your Node.js Web App Faster
+<ul>
+<li><a href="http://www.sitepoint.com/10-tips-make-node-js-web-app-faster/">http://www.sitepoint.com/10-tips-make-node-js-web-app-faster/</a></li>
+</ul>
+</li>
+<li>OSCON 2014: React&#8217;s Architecture; Christopher Chedeau
+<ul>
+<li><a href="https://www.youtube.com/watch?v=tXeBZ3WujTs&amp;index=7&amp;list=PLb0IAmt7-GS1hdDcokpVp1MBk-IaeaSgP">https://www.youtube.com/watch?v=tXeBZ3WujTs&amp;index=7&amp;list=PLb0IAmt7-GS1hdDcokpVp1MBk-IaeaSgP</a></li>
+</ul>
+</li>
+<li>Memory Management Masterclass with Addy Osmani
+<ul>
+<li><a href="https://www.youtube.com/watch?v=LaxbdIyBkL0">https://www.youtube.com/watch?v=LaxbdIyBkL0</a></li>
+</ul>
+</li>
+<li>C3.js | D3-based reusable chart library
+<ul>
+<li><a href="http://c3js.org/">http://c3js.org/</a></li>
+</ul>
+</li>
+<li>axemclion/perfjankie
+<ul>
+<li><a href="https://github.com/axemclion/perfjankie">https://github.com/axemclion/perfjankie</a></li>
+</ul>
+</li>
+<li>trueinteractions/tint2
+<ul>
+<li><a href="https://github.com/trueinteractions/tint2">https://github.com/trueinteractions/tint2</a></li>
+</ul>
+</li>
+</ul>
+";s:14:"date_timestamp";i:1426734028;}i:6;a:14:{s:5:"title";s:66:"[懒懒小报-外刊第6期]移动 Web 应用标准去向何方？";s:4:"link";s:214:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac6%e6%9c%9f%e7%a7%bb%e5%8a%a8-web-%e5%ba%94%e7%94%a8%e6%a0%87%e5%87%86%e5%8e%bb%e5%90%91%e4%bd%95%e6%96%b9%ef%bc%9f/";s:8:"comments";s:223:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac6%e6%9c%9f%e7%a7%bb%e5%8a%a8-web-%e5%ba%94%e7%94%a8%e6%a0%87%e5%87%86%e5%8e%bb%e5%90%91%e4%bd%95%e6%96%b9%ef%bc%9f/#comments";s:7:"pubdate";s:31:"Thu, 19 Mar 2015 02:58:48 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"弘树";}s:8:"category";s:27:"懒懒交流会懒懒小报";s:4:"guid";s:34:"http://ued.taobao.org/blog/?p=9608";s:11:"description";s:367:"2014-08-25 01:08:43 npm 2 即将迎来正式版，等不及的小伙伴可以先通过 npm -g instal &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac6%e6%9c%9f%e7%a7%bb%e5%8a%a8-web-%e5%ba%94%e7%94%a8%e6%a0%87%e5%87%86%e5%8e%bb%e5%90%91%e4%bd%95%e6%96%b9%ef%bc%9f/">更多&#62;</a>";s:7:"content";a:1:{s:7:"encoded";s:7162:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>2014-08-25 01:08:43</p>
+<p>npm 2 即将迎来正式版，等不及的小伙伴可以先通过 <code>npm -g install npm@next</code> 升级体验啦！目前最新的 v2.0.0-beta.0 已发布，更新记录可以见 <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md">这里</a>。</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/3dLc0LIhDDk/ikXXhLlEMisJ">V8 Intent to implement: ES6 classes</a>
+<ul>
+<li>V8 已经开始着手 ES6 中类的实现了，包括类声明语法、对象字面量语法的增强以及 <code>super</code> 关键字和<code>Function.prototype.toMethod</code> 等， 毫无疑问对于前端工程师而言这将是一件“开发者的大事，大快所有人心的大好事”。</li>
+</ul>
+</li>
+<li><a href="http://blog.npmjs.org/post/94662089625/the-future-of-the-npm-website-lets-map-this-road">The Future of the npm Website: Let&#8217;s Map this Road!</a>
+<ul>
+<li>npm 官方博客最新的博文介绍了 npm 官网接下来的路线图，包括彻底的重新设计、在线的包元数据编辑、支持包评估的更丰富的统计数据、支持组件集合、生态系统、更好的搜索，以及这些规划的时间线。</li>
+</ul>
+</li>
+<li><a href="http://blog.nodejs.org/2014/08/19/node-v0-10-31-stable/">Node v0.10.31 (Stable)</a>
+<ul>
+<li>Node v0.10.31 稳定版本周发布，变化包括 v8 方面 backport <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6668">CVE-2013-6668</a> 漏洞，openssl 升级至 v1.0.1i，npm 升级至 1.4.23，修复 cluster 模块断开连接同步执行问题，修复当遇到 <code>RangeError</code> 时<code>fs.readFileSync</code> 的 fd 泄露问题（由朴灵大大提交）等。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://www.sitepoint.com/css-position-sticky-introduction-polyfills/">CSS &#8220;position: sticky&#8221; &#8211; Introduction and Polyfills</a>
+<ul>
+<li>你是否也经常遇到页面中滚动时固定如导航条之间的模块的需求？目前单纯依赖 CSS 基本很难解决。这篇文章介绍了 CSS 中新引入的 <code>positon:sticky</code> 属性值来解决这个问题，以及目前的浏览器兼容性和 Polyfill。</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=vE5kCqwoSUg">Web Security in Node.js and JavaScript Apps (SPAs)</a>
+<ul>
+<li>如果你关注 Web 应用尤其是 node.js 应用的安全问题，一定不能错过来自 PayPal 的 Mark Stuart 带来的这篇演讲，介绍了 Node.js 和 JavaScript SPA 应用中的关于 web 安全的一些反模式和最佳实践等。</li>
+</ul>
+</li>
+<li><a href="http://www.codetunnel.io/isolate-scopes-explained/">Isolate Scopes Explained</a>
+<ul>
+<li>AngularJS 中的 scope 是个很重要的概念，而 isolate scope 对于模块的封装和解耦十分重要，这篇文章中深入浅出地介绍了 isolate scope 的概念以及相关的绑定策略 <code>@</code>、<code>=</code> 和 <code>&amp;</code>，以及指令中的参数传递是如何实现的。</li>
+</ul>
+</li>
+<li><a href="http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/">Enduring CSS: writing style sheets for rapidly changing, long-lived projects</a>
+<ul>
+<li>这篇博文中 Ben Frain 分享了他在为快速变化而生命周期长的项目编写样式表的过程中的一些经验，包括技术和工具方面的预处理、构建系统的选择、编写 CSS 中的一些最佳实践、项目组织结构的设计、常见的 CSS 书写中的陷阱等，值得一读。</li>
+</ul>
+</li>
+<li><a href="http://www.w3.org/2014/07/mobile-web-app-state/">Standards for Web Applications on Mobile: current state and roadmap</a>
+<ul>
+<li>时隔3个月，W3C 组织又更新了移动 Web 应用标准的当前进展和路线图文档，总结了包括图形、多媒体、设备适配、表单、用户交互、数据存储等 14 个方面牵涉的标准的当前状态和变化等，非常值得细读和收藏！</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://browsenpm.org/package/verror">verror</a>
+<ul>
+<li>在 Node.js 应用中的错误处理往往比较麻烦琐碎，使用 <a href="http://browsenpm.org/package/verror">verror</a> 则可以比较方便地实现较为丰富的 JavaScript 错误类型，支持 printf 风格的错误构造器以及多个错误的合并，同时提供了包装为更上层的错误 <code>WError</code>。</li>
+</ul>
+</li>
+<li><a href="https://github.com/gobwas/dm.js">gobwas/dm.js</a>
+<ul>
+<li>dm.js 是一个 JavaScript 依赖注入管理器，同时支持 node 端和浏览器端，提供异步创建、配置和注入对象也就是服务到你的代码中，帮助你更好地实现模块间的解耦。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>V8 Intent to implement: ES6 classes
+<ul>
+<li><a href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/3dLc0LIhDDk/ikXXhLlEMisJ">https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/3dLc0LIhDDk/ikXXhLlEMisJ</a></li>
+</ul>
+</li>
+<li>The Future of the npm Website: Let&#8217;s Map this Road!
+<ul>
+<li><a href="http://blog.npmjs.org/post/94662089625/the-future-of-the-npm-website-lets-map-this-road">http://blog.npmjs.org/post/94662089625/the-future-of-the-npm-website-lets-map-this-road</a></li>
+</ul>
+</li>
+<li>Node v0.10.31 (Stable)
+<ul>
+<li><a href="http://blog.nodejs.org/2014/08/19/node-v0-10-31-stable/">http://blog.nodejs.org/2014/08/19/node-v0-10-31-stable/</a></li>
+</ul>
+</li>
+<li>CSS &#8220;position: sticky&#8221; &#8211; Introduction and Polyfills
+<ul>
+<li><a href="http://www.sitepoint.com/css-position-sticky-introduction-polyfills/">http://www.sitepoint.com/css-position-sticky-introduction-polyfills/</a></li>
+</ul>
+</li>
+<li>Web Security in Node.js and JavaScript Apps (SPAs)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=vE5kCqwoSUg">https://www.youtube.com/watch?v=vE5kCqwoSUg</a></li>
+</ul>
+</li>
+<li>Isolate Scopes Explained
+<ul>
+<li><a href="http://www.codetunnel.io/isolate-scopes-explained/">http://www.codetunnel.io/isolate-scopes-explained/</a></li>
+</ul>
+</li>
+<li>Enduring CSS: writing style sheets for rapidly changing, long-lived projects
+<ul>
+<li><a href="http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/">http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/</a></li>
+</ul>
+</li>
+<li>Standards for Web Applications on Mobile: current state and roadmap
+<ul>
+<li><a href="http://www.w3.org/2014/07/mobile-web-app-state/">http://www.w3.org/2014/07/mobile-web-app-state/</a></li>
+</ul>
+</li>
+<li>verror
+<ul>
+<li><a href="http://browsenpm.org/package/verror">http://browsenpm.org/package/verror</a></li>
+</ul>
+</li>
+<li>gobwas/dm.js
+<ul>
+<li><a href="https://github.com/gobwas/dm.js">https://github.com/gobwas/dm.js</a></li>
+</ul>
+</li>
+</ul>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:219:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac6%e6%9c%9f%e7%a7%bb%e5%8a%a8-web-%e5%ba%94%e7%94%a8%e6%a0%87%e5%87%86%e5%8e%bb%e5%90%91%e4%bd%95%e6%96%b9%ef%bc%9f/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:367:"2014-08-25 01:08:43 npm 2 即将迎来正式版，等不及的小伙伴可以先通过 npm -g instal &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac6%e6%9c%9f%e7%a7%bb%e5%8a%a8-web-%e5%ba%94%e7%94%a8%e6%a0%87%e5%87%86%e5%8e%bb%e5%90%91%e4%bd%95%e6%96%b9%ef%bc%9f/">更多&#62;</a>";s:12:"atom_content";s:7162:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="" /></a></p>
+<p>2014-08-25 01:08:43</p>
+<p>npm 2 即将迎来正式版，等不及的小伙伴可以先通过 <code>npm -g install npm@next</code> 升级体验啦！目前最新的 v2.0.0-beta.0 已发布，更新记录可以见 <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md">这里</a>。</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/3dLc0LIhDDk/ikXXhLlEMisJ">V8 Intent to implement: ES6 classes</a>
+<ul>
+<li>V8 已经开始着手 ES6 中类的实现了，包括类声明语法、对象字面量语法的增强以及 <code>super</code> 关键字和<code>Function.prototype.toMethod</code> 等， 毫无疑问对于前端工程师而言这将是一件“开发者的大事，大快所有人心的大好事”。</li>
+</ul>
+</li>
+<li><a href="http://blog.npmjs.org/post/94662089625/the-future-of-the-npm-website-lets-map-this-road">The Future of the npm Website: Let&#8217;s Map this Road!</a>
+<ul>
+<li>npm 官方博客最新的博文介绍了 npm 官网接下来的路线图，包括彻底的重新设计、在线的包元数据编辑、支持包评估的更丰富的统计数据、支持组件集合、生态系统、更好的搜索，以及这些规划的时间线。</li>
+</ul>
+</li>
+<li><a href="http://blog.nodejs.org/2014/08/19/node-v0-10-31-stable/">Node v0.10.31 (Stable)</a>
+<ul>
+<li>Node v0.10.31 稳定版本周发布，变化包括 v8 方面 backport <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6668">CVE-2013-6668</a> 漏洞，openssl 升级至 v1.0.1i，npm 升级至 1.4.23，修复 cluster 模块断开连接同步执行问题，修复当遇到 <code>RangeError</code> 时<code>fs.readFileSync</code> 的 fd 泄露问题（由朴灵大大提交）等。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://www.sitepoint.com/css-position-sticky-introduction-polyfills/">CSS &#8220;position: sticky&#8221; &#8211; Introduction and Polyfills</a>
+<ul>
+<li>你是否也经常遇到页面中滚动时固定如导航条之间的模块的需求？目前单纯依赖 CSS 基本很难解决。这篇文章介绍了 CSS 中新引入的 <code>positon:sticky</code> 属性值来解决这个问题，以及目前的浏览器兼容性和 Polyfill。</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=vE5kCqwoSUg">Web Security in Node.js and JavaScript Apps (SPAs)</a>
+<ul>
+<li>如果你关注 Web 应用尤其是 node.js 应用的安全问题，一定不能错过来自 PayPal 的 Mark Stuart 带来的这篇演讲，介绍了 Node.js 和 JavaScript SPA 应用中的关于 web 安全的一些反模式和最佳实践等。</li>
+</ul>
+</li>
+<li><a href="http://www.codetunnel.io/isolate-scopes-explained/">Isolate Scopes Explained</a>
+<ul>
+<li>AngularJS 中的 scope 是个很重要的概念，而 isolate scope 对于模块的封装和解耦十分重要，这篇文章中深入浅出地介绍了 isolate scope 的概念以及相关的绑定策略 <code>@</code>、<code>=</code> 和 <code>&amp;</code>，以及指令中的参数传递是如何实现的。</li>
+</ul>
+</li>
+<li><a href="http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/">Enduring CSS: writing style sheets for rapidly changing, long-lived projects</a>
+<ul>
+<li>这篇博文中 Ben Frain 分享了他在为快速变化而生命周期长的项目编写样式表的过程中的一些经验，包括技术和工具方面的预处理、构建系统的选择、编写 CSS 中的一些最佳实践、项目组织结构的设计、常见的 CSS 书写中的陷阱等，值得一读。</li>
+</ul>
+</li>
+<li><a href="http://www.w3.org/2014/07/mobile-web-app-state/">Standards for Web Applications on Mobile: current state and roadmap</a>
+<ul>
+<li>时隔3个月，W3C 组织又更新了移动 Web 应用标准的当前进展和路线图文档，总结了包括图形、多媒体、设备适配、表单、用户交互、数据存储等 14 个方面牵涉的标准的当前状态和变化等，非常值得细读和收藏！</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://browsenpm.org/package/verror">verror</a>
+<ul>
+<li>在 Node.js 应用中的错误处理往往比较麻烦琐碎，使用 <a href="http://browsenpm.org/package/verror">verror</a> 则可以比较方便地实现较为丰富的 JavaScript 错误类型，支持 printf 风格的错误构造器以及多个错误的合并，同时提供了包装为更上层的错误 <code>WError</code>。</li>
+</ul>
+</li>
+<li><a href="https://github.com/gobwas/dm.js">gobwas/dm.js</a>
+<ul>
+<li>dm.js 是一个 JavaScript 依赖注入管理器，同时支持 node 端和浏览器端，提供异步创建、配置和注入对象也就是服务到你的代码中，帮助你更好地实现模块间的解耦。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>V8 Intent to implement: ES6 classes
+<ul>
+<li><a href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/3dLc0LIhDDk/ikXXhLlEMisJ">https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/3dLc0LIhDDk/ikXXhLlEMisJ</a></li>
+</ul>
+</li>
+<li>The Future of the npm Website: Let&#8217;s Map this Road!
+<ul>
+<li><a href="http://blog.npmjs.org/post/94662089625/the-future-of-the-npm-website-lets-map-this-road">http://blog.npmjs.org/post/94662089625/the-future-of-the-npm-website-lets-map-this-road</a></li>
+</ul>
+</li>
+<li>Node v0.10.31 (Stable)
+<ul>
+<li><a href="http://blog.nodejs.org/2014/08/19/node-v0-10-31-stable/">http://blog.nodejs.org/2014/08/19/node-v0-10-31-stable/</a></li>
+</ul>
+</li>
+<li>CSS &#8220;position: sticky&#8221; &#8211; Introduction and Polyfills
+<ul>
+<li><a href="http://www.sitepoint.com/css-position-sticky-introduction-polyfills/">http://www.sitepoint.com/css-position-sticky-introduction-polyfills/</a></li>
+</ul>
+</li>
+<li>Web Security in Node.js and JavaScript Apps (SPAs)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=vE5kCqwoSUg">https://www.youtube.com/watch?v=vE5kCqwoSUg</a></li>
+</ul>
+</li>
+<li>Isolate Scopes Explained
+<ul>
+<li><a href="http://www.codetunnel.io/isolate-scopes-explained/">http://www.codetunnel.io/isolate-scopes-explained/</a></li>
+</ul>
+</li>
+<li>Enduring CSS: writing style sheets for rapidly changing, long-lived projects
+<ul>
+<li><a href="http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/">http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/</a></li>
+</ul>
+</li>
+<li>Standards for Web Applications on Mobile: current state and roadmap
+<ul>
+<li><a href="http://www.w3.org/2014/07/mobile-web-app-state/">http://www.w3.org/2014/07/mobile-web-app-state/</a></li>
+</ul>
+</li>
+<li>verror
+<ul>
+<li><a href="http://browsenpm.org/package/verror">http://browsenpm.org/package/verror</a></li>
+</ul>
+</li>
+<li>gobwas/dm.js
+<ul>
+<li><a href="https://github.com/gobwas/dm.js">https://github.com/gobwas/dm.js</a></li>
+</ul>
+</li>
+</ul>
+";s:14:"date_timestamp";i:1426733928;}i:7;a:14:{s:5:"title";s:59:"[懒懒小报-外刊第5期]HTML 5 预读取的大千世界";s:4:"link";s:189:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac5%e6%9c%9fhtml-5-%e9%a2%84%e8%af%bb%e5%8f%96%e7%9a%84%e5%a4%a7%e5%8d%83%e4%b8%96%e7%95%8c/";s:8:"comments";s:198:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac5%e6%9c%9fhtml-5-%e9%a2%84%e8%af%bb%e5%8f%96%e7%9a%84%e5%a4%a7%e5%8d%83%e4%b8%96%e7%95%8c/#comments";s:7:"pubdate";s:31:"Thu, 19 Mar 2015 02:54:23 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"弘树";}s:8:"category";s:27:"懒懒交流会懒懒小报";s:4:"guid";s:34:"http://ued.taobao.org/blog/?p=9603";s:11:"description";s:352:"2014-08-11 00:51:11 下周为期两天的 Velocity 2014 北京大会即将拉开帷幕，无法参加的小伙 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac5%e6%9c%9fhtml-5-%e9%a2%84%e8%af%bb%e5%8f%96%e7%9a%84%e5%a4%a7%e5%8d%83%e4%b8%96%e7%95%8c/">更多&#62;</a>";s:7:"content";a:1:{s:7:"encoded";s:7142:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="懒懒小报-外刊" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="懒懒小报-外刊" /></a></p>
+<p>2014-08-11 00:51:11</p>
+<p>下周为期两天的 <a href="http://velocity.oreilly.com.cn/2014/index.php">Velocity 2014 北京大会</a>即将拉开帷幕，无法参加的小伙伴们还可以考虑报名参加周末的 <a href="http://2014.html5dw.com/about">iweb 大会</a>，想充电的小伙伴们走起！</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://blog.nodejs.org/2014/07/31/v8-memory-corruption-stack-overflow/">V8 Memory Corruption and Stack Overflow (fixed in Node v0.8.28 and v0.10.30)</a>
+<ul>
+<li>最近一个会导致拒绝服务的内存崩溃漏洞在 V8 引擎中被发现，在 Node.js 0.8 和 0.10 中采用的 V8 引擎都包含该问题，目前 Node.js 团队已发布了最新的 v0.8.28 和 v0.10.30 来修复该问题。</li>
+</ul>
+</li>
+<li><a href="http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/">Google Factors HTTPS Adoption into Search Results</a>
+<ul>
+<li>Google 最近调整了搜索引擎算法以保证使用 HTTPS 加密的站点在搜索结果中排名更靠前，以鼓励站长们采用 HTTPS 确保访问安全性，当然也可以看做是为 SPDY 的普及做准备。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://www.futureinsights.com/home/the-state-of-the-componentised-web.html">The State of the Componentised Web</a>
+<ul>
+<li>这篇文章总结了当前业界在组件化方面的一些进展和各式各样的解决方案，从组件是什么、构建组件的好处，到通过一个头像组件作为例子介绍了各种模块化框架和库的组件化实现，比较详尽全面。</li>
+</ul>
+</li>
+<li><a href="http://developer.telerik.com/featured/web-components-ready-production/">Why Web Components Are Ready For Production</a>
+<ul>
+<li>TJ VanToll 带来的这篇文章介绍了当下如何构建一个生产环境可用的自定义元素，从元素注册、API 挑选、实现必需的原型方法到引入 Polyfill 提升兼容性等，一步步介绍了一个自定义时钟元素的实现。</li>
+</ul>
+</li>
+<li><a href="http://www.binpress.com/tutorial/speeding-up-angular-js-with-simple-optimizations/135">Speeding up AngularJS apps with simple optimizations</a>
+<ul>
+<li>这篇博文介绍了提升 AngularJS 应用的性能的一些简单的优化技巧，包括即将来临的 1.3.0 中引入的单次绑定语法<code>{{::value}</code>、<code>$scope.$apply()</code> 与 <code>$scope.$digets()</code> 的对比、尽可能避免<code>ng-repeat</code>等。</li>
+</ul>
+</li>
+<li><a href="http://yedingding.com/2014/07/28/node-webkit-intro.html">开始 node-webkit 前，你应该知道的</a>
+<ul>
+<li>node-webkit 为前端工程师编写桌面应用程序打开了一扇门，如果你还没有深入了解它，不妨通过这篇文章了解一下 node-webkit 的来龙去脉和主要实现细节。</li>
+</ul>
+</li>
+<li><a href="https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d">HTML5 Prefetch</a>
+<ul>
+<li>你是否熟悉 HTML 5 中提供的称为 “预读取”（prefetch）的新特性呢？也许你已经使用过 DNS 预取了，但你是否尝试过链接预取、页面预渲染、运行时诸如预取提示呢？这篇文章将为你揭开“预读取”的完整面纱，并介绍了浏览器兼容情况、测试以及最佳实践等。</li>
+</ul>
+</li>
+<li><a href="http://ariya.ofilabs.com/2014/08/javascript-and-v8-turbofan.html">JavaScript and V8 TurboFan</a>
+<ul>
+<li>Ariya Hidayat 这篇博文预览了 Google 工程师最近为 V8 引入的一项新的名为 <strong>TurboFan</strong> 的优化 JavaScript 编译器项目，通过一个简单的测试程序介绍了如何启用 <strong>TurboFan</strong> 以及对程序执行流的分析，如果你对 JavaScript 编译器感兴趣不妨读读。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://web-design-weekly.com/2014/08/03/autopolyfiller">Autopolyfiller</a>
+<ul>
+<li>前有 <a href="http://t.cn/zQWejTn">autoprefixer</a> 自动解析 CSS 文件添加浏览器前缀，今有 <a href="http://t.cn/RPAJnS8">autopolyfier</a> 自动解析 JavaScript 文件按需生成 polyfill 文件，这篇文章介绍了这个工具及其 Grunt 插件的使用，从此 polyfill 也很轻松了有木有！</li>
+</ul>
+</li>
+<li><a href="https://github.com/jas-/node-libnmap">jas-/node-libnmap</a>
+<ul>
+<li>node-libnmap 是一个提供了网络扫描器 API 访问的工具型 node 模块，提供了在线主机自动发现和根据指定的网络范围配置执行扫描等功能，同时充分考虑利用并行机制提升扫描性能。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>V8 Memory Corruption and Stack Overflow (fixed in Node v0.8.28 and v0.10.30)
+<ul>
+<li><a href="http://blog.nodejs.org/2014/07/31/v8-memory-corruption-stack-overflow/">http://blog.nodejs.org/2014/07/31/v8-memory-corruption-stack-overflow/</a></li>
+</ul>
+</li>
+<li>Google Factors HTTPS Adoption into Search Results
+<ul>
+<li><a href="http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/">http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/</a></li>
+</ul>
+</li>
+<li>The State of the Componentised Web
+<ul>
+<li><a href="http://www.futureinsights.com/home/the-state-of-the-componentised-web.html">http://www.futureinsights.com/home/the-state-of-the-componentised-web.html</a></li>
+</ul>
+</li>
+<li>Why Web Components Are Ready For Production
+<ul>
+<li><a href="http://developer.telerik.com/featured/web-components-ready-production/">http://developer.telerik.com/featured/web-components-ready-production/</a></li>
+</ul>
+</li>
+<li>Speeding up AngularJS apps with simple optimizations
+<ul>
+<li><a href="http://www.binpress.com/tutorial/speeding-up-angular-js-with-simple-optimizations/135">http://www.binpress.com/tutorial/speeding-up-angular-js-with-simple-optimizations/135</a></li>
+</ul>
+</li>
+<li>开始 node-webkit 前，你应该知道的
+<ul>
+<li><a href="http://yedingding.com/2014/07/28/node-webkit-intro.htm">http://yedingding.com/2014/07/28/node-webkit-intro.htm</a></li>
+</ul>
+</li>
+<li>HTML5 Prefetch
+<ul>
+<li><a href="https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d">https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d</a></li>
+</ul>
+</li>
+<li>JavaScript and V8 TurboFan
+<ul>
+<li><a href="http://ariya.ofilabs.com/2014/08/javascript-and-v8-turbofan.html">http://ariya.ofilabs.com/2014/08/javascript-and-v8-turbofan.html</a></li>
+</ul>
+</li>
+<li>Autopolyfiller
+<ul>
+<li><a href="http://web-design-weekly.com/2014/08/03/autopolyfiller/">http://web-design-weekly.com/2014/08/03/autopolyfiller/</a></li>
+</ul>
+</li>
+<li>jas-/node-libnmap
+<ul>
+<li><a href="https://github.com/jas-/node-libnmap">https://github.com/jas-/node-libnmap</a></li>
+</ul>
+</li>
+</ul>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:194:"http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac5%e6%9c%9fhtml-5-%e9%a2%84%e8%af%bb%e5%8f%96%e7%9a%84%e5%a4%a7%e5%8d%83%e4%b8%96%e7%95%8c/feed/";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:352:"2014-08-11 00:51:11 下周为期两天的 Velocity 2014 北京大会即将拉开帷幕，无法参加的小伙 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2015/03/%e6%87%92%e6%87%92%e5%b0%8f%e6%8a%a5-%e5%a4%96%e5%88%8a%e7%ac%ac5%e6%9c%9fhtml-5-%e9%a2%84%e8%af%bb%e5%8f%96%e7%9a%84%e5%a4%a7%e5%8d%83%e4%b8%96%e7%95%8c/">更多&#62;</a>";s:12:"atom_content";s:7142:"<p><a href="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" target="_blank"><img title="懒懒小报-外刊" src="http://gw.alicdn.com/tps/i4/TB13NByFVXXXXcbXFXXn8NT_VXX-800-147.png" alt="懒懒小报-外刊" /></a></p>
+<p>2014-08-11 00:51:11</p>
+<p>下周为期两天的 <a href="http://velocity.oreilly.com.cn/2014/index.php">Velocity 2014 北京大会</a>即将拉开帷幕，无法参加的小伙伴们还可以考虑报名参加周末的 <a href="http://2014.html5dw.com/about">iweb 大会</a>，想充电的小伙伴们走起！</p>
+<h3 id="0">业界动态</h3>
+<ul>
+<li><a href="http://blog.nodejs.org/2014/07/31/v8-memory-corruption-stack-overflow/">V8 Memory Corruption and Stack Overflow (fixed in Node v0.8.28 and v0.10.30)</a>
+<ul>
+<li>最近一个会导致拒绝服务的内存崩溃漏洞在 V8 引擎中被发现，在 Node.js 0.8 和 0.10 中采用的 V8 引擎都包含该问题，目前 Node.js 团队已发布了最新的 v0.8.28 和 v0.10.30 来修复该问题。</li>
+</ul>
+</li>
+<li><a href="http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/">Google Factors HTTPS Adoption into Search Results</a>
+<ul>
+<li>Google 最近调整了搜索引擎算法以保证使用 HTTPS 加密的站点在搜索结果中排名更靠前，以鼓励站长们采用 HTTPS 确保访问安全性，当然也可以看做是为 SPDY 的普及做准备。</li>
+</ul>
+</li>
+</ul>
+<h3 id="1">充电站</h3>
+<ul>
+<li><a href="http://www.futureinsights.com/home/the-state-of-the-componentised-web.html">The State of the Componentised Web</a>
+<ul>
+<li>这篇文章总结了当前业界在组件化方面的一些进展和各式各样的解决方案，从组件是什么、构建组件的好处，到通过一个头像组件作为例子介绍了各种模块化框架和库的组件化实现，比较详尽全面。</li>
+</ul>
+</li>
+<li><a href="http://developer.telerik.com/featured/web-components-ready-production/">Why Web Components Are Ready For Production</a>
+<ul>
+<li>TJ VanToll 带来的这篇文章介绍了当下如何构建一个生产环境可用的自定义元素，从元素注册、API 挑选、实现必需的原型方法到引入 Polyfill 提升兼容性等，一步步介绍了一个自定义时钟元素的实现。</li>
+</ul>
+</li>
+<li><a href="http://www.binpress.com/tutorial/speeding-up-angular-js-with-simple-optimizations/135">Speeding up AngularJS apps with simple optimizations</a>
+<ul>
+<li>这篇博文介绍了提升 AngularJS 应用的性能的一些简单的优化技巧，包括即将来临的 1.3.0 中引入的单次绑定语法<code>{{::value}</code>、<code>$scope.$apply()</code> 与 <code>$scope.$digets()</code> 的对比、尽可能避免<code>ng-repeat</code>等。</li>
+</ul>
+</li>
+<li><a href="http://yedingding.com/2014/07/28/node-webkit-intro.html">开始 node-webkit 前，你应该知道的</a>
+<ul>
+<li>node-webkit 为前端工程师编写桌面应用程序打开了一扇门，如果你还没有深入了解它，不妨通过这篇文章了解一下 node-webkit 的来龙去脉和主要实现细节。</li>
+</ul>
+</li>
+<li><a href="https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d">HTML5 Prefetch</a>
+<ul>
+<li>你是否熟悉 HTML 5 中提供的称为 “预读取”（prefetch）的新特性呢？也许你已经使用过 DNS 预取了，但你是否尝试过链接预取、页面预渲染、运行时诸如预取提示呢？这篇文章将为你揭开“预读取”的完整面纱，并介绍了浏览器兼容情况、测试以及最佳实践等。</li>
+</ul>
+</li>
+<li><a href="http://ariya.ofilabs.com/2014/08/javascript-and-v8-turbofan.html">JavaScript and V8 TurboFan</a>
+<ul>
+<li>Ariya Hidayat 这篇博文预览了 Google 工程师最近为 V8 引入的一项新的名为 <strong>TurboFan</strong> 的优化 JavaScript 编译器项目，通过一个简单的测试程序介绍了如何启用 <strong>TurboFan</strong> 以及对程序执行流的分析，如果你对 JavaScript 编译器感兴趣不妨读读。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">百宝箱</h3>
+<ul>
+<li><a href="http://web-design-weekly.com/2014/08/03/autopolyfiller">Autopolyfiller</a>
+<ul>
+<li>前有 <a href="http://t.cn/zQWejTn">autoprefixer</a> 自动解析 CSS 文件添加浏览器前缀，今有 <a href="http://t.cn/RPAJnS8">autopolyfier</a> 自动解析 JavaScript 文件按需生成 polyfill 文件，这篇文章介绍了这个工具及其 Grunt 插件的使用，从此 polyfill 也很轻松了有木有！</li>
+</ul>
+</li>
+<li><a href="https://github.com/jas-/node-libnmap">jas-/node-libnmap</a>
+<ul>
+<li>node-libnmap 是一个提供了网络扫描器 API 访问的工具型 node 模块，提供了在线主机自动发现和根据指定的网络范围配置执行扫描等功能，同时充分考虑利用并行机制提升扫描性能。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h5 id="3">附所有链接：</h5>
+<ul>
+<li>V8 Memory Corruption and Stack Overflow (fixed in Node v0.8.28 and v0.10.30)
+<ul>
+<li><a href="http://blog.nodejs.org/2014/07/31/v8-memory-corruption-stack-overflow/">http://blog.nodejs.org/2014/07/31/v8-memory-corruption-stack-overflow/</a></li>
+</ul>
+</li>
+<li>Google Factors HTTPS Adoption into Search Results
+<ul>
+<li><a href="http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/">http://thenextweb.com/google/2014/08/07/google-is-now-ranking-websites-with-https-higher-in-its-search-results/</a></li>
+</ul>
+</li>
+<li>The State of the Componentised Web
+<ul>
+<li><a href="http://www.futureinsights.com/home/the-state-of-the-componentised-web.html">http://www.futureinsights.com/home/the-state-of-the-componentised-web.html</a></li>
+</ul>
+</li>
+<li>Why Web Components Are Ready For Production
+<ul>
+<li><a href="http://developer.telerik.com/featured/web-components-ready-production/">http://developer.telerik.com/featured/web-components-ready-production/</a></li>
+</ul>
+</li>
+<li>Speeding up AngularJS apps with simple optimizations
+<ul>
+<li><a href="http://www.binpress.com/tutorial/speeding-up-angular-js-with-simple-optimizations/135">http://www.binpress.com/tutorial/speeding-up-angular-js-with-simple-optimizations/135</a></li>
+</ul>
+</li>
+<li>开始 node-webkit 前，你应该知道的
+<ul>
+<li><a href="http://yedingding.com/2014/07/28/node-webkit-intro.htm">http://yedingding.com/2014/07/28/node-webkit-intro.htm</a></li>
+</ul>
+</li>
+<li>HTML5 Prefetch
+<ul>
+<li><a href="https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d">https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d</a></li>
+</ul>
+</li>
+<li>JavaScript and V8 TurboFan
+<ul>
+<li><a href="http://ariya.ofilabs.com/2014/08/javascript-and-v8-turbofan.html">http://ariya.ofilabs.com/2014/08/javascript-and-v8-turbofan.html</a></li>
+</ul>
+</li>
+<li>Autopolyfiller
+<ul>
+<li><a href="http://web-design-weekly.com/2014/08/03/autopolyfiller/">http://web-design-weekly.com/2014/08/03/autopolyfiller/</a></li>
+</ul>
+</li>
+<li>jas-/node-libnmap
+<ul>
+<li><a href="https://github.com/jas-/node-libnmap">https://github.com/jas-/node-libnmap</a></li>
+</ul>
+</li>
+</ul>
+";s:14:"date_timestamp";i:1426733663;}i:8;a:14:{s:5:"title";s:30:"走近用户，从访谈开始";s:4:"link";s:126:"http://ued.taobao.org/blog/2014/10/%e8%b5%b0%e8%bf%91%e7%94%a8%e6%88%b7%ef%bc%8c%e4%bb%8e%e8%ae%bf%e8%b0%88%e5%bc%80%e5%a7%8b/";s:8:"comments";s:135:"http://ued.taobao.org/blog/2014/10/%e8%b5%b0%e8%bf%91%e7%94%a8%e6%88%b7%ef%bc%8c%e4%bb%8e%e8%ae%bf%e8%b0%88%e5%bc%80%e5%a7%8b/#comments";s:7:"pubdate";s:31:"Wed, 22 Oct 2014 02:51:01 +0000";s:2:"dc";a:1:{s:7:"creator";s:9:"王沄mei";}s:8:"category";s:12:"用户研究";s:4:"guid";s:34:"http://ued.taobao.org/blog/?p=9580";s:11:"description";s:359:"在日常工作中，经常有业务方小伙伴来咨询用研“用户是怎么想的”，“用户是怎么做的”。很多时候用研都会选择用户访谈作为研究这 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2014/10/%e8%b5%b0%e8%bf%91%e7%94%a8%e6%88%b7%ef%bc%8c%e4%bb%8e%e8%ae%bf%e8%b0%88%e5%bc%80%e5%a7%8b/">更多&#62;</a>";s:7:"content";a:1:{s:7:"encoded";s:5613:"<p>在日常工作中，经常有业务方小伙伴来咨询用研“用户是怎么想的”，“用户是怎么做的”。很多时候用研都会选择用户访谈作为研究这类问题的方法。有时，业务方也会在用研的辅导下亲自执行访谈，当一回主访人。其实作为业务方，掌握一定的访谈技能是拉近你和用户距离的利器。通过访谈获得的用户端输入，可以帮助自己规划或优化产品和业务逻辑。今天就根据我们平时访谈的经验，以及在辅导业务方访谈时发现的一些常见问题，向大家介绍一下用户访谈。希望大家对访谈有进一步了解，如果你想自己尝试访谈，那么也可以从这篇文章开始，逐步进阶。</p>
+<p>首先我们来了解一下访谈是什么？</p>
+<p>访谈是一种定性的研究方法，用于定位问题，挖掘问题背后的用户需求。 一般来说，访谈会从用户的基本情况入手，先了解用户的基本信息，为后续深入挖掘做预热和铺垫。进入正题后，会从开放性的问题，让用户充分表达自己，再逐步收敛，聚焦到问题的核心，了解背后的原因。简单来说就是要“从浅到深，由表及里”。</p>
+<p>需要特别注意的是，访谈主要解决的问题是“是什么”和“为什么”，并不能回答“有多少人”。 因此，抱着从访谈中得到“这类用户占比多少”这样的想法，还是省省吧。</p>
+<p>既然访谈作为一种有效的研究方法，必然有它使用的法则，这样才能拿到有效有价值的访谈结果。</p>
+<p>关于访谈技能的专业书籍一大堆，为了让非用研的小伙伴能快速摆正自己的位置，走上访谈之路，以下介绍几点方法。</p>
+<p>第一，像聊天一样，生活化的提问。访谈其实也是某种性质的聊天，因此首先要保证的是你的提问对方能听懂，双方的交流是顺畅的。所以请站在用户的角度，放弃那些太专业的用语，更加生活化的提问吧！</p>
+<p>第二，更关注用户过去和现在的真实体验。用户过往的经验是可以信赖的，但让用户想象未知的以及各种不够熟悉的事物得到的判断却未必可靠。不要试图求证用户要不要某种还没有面市的功能或产品，用户可能根本没法想象出那是个什么玩意，为了配合你急切的表情，勉强说个yes。</p>
+<p>第三，学会追问，尝试连贯的追问。作为主访人，要学会多问几个为什么，用户不太可能一次性就把所有的问题说明清楚，所以需要主访人一步一步的提问，才能把问题了解清楚。比如用户提到遇到过一个问题，那接下去你还可以问“什么时间”“什么场景”下遇到，“遇到的问题具体是什么”“导致的结果是什么”等等。刚开始学习访谈时，追问可能比较困难，也很难做到连贯，但相信随着经验累积，你会发现可以自然的蹦出哪些追问的问题。</p>
+<p>除了以上几点，我们在辅导业务方访谈时，还发现几点容易犯的问题， 当然用研自己在访谈时，也要注意提醒自己。</p>
+<p>第一，不要用过于开放、过于模糊的问题提问。太开放的问题会让用户不知道这个问题到底要问什么、应该如何回答。比如“你觉得淘宝怎么样”，你得到的可能就是“还不错”这样模糊的回答。</p>
+<p>第二，问题本身要避免带有倾向性。有时候我们提问的时候就带着某种倾向性，比如“你觉得这个功能好用吗”，这多多少少会对用户的回答产生暗示或影响。因此提问要中立，比如“你觉得这个功能怎么样？” 。</p>
+<p>第三，更多的倾听，不要随意打断用户正常的表达。有时心急的主访人，担心漏掉问题，或是觉得用户的回答与自己意见不同，急于表达自己的想法，都会出现打断用户表达的问题。其实，访谈时我们是希望用户尽可能的表达自己的想法，打断他可能会让你错过很多重要信息。因此建议大家把那个争议点先记一下，等合适的时间再问用户。当然，如果用户的回答屡屡偏题，还喋喋不休，还是需要引导他回到我们关注的问题上来的。</p>
+<p>第四，请用户详细描述遇到的问题，而不是只关注用户的解决方案。很多时候用户会跳过对问题的具体描述，而直接提供给我们他的解决方案。但当你就用户遇到的问题进一步细问，才能真正了解背后的原因和实际存在的问题，针对这些问题，也许会发现解决问题的方法还有很多。如果只关注用户的解决方案，不仅会使你获得的信息太片面，也会因为抓不住核心要害而错失需求。</p>
+<p>听了这些介绍，有没有心痒痒的想自己试一试呢？建议大家要多多尝试执行，在没有把握之前，可以不急于根据访谈内容下结论 。如果大家对访谈有兴趣，希望做进一步了解，后续我们还可以针对访谈执行的安排流程给大家做介绍，助你技能提升。所以快让笔者知道关于访谈，你还想知道什么？</p>
+<p>&nbsp;</p>
+<p>附，本文的参考资料包括：</p>
+<p>渡劫《用户研究方法操作实务》</p>
+<p>网络文章《用户研究方法谈之一——怎样做好用户访谈》<a href="http://fries418.blog.163.com/blog/static/143644868201251854019758/">http://fries418.blog.163.com/blog/static/143644868201251854019758/</a></p>
+<p>&nbsp;</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:131:"http://ued.taobao.org/blog/2014/10/%e8%b5%b0%e8%bf%91%e7%94%a8%e6%88%b7%ef%bc%8c%e4%bb%8e%e8%ae%bf%e8%b0%88%e5%bc%80%e5%a7%8b/feed/";}s:5:"slash";a:1:{s:8:"comments";s:2:"20";}s:7:"summary";s:359:"在日常工作中，经常有业务方小伙伴来咨询用研“用户是怎么想的”，“用户是怎么做的”。很多时候用研都会选择用户访谈作为研究这 &#8230;  <a class="readmore" href="http://ued.taobao.org/blog/2014/10/%e8%b5%b0%e8%bf%91%e7%94%a8%e6%88%b7%ef%bc%8c%e4%bb%8e%e8%ae%bf%e8%b0%88%e5%bc%80%e5%a7%8b/">更多&#62;</a>";s:12:"atom_content";s:5613:"<p>在日常工作中，经常有业务方小伙伴来咨询用研“用户是怎么想的”，“用户是怎么做的”。很多时候用研都会选择用户访谈作为研究这类问题的方法。有时，业务方也会在用研的辅导下亲自执行访谈，当一回主访人。其实作为业务方，掌握一定的访谈技能是拉近你和用户距离的利器。通过访谈获得的用户端输入，可以帮助自己规划或优化产品和业务逻辑。今天就根据我们平时访谈的经验，以及在辅导业务方访谈时发现的一些常见问题，向大家介绍一下用户访谈。希望大家对访谈有进一步了解，如果你想自己尝试访谈，那么也可以从这篇文章开始，逐步进阶。</p>
+<p>首先我们来了解一下访谈是什么？</p>
+<p>访谈是一种定性的研究方法，用于定位问题，挖掘问题背后的用户需求。 一般来说，访谈会从用户的基本情况入手，先了解用户的基本信息，为后续深入挖掘做预热和铺垫。进入正题后，会从开放性的问题，让用户充分表达自己，再逐步收敛，聚焦到问题的核心，了解背后的原因。简单来说就是要“从浅到深，由表及里”。</p>
+<p>需要特别注意的是，访谈主要解决的问题是“是什么”和“为什么”，并不能回答“有多少人”。 因此，抱着从访谈中得到“这类用户占比多少”这样的想法，还是省省吧。</p>
+<p>既然访谈作为一种有效的研究方法，必然有它使用的法则，这样才能拿到有效有价值的访谈结果。</p>
+<p>关于访谈技能的专业书籍一大堆，为了让非用研的小伙伴能快速摆正自己的位置，走上访谈之路，以下介绍几点方法。</p>
+<p>第一，像聊天一样，生活化的提问。访谈其实也是某种性质的聊天，因此首先要保证的是你的提问对方能听懂，双方的交流是顺畅的。所以请站在用户的角度，放弃那些太专业的用语，更加生活化的提问吧！</p>
+<p>第二，更关注用户过去和现在的真实体验。用户过往的经验是可以信赖的，但让用户想象未知的以及各种不够熟悉的事物得到的判断却未必可靠。不要试图求证用户要不要某种还没有面市的功能或产品，用户可能根本没法想象出那是个什么玩意，为了配合你急切的表情，勉强说个yes。</p>
+<p>第三，学会追问，尝试连贯的追问。作为主访人，要学会多问几个为什么，用户不太可能一次性就把所有的问题说明清楚，所以需要主访人一步一步的提问，才能把问题了解清楚。比如用户提到遇到过一个问题，那接下去你还可以问“什么时间”“什么场景”下遇到，“遇到的问题具体是什么”“导致的结果是什么”等等。刚开始学习访谈时，追问可能比较困难，也很难做到连贯，但相信随着经验累积，你会发现可以自然的蹦出哪些追问的问题。</p>
+<p>除了以上几点，我们在辅导业务方访谈时，还发现几点容易犯的问题， 当然用研自己在访谈时，也要注意提醒自己。</p>
+<p>第一，不要用过于开放、过于模糊的问题提问。太开放的问题会让用户不知道这个问题到底要问什么、应该如何回答。比如“你觉得淘宝怎么样”，你得到的可能就是“还不错”这样模糊的回答。</p>
+<p>第二，问题本身要避免带有倾向性。有时候我们提问的时候就带着某种倾向性，比如“你觉得这个功能好用吗”，这多多少少会对用户的回答产生暗示或影响。因此提问要中立，比如“你觉得这个功能怎么样？” 。</p>
+<p>第三，更多的倾听，不要随意打断用户正常的表达。有时心急的主访人，担心漏掉问题，或是觉得用户的回答与自己意见不同，急于表达自己的想法，都会出现打断用户表达的问题。其实，访谈时我们是希望用户尽可能的表达自己的想法，打断他可能会让你错过很多重要信息。因此建议大家把那个争议点先记一下，等合适的时间再问用户。当然，如果用户的回答屡屡偏题，还喋喋不休，还是需要引导他回到我们关注的问题上来的。</p>
+<p>第四，请用户详细描述遇到的问题，而不是只关注用户的解决方案。很多时候用户会跳过对问题的具体描述，而直接提供给我们他的解决方案。但当你就用户遇到的问题进一步细问，才能真正了解背后的原因和实际存在的问题，针对这些问题，也许会发现解决问题的方法还有很多。如果只关注用户的解决方案，不仅会使你获得的信息太片面，也会因为抓不住核心要害而错失需求。</p>
+<p>听了这些介绍，有没有心痒痒的想自己试一试呢？建议大家要多多尝试执行，在没有把握之前，可以不急于根据访谈内容下结论 。如果大家对访谈有兴趣，希望做进一步了解，后续我们还可以针对访谈执行的安排流程给大家做介绍，助你技能提升。所以快让笔者知道关于访谈，你还想知道什么？</p>
+<p>&nbsp;</p>
+<p>附，本文的参考资料包括：</p>
+<p>渡劫《用户研究方法操作实务》</p>
+<p>网络文章《用户研究方法谈之一——怎样做好用户访谈》<a href="http://fries418.blog.163.com/blog/static/143644868201251854019758/">http://fries418.blog.163.com/blog/static/143644868201251854019758/</a></p>
+<p>&nbsp;</p>
+";s:14:"date_timestamp";i:1413946261;}i:9;a:14:{s:5:"title";s:14:"Soul of Doodle";s:4:"link";s:50:"http://ued.taobao.org/blog/2014/08/soul-of-doodle/";s:8:"comments";s:59:"http://ued.taobao.org/blog/2014/08/soul-of-doodle/#comments";s:7:"pubdate";s:31:"Mon, 11 Aug 2014 02:36:52 +0000";s:2:"dc";a:1:{s:7:"creator";s:6:"正少";}s:8:"category";s:42:"交互设计博文视觉设计设计茶吧";s:4:"guid";s:34:"http://ued.taobao.com/blog/?p=9489";s:11:"description";s:81:"  今天的浅谈和小插件介绍完毕！希望大家Enjoy it ! &#160; &#160;";s:7:"content";a:1:{s:7:"encoded";s:27116:"<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/140819te1wxxi1s5p1vxip.png"><img class="alignnone size-full wp-image-9494" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/140819te1wxxi1s5p1vxip.png" alt="140819te1wxxi1s5p1vxip" width="801" height="481" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_609053dcb820000001a42bd2063a.jpg.png"><img class="alignnone size-full wp-image-9495" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_609053dcb820000001a42bd2063a.jpg.png" alt="m_609053dcb820000001a42bd2063a.jpg" width="801" height="909" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_44d153dcb821000001a42bdf37a6.jpg.png"><img class="alignnone size-full wp-image-9496" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_44d153dcb821000001a42bdf37a6.jpg.png" alt="m_44d153dcb821000001a42bdf37a6.jpg" width="801" height="342" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_994053dcb825000001a42b3161bf.jpg.png"><img class="alignnone size-full wp-image-9497" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_994053dcb825000001a42b3161bf.jpg.png" alt="m_994053dcb825000001a42b3161bf.jpg" width="801" height="1090" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_807c53dcb827000001a42b2ecd36.jpg.png"><img class="alignnone size-full wp-image-9498" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_807c53dcb827000001a42b2ecd36.jpg.png" alt="m_807c53dcb827000001a42b2ecd36.jpg" width="801" height="688" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_caf253dcb62d000001a42b073f98.jpg.gif"><img class="size-full wp-image-9499 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_caf253dcb62d000001a42b073f98.jpg.gif" alt="m_caf253dcb62d000001a42b073f98.jpg" width="355" height="163" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a03253dcb73b000001a42bdd9680.jpg.png"><img class="alignnone size-full wp-image-9500" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a03253dcb73b000001a42bdd9680.jpg.png" alt="m_a03253dcb73b000001a42bdd9680.jpg" width="801" height="240" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_061c53dcb788000001a42b316779.jpg.gif"><img class="size-full wp-image-9501 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_061c53dcb788000001a42b316779.jpg.gif" alt="m_061c53dcb788000001a42b316779.jpg" width="660" height="219" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1d5353dcb7ad000001a42b696f18.jpg.png"><img class="alignnone size-full wp-image-9502" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1d5353dcb7ad000001a42b696f18.jpg.png" alt="m_1d5353dcb7ad000001a42b696f18.jpg" width="801" height="248" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_e75e53dcbd13000001a42baa129d.jpg.gif"><img class="size-full wp-image-9503 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_e75e53dcbd13000001a42baa129d.jpg.gif" alt="m_e75e53dcbd13000001a42baa129d.jpg" width="660" height="179" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f34753dcb8d0000001a42bb3bf67.jpg.png"><img class="alignnone size-full wp-image-9504" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f34753dcb8d0000001a42bb3bf67.jpg.png" alt="m_f34753dcb8d0000001a42bb3bf67.jpg" width="801" height="248" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_064753dcbc2c000001a42b00a7d8.jpg"><img class="size-full wp-image-9505 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_064753dcbc2c000001a42b00a7d8.jpg" alt="m_064753dcbc2c000001a42b00a7d8" width="700" height="300" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_10a953dcbc53000001a42b977cf3.jpg.png"><img class="alignnone size-full wp-image-9506" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_10a953dcbc53000001a42b977cf3.jpg.png" alt="m_10a953dcbc53000001a42b977cf3.jpg" width="801" height="248" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_aaa853dcbc66000001a42b268c1e.jpg.png"><img class="alignnone size-full wp-image-9507" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_aaa853dcbc66000001a42b268c1e.jpg.png" alt="m_aaa853dcbc66000001a42b268c1e.jpg" width="801" height="1141" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_02ce53dcfd9c000001a42b004cbf.jpg.png"><img class="alignnone size-full wp-image-9508" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_02ce53dcfd9c000001a42b004cbf.jpg.png" alt="m_02ce53dcfd9c000001a42b004cbf.jpg" width="801" height="248" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_585d53dcbc98000001a42b2f9f6a.jpg.gif"><img class="size-full wp-image-9509 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_585d53dcbc98000001a42b2f9f6a.jpg.gif" alt="m_585d53dcbc98000001a42b2f9f6a.jpg" width="660" height="219" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a4a153dcbcc6000001a42ba0e454.jpg.gif"><img class="size-full wp-image-9510 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a4a153dcbcc6000001a42ba0e454.jpg.gif" alt="m_a4a153dcbcc6000001a42ba0e454.jpg" width="680" height="225" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_02ce53dcfd9c000001a42b004cbf.jpg.png"><img class="alignnone size-full wp-image-9508" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_02ce53dcfd9c000001a42b004cbf.jpg.png" alt="m_02ce53dcfd9c000001a42b004cbf.jpg" width="801" height="248" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddc353dcc08b000001a42be41532.jpg.gif"><img class="size-full wp-image-9513 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddc353dcc08b000001a42be41532.jpg.gif" alt="m_ddc353dcc08b000001a42be41532.jpg" width="250" height="100" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0e0653dcc069000001a42b77bdf2.jpg.gif"><img class="size-full wp-image-9511 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0e0653dcc069000001a42b77bdf2.jpg.gif" alt="m_0e0653dcc069000001a42b77bdf2.jpg" width="240" height="80" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_04c653dcfdad000001a42b756561.jpg.png"><img class="alignnone size-full wp-image-9512" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_04c653dcfdad000001a42b756561.jpg.png" alt="m_04c653dcfdad000001a42b756561.jpg" width="801" height="322" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c1f553dcc0dc000001a42bbe620c.jpg.gif"><img class="size-full wp-image-9514 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c1f553dcc0dc000001a42bbe620c.jpg.gif" alt="m_c1f553dcc0dc000001a42bbe620c.jpg" width="660" height="218" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_fdc153dcc12a000001a42b370cab.jpg.png"><img class="alignnone size-full wp-image-9515" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_fdc153dcc12a000001a42b370cab.jpg.png" alt="m_fdc153dcc12a000001a42b370cab.jpg" width="801" height="301" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_6f1d53dcc146000001a42b86aeab.jpg"><img class="size-full wp-image-9516 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_6f1d53dcc146000001a42b86aeab.jpg" alt="m_6f1d53dcc146000001a42b86aeab" width="800" height="600" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_32b653dcc17f000001a42b040fea.jpg.png"><img class="alignnone size-full wp-image-9517" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_32b653dcc17f000001a42b040fea.jpg.png" alt="m_32b653dcc17f000001a42b040fea.jpg" width="801" height="187" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_abb453dcc18d000001a42bf5038e.jpg.png"><img class="alignnone size-full wp-image-9519" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_abb453dcc18d000001a42bf5038e.jpg.png" alt="m_abb453dcc18d000001a42bf5038e.jpg" width="801" height="658" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_064753dcbc2c000001a42b00a7d81.jpg"><img class="size-full wp-image-9518 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_064753dcbc2c000001a42b00a7d81.jpg" alt="m_064753dcbc2c000001a42b00a7d8" width="700" height="300" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_359b53dcffcb000001a42bf8c5fc.jpg.png"><img class="alignnone size-full wp-image-9520" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_359b53dcffcb000001a42bf8c5fc.jpg.png" alt="m_359b53dcffcb000001a42bf8c5fc.jpg" width="801" height="343" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_3b4353dcc382000001a42b2c64c5.jpg.gif"><img class="size-full wp-image-9521 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_3b4353dcc382000001a42b2c64c5.jpg.gif" alt="m_3b4353dcc382000001a42b2c64c5.jpg" width="300" height="100" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f22f53dcffd8000001a42bd7e351.jpg.png"><img class="alignnone size-full wp-image-9522" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f22f53dcffd8000001a42bd7e351.jpg.png" alt="m_f22f53dcffd8000001a42bd7e351.jpg" width="801" height="223" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_09c953dcc413000001a42b5b2c35.jpg"><img class="size-full wp-image-9524 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_09c953dcc413000001a42b5b2c35.jpg" alt="m_09c953dcc413000001a42b5b2c35" width="700" height="300" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_4f6853dcffe7000001a42bfd9aa4.jpg.png"><img class="alignnone size-full wp-image-9523" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_4f6853dcffe7000001a42bfd9aa4.jpg.png" alt="m_4f6853dcffe7000001a42bfd9aa4.jpg" width="801" height="349" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_80fb53dcff0b000001a42bed3da3.jpg"><img class="size-full wp-image-9525 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_80fb53dcff0b000001a42bed3da3.jpg" alt="m_80fb53dcff0b000001a42bed3da3" width="600" height="300" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_211953dcff89000001a42b760c53.jpg.png"><img class="alignnone size-full wp-image-9526" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_211953dcff89000001a42b760c53.jpg.png" alt="m_211953dcff89000001a42b760c53.jpg" width="801" height="380" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_64ea53dcc4ea000001a42b074e3e.jpg.gif"><img class="size-full wp-image-9527 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_64ea53dcc4ea000001a42b074e3e.jpg.gif" alt="m_64ea53dcc4ea000001a42b074e3e.jpg" width="450" height="200" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_660053dd0003000001a42b7298ee.jpg.png"><img class="alignnone size-full wp-image-9528" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_660053dd0003000001a42b7298ee.jpg.png" alt="m_660053dd0003000001a42b7298ee.jpg" width="801" height="169" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_447853dd0065000001a42bc5b0d3.jpg.png"><img class="size-full wp-image-9529 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_447853dd0065000001a42bc5b0d3.jpg.png" alt="m_447853dd0065000001a42bc5b0d3.jpg" width="500" height="228" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_3edf53dd007f000001a42bcf7144.jpg.png"><img class="alignnone size-full wp-image-9530" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_3edf53dd007f000001a42bcf7144.jpg.png" alt="m_3edf53dd007f000001a42bcf7144.jpg" width="801" height="291" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_835153dcc4c9000001a42b13a856.jpg.gif"><img class="size-full wp-image-9531 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_835153dcc4c9000001a42b13a856.jpg.gif" alt="m_835153dcc4c9000001a42b13a856.jpg" width="250" height="126" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_daa653dcc4d7000001a42bf3dbeb.jpg.gif"><img class="size-full wp-image-9532 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_daa653dcc4d7000001a42bf3dbeb.jpg.gif" alt="m_daa653dcc4d7000001a42bf3dbeb.jpg" width="600" height="300" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_fa8e53dcc34e000001a42bf0d0f2.jpg.png"><img class="alignnone size-full wp-image-9533" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_fa8e53dcc34e000001a42bf0d0f2.jpg.png" alt="m_fa8e53dcc34e000001a42bf0d0f2.jpg" width="801" height="330" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_7bc253dcc5e6000001a42ba17e0e.jpg.gif"><img class="size-full wp-image-9534 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_7bc253dcc5e6000001a42ba17e0e.jpg.gif" alt="m_7bc253dcc5e6000001a42ba17e0e.jpg" width="512" height="169" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_70ad53dcc5f3000001a42ba38256.jpg.gif"><img class="size-full wp-image-9535 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_70ad53dcc5f3000001a42ba38256.jpg.gif" alt="m_70ad53dcc5f3000001a42ba38256.jpg" width="660" height="219" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a61353dcc5df000001a42ba15281.jpg.gif"><img class="size-full wp-image-9536 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a61353dcc5df000001a42ba15281.jpg.gif" alt="m_a61353dcc5df000001a42ba15281.jpg" width="660" height="219" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c44853dcc609000001a42b2f1c94.jpg.gif"><img class="size-full wp-image-9537 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c44853dcc609000001a42b2f1c94.jpg.gif" alt="m_c44853dcc609000001a42b2f1c94.jpg" width="512" height="149" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d6d653dcc34f000001a42b6021ea.jpg.png"><img class="alignnone size-full wp-image-9538" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d6d653dcc34f000001a42b6021ea.jpg.png" alt="m_d6d653dcc34f000001a42b6021ea.jpg" width="801" height="258" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c0c053dcc987000001a42b29f742.jpg.png"><img class="alignnone size-full wp-image-9539" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c0c053dcc987000001a42b29f742.jpg.png" alt="m_c0c053dcc987000001a42b29f742.jpg" width="801" height="571" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b23153dcc9ce000001a42b143141.jpg.gif"><img class="size-full wp-image-9540 alignnone" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b23153dcc9ce000001a42b143141.jpg.gif" alt="m_b23153dcc9ce000001a42b143141.jpg" width="400" height="300" /></a><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_24bf53dcc9ca000001a42b4fc033.jpg"><img class="size-full wp-image-9541 alignnone" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_24bf53dcc9ca000001a42b4fc033.jpg" alt="m_24bf53dcc9ca000001a42b4fc033" width="400" height="300" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f35353dcc98e000001a42bc780ab.jpg.png"><img class="alignnone size-full wp-image-9542" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f35353dcc98e000001a42bc780ab.jpg.png" alt="m_f35353dcc98e000001a42bc780ab.jpg" width="801" height="343" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_252953dcca05000001a42bd8e2c4.jpg.gif"><img class="alignnone size-full wp-image-9543" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_252953dcca05000001a42bd8e2c4.jpg.gif" alt="m_252953dcca05000001a42bd8e2c4.jpg" width="400" height="300" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b7cb53dcc9ff000001a42b91812b.jpg.gif"><img class="alignnone size-full wp-image-9544" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b7cb53dcc9ff000001a42b91812b.jpg.gif" alt="m_b7cb53dcc9ff000001a42b91812b.jpg" width="128" height="128" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d9a153dcc98f000001a42bdda804.jpg.png"><img class="alignnone size-full wp-image-9545" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d9a153dcc98f000001a42bdda804.jpg.png" alt="m_d9a153dcc98f000001a42bdda804.jpg" width="801" height="344" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddfe53dcca4f000001a42bc2ac9e.jpg.gif"><img class="size-full wp-image-9549 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddfe53dcca4f000001a42bc2ac9e.jpg.gif" alt="m_ddfe53dcca4f000001a42bc2ac9e.jpg" width="512" height="169" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b55d53dcca42000001a42b561838.jpg"><img class="size-full wp-image-9547 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b55d53dcca42000001a42b561838.jpg" alt="m_b55d53dcca42000001a42b561838" width="400" height="300" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_6e4853dcc990000001a42b2d9b32.jpg.png"><img class="alignnone size-full wp-image-9546" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_6e4853dcc990000001a42b2d9b32.jpg.png" alt="m_6e4853dcc990000001a42b2d9b32.jpg" width="801" height="352" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1b1853dccbc7000001a42b744628.jpg.gif"><img class="size-full wp-image-9551 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1b1853dccbc7000001a42b744628.jpg.gif" alt="m_1b1853dccbc7000001a42b744628.jpg" width="400" height="200" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0e4353dcc991000001a42b58db5a.jpg.png"><img class="alignnone size-full wp-image-9550" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0e4353dcc991000001a42b58db5a.jpg.png" alt="m_0e4353dcc991000001a42b58db5a.jpg" width="801" height="216" /></a><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b55d53dcca42000001a42b561838.jpg"><br />
+</a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a46253dcc993000001a42bfb0549.jpg.png"><img class="alignnone size-full wp-image-9552" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a46253dcc993000001a42bfb0549.jpg.png" alt="m_a46253dcc993000001a42bfb0549.jpg" width="801" height="550" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c40253dccc0f000001a42bde32b6.jpg.gif"><img class="size-full wp-image-9553 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c40253dccc0f000001a42bde32b6.jpg.gif" alt="m_c40253dccc0f000001a42bde32b6.jpg" width="512" height="169" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0a5d53dcc994000001a42b9d1568.jpg.png"><img class="alignnone size-full wp-image-9554" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0a5d53dcc994000001a42b9d1568.jpg.png" alt="m_0a5d53dcc994000001a42b9d1568.jpg" width="801" height="237" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_7b2e53dccc1d000001a42b3dd9da.jpg.gif"><img class="size-full wp-image-9555 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_7b2e53dccc1d000001a42b3dd9da.jpg.gif" alt="m_7b2e53dccc1d000001a42b3dd9da.jpg" width="660" height="219" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b2f553dcc995000001a42b8fda86.jpg.png"><img class="alignnone size-full wp-image-9557" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b2f553dcc995000001a42b8fda86.jpg.png" alt="m_b2f553dcc995000001a42b8fda86.jpg" width="801" height="236" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_64ea53dcc4ea000001a42b074e3e.jpg1.gif"><img class="size-full wp-image-9556 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_64ea53dcc4ea000001a42b074e3e.jpg1.gif" alt="m_64ea53dcc4ea000001a42b074e3e.jpg" width="450" height="200" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a2c153dcc996000001a42b4cf000.jpg.png"><img class="alignnone size-full wp-image-9558" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a2c153dcc996000001a42b4cf000.jpg.png" alt="m_a2c153dcc996000001a42b4cf000.jpg" width="801" height="225" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_999953dcc998000001a42b2edf0c.jpg.png"><img class="alignnone size-full wp-image-9559" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_999953dcc998000001a42b2edf0c.jpg.png" alt="m_999953dcc998000001a42b2edf0c.jpg" width="801" height="559" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1f1353dcf49a000001a42b27f2ac.jpg.png"><img class="alignnone size-full wp-image-9560" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1f1353dcf49a000001a42b27f2ac.jpg.png" alt="m_1f1353dcf49a000001a42b27f2ac.jpg" width="801" height="342" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_48a853dcf49d000001a42bac4335.jpg.png"><img class="alignnone size-full wp-image-9561" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_48a853dcf49d000001a42bac4335.jpg.png" alt="m_48a853dcf49d000001a42bac4335.jpg" width="801" height="487" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddbb53dcf4c6000001a42b94e12d.jpg.gif"><img class="size-full wp-image-9562 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddbb53dcf4c6000001a42b94e12d.jpg.gif" alt="m_ddbb53dcf4c6000001a42b94e12d.jpg" width="250" height="100" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_243353dcf49e000001a42ba3e62a.jpg.png"><img class="alignnone size-full wp-image-9564" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_243353dcf49e000001a42ba3e62a.jpg.png" alt="m_243353dcf49e000001a42ba3e62a.jpg" width="801" height="472" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_faa753dcf4ee000001a42b8cd3fe.jpg.gif"><img class="size-full wp-image-9566 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_faa753dcf4ee000001a42b8cd3fe.jpg.gif" alt="m_faa753dcf4ee000001a42b8cd3fe.jpg" width="400" height="300" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_eb5253dcf4ef000001a42b9d7d8c.jpg.gif"><img class="size-full wp-image-9565 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_eb5253dcf4ef000001a42b9d7d8c.jpg.gif" alt="m_eb5253dcf4ef000001a42b9d7d8c.jpg" width="400" height="300" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_949a53dcf4eb000001a42b5650c0.jpg.gif"><img class="size-full wp-image-9563 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_949a53dcf4eb000001a42b5650c0.jpg.gif" alt="m_949a53dcf4eb000001a42b5650c0.jpg" width="400" height="300" /></a></p>
+<p style="text-align: center;"><span style="color: #000000;">今天的浅谈和小插件介绍完毕！希望大家Enjoy it !</span></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d8db53dcf49f000001a42bf58bc4.jpg.png"><img class="alignnone size-full wp-image-9567" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d8db53dcf49f000001a42bf58bc4.jpg.png" alt="m_d8db53dcf49f000001a42bf58bc4.jpg" width="801" height="521" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:55:"http://ued.taobao.org/blog/2014/08/soul-of-doodle/feed/";}s:5:"slash";a:1:{s:8:"comments";s:2:"20";}s:7:"summary";s:81:"  今天的浅谈和小插件介绍完毕！希望大家Enjoy it ! &#160; &#160;";s:12:"atom_content";s:27116:"<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/140819te1wxxi1s5p1vxip.png"><img class="alignnone size-full wp-image-9494" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/140819te1wxxi1s5p1vxip.png" alt="140819te1wxxi1s5p1vxip" width="801" height="481" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_609053dcb820000001a42bd2063a.jpg.png"><img class="alignnone size-full wp-image-9495" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_609053dcb820000001a42bd2063a.jpg.png" alt="m_609053dcb820000001a42bd2063a.jpg" width="801" height="909" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_44d153dcb821000001a42bdf37a6.jpg.png"><img class="alignnone size-full wp-image-9496" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_44d153dcb821000001a42bdf37a6.jpg.png" alt="m_44d153dcb821000001a42bdf37a6.jpg" width="801" height="342" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_994053dcb825000001a42b3161bf.jpg.png"><img class="alignnone size-full wp-image-9497" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_994053dcb825000001a42b3161bf.jpg.png" alt="m_994053dcb825000001a42b3161bf.jpg" width="801" height="1090" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_807c53dcb827000001a42b2ecd36.jpg.png"><img class="alignnone size-full wp-image-9498" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_807c53dcb827000001a42b2ecd36.jpg.png" alt="m_807c53dcb827000001a42b2ecd36.jpg" width="801" height="688" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_caf253dcb62d000001a42b073f98.jpg.gif"><img class="size-full wp-image-9499 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_caf253dcb62d000001a42b073f98.jpg.gif" alt="m_caf253dcb62d000001a42b073f98.jpg" width="355" height="163" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a03253dcb73b000001a42bdd9680.jpg.png"><img class="alignnone size-full wp-image-9500" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a03253dcb73b000001a42bdd9680.jpg.png" alt="m_a03253dcb73b000001a42bdd9680.jpg" width="801" height="240" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_061c53dcb788000001a42b316779.jpg.gif"><img class="size-full wp-image-9501 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_061c53dcb788000001a42b316779.jpg.gif" alt="m_061c53dcb788000001a42b316779.jpg" width="660" height="219" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1d5353dcb7ad000001a42b696f18.jpg.png"><img class="alignnone size-full wp-image-9502" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1d5353dcb7ad000001a42b696f18.jpg.png" alt="m_1d5353dcb7ad000001a42b696f18.jpg" width="801" height="248" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_e75e53dcbd13000001a42baa129d.jpg.gif"><img class="size-full wp-image-9503 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_e75e53dcbd13000001a42baa129d.jpg.gif" alt="m_e75e53dcbd13000001a42baa129d.jpg" width="660" height="179" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f34753dcb8d0000001a42bb3bf67.jpg.png"><img class="alignnone size-full wp-image-9504" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f34753dcb8d0000001a42bb3bf67.jpg.png" alt="m_f34753dcb8d0000001a42bb3bf67.jpg" width="801" height="248" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_064753dcbc2c000001a42b00a7d8.jpg"><img class="size-full wp-image-9505 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_064753dcbc2c000001a42b00a7d8.jpg" alt="m_064753dcbc2c000001a42b00a7d8" width="700" height="300" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_10a953dcbc53000001a42b977cf3.jpg.png"><img class="alignnone size-full wp-image-9506" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_10a953dcbc53000001a42b977cf3.jpg.png" alt="m_10a953dcbc53000001a42b977cf3.jpg" width="801" height="248" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_aaa853dcbc66000001a42b268c1e.jpg.png"><img class="alignnone size-full wp-image-9507" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_aaa853dcbc66000001a42b268c1e.jpg.png" alt="m_aaa853dcbc66000001a42b268c1e.jpg" width="801" height="1141" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_02ce53dcfd9c000001a42b004cbf.jpg.png"><img class="alignnone size-full wp-image-9508" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_02ce53dcfd9c000001a42b004cbf.jpg.png" alt="m_02ce53dcfd9c000001a42b004cbf.jpg" width="801" height="248" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_585d53dcbc98000001a42b2f9f6a.jpg.gif"><img class="size-full wp-image-9509 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_585d53dcbc98000001a42b2f9f6a.jpg.gif" alt="m_585d53dcbc98000001a42b2f9f6a.jpg" width="660" height="219" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a4a153dcbcc6000001a42ba0e454.jpg.gif"><img class="size-full wp-image-9510 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a4a153dcbcc6000001a42ba0e454.jpg.gif" alt="m_a4a153dcbcc6000001a42ba0e454.jpg" width="680" height="225" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_02ce53dcfd9c000001a42b004cbf.jpg.png"><img class="alignnone size-full wp-image-9508" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_02ce53dcfd9c000001a42b004cbf.jpg.png" alt="m_02ce53dcfd9c000001a42b004cbf.jpg" width="801" height="248" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddc353dcc08b000001a42be41532.jpg.gif"><img class="size-full wp-image-9513 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddc353dcc08b000001a42be41532.jpg.gif" alt="m_ddc353dcc08b000001a42be41532.jpg" width="250" height="100" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0e0653dcc069000001a42b77bdf2.jpg.gif"><img class="size-full wp-image-9511 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0e0653dcc069000001a42b77bdf2.jpg.gif" alt="m_0e0653dcc069000001a42b77bdf2.jpg" width="240" height="80" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_04c653dcfdad000001a42b756561.jpg.png"><img class="alignnone size-full wp-image-9512" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_04c653dcfdad000001a42b756561.jpg.png" alt="m_04c653dcfdad000001a42b756561.jpg" width="801" height="322" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c1f553dcc0dc000001a42bbe620c.jpg.gif"><img class="size-full wp-image-9514 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c1f553dcc0dc000001a42bbe620c.jpg.gif" alt="m_c1f553dcc0dc000001a42bbe620c.jpg" width="660" height="218" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_fdc153dcc12a000001a42b370cab.jpg.png"><img class="alignnone size-full wp-image-9515" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_fdc153dcc12a000001a42b370cab.jpg.png" alt="m_fdc153dcc12a000001a42b370cab.jpg" width="801" height="301" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_6f1d53dcc146000001a42b86aeab.jpg"><img class="size-full wp-image-9516 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_6f1d53dcc146000001a42b86aeab.jpg" alt="m_6f1d53dcc146000001a42b86aeab" width="800" height="600" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_32b653dcc17f000001a42b040fea.jpg.png"><img class="alignnone size-full wp-image-9517" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_32b653dcc17f000001a42b040fea.jpg.png" alt="m_32b653dcc17f000001a42b040fea.jpg" width="801" height="187" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_abb453dcc18d000001a42bf5038e.jpg.png"><img class="alignnone size-full wp-image-9519" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_abb453dcc18d000001a42bf5038e.jpg.png" alt="m_abb453dcc18d000001a42bf5038e.jpg" width="801" height="658" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_064753dcbc2c000001a42b00a7d81.jpg"><img class="size-full wp-image-9518 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_064753dcbc2c000001a42b00a7d81.jpg" alt="m_064753dcbc2c000001a42b00a7d8" width="700" height="300" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_359b53dcffcb000001a42bf8c5fc.jpg.png"><img class="alignnone size-full wp-image-9520" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_359b53dcffcb000001a42bf8c5fc.jpg.png" alt="m_359b53dcffcb000001a42bf8c5fc.jpg" width="801" height="343" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_3b4353dcc382000001a42b2c64c5.jpg.gif"><img class="size-full wp-image-9521 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_3b4353dcc382000001a42b2c64c5.jpg.gif" alt="m_3b4353dcc382000001a42b2c64c5.jpg" width="300" height="100" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f22f53dcffd8000001a42bd7e351.jpg.png"><img class="alignnone size-full wp-image-9522" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f22f53dcffd8000001a42bd7e351.jpg.png" alt="m_f22f53dcffd8000001a42bd7e351.jpg" width="801" height="223" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_09c953dcc413000001a42b5b2c35.jpg"><img class="size-full wp-image-9524 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_09c953dcc413000001a42b5b2c35.jpg" alt="m_09c953dcc413000001a42b5b2c35" width="700" height="300" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_4f6853dcffe7000001a42bfd9aa4.jpg.png"><img class="alignnone size-full wp-image-9523" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_4f6853dcffe7000001a42bfd9aa4.jpg.png" alt="m_4f6853dcffe7000001a42bfd9aa4.jpg" width="801" height="349" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_80fb53dcff0b000001a42bed3da3.jpg"><img class="size-full wp-image-9525 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_80fb53dcff0b000001a42bed3da3.jpg" alt="m_80fb53dcff0b000001a42bed3da3" width="600" height="300" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_211953dcff89000001a42b760c53.jpg.png"><img class="alignnone size-full wp-image-9526" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_211953dcff89000001a42b760c53.jpg.png" alt="m_211953dcff89000001a42b760c53.jpg" width="801" height="380" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_64ea53dcc4ea000001a42b074e3e.jpg.gif"><img class="size-full wp-image-9527 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_64ea53dcc4ea000001a42b074e3e.jpg.gif" alt="m_64ea53dcc4ea000001a42b074e3e.jpg" width="450" height="200" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_660053dd0003000001a42b7298ee.jpg.png"><img class="alignnone size-full wp-image-9528" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_660053dd0003000001a42b7298ee.jpg.png" alt="m_660053dd0003000001a42b7298ee.jpg" width="801" height="169" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_447853dd0065000001a42bc5b0d3.jpg.png"><img class="size-full wp-image-9529 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_447853dd0065000001a42bc5b0d3.jpg.png" alt="m_447853dd0065000001a42bc5b0d3.jpg" width="500" height="228" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_3edf53dd007f000001a42bcf7144.jpg.png"><img class="alignnone size-full wp-image-9530" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_3edf53dd007f000001a42bcf7144.jpg.png" alt="m_3edf53dd007f000001a42bcf7144.jpg" width="801" height="291" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_835153dcc4c9000001a42b13a856.jpg.gif"><img class="size-full wp-image-9531 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_835153dcc4c9000001a42b13a856.jpg.gif" alt="m_835153dcc4c9000001a42b13a856.jpg" width="250" height="126" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_daa653dcc4d7000001a42bf3dbeb.jpg.gif"><img class="size-full wp-image-9532 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_daa653dcc4d7000001a42bf3dbeb.jpg.gif" alt="m_daa653dcc4d7000001a42bf3dbeb.jpg" width="600" height="300" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_fa8e53dcc34e000001a42bf0d0f2.jpg.png"><img class="alignnone size-full wp-image-9533" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_fa8e53dcc34e000001a42bf0d0f2.jpg.png" alt="m_fa8e53dcc34e000001a42bf0d0f2.jpg" width="801" height="330" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_7bc253dcc5e6000001a42ba17e0e.jpg.gif"><img class="size-full wp-image-9534 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_7bc253dcc5e6000001a42ba17e0e.jpg.gif" alt="m_7bc253dcc5e6000001a42ba17e0e.jpg" width="512" height="169" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_70ad53dcc5f3000001a42ba38256.jpg.gif"><img class="size-full wp-image-9535 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_70ad53dcc5f3000001a42ba38256.jpg.gif" alt="m_70ad53dcc5f3000001a42ba38256.jpg" width="660" height="219" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a61353dcc5df000001a42ba15281.jpg.gif"><img class="size-full wp-image-9536 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a61353dcc5df000001a42ba15281.jpg.gif" alt="m_a61353dcc5df000001a42ba15281.jpg" width="660" height="219" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c44853dcc609000001a42b2f1c94.jpg.gif"><img class="size-full wp-image-9537 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c44853dcc609000001a42b2f1c94.jpg.gif" alt="m_c44853dcc609000001a42b2f1c94.jpg" width="512" height="149" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d6d653dcc34f000001a42b6021ea.jpg.png"><img class="alignnone size-full wp-image-9538" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d6d653dcc34f000001a42b6021ea.jpg.png" alt="m_d6d653dcc34f000001a42b6021ea.jpg" width="801" height="258" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c0c053dcc987000001a42b29f742.jpg.png"><img class="alignnone size-full wp-image-9539" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c0c053dcc987000001a42b29f742.jpg.png" alt="m_c0c053dcc987000001a42b29f742.jpg" width="801" height="571" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b23153dcc9ce000001a42b143141.jpg.gif"><img class="size-full wp-image-9540 alignnone" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b23153dcc9ce000001a42b143141.jpg.gif" alt="m_b23153dcc9ce000001a42b143141.jpg" width="400" height="300" /></a><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_24bf53dcc9ca000001a42b4fc033.jpg"><img class="size-full wp-image-9541 alignnone" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_24bf53dcc9ca000001a42b4fc033.jpg" alt="m_24bf53dcc9ca000001a42b4fc033" width="400" height="300" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f35353dcc98e000001a42bc780ab.jpg.png"><img class="alignnone size-full wp-image-9542" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_f35353dcc98e000001a42bc780ab.jpg.png" alt="m_f35353dcc98e000001a42bc780ab.jpg" width="801" height="343" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_252953dcca05000001a42bd8e2c4.jpg.gif"><img class="alignnone size-full wp-image-9543" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_252953dcca05000001a42bd8e2c4.jpg.gif" alt="m_252953dcca05000001a42bd8e2c4.jpg" width="400" height="300" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b7cb53dcc9ff000001a42b91812b.jpg.gif"><img class="alignnone size-full wp-image-9544" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b7cb53dcc9ff000001a42b91812b.jpg.gif" alt="m_b7cb53dcc9ff000001a42b91812b.jpg" width="128" height="128" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d9a153dcc98f000001a42bdda804.jpg.png"><img class="alignnone size-full wp-image-9545" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d9a153dcc98f000001a42bdda804.jpg.png" alt="m_d9a153dcc98f000001a42bdda804.jpg" width="801" height="344" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddfe53dcca4f000001a42bc2ac9e.jpg.gif"><img class="size-full wp-image-9549 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddfe53dcca4f000001a42bc2ac9e.jpg.gif" alt="m_ddfe53dcca4f000001a42bc2ac9e.jpg" width="512" height="169" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b55d53dcca42000001a42b561838.jpg"><img class="size-full wp-image-9547 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b55d53dcca42000001a42b561838.jpg" alt="m_b55d53dcca42000001a42b561838" width="400" height="300" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_6e4853dcc990000001a42b2d9b32.jpg.png"><img class="alignnone size-full wp-image-9546" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_6e4853dcc990000001a42b2d9b32.jpg.png" alt="m_6e4853dcc990000001a42b2d9b32.jpg" width="801" height="352" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1b1853dccbc7000001a42b744628.jpg.gif"><img class="size-full wp-image-9551 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1b1853dccbc7000001a42b744628.jpg.gif" alt="m_1b1853dccbc7000001a42b744628.jpg" width="400" height="200" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0e4353dcc991000001a42b58db5a.jpg.png"><img class="alignnone size-full wp-image-9550" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0e4353dcc991000001a42b58db5a.jpg.png" alt="m_0e4353dcc991000001a42b58db5a.jpg" width="801" height="216" /></a><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b55d53dcca42000001a42b561838.jpg"><br />
+</a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a46253dcc993000001a42bfb0549.jpg.png"><img class="alignnone size-full wp-image-9552" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a46253dcc993000001a42bfb0549.jpg.png" alt="m_a46253dcc993000001a42bfb0549.jpg" width="801" height="550" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c40253dccc0f000001a42bde32b6.jpg.gif"><img class="size-full wp-image-9553 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_c40253dccc0f000001a42bde32b6.jpg.gif" alt="m_c40253dccc0f000001a42bde32b6.jpg" width="512" height="169" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0a5d53dcc994000001a42b9d1568.jpg.png"><img class="alignnone size-full wp-image-9554" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_0a5d53dcc994000001a42b9d1568.jpg.png" alt="m_0a5d53dcc994000001a42b9d1568.jpg" width="801" height="237" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_7b2e53dccc1d000001a42b3dd9da.jpg.gif"><img class="size-full wp-image-9555 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_7b2e53dccc1d000001a42b3dd9da.jpg.gif" alt="m_7b2e53dccc1d000001a42b3dd9da.jpg" width="660" height="219" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b2f553dcc995000001a42b8fda86.jpg.png"><img class="alignnone size-full wp-image-9557" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_b2f553dcc995000001a42b8fda86.jpg.png" alt="m_b2f553dcc995000001a42b8fda86.jpg" width="801" height="236" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_64ea53dcc4ea000001a42b074e3e.jpg1.gif"><img class="size-full wp-image-9556 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_64ea53dcc4ea000001a42b074e3e.jpg1.gif" alt="m_64ea53dcc4ea000001a42b074e3e.jpg" width="450" height="200" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a2c153dcc996000001a42b4cf000.jpg.png"><img class="alignnone size-full wp-image-9558" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_a2c153dcc996000001a42b4cf000.jpg.png" alt="m_a2c153dcc996000001a42b4cf000.jpg" width="801" height="225" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_999953dcc998000001a42b2edf0c.jpg.png"><img class="alignnone size-full wp-image-9559" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_999953dcc998000001a42b2edf0c.jpg.png" alt="m_999953dcc998000001a42b2edf0c.jpg" width="801" height="559" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1f1353dcf49a000001a42b27f2ac.jpg.png"><img class="alignnone size-full wp-image-9560" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_1f1353dcf49a000001a42b27f2ac.jpg.png" alt="m_1f1353dcf49a000001a42b27f2ac.jpg" width="801" height="342" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_48a853dcf49d000001a42bac4335.jpg.png"><img class="alignnone size-full wp-image-9561" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_48a853dcf49d000001a42bac4335.jpg.png" alt="m_48a853dcf49d000001a42bac4335.jpg" width="801" height="487" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddbb53dcf4c6000001a42b94e12d.jpg.gif"><img class="size-full wp-image-9562 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_ddbb53dcf4c6000001a42b94e12d.jpg.gif" alt="m_ddbb53dcf4c6000001a42b94e12d.jpg" width="250" height="100" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_243353dcf49e000001a42ba3e62a.jpg.png"><img class="alignnone size-full wp-image-9564" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_243353dcf49e000001a42ba3e62a.jpg.png" alt="m_243353dcf49e000001a42ba3e62a.jpg" width="801" height="472" /></a></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_faa753dcf4ee000001a42b8cd3fe.jpg.gif"><img class="size-full wp-image-9566 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_faa753dcf4ee000001a42b8cd3fe.jpg.gif" alt="m_faa753dcf4ee000001a42b8cd3fe.jpg" width="400" height="300" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_eb5253dcf4ef000001a42b9d7d8c.jpg.gif"><img class="size-full wp-image-9565 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_eb5253dcf4ef000001a42b9d7d8c.jpg.gif" alt="m_eb5253dcf4ef000001a42b9d7d8c.jpg" width="400" height="300" /></a> <a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_949a53dcf4eb000001a42b5650c0.jpg.gif"><img class="size-full wp-image-9563 aligncenter" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_949a53dcf4eb000001a42b5650c0.jpg.gif" alt="m_949a53dcf4eb000001a42b5650c0.jpg" width="400" height="300" /></a></p>
+<p style="text-align: center;"><span style="color: #000000;">今天的浅谈和小插件介绍完毕！希望大家Enjoy it !</span></p>
+<p style="text-align: center;"><a href="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d8db53dcf49f000001a42bf58bc4.jpg.png"><img class="alignnone size-full wp-image-9567" src="http://ued.taobao.com/blog/wp-content/uploads/2014/08/m_d8db53dcf49f000001a42bf58bc4.jpg.png" alt="m_d8db53dcf49f000001a42bf58bc4.jpg" width="801" height="521" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: center;">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+";s:14:"date_timestamp";i:1407724612;}}s:7:"channel";a:8:{s:5:"title";s:9:"TaoBaoUED";s:4:"link";s:26:"http://ued.taobao.org/blog";s:11:"description";s:25:"做地球上最好的 UED";s:13:"lastbuilddate";s:31:"Mon, 23 Mar 2015 12:35:26 +0000";s:8:"language";s:5:"zh-CN";s:2:"sy";a:2:{s:12:"updateperiod";s:6:"hourly";s:15:"updatefrequency";s:1:"1";}s:9:"generator";s:29:"http://wordpress.org/?v=4.0.7";s:7:"tagline";s:25:"做地球上最好的 UED";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;s:13:"last_modified";s:31:"Mon, 23 Mar 2015 12:35:26 GMT
+";s:4:"etag";s:36:""4bd75e7f997594df88bad240871728c2"
+";}

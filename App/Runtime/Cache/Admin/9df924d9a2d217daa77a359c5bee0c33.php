@@ -29,6 +29,7 @@
 		<li><a href="<?php echo U('Admin/Article/index');?>" target="show">文章列表</a></li>	
 		<li><a href="<?php echo U('Admin/Category/index');?>" target="show">栏目管理</a></li>
 		<li><a href="<?php echo U('Admin/Message/index');?>" target="show">留言查看</a></li>
+		<li><a href="<?php echo U('Admin/Feed/index');?>" target="show">订阅管理</a></li>
 		</ul>
 	</li>
 	<li id='li-4'><a class="aclick" href='#'>扩展管理</a>

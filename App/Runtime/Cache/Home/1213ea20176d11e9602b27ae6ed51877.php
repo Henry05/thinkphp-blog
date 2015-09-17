@@ -35,7 +35,13 @@
         <ul>
             <li ><a href="/Blog">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
+<<<<<<< HEAD
             <li ><a href="/Blog/me" >关于</a></li>
+=======
+             <li ><a href="/Blog/Index/feedplus">Feed+</a></li>
+             <li ><a href="/Blog/message">留言</a></li>
+            <li ><a href="/Blog/me" target="_blank">关于我</a></li>
+>>>>>>> origin/rss
         </ul></nav>
     </header>
 <div class="article-container">
@@ -59,6 +65,7 @@
     </div>
 </footer>
 </body>
+<<<<<<< HEAD
 <!--[if lt IE 9]>
 <script src="/Blog/Public/Jquery/jquery-1.11.2.js"></script>
 <![endif]-->
@@ -77,6 +84,22 @@ $(".nav-btn").click(function(){
 </script>
 <div style="display:none">
 <a href="http://www.zzidc.com">  title="景安网络" /></a>
+=======
+<div style="display:none">
+	<a href="http://www.zzidc.com">  title="景安网络" /></a>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?c45eb0f0bbd3349f5c85f1afc603bb1f";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+</div>
+
+</html>
+>>>>>>> origin/rss
 <script>
 var _hmt = _hmt || [];
 (function() {

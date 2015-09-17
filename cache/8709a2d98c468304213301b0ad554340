@@ -1,0 +1,791 @@
+O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:10:{i:0;a:14:{s:5:"title";s:9:"svg图标";s:4:"link";s:53:"http://bq69.com/blog/articles/html/1200/svg_icon.html";s:8:"comments";s:62:"http://bq69.com/blog/articles/html/1200/svg_icon.html#comments";s:7:"pubdate";s:31:"Sat, 14 Jun 2014 10:21:04 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:14:"HTMLcsshtmlsvg";s:4:"guid";s:28:"http://bq69.com/blog/?p=1200";s:11:"description";s:114:"创建svg symbol代码，可放在页面内，亦可放在一个单独文件，如svgdefs.svg: &#60;svg  [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:9102:"<ol>
+<li>
+			创建svg symbol代码，可放在页面内，亦可放在一个单独文件，如svgdefs.svg:</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;svg</span> <span style="color: #000066;">display</span>=<span style="color: #ff0000;">&quot;none&quot;</span> <span style="color: #000066;">width</span>=<span style="color: #ff0000;">&quot;0&quot;</span> <span style="color: #000066;">height</span>=<span style="color: #ff0000;">&quot;0&quot;</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.1&quot;</span> <span style="color: #000066;">xmlns</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2000/svg&quot;</span> <span style="color: #000066;">xmlns:xlink</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/1999/xlink&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;defs<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;symbol</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">&quot;icon-home&quot;</span> <span style="color: #000066;">viewBox</span>=<span style="color: #ff0000;">&quot;0 0 1024 1024&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>home<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;path</span> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">&quot;path1&quot;</span> <span style="color: #000066;">d</span>=<span style="color: #ff0000;">&quot;M512 32l-512 512 96 96 96-96v416h256v-192h128v192h256v-416l96 96 96-96-512-512zM512 448c-35.346 0-64-28.654-64-64s28.654-64 64-64c35.346 0 64 28.654 64 64s-28.654 64-64 64z&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/path<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/symbol<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;symbol</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">&quot;icon-edit&quot;</span> <span style="color: #000066;">viewBox</span>=<span style="color: #ff0000;">&quot;0 0 1024 1024&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>edit<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;path</span> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">&quot;path1&quot;</span> <span style="color: #000066;">d</span>=<span style="color: #ff0000;">&quot;M864 0c88.364 0 160 71.634 160 160 0 36.020-11.91 69.258-32 96l-64 64-224-224 64-64c26.742-20.090 59.978-32 96-32zM64 736l-64 288 288-64 592-592-224-224-592 592zM715.578 363.578l-448 448-55.156-55.156 448-448 55.156 55.156z&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/path<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/symbol<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;symbol</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">&quot;icon-tag&quot;</span> <span style="color: #000066;">viewBox</span>=<span style="color: #ff0000;">&quot;0 0 1024 1024&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>tag<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;path</span> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">&quot;path1&quot;</span> <span style="color: #000066;">d</span>=<span style="color: #ff0000;">&quot;M976 0h-384c-26.4 0-63.274 15.274-81.942 33.942l-476.116 476.116c-18.668 18.668-18.668 49.214 0 67.882l412.118 412.118c18.668 18.668 49.214 18.668 67.882 0l476.118-476.118c18.666-18.666 33.94-55.54 33.94-81.94v-384c0-26.4-21.6-48-48-48zM736 384c-53.020 0-96-42.98-96-96s42.98-96 96-96 96 42.98 96 96-42.98 96-96 96z&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/path<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/symbol<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/defs<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/svg<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre></td></tr></table></div>
+
+</li>
+<li>
+			页面上可如下引用，如：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;!-- 内嵌在html页面时，href直接填写#id即可 --&gt;
+&lt;svg class=&quot;icon icon-tag&quot;&gt;&lt;use xlink:href=&quot;#icon-tag&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;!-- 从单独文件外引时，href需要加上文件路径 --&gt;
+&lt;svg class=&quot;icon icon-tag&quot;&gt;&lt;use xlink:href=&quot;img/ico/svgdefs.svg#icon-tag&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</pre></td></tr></table></div>
+
+</li>
+<li>
+			可以svg标签上的class添加样式，如：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #6666ff;">.icon</span> <span style="color: #00AA00;">&#123;</span>
+	<span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> inline-block<span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">1em</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">1em</span><span style="color: #00AA00;">;</span>
+	fill<span style="color: #00AA00;">:</span> currentColor<span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">font-size</span><span style="color: #00AA00;">:</span> <span style="color: #933;">14px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">color</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#828282</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">&#125;</span></pre></td></tr></table></div>
+
+</li>
+<li>注意ie8及以下是不兼容的，无法显示.</li>
+</ol>
+<div class="demo-20150514174123"> <svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <symbol id="icon-edit" viewBox="0 0 1024 1024">
+<path class="path1" d="M864 0c88.364 0 160 71.634 160 160 0 36.020-11.91 69.258-32 96l-64 64-224-224 64-64c26.742-20.090 59.978-32 96-32zM64 736l-64 288 288-64 592-592-224-224-592 592zM715.578 363.578l-448 448-55.156-55.156 448-448 55.156 55.156z"></path> </symbol> </defs> </svg> <svg class="icon icon-edit"> <use xlink:href="#icon-edit"></use> </svg> </div>
+<h4 class="reference-title">参考链接</h4>
+<div class="reference-link">
+<ol>
+<li> <a class="external" href="https://icomoon.io/" target="_blank">icomoon.io</a> </li>
+<li> <a class="external" href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/" target="_blank">Icon System with SVG Sprites</a> </li>
+</ol></div>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:58:"http://bq69.com/blog/articles/html/1200/svg_icon.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:114:"创建svg symbol代码，可放在页面内，亦可放在一个单独文件，如svgdefs.svg: &#60;svg  [&#8230;]";s:12:"atom_content";s:9102:"<ol>
+<li>
+			创建svg symbol代码，可放在页面内，亦可放在一个单独文件，如svgdefs.svg:</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;svg</span> <span style="color: #000066;">display</span>=<span style="color: #ff0000;">&quot;none&quot;</span> <span style="color: #000066;">width</span>=<span style="color: #ff0000;">&quot;0&quot;</span> <span style="color: #000066;">height</span>=<span style="color: #ff0000;">&quot;0&quot;</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.1&quot;</span> <span style="color: #000066;">xmlns</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/2000/svg&quot;</span> <span style="color: #000066;">xmlns:xlink</span>=<span style="color: #ff0000;">&quot;http://www.w3.org/1999/xlink&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;defs<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;symbol</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">&quot;icon-home&quot;</span> <span style="color: #000066;">viewBox</span>=<span style="color: #ff0000;">&quot;0 0 1024 1024&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>home<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;path</span> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">&quot;path1&quot;</span> <span style="color: #000066;">d</span>=<span style="color: #ff0000;">&quot;M512 32l-512 512 96 96 96-96v416h256v-192h128v192h256v-416l96 96 96-96-512-512zM512 448c-35.346 0-64-28.654-64-64s28.654-64 64-64c35.346 0 64 28.654 64 64s-28.654 64-64 64z&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/path<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/symbol<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;symbol</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">&quot;icon-edit&quot;</span> <span style="color: #000066;">viewBox</span>=<span style="color: #ff0000;">&quot;0 0 1024 1024&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>edit<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;path</span> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">&quot;path1&quot;</span> <span style="color: #000066;">d</span>=<span style="color: #ff0000;">&quot;M864 0c88.364 0 160 71.634 160 160 0 36.020-11.91 69.258-32 96l-64 64-224-224 64-64c26.742-20.090 59.978-32 96-32zM64 736l-64 288 288-64 592-592-224-224-592 592zM715.578 363.578l-448 448-55.156-55.156 448-448 55.156 55.156z&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/path<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/symbol<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;symbol</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">&quot;icon-tag&quot;</span> <span style="color: #000066;">viewBox</span>=<span style="color: #ff0000;">&quot;0 0 1024 1024&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>tag<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/title<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;path</span> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">&quot;path1&quot;</span> <span style="color: #000066;">d</span>=<span style="color: #ff0000;">&quot;M976 0h-384c-26.4 0-63.274 15.274-81.942 33.942l-476.116 476.116c-18.668 18.668-18.668 49.214 0 67.882l412.118 412.118c18.668 18.668 49.214 18.668 67.882 0l476.118-476.118c18.666-18.666 33.94-55.54 33.94-81.94v-384c0-26.4-21.6-48-48-48zM736 384c-53.020 0-96-42.98-96-96s42.98-96 96-96 96 42.98 96 96-42.98 96-96 96z&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/path<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/symbol<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/defs<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/svg<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre></td></tr></table></div>
+
+</li>
+<li>
+			页面上可如下引用，如：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;!-- 内嵌在html页面时，href直接填写#id即可 --&gt;
+&lt;svg class=&quot;icon icon-tag&quot;&gt;&lt;use xlink:href=&quot;#icon-tag&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;!-- 从单独文件外引时，href需要加上文件路径 --&gt;
+&lt;svg class=&quot;icon icon-tag&quot;&gt;&lt;use xlink:href=&quot;img/ico/svgdefs.svg#icon-tag&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</pre></td></tr></table></div>
+
+</li>
+<li>
+			可以svg标签上的class添加样式，如：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #6666ff;">.icon</span> <span style="color: #00AA00;">&#123;</span>
+	<span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> inline-block<span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">1em</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">1em</span><span style="color: #00AA00;">;</span>
+	fill<span style="color: #00AA00;">:</span> currentColor<span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">font-size</span><span style="color: #00AA00;">:</span> <span style="color: #933;">14px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">color</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#828282</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">&#125;</span></pre></td></tr></table></div>
+
+</li>
+<li>注意ie8及以下是不兼容的，无法显示.</li>
+</ol>
+<div class="demo-20150514174123"> <svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <symbol id="icon-edit" viewBox="0 0 1024 1024">
+<path class="path1" d="M864 0c88.364 0 160 71.634 160 160 0 36.020-11.91 69.258-32 96l-64 64-224-224 64-64c26.742-20.090 59.978-32 96-32zM64 736l-64 288 288-64 592-592-224-224-592 592zM715.578 363.578l-448 448-55.156-55.156 448-448 55.156 55.156z"></path> </symbol> </defs> </svg> <svg class="icon icon-edit"> <use xlink:href="#icon-edit"></use> </svg> </div>
+<h4 class="reference-title">参考链接</h4>
+<div class="reference-link">
+<ol>
+<li> <a class="external" href="https://icomoon.io/" target="_blank">icomoon.io</a> </li>
+<li> <a class="external" href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/" target="_blank">Icon System with SVG Sprites</a> </li>
+</ol></div>
+";s:14:"date_timestamp";i:1402741264;}i:1;a:14:{s:5:"title";s:15:"web前端工具";s:4:"link";s:59:"http://bq69.com/blog/tools/1178/chrome_front_end_tools.html";s:8:"comments";s:68:"http://bq69.com/blog/tools/1178/chrome_front_end_tools.html#comments";s:7:"pubdate";s:31:"Thu, 24 Apr 2014 05:40:10 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:41:"Chrome工具技巧chromecsshtmljavascript";s:4:"guid";s:28:"http://bq69.com/blog/?p=1178";s:11:"description";s:135:"测试阶段，欢迎反馈意见及建议。 web前端工具,目前包括的功能有：脚本注入（JS Inject）, JSON格 [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:2700:"<p class="note">测试阶段，欢迎反馈意见及建议。</p>
+<p>
+	<a href="https://chrome.google.com/webstore/detail/front-end-developer-tools/helkbcjckeafnnijijcmppjbbkegadcc" class="external" target="_blank">web前端工具</a>,目前包括的功能有：脚本注入（JS Inject）, JSON格式化（JSON Format）<span class="note">目前使用扩展jsonview的代码</span>, 外引CSS重载（CSS Reload）, 功能禁用（Disable）, 页面检查（Check）, HTML元素检查（HTML Inspect）, 二维码生成（QR Code）,和 映射（Auto Response）等。
+</p>
+<ol>
+<li>
+<h3>脚本注入（JS Inject）</h3>
+<p>可在页面注入远程脚本。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/47e2060a3e93b0307820429f5aad54d9.jpg" alt="inject"></li>
+<li>
+<h3>JSON格式化（JSON Format）</h3>
+<p>JSON数据格式化，亦可在页面加载时格式化页面的JSON数据。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/743ba9ed1b84db5e9de4501d0fec7eed.jpg" alt="format"></li>
+<li>
+<h3>外引CSS重载（CSS Reload）</h3>
+<p>可使用F9快捷键或点击按钮重新加载外引的CSS样式文件。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/b15c271758800a73a9834181d8e5b3a2.jpg" alt="reload"></li>
+<li>
+<h3>功能禁用（Disable）</h3>
+<p>可禁用浏览器的javascript,cookie,弹出页面，flash等功能。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/febbd0769c9720c362e10fd92f24356c.jpg" alt="disable"></li>
+<li>
+<h3>页面检查（Check）</h3>
+<p>可检查链接的有效性及是否有id重复等。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/c359d83aee799eb3367df874402fc447.jpg" alt="check"></li>
+<li>
+<h3>HTML元素检查（HTML Inspect）</h3>
+<p>可自定义检查元素的各种属性，避免在Styles选项卡中滚动查找。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/d61cd3f42a5549b86b2076ec277b1941.jpg" alt="inspect1"><br />
+		<br />
+		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/d5866870b54e02b08d271533f51ab4cb.jpg" alt="inspect2"></li>
+<li>
+<h3>二维码生成（QR Code）</h3>
+<p>可为每个页面生成对应的二维码，如避免在手机上面输入链接地址查看页面。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/1739256d3d45d5c7ad4c99daed6a03a7.jpg" alt="qrcode"></li>
+<li>
+<h3>映射（Auto Response）</h3>
+<p>
+			可把任何请求映射到另外一个文件上，甚至本地文件（需要在chrome://extensions/页上启用“允许访问文件网址”的选项）。
+		</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/37d07e8cf86f9e68bb225bd1f8ef3ed7.jpg" alt="response"></li>
+</ol>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:64:"http://bq69.com/blog/tools/1178/chrome_front_end_tools.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:135:"测试阶段，欢迎反馈意见及建议。 web前端工具,目前包括的功能有：脚本注入（JS Inject）, JSON格 [&#8230;]";s:12:"atom_content";s:2700:"<p class="note">测试阶段，欢迎反馈意见及建议。</p>
+<p>
+	<a href="https://chrome.google.com/webstore/detail/front-end-developer-tools/helkbcjckeafnnijijcmppjbbkegadcc" class="external" target="_blank">web前端工具</a>,目前包括的功能有：脚本注入（JS Inject）, JSON格式化（JSON Format）<span class="note">目前使用扩展jsonview的代码</span>, 外引CSS重载（CSS Reload）, 功能禁用（Disable）, 页面检查（Check）, HTML元素检查（HTML Inspect）, 二维码生成（QR Code）,和 映射（Auto Response）等。
+</p>
+<ol>
+<li>
+<h3>脚本注入（JS Inject）</h3>
+<p>可在页面注入远程脚本。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/47e2060a3e93b0307820429f5aad54d9.jpg" alt="inject"></li>
+<li>
+<h3>JSON格式化（JSON Format）</h3>
+<p>JSON数据格式化，亦可在页面加载时格式化页面的JSON数据。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/743ba9ed1b84db5e9de4501d0fec7eed.jpg" alt="format"></li>
+<li>
+<h3>外引CSS重载（CSS Reload）</h3>
+<p>可使用F9快捷键或点击按钮重新加载外引的CSS样式文件。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/b15c271758800a73a9834181d8e5b3a2.jpg" alt="reload"></li>
+<li>
+<h3>功能禁用（Disable）</h3>
+<p>可禁用浏览器的javascript,cookie,弹出页面，flash等功能。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/febbd0769c9720c362e10fd92f24356c.jpg" alt="disable"></li>
+<li>
+<h3>页面检查（Check）</h3>
+<p>可检查链接的有效性及是否有id重复等。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/c359d83aee799eb3367df874402fc447.jpg" alt="check"></li>
+<li>
+<h3>HTML元素检查（HTML Inspect）</h3>
+<p>可自定义检查元素的各种属性，避免在Styles选项卡中滚动查找。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/d61cd3f42a5549b86b2076ec277b1941.jpg" alt="inspect1"><br />
+		<br />
+		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/d5866870b54e02b08d271533f51ab4cb.jpg" alt="inspect2"></li>
+<li>
+<h3>二维码生成（QR Code）</h3>
+<p>可为每个页面生成对应的二维码，如避免在手机上面输入链接地址查看页面。</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/1739256d3d45d5c7ad4c99daed6a03a7.jpg" alt="qrcode"></li>
+<li>
+<h3>映射（Auto Response）</h3>
+<p>
+			可把任何请求映射到另外一个文件上，甚至本地文件（需要在chrome://extensions/页上启用“允许访问文件网址”的选项）。
+		</p>
+<p>		<img src="http://imgs.bq69.com/blog/qiniu/1178/image/37d07e8cf86f9e68bb225bd1f8ef3ed7.jpg" alt="response"></li>
+</ol>
+";s:14:"date_timestamp";i:1398318010;}i:2;a:14:{s:5:"title";s:37:"视网膜1物理像素边框生成器";s:4:"link";s:68:"http://bq69.com/blog/articles/html/1192/retinahairlinegenerator.html";s:8:"comments";s:77:"http://bq69.com/blog/articles/html/1192/retinahairlinegenerator.html#comments";s:7:"pubdate";s:31:"Mon, 13 Jan 2014 16:47:56 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:17:"HTMLcsshtmlretina";s:4:"guid";s:28:"http://bq69.com/blog/?p=1192";s:11:"description";s:65:"Css Class:&#160; Color:&#160; Top:&#160; Right:&#160; B [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:897:"<div id="demo_20150513174201">
+<p node-type="tip" style="display:none;"></p>
+<div class="input">
+<p><label>Css Class:&nbsp;<input type="text" node-type="clz" value=".border-1px"></label></p>
+<p><label>Color:&nbsp;<input type="text" node-type="color" value="#00a19e"></label></p>
+<p> <label>Top:&nbsp;<input type="checkbox" node-type="top" checked></label> <label>Right:&nbsp;<input type="checkbox" node-type="right" checked></label> <label>Bottom:&nbsp;<input type="checkbox" node-type="bottom" checked></label> <label>Left:&nbsp;<input type="checkbox" node-type="left" checked></label> </p>
+</p></div>
+<p>Border Image:</p>
+<p> <canvas node-type="canvas" style=""></canvas>
+<p>Normal 1px Border:</p>
+<div node-type="normal" class="normal"></div>
+<p>Retina Hairline:</p>
+<div node-type="preview" class="preview"></div>
+<p>CSS Code:</p>
+<p> <textarea node-type="code" class="code"></textarea></div>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:73:"http://bq69.com/blog/articles/html/1192/retinahairlinegenerator.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:65:"Css Class:&#160; Color:&#160; Top:&#160; Right:&#160; B [&#8230;]";s:12:"atom_content";s:897:"<div id="demo_20150513174201">
+<p node-type="tip" style="display:none;"></p>
+<div class="input">
+<p><label>Css Class:&nbsp;<input type="text" node-type="clz" value=".border-1px"></label></p>
+<p><label>Color:&nbsp;<input type="text" node-type="color" value="#00a19e"></label></p>
+<p> <label>Top:&nbsp;<input type="checkbox" node-type="top" checked></label> <label>Right:&nbsp;<input type="checkbox" node-type="right" checked></label> <label>Bottom:&nbsp;<input type="checkbox" node-type="bottom" checked></label> <label>Left:&nbsp;<input type="checkbox" node-type="left" checked></label> </p>
+</p></div>
+<p>Border Image:</p>
+<p> <canvas node-type="canvas" style=""></canvas>
+<p>Normal 1px Border:</p>
+<div node-type="normal" class="normal"></div>
+<p>Retina Hairline:</p>
+<div node-type="preview" class="preview"></div>
+<p>CSS Code:</p>
+<p> <textarea node-type="code" class="code"></textarea></div>
+";s:14:"date_timestamp";i:1389631676;}i:3;a:14:{s:5:"title";s:12:"占窝猫咪";s:4:"link";s:48:"http://bq69.com/blog/tools/1137/placekitten.html";s:8:"comments";s:57:"http://bq69.com/blog/tools/1137/placekitten.html#comments";s:7:"pubdate";s:31:"Mon, 29 Jul 2013 18:54:34 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:23:"工具技巧placeholder";s:4:"guid";s:28:"http://bq69.com/blog/?p=1137";s:11:"description";s:101:"很有爱的占位图，占窝猫咪，http://placekitten.com/720/360 就是一张好720*36 [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:1156:"<p>很有爱的占位图，<a href="http://placekitten.com/" class="external">占窝猫咪</a>，http://placekitten.com/720/360 就是一张好720*360的猫咪图片，简单有趣创意，做占位图片很方便。</p>
+<p>
+    <img src="http://placekitten.com/720/360" alt="placekitten" />
+</p>
+<p>类似的站点还有：</p>
+<p>
+	<a href="http://fpoimg.com/" class="external">fpoimg</a>,如：http://fpoimg.com/720&#215;100?text=fpoimg&#038;bg_color=97aed8&#038;text_color=ffffff<br />
+	<img src="http://imgs.bq69.com/blog/qiniu/1137/image/21730cb437adbedbce0825afb3253650.jpg" alt="fpoimg">
+</p>
+<p>
+	<a href="http://lorempixel.com/" class="external">lorempixel</a>,可生成随机的某类型的固定大小图片，如：http://lorempixel.com/720/500/city/720-500/<br />
+	<img src="http://imgs.bq69.com/blog/qiniu/1137/image/e5d2c0ff05f94dc1a936a089994a8dfb.jpg" alt="lorempixel">
+</p>
+<p>
+	<a href="http://fakeimg.pl/" class="external">fakeimg</a>,如：http://fakeimg.pl/720&#215;100/97aed8/ffffff/?text=720-100&#038;font=lobster<br />
+	<img src="http://imgs.bq69.com/blog/qiniu/1137/image/5e721fda24cc5dde80f1a13a69ed9de9.jpg" alt="fakeimg"></p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:53:"http://bq69.com/blog/tools/1137/placekitten.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:101:"很有爱的占位图，占窝猫咪，http://placekitten.com/720/360 就是一张好720*36 [&#8230;]";s:12:"atom_content";s:1156:"<p>很有爱的占位图，<a href="http://placekitten.com/" class="external">占窝猫咪</a>，http://placekitten.com/720/360 就是一张好720*360的猫咪图片，简单有趣创意，做占位图片很方便。</p>
+<p>
+    <img src="http://placekitten.com/720/360" alt="placekitten" />
+</p>
+<p>类似的站点还有：</p>
+<p>
+	<a href="http://fpoimg.com/" class="external">fpoimg</a>,如：http://fpoimg.com/720&#215;100?text=fpoimg&#038;bg_color=97aed8&#038;text_color=ffffff<br />
+	<img src="http://imgs.bq69.com/blog/qiniu/1137/image/21730cb437adbedbce0825afb3253650.jpg" alt="fpoimg">
+</p>
+<p>
+	<a href="http://lorempixel.com/" class="external">lorempixel</a>,可生成随机的某类型的固定大小图片，如：http://lorempixel.com/720/500/city/720-500/<br />
+	<img src="http://imgs.bq69.com/blog/qiniu/1137/image/e5d2c0ff05f94dc1a936a089994a8dfb.jpg" alt="lorempixel">
+</p>
+<p>
+	<a href="http://fakeimg.pl/" class="external">fakeimg</a>,如：http://fakeimg.pl/720&#215;100/97aed8/ffffff/?text=720-100&#038;font=lobster<br />
+	<img src="http://imgs.bq69.com/blog/qiniu/1137/image/5e721fda24cc5dde80f1a13a69ed9de9.jpg" alt="fakeimg"></p>
+";s:14:"date_timestamp";i:1375124074;}i:4;a:14:{s:5:"title";s:22:"javascript超时处理";s:4:"link";s:72:"http://bq69.com/blog/articles/script/1133/javascript_timeout_handle.html";s:8:"comments";s:81:"http://bq69.com/blog/articles/script/1133/javascript_timeout_handle.html#comments";s:7:"pubdate";s:31:"Mon, 29 Jul 2013 18:43:24 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:23:"Scriptjavascripttimeout";s:4:"guid";s:28:"http://bq69.com/blog/?p=1133";s:11:"description";s:141:"在异步操作时，通用需要超时处理，比如在请求数据时，网络异常没返回数据。 代码： var timeoutHand [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:9608:"<p>在异步操作时，通用需要超时处理，比如在请求数据时，网络异常没返回数据。</p>
+<h2>代码：</h2>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="javascript" style="font-family:monospace;"><span style="color: #000066; font-weight: bold;">var</span> timeoutHandle <span style="color: #339933;">=</span> <span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	<span style="color: #000066; font-weight: bold;">var</span> events <span style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
+	<span style="color: #000066; font-weight: bold;">var</span> id <span style="color: #339933;">=</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span>
+	<span style="color: #000066; font-weight: bold;">var</span> handle <span style="color: #339933;">=</span> <span style="color: #009900;">&#123;</span>
+	    success<span style="color: #339933;">:</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>id<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        <span style="color: #000066; font-weight: bold;">var</span> eve <span style="color: #339933;">=</span> events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
+	        <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span><span style="color: #339933;">!</span>eve<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	            <span style="color: #000066; font-weight: bold;">return</span><span style="color: #339933;">;</span>
+	        <span style="color: #009900;">&#125;</span>
+	        eve.<span style="color: #660066;">isSuccess</span> <span style="color: #339933;">=</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">;</span>
+	        clearTimeout<span style="color: #009900;">&#40;</span>eve.<span style="color: #660066;">timer</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	    <span style="color: #009900;">&#125;</span><span style="color: #339933;">,</span>
+	    timeout<span style="color: #339933;">:</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>id<span style="color: #339933;">,</span>fn<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        <span style="color: #000066; font-weight: bold;">var</span> eve <span style="color: #339933;">=</span> events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
+	        <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span><span style="color: #339933;">!</span>eve<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	            <span style="color: #000066; font-weight: bold;">return</span><span style="color: #339933;">;</span>
+	        <span style="color: #009900;">&#125;</span>
+	        eve.<span style="color: #660066;">timer</span> <span style="color: #339933;">=</span> setTimeout<span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        	<span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span>eve.<span style="color: #660066;">isSuccess</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        		<span style="color: #000066; font-weight: bold;">return</span><span style="color: #339933;">;</span>
+	        	<span style="color: #009900;">&#125;</span>
+	            <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">typeof</span> fn <span style="color: #339933;">==</span> <span style="color: #3366CC;">'function'</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	                fn.<span style="color: #660066;">call</span><span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">this</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	            <span style="color: #009900;">&#125;</span>
+	        <span style="color: #009900;">&#125;</span><span style="color: #339933;">,</span>eve.<span style="color: #660066;">time</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	    <span style="color: #009900;">&#125;</span>
+	<span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span>
+	<span style="color: #000066; font-weight: bold;">return</span> <span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>fn<span style="color: #339933;">,</span>time<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+		id<span style="color: #339933;">++;</span>
+	    events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #009900;">&#123;</span><span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span>
+	    events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span>.<span style="color: #660066;">time</span> <span style="color: #339933;">=</span> time<span style="color: #339933;">||</span>5e3<span style="color: #339933;">;</span>
+	    events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span>.<span style="color: #660066;">isSuccess</span> <span style="color: #339933;">=</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">;</span>
+	    <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">typeof</span> fn <span style="color: #339933;">==</span> <span style="color: #3366CC;">'function'</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        fn.<span style="color: #660066;">call</span><span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">this</span><span style="color: #339933;">,</span>id<span style="color: #339933;">,</span>handle<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	    <span style="color: #009900;">&#125;</span>
+	<span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre></td></tr></table></div>
+
+<h2>使用方法：</h2>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="javascript" style="font-family:monospace;"><span style="color: #006600; font-style: italic;">// 以下为伪代码</span>
+timeoutHandle<span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>id<span style="color: #339933;">,</span>handle<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+    handle.<span style="color: #660066;">timeout</span><span style="color: #009900;">&#40;</span>id<span style="color: #339933;">,</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+        <span style="color: #006600; font-style: italic;">// 超时处理</span>
+    <span style="color: #009900;">&#125;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+    jsonp<span style="color: #009900;">&#40;</span>url<span style="color: #339933;">,</span>params<span style="color: #339933;">,</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>msg<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+        <span style="color: #006600; font-style: italic;">// 数据处理</span>
+        handleData<span style="color: #009900;">&#40;</span>msg<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+        <span style="color: #006600; font-style: italic;">// 成功通知</span>
+        handle.<span style="color: #660066;">success</span><span style="color: #009900;">&#40;</span>id<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span><span style="color: #339933;">,</span><span style="color: #CC0000;">100</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre></td></tr></table></div>
+
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:77:"http://bq69.com/blog/articles/script/1133/javascript_timeout_handle.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:141:"在异步操作时，通用需要超时处理，比如在请求数据时，网络异常没返回数据。 代码： var timeoutHand [&#8230;]";s:12:"atom_content";s:9608:"<p>在异步操作时，通用需要超时处理，比如在请求数据时，网络异常没返回数据。</p>
+<h2>代码：</h2>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="javascript" style="font-family:monospace;"><span style="color: #000066; font-weight: bold;">var</span> timeoutHandle <span style="color: #339933;">=</span> <span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	<span style="color: #000066; font-weight: bold;">var</span> events <span style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
+	<span style="color: #000066; font-weight: bold;">var</span> id <span style="color: #339933;">=</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span>
+	<span style="color: #000066; font-weight: bold;">var</span> handle <span style="color: #339933;">=</span> <span style="color: #009900;">&#123;</span>
+	    success<span style="color: #339933;">:</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>id<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        <span style="color: #000066; font-weight: bold;">var</span> eve <span style="color: #339933;">=</span> events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
+	        <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span><span style="color: #339933;">!</span>eve<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	            <span style="color: #000066; font-weight: bold;">return</span><span style="color: #339933;">;</span>
+	        <span style="color: #009900;">&#125;</span>
+	        eve.<span style="color: #660066;">isSuccess</span> <span style="color: #339933;">=</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">;</span>
+	        clearTimeout<span style="color: #009900;">&#40;</span>eve.<span style="color: #660066;">timer</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	    <span style="color: #009900;">&#125;</span><span style="color: #339933;">,</span>
+	    timeout<span style="color: #339933;">:</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>id<span style="color: #339933;">,</span>fn<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        <span style="color: #000066; font-weight: bold;">var</span> eve <span style="color: #339933;">=</span> events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
+	        <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span><span style="color: #339933;">!</span>eve<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	            <span style="color: #000066; font-weight: bold;">return</span><span style="color: #339933;">;</span>
+	        <span style="color: #009900;">&#125;</span>
+	        eve.<span style="color: #660066;">timer</span> <span style="color: #339933;">=</span> setTimeout<span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        	<span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span>eve.<span style="color: #660066;">isSuccess</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        		<span style="color: #000066; font-weight: bold;">return</span><span style="color: #339933;">;</span>
+	        	<span style="color: #009900;">&#125;</span>
+	            <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">typeof</span> fn <span style="color: #339933;">==</span> <span style="color: #3366CC;">'function'</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	                fn.<span style="color: #660066;">call</span><span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">this</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	            <span style="color: #009900;">&#125;</span>
+	        <span style="color: #009900;">&#125;</span><span style="color: #339933;">,</span>eve.<span style="color: #660066;">time</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	    <span style="color: #009900;">&#125;</span>
+	<span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span>
+	<span style="color: #000066; font-weight: bold;">return</span> <span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>fn<span style="color: #339933;">,</span>time<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+		id<span style="color: #339933;">++;</span>
+	    events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #009900;">&#123;</span><span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span>
+	    events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span>.<span style="color: #660066;">time</span> <span style="color: #339933;">=</span> time<span style="color: #339933;">||</span>5e3<span style="color: #339933;">;</span>
+	    events<span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span>.<span style="color: #660066;">isSuccess</span> <span style="color: #339933;">=</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">;</span>
+	    <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">typeof</span> fn <span style="color: #339933;">==</span> <span style="color: #3366CC;">'function'</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	        fn.<span style="color: #660066;">call</span><span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">this</span><span style="color: #339933;">,</span>id<span style="color: #339933;">,</span>handle<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	    <span style="color: #009900;">&#125;</span>
+	<span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre></td></tr></table></div>
+
+<h2>使用方法：</h2>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="javascript" style="font-family:monospace;"><span style="color: #006600; font-style: italic;">// 以下为伪代码</span>
+timeoutHandle<span style="color: #009900;">&#40;</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>id<span style="color: #339933;">,</span>handle<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+    handle.<span style="color: #660066;">timeout</span><span style="color: #009900;">&#40;</span>id<span style="color: #339933;">,</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+        <span style="color: #006600; font-style: italic;">// 超时处理</span>
+    <span style="color: #009900;">&#125;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+    jsonp<span style="color: #009900;">&#40;</span>url<span style="color: #339933;">,</span>params<span style="color: #339933;">,</span><span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span>msg<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+        <span style="color: #006600; font-style: italic;">// 数据处理</span>
+        handleData<span style="color: #009900;">&#40;</span>msg<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+        <span style="color: #006600; font-style: italic;">// 成功通知</span>
+        handle.<span style="color: #660066;">success</span><span style="color: #009900;">&#40;</span>id<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span><span style="color: #339933;">,</span><span style="color: #CC0000;">100</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre></td></tr></table></div>
+
+";s:14:"date_timestamp";i:1375123404;}i:5;a:14:{s:5:"title";s:48:"巧用“代理自动配置脚本”进行测试";s:4:"link";s:56:"http://bq69.com/blog/tools/1126/intranet_proxy_test.html";s:8:"comments";s:65:"http://bq69.com/blog/tools/1126/intranet_proxy_test.html#comments";s:7:"pubdate";s:31:"Fri, 26 Jul 2013 18:31:25 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:24:"工具技巧fiddlerhosts";s:4:"guid";s:28:"http://bq69.com/blog/?p=1126";s:11:"description";s:159:"使用代理自动配置脚本，一改全改，避免频繁修改hosts，避免频繁部署到测试机，避免同时修改多台设备。 新建pr [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:1131:"<p>使用代理自动配置脚本，一改全改，避免频繁修改hosts，避免频繁部署到测试机，避免同时修改多台设备。</p>
+<ol>
+<li>
+		新建proxy.pac <sup class="reference" id="cite-ref-1"><a href="#cite-note-1">[1]</a></sup>文件，如把dc.sina.com.cn的请求代理到本机上（10.218.36.131），则填入如下内容：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="js" style="font-family:monospace;">function FindProxyForURL(url, host) {
+	if (shExpMatch(url, &quot;*dc.sina.com.cn/*&quot;)) {
+		return &quot;PROXY 10.218.36.131&quot;;
+	}
+	return &quot;DIRECT&quot;;
+}</pre></td></tr></table></div>
+
+</li>
+<li>
+		把proxy.pac上传到一个固定的地址上，如http://bq69.com/xxx/xxx/proxy.pac,然后把该地址填写各测试设备的http 自动代理上。
+	</li>
+</ol>
+<h2 class="reference-title">参考资料</h2>
+<div class="reference-link" >
+<ol>
+<li id="cite-note-1"> <b><a href="#cite-ref-1">^</a></b> <a class="external" href="http://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE">代理自动配置</a>
+		</li>
+</ol>
+</div>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:61:"http://bq69.com/blog/tools/1126/intranet_proxy_test.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:159:"使用代理自动配置脚本，一改全改，避免频繁修改hosts，避免频繁部署到测试机，避免同时修改多台设备。 新建pr [&#8230;]";s:12:"atom_content";s:1131:"<p>使用代理自动配置脚本，一改全改，避免频繁修改hosts，避免频繁部署到测试机，避免同时修改多台设备。</p>
+<ol>
+<li>
+		新建proxy.pac <sup class="reference" id="cite-ref-1"><a href="#cite-note-1">[1]</a></sup>文件，如把dc.sina.com.cn的请求代理到本机上（10.218.36.131），则填入如下内容：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="js" style="font-family:monospace;">function FindProxyForURL(url, host) {
+	if (shExpMatch(url, &quot;*dc.sina.com.cn/*&quot;)) {
+		return &quot;PROXY 10.218.36.131&quot;;
+	}
+	return &quot;DIRECT&quot;;
+}</pre></td></tr></table></div>
+
+</li>
+<li>
+		把proxy.pac上传到一个固定的地址上，如http://bq69.com/xxx/xxx/proxy.pac,然后把该地址填写各测试设备的http 自动代理上。
+	</li>
+</ol>
+<h2 class="reference-title">参考资料</h2>
+<div class="reference-link" >
+<ol>
+<li id="cite-note-1"> <b><a href="#cite-ref-1">^</a></b> <a class="external" href="http://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE">代理自动配置</a>
+		</li>
+</ol>
+</div>
+";s:14:"date_timestamp";i:1374863485;}i:6;a:14:{s:5:"title";s:25:"利用fiddler修改请求";s:4:"link";s:56:"http://bq69.com/blog/tools/1121/fillder_connections.html";s:8:"comments";s:65:"http://bq69.com/blog/tools/1121/fillder_connections.html#comments";s:7:"pubdate";s:31:"Fri, 26 Jul 2013 15:34:28 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:24:"工具技巧fiddlerhosts";s:4:"guid";s:28:"http://bq69.com/blog/?p=1121";s:11:"description";s:97:"iPad mini 6.1.3暂时不能越狱，无法改hosts文件，可用fiddler connections代 [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:609:"<p>iPad mini 6.1.3暂时不能越狱，无法改hosts文件，可用fiddler connections代替。</p>
+<ol>
+<li>在pc上：fiddler>tools>fiddler options>connections:allow remote computers to connect;fiddler默认监听端口为8888不用修改，除非有冲突</li>
+<li>在iPad上：设置>无线局域网>点击“你选中的那个wifi”的中箭头，http代理中选择手动>服务器填pc ip 及fiddler监听端口8888</li>
+<li>利用fiddler的auto responder，现在iPad上每个请求都可以随便修改了</li>
+</ol>
+<p>理论上，设置代理后，fiddler可以监听任何设备的请求。</p>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:61:"http://bq69.com/blog/tools/1121/fillder_connections.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:97:"iPad mini 6.1.3暂时不能越狱，无法改hosts文件，可用fiddler connections代 [&#8230;]";s:12:"atom_content";s:609:"<p>iPad mini 6.1.3暂时不能越狱，无法改hosts文件，可用fiddler connections代替。</p>
+<ol>
+<li>在pc上：fiddler>tools>fiddler options>connections:allow remote computers to connect;fiddler默认监听端口为8888不用修改，除非有冲突</li>
+<li>在iPad上：设置>无线局域网>点击“你选中的那个wifi”的中箭头，http代理中选择手动>服务器填pc ip 及fiddler监听端口8888</li>
+<li>利用fiddler的auto responder，现在iPad上每个请求都可以随便修改了</li>
+</ol>
+<p>理论上，设置代理后，fiddler可以监听任何设备的请求。</p>
+";s:14:"date_timestamp";i:1374852868;}i:7;a:14:{s:5:"title";s:12:"安装sphinx";s:4:"link";s:56:"http://bq69.com/blog/tools/1116/sphinx_installation.html";s:8:"comments";s:65:"http://bq69.com/blog/tools/1116/sphinx_installation.html#comments";s:7:"pubdate";s:31:"Sun, 21 Jul 2013 16:41:16 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:24:"工具技巧pythonsphinx";s:4:"guid";s:28:"http://bq69.com/blog/?p=1116";s:11:"description";s:83:"安装python 2.7.5 安装easy_install 3.通过essy_install安装sphinx注 [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:5900:"<ol>
+<li>安装<a href="http://www.python.org/getit/" target="_blank" class="external" title="下载python">python 2.7.5</a></li>
+<li>安装<a href="https://pypi.python.org/pypi/setuptools" target="_blank" class="external" title="安装easy_intall">easy_install</a></li>
+<p>	3.通过essy_install安装<a href="http://www.ibm.com/developerworks/cn/opensource/os-sphinx-documentation/" target="_blank" class="external" title="安装sphinx">sphinx</a><i>注意:http://sourceforge.net/有可能被墙而无法安装成功，翻墙后再安装</i></li>
+<li>按照sphinx-quickstart引导生成文档项目结构</li>
+<li>进入文档项目目录make html生成html页面</li>
+</ol>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="cmd" style="font-family:monospace;">G:\sphinx&gt;sphinx-quickstart
+Welcome to the Sphinx 1.2b1 quickstart utility.
+&nbsp;
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+&nbsp;
+Enter the root path for documentation.
+&gt; Root path for the documentation [.]: bq69_posts
+&nbsp;
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory &quot;_build&quot; within the root path, or you separate
+&quot;source&quot; and &quot;build&quot; directories within the root path.
+&gt; Separate source and build directories (y/N) [n]: y
+&nbsp;
+Inside the root directory, two more directories will be created; &quot;_templates&quot;
+for custom HTML templates and &quot;_static&quot; for custom stylesheets and other static
+files. You can enter another prefix (such as &quot;.&quot;) to replace the underscore.
+&gt; Name prefix for templates and static dir [_]:
+&nbsp;
+The project name will occur in several places in the built documentation.
+&gt; Project name: Bq69 Posts
+&gt; Author name(s): Chance Dai
+&nbsp;
+Sphinx has the notion of a &quot;version&quot; and a &quot;release&quot; for the
+software. Each version can have multiple releases. For example, for
+Python the version is something like 2.5 or 3.0, while the release is
+something like 2.5.1 or 3.0a1.  If you don't need this dual structure,
+just set both to the same value.
+&gt; Project version: 1.0.0
+&gt; Project release [1.0.0]: 1.0.0
+&nbsp;
+The file name suffix for source files. Commonly, this is either &quot;.txt&quot;
+or &quot;.rst&quot;.  Only files with this suffix are considered documents.
+&gt; Source file suffix [.rst]:
+&nbsp;
+One document is special in that it is considered the top node of the
+&quot;contents tree&quot;, that is, it is the root of the hierarchical structure
+of the documents. Normally, this is &quot;index&quot;, but if your &quot;index&quot;
+document is a custom template, you can also set this to another filename.
+&gt; Name of your master document (without suffix) [index]:
+&nbsp;
+Sphinx can also add configuration for epub output:
+&gt; Do you want to use the epub builder (y/N) [n]: y
+&nbsp;
+Please indicate if you want to use one of the following Sphinx extensions:
+&gt; autodoc: automatically insert docstrings from modules (y/N) [n]:
+&gt; doctest: automatically test code snippets in doctest blocks (y/N) [n]: y
+&gt; intersphinx: link between Sphinx documentation of different projects (y/N) [n]
+:
+&gt; todo: write &quot;todo&quot; entries that can be shown or hidden on build (y/N) [n]: y
+&gt; coverage: checks for documentation coverage (y/N) [n]:
+&gt; pngmath: include math, rendered as PNG images (y/N) [n]:
+&gt; mathjax: include math, rendered in the browser by MathJax (y/N) [n]:
+&gt; ifconfig: conditional inclusion of content based on config values (y/N) [n]:
+&gt; viewcode: include links to the source code of documented Python objects (y/N)
+[n]: y
+&nbsp;
+A Makefile and a Windows command file can be generated for you so that you
+only have to run e.g. `make html' instead of invoking sphinx-build
+directly.
+&gt; Create Makefile? (Y/n) [y]:
+&gt; Create Windows command file? (Y/n) [y]:
+&nbsp;
+Creating file bq69_posts\source\conf.py.
+Creating file bq69_posts\source\index.rst.
+Creating file bq69_posts\Makefile.
+Creating file bq69_posts\make.bat.
+&nbsp;
+Finished: An initial directory structure has been created.
+&nbsp;
+You should now populate your master file bq69_posts\source\index.rst and create
+other documentation
+source files. Use the Makefile to build the docs, like so:
+   make builder
+where &quot;builder&quot; is one of the supported builders, e.g. html, latex or linkcheck.
+&nbsp;
+&nbsp;
+&nbsp;
+G:\sphinx&gt;cd bq69_posts
+&nbsp;
+G:\sphinx\bq69_posts&gt;make html
+Making output directory...
+Running Sphinx v1.2b1
+loading pickled environment... not yet created
+building [html]: targets for 1 source files that are out of date
+updating environment: 1 added, 0 changed, 0 removed
+reading sources... [100%] index
+&nbsp;
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [100%] index
+&nbsp;
+writing additional files... (0 module code pages) genindex search
+copying static files... done
+dumping search index... done
+dumping object inventory... done
+build succeeded.
+&nbsp;
+Build finished. The HTML pages are in build/html.
+&nbsp;
+G:\sphinx\bq69_posts&gt;tree /
+&nbsp;
+│  make.bat
+│  Makefile
+│
+├─build
+│  ├─doctrees
+│  │      environment.pickle
+│  │      index.doctree
+│  │
+│  └─html
+│      │  .buildinfo
+│      │  genindex.html
+│      │  index.html
+│      │  objects.inv
+│      │  search.html
+│      │  searchindex.js
+│      │
+│      ├─_sources
+│      │      index.txt
+│      │
+│      └─_static
+|			css,js,png等静态资源
+│
+└─source
+    │  conf.py
+    │  index.rst
+    │
+    ├─_static
+    └─_templates</pre></td></tr></table></div>
+
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:61:"http://bq69.com/blog/tools/1116/sphinx_installation.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:83:"安装python 2.7.5 安装easy_install 3.通过essy_install安装sphinx注 [&#8230;]";s:12:"atom_content";s:5900:"<ol>
+<li>安装<a href="http://www.python.org/getit/" target="_blank" class="external" title="下载python">python 2.7.5</a></li>
+<li>安装<a href="https://pypi.python.org/pypi/setuptools" target="_blank" class="external" title="安装easy_intall">easy_install</a></li>
+<p>	3.通过essy_install安装<a href="http://www.ibm.com/developerworks/cn/opensource/os-sphinx-documentation/" target="_blank" class="external" title="安装sphinx">sphinx</a><i>注意:http://sourceforge.net/有可能被墙而无法安装成功，翻墙后再安装</i></li>
+<li>按照sphinx-quickstart引导生成文档项目结构</li>
+<li>进入文档项目目录make html生成html页面</li>
+</ol>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="cmd" style="font-family:monospace;">G:\sphinx&gt;sphinx-quickstart
+Welcome to the Sphinx 1.2b1 quickstart utility.
+&nbsp;
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+&nbsp;
+Enter the root path for documentation.
+&gt; Root path for the documentation [.]: bq69_posts
+&nbsp;
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory &quot;_build&quot; within the root path, or you separate
+&quot;source&quot; and &quot;build&quot; directories within the root path.
+&gt; Separate source and build directories (y/N) [n]: y
+&nbsp;
+Inside the root directory, two more directories will be created; &quot;_templates&quot;
+for custom HTML templates and &quot;_static&quot; for custom stylesheets and other static
+files. You can enter another prefix (such as &quot;.&quot;) to replace the underscore.
+&gt; Name prefix for templates and static dir [_]:
+&nbsp;
+The project name will occur in several places in the built documentation.
+&gt; Project name: Bq69 Posts
+&gt; Author name(s): Chance Dai
+&nbsp;
+Sphinx has the notion of a &quot;version&quot; and a &quot;release&quot; for the
+software. Each version can have multiple releases. For example, for
+Python the version is something like 2.5 or 3.0, while the release is
+something like 2.5.1 or 3.0a1.  If you don't need this dual structure,
+just set both to the same value.
+&gt; Project version: 1.0.0
+&gt; Project release [1.0.0]: 1.0.0
+&nbsp;
+The file name suffix for source files. Commonly, this is either &quot;.txt&quot;
+or &quot;.rst&quot;.  Only files with this suffix are considered documents.
+&gt; Source file suffix [.rst]:
+&nbsp;
+One document is special in that it is considered the top node of the
+&quot;contents tree&quot;, that is, it is the root of the hierarchical structure
+of the documents. Normally, this is &quot;index&quot;, but if your &quot;index&quot;
+document is a custom template, you can also set this to another filename.
+&gt; Name of your master document (without suffix) [index]:
+&nbsp;
+Sphinx can also add configuration for epub output:
+&gt; Do you want to use the epub builder (y/N) [n]: y
+&nbsp;
+Please indicate if you want to use one of the following Sphinx extensions:
+&gt; autodoc: automatically insert docstrings from modules (y/N) [n]:
+&gt; doctest: automatically test code snippets in doctest blocks (y/N) [n]: y
+&gt; intersphinx: link between Sphinx documentation of different projects (y/N) [n]
+:
+&gt; todo: write &quot;todo&quot; entries that can be shown or hidden on build (y/N) [n]: y
+&gt; coverage: checks for documentation coverage (y/N) [n]:
+&gt; pngmath: include math, rendered as PNG images (y/N) [n]:
+&gt; mathjax: include math, rendered in the browser by MathJax (y/N) [n]:
+&gt; ifconfig: conditional inclusion of content based on config values (y/N) [n]:
+&gt; viewcode: include links to the source code of documented Python objects (y/N)
+[n]: y
+&nbsp;
+A Makefile and a Windows command file can be generated for you so that you
+only have to run e.g. `make html' instead of invoking sphinx-build
+directly.
+&gt; Create Makefile? (Y/n) [y]:
+&gt; Create Windows command file? (Y/n) [y]:
+&nbsp;
+Creating file bq69_posts\source\conf.py.
+Creating file bq69_posts\source\index.rst.
+Creating file bq69_posts\Makefile.
+Creating file bq69_posts\make.bat.
+&nbsp;
+Finished: An initial directory structure has been created.
+&nbsp;
+You should now populate your master file bq69_posts\source\index.rst and create
+other documentation
+source files. Use the Makefile to build the docs, like so:
+   make builder
+where &quot;builder&quot; is one of the supported builders, e.g. html, latex or linkcheck.
+&nbsp;
+&nbsp;
+&nbsp;
+G:\sphinx&gt;cd bq69_posts
+&nbsp;
+G:\sphinx\bq69_posts&gt;make html
+Making output directory...
+Running Sphinx v1.2b1
+loading pickled environment... not yet created
+building [html]: targets for 1 source files that are out of date
+updating environment: 1 added, 0 changed, 0 removed
+reading sources... [100%] index
+&nbsp;
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [100%] index
+&nbsp;
+writing additional files... (0 module code pages) genindex search
+copying static files... done
+dumping search index... done
+dumping object inventory... done
+build succeeded.
+&nbsp;
+Build finished. The HTML pages are in build/html.
+&nbsp;
+G:\sphinx\bq69_posts&gt;tree /
+&nbsp;
+│  make.bat
+│  Makefile
+│
+├─build
+│  ├─doctrees
+│  │      environment.pickle
+│  │      index.doctree
+│  │
+│  └─html
+│      │  .buildinfo
+│      │  genindex.html
+│      │  index.html
+│      │  objects.inv
+│      │  search.html
+│      │  searchindex.js
+│      │
+│      ├─_sources
+│      │      index.txt
+│      │
+│      └─_static
+|			css,js,png等静态资源
+│
+└─source
+    │  conf.py
+    │  index.rst
+    │
+    ├─_static
+    └─_templates</pre></td></tr></table></div>
+
+";s:14:"date_timestamp";i:1374424876;}i:8;a:14:{s:5:"title";s:9:"我的F12";s:4:"link";s:43:"http://bq69.com/blog/tools/1110/my_f12.html";s:8:"comments";s:52:"http://bq69.com/blog/tools/1110/my_f12.html#comments";s:7:"pubdate";s:31:"Sat, 13 Jul 2013 18:12:05 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:50:"autohotkeySublime工具技巧photoshopsublime text";s:4:"guid";s:28:"http://bq69.com/blog/?p=1110";s:11:"description";s:131:"在浏览器中f12打开web开发者工具 在Photoshop中f12导出切片“保存为web和设备所用格式”；菜单 [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:2616:"<ol>
+<li>在浏览器中f12打开web开发者工具</li>
+<li>在Photoshop中f12导出切片“保存为web和设备所用格式”；菜单>编辑>键盘快捷键>&#8230;</li>
+<li>在资源管理器中f12使用sublime text打开文件；利用autohotkey实现，代码如下：
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="python" style="font-family:monospace;">openSelectedfile<span style="color: black;">&#40;</span>p<span style="color: black;">&#41;</span> <span style="color: black;">&#123;</span>
+    ClipSaved :<span style="color: #66cc66;">=</span> ClipboardAll
+    Clipboard <span style="color: #66cc66;">=</span>
+    ValidFiletypes <span style="color: #66cc66;">=</span> txt html js json htm md markdown ahk
+    Send ^c
+    ClipWait
+    FullPath :<span style="color: #66cc66;">=</span> Clipboard
+    Loop<span style="color: #66cc66;">,</span> parse<span style="color: #66cc66;">,</span> FullPath<span style="color: #66cc66;">,</span> `n<span style="color: #66cc66;">,</span> `r
+    <span style="color: black;">&#123;</span>
+        IfNotExist<span style="color: #66cc66;">,</span> %A_Loopfield%
+            <span style="color: #ff7700;font-weight:bold;">continue</span>
+        SplitPath<span style="color: #66cc66;">,</span> A_Loopfield <span style="color: #66cc66;">,,,</span> OutExt<span style="color: #66cc66;">,</span>
+        IfInString<span style="color: #66cc66;">,</span> ValidFiletypes<span style="color: #66cc66;">,</span> %OutExt%
+            run<span style="color: #66cc66;">,</span> %p% %A_LoopField%
+    <span style="color: black;">&#125;</span>
+    Clipboard :<span style="color: #66cc66;">=</span> ClipSaved
+    OutExt <span style="color: #66cc66;">=</span>
+    ClipSaved <span style="color: #66cc66;">=</span>
+    <span style="color: #ff7700;font-weight:bold;">return</span>
+<span style="color: black;">&#125;</span>
+&nbsp;
+<span style="color: #808080; font-style: italic;">#IfWinActive ahk_class CabinetWClass</span>
+F12:: openSelectedfile<span style="color: black;">&#40;</span><span style="color: #483d8b;">&quot;H:<span style="color: #000099; font-weight: bold;">\P</span>rogram Files<span style="color: #000099; font-weight: bold;">\S</span>ublime Text 2<span style="color: #000099; font-weight: bold;">\s</span>ublime_text.exe&quot;</span><span style="color: black;">&#41;</span>
+<span style="color: #808080; font-style: italic;">#IfWinActive</span></pre></td></tr></table></div>
+
+</li>
+<li>在sublime text中f12在本地服务器预览页面；参考 <a href="http://bq69.com/blog/?p=5">《使用sublime text中快速预览服务器对应页面》</a></li>
+</ol>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:48:"http://bq69.com/blog/tools/1110/my_f12.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:131:"在浏览器中f12打开web开发者工具 在Photoshop中f12导出切片“保存为web和设备所用格式”；菜单 [&#8230;]";s:12:"atom_content";s:2616:"<ol>
+<li>在浏览器中f12打开web开发者工具</li>
+<li>在Photoshop中f12导出切片“保存为web和设备所用格式”；菜单>编辑>键盘快捷键>&#8230;</li>
+<li>在资源管理器中f12使用sublime text打开文件；利用autohotkey实现，代码如下：
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="python" style="font-family:monospace;">openSelectedfile<span style="color: black;">&#40;</span>p<span style="color: black;">&#41;</span> <span style="color: black;">&#123;</span>
+    ClipSaved :<span style="color: #66cc66;">=</span> ClipboardAll
+    Clipboard <span style="color: #66cc66;">=</span>
+    ValidFiletypes <span style="color: #66cc66;">=</span> txt html js json htm md markdown ahk
+    Send ^c
+    ClipWait
+    FullPath :<span style="color: #66cc66;">=</span> Clipboard
+    Loop<span style="color: #66cc66;">,</span> parse<span style="color: #66cc66;">,</span> FullPath<span style="color: #66cc66;">,</span> `n<span style="color: #66cc66;">,</span> `r
+    <span style="color: black;">&#123;</span>
+        IfNotExist<span style="color: #66cc66;">,</span> %A_Loopfield%
+            <span style="color: #ff7700;font-weight:bold;">continue</span>
+        SplitPath<span style="color: #66cc66;">,</span> A_Loopfield <span style="color: #66cc66;">,,,</span> OutExt<span style="color: #66cc66;">,</span>
+        IfInString<span style="color: #66cc66;">,</span> ValidFiletypes<span style="color: #66cc66;">,</span> %OutExt%
+            run<span style="color: #66cc66;">,</span> %p% %A_LoopField%
+    <span style="color: black;">&#125;</span>
+    Clipboard :<span style="color: #66cc66;">=</span> ClipSaved
+    OutExt <span style="color: #66cc66;">=</span>
+    ClipSaved <span style="color: #66cc66;">=</span>
+    <span style="color: #ff7700;font-weight:bold;">return</span>
+<span style="color: black;">&#125;</span>
+&nbsp;
+<span style="color: #808080; font-style: italic;">#IfWinActive ahk_class CabinetWClass</span>
+F12:: openSelectedfile<span style="color: black;">&#40;</span><span style="color: #483d8b;">&quot;H:<span style="color: #000099; font-weight: bold;">\P</span>rogram Files<span style="color: #000099; font-weight: bold;">\S</span>ublime Text 2<span style="color: #000099; font-weight: bold;">\s</span>ublime_text.exe&quot;</span><span style="color: black;">&#41;</span>
+<span style="color: #808080; font-style: italic;">#IfWinActive</span></pre></td></tr></table></div>
+
+</li>
+<li>在sublime text中f12在本地服务器预览页面；参考 <a href="http://bq69.com/blog/?p=5">《使用sublime text中快速预览服务器对应页面》</a></li>
+</ol>
+";s:14:"date_timestamp";i:1373739125;}i:9;a:14:{s:5:"title";s:12:"模糊查询";s:4:"link";s:48:"http://bq69.com/blog/tools/1105/fuzzy_searc.html";s:8:"comments";s:57:"http://bq69.com/blog/tools/1105/fuzzy_searc.html#comments";s:7:"pubdate";s:31:"Fri, 12 Jul 2013 23:46:30 +0000";s:2:"dc";a:1:{s:7:"creator";s:8:"daichang";}s:8:"category";s:43:"工具技巧chromelistarysublime textvimium";s:4:"guid";s:28:"http://bq69.com/blog/?p=1105";s:11:"description";s:101:"在编辑器中使用sublime text 的 goto anything(在project中查询) 在浏览器中使 [&#8230;]";s:7:"content";a:1:{s:7:"encoded";s:320:"<ol>
+<li>在编辑器中使用sublime text 的 goto anything(在project中查询)</li>
+<li>在浏览器中使用vimium的T(在打开的tab中查询),b,B(在书签及url历史中查询)</li>
+<li>在chrome web developer tool中使用ctrl+o</li>
+<li>在资源管理器中使用listary(专业版)的全局搜索></li>
+</ol>
+";}s:3:"wfw";a:1:{s:10:"commentrss";s:53:"http://bq69.com/blog/tools/1105/fuzzy_searc.html/feed";}s:5:"slash";a:1:{s:8:"comments";s:1:"0";}s:7:"summary";s:101:"在编辑器中使用sublime text 的 goto anything(在project中查询) 在浏览器中使 [&#8230;]";s:12:"atom_content";s:320:"<ol>
+<li>在编辑器中使用sublime text 的 goto anything(在project中查询)</li>
+<li>在浏览器中使用vimium的T(在打开的tab中查询),b,B(在书签及url历史中查询)</li>
+<li>在chrome web developer tool中使用ctrl+o</li>
+<li>在资源管理器中使用listary(专业版)的全局搜索></li>
+</ol>
+";s:14:"date_timestamp";i:1373672790;}}s:7:"channel";a:7:{s:5:"title";s:9:"最前端";s:4:"link";s:20:"http://bq69.com/blog";s:11:"description";s:45:"我的工作，我的生活，点点滴滴...";s:13:"lastbuilddate";s:31:"Sat, 23 May 2015 15:48:08 +0000";s:8:"language";s:5:"zh-CN";s:2:"sy";a:2:{s:12:"updateperiod";s:6:"hourly";s:15:"updatefrequency";s:1:"1";}s:7:"tagline";s:45:"我的工作，我的生活，点点滴滴...";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;s:4:"etag";s:36:""e7cfdcbbcb5866a44177cfd73ebf644c"
+";s:13:"last_modified";s:31:"Sat, 23 May 2015 15:48:08 GMT
+";}
