@@ -30,13 +30,7 @@
         <ul>
             <li ><a href="/Blog">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
-<<<<<<< HEAD
             <li ><a href="/Blog/me" >关于</a></li>
-=======
-             <li ><a href="/Blog/Index/feedplus">Feed+</a></li>
-             <li ><a href="/Blog/message">留言</a></li>
-            <li ><a href="/Blog/me" target="_blank">关于我</a></li>
->>>>>>> origin/rss
         </ul></nav>
     </header>
         <!--   首页样式表 -->
@@ -123,7 +117,6 @@
     </div>
 </footer>
 </body>
-<<<<<<< HEAD
 <!--[if lt IE 9]>
 <script src="/Blog/Public/Jquery/jquery-1.11.2.js"></script>
 <![endif]-->
@@ -151,11 +144,6 @@ var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(hm, s);
 })();
 </script>
-</div>
-
-<script src="/Blog/Public/Home/JS/home.js"></script>
-=======
-<div style="display:none">
 	<a href="http://www.zzidc.com">  title="景安网络" /></a>
 	// <script>
 	// var _hmt = _hmt || [];
@@ -168,12 +156,9 @@ s.parentNode.insertBefore(hm, s);
 	// </script>
 </div>
 
-</html>
->>>>>>> origin/rss
+<script src="/Blog/Public/Home/JS/home.js"></script>
 <script type="text/javascript">
     $(function(){
-<<<<<<< HEAD
-=======
     $(".ban-pic").animate(
         {left:'0px',opacity:'1'},600);
     });
@@ -195,7 +180,6 @@ s.parentNode.insertBefore(hm, s);
     $(".hotShow").css("display","none");
     });
 $(function(){
->>>>>>> origin/rss
         var lastnum=0;
         var hotnum=0;
         function ajaxshow(start,list,show){
@@ -229,9 +213,5 @@ $(function(){
             ajaxshow(hotnum,list,show) ;
         });
 });
-<<<<<<< HEAD
 </script>
 </html>
-=======
-</script>
->>>>>>> origin/rss
