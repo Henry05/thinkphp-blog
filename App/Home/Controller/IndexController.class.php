@@ -107,68 +107,9 @@ class IndexController extends Controller {
       $this->display();
     }
 
-
-
-    public function feedplus()
+    public function game()
     {
-     require('./ThinkPHP/Common/magpierss/rss_fetch.inc');
-      $feedsite=M('feedsite')->select();
-      foreach ( $feedsite as $key=> $value) {
-         $this->addFeed($feedsite[$key]['s_xml']);
-      }
-      $rssOut = M("feed")->order('f_time desc')->select();
-      foreach ($rssOut as $key => $value) {
-        $pubyear=date('Y',strtotime($rssOut[$key]['f_time']));
-        $nowyear=date('Y',time());
-        if ($pubyear==$nowyear) {
-            $rssOut[$key]['f_time']= date('m-d H:i',strtotime($rssOut[$key]['f_time']));
-        }else{
-            $rssOut[$key]['f_time']= date('Y-m-d',strtotime($rssOut[$key]['f_time']));
-        }
-      }
-      $this->assign('rss',$rssOut);
-      $this->display('index');
+      $this->display();
     }
-
-   public function addFeed($url)
-   {
-
-
-      $rss = fetch_rss($url);
-      $arr =object_to_array($rss);                                                
-      foreach ($arr['items'] as $key=> $value) {
-      $time = ($arr['items'][$key]['pubdate']!=null) ? 'pubdate' : 'updated' ;
-      $far_time= date("Y-m-d H:i",strtotime($arr['items'][$key][$time])); 
-      $arr['items'][$key][$time]=$far_time;
-
-      }
-      $Feed= M("feed");
-      $Site= M("feedsite");
-
-      foreach ( $arr['items'] as $key => $value) {
-      $data[$key]['f_title']=$arr['items'][$key]['title'];
-      $data[$key]['f_time']=$arr['items'][$key][$time]; 
-      $data[$key]['f_link']=$arr['items'][$key]['link']; 
-      $tempu=parse_url($arr['items'][$key]['link']);  
-      $data[$key]['f_host']=$tempu['host'];  
-      $desc = ($arr['items'][$key]['description']!=null) ? 'description' :'summary' ;
-      $data[$key]['f_desc']=$arr['items'][$key][$desc]; 
-      $where['s_host']=$data[$key]['f_host'];
-      $logo= $Site->where($where)->getField('s_logo');
-      $data[$key]['f_logo']=$logo;
-      $where['f_title']= $data[$key]['f_title'];
-      $where['f_time']= $data[$key]['f_time'];
-      $isSet=$Feed->where($where)->select();
-      // var_dump($isSet);
-      if ($isSet==null) {
-
-           $isAdd= $Feed->add($data[$key]);
-             if ($isAdd ==false) {
-               echo "add failure";
-              } 
-       } 
-     
-     }
-   }
 
 }

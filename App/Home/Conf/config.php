@@ -7,6 +7,7 @@ return array(
          'topic/:c_value' => 'Index/theme',    
           'me'		=> 'Index/aboutme',
           'message'		=> 'Index/message',
+          'game'		=> 'Index/game',
         ),
 
 );

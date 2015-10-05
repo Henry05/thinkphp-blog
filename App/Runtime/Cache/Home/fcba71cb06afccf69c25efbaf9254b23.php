@@ -157,28 +157,11 @@
     </head>
 
 <body>
-    <!--   导航栏样式表 -->
-<link rel="stylesheet" href="/Blog/Public/Home/CSS/layout.css"/>
-<!--[if lt IE 9]>
-<script src="/Blog/Public/Jquery/jquery-1.11.2.js"></script>
-<![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/Blog/Public/Jquery/jquery-2.1.4.min.js"></script>
-<!--<![endif]-->
-<script src="/Blog/Public/Home/JS/html5shiv.min.js"></script>
-<script type="text/javascript">
-//导航下拉效果
-$(function(){
-$(".nav-btn").click(function(){
-    $(".nav").fadeToggle("1000");
-    $(".btn").toggleClass("onbtn");
-});
-});
-</script>
-</head>
+    <link rel="alternate icon" type="image/ico" href="/Blog/Public/Home/IMG/favicon.ico">
+        <link rel="stylesheet" href="/Blog/Public/Home/CSS/layout.css"/>
+    </head>
 <body>
-<!-- 导航部分 -->
-<header>
+    <header>
     <a href="/Blog" class="title">
     <i class="logo"></i>
     <i class="name"></i>
@@ -194,9 +177,7 @@ $(".nav-btn").click(function(){
         <ul>
             <li ><a href="/Blog">首页</a></li>
             <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><li ><a href="/Blog/topic/<?php echo ($v["c_value"]); ?>"><?php echo ($v["c_name"]); ?></a></li><?php endforeach; endif; ?>
-             <li ><a href="/Blog/Index/feedplus">FeedPlus</a></li>
-             <li ><a href="/Blog/message">留言</a></li>
-            <li ><a href="/Blog/me" target="_blank">关于我</a></li>
+            <li ><a href="/Blog/me" >关于</a></li>
         </ul></nav>
     </header>
    <div class="box">
